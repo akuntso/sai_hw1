@@ -1,0 +1,668 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group__SAIEXPERIMENTALDASHACL" kind="group">
+    <compoundname>SAIEXPERIMENTALDASHACL</compoundname>
+    <title>SAI - Experimental: DASH ACL specific API definitions</title>
+    <innerclass refid="struct__sai__dash__acl__api__t" prot="public">_sai_dash_acl_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASHACL_1gaed2bcc296c4f3b060d7c8d788de04468" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_dash_acl_rule_action_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASHACL_1ggaed2bcc296c4f3b060d7c8d788de04468a2a812dceb05f6f876f60160f3681a367" prot="public">
+          <name>SAI_DASH_ACL_RULE_ACTION_PERMIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHACL_1ggaed2bcc296c4f3b060d7c8d788de04468a597693ee879e39ead5a13546a6964f9a" prot="public">
+          <name>SAI_DASH_ACL_RULE_ACTION_PERMIT_AND_CONTINUE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHACL_1ggaed2bcc296c4f3b060d7c8d788de04468a52ca8755b7198611b36dd519f5fc25e4" prot="public">
+          <name>SAI_DASH_ACL_RULE_ACTION_DENY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHACL_1ggaed2bcc296c4f3b060d7c8d788de04468a0a0f5b8b2fe4f11021e436a4fd5d6224" prot="public">
+          <name>SAI_DASH_ACL_RULE_ACTION_DENY_AND_CONTINUE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute data for <ref refid="group__SAIEXPERIMENTALDASHACL_1ggaf2bd37776895bd86ca90c0373d89d775ac198a529003cf0a7047adf517ac06c3a" kindref="member">SAI_DASH_ACL_RULE_ATTR_ACTION</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashacl.h" line="41" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashacl.h" bodystart="42" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASHACL_1ga472343f8639d48fa270bff8fab5caa5f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_dash_acl_group_attr_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASHACL_1gga472343f8639d48fa270bff8fab5caa5fa38698367672b25493c91f4da811c4310" prot="public">
+          <name>SAI_DASH_ACL_GROUP_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHACL_1gga472343f8639d48fa270bff8fab5caa5faa32470e4a227713804b1dc64e4b3f713" prot="public">
+          <name>SAI_DASH_ACL_GROUP_ATTR_IP_ADDR_FAMILY</name>
+          <initializer>= SAI_DASH_ACL_GROUP_ATTR_START</initializer>
+          <briefdescription>
+<para>Action parameter IP address family. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_addr_family_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_IP_ADDR_FAMILY_IPV4 </para>
+</simplesect>
+<simplesect kind="par"><title>IsResourceType:</title><para> @@isresourcetype  true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHACL_1gga472343f8639d48fa270bff8fab5caa5faffa073bfc04c97d2ca946d73e69a8671" prot="public">
+          <name>SAI_DASH_ACL_GROUP_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHACL_1gga472343f8639d48fa270bff8fab5caa5fa6186b525c443ea2466b1fcd926fcc6ec" prot="public">
+          <name>SAI_DASH_ACL_GROUP_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHACL_1gga472343f8639d48fa270bff8fab5caa5fa628db3343c6e2994ab2c1543c4eaab78" prot="public">
+          <name>SAI_DASH_ACL_GROUP_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute ID for DASH ACL group. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashacl.h" line="56" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashacl.h" bodystart="57" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASHACL_1gaf2bd37776895bd86ca90c0373d89d775" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_dash_acl_rule_attr_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASHACL_1ggaf2bd37776895bd86ca90c0373d89d775a46d07e3cb742f74e2029e6721dff515d" prot="public">
+          <name>SAI_DASH_ACL_RULE_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHACL_1ggaf2bd37776895bd86ca90c0373d89d775ac198a529003cf0a7047adf517ac06c3a" prot="public">
+          <name>SAI_DASH_ACL_RULE_ATTR_ACTION</name>
+          <initializer>= SAI_DASH_ACL_RULE_ATTR_START</initializer>
+          <briefdescription>
+<para>Action. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_dash_acl_rule_action_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_DASH_ACL_RULE_ACTION_PERMIT </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHACL_1ggaf2bd37776895bd86ca90c0373d89d775a9f7381bb0dd8dcea23200f4e845bb6e0" prot="public">
+          <name>SAI_DASH_ACL_RULE_ATTR_DASH_ACL_GROUP_ID</name>
+          <briefdescription>
+<para>Exact matched key dash_acl_group_id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_DASH_ACL_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>IsResourceType:</title><para> @@isresourcetype  true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHACL_1ggaf2bd37776895bd86ca90c0373d89d775a641b616d8d68a0d14205ada7b7c61bcb" prot="public">
+          <name>SAI_DASH_ACL_RULE_ATTR_DIP</name>
+          <briefdescription>
+<para>List matched key dip. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_prefix_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHACL_1ggaf2bd37776895bd86ca90c0373d89d775a2a335aa82665f1442b9c3d17185ceebf" prot="public">
+          <name>SAI_DASH_ACL_RULE_ATTR_SIP</name>
+          <briefdescription>
+<para>List matched key sip. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_prefix_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHACL_1ggaf2bd37776895bd86ca90c0373d89d775a2ee6eccca52b1ff4c763dda25e9702a8" prot="public">
+          <name>SAI_DASH_ACL_RULE_ATTR_PROTOCOL</name>
+          <briefdescription>
+<para>List matched key protocol. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_u8_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHACL_1ggaf2bd37776895bd86ca90c0373d89d775aa9499b204cb2ca62b42f72e88bab9a52" prot="public">
+          <name>SAI_DASH_ACL_RULE_ATTR_SRC_PORT</name>
+          <briefdescription>
+<para>Range_list matched key src_port. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_u16_range_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHACL_1ggaf2bd37776895bd86ca90c0373d89d775aaee4c17bf26fc0deebfb486af64f5873" prot="public">
+          <name>SAI_DASH_ACL_RULE_ATTR_DST_PORT</name>
+          <briefdescription>
+<para>Range_list matched key dst_port. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_u16_range_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHACL_1ggaf2bd37776895bd86ca90c0373d89d775a57dc0f4ba5a2feb149962ad39f64abf9" prot="public">
+          <name>SAI_DASH_ACL_RULE_ATTR_COUNTER_ID</name>
+          <briefdescription>
+<para>Attach a counter. When it is empty, then packet hits won&apos;t be counted. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_COUNTER </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHACL_1ggaf2bd37776895bd86ca90c0373d89d775a4403e5a42c04d6a00232cf4808243332" prot="public">
+          <name>SAI_DASH_ACL_RULE_ATTR_PRIORITY</name>
+          <briefdescription>
+<para>Rule priority in table. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHACL_1ggaf2bd37776895bd86ca90c0373d89d775af125bc61a208bd3e187fe6bc318cc446" prot="public">
+          <name>SAI_DASH_ACL_RULE_ATTR_IP_ADDR_FAMILY</name>
+          <briefdescription>
+<para>IP address family for resource accounting. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_addr_family_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>IsResourceType:</title><para> @@isresourcetype  true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHACL_1ggaf2bd37776895bd86ca90c0373d89d775a4e58f45108c52c8acb2855150a35615e" prot="public">
+          <name>SAI_DASH_ACL_RULE_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHACL_1ggaf2bd37776895bd86ca90c0373d89d775aceb034ec1853930ff5c74910270d6987" prot="public">
+          <name>SAI_DASH_ACL_RULE_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHACL_1ggaf2bd37776895bd86ca90c0373d89d775aa2f3075369e6feeb724d75d6f12456f6" prot="public">
+          <name>SAI_DASH_ACL_RULE_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute ID for DASH ACL rule. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashacl.h" line="89" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashacl.h" bodystart="90" bodyend="194"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHACL_1gae0f3040eeb9756fd131661f8d7824fd3" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASHACL_1gaed2bcc296c4f3b060d7c8d788de04468" kindref="member">_sai_dash_acl_rule_action_t</ref></type>
+        <definition>typedef enum _sai_dash_acl_rule_action_t sai_dash_acl_rule_action_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dash_acl_rule_action_t</name>
+        <briefdescription>
+<para>Attribute data for <ref refid="group__SAIEXPERIMENTALDASHACL_1ggaf2bd37776895bd86ca90c0373d89d775ac198a529003cf0a7047adf517ac06c3a" kindref="member">SAI_DASH_ACL_RULE_ATTR_ACTION</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashacl.h" line="51" column="28"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHACL_1gae73ab2b03dfd113a4f7acf6aa02be225" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASHACL_1ga472343f8639d48fa270bff8fab5caa5f" kindref="member">_sai_dash_acl_group_attr_t</ref></type>
+        <definition>typedef enum _sai_dash_acl_group_attr_t sai_dash_acl_group_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dash_acl_group_attr_t</name>
+        <briefdescription>
+<para>Attribute ID for DASH ACL group. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashacl.h" line="84" column="27"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHACL_1ga1b8590fef562ae3e96edea33cdb70e9f" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASHACL_1gaf2bd37776895bd86ca90c0373d89d775" kindref="member">_sai_dash_acl_rule_attr_t</ref></type>
+        <definition>typedef enum _sai_dash_acl_rule_attr_t sai_dash_acl_rule_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dash_acl_rule_attr_t</name>
+        <briefdescription>
+<para>Attribute ID for DASH ACL rule. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashacl.h" line="194" column="26"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHACL_1gad605c16e3375a0f37841fb5afb7edc35" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_dash_acl_group_fn) (_Out_ sai_object_id_t *dash_acl_group_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *dash_acl_group_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_dash_acl_group_fn</name>
+        <briefdescription>
+<para>Create DASH ACL group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">dash_acl_group_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashacl.h" line="206" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashacl.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHACL_1gaad23e8e78038d3209793afeb831478cc" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_dash_acl_group_fn) (_In_ sai_object_id_t dash_acl_group_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t dash_acl_group_id)</argsstring>
+        <name>sai_remove_dash_acl_group_fn</name>
+        <briefdescription>
+<para>Remove DASH ACL group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dash_acl_group_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashacl.h" line="219" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashacl.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHACL_1ga6a9606e5f2296027157668e1b190745a" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_dash_acl_group_attribute_fn) (_In_ sai_object_id_t dash_acl_group_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t dash_acl_group_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_dash_acl_group_attribute_fn</name>
+        <briefdescription>
+<para>Set attribute for DASH ACL group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dash_acl_group_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashacl.h" line="230" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashacl.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHACL_1ga51cd341032a719911f3381b1b8fff6c5" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_dash_acl_group_attribute_fn) (_In_ sai_object_id_t dash_acl_group_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t dash_acl_group_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_dash_acl_group_attribute_fn</name>
+        <briefdescription>
+<para>Get attribute for DASH ACL group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dash_acl_group_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashacl.h" line="243" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashacl.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHACL_1gaf40194f516fff147784434ff9d990bad" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_dash_acl_rule_fn) (_Out_ sai_object_id_t *dash_acl_rule_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *dash_acl_rule_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_dash_acl_rule_fn</name>
+        <briefdescription>
+<para>Create DASH ACL rule. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">dash_acl_rule_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashacl.h" line="258" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashacl.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHACL_1gaa9334237721532966814b2963a35014d" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_dash_acl_rule_fn) (_In_ sai_object_id_t dash_acl_rule_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t dash_acl_rule_id)</argsstring>
+        <name>sai_remove_dash_acl_rule_fn</name>
+        <briefdescription>
+<para>Remove DASH ACL rule. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dash_acl_rule_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashacl.h" line="271" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashacl.h" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHACL_1ga790db3b38664bff8ecd73740978b6aac" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_dash_acl_rule_attribute_fn) (_In_ sai_object_id_t dash_acl_rule_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t dash_acl_rule_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_dash_acl_rule_attribute_fn</name>
+        <briefdescription>
+<para>Set attribute for DASH ACL rule. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dash_acl_rule_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashacl.h" line="282" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashacl.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHACL_1gaa73629e50d7e6491af539ede635b3000" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_dash_acl_rule_attribute_fn) (_In_ sai_object_id_t dash_acl_rule_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t dash_acl_rule_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_dash_acl_rule_attribute_fn</name>
+        <briefdescription>
+<para>Get attribute for DASH ACL rule. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dash_acl_rule_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashacl.h" line="295" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashacl.h" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHACL_1ga3e51767949d57b492c0de79fb754bce3" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__dash__acl__api__t" kindref="compound">_sai_dash_acl_api_t</ref></type>
+        <definition>typedef struct _sai_dash_acl_api_t sai_dash_acl_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dash_acl_api_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashacl.h" line="316" column="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

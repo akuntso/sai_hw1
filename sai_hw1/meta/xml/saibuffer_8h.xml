@@ -1,0 +1,2021 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="saibuffer_8h" kind="file" language="C++">
+    <compoundname>saibuffer.h</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+    <includedby refid="sai_8h" local="yes">/home/andrii/sai_hw1/SAI/inc/sai.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="5">
+        <label>sys/types.h</label>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saibuffer.h</label>
+        <link refid="saibuffer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>saitypes.h</label>
+        <link refid="saitypes_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/andrii/sai_hw1/SAI/inc/sai.h</label>
+        <link refid="sai_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saibuffer.h</label>
+        <link refid="saibuffer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</label>
+        <link refid="saiextensions_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct__sai__buffer__api__t" prot="public">_sai_buffer_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIBUFFER_1ga1a14ec66911278253011aed84dcdef20" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_ingress_priority_group_attr_t</name>
+        <enumvalue id="group__SAIBUFFER_1gga1a14ec66911278253011aed84dcdef20a649910a12dc9d3d162b81d7ae6fc041c" prot="public">
+          <name>SAI_INGRESS_PRIORITY_GROUP_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1gga1a14ec66911278253011aed84dcdef20a04999da223aaa260ff519f41c2bad2cd" prot="public">
+          <name>SAI_INGRESS_PRIORITY_GROUP_ATTR_BUFFER_PROFILE</name>
+          <initializer>= SAI_INGRESS_PRIORITY_GROUP_ATTR_START</initializer>
+          <briefdescription>
+<para>Buffer profile pointer. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Default no profile</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_BUFFER_PROFILE </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1gga1a14ec66911278253011aed84dcdef20aceb82469669f05f9f5fc9bd41c54db59" prot="public">
+          <name>SAI_INGRESS_PRIORITY_GROUP_ATTR_PORT</name>
+          <briefdescription>
+<para>Port id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY | KEY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_PORT </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1gga1a14ec66911278253011aed84dcdef20ac5b6966772f75467a4b93b3aafebe5d0" prot="public">
+          <name>SAI_INGRESS_PRIORITY_GROUP_ATTR_TAM</name>
+          <briefdescription>
+<para>TAM id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_TAM </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1gga1a14ec66911278253011aed84dcdef20ad93b193e04a3465ec5781c03570cf5a1" prot="public">
+          <name>SAI_INGRESS_PRIORITY_GROUP_ATTR_INDEX</name>
+          <briefdescription>
+<para>PG index. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY | KEY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1gga1a14ec66911278253011aed84dcdef20a575613ba59287f89257c911f7d881d78" prot="public">
+          <name>SAI_INGRESS_PRIORITY_GROUP_ATTR_STATS_COUNT_MODE</name>
+          <briefdescription>
+<para>Set ingress priority group statistics counting mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_stats_count_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_STATS_COUNT_MODE_PACKET_AND_BYTE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1gga1a14ec66911278253011aed84dcdef20aa8830b8cdf36c17793ab7fcb1f6394d7" prot="public">
+          <name>SAI_INGRESS_PRIORITY_GROUP_ATTR_SELECTIVE_COUNTER_LIST</name>
+          <briefdescription>
+<para>Attach counter object list. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Counter object should be of type Selective. Fill (<ref refid="group__SAICOUNTER_1ggac5e99b5b04f2a0f0665babc2a60c9641a2835fed0aa18e2fb59824c903bd712ea" kindref="member">SAI_COUNTER_ATTR_TYPE</ref> with <ref refid="group__SAICOUNTER_1gga4e3da19e4589261e88197d6576020cf1aa4b87a1c99256ee3601553c9455cb92c" kindref="member">SAI_COUNTER_TYPE_SELECTIVE</ref>).</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_COUNTER </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1gga1a14ec66911278253011aed84dcdef20ab2aa18f37b1e1f20d94623be9c407ef5" prot="public">
+          <name>SAI_INGRESS_PRIORITY_GROUP_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1gga1a14ec66911278253011aed84dcdef20ad16a67cc8deab0b5a66ddcfbbc040dc8" prot="public">
+          <name>SAI_INGRESS_PRIORITY_GROUP_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1gga1a14ec66911278253011aed84dcdef20a8fe315ff0da44d0e05072bce0b74a6e7" prot="public">
+          <name>SAI_INGRESS_PRIORITY_GROUP_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum defining ingress priority group attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="39" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" bodystart="40" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIBUFFER_1gac49fccd1891e003fc0ef6d57d65fd149" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_ingress_priority_group_stat_t</name>
+        <enumvalue id="group__SAIBUFFER_1ggac49fccd1891e003fc0ef6d57d65fd149ad5f8ecb2a53724ce8420f6c788464653" prot="public">
+          <name>SAI_INGRESS_PRIORITY_GROUP_STAT_PACKETS</name>
+          <initializer>= 0x00000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get rx packets count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggac49fccd1891e003fc0ef6d57d65fd149ad238e9e58d9d89e3e91b84e2f2491234" prot="public">
+          <name>SAI_INGRESS_PRIORITY_GROUP_STAT_BYTES</name>
+          <initializer>= 0x00000001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get rx bytes count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggac49fccd1891e003fc0ef6d57d65fd149ab1e6baa82147ee3a51ad96d30c4cf290" prot="public">
+          <name>SAI_INGRESS_PRIORITY_GROUP_STAT_CURR_OCCUPANCY_BYTES</name>
+          <initializer>= 0x00000002</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get current pg occupancy in bytes [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggac49fccd1891e003fc0ef6d57d65fd149ae67ee07b12e499c8612503333fbefcd5" prot="public">
+          <name>SAI_INGRESS_PRIORITY_GROUP_STAT_WATERMARK_BYTES</name>
+          <initializer>= 0x00000003</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get watermark pg occupancy in bytes [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggac49fccd1891e003fc0ef6d57d65fd149a3fa7a5ed0ea78881d920744b6ed6303d" prot="public">
+          <name>SAI_INGRESS_PRIORITY_GROUP_STAT_SHARED_CURR_OCCUPANCY_BYTES</name>
+          <initializer>= 0x00000004</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get current pg shared occupancy in bytes [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggac49fccd1891e003fc0ef6d57d65fd149a2e4a5ace9acb4983c8b516e50242dbc3" prot="public">
+          <name>SAI_INGRESS_PRIORITY_GROUP_STAT_SHARED_WATERMARK_BYTES</name>
+          <initializer>= 0x00000005</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get watermark pg shared occupancy in bytes [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggac49fccd1891e003fc0ef6d57d65fd149aa0c830ffa32ab5f383063324706cfe0e" prot="public">
+          <name>SAI_INGRESS_PRIORITY_GROUP_STAT_XOFF_ROOM_CURR_OCCUPANCY_BYTES</name>
+          <initializer>= 0x00000006</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get current pg XOFF room occupancy in bytes [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggac49fccd1891e003fc0ef6d57d65fd149af8ef9eccbe39d706170dac571e957709" prot="public">
+          <name>SAI_INGRESS_PRIORITY_GROUP_STAT_XOFF_ROOM_WATERMARK_BYTES</name>
+          <initializer>= 0x00000007</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get watermark pg XOFF room occupancy in bytes [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggac49fccd1891e003fc0ef6d57d65fd149a287cd9e16f5f82460b23c470039ebabe" prot="public">
+          <name>SAI_INGRESS_PRIORITY_GROUP_STAT_DROPPED_PACKETS</name>
+          <initializer>= 0x00000008</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get dropped packets count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggac49fccd1891e003fc0ef6d57d65fd149a0ff8bd42a335f307baa2b3be8f33ca22" prot="public">
+          <name>SAI_INGRESS_PRIORITY_GROUP_STAT_CURR_OCCUPANCY_CELLS</name>
+          <initializer>= 0x00000009</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get current pg occupancy in cells [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggac49fccd1891e003fc0ef6d57d65fd149a5fabbb23515a4cf6d23b222724903a86" prot="public">
+          <name>SAI_INGRESS_PRIORITY_GROUP_STAT_WATERMARK_CELLS</name>
+          <initializer>= 0x0000000a</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get watermark pg occupancy in cells [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggac49fccd1891e003fc0ef6d57d65fd149a9f1be763718b2770685ed40257baf04b" prot="public">
+          <name>SAI_INGRESS_PRIORITY_GROUP_STAT_SHARED_CURR_OCCUPANCY_CELLS</name>
+          <initializer>= 0x0000000b</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get current pg shared occupancy in cells [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggac49fccd1891e003fc0ef6d57d65fd149aa93e981725185fcf61f50337b9907231" prot="public">
+          <name>SAI_INGRESS_PRIORITY_GROUP_STAT_SHARED_WATERMARK_CELLS</name>
+          <initializer>= 0x0000000c</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get watermark pg shared occupancy in cells [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggac49fccd1891e003fc0ef6d57d65fd149a5384c7debca266c119f26e7e991ab3ba" prot="public">
+          <name>SAI_INGRESS_PRIORITY_GROUP_STAT_XOFF_ROOM_CURR_OCCUPANCY_CELLS</name>
+          <initializer>= 0x0000000d</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get current pg XOFF room occupancy in cells [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggac49fccd1891e003fc0ef6d57d65fd149ab778ffe8df097dc97e6cde7f8be0d9e3" prot="public">
+          <name>SAI_INGRESS_PRIORITY_GROUP_STAT_XOFF_ROOM_WATERMARK_CELLS</name>
+          <initializer>= 0x0000000e</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get watermark pg XOFF room occupancy in cells [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggac49fccd1891e003fc0ef6d57d65fd149a9984aa56fa4212fd95ab860fcf91a285" prot="public">
+          <name>SAI_INGRESS_PRIORITY_GROUP_STAT_CUSTOM_RANGE_BASE</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum defining statistics for ingress priority group. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="124" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" bodystart="125" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIBUFFER_1ga5d6d1d0c41f68362600d6c9221a9552a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_buffer_pool_type_t</name>
+        <enumvalue id="group__SAIBUFFER_1gga5d6d1d0c41f68362600d6c9221a9552aada7040b2573fc85c6a06a3ee8d49332f" prot="public">
+          <name>SAI_BUFFER_POOL_TYPE_INGRESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ingress buffer pool </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1gga5d6d1d0c41f68362600d6c9221a9552aafa28b707de445016fead873c4025ecd6" prot="public">
+          <name>SAI_BUFFER_POOL_TYPE_EGRESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Egress buffer pool </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1gga5d6d1d0c41f68362600d6c9221a9552aa7ef853cc06c9b6f00fdbd69e45ce54de" prot="public">
+          <name>SAI_BUFFER_POOL_TYPE_BOTH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Buffer pool used by both ingress and egress </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum defining buffer pool types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="279" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" bodystart="280" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIBUFFER_1ga72cb36529c57e91f01c9a67e104aae83" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_buffer_pool_threshold_mode_t</name>
+        <enumvalue id="group__SAIBUFFER_1gga72cb36529c57e91f01c9a67e104aae83ac68bb49c250b7e005a4d171af1b11f16" prot="public">
+          <name>SAI_BUFFER_POOL_THRESHOLD_MODE_STATIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Static maximum </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1gga72cb36529c57e91f01c9a67e104aae83a6cb1a653480ab8d47b32a4ac1cd765a7" prot="public">
+          <name>SAI_BUFFER_POOL_THRESHOLD_MODE_DYNAMIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Dynamic maximum (relative) </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum defining buffer pool threshold modes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="295" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" bodystart="296" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIBUFFER_1ga36125eda3f6856ac850a068087141ffd" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_buffer_pool_attr_t</name>
+        <enumvalue id="group__SAIBUFFER_1gga36125eda3f6856ac850a068087141ffda13cb5252d8a90954db2e599973a59eed" prot="public">
+          <name>SAI_BUFFER_POOL_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1gga36125eda3f6856ac850a068087141ffdab2780f4ad046f8180e3016159b358662" prot="public">
+          <name>SAI_BUFFER_POOL_ATTR_SHARED_SIZE</name>
+          <initializer>= SAI_BUFFER_POOL_ATTR_START</initializer>
+          <briefdescription>
+<para>Shared buffer size in bytes. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>This is derived from subtracting all reversed buffers of queue/port from the total pool size.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1gga36125eda3f6856ac850a068087141ffda891780c2ecf532cfce189b9bcaa0c3f9" prot="public">
+          <name>SAI_BUFFER_POOL_ATTR_TYPE</name>
+          <briefdescription>
+<para>Buffer pool type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_buffer_pool_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1gga36125eda3f6856ac850a068087141ffdae0505247163996372760c6e2886f800b" prot="public">
+          <name>SAI_BUFFER_POOL_ATTR_SIZE</name>
+          <briefdescription>
+<para>Buffer pool size in bytes. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1gga36125eda3f6856ac850a068087141ffda6ef91932a49b5eac15d9f07d4c26554e" prot="public">
+          <name>SAI_BUFFER_POOL_ATTR_THRESHOLD_MODE</name>
+          <briefdescription>
+<para>Shared threshold mode for the buffer. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_buffer_pool_threshold_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_BUFFER_POOL_THRESHOLD_MODE_DYNAMIC </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1gga36125eda3f6856ac850a068087141ffda51737f94efdc2d833596c733cf7af077" prot="public">
+          <name>SAI_BUFFER_POOL_ATTR_TAM</name>
+          <briefdescription>
+<para>TAM id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_TAM </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1gga36125eda3f6856ac850a068087141ffdaf07d5f4498cb498564cd86b232c8f792" prot="public">
+          <name>SAI_BUFFER_POOL_ATTR_XOFF_SIZE</name>
+          <briefdescription>
+<para>Shared headroom pool size in bytes for lossless traffic. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Only valid for the ingress buffer pool. If shared headroom pool size is not zero, its size is included in the corresponding ingress buffer pool size SAI_BUFFER_POOL_ATTR_SIZE</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1gga36125eda3f6856ac850a068087141ffda1b0fed66139022d0dfd37d6d2a7418be" prot="public">
+          <name>SAI_BUFFER_POOL_ATTR_WRED_PROFILE_ID</name>
+          <briefdescription>
+<para>Attach WRED ID to pool. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>WRED Drop/ECN marking based on pool thresholds will happen only when one of queue referring to this buffer pool configured with non default value for SAI_QUEUE_ATTR_WRED_PROFILE_ID. ID = <ref refid="group__SAITYPES_1ga05f6bb4ef9f7ddf0ceb2056dc6ac8c6c" kindref="member">SAI_NULL_OBJECT_ID</ref> to disable WRED</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_WRED </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1gga36125eda3f6856ac850a068087141ffda6cf0faa6188b49c3b7c059eb195126b1" prot="public">
+          <name>SAI_BUFFER_POOL_ATTR_STATS_COUNT_MODE</name>
+          <briefdescription>
+<para>Set buffer pool statistics counting mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_stats_count_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_STATS_COUNT_MODE_PACKET_AND_BYTE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1gga36125eda3f6856ac850a068087141ffda64c910d973894c84b8ad356932700cf5" prot="public">
+          <name>SAI_BUFFER_POOL_ATTR_SELECTIVE_COUNTER_LIST</name>
+          <briefdescription>
+<para>Attach counter object list. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Counter object should be of type Selective. Fill (<ref refid="group__SAICOUNTER_1ggac5e99b5b04f2a0f0665babc2a60c9641a2835fed0aa18e2fb59824c903bd712ea" kindref="member">SAI_COUNTER_ATTR_TYPE</ref> with <ref refid="group__SAICOUNTER_1gga4e3da19e4589261e88197d6576020cf1aa4b87a1c99256ee3601553c9455cb92c" kindref="member">SAI_COUNTER_TYPE_SELECTIVE</ref>).</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_COUNTER </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1gga36125eda3f6856ac850a068087141ffda8142ef73acc21ab94d61751d075d0c01" prot="public">
+          <name>SAI_BUFFER_POOL_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1gga36125eda3f6856ac850a068087141ffdabdc0240e437a1cbb185ddd51d791e983" prot="public">
+          <name>SAI_BUFFER_POOL_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1gga36125eda3f6856ac850a068087141ffda8169ec1b7d51ea6c057db8b4713a1e69" prot="public">
+          <name>SAI_BUFFER_POOL_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum defining buffer pool attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="308" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" bodystart="309" bodyend="423"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIBUFFER_1gaefd81c32886250ddd760ee43dc153d59" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_buffer_pool_stat_t</name>
+        <enumvalue id="group__SAIBUFFER_1ggaefd81c32886250ddd760ee43dc153d59ab6bcc6d06234286ecc387ed19acd6b7b" prot="public">
+          <name>SAI_BUFFER_POOL_STAT_CURR_OCCUPANCY_BYTES</name>
+          <initializer>= 0x00000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get current pool occupancy in bytes [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaefd81c32886250ddd760ee43dc153d59a90fed4da7868b42eaf6205321c6080e0" prot="public">
+          <name>SAI_BUFFER_POOL_STAT_WATERMARK_BYTES</name>
+          <initializer>= 0x00000001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get watermark pool occupancy in bytes [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaefd81c32886250ddd760ee43dc153d59a31b5ed01897039a73c89a0e3ed98122f" prot="public">
+          <name>SAI_BUFFER_POOL_STAT_DROPPED_PACKETS</name>
+          <initializer>= 0x00000002</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get count of packets dropped in this pool [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaefd81c32886250ddd760ee43dc153d59a380fae9718f9b7f2e9013852ab285837" prot="public">
+          <name>SAI_BUFFER_POOL_STAT_GREEN_WRED_DROPPED_PACKETS</name>
+          <initializer>= 0x00000003</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set WRED green dropped packet count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaefd81c32886250ddd760ee43dc153d59a77d4559bd2b38a60869f5f57291975d3" prot="public">
+          <name>SAI_BUFFER_POOL_STAT_GREEN_WRED_DROPPED_BYTES</name>
+          <initializer>= 0x00000004</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set WRED green dropped byte count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaefd81c32886250ddd760ee43dc153d59ad4dfd1883fa7bd2a2c1af07f017da1fe" prot="public">
+          <name>SAI_BUFFER_POOL_STAT_YELLOW_WRED_DROPPED_PACKETS</name>
+          <initializer>= 0x00000005</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set WRED yellow dropped packet count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaefd81c32886250ddd760ee43dc153d59aaaeb8799a67d4e1abfcc45398b7d33e3" prot="public">
+          <name>SAI_BUFFER_POOL_STAT_YELLOW_WRED_DROPPED_BYTES</name>
+          <initializer>= 0x00000006</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set WRED yellow dropped byte count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaefd81c32886250ddd760ee43dc153d59a3a3f8017ea4c64445a743d1446ec52ad" prot="public">
+          <name>SAI_BUFFER_POOL_STAT_RED_WRED_DROPPED_PACKETS</name>
+          <initializer>= 0x00000007</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set WRED red dropped packet count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaefd81c32886250ddd760ee43dc153d59ae38cda9e31543ca1ce254f8232218c34" prot="public">
+          <name>SAI_BUFFER_POOL_STAT_RED_WRED_DROPPED_BYTES</name>
+          <initializer>= 0x00000008</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set WRED red dropped byte count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaefd81c32886250ddd760ee43dc153d59ad3cb5608f2fa86cbc97612f6a34f406d" prot="public">
+          <name>SAI_BUFFER_POOL_STAT_WRED_DROPPED_PACKETS</name>
+          <initializer>= 0x00000009</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set WRED dropped packets count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaefd81c32886250ddd760ee43dc153d59a83c3a00926991a850861472c7a7db1f2" prot="public">
+          <name>SAI_BUFFER_POOL_STAT_WRED_DROPPED_BYTES</name>
+          <initializer>= 0x0000000a</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set WRED dropped bytes count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaefd81c32886250ddd760ee43dc153d59aeb1f1a42829f58de7e0437a88180ddfc" prot="public">
+          <name>SAI_BUFFER_POOL_STAT_GREEN_WRED_ECN_MARKED_PACKETS</name>
+          <initializer>= 0x0000000b</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set WRED green marked packet count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaefd81c32886250ddd760ee43dc153d59a52a783788845e2f50a4107b22d69fa23" prot="public">
+          <name>SAI_BUFFER_POOL_STAT_GREEN_WRED_ECN_MARKED_BYTES</name>
+          <initializer>= 0x0000000c</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set WRED green marked byte count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaefd81c32886250ddd760ee43dc153d59a8a4bc64d6aa8597624b13a9cb7bf3554" prot="public">
+          <name>SAI_BUFFER_POOL_STAT_YELLOW_WRED_ECN_MARKED_PACKETS</name>
+          <initializer>= 0x0000000d</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set WRED yellow marked packet count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaefd81c32886250ddd760ee43dc153d59a38739cb926d47e0414436fa501b814f3" prot="public">
+          <name>SAI_BUFFER_POOL_STAT_YELLOW_WRED_ECN_MARKED_BYTES</name>
+          <initializer>= 0x0000000e</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set WRED yellow marked byte count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaefd81c32886250ddd760ee43dc153d59a8b505b080a61f40234f84333e4ffe3ce" prot="public">
+          <name>SAI_BUFFER_POOL_STAT_RED_WRED_ECN_MARKED_PACKETS</name>
+          <initializer>= 0x0000000f</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set WRED red marked packet count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaefd81c32886250ddd760ee43dc153d59a205087fd39054fd7e6f5c0b5d39ce6d0" prot="public">
+          <name>SAI_BUFFER_POOL_STAT_RED_WRED_ECN_MARKED_BYTES</name>
+          <initializer>= 0x00000010</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set WRED red marked byte count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaefd81c32886250ddd760ee43dc153d59a32134f61c3b33c931d7a98ada8f90c7a" prot="public">
+          <name>SAI_BUFFER_POOL_STAT_WRED_ECN_MARKED_PACKETS</name>
+          <initializer>= 0x00000011</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set WRED marked packets count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaefd81c32886250ddd760ee43dc153d59ae020ef3a0e284d23765785afa384b85e" prot="public">
+          <name>SAI_BUFFER_POOL_STAT_WRED_ECN_MARKED_BYTES</name>
+          <initializer>= 0x00000012</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set WRED marked bytes count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaefd81c32886250ddd760ee43dc153d59aea02c13e35e116941e579c91006776f3" prot="public">
+          <name>SAI_BUFFER_POOL_STAT_XOFF_ROOM_CURR_OCCUPANCY_BYTES</name>
+          <initializer>= 0x00000013</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get current headroom pool occupancy in bytes [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaefd81c32886250ddd760ee43dc153d59abdc709d7d4b44b459be6c00e318ad560" prot="public">
+          <name>SAI_BUFFER_POOL_STAT_XOFF_ROOM_WATERMARK_BYTES</name>
+          <initializer>= 0x00000014</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get headroom pool occupancy in bytes [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaefd81c32886250ddd760ee43dc153d59aa0550d7b6efc043b0b661fa92b0590c3" prot="public">
+          <name>SAI_BUFFER_POOL_STAT_XOFF_ROOM_CURR_OCCUPANCY_CELLS</name>
+          <initializer>= 0x00000015</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get current headroom pool occupancy in cells [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaefd81c32886250ddd760ee43dc153d59a4803f052bdaae4338487c285d6ef7c69" prot="public">
+          <name>SAI_BUFFER_POOL_STAT_XOFF_ROOM_WATERMARK_CELLS</name>
+          <initializer>= 0x00000016</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get headroom pool occupancy in cells [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaefd81c32886250ddd760ee43dc153d59a1a6c95c23e875956e3ebebf3d89bebc8" prot="public">
+          <name>SAI_BUFFER_POOL_STAT_CURR_OCCUPANCY_CELLS</name>
+          <initializer>= 0x00000017</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get current pool occupancy in cells [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaefd81c32886250ddd760ee43dc153d59a724b2c8e5a84c1cb1fd552562ea3fb83" prot="public">
+          <name>SAI_BUFFER_POOL_STAT_WATERMARK_CELLS</name>
+          <initializer>= 0x00000018</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get watermark pool occupancy in cells [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaefd81c32886250ddd760ee43dc153d59a6b56d294703a3c2992d216ed76b4ff60" prot="public">
+          <name>SAI_BUFFER_POOL_STAT_CUSTOM_RANGE_BASE</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum defining statistics for buffer pool. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="428" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" bodystart="429" bodyend="508"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIBUFFER_1gafd0175ecbeeb8e9d0cda32f1fe2e68b2" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_buffer_profile_threshold_mode_t</name>
+        <enumvalue id="group__SAIBUFFER_1ggafd0175ecbeeb8e9d0cda32f1fe2e68b2a788dd21def9b2cd538ddcc71a1ba83a8" prot="public">
+          <name>SAI_BUFFER_PROFILE_THRESHOLD_MODE_STATIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Static maximum </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggafd0175ecbeeb8e9d0cda32f1fe2e68b2a8c318b122b462462a71cdc4ca434b0c9" prot="public">
+          <name>SAI_BUFFER_PROFILE_THRESHOLD_MODE_DYNAMIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Dynamic maximum (relative) </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum defining buffer profile threshold modes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="613" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" bodystart="614" bodyend="621"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIBUFFER_1ga60eaa1636c00c9c70328aebe85cb4ca9" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_buffer_profile_packet_admission_fail_action_t</name>
+        <enumvalue id="group__SAIBUFFER_1gga60eaa1636c00c9c70328aebe85cb4ca9a881920f013beaca6cde300632a0dd629" prot="public">
+          <name>SAI_BUFFER_PROFILE_PACKET_ADMISSION_FAIL_ACTION_DROP</name>
+          <briefdescription>
+<para>Drop the packet. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Default action. Packet has nowhere to go and will be dropped. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1gga60eaa1636c00c9c70328aebe85cb4ca9aca4e78eacddabd47effe4279ef32fe96" prot="public">
+          <name>SAI_BUFFER_PROFILE_PACKET_ADMISSION_FAIL_ACTION_DROP_AND_TRIM</name>
+          <briefdescription>
+<para>Trim the packet. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Try sending a shortened packet over a different queue. Original packet will be dropped and trimmed copy of the packet will be send. The IP length and checksum fields will be updated in a trimmed copy. SAI_QUEUE_STAT_DROPPED_PACKETS as well as SAI_QUEUE_STAT_DROPPED_BYTES will count the original discarded frames even if they will be trimmed afterwards. Interface statistics must show dropped packets. Interface statistics may show sent trimmed packets. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum defining queue actions in case the packet fails to pass the admission control. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="626" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" bodystart="627" bodyend="648"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIBUFFER_1gaf21c473ccd38a4603e0751631a5177fe" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_buffer_profile_attr_t</name>
+        <enumvalue id="group__SAIBUFFER_1ggaf21c473ccd38a4603e0751631a5177fea8831dd7f0cafaa6df0ea40fe93c05b1a" prot="public">
+          <name>SAI_BUFFER_PROFILE_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaf21c473ccd38a4603e0751631a5177feabb1ae1486d87ff1b196b08c18b99ca47" prot="public">
+          <name>SAI_BUFFER_PROFILE_ATTR_POOL_ID</name>
+          <initializer>= SAI_BUFFER_PROFILE_ATTR_START</initializer>
+          <briefdescription>
+<para>Pointer to buffer pool object id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Pool id = <ref refid="group__SAITYPES_1ga05f6bb4ef9f7ddf0ceb2056dc6ac8c6c" kindref="member">SAI_NULL_OBJECT_ID</ref> can be used when profile is not associated with specific pool, for example for global port buffer. Not applicable to priority group or queue buffer profile.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_BUFFER_POOL </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaf21c473ccd38a4603e0751631a5177feaae26877325644d6ad9df7e2d033831b3" prot="public">
+          <name>SAI_BUFFER_PROFILE_ATTR_RESERVED_BUFFER_SIZE</name>
+          <briefdescription>
+<para>Reserved buffer size in bytes. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaf21c473ccd38a4603e0751631a5177fead63c29bca43784b2f73929d76fef5a89" prot="public">
+          <name>SAI_BUFFER_PROFILE_ATTR_BUFFER_SIZE</name>
+          <initializer>= SAI_BUFFER_PROFILE_ATTR_RESERVED_BUFFER_SIZE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Ignored:</title><para> @@ignore          - for backward compatibility </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaf21c473ccd38a4603e0751631a5177feada4906106d6d1638f9f9ffe4c374a638" prot="public">
+          <name>SAI_BUFFER_PROFILE_ATTR_THRESHOLD_MODE</name>
+          <briefdescription>
+<para>Shared threshold mode for the buffer profile. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>If set, this overrides <ref refid="group__SAIBUFFER_1gga36125eda3f6856ac850a068087141ffda6ef91932a49b5eac15d9f07d4c26554e" kindref="member">SAI_BUFFER_POOL_ATTR_THRESHOLD_MODE</ref>.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_buffer_profile_threshold_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaf21c473ccd38a4603e0751631a5177feab1ef880d8269f02053e3ce26b7ef3ae2" prot="public">
+          <name>SAI_BUFFER_PROFILE_ATTR_SHARED_DYNAMIC_TH</name>
+          <briefdescription>
+<para>Dynamic threshold for the shared usage. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>The threshold is set to the 2^n of available buffer of the pool.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_int8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_BUFFER_PROFILE_ATTR_THRESHOLD_MODE == SAI_BUFFER_PROFILE_THRESHOLD_MODE_DYNAMIC </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaf21c473ccd38a4603e0751631a5177feac93a34d7a55388686f3711c622cbfe37" prot="public">
+          <name>SAI_BUFFER_PROFILE_ATTR_SHARED_STATIC_TH</name>
+          <briefdescription>
+<para>Static threshold for the shared usage in bytes. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>When set to zero there is no limit for the shared usage.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_BUFFER_PROFILE_ATTR_THRESHOLD_MODE == SAI_BUFFER_PROFILE_THRESHOLD_MODE_STATIC </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaf21c473ccd38a4603e0751631a5177feab79b8a59b046325dce6a456dedcb3b48" prot="public">
+          <name>SAI_BUFFER_PROFILE_ATTR_XOFF_TH</name>
+          <briefdescription>
+<para>Set the buffer profile XOFF threshold in bytes. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Valid only for ingress PG.</para>
+<para>Specifies the maximum available buffer for a PG after XOFF is generated (i.e. headroom buffer). Note that the available headroom buffer is dependent on SAI_BUFFER_POOL_ATTR_XOFF_SIZE. If the user has set SAI_BUFFER_POOL_ATTR_XOFF_SIZE = 0, the PG headroom buffer is equal to XOFF_TH and it is not shared. If the user has set SAI_BUFFER_POOL_ATTR_XOFF_SIZE &gt; 0, the total headroom pool buffer for all PGs is equal to SAI_BUFFER_POOL_ATTR_XOFF_SIZE and XOFF_TH specifies the maximum amount of headroom pool buffer one PG can use.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaf21c473ccd38a4603e0751631a5177feac50a2a6eff5f91e254cfb724e8157586" prot="public">
+          <name>SAI_BUFFER_PROFILE_ATTR_XON_TH</name>
+          <briefdescription>
+<para>Set the buffer profile XON non-hysteresis threshold in byte. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Valid only for ingress PG.</para>
+<para>Generate XON when the total buffer usage of this PG is less than the maximum of XON_TH and the total buffer limit minus XON_OFFSET_TH, and available buffer in the PG buffer is larger than the XOFF_TH. The XON trigger condition is governed by: total buffer usage &lt;= max(XON_TH, total buffer limit - XON_OFFSET_TH)</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaf21c473ccd38a4603e0751631a5177fea5d53c6ba2fde9a217240d0288e5c9119" prot="public">
+          <name>SAI_BUFFER_PROFILE_ATTR_XON_OFFSET_TH</name>
+          <briefdescription>
+<para>Set the buffer profile XON hysteresis threshold in byte. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Valid only for ingress PG</para>
+<para>Generate XON when the total buffer usage of this PG is less than the maximum of XON_TH and the total buffer limit minus XON_OFFSET_TH, and available buffer in the PG buffer is larger than the XOFF_TH. The XON trigger condition is governed by: total buffer usage &lt;= max(XON_TH, total buffer limit - XON_OFFSET_TH)</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaf21c473ccd38a4603e0751631a5177feafc281ec6575d90fa182d4a9156e2767f" prot="public">
+          <name>SAI_BUFFER_PROFILE_ATTR_PACKET_ADMISSION_FAIL_ACTION</name>
+          <briefdescription>
+<para>Buffer profile discard action. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Action to be taken upon packet discard due to buffer profile configuration. Applicable only when attached to a queue.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_buffer_profile_packet_admission_fail_action_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_BUFFER_PROFILE_PACKET_ADMISSION_FAIL_ACTION_DROP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaf21c473ccd38a4603e0751631a5177feadd35c35458167cbe5a2487fa397d3ea1" prot="public">
+          <name>SAI_BUFFER_PROFILE_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaf21c473ccd38a4603e0751631a5177feaa448f1e5b4b14037768526f19b0baf21" prot="public">
+          <name>SAI_BUFFER_PROFILE_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBUFFER_1ggaf21c473ccd38a4603e0751631a5177feaade2fd0e3cbd500198a7862734703318" prot="public">
+          <name>SAI_BUFFER_PROFILE_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum defining buffer profile attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="653" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" bodystart="654" bodyend="795"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIBUFFER_1ga72c6fb04b676b7e42f833aa74bb40e14" prot="public" static="no">
+        <type>enum <ref refid="group__SAIBUFFER_1ga1a14ec66911278253011aed84dcdef20" kindref="member">_sai_ingress_priority_group_attr_t</ref></type>
+        <definition>typedef enum _sai_ingress_priority_group_attr_t sai_ingress_priority_group_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_ingress_priority_group_attr_t</name>
+        <briefdescription>
+<para>Enum defining ingress priority group attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="119" column="35"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBUFFER_1ga46ab6aa2d8990fac4544445714df768e" prot="public" static="no">
+        <type>enum <ref refid="group__SAIBUFFER_1gac49fccd1891e003fc0ef6d57d65fd149" kindref="member">_sai_ingress_priority_group_stat_t</ref></type>
+        <definition>typedef enum _sai_ingress_priority_group_stat_t sai_ingress_priority_group_stat_t</definition>
+        <argsstring></argsstring>
+        <name>sai_ingress_priority_group_stat_t</name>
+        <briefdescription>
+<para>Enum defining statistics for ingress priority group. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="174" column="35"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBUFFER_1gaeb26c8cfee0cc0e3caf0f7f698f5f18c" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_ingress_priority_group_fn) (_Out_ sai_object_id_t *ingress_priority_group_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *ingress_priority_group_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_ingress_priority_group_fn</name>
+        <briefdescription>
+<para>Create ingress priority group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">ingress_priority_group_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ingress priority group </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="186" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBUFFER_1ga595321014af379d3047937dbe4096b3d" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_ingress_priority_group_fn) (_In_ sai_object_id_t ingress_priority_group_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t ingress_priority_group_id)</argsstring>
+        <name>sai_remove_ingress_priority_group_fn</name>
+        <briefdescription>
+<para>Remove ingress priority group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ingress_priority_group_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ingress priority group id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="199" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBUFFER_1gae1e01be012479a1c9929da0e998bb742" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_ingress_priority_group_attribute_fn) (_In_ sai_object_id_t ingress_priority_group_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t ingress_priority_group_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_ingress_priority_group_attribute_fn</name>
+        <briefdescription>
+<para>Set ingress priority group attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ingress_priority_group_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ingress priority group id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute to set</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="210" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBUFFER_1gaa27459f1bb728b0adc2f4f9481b484f6" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_ingress_priority_group_attribute_fn) (_In_ sai_object_id_t ingress_priority_group_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t ingress_priority_group_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_ingress_priority_group_attribute_fn</name>
+        <briefdescription>
+<para>Get ingress priority group attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ingress_priority_group_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ingress priority group id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="223" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBUFFER_1gabd3e3cccfdc3ff25d6ea58f33d5e0688" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_ingress_priority_group_stats_fn) (_In_ sai_object_id_t ingress_priority_group_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t ingress_priority_group_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_ingress_priority_group_stats_fn</name>
+        <briefdescription>
+<para>Get ingress priority group statistics counters. Deprecated for backward compatibility. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ingress_priority_group_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ingress priority group id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="238" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBUFFER_1gad893539adc8f877b3a538457bc698b1d" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_ingress_priority_group_stats_ext_fn) (_In_ sai_object_id_t ingress_priority_group_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t ingress_priority_group_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_ingress_priority_group_stats_ext_fn</name>
+        <briefdescription>
+<para>Get ingress priority group statistics counters extended. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ingress_priority_group_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ingress priority group id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Statistics mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="255" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBUFFER_1ga3c3be4d27a9c1ef7b88352bd48477a84" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_clear_ingress_priority_group_stats_fn) (_In_ sai_object_id_t ingress_priority_group_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</definition>
+        <argsstring>)(_In_ sai_object_id_t ingress_priority_group_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</argsstring>
+        <name>sai_clear_ingress_priority_group_stats_fn</name>
+        <briefdescription>
+<para>Clear ingress priority group statistics counters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ingress_priority_group_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ingress priority group id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="271" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBUFFER_1ga256b436e03e389df4f7302ea8b6e3ad3" prot="public" static="no">
+        <type>enum <ref refid="group__SAIBUFFER_1ga5d6d1d0c41f68362600d6c9221a9552a" kindref="member">_sai_buffer_pool_type_t</ref></type>
+        <definition>typedef enum _sai_buffer_pool_type_t sai_buffer_pool_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_buffer_pool_type_t</name>
+        <briefdescription>
+<para>Enum defining buffer pool types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="290" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBUFFER_1gafc1b478c4650057ea1287335eca38e30" prot="public" static="no">
+        <type>enum <ref refid="group__SAIBUFFER_1ga72cb36529c57e91f01c9a67e104aae83" kindref="member">_sai_buffer_pool_threshold_mode_t</ref></type>
+        <definition>typedef enum _sai_buffer_pool_threshold_mode_t sai_buffer_pool_threshold_mode_t</definition>
+        <argsstring></argsstring>
+        <name>sai_buffer_pool_threshold_mode_t</name>
+        <briefdescription>
+<para>Enum defining buffer pool threshold modes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="303" column="34"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBUFFER_1ga19b7ce32d6b437a989aaf937faf14f13" prot="public" static="no">
+        <type>enum <ref refid="group__SAIBUFFER_1ga36125eda3f6856ac850a068087141ffd" kindref="member">_sai_buffer_pool_attr_t</ref></type>
+        <definition>typedef enum _sai_buffer_pool_attr_t sai_buffer_pool_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_buffer_pool_attr_t</name>
+        <briefdescription>
+<para>Enum defining buffer pool attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="423" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBUFFER_1ga2f76d2ea06ae41d9e28d3d2062ff670f" prot="public" static="no">
+        <type>enum <ref refid="group__SAIBUFFER_1gaefd81c32886250ddd760ee43dc153d59" kindref="member">_sai_buffer_pool_stat_t</ref></type>
+        <definition>typedef enum _sai_buffer_pool_stat_t sai_buffer_pool_stat_t</definition>
+        <argsstring></argsstring>
+        <name>sai_buffer_pool_stat_t</name>
+        <briefdescription>
+<para>Enum defining statistics for buffer pool. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="508" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBUFFER_1gae64750ee68725a87f1237634d1947c30" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_buffer_pool_fn) (_Out_ sai_object_id_t *buffer_pool_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *buffer_pool_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_buffer_pool_fn</name>
+        <briefdescription>
+<para>Create buffer pool. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer_pool_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer pool id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="520" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" bodystart="520" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBUFFER_1ga4a5f09863c52c3eaf0a212e1a8d3bfa2" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_buffer_pool_fn) (_In_ sai_object_id_t buffer_pool_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t buffer_pool_id)</argsstring>
+        <name>sai_remove_buffer_pool_fn</name>
+        <briefdescription>
+<para>Remove buffer pool. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer_pool_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer pool id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="533" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" bodystart="533" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBUFFER_1ga1f2d097b27cc12b8e2a538ab552ba4af" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_buffer_pool_attribute_fn) (_In_ sai_object_id_t buffer_pool_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t buffer_pool_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_buffer_pool_attribute_fn</name>
+        <briefdescription>
+<para>Set buffer pool attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer_pool_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer pool id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="544" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" bodystart="544" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBUFFER_1ga04a384a8fc97d28dff41ec8f62bc2ff2" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_buffer_pool_attribute_fn) (_In_ sai_object_id_t buffer_pool_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t buffer_pool_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_buffer_pool_attribute_fn</name>
+        <briefdescription>
+<para>Get buffer pool attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer_pool_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer pool id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="557" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" bodystart="557" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBUFFER_1ga9a39bf03bbdc87cf7f99a2ca3724bece" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_buffer_pool_stats_fn) (_In_ sai_object_id_t buffer_pool_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t buffer_pool_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_buffer_pool_stats_fn</name>
+        <briefdescription>
+<para>Get buffer pool statistics counters. Deprecated for backward compatibility. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer_pool_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer pool id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="572" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" bodystart="572" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBUFFER_1ga6bd30fc5090a5ac01700b89bf3ea4aba" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_buffer_pool_stats_ext_fn) (_In_ sai_object_id_t buffer_pool_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t buffer_pool_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_buffer_pool_stats_ext_fn</name>
+        <briefdescription>
+<para>Get buffer pool statistics counters extended. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer_pool_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer pool id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Statistics mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="589" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" bodystart="589" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBUFFER_1ga2b28f0e2981ac5c50ac4e2c95e2142d5" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_clear_buffer_pool_stats_fn) (_In_ sai_object_id_t buffer_pool_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</definition>
+        <argsstring>)(_In_ sai_object_id_t buffer_pool_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</argsstring>
+        <name>sai_clear_buffer_pool_stats_fn</name>
+        <briefdescription>
+<para>Clear buffer pool statistics counters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer_pool_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer pool id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="605" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" bodystart="605" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBUFFER_1ga0e7c89734911fb80c0cfa4993a89d1c4" prot="public" static="no">
+        <type>enum <ref refid="group__SAIBUFFER_1gafd0175ecbeeb8e9d0cda32f1fe2e68b2" kindref="member">_sai_buffer_profile_threshold_mode_t</ref></type>
+        <definition>typedef enum _sai_buffer_profile_threshold_mode_t sai_buffer_profile_threshold_mode_t</definition>
+        <argsstring></argsstring>
+        <name>sai_buffer_profile_threshold_mode_t</name>
+        <briefdescription>
+<para>Enum defining buffer profile threshold modes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="621" column="37"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBUFFER_1gaa44bc2ff59b71873c69f2b7aae7e33b9" prot="public" static="no">
+        <type>enum <ref refid="group__SAIBUFFER_1ga60eaa1636c00c9c70328aebe85cb4ca9" kindref="member">_sai_buffer_profile_packet_admission_fail_action_t</ref></type>
+        <definition>typedef enum _sai_buffer_profile_packet_admission_fail_action_t sai_buffer_profile_packet_admission_fail_action_t</definition>
+        <argsstring></argsstring>
+        <name>sai_buffer_profile_packet_admission_fail_action_t</name>
+        <briefdescription>
+<para>Enum defining queue actions in case the packet fails to pass the admission control. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="648" column="51"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBUFFER_1gad78408e537d14ff970ff546c61309e05" prot="public" static="no">
+        <type>enum <ref refid="group__SAIBUFFER_1gaf21c473ccd38a4603e0751631a5177fe" kindref="member">_sai_buffer_profile_attr_t</ref></type>
+        <definition>typedef enum _sai_buffer_profile_attr_t sai_buffer_profile_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_buffer_profile_attr_t</name>
+        <briefdescription>
+<para>Enum defining buffer profile attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="795" column="27"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBUFFER_1ga12459b95f226e0de5bfea8b623b43ca0" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_buffer_profile_fn) (_Out_ sai_object_id_t *buffer_profile_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *buffer_profile_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_buffer_profile_fn</name>
+        <briefdescription>
+<para>Create buffer profile. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer_profile_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer profile id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="807" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" bodystart="807" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBUFFER_1ga2a73ceaa1ec70abce8f1a068afeb3b89" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_buffer_profile_fn) (_In_ sai_object_id_t buffer_profile_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t buffer_profile_id)</argsstring>
+        <name>sai_remove_buffer_profile_fn</name>
+        <briefdescription>
+<para>Remove buffer profile. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer_profile_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer profile id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="820" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" bodystart="820" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBUFFER_1ga9e4c7760935141f4dace123efece3575" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_buffer_profile_attribute_fn) (_In_ sai_object_id_t buffer_profile_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t buffer_profile_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_buffer_profile_attribute_fn</name>
+        <briefdescription>
+<para>Set buffer profile attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer_profile_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer profile id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="831" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" bodystart="831" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBUFFER_1ga53141523ce29287dca64944c4b576581" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_buffer_profile_attribute_fn) (_In_ sai_object_id_t buffer_profile_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t buffer_profile_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_buffer_profile_attribute_fn</name>
+        <briefdescription>
+<para>Get buffer profile attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer_profile_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Buffer profile id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="844" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" bodystart="844" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBUFFER_1ga2b301cf5de5cba54555710ff2f0ea957" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__buffer__api__t" kindref="compound">_sai_buffer_api_t</ref></type>
+        <definition>typedef struct _sai_buffer_api_t sai_buffer_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_buffer_api_t</name>
+        <briefdescription>
+<para>Buffer methods table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h" line="874" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module defines SAI Buffer interface. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2014 Microsoft Open Technologies, Inc.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <ulink url="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</ulink></para>
+<para>THIS CODE IS PROVIDED ON AN <emphasis>AS IS</emphasis> BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</para>
+<para>See the Apache Version 2.0 License for specific language governing permissions and limitations under the License.</para>
+<para>Microsoft would like to thank the following companies for their review and assistance with these files: Intel Corporation, Mellanox Technologies Ltd, Dell Products, L.P., Facebook, Inc., Marvell International Ltd. </para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saibuffer.h"/>
+  </compounddef>
+</doxygen>

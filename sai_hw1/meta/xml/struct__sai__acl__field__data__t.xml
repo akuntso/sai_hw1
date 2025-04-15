@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__acl__field__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_acl_field_data_t</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__acl__field__data__t_1a050464805aed68994341c46500593664" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_acl_field_data_t::enable</definition>
+        <argsstring></argsstring>
+        <name>enable</name>
+        <briefdescription>
+<para>Match enable/disable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="599" column="10" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="599" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__acl__field__data__t_1ad38a615764857e0fa90e107723544d1c" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga29ceb0c26f9f612fe991c5de277abc8c" kindref="member">sai_acl_field_data_mask_t</ref></type>
+        <definition>sai_acl_field_data_mask_t _sai_acl_field_data_t::mask</definition>
+        <argsstring></argsstring>
+        <name>mask</name>
+        <briefdescription>
+<para>Field match mask. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Nothing can be serialized if mask is not needed for data items like object id.</para>
+</simplesect>
+<simplesect kind="par"><title>Pass paramater:</title><para> @@passparam       meta </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       enable == true </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="610" column="31" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="610" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__acl__field__data__t_1a4b6a91340badcc9aa451d53699d02f15" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1gad2ee518be2f68601c02ed7cde4f1131d" kindref="member">sai_acl_field_data_data_t</ref></type>
+        <definition>sai_acl_field_data_data_t _sai_acl_field_data_t::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>Expected AND result using match mask above with packet field value where applicable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Pass paramater:</title><para> @@passparam       meta </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       enable == true </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="619" column="31" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="619" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines a single ACL filter. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>IPv4 and IPv6 Address expected in Network Byte Order</para>
+</simplesect>
+<simplesect kind="par"><title>Extra paramater:</title><para> @@extraparam      const sai_attr_metadata_t *meta </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>_sai_object_list_t</label>
+        <link refid="struct__sai__object__list__t"/>
+      </node>
+      <node id="1">
+        <label>_sai_acl_field_data_t</label>
+        <link refid="struct__sai__acl__field__data__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>mask</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>_sai_acl_field_data_data_t</label>
+        <link refid="union__sai__acl__field__data__data__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>objlist</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>u8list</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>_sai_acl_field_data_mask_t</label>
+        <link refid="union__sai__acl__field__data__mask__t"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>u8list</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>_sai_u8_list_t</label>
+        <link refid="struct__sai__u8__list__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="594" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="595" bodyend="620"/>
+    <listofallmembers>
+      <member refid="struct__sai__acl__field__data__t_1a4b6a91340badcc9aa451d53699d02f15" prot="public" virt="non-virtual"><scope>_sai_acl_field_data_t</scope><name>data</name></member>
+      <member refid="struct__sai__acl__field__data__t_1a050464805aed68994341c46500593664" prot="public" virt="non-virtual"><scope>_sai_acl_field_data_t</scope><name>enable</name></member>
+      <member refid="struct__sai__acl__field__data__t_1ad38a615764857e0fa90e107723544d1c" prot="public" virt="non-virtual"><scope>_sai_acl_field_data_t</scope><name>mask</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

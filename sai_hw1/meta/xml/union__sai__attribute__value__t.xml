@@ -1,0 +1,1446 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="union__sai__attribute__value__t" kind="union" language="C++" prot="public">
+    <compoundname>_sai_attribute_value_t</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1a9adef7630b6cd6d1537e47241db25692" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_attribute_value_t::booldata</definition>
+        <argsstring></argsstring>
+        <name>booldata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_BOOL </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1468" column="10" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1468" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1a646382debdffe287971f300c7e4bea6b" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char _sai_attribute_value_t::chardata[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>chardata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_CHARDATA </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1471" column="10" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1471" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1af67b78afbda054bdabee951b896c6662" prot="public" static="no" mutable="no">
+        <type>sai_uint8_t</type>
+        <definition>sai_uint8_t _sai_attribute_value_t::u8</definition>
+        <argsstring></argsstring>
+        <name>u8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_UINT8 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1474" column="17" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1474" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1ab7b94cea8e1ddef3eefa6130a9e150b5" prot="public" static="no" mutable="no">
+        <type>sai_int8_t</type>
+        <definition>sai_int8_t _sai_attribute_value_t::s8</definition>
+        <argsstring></argsstring>
+        <name>s8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_INT8 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1477" column="16" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1477" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1ad5e0b9c6f53e8cbc25cba6a93a5c90f2" prot="public" static="no" mutable="no">
+        <type>sai_uint16_t</type>
+        <definition>sai_uint16_t _sai_attribute_value_t::u16</definition>
+        <argsstring></argsstring>
+        <name>u16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_UINT16 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1480" column="18" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1480" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1a39e54da9208a7995033aec4cfe4e0027" prot="public" static="no" mutable="no">
+        <type>sai_int16_t</type>
+        <definition>sai_int16_t _sai_attribute_value_t::s16</definition>
+        <argsstring></argsstring>
+        <name>s16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_INT16 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1483" column="17" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1483" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1aa33a8a236788ce65c65f6a3643764f71" prot="public" static="no" mutable="no">
+        <type>sai_uint32_t</type>
+        <definition>sai_uint32_t _sai_attribute_value_t::u32</definition>
+        <argsstring></argsstring>
+        <name>u32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_UINT32 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1486" column="18" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1486" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1ae65f3057e5cc94e2b68d2b86b8676006" prot="public" static="no" mutable="no">
+        <type>sai_int32_t</type>
+        <definition>sai_int32_t _sai_attribute_value_t::s32</definition>
+        <argsstring></argsstring>
+        <name>s32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Serialize suffix:</title><para> @@suffix          enum </para>
+</simplesect>
+<simplesect kind="par"><title>Pass paramater:</title><para> @@passparam       meta-&gt;enummetadata </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_INT32 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1493" column="17" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1493" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1a110111eb5ba1fa5a4201a907bc8ed68d" prot="public" static="no" mutable="no">
+        <type>sai_uint64_t</type>
+        <definition>sai_uint64_t _sai_attribute_value_t::u64</definition>
+        <argsstring></argsstring>
+        <name>u64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_UINT64 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1496" column="18" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1496" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1a87ec22bc77af7795f6d614b0247c8600" prot="public" static="no" mutable="no">
+        <type>sai_int64_t</type>
+        <definition>sai_int64_t _sai_attribute_value_t::s64</definition>
+        <argsstring></argsstring>
+        <name>s64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_INT64 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1499" column="17" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1499" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1ae864820a8fb70d597aad719f940d5659" prot="public" static="no" mutable="no">
+        <type>sai_pointer_t</type>
+        <definition>sai_pointer_t _sai_attribute_value_t::ptr</definition>
+        <argsstring></argsstring>
+        <name>ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_POINTER </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1502" column="19" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1502" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1ae9baae611ef89466968225ba63c45ab3" prot="public" static="no" mutable="no">
+        <type>sai_mac_t</type>
+        <definition>sai_mac_t _sai_attribute_value_t::mac</definition>
+        <argsstring></argsstring>
+        <name>mac</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_MAC </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1505" column="15" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1505" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1a86b2676427ec476fd743193e7077586d" prot="public" static="no" mutable="no">
+        <type>sai_ip4_t</type>
+        <definition>sai_ip4_t _sai_attribute_value_t::ip4</definition>
+        <argsstring></argsstring>
+        <name>ip4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_IPV4 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1508" column="15" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1508" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1a5f2ea716cb002e98ae27ef322f8149bf" prot="public" static="no" mutable="no">
+        <type>sai_ip6_t</type>
+        <definition>sai_ip6_t _sai_attribute_value_t::ip6</definition>
+        <argsstring></argsstring>
+        <name>ip6</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_IPV6 </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1511" column="15" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1511" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1a1a1b4686efce17921cb51a42c2bd89dd" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__sai__ip__address__t" kindref="compound">sai_ip_address_t</ref></type>
+        <definition>sai_ip_address_t _sai_attribute_value_t::ipaddr</definition>
+        <argsstring></argsstring>
+        <name>ipaddr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_IP_ADDRESS </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1514" column="22" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1514" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1a18150285430422d166b54d9b7407db5b" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__sai__ip__prefix__t" kindref="compound">sai_ip_prefix_t</ref></type>
+        <definition>sai_ip_prefix_t _sai_attribute_value_t::ipprefix</definition>
+        <argsstring></argsstring>
+        <name>ipprefix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_IP_PREFIX </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1517" column="21" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1517" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1aad5787914aa1eebbecec4bbaa8a6ca5c" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__sai__prbs__rx__state__t" kindref="compound">sai_prbs_rx_state_t</ref></type>
+        <definition>sai_prbs_rx_state_t _sai_attribute_value_t::rx_state</definition>
+        <argsstring></argsstring>
+        <name>rx_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_PRBS_RX_STATE </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1520" column="25" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1520" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1aa0b6595f04f1e0ef274979eb56a0e554" prot="public" static="no" mutable="no">
+        <type>sai_object_id_t</type>
+        <definition>sai_object_id_t _sai_attribute_value_t::oid</definition>
+        <argsstring></argsstring>
+        <name>oid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_OBJECT_ID </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1523" column="21" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1523" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1a45b78c6c359e5e16ad45187cf287f984" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga35f1bf10bc85316bf38cc8e4e3db5651" kindref="member">sai_object_list_t</ref></type>
+        <definition>sai_object_list_t _sai_attribute_value_t::objlist</definition>
+        <argsstring></argsstring>
+        <name>objlist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_OBJECT_LIST </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1526" column="23" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1526" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1acc5efa2763134bfa0559653a81b2ab9c" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__sai__u8__list__t" kindref="compound">sai_u8_list_t</ref></type>
+        <definition>sai_u8_list_t _sai_attribute_value_t::u8list</definition>
+        <argsstring></argsstring>
+        <name>u8list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_UINT8_LIST </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1529" column="19" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1529" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1a96bff6d16a9aa9a3139a71d7699680fc" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga7c43690e546df2a07f7029736a731d52" kindref="member">sai_s8_list_t</ref></type>
+        <definition>sai_s8_list_t _sai_attribute_value_t::s8list</definition>
+        <argsstring></argsstring>
+        <name>s8list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_INT8_LIST </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1532" column="19" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1532" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1af75da38738b2b82c34a3f8b7341ef157" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__sai__u16__list__t" kindref="compound">sai_u16_list_t</ref></type>
+        <definition>sai_u16_list_t _sai_attribute_value_t::u16list</definition>
+        <argsstring></argsstring>
+        <name>u16list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_UINT16_LIST </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1535" column="20" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1535" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1a00b12e1db4cf6c6defbc46d45f5093b3" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__sai__s16__list__t" kindref="compound">sai_s16_list_t</ref></type>
+        <definition>sai_s16_list_t _sai_attribute_value_t::s16list</definition>
+        <argsstring></argsstring>
+        <name>s16list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_INT16_LIST </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1538" column="20" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1538" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1a3dd4f5a5912e49d2a8ec60679ce0da56" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__sai__u32__list__t" kindref="compound">sai_u32_list_t</ref></type>
+        <definition>sai_u32_list_t _sai_attribute_value_t::u32list</definition>
+        <argsstring></argsstring>
+        <name>u32list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_UINT32_LIST </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1541" column="20" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1541" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1a32e6d34e56834f7a9031a5f71bdf44b5" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__sai__s32__list__t" kindref="compound">sai_s32_list_t</ref></type>
+        <definition>sai_s32_list_t _sai_attribute_value_t::s32list</definition>
+        <argsstring></argsstring>
+        <name>s32list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Serialize suffix:</title><para> @@suffix          enum_list </para>
+</simplesect>
+<simplesect kind="par"><title>Pass paramater:</title><para> @@passparam       meta-&gt;enummetadata </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_INT32_LIST </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1548" column="20" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1548" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1a98b8d81d07dc87629f441a0daf2ef7aa" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__sai__u32__range__t" kindref="compound">sai_u32_range_t</ref></type>
+        <definition>sai_u32_range_t _sai_attribute_value_t::u32range</definition>
+        <argsstring></argsstring>
+        <name>u32range</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_UINT32_RANGE </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1551" column="21" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1551" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1ad30700d5fdb32504560ef9dbf7ce5ac8" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__sai__s32__range__t" kindref="compound">sai_s32_range_t</ref></type>
+        <definition>sai_s32_range_t _sai_attribute_value_t::s32range</definition>
+        <argsstring></argsstring>
+        <name>s32range</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_INT32_RANGE </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1554" column="21" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1554" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1a57e984be9fb920aeaecf73fc73aeadf2" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__sai__u16__range__list__t" kindref="compound">sai_u16_range_list_t</ref></type>
+        <definition>sai_u16_range_list_t _sai_attribute_value_t::u16rangelist</definition>
+        <argsstring></argsstring>
+        <name>u16rangelist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_UINT16_RANGE_LIST </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1557" column="26" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1557" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1ab7ab3cf29e7f9c29bddc74df90a83a75" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1gaceb7bb9da5b8d48d391c459ecfd4f9b4" kindref="member">sai_vlan_list_t</ref></type>
+        <definition>sai_vlan_list_t _sai_attribute_value_t::vlanlist</definition>
+        <argsstring></argsstring>
+        <name>vlanlist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_VLAN_LIST </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1560" column="21" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1560" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1a171ed56135d75ff5e75c8e1372f10a59" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__sai__qos__map__list__t" kindref="compound">sai_qos_map_list_t</ref></type>
+        <definition>sai_qos_map_list_t _sai_attribute_value_t::qosmap</definition>
+        <argsstring></argsstring>
+        <name>qosmap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_QOS_MAP_LIST </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1563" column="24" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1563" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1a0e7111ce4a49fd6f46d4eda4e3fdd10b" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__sai__map__list__t" kindref="compound">sai_map_list_t</ref></type>
+        <definition>sai_map_list_t _sai_attribute_value_t::maplist</definition>
+        <argsstring></argsstring>
+        <name>maplist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_MAP_LIST </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1566" column="20" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1566" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1acfe7fe054e6814d1443a228df4392680" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga4a9bf69faa0a8fb6c3ec872b212198f5" kindref="member">sai_acl_field_data_t</ref></type>
+        <definition>sai_acl_field_data_t _sai_attribute_value_t::aclfield</definition>
+        <argsstring></argsstring>
+        <name>aclfield</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Pass paramater:</title><para> @@passparam       meta </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;isaclfield == true </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1574" column="26" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1574" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1a50549e466772845fcea721b91a22b0d8" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1gaf1c9c3a029bb1ef244c40022aec90153" kindref="member">sai_acl_action_data_t</ref></type>
+        <definition>sai_acl_action_data_t _sai_attribute_value_t::aclaction</definition>
+        <argsstring></argsstring>
+        <name>aclaction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Pass paramater:</title><para> @@passparam       meta </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;isaclaction == true </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1580" column="27" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1580" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1adf1b2effc62516949934a3aff15a5d49" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga29ceb0c26f9f612fe991c5de277abc8c" kindref="member">sai_acl_field_data_mask_t</ref></type>
+        <definition>sai_acl_field_data_mask_t _sai_attribute_value_t::aclmask</definition>
+        <argsstring></argsstring>
+        <name>aclmask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Pass paramater:</title><para> @@passparam       meta </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;isaclmask == true </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1586" column="31" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1586" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1ac1c5749b06c553ec266f44bb31437348" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1gaa2d155173f27b09573d1419028e0d720" kindref="member">sai_acl_capability_t</ref></type>
+        <definition>sai_acl_capability_t _sai_attribute_value_t::aclcapability</definition>
+        <argsstring></argsstring>
+        <name>aclcapability</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_ACL_CAPABILITY </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1589" column="26" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1589" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1a797f78c55c820dd3abe15b8d246a5320" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga2973f996529c00d9a535577b6aa83396" kindref="member">sai_acl_resource_list_t</ref></type>
+        <definition>sai_acl_resource_list_t _sai_attribute_value_t::aclresource</definition>
+        <argsstring></argsstring>
+        <name>aclresource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_ACL_RESOURCE_LIST </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1592" column="29" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1592" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1afe75ff7bbd8fe8f4cb8d512f921647f7" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga7d9584c65cb8acc33acfd5dda9a865e2" kindref="member">sai_tlv_list_t</ref></type>
+        <definition>sai_tlv_list_t _sai_attribute_value_t::tlvlist</definition>
+        <argsstring></argsstring>
+        <name>tlvlist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_TLV_LIST </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1595" column="20" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1595" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1a1d2b1bb533665836a11e5a05b264bdee" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga4b074fbe700dad02a46e485363d19d61" kindref="member">sai_segment_list_t</ref></type>
+        <definition>sai_segment_list_t _sai_attribute_value_t::segmentlist</definition>
+        <argsstring></argsstring>
+        <name>segmentlist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_SEGMENT_LIST </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1598" column="24" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1598" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1a3f72d0e5d566d79259951a4ecaea72b8" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__sai__ip__address__list__t" kindref="compound">sai_ip_address_list_t</ref></type>
+        <definition>sai_ip_address_list_t _sai_attribute_value_t::ipaddrlist</definition>
+        <argsstring></argsstring>
+        <name>ipaddrlist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_IP_ADDRESS_LIST </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1601" column="27" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1601" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1a99043e5cab501fe7705804851002af98" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga8568500db91f271aeb0177435ef822c4" kindref="member">sai_port_eye_values_list_t</ref></type>
+        <definition>sai_port_eye_values_list_t _sai_attribute_value_t::porteyevalues</definition>
+        <argsstring></argsstring>
+        <name>porteyevalues</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_PORT_EYE_VALUES_LIST </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1604" column="32" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1604" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1a3b16b7fe01c77aef03f4d81224717089" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__sai__timespec__t" kindref="compound">sai_timespec_t</ref></type>
+        <definition>sai_timespec_t _sai_attribute_value_t::timespec</definition>
+        <argsstring></argsstring>
+        <name>timespec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_TIMESPEC </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1607" column="20" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1607" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1a7eae332f438ebea81d61e3065136d607" prot="public" static="no" mutable="no">
+        <type>sai_encrypt_key_t</type>
+        <definition>sai_encrypt_key_t _sai_attribute_value_t::encrypt_key</definition>
+        <argsstring></argsstring>
+        <name>encrypt_key</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_ENCRYPT_KEY </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1610" column="23" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1610" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1a36756268c26c99936354c148b144318c" prot="public" static="no" mutable="no">
+        <type>sai_auth_key_t</type>
+        <definition>sai_auth_key_t _sai_attribute_value_t::authkey</definition>
+        <argsstring></argsstring>
+        <name>authkey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_AUTH_KEY </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1613" column="20" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1613" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1a57b83fb6c189997a93893fcb61e98567" prot="public" static="no" mutable="no">
+        <type>sai_macsec_sak_t</type>
+        <definition>sai_macsec_sak_t _sai_attribute_value_t::macsecsak</definition>
+        <argsstring></argsstring>
+        <name>macsecsak</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_MACSEC_SAK </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1616" column="22" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1616" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1aa41b4abc92247b71fd77aa2e7e0e7293" prot="public" static="no" mutable="no">
+        <type>sai_macsec_auth_key_t</type>
+        <definition>sai_macsec_auth_key_t _sai_attribute_value_t::macsecauthkey</definition>
+        <argsstring></argsstring>
+        <name>macsecauthkey</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_MACSEC_AUTH_KEY </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1619" column="27" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1619" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1a3725f4393ff274895db47226e8e4cc87" prot="public" static="no" mutable="no">
+        <type>sai_macsec_salt_t</type>
+        <definition>sai_macsec_salt_t _sai_attribute_value_t::macsecsalt</definition>
+        <argsstring></argsstring>
+        <name>macsecsalt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_MACSEC_SALT </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1622" column="23" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1622" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1ad9315f8a8cd836149bbdb1591236910f" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga438665665d1a3f4191b7996372816d99" kindref="member">sai_system_port_config_t</ref></type>
+        <definition>sai_system_port_config_t _sai_attribute_value_t::sysportconfig</definition>
+        <argsstring></argsstring>
+        <name>sysportconfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_SYSTEM_PORT_CONFIG </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1625" column="30" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1625" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1a3a6d80cdf26171d191008bfb1e7bc75d" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga6f2c1e3a86b638ae0958bfcb1c1dbf79" kindref="member">sai_system_port_config_list_t</ref></type>
+        <definition>sai_system_port_config_list_t _sai_attribute_value_t::sysportconfiglist</definition>
+        <argsstring></argsstring>
+        <name>sysportconfiglist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_SYSTEM_PORT_CONFIG_LIST </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1628" column="35" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1628" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1adfc7c63940d213d163d197a77e17656f" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga8814debbc0cc5ef0ad9f35d7b94b0978" kindref="member">sai_fabric_port_reachability_t</ref></type>
+        <definition>sai_fabric_port_reachability_t _sai_attribute_value_t::reachability</definition>
+        <argsstring></argsstring>
+        <name>reachability</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_FABRIC_PORT_REACHABILITY </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1631" column="36" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1631" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1a59f785d643832f09fbc678fc3dcec37b" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1gae95576ce39de9c8aae91fd34200133da" kindref="member">sai_port_err_status_list_t</ref></type>
+        <definition>sai_port_err_status_list_t _sai_attribute_value_t::porterror</definition>
+        <argsstring></argsstring>
+        <name>porterror</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_PORT_ERR_STATUS_LIST </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1634" column="32" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1634" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1a7823d39a5ab4726df5169e0b29adbe98" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__sai__port__lane__latch__status__list__t" kindref="compound">sai_port_lane_latch_status_list_t</ref></type>
+        <definition>sai_port_lane_latch_status_list_t _sai_attribute_value_t::portlanelatchstatuslist</definition>
+        <argsstring></argsstring>
+        <name>portlanelatchstatuslist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_PORT_LANE_LATCH_STATUS_LIST </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1637" column="39" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1637" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1a5a98c0e20d92df594966114755293a64" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__sai__latch__status__t" kindref="compound">sai_latch_status_t</ref></type>
+        <definition>sai_latch_status_t _sai_attribute_value_t::latchstatus</definition>
+        <argsstring></argsstring>
+        <name>latchstatus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_LATCH_STATUS </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1640" column="24" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1640" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1a25a93697be76c81e1674afb9e7a2cd18" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga86bc6f40adc2a4ee7caa899b81f9dac9" kindref="member">sai_json_t</ref></type>
+        <definition>sai_json_t _sai_attribute_value_t::json</definition>
+        <argsstring></argsstring>
+        <name>json</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_JSON </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1643" column="16" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1643" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1ae455a5edeb7815d10362e34902f9049c" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__sai__ip__prefix__list__t" kindref="compound">sai_ip_prefix_list_t</ref></type>
+        <definition>sai_ip_prefix_list_t _sai_attribute_value_t::ipprefixlist</definition>
+        <argsstring></argsstring>
+        <name>ipprefixlist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_IP_PREFIX_LIST </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1646" column="26" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1646" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1ae5077fd0c397a9b5b38e858cacdbf5ee" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__sai__acl__chain__list__t" kindref="compound">sai_acl_chain_list_t</ref></type>
+        <definition>sai_acl_chain_list_t _sai_attribute_value_t::aclchainlist</definition>
+        <argsstring></argsstring>
+        <name>aclchainlist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_ACL_CHAIN_LIST </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1649" column="26" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1649" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1a97836e39567b335ee852da45e2e295ad" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1gab3cff69f28d1c89b791d6f42ec799746" kindref="member">sai_port_frequency_offset_ppm_list_t</ref></type>
+        <definition>sai_port_frequency_offset_ppm_list_t _sai_attribute_value_t::portfrequencyoffsetppmlist</definition>
+        <argsstring></argsstring>
+        <name>portfrequencyoffsetppmlist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_PORT_FREQUENCY_OFFSET_PPM_LIST </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1652" column="42" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1652" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1ad79e1e9950dc49a4c7ac6356c85aadef" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga88e24b04bbf92577607165247ee4b465" kindref="member">sai_port_snr_list_t</ref></type>
+        <definition>sai_port_snr_list_t _sai_attribute_value_t::portsnrlist</definition>
+        <argsstring></argsstring>
+        <name>portsnrlist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_PORT_SNR_LIST </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1655" column="25" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1655" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="union__sai__attribute__value__t_1aca0140d5d3ac5d1a2da2cf6f823bf5c6" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga7a711429e0e0ed33cda78a080f60f51f" kindref="member">sai_poe_port_power_consumption_t</ref></type>
+        <definition>sai_poe_port_power_consumption_t _sai_attribute_value_t::portpowerconsumption</definition>
+        <argsstring></argsstring>
+        <name>portpowerconsumption</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       meta-&gt;attrvaluetype == SAI_ATTR_VALUE_TYPE_POE_PORT_POWER_CONSUMPTION </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1658" column="38" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1658" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Data Type. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>To use enum values as attribute value is sai_int32_t s32</para>
+<para><simplesect kind="par"><title>Extra paramater:</title><para> @@extraparam      const sai_attr_metadata_t *meta </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="47">
+        <label>_sai_port_snr_values_t</label>
+        <link refid="struct__sai__port__snr__values__t"/>
+      </node>
+      <node id="12">
+        <label>_sai_u16_range_list_t</label>
+        <link refid="struct__sai__u16__range__list__t"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="31">
+        <label>_sai_system_port_config_list_t</label>
+        <link refid="struct__sai__system__port__config__list__t"/>
+        <childnode refid="32" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="37">
+        <label>_sai_port_frequency_offset_ppm_list_t</label>
+        <link refid="struct__sai__port__frequency__offset__ppm__list__t"/>
+        <childnode refid="38" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>_sai_acl_resource_t</label>
+        <link refid="struct__sai__acl__resource__t"/>
+      </node>
+      <node id="9">
+        <label>_sai_qos_map_list_t</label>
+        <link refid="struct__sai__qos__map__list__t"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="35">
+        <label>_sai_fabric_port_reachability_t</label>
+        <link refid="struct__sai__fabric__port__reachability__t"/>
+      </node>
+      <node id="42">
+        <label>_sai_acl_action_data_t</label>
+        <link refid="struct__sai__acl__action__data__t"/>
+        <childnode refid="43" relation="usage">
+          <edgelabel>parameter</edgelabel>
+        </childnode>
+      </node>
+      <node id="32">
+        <label>_sai_system_port_config_t</label>
+        <link refid="struct__sai__system__port__config__t"/>
+      </node>
+      <node id="24">
+        <label>_sai_object_list_t</label>
+        <link refid="struct__sai__object__list__t"/>
+      </node>
+      <node id="10">
+        <label>_sai_qos_map_t</label>
+        <link refid="struct__sai__qos__map__t"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>key</edgelabel>
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="11">
+        <label>_sai_qos_map_params_t</label>
+        <link refid="struct__sai__qos__map__params__t"/>
+      </node>
+      <node id="49">
+        <label>_sai_s16_list_t</label>
+        <link refid="struct__sai__s16__list__t"/>
+      </node>
+      <node id="22">
+        <label>_sai_acl_field_data_t</label>
+        <link refid="struct__sai__acl__field__data__t"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>mask</edgelabel>
+        </childnode>
+      </node>
+      <node id="51">
+        <label>_sai_port_eye_values_list_t</label>
+        <link refid="struct__sai__port__eye__values__list__t"/>
+        <childnode refid="52" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>_sai_tlv_t</label>
+        <link refid="struct__sai__tlv__t"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>entry</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>_sai_port_lane_latch_status_list_t</label>
+        <link refid="struct__sai__port__lane__latch__status__list__t"/>
+        <childnode refid="17" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>_sai_tlv_list_t</label>
+        <link refid="struct__sai__tlv__list__t"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="36">
+        <label>_sai_u32_range_t</label>
+        <link refid="struct__sai__u32__range__t"/>
+      </node>
+      <node id="2">
+        <label>_sai_port_err_status_list_t</label>
+        <link refid="struct__sai__port__err__status__list__t"/>
+      </node>
+      <node id="14">
+        <label>_sai_json_t</label>
+        <link refid="struct__sai__json__t"/>
+        <childnode refid="15" relation="usage">
+          <edgelabel>json</edgelabel>
+        </childnode>
+      </node>
+      <node id="33">
+        <label>_sai_segment_list_t</label>
+        <link refid="struct__sai__segment__list__t"/>
+      </node>
+      <node id="15">
+        <label>_sai_s8_list_t</label>
+        <link refid="struct__sai__s8__list__t"/>
+      </node>
+      <node id="1">
+        <label>_sai_attribute_value_t</label>
+        <link refid="union__sai__attribute__value__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>porterror</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>tlvlist</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>aclresource</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>qosmap</edgelabel>
+        </childnode>
+        <childnode refid="12" relation="usage">
+          <edgelabel>u16rangelist</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>json</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>portlanelatchstatuslist</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>ipaddrlist</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>aclfield</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>u16list</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>ipprefix</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>aclchainlist</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>sysportconfiglist</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>segmentlist</edgelabel>
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>portpowerconsumption</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>latchstatus</edgelabel>
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>reachability</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>sysportconfig</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>u32range</edgelabel>
+        </childnode>
+        <childnode refid="37" relation="usage">
+          <edgelabel>portfrequencyoffsetppmlist</edgelabel>
+        </childnode>
+        <childnode refid="39" relation="usage">
+          <edgelabel>s32list</edgelabel>
+        </childnode>
+        <childnode refid="40" relation="usage">
+          <edgelabel>ipprefixlist</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>aclmask</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>objlist</edgelabel>
+        </childnode>
+        <childnode refid="41" relation="usage">
+          <edgelabel>timespec</edgelabel>
+        </childnode>
+        <childnode refid="42" relation="usage">
+          <edgelabel>aclaction</edgelabel>
+        </childnode>
+        <childnode refid="44" relation="usage">
+          <edgelabel>vlanlist</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>ipaddr</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>u8list</edgelabel>
+        </childnode>
+        <childnode refid="45" relation="usage">
+          <edgelabel>rx_state</edgelabel>
+        </childnode>
+        <childnode refid="46" relation="usage">
+          <edgelabel>portsnrlist</edgelabel>
+        </childnode>
+        <childnode refid="48" relation="usage">
+          <edgelabel>u32list</edgelabel>
+        </childnode>
+        <childnode refid="49" relation="usage">
+          <edgelabel>s16list</edgelabel>
+        </childnode>
+        <childnode refid="50" relation="usage">
+          <edgelabel>aclcapability</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>s8list</edgelabel>
+        </childnode>
+        <childnode refid="51" relation="usage">
+          <edgelabel>porteyevalues</edgelabel>
+        </childnode>
+        <childnode refid="53" relation="usage">
+          <edgelabel>maplist</edgelabel>
+        </childnode>
+        <childnode refid="55" relation="usage">
+          <edgelabel>s32range</edgelabel>
+        </childnode>
+      </node>
+      <node id="46">
+        <label>_sai_port_snr_list_t</label>
+        <link refid="struct__sai__port__snr__list__t"/>
+        <childnode refid="47" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>_sai_acl_field_data_data_t</label>
+        <link refid="union__sai__acl__field__data__data__t"/>
+        <childnode refid="24" relation="usage">
+          <edgelabel>objlist</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>u8list</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>_sai_acl_chain_t</label>
+        <link refid="struct__sai__acl__chain__t"/>
+      </node>
+      <node id="28">
+        <label>_sai_ip_prefix_t</label>
+        <link refid="struct__sai__ip__prefix__t"/>
+        <childnode refid="21" relation="usage">
+          <edgelabel>addr</edgelabel>
+          <edgelabel>mask</edgelabel>
+        </childnode>
+      </node>
+      <node id="48">
+        <label>_sai_u32_list_t</label>
+        <link refid="struct__sai__u32__list__t"/>
+      </node>
+      <node id="13">
+        <label>_sai_u16_range_t</label>
+        <link refid="struct__sai__u16__range__t"/>
+      </node>
+      <node id="44">
+        <label>_sai_vlan_list_t</label>
+        <link refid="struct__sai__vlan__list__t"/>
+      </node>
+      <node id="17">
+        <label>_sai_port_lane_latch_status_t</label>
+        <link refid="struct__sai__port__lane__latch__status__t"/>
+        <childnode refid="18" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="34">
+        <label>_sai_poe_port_power_consumption_t</label>
+        <link refid="struct__sai__poe__port__power__consumption__t"/>
+      </node>
+      <node id="5">
+        <label>_sai_tlv_entry_t</label>
+        <link refid="union__sai__tlv__entry__t"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>hmac</edgelabel>
+        </childnode>
+      </node>
+      <node id="29">
+        <label>_sai_acl_chain_list_t</label>
+        <link refid="struct__sai__acl__chain__list__t"/>
+        <childnode refid="30" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="53">
+        <label>_sai_map_list_t</label>
+        <link refid="struct__sai__map__list__t"/>
+        <childnode refid="54" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="55">
+        <label>_sai_s32_range_t</label>
+        <link refid="struct__sai__s32__range__t"/>
+      </node>
+      <node id="6">
+        <label>_sai_hmac_t</label>
+        <link refid="struct__sai__hmac__t"/>
+      </node>
+      <node id="26">
+        <label>_sai_acl_field_data_mask_t</label>
+        <link refid="union__sai__acl__field__data__mask__t"/>
+        <childnode refid="25" relation="usage">
+          <edgelabel>u8list</edgelabel>
+        </childnode>
+      </node>
+      <node id="41">
+        <label>_sai_timespec_t</label>
+        <link refid="struct__sai__timespec__t"/>
+      </node>
+      <node id="54">
+        <label>_sai_map_t</label>
+        <link refid="struct__sai__map__t"/>
+      </node>
+      <node id="52">
+        <label>_sai_port_lane_eye_values_t</label>
+        <link refid="struct__sai__port__lane__eye__values__t"/>
+      </node>
+      <node id="18">
+        <label>_sai_latch_status_t</label>
+        <link refid="struct__sai__latch__status__t"/>
+      </node>
+      <node id="7">
+        <label>_sai_acl_resource_list_t</label>
+        <link refid="struct__sai__acl__resource__list__t"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>_sai_ip_address_t</label>
+        <link refid="struct__sai__ip__address__t"/>
+        <childnode refid="21" relation="usage">
+          <edgelabel>addr</edgelabel>
+        </childnode>
+      </node>
+      <node id="40">
+        <label>_sai_ip_prefix_list_t</label>
+        <link refid="struct__sai__ip__prefix__list__t"/>
+        <childnode refid="28" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="39">
+        <label>_sai_s32_list_t</label>
+        <link refid="struct__sai__s32__list__t"/>
+      </node>
+      <node id="19">
+        <label>_sai_ip_address_list_t</label>
+        <link refid="struct__sai__ip__address__list__t"/>
+        <childnode refid="20" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>_sai_ip_addr_t</label>
+        <link refid="union__sai__ip__addr__t"/>
+      </node>
+      <node id="25">
+        <label>_sai_u8_list_t</label>
+        <link refid="struct__sai__u8__list__t"/>
+      </node>
+      <node id="27">
+        <label>_sai_u16_list_t</label>
+        <link refid="struct__sai__u16__list__t"/>
+      </node>
+      <node id="43">
+        <label>_sai_acl_action_parameter_t</label>
+        <link refid="union__sai__acl__action__parameter__t"/>
+        <childnode refid="24" relation="usage">
+          <edgelabel>objlist</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>ipaddr</edgelabel>
+        </childnode>
+      </node>
+      <node id="38">
+        <label>_sai_port_frequency_offset_ppm_values_t</label>
+        <link refid="struct__sai__port__frequency__offset__ppm__values__t"/>
+      </node>
+      <node id="50">
+        <label>_sai_acl_capability_t</label>
+        <link refid="struct__sai__acl__capability__t"/>
+        <childnode refid="39" relation="usage">
+          <edgelabel>action_list</edgelabel>
+        </childnode>
+      </node>
+      <node id="45">
+        <label>_sai_prbs_rx_state_t</label>
+        <link refid="struct__sai__prbs__rx__state__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1465" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1466" bodyend="1660"/>
+    <listofallmembers>
+      <member refid="union__sai__attribute__value__t_1a50549e466772845fcea721b91a22b0d8" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>aclaction</name></member>
+      <member refid="union__sai__attribute__value__t_1ac1c5749b06c553ec266f44bb31437348" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>aclcapability</name></member>
+      <member refid="union__sai__attribute__value__t_1ae5077fd0c397a9b5b38e858cacdbf5ee" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>aclchainlist</name></member>
+      <member refid="union__sai__attribute__value__t_1acfe7fe054e6814d1443a228df4392680" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>aclfield</name></member>
+      <member refid="union__sai__attribute__value__t_1adf1b2effc62516949934a3aff15a5d49" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>aclmask</name></member>
+      <member refid="union__sai__attribute__value__t_1a797f78c55c820dd3abe15b8d246a5320" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>aclresource</name></member>
+      <member refid="union__sai__attribute__value__t_1a36756268c26c99936354c148b144318c" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>authkey</name></member>
+      <member refid="union__sai__attribute__value__t_1a9adef7630b6cd6d1537e47241db25692" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>booldata</name></member>
+      <member refid="union__sai__attribute__value__t_1a646382debdffe287971f300c7e4bea6b" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>chardata</name></member>
+      <member refid="union__sai__attribute__value__t_1a7eae332f438ebea81d61e3065136d607" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>encrypt_key</name></member>
+      <member refid="union__sai__attribute__value__t_1a86b2676427ec476fd743193e7077586d" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>ip4</name></member>
+      <member refid="union__sai__attribute__value__t_1a5f2ea716cb002e98ae27ef322f8149bf" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>ip6</name></member>
+      <member refid="union__sai__attribute__value__t_1a1a1b4686efce17921cb51a42c2bd89dd" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>ipaddr</name></member>
+      <member refid="union__sai__attribute__value__t_1a3f72d0e5d566d79259951a4ecaea72b8" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>ipaddrlist</name></member>
+      <member refid="union__sai__attribute__value__t_1a18150285430422d166b54d9b7407db5b" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>ipprefix</name></member>
+      <member refid="union__sai__attribute__value__t_1ae455a5edeb7815d10362e34902f9049c" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>ipprefixlist</name></member>
+      <member refid="union__sai__attribute__value__t_1a25a93697be76c81e1674afb9e7a2cd18" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>json</name></member>
+      <member refid="union__sai__attribute__value__t_1a5a98c0e20d92df594966114755293a64" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>latchstatus</name></member>
+      <member refid="union__sai__attribute__value__t_1ae9baae611ef89466968225ba63c45ab3" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>mac</name></member>
+      <member refid="union__sai__attribute__value__t_1aa41b4abc92247b71fd77aa2e7e0e7293" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>macsecauthkey</name></member>
+      <member refid="union__sai__attribute__value__t_1a57b83fb6c189997a93893fcb61e98567" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>macsecsak</name></member>
+      <member refid="union__sai__attribute__value__t_1a3725f4393ff274895db47226e8e4cc87" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>macsecsalt</name></member>
+      <member refid="union__sai__attribute__value__t_1a0e7111ce4a49fd6f46d4eda4e3fdd10b" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>maplist</name></member>
+      <member refid="union__sai__attribute__value__t_1a45b78c6c359e5e16ad45187cf287f984" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>objlist</name></member>
+      <member refid="union__sai__attribute__value__t_1aa0b6595f04f1e0ef274979eb56a0e554" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>oid</name></member>
+      <member refid="union__sai__attribute__value__t_1a59f785d643832f09fbc678fc3dcec37b" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>porterror</name></member>
+      <member refid="union__sai__attribute__value__t_1a99043e5cab501fe7705804851002af98" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>porteyevalues</name></member>
+      <member refid="union__sai__attribute__value__t_1a97836e39567b335ee852da45e2e295ad" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>portfrequencyoffsetppmlist</name></member>
+      <member refid="union__sai__attribute__value__t_1a7823d39a5ab4726df5169e0b29adbe98" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>portlanelatchstatuslist</name></member>
+      <member refid="union__sai__attribute__value__t_1aca0140d5d3ac5d1a2da2cf6f823bf5c6" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>portpowerconsumption</name></member>
+      <member refid="union__sai__attribute__value__t_1ad79e1e9950dc49a4c7ac6356c85aadef" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>portsnrlist</name></member>
+      <member refid="union__sai__attribute__value__t_1ae864820a8fb70d597aad719f940d5659" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>ptr</name></member>
+      <member refid="union__sai__attribute__value__t_1a171ed56135d75ff5e75c8e1372f10a59" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>qosmap</name></member>
+      <member refid="union__sai__attribute__value__t_1adfc7c63940d213d163d197a77e17656f" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>reachability</name></member>
+      <member refid="union__sai__attribute__value__t_1aad5787914aa1eebbecec4bbaa8a6ca5c" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>rx_state</name></member>
+      <member refid="union__sai__attribute__value__t_1a39e54da9208a7995033aec4cfe4e0027" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>s16</name></member>
+      <member refid="union__sai__attribute__value__t_1a00b12e1db4cf6c6defbc46d45f5093b3" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>s16list</name></member>
+      <member refid="union__sai__attribute__value__t_1ae65f3057e5cc94e2b68d2b86b8676006" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>s32</name></member>
+      <member refid="union__sai__attribute__value__t_1a32e6d34e56834f7a9031a5f71bdf44b5" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>s32list</name></member>
+      <member refid="union__sai__attribute__value__t_1ad30700d5fdb32504560ef9dbf7ce5ac8" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>s32range</name></member>
+      <member refid="union__sai__attribute__value__t_1a87ec22bc77af7795f6d614b0247c8600" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>s64</name></member>
+      <member refid="union__sai__attribute__value__t_1ab7b94cea8e1ddef3eefa6130a9e150b5" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>s8</name></member>
+      <member refid="union__sai__attribute__value__t_1a96bff6d16a9aa9a3139a71d7699680fc" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>s8list</name></member>
+      <member refid="union__sai__attribute__value__t_1a1d2b1bb533665836a11e5a05b264bdee" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>segmentlist</name></member>
+      <member refid="union__sai__attribute__value__t_1ad9315f8a8cd836149bbdb1591236910f" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>sysportconfig</name></member>
+      <member refid="union__sai__attribute__value__t_1a3a6d80cdf26171d191008bfb1e7bc75d" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>sysportconfiglist</name></member>
+      <member refid="union__sai__attribute__value__t_1a3b16b7fe01c77aef03f4d81224717089" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>timespec</name></member>
+      <member refid="union__sai__attribute__value__t_1afe75ff7bbd8fe8f4cb8d512f921647f7" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>tlvlist</name></member>
+      <member refid="union__sai__attribute__value__t_1ad5e0b9c6f53e8cbc25cba6a93a5c90f2" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>u16</name></member>
+      <member refid="union__sai__attribute__value__t_1af75da38738b2b82c34a3f8b7341ef157" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>u16list</name></member>
+      <member refid="union__sai__attribute__value__t_1a57e984be9fb920aeaecf73fc73aeadf2" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>u16rangelist</name></member>
+      <member refid="union__sai__attribute__value__t_1aa33a8a236788ce65c65f6a3643764f71" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>u32</name></member>
+      <member refid="union__sai__attribute__value__t_1a3dd4f5a5912e49d2a8ec60679ce0da56" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>u32list</name></member>
+      <member refid="union__sai__attribute__value__t_1a98b8d81d07dc87629f441a0daf2ef7aa" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>u32range</name></member>
+      <member refid="union__sai__attribute__value__t_1a110111eb5ba1fa5a4201a907bc8ed68d" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>u64</name></member>
+      <member refid="union__sai__attribute__value__t_1af67b78afbda054bdabee951b896c6662" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>u8</name></member>
+      <member refid="union__sai__attribute__value__t_1acc5efa2763134bfa0559653a81b2ab9c" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>u8list</name></member>
+      <member refid="union__sai__attribute__value__t_1ab7ab3cf29e7f9c29bddc74df90a83a75" prot="public" virt="non-virtual"><scope>_sai_attribute_value_t</scope><name>vlanlist</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

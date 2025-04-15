@@ -1,0 +1,463 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group__SAIARS" kind="group">
+    <compoundname>SAIARS</compoundname>
+    <title>SAI - Adaptive Routing and Switching specific API definitions</title>
+    <innerclass refid="struct__sai__ars__api__t" prot="public">_sai_ars_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIARS_1gae2e9edb97c394693246f8d8fef2a0571" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_ars_mode_t</name>
+        <enumvalue id="group__SAIARS_1ggae2e9edb97c394693246f8d8fef2a0571a2c800baf365d1d1383fb34111da63c5d" prot="public">
+          <name>SAI_ARS_MODE_FLOWLET_QUALITY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Per flow-let quality based path (re)assignment </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARS_1ggae2e9edb97c394693246f8d8fef2a0571ab18156128847ab0fd1f66a3b5b79bad5" prot="public">
+          <name>SAI_ARS_MODE_FLOWLET_RANDOM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Per flow-let random path (re)assignment </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARS_1ggae2e9edb97c394693246f8d8fef2a0571ad7a1bbcbdd55a8064bc5e1f52052b620" prot="public">
+          <name>SAI_ARS_MODE_PER_PACKET_QUALITY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Per packet quality based path (re)assignment </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARS_1ggae2e9edb97c394693246f8d8fef2a0571a7843abea653bbf012fde73f695915657" prot="public">
+          <name>SAI_ARS_MODE_PER_PACKET_RANDOM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Per packet random path (re)assignment </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARS_1ggae2e9edb97c394693246f8d8fef2a0571ad27c30d619a44b37cd1176bb5136aa3f" prot="public">
+          <name>SAI_ARS_MODE_FIXED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Fixed path assignment </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Adaptive routing and switching path (re)assignment mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiars.h" line="39" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiars.h" bodystart="40" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIARS_1gaf81ab274cbdb49a8dea3b747a32bf47c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_ars_attr_t</name>
+        <enumvalue id="group__SAIARS_1ggaf81ab274cbdb49a8dea3b747a32bf47cabb260ff2b9b0edbf12d195052117ec2e" prot="public">
+          <name>SAI_ARS_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARS_1ggaf81ab274cbdb49a8dea3b747a32bf47ca776ce786bb9e1af55e8ed32d7d02696b" prot="public">
+          <name>SAI_ARS_ATTR_MODE</name>
+          <initializer>= SAI_ARS_ATTR_START</initializer>
+          <briefdescription>
+<para>ARS path assignment mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ars_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_ARS_MODE_FLOWLET_QUALITY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARS_1ggaf81ab274cbdb49a8dea3b747a32bf47cab9f17b8e095975f3e80bd8ffe5195b7c" prot="public">
+          <name>SAI_ARS_ATTR_IDLE_TIME</name>
+          <briefdescription>
+<para>Idle duration in microseconds. This duration is to classifying a flow-let in a macro flow. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         256 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARS_1ggaf81ab274cbdb49a8dea3b747a32bf47ca7cfceff59c88cddbca481bc4fb207ac8" prot="public">
+          <name>SAI_ARS_ATTR_MAX_FLOWS</name>
+          <briefdescription>
+<para>Maximum number of flow states that can be maintained per this ARS object. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         512 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARS_1ggaf81ab274cbdb49a8dea3b747a32bf47cae8b45b3caa97a41848d651f102e5965f" prot="public">
+          <name>SAI_ARS_ATTR_MON_ENABLE</name>
+          <briefdescription>
+<para>ARS monitoring. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARS_1ggaf81ab274cbdb49a8dea3b747a32bf47ca21cd63b4d741de8b9f088d5fd04dec08" prot="public">
+          <name>SAI_ARS_ATTR_SAMPLEPACKET_ENABLE</name>
+          <briefdescription>
+<para>Enable/Disable ARS Samplepacket session. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Enable ARS sampling by assigning samplepacket object id. Disable ARS sampling by assigning <ref refid="group__SAITYPES_1ga05f6bb4ef9f7ddf0ceb2056dc6ac8c6c" kindref="member">SAI_NULL_OBJECT_ID</ref> as attribute value.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_SAMPLEPACKET </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARS_1ggaf81ab274cbdb49a8dea3b747a32bf47cae781177fa9804dc3a9d4e2e1dd0c0e2a" prot="public">
+          <name>SAI_ARS_ATTR_MAX_ALT_MEMEBERS_PER_GROUP</name>
+          <briefdescription>
+<para>Maximum number of alternate members per adaptive routing group. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         16 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARS_1ggaf81ab274cbdb49a8dea3b747a32bf47ca782451df8a1e105eef30d23213519cf5" prot="public">
+          <name>SAI_ARS_ATTR_MAX_PRIMARY_MEMEBERS_PER_GROUP</name>
+          <briefdescription>
+<para>Maximum number of primary members per adaptive routing group. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         16 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARS_1ggaf81ab274cbdb49a8dea3b747a32bf47ca24aa92ca9d2587bd7a020a40ecce3ea5" prot="public">
+          <name>SAI_ARS_ATTR_PRIMARY_PATH_QUALITY_THRESHOLD</name>
+          <briefdescription>
+<para>Quality threshold for least cost ARS paths. Crossing down the threshold will result in using the non least cost sub optimal path. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         16 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARS_1ggaf81ab274cbdb49a8dea3b747a32bf47ca40272a04b5cd34fd9b875e6b6622a849" prot="public">
+          <name>SAI_ARS_ATTR_ALTERNATE_PATH_COST</name>
+          <briefdescription>
+<para>Cost of switching over to non least cost ARS paths. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARS_1ggaf81ab274cbdb49a8dea3b747a32bf47ca3781b75a3b974578affd6bdfc14217ae" prot="public">
+          <name>SAI_ARS_ATTR_ALTERNATE_PATH_BIAS</name>
+          <briefdescription>
+<para>Indicates the bias in favor of alternate path. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARS_1ggaf81ab274cbdb49a8dea3b747a32bf47ca419936719cb6d127c48a47f721229cb8" prot="public">
+          <name>SAI_ARS_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARS_1ggaf81ab274cbdb49a8dea3b747a32bf47ca58393d7517a7f87c144723497741c5af" prot="public">
+          <name>SAI_ARS_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARS_1ggaf81ab274cbdb49a8dea3b747a32bf47ca95f9130eeeb5eb1829b9deed47fbfaa6" prot="public">
+          <name>SAI_ARS_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute id for adaptive routing and switching. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiars.h" line="61" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiars.h" bodystart="62" bodyend="174"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIARS_1gab25dbdc6e25464cb7b7c3639eab76c23" prot="public" static="no">
+        <type>enum <ref refid="group__SAIARS_1gae2e9edb97c394693246f8d8fef2a0571" kindref="member">_sai_ars_mode_t</ref></type>
+        <definition>typedef enum _sai_ars_mode_t sai_ars_mode_t</definition>
+        <argsstring></argsstring>
+        <name>sai_ars_mode_t</name>
+        <briefdescription>
+<para>Adaptive routing and switching path (re)assignment mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiars.h" line="56" column="16"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIARS_1ga070f41c3c85e780144ef2a5e89ea8748" prot="public" static="no">
+        <type>enum <ref refid="group__SAIARS_1gaf81ab274cbdb49a8dea3b747a32bf47c" kindref="member">_sai_ars_attr_t</ref></type>
+        <definition>typedef enum _sai_ars_attr_t sai_ars_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_ars_attr_t</name>
+        <briefdescription>
+<para>Attribute id for adaptive routing and switching. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiars.h" line="174" column="16"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIARS_1ga25a79e81683dc57a2a5e99e5d3b9f361" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_ars_fn) (_Out_ sai_object_id_t *ars_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *ars_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_ars_fn</name>
+        <briefdescription>
+<para>Create adaptive routing and switching object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">ars_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Adaptive routing and switching id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiars.h" line="186" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiars.h" bodystart="186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIARS_1ga00b68de931423ae316cd99e6284eccb8" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_ars_fn) (_In_ sai_object_id_t ars_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t ars_id)</argsstring>
+        <name>sai_remove_ars_fn</name>
+        <briefdescription>
+<para>Remove adaptive routing and switching object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ars_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Adaptive routing and switching id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiars.h" line="199" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiars.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIARS_1ga7936f6acc9fc7f2e5c30d42d533f4ed8" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_ars_attribute_fn) (_In_ sai_object_id_t ars_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t ars_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_ars_attribute_fn</name>
+        <briefdescription>
+<para>Set Adaptive routing and switching attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ars_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Adaptive routing and switching id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiars.h" line="210" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiars.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIARS_1ga674d02e4d611454f2d92751534923378" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_ars_attribute_fn) (_In_ sai_object_id_t ars_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t ars_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_ars_attribute_fn</name>
+        <briefdescription>
+<para>Get Adaptive routing and switching attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ars_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Adaptive routing and switching id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiars.h" line="223" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiars.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIARS_1gaf04cdb890c069d9609569ac84a74cdfe" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__ars__api__t" kindref="compound">_sai_ars_api_t</ref></type>
+        <definition>typedef struct _sai_ars_api_t sai_ars_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_ars_api_t</name>
+        <briefdescription>
+<para>Adaptive routing and switching methods table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiars.h" line="237" column="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

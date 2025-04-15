@@ -1,0 +1,343 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="saigenericprogrammable_8h" kind="file" language="C++">
+    <compoundname>saigenericprogrammable.h</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+    <includedby refid="sai_8h" local="yes">/home/andrii/sai_hw1/SAI/inc/sai.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="5">
+        <label>sys/types.h</label>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saigenericprogrammable.h</label>
+        <link refid="saigenericprogrammable_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>saitypes.h</label>
+        <link refid="saitypes_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/andrii/sai_hw1/SAI/inc/sai.h</label>
+        <link refid="sai_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saigenericprogrammable.h</label>
+        <link refid="saigenericprogrammable_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</label>
+        <link refid="saiextensions_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct__sai__generic__programmable__api__t" prot="public">_sai_generic_programmable_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIGENERICPROGRAMMABLE_1ga75693922501e1fb5b6e4f51c028f5cbb" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_generic_programmable_attr_t</name>
+        <enumvalue id="group__SAIGENERICPROGRAMMABLE_1gga75693922501e1fb5b6e4f51c028f5cbbab4141470a4d1bbbb33693739e5066368" prot="public">
+          <name>SAI_GENERIC_PROGRAMMABLE_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIGENERICPROGRAMMABLE_1gga75693922501e1fb5b6e4f51c028f5cbba6bd91d818c9ac3fc79a9378b4bf742a1" prot="public">
+          <name>SAI_GENERIC_PROGRAMMABLE_ATTR_OBJECT_NAME</name>
+          <initializer>= SAI_GENERIC_PROGRAMMABLE_ATTR_START</initializer>
+          <briefdescription>
+<para>HW block name to program the entry. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_s8_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIGENERICPROGRAMMABLE_1gga75693922501e1fb5b6e4f51c028f5cbbaf647e00901db92b5fe18ec55993b8008" prot="public">
+          <name>SAI_GENERIC_PROGRAMMABLE_ATTR_ENTRY</name>
+          <briefdescription>
+<para>JSON string carrying HW block entry information. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_json_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         vendor </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIGENERICPROGRAMMABLE_1gga75693922501e1fb5b6e4f51c028f5cbba972688f69c3a1c5e1150170a271632a1" prot="public">
+          <name>SAI_GENERIC_PROGRAMMABLE_ATTR_COUNTER_ID</name>
+          <briefdescription>
+<para>Attach a counter. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>When it is empty, then packet hits won&apos;t be counted</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_COUNTER </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIGENERICPROGRAMMABLE_1gga75693922501e1fb5b6e4f51c028f5cbbadccb04592ad71999b7e09cc2964a58d1" prot="public">
+          <name>SAI_GENERIC_PROGRAMMABLE_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIGENERICPROGRAMMABLE_1gga75693922501e1fb5b6e4f51c028f5cbba6e2bb5f754da508114f5c88d139b1642" prot="public">
+          <name>SAI_GENERIC_PROGRAMMABLE_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIGENERICPROGRAMMABLE_1gga75693922501e1fb5b6e4f51c028f5cbbafa75c2529144c6eecf404a82220ff205" prot="public">
+          <name>SAI_GENERIC_PROGRAMMABLE_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute Id for Generic Programmable extension. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saigenericprogrammable.h" line="39" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saigenericprogrammable.h" bodystart="40" bodyend="87"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIGENERICPROGRAMMABLE_1ga404102174b8725169b60dbb5ddd010d1" prot="public" static="no">
+        <type>enum <ref refid="group__SAIGENERICPROGRAMMABLE_1ga75693922501e1fb5b6e4f51c028f5cbb" kindref="member">_sai_generic_programmable_attr_t</ref></type>
+        <definition>typedef enum _sai_generic_programmable_attr_t sai_generic_programmable_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_generic_programmable_attr_t</name>
+        <briefdescription>
+<para>Attribute Id for Generic Programmable extension. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saigenericprogrammable.h" line="87" column="33"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIGENERICPROGRAMMABLE_1gac2afb647a9bfadad2163ccfce7dae1c4" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_generic_programmable_fn) (_Out_ sai_object_id_t *generic_programmable_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *generic_programmable_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_generic_programmable_fn</name>
+        <briefdescription>
+<para>Create a Generic programmable entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">generic_programmable_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The OID returned per entry per HW block </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Switch Object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saigenericprogrammable.h" line="99" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saigenericprogrammable.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIGENERICPROGRAMMABLE_1gabff7649569dc483fb1d36eea30a840c1" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_generic_programmable_fn) (_In_ sai_object_id_t generic_programmable_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t generic_programmable_id)</argsstring>
+        <name>sai_remove_generic_programmable_fn</name>
+        <briefdescription>
+<para>Delete a Generic programmable entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">generic_programmable_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The table id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saigenericprogrammable.h" line="112" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saigenericprogrammable.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIGENERICPROGRAMMABLE_1gab958714dab25a1362bed5b4afaf7499e" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_generic_programmable_attribute_fn) (_In_ sai_object_id_t generic_programmable_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t generic_programmable_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_generic_programmable_attribute_fn</name>
+        <briefdescription>
+<para>Set Generic programmable Table entry attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">generic_programmable_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The table id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saigenericprogrammable.h" line="123" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saigenericprogrammable.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIGENERICPROGRAMMABLE_1ga2694cfc05231283bfa9d2b197642aad3" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_generic_programmable_attribute_fn) (_In_ sai_object_id_t generic_programmable_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t generic_programmable_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_generic_programmable_attribute_fn</name>
+        <briefdescription>
+<para>Get Generic programmable entry attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">generic_programmable_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The table id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saigenericprogrammable.h" line="136" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saigenericprogrammable.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIGENERICPROGRAMMABLE_1gaec3d17120887135c871dced0407eae88" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__generic__programmable__api__t" kindref="compound">_sai_generic_programmable_api_t</ref></type>
+        <definition>typedef struct _sai_generic_programmable_api_t sai_generic_programmable_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_generic_programmable_api_t</name>
+        <briefdescription>
+<para>Generic extensions methods table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saigenericprogrammable.h" line="150" column="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module defines SAI Genetic Programmable Extensions (GPE) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2014 Microsoft Open Technologies, Inc.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <ulink url="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</ulink></para>
+<para>THIS CODE IS PROVIDED ON AN <emphasis>AS IS</emphasis> BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</para>
+<para>See the Apache Version 2.0 License for specific language governing permissions and limitations under the License.</para>
+<para>Microsoft would like to thank the following companies for their review and assistance with these files: Intel Corporation, Mellanox Technologies Ltd, Dell Products, L.P., Facebook, Inc., Marvell International Ltd. </para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saigenericprogrammable.h"/>
+  </compounddef>
+</doxygen>

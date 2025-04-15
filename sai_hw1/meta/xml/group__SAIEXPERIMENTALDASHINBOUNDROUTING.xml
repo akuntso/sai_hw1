@@ -1,0 +1,503 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group__SAIEXPERIMENTALDASHINBOUNDROUTING" kind="group">
+    <compoundname>SAIEXPERIMENTALDASHINBOUNDROUTING</compoundname>
+    <title>SAI - Experimental: DASH inbound routing specific API definitions</title>
+    <innerclass refid="struct__sai__inbound__routing__entry__t" prot="public">_sai_inbound_routing_entry_t</innerclass>
+    <innerclass refid="struct__sai__dash__inbound__routing__api__t" prot="public">_sai_dash_inbound_routing_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1gab90d378226b57a46f72f0b86203501b8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_inbound_routing_entry_action_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1ggab90d378226b57a46f72f0b86203501b8ae62d8cdaac95ef7ab732295961603596" prot="public">
+          <name>SAI_INBOUND_ROUTING_ENTRY_ACTION_TUNNEL_DECAP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1ggab90d378226b57a46f72f0b86203501b8a6bf692699602c1fae4cdbe610994a353" prot="public">
+          <name>SAI_INBOUND_ROUTING_ENTRY_ACTION_TUNNEL_DECAP_PA_VALIDATE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1ggab90d378226b57a46f72f0b86203501b8a4d23c46aaea0c15193a117e2c9643741" prot="public">
+          <name>SAI_INBOUND_ROUTING_ENTRY_ACTION_VXLAN_DECAP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1ggab90d378226b57a46f72f0b86203501b8a75dceb23e011c64ebc93f51926174b3f" prot="public">
+          <name>SAI_INBOUND_ROUTING_ENTRY_ACTION_VXLAN_DECAP_PA_VALIDATE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute data for <ref refid="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1ggaee819ec94ed6741f03e8bb42918b4f85a96b6d78470399afc11204287cdeca1ac" kindref="member">SAI_INBOUND_ROUTING_ENTRY_ATTR_ACTION</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h" line="41" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h" bodystart="42" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1gaee819ec94ed6741f03e8bb42918b4f85" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_inbound_routing_entry_attr_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1ggaee819ec94ed6741f03e8bb42918b4f85acdee4acd937f7d1b541f9360f65679bc" prot="public">
+          <name>SAI_INBOUND_ROUTING_ENTRY_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1ggaee819ec94ed6741f03e8bb42918b4f85a96b6d78470399afc11204287cdeca1ac" prot="public">
+          <name>SAI_INBOUND_ROUTING_ENTRY_ATTR_ACTION</name>
+          <initializer>= SAI_INBOUND_ROUTING_ENTRY_ATTR_START</initializer>
+          <briefdescription>
+<para>Action. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_inbound_routing_entry_action_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_INBOUND_ROUTING_ENTRY_ACTION_TUNNEL_DECAP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1ggaee819ec94ed6741f03e8bb42918b4f85aa02c520a6936876edaf171a8e37164a8" prot="public">
+          <name>SAI_INBOUND_ROUTING_ENTRY_ATTR_METER_CLASS_OR</name>
+          <briefdescription>
+<para>Action parameter meter class or. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_INBOUND_ROUTING_ENTRY_ATTR_ACTION == SAI_INBOUND_ROUTING_ENTRY_ACTION_TUNNEL_DECAP or SAI_INBOUND_ROUTING_ENTRY_ATTR_ACTION == SAI_INBOUND_ROUTING_ENTRY_ACTION_TUNNEL_DECAP_PA_VALIDATE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1ggaee819ec94ed6741f03e8bb42918b4f85a56af8217ef9c57a0195c69118bdf5fa8" prot="public">
+          <name>SAI_INBOUND_ROUTING_ENTRY_ATTR_METER_CLASS_AND</name>
+          <briefdescription>
+<para>Action parameter meter class and. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         4294967295 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_INBOUND_ROUTING_ENTRY_ATTR_ACTION == SAI_INBOUND_ROUTING_ENTRY_ACTION_TUNNEL_DECAP or SAI_INBOUND_ROUTING_ENTRY_ATTR_ACTION == SAI_INBOUND_ROUTING_ENTRY_ACTION_TUNNEL_DECAP_PA_VALIDATE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1ggaee819ec94ed6741f03e8bb42918b4f85a0cbb5b45b95e2ca6a385085606914879" prot="public">
+          <name>SAI_INBOUND_ROUTING_ENTRY_ATTR_SRC_VNET_ID</name>
+          <briefdescription>
+<para>Action parameter src VNET id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_VNET </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_INBOUND_ROUTING_ENTRY_ATTR_ACTION == SAI_INBOUND_ROUTING_ENTRY_ACTION_TUNNEL_DECAP_PA_VALIDATE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1ggaee819ec94ed6741f03e8bb42918b4f85aeebbeeb13cb69c953c02f0833b152f41" prot="public">
+          <name>SAI_INBOUND_ROUTING_ENTRY_ATTR_IP_ADDR_FAMILY</name>
+          <briefdescription>
+<para>IP address family for resource accounting. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_addr_family_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>IsResourceType:</title><para> @@isresourcetype  true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1ggaee819ec94ed6741f03e8bb42918b4f85a7c1a85f4efaefd64cb58e374cc1fb9f1" prot="public">
+          <name>SAI_INBOUND_ROUTING_ENTRY_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1ggaee819ec94ed6741f03e8bb42918b4f85ae61647e8bcd50a9673418e74e1cfdbab" prot="public">
+          <name>SAI_INBOUND_ROUTING_ENTRY_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1ggaee819ec94ed6741f03e8bb42918b4f85adf8743c4bde81c7c9ed50153010971fe" prot="public">
+          <name>SAI_INBOUND_ROUTING_ENTRY_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute ID for inbound routing entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h" line="97" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h" bodystart="98" bodyend="165"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1gae5eeeac4eba52a71b720d6faa9c111e2" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1gab90d378226b57a46f72f0b86203501b8" kindref="member">_sai_inbound_routing_entry_action_t</ref></type>
+        <definition>typedef enum _sai_inbound_routing_entry_action_t sai_inbound_routing_entry_action_t</definition>
+        <argsstring></argsstring>
+        <name>sai_inbound_routing_entry_action_t</name>
+        <briefdescription>
+<para>Attribute data for <ref refid="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1ggaee819ec94ed6741f03e8bb42918b4f85a96b6d78470399afc11204287cdeca1ac" kindref="member">SAI_INBOUND_ROUTING_ENTRY_ATTR_ACTION</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h" line="51" column="36"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1ga8751977e914d61ac44d87a429c3e4fb0" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__inbound__routing__entry__t" kindref="compound">_sai_inbound_routing_entry_t</ref></type>
+        <definition>typedef struct _sai_inbound_routing_entry_t sai_inbound_routing_entry_t</definition>
+        <argsstring></argsstring>
+        <name>sai_inbound_routing_entry_t</name>
+        <briefdescription>
+<para>Entry for inbound_routing_entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h" line="92" column="29"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1ga7093bce7ee96e92f71040eb52628fa5a" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1gaee819ec94ed6741f03e8bb42918b4f85" kindref="member">_sai_inbound_routing_entry_attr_t</ref></type>
+        <definition>typedef enum _sai_inbound_routing_entry_attr_t sai_inbound_routing_entry_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_inbound_routing_entry_attr_t</name>
+        <briefdescription>
+<para>Attribute ID for inbound routing entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h" line="165" column="34"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1ga18888848df0b61b26a8f7c61efa1c51c" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_inbound_routing_entry_fn) (_In_ const sai_inbound_routing_entry_t *inbound_routing_entry, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ const sai_inbound_routing_entry_t *inbound_routing_entry, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_inbound_routing_entry_fn</name>
+        <briefdescription>
+<para>Create inbound routing entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">inbound_routing_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h" line="176" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1ga140926fbfd1d62e77c9fe28650c71cf8" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_inbound_routing_entry_fn) (_In_ const sai_inbound_routing_entry_t *inbound_routing_entry)</definition>
+        <argsstring>)(_In_ const sai_inbound_routing_entry_t *inbound_routing_entry)</argsstring>
+        <name>sai_remove_inbound_routing_entry_fn</name>
+        <briefdescription>
+<para>Remove inbound routing entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">inbound_routing_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h" line="188" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1ga5bb6f18f6a4369df149f30ed6b7e9da4" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_inbound_routing_entry_attribute_fn) (_In_ const sai_inbound_routing_entry_t *inbound_routing_entry, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ const sai_inbound_routing_entry_t *inbound_routing_entry, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_inbound_routing_entry_attribute_fn</name>
+        <briefdescription>
+<para>Set attribute for inbound routing entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">inbound_routing_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h" line="199" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1ga8be3002c316689b806135306a185cd19" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_inbound_routing_entry_attribute_fn) (_In_ const sai_inbound_routing_entry_t *inbound_routing_entry, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ const sai_inbound_routing_entry_t *inbound_routing_entry, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_inbound_routing_entry_attribute_fn</name>
+        <briefdescription>
+<para>Get attribute for inbound routing entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">inbound_routing_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h" line="212" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1gad0fa0384323e208f17f7701ef2344c57" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_create_inbound_routing_entry_fn) (_In_ uint32_t object_count, _In_ const sai_inbound_routing_entry_t *inbound_routing_entry, _In_ const uint32_t *attr_count, _In_ const sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_inbound_routing_entry_t *inbound_routing_entry, _In_ const uint32_t *attr_count, _In_ const sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_create_inbound_routing_entry_fn</name>
+        <briefdescription>
+<para>Bulk create inbound routing entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to create </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">inbound_routing_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of object to create </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attr_count. Caller passes the number of attribute for each object to create. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attributes for every object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are created or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to create. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h" line="234" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1gac378df7eece812ccc4ebd5e3409f644c" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_remove_inbound_routing_entry_fn) (_In_ uint32_t object_count, _In_ const sai_inbound_routing_entry_t *inbound_routing_entry, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_inbound_routing_entry_t *inbound_routing_entry, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_remove_inbound_routing_entry_fn</name>
+        <briefdescription>
+<para>Bulk remove inbound routing entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to remove </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">inbound_routing_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of objects to remove </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are removed or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to remove. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h" line="256" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1ga0d4f2d647be56710076564f061a8f55b" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__dash__inbound__routing__api__t" kindref="compound">_sai_dash_inbound_routing_api_t</ref></type>
+        <definition>typedef struct _sai_dash_inbound_routing_api_t sai_dash_inbound_routing_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dash_inbound_routing_api_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h" line="271" column="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

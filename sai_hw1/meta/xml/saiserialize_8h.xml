@@ -1,0 +1,2637 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="saiserialize_8h" kind="file" language="C++">
+    <compoundname>saiserialize.h</compoundname>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" prot="public" static="no">
+        <name>SAI_SERIALIZE_ERROR</name>
+        <initializer>(-1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returned from serialize/deserialize methods on any error. Meta log functions are used to produce specific error message. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="40" column="9" bodyfile="saiserialize.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SAISERIALIZE_1gaecee6cfd55f69a8e0471d062e2bbf2c4" prot="public" static="no">
+        <name>SAI_CHARDATA_LENGTH</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines size of char data inside sai_attribute_value_t union. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="47" column="9" bodyfile="saiserialize.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga4b9cf042cab62b65e9050926923a3dd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sai_serialize_is_char_allowed</definition>
+        <argsstring>(_In_ char c)</argsstring>
+        <name>sai_serialize_is_char_allowed</name>
+        <param>
+          <type>_In_ char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>Is char allowed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Function checks if given char is one of the following:<itemizedlist>
+<listitem><para>&apos;\0&apos;, &apos;&quot;&apos;, &apos;,&apos;, &apos;]&apos;, &apos;}&apos;</para>
+</listitem></itemizedlist>
+</para>
+<para>Since serialization is done to json format, after each value there may be some characters specific to json format, like:</para>
+<para><itemizedlist>
+<listitem><para>quote, if value was in quotes (string)</para>
+</listitem><listitem><para>comma, if value was without quotes but an item in array (number, bool)</para>
+</listitem><listitem><para>square bracket, if item was last item in array (number, bool)</para>
+</listitem><listitem><para>curly bracket, if item was last item in object (number, bool)</para>
+</listitem></itemizedlist>
+</para>
+<para>This means that deserialize is &quot;relaxed&quot;, so each item don&apos;t need to end as zero &apos;\0&apos; but it can end on any of those characters. This allows us to deserialize json string reading it directly without creating json object tree and without any extra string copy. For example if we have item: {&quot;foo&quot;:true}, we can just read value &quot;true}&quot; and ignore last character and still value will be deserialized correctly.</para>
+<para>This is not ideal solution, but in this case it will work just fine.</para>
+<para>NOTE: All auto generated methods will enforce to check extra characters at the end of each value. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="75" column="6" declfile="saiserialize.h" declline="75" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga7f94097f2db9528d066125db940bdb27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_serialize_bool</definition>
+        <argsstring>(_Out_ char *buffer, _In_ bool flag)</argsstring>
+        <name>sai_serialize_bool</name>
+        <param>
+          <type>_Out_ char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_In_ bool</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+<para>Serialize bool value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output buffer for serialized value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bool flag to be serialized.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters written to buffer excluding &apos;\0&apos;, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="87" column="5" declfile="saiserialize.h" declline="87" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1gaefc34d47aa727ceb4f251ee7d5d9f71a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_deserialize_bool</definition>
+        <argsstring>(_In_ const char *buffer, _Out_ bool *flag)</argsstring>
+        <name>sai_deserialize_bool</name>
+        <param>
+          <type>_In_ const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_Out_ bool *</type>
+          <declname>flag</declname>
+        </param>
+        <briefdescription>
+<para>Deserialize bool value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input buffer to be examined. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">flag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Deserialized value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters consumed from the buffer, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="100" column="5" declfile="saiserialize.h" declline="100" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga12140f88c0a2e3ad949d9efe02283cc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_serialize_chardata</definition>
+        <argsstring>(_Out_ char *buffer, _In_ const char data[SAI_CHARDATA_LENGTH])</argsstring>
+        <name>sai_serialize_chardata</name>
+        <param>
+          <type>_Out_ char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_In_ const char</type>
+          <declname>data</declname>
+          <array>[SAI_CHARDATA_LENGTH]</array>
+        </param>
+        <briefdescription>
+<para>Serialize char data value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>All printable characters (isprint) are allowed except &apos;\&apos; and &apos;&quot;&apos;.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output buffer for serialized value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Data to be serialized.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters written to buffer excluding &apos;\0&apos;, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="115" column="5" declfile="saiserialize.h" declline="115" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga7ca5c9294f7978aefd4e853d5033fdd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_deserialize_chardata</definition>
+        <argsstring>(_In_ const char *buffer, _Out_ char data[SAI_CHARDATA_LENGTH])</argsstring>
+        <name>sai_deserialize_chardata</name>
+        <param>
+          <type>_In_ const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_Out_ char</type>
+          <declname>data</declname>
+          <array>[SAI_CHARDATA_LENGTH]</array>
+        </param>
+        <briefdescription>
+<para>Deserialize char data value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input buffer to be examined. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Deserialized value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters consumed from the buffer, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="128" column="5" declfile="saiserialize.h" declline="128" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1gaa873482414bd7f6e48ef11e041b8a2db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_serialize_uint8</definition>
+        <argsstring>(_Out_ char *buffer, _In_ uint8_t u8)</argsstring>
+        <name>sai_serialize_uint8</name>
+        <param>
+          <type>_Out_ char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_In_ uint8_t</type>
+          <declname>u8</declname>
+        </param>
+        <briefdescription>
+<para>Serialize 8 bit unsigned integer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output buffer for serialized value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">u8</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Deserialized value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters written to buffer excluding &apos;\0&apos;, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="141" column="5" declfile="saiserialize.h" declline="141" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga6c190be067e8037e1d6c1ed86976d6d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_deserialize_uint8</definition>
+        <argsstring>(_In_ const char *buffer, _Out_ uint8_t *u8)</argsstring>
+        <name>sai_deserialize_uint8</name>
+        <param>
+          <type>_In_ const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_Out_ uint8_t *</type>
+          <declname>u8</declname>
+        </param>
+        <briefdescription>
+<para>Deserialize 8 bit unsigned integer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input buffer to be examined. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">u8</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Deserialized value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters consumed from the buffer, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="154" column="5" declfile="saiserialize.h" declline="154" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga30c3abf7e8fb8583bed70984a80dbd06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_serialize_int8</definition>
+        <argsstring>(_Out_ char *buffer, _In_ int8_t u8)</argsstring>
+        <name>sai_serialize_int8</name>
+        <param>
+          <type>_Out_ char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_In_ int8_t</type>
+          <declname>u8</declname>
+        </param>
+        <briefdescription>
+<para>Serialize 8 bit signed integer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output buffer for serialized value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">u8</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer to be serialized.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters written to buffer excluding &apos;\0&apos;, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="167" column="5" declfile="saiserialize.h" declline="167" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga4dad0acd2b970cf13fe4a36379686271" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_deserialize_int8</definition>
+        <argsstring>(_In_ const char *buffer, _Out_ int8_t *s8)</argsstring>
+        <name>sai_deserialize_int8</name>
+        <param>
+          <type>_In_ const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_Out_ int8_t *</type>
+          <declname>s8</declname>
+        </param>
+        <briefdescription>
+<para>Deserialize 8 bit signed integer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input buffer to be examined. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">s8</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Deserialized value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters consumed from the buffer, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="180" column="5" declfile="saiserialize.h" declline="180" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga19c86f76e1d14599e8c5895bec02611e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_serialize_uint16</definition>
+        <argsstring>(_Out_ char *buffer, _In_ uint16_t u16)</argsstring>
+        <name>sai_serialize_uint16</name>
+        <param>
+          <type>_Out_ char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_In_ uint16_t</type>
+          <declname>u16</declname>
+        </param>
+        <briefdescription>
+<para>Serialize 16 bit unsigned integer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output buffer for serialized value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">u16</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer to be serialized.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters written to buffer excluding &apos;\0&apos;, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="193" column="5" declfile="saiserialize.h" declline="193" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1gaecde9afe8c686a9a2e1c02b9f3034c30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_deserialize_uint16</definition>
+        <argsstring>(_In_ const char *buffer, _Out_ uint16_t *u16)</argsstring>
+        <name>sai_deserialize_uint16</name>
+        <param>
+          <type>_In_ const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_Out_ uint16_t *</type>
+          <declname>u16</declname>
+        </param>
+        <briefdescription>
+<para>Deserialize 16 bit unsigned integer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input buffer to be examined. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">u16</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Deserialized value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters consumed from the buffer, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="206" column="5" declfile="saiserialize.h" declline="206" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga1b776db059dea2f76358631b559d0b6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_serialize_int16</definition>
+        <argsstring>(_Out_ char *buffer, _In_ int16_t s16)</argsstring>
+        <name>sai_serialize_int16</name>
+        <param>
+          <type>_Out_ char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_In_ int16_t</type>
+          <declname>s16</declname>
+        </param>
+        <briefdescription>
+<para>Serialize 16 bit signed integer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output buffer for serialized value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">s16</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer to be serialized.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters written to buffer excluding &apos;\0&apos;, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="219" column="5" declfile="saiserialize.h" declline="219" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga0465ec7fe06b9713f3590f5562c99c89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_deserialize_int16</definition>
+        <argsstring>(_In_ const char *buffer, _Out_ int16_t *s16)</argsstring>
+        <name>sai_deserialize_int16</name>
+        <param>
+          <type>_In_ const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_Out_ int16_t *</type>
+          <declname>s16</declname>
+        </param>
+        <briefdescription>
+<para>Deserialize 16 bit signed integer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input buffer to be examined. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">s16</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Deserialized value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters consumed from the buffer, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="232" column="5" declfile="saiserialize.h" declline="232" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1gab7df8535b4c1945f7c3843c5bb2063d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_serialize_uint32</definition>
+        <argsstring>(_Out_ char *buffer, _In_ uint32_t u32)</argsstring>
+        <name>sai_serialize_uint32</name>
+        <param>
+          <type>_Out_ char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_In_ uint32_t</type>
+          <declname>u32</declname>
+        </param>
+        <briefdescription>
+<para>Serialize 32 bit unsigned integer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output buffer for serialized value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">u32</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer to be serialized.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters written to buffer excluding &apos;\0&apos;, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="245" column="5" declfile="saiserialize.h" declline="245" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1gae8d735c06707b96fbcf206516e44d4c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_deserialize_uint32</definition>
+        <argsstring>(_In_ const char *buffer, _Out_ uint32_t *u32)</argsstring>
+        <name>sai_deserialize_uint32</name>
+        <param>
+          <type>_In_ const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_Out_ uint32_t *</type>
+          <declname>u32</declname>
+        </param>
+        <briefdescription>
+<para>Deserialize 32 bit unsigned integer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input buffer to be examined. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">u32</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Deserialized value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters consumed from the buffer, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="258" column="5" declfile="saiserialize.h" declline="258" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga6fd0e9426d63c78323b8e2ef4cb85667" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_serialize_int32</definition>
+        <argsstring>(_Out_ char *buffer, _In_ int32_t s32)</argsstring>
+        <name>sai_serialize_int32</name>
+        <param>
+          <type>_Out_ char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_In_ int32_t</type>
+          <declname>s32</declname>
+        </param>
+        <briefdescription>
+<para>Serialize 32 bit signed integer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output buffer for serialized value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">s32</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer to be serialized.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters written to buffer excluding &apos;\0&apos;, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="271" column="5" declfile="saiserialize.h" declline="271" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1gac4725ba77a7d20742e28da08966dd1ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_deserialize_int32</definition>
+        <argsstring>(_In_ const char *buffer, _Out_ int32_t *s32)</argsstring>
+        <name>sai_deserialize_int32</name>
+        <param>
+          <type>_In_ const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_Out_ int32_t *</type>
+          <declname>s32</declname>
+        </param>
+        <briefdescription>
+<para>Deserialize 32 bit signed integer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input buffer to be examined. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">s32</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Deserialized value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters consumed from the buffer, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="284" column="5" declfile="saiserialize.h" declline="284" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga45b4b89a9417ba8dd05d194721589925" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_serialize_uint64</definition>
+        <argsstring>(_Out_ char *buffer, _In_ uint64_t u64)</argsstring>
+        <name>sai_serialize_uint64</name>
+        <param>
+          <type>_Out_ char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_In_ uint64_t</type>
+          <declname>u64</declname>
+        </param>
+        <briefdescription>
+<para>Serialize 64 bit unsigned integer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output buffer for serialized value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">u64</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer to be serialized.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters written to buffer excluding &apos;\0&apos;, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="297" column="5" declfile="saiserialize.h" declline="297" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga909afff9fe6546a4c7c2a0d4ca14cd8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_deserialize_uint64</definition>
+        <argsstring>(_In_ const char *buffer, _Out_ uint64_t *u64)</argsstring>
+        <name>sai_deserialize_uint64</name>
+        <param>
+          <type>_In_ const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_Out_ uint64_t *</type>
+          <declname>u64</declname>
+        </param>
+        <briefdescription>
+<para>Deserialize 64 bit unsigned integer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input buffer to be examined. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">u64</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Deserialized value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters consumed from the buffer, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="310" column="5" declfile="saiserialize.h" declline="310" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga2dbfd701d73012d536aede95fc912ab9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_serialize_int64</definition>
+        <argsstring>(_Out_ char *buffer, _In_ int64_t s64)</argsstring>
+        <name>sai_serialize_int64</name>
+        <param>
+          <type>_Out_ char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_In_ int64_t</type>
+          <declname>s64</declname>
+        </param>
+        <briefdescription>
+<para>Serialize 64 bit signed integer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output buffer for serialized value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">s64</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Integer to be serialized.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters written to buffer excluding &apos;\0&apos;, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="323" column="5" declfile="saiserialize.h" declline="323" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1gaab7ace43ebc57177e66d339c02d25ac8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_deserialize_int64</definition>
+        <argsstring>(_In_ const char *buffer, _Out_ int64_t *s64)</argsstring>
+        <name>sai_deserialize_int64</name>
+        <param>
+          <type>_In_ const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_Out_ int64_t *</type>
+          <declname>s64</declname>
+        </param>
+        <briefdescription>
+<para>Deserialize 64 bit signed integer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input buffer to be examined. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">s64</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Deserialized value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters consumed from the buffer, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="336" column="5" declfile="saiserialize.h" declline="336" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga0e49c5be2626a7cea1d71e68374fe33e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_serialize_size</definition>
+        <argsstring>(_Out_ char *buffer, _In_ sai_size_t size)</argsstring>
+        <name>sai_serialize_size</name>
+        <param>
+          <type>_Out_ char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_In_ sai_size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Serialize sai_size_t. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output buffer for serialized value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Size to be serialized.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters written to buffer excluding &apos;\0&apos;, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="349" column="5" declfile="saiserialize.h" declline="349" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1gae2ed662212a20e18cb1f3769e7f92301" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_deserialize_size</definition>
+        <argsstring>(_In_ const char *buffer, _Out_ sai_size_t *size)</argsstring>
+        <name>sai_deserialize_size</name>
+        <param>
+          <type>_In_ const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_Out_ sai_size_t *</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Deserialize sai_size_t. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input buffer to be examined. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Deserialized value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters consumed from the buffer, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="362" column="5" declfile="saiserialize.h" declline="362" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1gaafc3f6f2b7068f4bbfeeed90044cb76b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_serialize_object_id</definition>
+        <argsstring>(_Out_ char *buffer, _In_ sai_object_id_t object_id)</argsstring>
+        <name>sai_serialize_object_id</name>
+        <param>
+          <type>_Out_ char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_In_ sai_object_id_t</type>
+          <declname>object_id</declname>
+        </param>
+        <briefdescription>
+<para>Serialize object ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output buffer for serialized value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">object_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object ID to be serialized.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters written to buffer excluding &apos;\0&apos;, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="375" column="5" declfile="saiserialize.h" declline="375" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1gad99bc77c47c462ddd4206460f533906e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_deserialize_object_id</definition>
+        <argsstring>(_In_ const char *buffer, _Out_ sai_object_id_t *object_id)</argsstring>
+        <name>sai_deserialize_object_id</name>
+        <param>
+          <type>_In_ const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_Out_ sai_object_id_t *</type>
+          <declname>object_id</declname>
+        </param>
+        <briefdescription>
+<para>Deserialize object Id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input buffer to be examined. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Deserialized value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters consumed from the buffer, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="388" column="5" declfile="saiserialize.h" declline="388" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga31b5696279509c963ae7e7336a3da73a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_serialize_mac</definition>
+        <argsstring>(_Out_ char *buffer, _In_ const sai_mac_t mac_address)</argsstring>
+        <name>sai_serialize_mac</name>
+        <param>
+          <type>_Out_ char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_In_ const sai_mac_t</type>
+          <declname>mac_address</declname>
+        </param>
+        <briefdescription>
+<para>Serialize MAC address. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output buffer for serialized value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mac_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MAC address to be serialized.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters written to buffer excluding &apos;\0&apos;, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="401" column="5" declfile="saiserialize.h" declline="401" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga91652c09b129f7e9bd0df8f04a52934e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_deserialize_mac</definition>
+        <argsstring>(_In_ const char *buffer, _Out_ sai_mac_t mac)</argsstring>
+        <name>sai_deserialize_mac</name>
+        <param>
+          <type>_In_ const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_Out_ sai_mac_t</type>
+          <declname>mac</declname>
+        </param>
+        <briefdescription>
+<para>Deserialize MAC address. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input buffer to be examined. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">mac</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Deserialized value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters consumed from the buffer, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="414" column="5" declfile="saiserialize.h" declline="414" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1gadc2b1614ce2d6a9ea9ef4b524bfd8c50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_serialize_encrypt_key</definition>
+        <argsstring>(_Out_ char *buffer, _In_ const sai_encrypt_key_t key)</argsstring>
+        <name>sai_serialize_encrypt_key</name>
+        <param>
+          <type>_Out_ char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_In_ const sai_encrypt_key_t</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Serialize encrypt_key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output buffer for serialized value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The encrypt_key to be serialized.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters written to buffer excluding &apos;\0&apos;, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="427" column="5" declfile="saiserialize.h" declline="427" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga3292a715aed54b19cd01c07fc750fab0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_deserialize_encrypt_key</definition>
+        <argsstring>(_In_ const char *buffer, _Out_ sai_encrypt_key_t key)</argsstring>
+        <name>sai_deserialize_encrypt_key</name>
+        <param>
+          <type>_In_ const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_Out_ sai_encrypt_key_t</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Deserialize encrypt_key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input buffer to be examined. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The encrypt_key deserialized value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters consumed from the buffer, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="440" column="5" declfile="saiserialize.h" declline="440" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga3d7659a91abef702a140920b136571c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_serialize_auth_key</definition>
+        <argsstring>(_Out_ char *buffer, _In_ const sai_auth_key_t auth)</argsstring>
+        <name>sai_serialize_auth_key</name>
+        <param>
+          <type>_Out_ char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_In_ const sai_auth_key_t</type>
+          <declname>auth</declname>
+        </param>
+        <briefdescription>
+<para>Serialize auth_key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output buffer for serialized value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">auth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The auth_key to be serialized.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters written to buffer excluding &apos;\0&apos;, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="453" column="5" declfile="saiserialize.h" declline="453" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga59b0ec1793a9d8e1b99ac3c6a995afea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_deserialize_auth_key</definition>
+        <argsstring>(_In_ const char *buffer, _Out_ sai_auth_key_t auth)</argsstring>
+        <name>sai_deserialize_auth_key</name>
+        <param>
+          <type>_In_ const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_Out_ sai_auth_key_t</type>
+          <declname>auth</declname>
+        </param>
+        <briefdescription>
+<para>Deserialize auth_key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input buffer to be examined. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">auth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The auth_key deserialized value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters consumed from the buffer, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="466" column="5" declfile="saiserialize.h" declline="466" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1gacfb7478f98491e6dbcc7b6356fe9e538" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_serialize_macsec_sak</definition>
+        <argsstring>(_Out_ char *buffer, _In_ const sai_macsec_sak_t sak)</argsstring>
+        <name>sai_serialize_macsec_sak</name>
+        <param>
+          <type>_Out_ char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_In_ const sai_macsec_sak_t</type>
+          <declname>sak</declname>
+        </param>
+        <briefdescription>
+<para>Serialize macsec_sak. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output buffer for serialized value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">sak</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The macsec_sak to be serialized.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters written to buffer excluding &apos;\0&apos;, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="479" column="5" declfile="saiserialize.h" declline="479" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga4a7bef9dde0ad245a40364d638ad3def" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_deserialize_macsec_sak</definition>
+        <argsstring>(_In_ const char *buffer, _Out_ sai_macsec_sak_t sak)</argsstring>
+        <name>sai_deserialize_macsec_sak</name>
+        <param>
+          <type>_In_ const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_Out_ sai_macsec_sak_t</type>
+          <declname>sak</declname>
+        </param>
+        <briefdescription>
+<para>Deserialize macsec_sak. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input buffer to be examined. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">sak</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The macsec_sak deserialized value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters consumed from the buffer, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="492" column="5" declfile="saiserialize.h" declline="492" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1gafc18ef4aee6f504b95544a4d2b9087c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_serialize_macsec_auth_key</definition>
+        <argsstring>(_Out_ char *buffer, _In_ const sai_macsec_auth_key_t auth)</argsstring>
+        <name>sai_serialize_macsec_auth_key</name>
+        <param>
+          <type>_Out_ char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_In_ const sai_macsec_auth_key_t</type>
+          <declname>auth</declname>
+        </param>
+        <briefdescription>
+<para>Serialize macsec_auth_key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output buffer for serialized value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">auth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The macsec_auth_key to be serialized.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters written to buffer excluding &apos;\0&apos;, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="505" column="5" declfile="saiserialize.h" declline="505" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga62d4b5cce343c513c810f31122a11ff8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_deserialize_macsec_auth_key</definition>
+        <argsstring>(_In_ const char *buffer, _Out_ sai_macsec_auth_key_t auth)</argsstring>
+        <name>sai_deserialize_macsec_auth_key</name>
+        <param>
+          <type>_In_ const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_Out_ sai_macsec_auth_key_t</type>
+          <declname>auth</declname>
+        </param>
+        <briefdescription>
+<para>Deserialize macsec_auth_key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input buffer to be examined. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">auth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The macsec_auth_key deserialized value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters consumed from the buffer, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="518" column="5" declfile="saiserialize.h" declline="518" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga99fb394ebb526c3c589d3127c2cbe5c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_serialize_macsec_salt</definition>
+        <argsstring>(_Out_ char *buffer, _In_ const sai_macsec_salt_t salt)</argsstring>
+        <name>sai_serialize_macsec_salt</name>
+        <param>
+          <type>_Out_ char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_In_ const sai_macsec_salt_t</type>
+          <declname>salt</declname>
+        </param>
+        <briefdescription>
+<para>Serialize macsec_salt. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output buffer for serialized value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">salt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The macsec_salt to be serialized.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters written to buffer excluding &apos;\0&apos;, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="531" column="5" declfile="saiserialize.h" declline="531" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga1c1a5f3a55f029b8ff35c5654de651e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_deserialize_macsec_salt</definition>
+        <argsstring>(_In_ const char *buffer, _Out_ sai_macsec_salt_t salt)</argsstring>
+        <name>sai_deserialize_macsec_salt</name>
+        <param>
+          <type>_In_ const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_Out_ sai_macsec_salt_t</type>
+          <declname>salt</declname>
+        </param>
+        <briefdescription>
+<para>Deserialize macsec_salt. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input buffer to be examined. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">salt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The macsec_salt Deserialized value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters consumed from the buffer, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="544" column="5" declfile="saiserialize.h" declline="544" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga5485466fc0baa286c7287c08fb9308a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_serialize_enum</definition>
+        <argsstring>(_Out_ char *buffer, _In_ const sai_enum_metadata_t *meta, _In_ int32_t value)</argsstring>
+        <name>sai_serialize_enum</name>
+        <param>
+          <type>_Out_ char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_In_ const <ref refid="group__SAIMETADATATYPES_1ga3958ad8fbdf3830857358199fe733509" kindref="member">sai_enum_metadata_t</ref> *</type>
+          <declname>meta</declname>
+        </param>
+        <param>
+          <type>_In_ int32_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Serialize enum value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Buffer will contain actual enum name of number if enum value was not found in specified enum metadata.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output buffer for serialized value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">meta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enum metadata for serialization info. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enum value to be serialized.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters written to buffer excluding &apos;\0&apos;, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="561" column="5" declfile="saiserialize.h" declline="561" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga6c268d3d46ced77618100350d8046caa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_deserialize_enum</definition>
+        <argsstring>(_In_ const char *buffer, _In_ const sai_enum_metadata_t *meta, _Out_ int32_t *value)</argsstring>
+        <name>sai_deserialize_enum</name>
+        <param>
+          <type>_In_ const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_In_ const <ref refid="group__SAIMETADATATYPES_1ga3958ad8fbdf3830857358199fe733509" kindref="member">sai_enum_metadata_t</ref> *</type>
+          <declname>meta</declname>
+        </param>
+        <param>
+          <type>_Out_ int32_t *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Deserialize enum value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If buffer will not contain valid enum name, function will attempt to deserialize value as signed 32 bit integer.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input buffer to be examined. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">meta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enum metadata. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Deserialized value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters consumed from the buffer, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="579" column="5" declfile="saiserialize.h" declline="579" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga1aca4b76bb836ec22a884b7d4749ab18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_serialize_ip4</definition>
+        <argsstring>(_Out_ char *buffer, _In_ const sai_ip4_t ip4)</argsstring>
+        <name>sai_serialize_ip4</name>
+        <param>
+          <type>_Out_ char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_In_ const sai_ip4_t</type>
+          <declname>ip4</declname>
+        </param>
+        <briefdescription>
+<para>Serialize IPv4 address. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output buffer for serialized value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ip4</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IP address to be serialized.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters written to buffer excluding &apos;\0&apos;, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="593" column="5" declfile="saiserialize.h" declline="593" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga1c71e0cb1c02ae296639687d37f52e4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_deserialize_ip4</definition>
+        <argsstring>(_In_ const char *buffer, _Out_ sai_ip4_t *ip4)</argsstring>
+        <name>sai_deserialize_ip4</name>
+        <param>
+          <type>_In_ const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_Out_ sai_ip4_t *</type>
+          <declname>ip4</declname>
+        </param>
+        <briefdescription>
+<para>Deserialize IPv4 address. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input buffer to be examined. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">ip4</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Deserialized value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters consumed from the buffer, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="606" column="5" declfile="saiserialize.h" declline="606" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga40cf4f03a204823eee191fd734b88f31" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_serialize_ip6</definition>
+        <argsstring>(_Out_ char *buffer, _In_ const sai_ip6_t ip6)</argsstring>
+        <name>sai_serialize_ip6</name>
+        <param>
+          <type>_Out_ char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_In_ const sai_ip6_t</type>
+          <declname>ip6</declname>
+        </param>
+        <briefdescription>
+<para>Serialize IPv6 address. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output buffer for serialized value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ip6</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IP address to be serialized.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters written to buffer excluding &apos;\0&apos;, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="619" column="5" declfile="saiserialize.h" declline="619" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1gad86d78db68da208710aea26d75b7180a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_deserialize_ip6</definition>
+        <argsstring>(_In_ const char *buffer, _Out_ sai_ip6_t ip6)</argsstring>
+        <name>sai_deserialize_ip6</name>
+        <param>
+          <type>_In_ const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_Out_ sai_ip6_t</type>
+          <declname>ip6</declname>
+        </param>
+        <briefdescription>
+<para>Deserialize IPv6 address. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input buffer to be examined. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">ip6</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Deserialized value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters consumed from the buffer, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="632" column="5" declfile="saiserialize.h" declline="632" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga5295bde073db9510f21a8e772022bb06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_serialize_ip_address</definition>
+        <argsstring>(_Out_ char *buffer, _In_ const sai_ip_address_t *ip_address)</argsstring>
+        <name>sai_serialize_ip_address</name>
+        <param>
+          <type>_Out_ char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_In_ const <ref refid="struct__sai__ip__address__t" kindref="compound">sai_ip_address_t</ref> *</type>
+          <declname>ip_address</declname>
+        </param>
+        <briefdescription>
+<para>Serialize IP address. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output buffer for serialized value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ip_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IP address to be serialized</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters written to buffer excluding &apos;\0&apos;, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="645" column="5" declfile="saiserialize.h" declline="645" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1gad8641cffca9d84c7d74b9d2cdc4aa70d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_deserialize_ip_address</definition>
+        <argsstring>(_In_ const char *buffer, _Out_ sai_ip_address_t *ip_address)</argsstring>
+        <name>sai_deserialize_ip_address</name>
+        <param>
+          <type>_In_ const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_Out_ <ref refid="struct__sai__ip__address__t" kindref="compound">sai_ip_address_t</ref> *</type>
+          <declname>ip_address</declname>
+        </param>
+        <briefdescription>
+<para>Deserialize IP address. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input buffer to be examined. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">ip_address</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Deserialized value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters consumed from the buffer, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="658" column="5" declfile="saiserialize.h" declline="658" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1gad728fee23b4d0aff686e226059800262" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_serialize_ip_prefix</definition>
+        <argsstring>(_Out_ char *buffer, _In_ const sai_ip_prefix_t *ip_prefix)</argsstring>
+        <name>sai_serialize_ip_prefix</name>
+        <param>
+          <type>_Out_ char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_In_ const <ref refid="struct__sai__ip__prefix__t" kindref="compound">sai_ip_prefix_t</ref> *</type>
+          <declname>ip_prefix</declname>
+        </param>
+        <briefdescription>
+<para>Serialize IP prefix. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output buffer for serialized value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ip_prefix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IP prefix to be serialized.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters written to buffer excluding &apos;\0&apos;, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="671" column="5" declfile="saiserialize.h" declline="671" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga4f2a00f99b6736c3c13d3c40c8425b3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_deserialize_ip_prefix</definition>
+        <argsstring>(_In_ const char *buffer, _Out_ sai_ip_prefix_t *ip_prefix)</argsstring>
+        <name>sai_deserialize_ip_prefix</name>
+        <param>
+          <type>_In_ const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_Out_ <ref refid="struct__sai__ip__prefix__t" kindref="compound">sai_ip_prefix_t</ref> *</type>
+          <declname>ip_prefix</declname>
+        </param>
+        <briefdescription>
+<para>Deserialize IP prefix. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input buffer to be examined. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">ip_prefix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Deserialized value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters consumed from the buffer, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="684" column="5" declfile="saiserialize.h" declline="684" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga22c821062b986e5083477f5808f71db3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_serialize_ip4_mask</definition>
+        <argsstring>(_Out_ char *buffer, _In_ sai_ip4_t ip4_mask)</argsstring>
+        <name>sai_serialize_ip4_mask</name>
+        <param>
+          <type>_Out_ char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_In_ sai_ip4_t</type>
+          <declname>ip4_mask</declname>
+        </param>
+        <briefdescription>
+<para>Serialize IPv4 mask. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Mask will be serialized as single number like. Holes in mask are not supported.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output buffer for serialized value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ip4_mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IPv4 mask to be serialized.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters written to buffer excluding &apos;\0&apos;, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="700" column="5" declfile="saiserialize.h" declline="700" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga83e399c2407f4aff526a6edfb348d750" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_deserialize_ip4_mask</definition>
+        <argsstring>(_In_ const char *buffer, _Out_ sai_ip4_t *ip4_mask)</argsstring>
+        <name>sai_deserialize_ip4_mask</name>
+        <param>
+          <type>_In_ const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_Out_ sai_ip4_t *</type>
+          <declname>ip4_mask</declname>
+        </param>
+        <briefdescription>
+<para>Deserialize IPv4 mask. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input buffer to be examined. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">ip4_mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Deserialized value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters consumed from the buffer, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="713" column="5" declfile="saiserialize.h" declline="713" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1gab66ee6938e166ca2ea86a4ed4ab4ae41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_serialize_ip6_mask</definition>
+        <argsstring>(_Out_ char *buffer, _In_ const sai_ip6_t ip6_mask)</argsstring>
+        <name>sai_serialize_ip6_mask</name>
+        <param>
+          <type>_Out_ char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_In_ const sai_ip6_t</type>
+          <declname>ip6_mask</declname>
+        </param>
+        <briefdescription>
+<para>Serialize IPv6 mask. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Mask will be serialized as single number like. Holes in mask are not supported.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output buffer for serialized value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ip6_mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IPv6 mask to be serialized.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters written to buffer excluding &apos;\0&apos;, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="729" column="5" declfile="saiserialize.h" declline="729" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1gaf945c444b3c7b9d1dc7d3cfd3843c97c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_deserialize_ip6_mask</definition>
+        <argsstring>(_In_ const char *buffer, _Out_ sai_ip6_t ip6_mask)</argsstring>
+        <name>sai_deserialize_ip6_mask</name>
+        <param>
+          <type>_In_ const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_Out_ sai_ip6_t</type>
+          <declname>ip6_mask</declname>
+        </param>
+        <briefdescription>
+<para>Deserialize IPv6 mask. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input buffer to be examined. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">ip6_mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Deserialized value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters consumed from the buffer, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="742" column="5" declfile="saiserialize.h" declline="742" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga2f2c615adcc7daed8f8106bc441a0084" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_serialize_pointer</definition>
+        <argsstring>(_Out_ char *buffer, _In_ const sai_pointer_t pointer)</argsstring>
+        <name>sai_serialize_pointer</name>
+        <param>
+          <type>_Out_ char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_In_ const sai_pointer_t</type>
+          <declname>pointer</declname>
+        </param>
+        <briefdescription>
+<para>Serialize pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output buffer for serialized value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pointer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to be serialized.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters written to buffer excluding &apos;\0&apos;, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="755" column="5" declfile="saiserialize.h" declline="755" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga4b6aaf8547c7c47b057a3b4314de7fcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_deserialize_pointer</definition>
+        <argsstring>(_In_ const char *buffer, _Out_ sai_pointer_t *pointer)</argsstring>
+        <name>sai_deserialize_pointer</name>
+        <param>
+          <type>_In_ const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_Out_ sai_pointer_t *</type>
+          <declname>pointer</declname>
+        </param>
+        <briefdescription>
+<para>Deserialize pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input buffer to be examined. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">pointer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Deserialized value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters consumed from the buffer, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="768" column="5" declfile="saiserialize.h" declline="768" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga00647c4f236688c419d16c67f186ebf6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_serialize_enum_list</definition>
+        <argsstring>(_Out_ char *buffer, _In_ const sai_enum_metadata_t *meta, _In_ const sai_s32_list_t *s32_list)</argsstring>
+        <name>sai_serialize_enum_list</name>
+        <param>
+          <type>_Out_ char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_In_ const <ref refid="group__SAIMETADATATYPES_1ga3958ad8fbdf3830857358199fe733509" kindref="member">sai_enum_metadata_t</ref> *</type>
+          <declname>meta</declname>
+        </param>
+        <param>
+          <type>_In_ const <ref refid="struct__sai__s32__list__t" kindref="compound">sai_s32_list_t</ref> *</type>
+          <declname>s32_list</declname>
+        </param>
+        <briefdescription>
+<para>Serialize enum list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If enum metadata is null, then list is serialized using sai_serialize_s32_list and it will not contain quotes.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output buffer for serialized value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">meta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enum metadata used to serialize. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">s32_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of enum values to be serialized.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters written to buffer excluding &apos;\0&apos;, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="785" column="5" declfile="saiserialize.h" declline="785" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1gaf2f94bd66e53938b7ccd27b9f5b22f83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_deserialize_enum_list</definition>
+        <argsstring>(_In_ const char *buffer, _In_ const sai_enum_metadata_t *meta, _Out_ sai_s32_list_t *s32_list)</argsstring>
+        <name>sai_deserialize_enum_list</name>
+        <param>
+          <type>_In_ const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_In_ const <ref refid="group__SAIMETADATATYPES_1ga3958ad8fbdf3830857358199fe733509" kindref="member">sai_enum_metadata_t</ref> *</type>
+          <declname>meta</declname>
+        </param>
+        <param>
+          <type>_Out_ <ref refid="struct__sai__s32__list__t" kindref="compound">sai_s32_list_t</ref> *</type>
+          <declname>s32_list</declname>
+        </param>
+        <briefdescription>
+<para>Deserialize enum list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If enum metadata is null, then list is deserialized using sai_deserialize_s32_list and it will not contain quotes.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input buffer to be examined. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">meta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enum metadata. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">s32_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Deserialized value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters consumed from the buffer, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="803" column="5" declfile="saiserialize.h" declline="803" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1gaa2322c86f14bd8f5e203368f26b5febe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_serialize_attr_id</definition>
+        <argsstring>(_Out_ char *buffer, _In_ const sai_attr_metadata_t *meta, _In_ sai_attr_id_t attr_id)</argsstring>
+        <name>sai_serialize_attr_id</name>
+        <param>
+          <type>_Out_ char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_In_ const <ref refid="group__SAIMETADATATYPES_1ga4c405e86ac70b1cb3bd2ee38f032f4eb" kindref="member">sai_attr_metadata_t</ref> *</type>
+          <declname>meta</declname>
+        </param>
+        <param>
+          <type>_In_ sai_attr_id_t</type>
+          <declname>attr_id</declname>
+        </param>
+        <briefdescription>
+<para>Serialize attribute id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output buffer for serialized value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">meta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute metadata. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute id to be serialized</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters written to buffer excluding &apos;\0&apos;, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="818" column="5" declfile="saiserialize.h" declline="818" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1gacacf91aa531b358f5dad9bc76833f036" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_deserialize_attr_id</definition>
+        <argsstring>(_In_ const char *buffer, _Out_ sai_attr_id_t *attr_id)</argsstring>
+        <name>sai_deserialize_attr_id</name>
+        <param>
+          <type>_In_ const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_Out_ sai_attr_id_t *</type>
+          <declname>attr_id</declname>
+        </param>
+        <briefdescription>
+<para>Deserialize attribute id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Metadata is not needed since attribute ID is serialized as string, and it can point to unique attribute metadata.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input buffer to be examined. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">attr_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Deserialized attribute id.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters written to buffer excluding &apos;\0&apos;, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="835" column="5" declfile="saiserialize.h" declline="835" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1gabbabbe315e14edc9890fb39d538e9588" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_serialize_attribute</definition>
+        <argsstring>(_Out_ char *buffer, _In_ const sai_attr_metadata_t *meta, _In_ const sai_attribute_t *attribute)</argsstring>
+        <name>sai_serialize_attribute</name>
+        <param>
+          <type>_Out_ char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_In_ const <ref refid="group__SAIMETADATATYPES_1ga4c405e86ac70b1cb3bd2ee38f032f4eb" kindref="member">sai_attr_metadata_t</ref> *</type>
+          <declname>meta</declname>
+        </param>
+        <param>
+          <type>_In_ const <ref refid="group__SAITYPES_1gaa03b4ea06d1e99354b7b1f0bb4e5cd6c" kindref="member">sai_attribute_t</ref> *</type>
+          <declname>attribute</declname>
+        </param>
+        <briefdescription>
+<para>Serialize SAI attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Output buffer for serialized value. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">meta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute metadata. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attribute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute to be serialized.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters written to buffer excluding &apos;\0&apos;, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="849" column="5" declfile="saiserialize.h" declline="849" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1ga0b102e7c5da3ef44a5f3ebadb523942c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sai_deserialize_attribute</definition>
+        <argsstring>(_In_ const char *buffer, _Out_ sai_attribute_t *attribute)</argsstring>
+        <name>sai_deserialize_attribute</name>
+        <param>
+          <type>_In_ const char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>_Out_ <ref refid="group__SAITYPES_1gaa03b4ea06d1e99354b7b1f0bb4e5cd6c" kindref="member">sai_attribute_t</ref> *</type>
+          <declname>attribute</declname>
+        </param>
+        <briefdescription>
+<para>Deserialize SAI attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Metadata is not needed since attribute ID is serialized as string, and it can point to unique attribute metadata.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Input buffer to be examined. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">attribute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Deserialized value.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of characters consumed from the buffer, or <ref refid="group__SAISERIALIZE_1ga19dac19d8cbf34a8ad6bcf00d670ce4e" kindref="member">SAI_SERIALIZE_ERROR</ref> on error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="866" column="5" declfile="saiserialize.h" declline="866" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAISERIALIZE_1gad2fcb7a94a6f692c32a30932b719afae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sai_free_attribute</definition>
+        <argsstring>(_In_ const sai_attr_metadata_t *meta, _In_ const sai_attribute_t *attribute)</argsstring>
+        <name>sai_free_attribute</name>
+        <param>
+          <type>_In_ const <ref refid="group__SAIMETADATATYPES_1ga4c405e86ac70b1cb3bd2ee38f032f4eb" kindref="member">sai_attr_metadata_t</ref> *</type>
+          <declname>meta</declname>
+        </param>
+        <param>
+          <type>_In_ const <ref refid="group__SAITYPES_1gaa03b4ea06d1e99354b7b1f0bb4e5cd6c" kindref="member">sai_attribute_t</ref> *</type>
+          <declname>attribute</declname>
+        </param>
+        <briefdescription>
+<para>Free SAI attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">meta</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute metadata. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attribute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute to be freed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saiserialize.h" line="876" column="6" declfile="saiserialize.h" declline="876" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module defines SAI Serialize methods. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2014 Microsoft Open Technologies, Inc.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <ulink url="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</ulink></para>
+<para>THIS CODE IS PROVIDED ON AN <emphasis>AS IS</emphasis> BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</para>
+<para>See the Apache Version 2.0 License for specific language governing permissions and limitations under the License.</para>
+<para>Microsoft would like to thank the following companies for their review and assistance with these files: Intel Corporation, Mellanox Technologies Ltd, Dell Products, L.P., Facebook, Inc., Marvell International Ltd. </para>
+    </detaileddescription>
+    <location file="saiserialize.h"/>
+  </compounddef>
+</doxygen>

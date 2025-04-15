@@ -1,0 +1,1321 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group__SAIQUEUE" kind="group">
+    <compoundname>SAIQUEUE</compoundname>
+    <title>SAI - QOS Queue specific API definitions.</title>
+    <innerclass refid="struct__sai__queue__deadlock__notification__data__t" prot="public">_sai_queue_deadlock_notification_data_t</innerclass>
+    <innerclass refid="struct__sai__queue__api__t" prot="public">_sai_queue_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIQUEUE_1gad01a80a619ce999c5db4d67bc3ad5ee6" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_queue_type_t</name>
+        <enumvalue id="group__SAIQUEUE_1ggad01a80a619ce999c5db4d67bc3ad5ee6a5bf1a57836d385ef58612fd1215d5983" prot="public">
+          <name>SAI_QUEUE_TYPE_ALL</name>
+          <initializer>= 0x00000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>H/w Queue for all types of traffic </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggad01a80a619ce999c5db4d67bc3ad5ee6a7919fade45968bf23fce95af8af26582" prot="public">
+          <name>SAI_QUEUE_TYPE_UNICAST</name>
+          <initializer>= 0x00000001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>H/w Egress Unicast Queue </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggad01a80a619ce999c5db4d67bc3ad5ee6a8f5f3ac8975d24879200b24da641555e" prot="public">
+          <name>SAI_QUEUE_TYPE_MULTICAST</name>
+          <initializer>= 0x00000002</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>H/w Multicast Egress (Broadcast, Unknown unicast, Multicast) Queue </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggad01a80a619ce999c5db4d67bc3ad5ee6af09bdf0815a4188e145d32461b07fea3" prot="public">
+          <name>SAI_QUEUE_TYPE_UNICAST_VOQ</name>
+          <initializer>= 0x00000003</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>H/w Virtual Output Queue (VOQ). This queue is ingress unicast queue </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggad01a80a619ce999c5db4d67bc3ad5ee6a1c2179a14d54a4d7b9239fefab459425" prot="public">
+          <name>SAI_QUEUE_TYPE_MULTICAST_VOQ</name>
+          <initializer>= 0x00000004</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>H/w Virtual Output Queue (VOQ). This queue is fabric multicast queue </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggad01a80a619ce999c5db4d67bc3ad5ee6a5594ec9124636a99b2c1e2248f8a873a" prot="public">
+          <name>SAI_QUEUE_TYPE_FABRIC_TX</name>
+          <initializer>= 0x00000005</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>H/w Fabric Queue. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggad01a80a619ce999c5db4d67bc3ad5ee6afbff8fcb8d9622e7e4ea18066326383e" prot="public">
+          <name>SAI_QUEUE_TYPE_CUSTOM_RANGE_BASE</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum defining Queue types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" line="39" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" bodystart="40" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIQUEUE_1ga32940b117afe6d1052d5ae086967be41" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_queue_pfc_continuous_deadlock_state_t</name>
+        <enumvalue id="group__SAIQUEUE_1gga32940b117afe6d1052d5ae086967be41a44dc4b10346bf85f6511b9a3bc9e041f" prot="public">
+          <name>SAI_QUEUE_PFC_CONTINUOUS_DEADLOCK_STATE_NOT_PAUSED</name>
+          <initializer>= 0x00000000</initializer>
+          <briefdescription>
+<para>PFC continuous deadlock state not paused. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>H/w queue PFC state is not paused. Queue can forward packets. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1gga32940b117afe6d1052d5ae086967be41aa677d23460e565d325bd72f71272aedb" prot="public">
+          <name>SAI_QUEUE_PFC_CONTINUOUS_DEADLOCK_STATE_PAUSED</name>
+          <initializer>= 0x00000001</initializer>
+          <briefdescription>
+<para>PFC continuous deadlock state paused. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>H/w queue is paused off and has not resumed or forwarded packets since the last time the SAI_QUEUE_ATTR_PFC_CONTINUOUS_DEADLOCK_STATE attribute for this queue was polled. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1gga32940b117afe6d1052d5ae086967be41a68aa8947d58a9c56bc1967820c21a218" prot="public">
+          <name>SAI_QUEUE_PFC_CONTINUOUS_DEADLOCK_STATE_PAUSED_NOT_CONTINUOUS</name>
+          <initializer>= 0x00000002</initializer>
+          <briefdescription>
+<para>PFC continuous deadlock state paused, but not continuously. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>H/w queue is paused off, but was not paused off for the full interval that the SAI_QUEUE_ATTR_PFC_CONTINUOUS_DEADLOCK_STATE attribute for this queue was last polled. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum defining queue PFC continuous deadlock state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" line="67" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" bodystart="68" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIQUEUE_1ga146e26930a20c603ae01ea2e906a9c56" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_queue_attr_t</name>
+        <enumvalue id="group__SAIQUEUE_1gga146e26930a20c603ae01ea2e906a9c56a5b126c4b2bc07131c1c0135e5d88187c" prot="public">
+          <name>SAI_QUEUE_ATTR_START</name>
+          <initializer>= 0x00000000</initializer>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1gga146e26930a20c603ae01ea2e906a9c56abeefefb5d9bca29f42732bad59e0cb2c" prot="public">
+          <name>SAI_QUEUE_ATTR_TYPE</name>
+          <initializer>= SAI_QUEUE_ATTR_START</initializer>
+          <briefdescription>
+<para>Queue type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_queue_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY | KEY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1gga146e26930a20c603ae01ea2e906a9c56a66f82879340925bd8f5b38f9d14455ea" prot="public">
+          <name>SAI_QUEUE_ATTR_PORT</name>
+          <initializer>= 0x00000001</initializer>
+          <briefdescription>
+<para>Port id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY | KEY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_PORT </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1gga146e26930a20c603ae01ea2e906a9c56accc9805241eb90111436a1dab6f3df06" prot="public">
+          <name>SAI_QUEUE_ATTR_INDEX</name>
+          <initializer>= 0x00000002</initializer>
+          <briefdescription>
+<para>Queue index. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY | KEY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1gga146e26930a20c603ae01ea2e906a9c56aacd52c6d48a0854fbac2793f65f93bd1" prot="public">
+          <name>SAI_QUEUE_ATTR_PARENT_SCHEDULER_NODE</name>
+          <initializer>= 0x00000003</initializer>
+          <briefdescription>
+<para>Parent scheduler node. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>In case of Hierarchical QOS not supported, the parent node is the port. Condition on whether Hierarchical QOS is supported or not, need to remove the MANDATORY_ON_CREATE FLAG when HQoS is introduced.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_SCHEDULER_GROUP, SAI_OBJECT_TYPE_PORT </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1gga146e26930a20c603ae01ea2e906a9c56a39c4a2a7e8fbad7aab3f4db592b23577" prot="public">
+          <name>SAI_QUEUE_ATTR_WRED_PROFILE_ID</name>
+          <initializer>= 0x00000004</initializer>
+          <briefdescription>
+<para>Attach WRED ID to queue. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>ID = <ref refid="group__SAITYPES_1ga05f6bb4ef9f7ddf0ceb2056dc6ac8c6c" kindref="member">SAI_NULL_OBJECT_ID</ref> to disable WRED</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_WRED </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1gga146e26930a20c603ae01ea2e906a9c56a9a55fb91ea926e7ddb3cb1ce3ec31145" prot="public">
+          <name>SAI_QUEUE_ATTR_BUFFER_PROFILE_ID</name>
+          <initializer>= 0x00000005</initializer>
+          <briefdescription>
+<para>Attach buffer profile to queue. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_BUFFER_PROFILE </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1gga146e26930a20c603ae01ea2e906a9c56ac15c866f9bf052b02d400b1719f16aa1" prot="public">
+          <name>SAI_QUEUE_ATTR_SCHEDULER_PROFILE_ID</name>
+          <initializer>= 0x00000006</initializer>
+          <briefdescription>
+<para>Attach scheduler to queue. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_SCHEDULER </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1gga146e26930a20c603ae01ea2e906a9c56af77f6f8e804bef223c76876c1ef90d98" prot="public">
+          <name>SAI_QUEUE_ATTR_PAUSE_STATUS</name>
+          <initializer>= 0x00000007</initializer>
+          <briefdescription>
+<para>Queue pause status. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>This attribute represents the queue internal hardware state and is updated upon receiving PFC frames. True indicates the queue is paused.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1gga146e26930a20c603ae01ea2e906a9c56a07282408cc440dccb87b38ace4e61048" prot="public">
+          <name>SAI_QUEUE_ATTR_ENABLE_PFC_DLDR</name>
+          <initializer>= 0x00000008</initializer>
+          <briefdescription>
+<para>Enable PFC Deadlock Detection and Recovery (DLDR) on a lossless queue. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>A deadlock is assumed to have occurred when a queue is in a XOFF state for more than a configurable (SAI_SWITCH_ATTR_PFC_TC_DLD_INTERVAL) amount of time.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1gga146e26930a20c603ae01ea2e906a9c56ada75f2e178faeec36c72d3251c97309a" prot="public">
+          <name>SAI_QUEUE_ATTR_PFC_DLR_INIT</name>
+          <initializer>= 0x00000009</initializer>
+          <briefdescription>
+<para>Start PFC deadlock recovery on a lossless queue. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>If the attribute is true, start the recovery and ignore if recovery has been started. If the attribute is false, stop the recovery and ignore if recovery hasn&apos;t been started.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1gga146e26930a20c603ae01ea2e906a9c56a84fef0eed6216a4734d701118567db04" prot="public">
+          <name>SAI_QUEUE_ATTR_TAM_OBJECT</name>
+          <briefdescription>
+<para>Queue bind point for TAM object. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_TAM </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1gga146e26930a20c603ae01ea2e906a9c56a7b22858362bc5010bfd31f16378e3b15" prot="public">
+          <name>SAI_QUEUE_ATTR_PFC_DLR_PACKET_ACTION</name>
+          <briefdescription>
+<para>Control for buffered and incoming packets on a queue undergoing PFC Deadlock Recovery. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>This control applies to all packets on the queue.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_packet_action_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_PACKET_ACTION_DROP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1gga146e26930a20c603ae01ea2e906a9c56ad7bbace153dae4036b627cde41f17e1c" prot="public">
+          <name>SAI_QUEUE_ATTR_PFC_CONTINUOUS_DEADLOCK_STATE</name>
+          <briefdescription>
+<para>Queue PFC continuous deadlock state. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>This attribute represents the queue&apos;s internal hardware PFC continuous deadlock state. It is an aggregation of all HW state used to determine if a queue is in PFC deadlock based on state cached/maintained by the SDK. Consecutive queries of this attribute provide the PFC state for the queue for the interval period between the queries.</para>
+<para>This attribute should only be queried as part of the PFC deadlock and recovery detection processing.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_queue_pfc_continuous_deadlock_state_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1gga146e26930a20c603ae01ea2e906a9c56a6283d9d8450ae6a1b9aceb8a8218a6c0" prot="public">
+          <name>SAI_QUEUE_ATTR_STATS_COUNT_MODE</name>
+          <briefdescription>
+<para>Set queue statistics counting mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_stats_count_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_STATS_COUNT_MODE_PACKET_AND_BYTE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1gga146e26930a20c603ae01ea2e906a9c56aa25a7c037c4ace958fdcbdabf8b24a10" prot="public">
+          <name>SAI_QUEUE_ATTR_SELECTIVE_COUNTER_LIST</name>
+          <briefdescription>
+<para>Attach counter object list. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Counter object should be of type Selective. Fill (<ref refid="group__SAICOUNTER_1ggac5e99b5b04f2a0f0665babc2a60c9641a2835fed0aa18e2fb59824c903bd712ea" kindref="member">SAI_COUNTER_ATTR_TYPE</ref> with <ref refid="group__SAICOUNTER_1gga4e3da19e4589261e88197d6576020cf1aa4b87a1c99256ee3601553c9455cb92c" kindref="member">SAI_COUNTER_TYPE_SELECTIVE</ref>).</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_COUNTER </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1gga146e26930a20c603ae01ea2e906a9c56a97500123e39fb10d1c542c085da5e416" prot="public">
+          <name>SAI_QUEUE_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1gga146e26930a20c603ae01ea2e906a9c56a4a194e667280f7f27c927630c3bbfd44" prot="public">
+          <name>SAI_QUEUE_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1gga146e26930a20c603ae01ea2e906a9c56a175ac95ad3965865af8d476096484c61" prot="public">
+          <name>SAI_QUEUE_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum defining queue attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" line="102" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" bodystart="103" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIQUEUE_1gac3390f8b4ca41069d3a319cbdc98b8f1" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_queue_stat_t</name>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1a465bf4daf19450412c44d8520fe847ab" prot="public">
+          <name>SAI_QUEUE_STAT_PACKETS</name>
+          <initializer>= 0x00000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set tx packets count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1a09accfdd32e356d6af99de27e8afbbe1" prot="public">
+          <name>SAI_QUEUE_STAT_BYTES</name>
+          <initializer>= 0x00000001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set tx bytes count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1a50286b55e95aad4ef7ca93724edcbd56" prot="public">
+          <name>SAI_QUEUE_STAT_DROPPED_PACKETS</name>
+          <initializer>= 0x00000002</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set dropped packets count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1a13a1a7bfa0a5807005a74cbb3ec14606" prot="public">
+          <name>SAI_QUEUE_STAT_DROPPED_BYTES</name>
+          <initializer>= 0x00000003</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set dropped bytes count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1a2fca97bfbb83511c01052e34916eaafa" prot="public">
+          <name>SAI_QUEUE_STAT_GREEN_PACKETS</name>
+          <initializer>= 0x00000004</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set green color tx packets count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1add99c7de8b412c4130eb652bdc122a80" prot="public">
+          <name>SAI_QUEUE_STAT_GREEN_BYTES</name>
+          <initializer>= 0x00000005</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set green color tx bytes count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1ad12edb24df11d6c9c382069769a3c37a" prot="public">
+          <name>SAI_QUEUE_STAT_GREEN_DROPPED_PACKETS</name>
+          <initializer>= 0x00000006</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set green color dropped packets count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1a27e9d64d477ed454578147cc496ce4ca" prot="public">
+          <name>SAI_QUEUE_STAT_GREEN_DROPPED_BYTES</name>
+          <initializer>= 0x00000007</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set green color dropped packets count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1ae13fa3c92c9c96176c488a88991ac848" prot="public">
+          <name>SAI_QUEUE_STAT_YELLOW_PACKETS</name>
+          <initializer>= 0x00000008</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set yellow color tx packets count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1a4e156bb865887f0cf5d73bc1145104e6" prot="public">
+          <name>SAI_QUEUE_STAT_YELLOW_BYTES</name>
+          <initializer>= 0x00000009</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set yellow color tx bytes count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1a44b4f2398d540b98bae2c752917004e9" prot="public">
+          <name>SAI_QUEUE_STAT_YELLOW_DROPPED_PACKETS</name>
+          <initializer>= 0x0000000a</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set yellow color drooped packets count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1aa9429897aaea90381b0517327c5ed89f" prot="public">
+          <name>SAI_QUEUE_STAT_YELLOW_DROPPED_BYTES</name>
+          <initializer>= 0x0000000b</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set yellow color dropped bytes count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1a00b230563e4ff3988bac73b08a6dccc4" prot="public">
+          <name>SAI_QUEUE_STAT_RED_PACKETS</name>
+          <initializer>= 0x0000000c</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set red color tx packets count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1a612bb244d178eabb46fb0a54b51916dc" prot="public">
+          <name>SAI_QUEUE_STAT_RED_BYTES</name>
+          <initializer>= 0x0000000d</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set red color tx bytes count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1af953e334308a007a32239ae6ed437396" prot="public">
+          <name>SAI_QUEUE_STAT_RED_DROPPED_PACKETS</name>
+          <initializer>= 0x0000000e</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set red color dropped packets count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1aab376196e6bdd73738206701cb26a591" prot="public">
+          <name>SAI_QUEUE_STAT_RED_DROPPED_BYTES</name>
+          <initializer>= 0x0000000f</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set red color drooped bytes count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1a75941024de31afeef236b4f7a46baa9c" prot="public">
+          <name>SAI_QUEUE_STAT_GREEN_WRED_DROPPED_PACKETS</name>
+          <initializer>= 0x00000010</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set WRED green color dropped packets count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1a1aa39f3d37d42a526416c9b73fbb20cd" prot="public">
+          <name>SAI_QUEUE_STAT_GREEN_WRED_DROPPED_BYTES</name>
+          <initializer>= 0x00000011</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set WRED green color dropped bytes count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1a5dcf4e51655784cb6b5f66706e4b4ac3" prot="public">
+          <name>SAI_QUEUE_STAT_YELLOW_WRED_DROPPED_PACKETS</name>
+          <initializer>= 0x00000012</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set WRED yellow color dropped packets count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1a15e6030f88b9ffc672d61f22599adc7b" prot="public">
+          <name>SAI_QUEUE_STAT_YELLOW_WRED_DROPPED_BYTES</name>
+          <initializer>= 0x00000013</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set WRED yellow color dropped bytes count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1afecd42ce4d81b4319e8e85795942a1db" prot="public">
+          <name>SAI_QUEUE_STAT_RED_WRED_DROPPED_PACKETS</name>
+          <initializer>= 0x00000014</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set WRED red color dropped packets count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1a3f40443fadde581362c34e7c792217d9" prot="public">
+          <name>SAI_QUEUE_STAT_RED_WRED_DROPPED_BYTES</name>
+          <initializer>= 0x00000015</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set WRED red color dropped bytes count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1a0eca75fdaba832eef36a0ee235c8eead" prot="public">
+          <name>SAI_QUEUE_STAT_WRED_DROPPED_PACKETS</name>
+          <initializer>= 0x00000016</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set WRED dropped packets count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1af9406c4868504b684a950b31053c8b79" prot="public">
+          <name>SAI_QUEUE_STAT_WRED_DROPPED_BYTES</name>
+          <initializer>= 0x00000017</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set WRED red dropped bytes count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1a39a5e76b2c53b123871b89a3869a0cfc" prot="public">
+          <name>SAI_QUEUE_STAT_CURR_OCCUPANCY_BYTES</name>
+          <initializer>= 0x00000018</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get current queue occupancy in bytes [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1aac72398e8d3005bfabe60bb4f0eb59de" prot="public">
+          <name>SAI_QUEUE_STAT_WATERMARK_BYTES</name>
+          <initializer>= 0x00000019</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get watermark queue occupancy in bytes [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1a3648599195ce1f244a84967816527465" prot="public">
+          <name>SAI_QUEUE_STAT_SHARED_CURR_OCCUPANCY_BYTES</name>
+          <initializer>= 0x0000001a</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get current queue shared occupancy in bytes [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1ad8914cd3b6331fe5431c651dab0ecf0a" prot="public">
+          <name>SAI_QUEUE_STAT_SHARED_WATERMARK_BYTES</name>
+          <initializer>= 0x0000001b</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get watermark queue shared occupancy in bytes [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1a0e12c9e8844d6cb39976374bc66c010c" prot="public">
+          <name>SAI_QUEUE_STAT_GREEN_WRED_ECN_MARKED_PACKETS</name>
+          <initializer>= 0x0000001c</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set WRED green color marked packets count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1afe9c05aba405b80300788d75d61339dd" prot="public">
+          <name>SAI_QUEUE_STAT_GREEN_WRED_ECN_MARKED_BYTES</name>
+          <initializer>= 0x0000001d</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set WRED green color marked bytes count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1a1f2263269ef0c16a5bab2cd0639d2191" prot="public">
+          <name>SAI_QUEUE_STAT_YELLOW_WRED_ECN_MARKED_PACKETS</name>
+          <initializer>= 0x0000001e</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set WRED yellow color marked packets count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1aa29dd2a78d158d461ac9e066bfabdae9" prot="public">
+          <name>SAI_QUEUE_STAT_YELLOW_WRED_ECN_MARKED_BYTES</name>
+          <initializer>= 0x0000001f</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set WRED yellow color marked bytes count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1ac37c94b57732c4ee7282d7ca12cb7a26" prot="public">
+          <name>SAI_QUEUE_STAT_RED_WRED_ECN_MARKED_PACKETS</name>
+          <initializer>= 0x00000020</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set WRED red color marked packets count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1a0bef74edd40400d4b84e889252591836" prot="public">
+          <name>SAI_QUEUE_STAT_RED_WRED_ECN_MARKED_BYTES</name>
+          <initializer>= 0x00000021</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set WRED red color marked bytes count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1a79d5c5087e80b3c3b22f87b8f335ad33" prot="public">
+          <name>SAI_QUEUE_STAT_WRED_ECN_MARKED_PACKETS</name>
+          <initializer>= 0x00000022</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set WRED marked packets count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1a2f6fe1d1a1ce9acb30b436c0d14a2b22" prot="public">
+          <name>SAI_QUEUE_STAT_WRED_ECN_MARKED_BYTES</name>
+          <initializer>= 0x00000023</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set WRED red marked bytes count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1a461d29b55864085b82d3b130af539155" prot="public">
+          <name>SAI_QUEUE_STAT_CURR_OCCUPANCY_LEVEL</name>
+          <initializer>= 0x00000024</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get current queue occupancy percentage [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1a6a7a62be84c6e032dd6befc406900573" prot="public">
+          <name>SAI_QUEUE_STAT_WATERMARK_LEVEL</name>
+          <initializer>= 0x00000025</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get watermark queue occupancy percentage [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1af80ccc904863385e71c67d962825285e" prot="public">
+          <name>SAI_QUEUE_STAT_CREDIT_WD_DELETED_PACKETS</name>
+          <initializer>= 0x00000026</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get packets deleted when the credit watch dog expires for VOQ System [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1a7a81b4b2083d5f2d1688cd11b3fc0ccb" prot="public">
+          <name>SAI_QUEUE_STAT_DELAY_WATERMARK_NS</name>
+          <initializer>= 0x00000027</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Queue delay watermark in nanoseconds [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1a0bd23e3f22ac71466e20e6be6da4d1a9" prot="public">
+          <name>SAI_QUEUE_STAT_TRIM_PACKETS</name>
+          <initializer>= 0x00000028</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Packets trimmed due to failed admission [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1a4b1415054695ca923595bb12affccba0" prot="public">
+          <name>SAI_QUEUE_STAT_CURR_OCCUPANCY_CELLS</name>
+          <initializer>= 0x00000029</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get current queue occupancy in cells [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1a0d2600af117d256de08ea29e97e34d9e" prot="public">
+          <name>SAI_QUEUE_STAT_WATERMARK_CELLS</name>
+          <initializer>= 0x0000002a</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get watermark queue occupancy in cells [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1a65dd6a5a651b1b32444bf1e42b5904a8" prot="public">
+          <name>SAI_QUEUE_STAT_SHARED_CURR_OCCUPANCY_CELLS</name>
+          <initializer>= 0x0000002b</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get current queue shared occupancy in cells [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1a383beac6953cf45c733d26a09c46289f" prot="public">
+          <name>SAI_QUEUE_STAT_SHARED_WATERMARK_CELLS</name>
+          <initializer>= 0x0000002c</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get watermark queue shared occupancy in cells [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1ggac3390f8b4ca41069d3a319cbdc98b8f1af10268a086c2f49186decdc670a9149c" prot="public">
+          <name>SAI_QUEUE_STAT_CUSTOM_RANGE_BASE</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum defining statistics for Queue. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" line="299" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" bodystart="300" bodyend="439"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIQUEUE_1ga02a08bb8ca0082195a208f1bd0b22eff" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_queue_pfc_deadlock_event_type_t</name>
+        <enumvalue id="group__SAIQUEUE_1gga02a08bb8ca0082195a208f1bd0b22effaba2b2c8e61ac04c1f15a546ee490e2c5" prot="public">
+          <name>SAI_QUEUE_PFC_DEADLOCK_EVENT_TYPE_DETECTED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PFC deadlock detected </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQUEUE_1gga02a08bb8ca0082195a208f1bd0b22effaae6e3bdb5e85ff76ccbfd54c200c6367" prot="public">
+          <name>SAI_QUEUE_PFC_DEADLOCK_EVENT_TYPE_RECOVERED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PFC deadlock recovery ended </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum defining Queue deadlock event state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" line="444" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" bodystart="445" bodyend="452"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIQUEUE_1ga01e87378e951226448167de3ccc7e842" prot="public" static="no">
+        <type>enum <ref refid="group__SAIQUEUE_1gad01a80a619ce999c5db4d67bc3ad5ee6" kindref="member">_sai_queue_type_t</ref></type>
+        <definition>typedef enum _sai_queue_type_t sai_queue_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_queue_type_t</name>
+        <briefdescription>
+<para>Enum defining Queue types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" line="62" column="18"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIQUEUE_1ga2606621a2bad3ee549b8b6d15ea0a128" prot="public" static="no">
+        <type>enum <ref refid="group__SAIQUEUE_1ga32940b117afe6d1052d5ae086967be41" kindref="member">_sai_queue_pfc_continuous_deadlock_state_t</ref></type>
+        <definition>typedef enum _sai_queue_pfc_continuous_deadlock_state_t sai_queue_pfc_continuous_deadlock_state_t</definition>
+        <argsstring></argsstring>
+        <name>sai_queue_pfc_continuous_deadlock_state_t</name>
+        <briefdescription>
+<para>Enum defining queue PFC continuous deadlock state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" line="97" column="43"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIQUEUE_1ga45c78500990c4dd9c6b25e30a077a8bd" prot="public" static="no">
+        <type>enum <ref refid="group__SAIQUEUE_1ga146e26930a20c603ae01ea2e906a9c56" kindref="member">_sai_queue_attr_t</ref></type>
+        <definition>typedef enum _sai_queue_attr_t sai_queue_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_queue_attr_t</name>
+        <briefdescription>
+<para>Enum defining queue attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" line="294" column="18"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIQUEUE_1ga03404a7d03eecb705f2a6c8d00cb53d5" prot="public" static="no">
+        <type>enum <ref refid="group__SAIQUEUE_1gac3390f8b4ca41069d3a319cbdc98b8f1" kindref="member">_sai_queue_stat_t</ref></type>
+        <definition>typedef enum _sai_queue_stat_t sai_queue_stat_t</definition>
+        <argsstring></argsstring>
+        <name>sai_queue_stat_t</name>
+        <briefdescription>
+<para>Enum defining statistics for Queue. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" line="439" column="18"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIQUEUE_1ga8284031415109bd4cd6deaa0b6adb7ca" prot="public" static="no">
+        <type>enum <ref refid="group__SAIQUEUE_1ga02a08bb8ca0082195a208f1bd0b22eff" kindref="member">_sai_queue_pfc_deadlock_event_type_t</ref></type>
+        <definition>typedef enum _sai_queue_pfc_deadlock_event_type_t sai_queue_pfc_deadlock_event_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_queue_pfc_deadlock_event_type_t</name>
+        <briefdescription>
+<para>Enum defining Queue deadlock event state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" line="452" column="37"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIQUEUE_1ga98387d700844bbb7980deac8326f9984" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__queue__deadlock__notification__data__t" kindref="compound">_sai_queue_deadlock_notification_data_t</ref></type>
+        <definition>typedef struct _sai_queue_deadlock_notification_data_t sai_queue_deadlock_notification_data_t</definition>
+        <argsstring></argsstring>
+        <name>sai_queue_deadlock_notification_data_t</name>
+        <briefdescription>
+<para>Notification data format received from SAI queue deadlock event callback. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" line="480" column="40"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIQUEUE_1gab283805eac6fddfa765b9d1dbaf4910d" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_queue_fn) (_Out_ sai_object_id_t *queue_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *queue_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_queue_fn</name>
+        <briefdescription>
+<para>Create queue. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">queue_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Queue id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" line="492" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" bodystart="492" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIQUEUE_1gaefa1034c4469b4088122b248b3996c67" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_queue_fn) (_In_ sai_object_id_t queue_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t queue_id)</argsstring>
+        <name>sai_remove_queue_fn</name>
+        <briefdescription>
+<para>Remove queue. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">queue_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Queue id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" line="505" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" bodystart="505" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIQUEUE_1ga478b30c829397fa54acd4cc40cf9cec3" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_queue_attribute_fn) (_In_ sai_object_id_t queue_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t queue_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_queue_attribute_fn</name>
+        <briefdescription>
+<para>Set attribute to Queue. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">queue_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Queue ID to set the attribute </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute to set</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" line="516" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" bodystart="516" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIQUEUE_1gaca61ffc65fa57d565ab94b9ebfe7a466" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_queue_attribute_fn) (_In_ sai_object_id_t queue_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t queue_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_queue_attribute_fn</name>
+        <briefdescription>
+<para>Get attribute to Queue. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">queue_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Queue id to set the attribute </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" line="529" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" bodystart="529" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIQUEUE_1gaf54effb9e8e591b9861b4116103f1cc9" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_queue_stats_fn) (_In_ sai_object_id_t queue_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t queue_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_queue_stats_fn</name>
+        <briefdescription>
+<para>Get queue statistics counters. Deprecated for backward compatibility. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">queue_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Queue id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" line="544" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" bodystart="544" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIQUEUE_1gafcda31b800d962d8df2e3dda6ef82411" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_queue_stats_ext_fn) (_In_ sai_object_id_t queue_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t queue_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_queue_stats_ext_fn</name>
+        <briefdescription>
+<para>Get queue statistics counters extended. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">queue_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Queue id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Statistics mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" line="561" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" bodystart="561" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIQUEUE_1ga9a68f1ef0e90c019b1e31f3641356b20" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_clear_queue_stats_fn) (_In_ sai_object_id_t queue_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</definition>
+        <argsstring>)(_In_ sai_object_id_t queue_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</argsstring>
+        <name>sai_clear_queue_stats_fn</name>
+        <briefdescription>
+<para>Clear queue statistics counters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">queue_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Queue id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" line="577" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" bodystart="577" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIQUEUE_1gaf753c0e5c329d0f12d0f9210c26c9c69" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* sai_queue_pfc_deadlock_notification_fn) (_In_ uint32_t count, _In_ const sai_queue_deadlock_notification_data_t *data)</definition>
+        <argsstring>)(_In_ uint32_t count, _In_ const sai_queue_deadlock_notification_data_t *data)</argsstring>
+        <name>sai_queue_pfc_deadlock_notification_fn</name>
+        <briefdescription>
+<para>Queue PFC deadlock event notification. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Passed as a parameter into sai_initialize_switch()</para>
+<para><simplesect kind="par"><title>Count:</title><para> @@count           data[count]</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of notifications </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of queue event types </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" line="592" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" bodystart="592" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIQUEUE_1gaa339695b6897b8fa16f2b5e1b7112666" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__queue__api__t" kindref="compound">_sai_queue_api_t</ref></type>
+        <definition>typedef struct _sai_queue_api_t sai_queue_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_queue_api_t</name>
+        <briefdescription>
+<para>QOS methods table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" line="610" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

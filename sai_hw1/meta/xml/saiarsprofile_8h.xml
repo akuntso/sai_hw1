@@ -1,0 +1,994 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="saiarsprofile_8h" kind="file" language="C++">
+    <compoundname>saiarsprofile.h</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+    <includedby refid="sai_8h" local="yes">/home/andrii/sai_hw1/SAI/inc/sai.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="5">
+        <label>sys/types.h</label>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saiarsprofile.h</label>
+        <link refid="saiarsprofile_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>saitypes.h</label>
+        <link refid="saitypes_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/andrii/sai_hw1/SAI/inc/sai.h</label>
+        <link refid="sai_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saiarsprofile.h</label>
+        <link refid="saiarsprofile_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</label>
+        <link refid="saiextensions_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct__sai__ars__profile__api__t" prot="public">_sai_ars_profile_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIARSPROFILE_1ga19d4830ccebfc6267aee85bdf98a4ff7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_ars_profile_algo_t</name>
+        <enumvalue id="group__SAIARSPROFILE_1gga19d4830ccebfc6267aee85bdf98a4ff7acd245f50c1dddd03a5631d3619d53014" prot="public">
+          <name>SAI_ARS_PROFILE_ALGO_EWMA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Exponentially weighted moving average </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Adaptive Routing and Switching quality measure algorithm. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiarsprofile.h" line="39" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiarsprofile.h" bodystart="40" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIARSPROFILE_1gaaa781f99276391d892db15720ae0743b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_ars_profile_attr_t</name>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743ba468507233fcaafefbb31dfb66a3bae19" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743ba6e7c1cc50c3b808c1e2f7a48597df464" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_ALGO</name>
+          <initializer>= SAI_ARS_PROFILE_ATTR_START</initializer>
+          <briefdescription>
+<para>ARS algorithm used for quality computation. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ars_profile_algo_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_ARS_PROFILE_ALGO_EWMA </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743bafbe9d4f19b31aeef3c615678f7fc6381" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_SAMPLING_INTERVAL</name>
+          <briefdescription>
+<para>Sampling interval in microseconds of data for quality measure computation. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         16 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743ba80403f4da2ab9efda1ed46a99cf2cd42" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_ARS_RANDOM_SEED</name>
+          <briefdescription>
+<para>Random seed for adaptive routing and switching. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743ba9f9d57937ba988ccf81d5202a234f7ff" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_ECMP_ARS_MAX_GROUPS</name>
+          <briefdescription>
+<para>Maximum number of ECMP ARS groups. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743ba673903a0b029abbb0787a21eb59aea37" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_ECMP_ARS_MAX_MEMBERS_PER_GROUP</name>
+          <briefdescription>
+<para>Maximum number of members per ECMP ARS group. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743ba26260dc263ff41093ce4329243d36cb0" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_LAG_ARS_MAX_GROUPS</name>
+          <briefdescription>
+<para>Maximum number of LAG ARS groups. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743ba93fbade7e9c410e3681a8cb8cf237dad" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_LAG_ARS_MAX_MEMBERS_PER_GROUP</name>
+          <briefdescription>
+<para>Maximum number of members per LAG ARS group. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743baa3a59f2b9c5f320c8510b173b94e8084" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_PORT_LOAD_PAST</name>
+          <briefdescription>
+<para>Enable past port load as the quality parameter. This is the average egress bytes measured on a port. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         true </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_ARS_PROFILE_ATTR_ALGO == SAI_ARS_PROFILE_ALGO_EWMA </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743ba1ee280d3b4d5541fb276028aba2c8400" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_PORT_LOAD_PAST_WEIGHT</name>
+          <briefdescription>
+<para>Weight attribute is used in EWMA calculations. Large weight lowers the significance of instantaneous measure on the overall average. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         16 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_ARS_PROFILE_ATTR_ALGO == SAI_ARS_PROFILE_ALGO_EWMA </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743baf8d118cda2e714e701f063d0763d67d4" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_PORT_LOAD_FUTURE</name>
+          <briefdescription>
+<para>Enable future port load as the quality parameter. This is the average queued bytes measured on a port. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         true </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_ARS_PROFILE_ATTR_ALGO == SAI_ARS_PROFILE_ALGO_EWMA </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743ba2cdb38ca6a90754c571407d966ac9802" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_PORT_LOAD_FUTURE_WEIGHT</name>
+          <briefdescription>
+<para>Weight attribute is used in EWMA calculations. Large weight lowers the significance of instantaneous measure on the overall average. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         16 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_ARS_PROFILE_ATTR_ALGO == SAI_ARS_PROFILE_ALGO_EWMA </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743ba743811aa4f24adbeba52acb31856ff78" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_PORT_LOAD_CURRENT</name>
+          <briefdescription>
+<para>Set port loading value to current sampled value when sampled value is less than the average. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_ARS_PROFILE_ATTR_ALGO == SAI_ARS_PROFILE_ALGO_EWMA </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743baec39ea65cae593d3b0897aa4faa9e611" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_PORT_LOAD_EXPONENT</name>
+          <briefdescription>
+<para>EWMA exponent used in port loading computation. Larger the exponent, larger is the weight to previously computed port loading value. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         2 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_ARS_PROFILE_ATTR_ALGO == SAI_ARS_PROFILE_ALGO_EWMA </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743ba2c6746d1f87b6ba8728a556cd3e5ce97" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_QUANT_BANDS</name>
+          <briefdescription>
+<para>Number of quantization bands support for quality map. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743ba4e0adb41a32ca8bc16aa2ba853dae9e0" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_QUANT_BAND_0_MIN_THRESHOLD</name>
+          <briefdescription>
+<para>Minimum threshold used for quantization process in Mbps for band 0. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743ba9e027c817786c9076b167d786c4e985b" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_QUANT_BAND_0_MAX_THRESHOLD</name>
+          <briefdescription>
+<para>Maximum threshold used for quantization process in Mbps for band 0. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743bae81adb259cb804b7291d4a4a9ae7c335" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_QUANT_BAND_1_MIN_THRESHOLD</name>
+          <briefdescription>
+<para>Minimum threshold used for quantization process in Mbps for band 1. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743ba560b989434db1be36288886b4fb1a912" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_QUANT_BAND_1_MAX_THRESHOLD</name>
+          <briefdescription>
+<para>Maximum threshold used for quantization process in Mbps for band 1. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743ba926e4a455de308976971974c17428c37" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_QUANT_BAND_2_MIN_THRESHOLD</name>
+          <briefdescription>
+<para>Minimum threshold used for quantization process in Mbps for band 2. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743bac77a824ef574f16f6d33eba0b7bb4e75" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_QUANT_BAND_2_MAX_THRESHOLD</name>
+          <briefdescription>
+<para>Maximum threshold used for quantization process in Mbps for band 2. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743ba10fe1b14e961f84f0f74aae140520287" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_QUANT_BAND_3_MIN_THRESHOLD</name>
+          <briefdescription>
+<para>Minimum threshold used for quantization process in Mbps for band 3. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743ba63e615527331d7586afd1012e10e091d" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_QUANT_BAND_3_MAX_THRESHOLD</name>
+          <briefdescription>
+<para>Maximum threshold used for quantization process in Mbps for band 3. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743ba9715ee744df84643efc2e46bd4ca9d09" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_QUANT_BAND_4_MIN_THRESHOLD</name>
+          <briefdescription>
+<para>Minimum threshold used for quantization process in Mbps for band 4. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743baaf61f3bbcb666ec7774dd7a5678a0062" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_QUANT_BAND_4_MAX_THRESHOLD</name>
+          <briefdescription>
+<para>Maximum threshold used for quantization process in Mbps for band 4. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743ba86d84a244a1dee4cf31923554e6e8981" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_QUANT_BAND_5_MIN_THRESHOLD</name>
+          <briefdescription>
+<para>Minimum threshold used for quantization process in Mbps for band 5. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743ba1623de11624af10f96eb49a56488a049" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_QUANT_BAND_5_MAX_THRESHOLD</name>
+          <briefdescription>
+<para>Maximum threshold used for quantization process in Mbps for band 5. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743bae6b9db7964d2862cab73d3eeddd876bd" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_QUANT_BAND_6_MIN_THRESHOLD</name>
+          <briefdescription>
+<para>Minimum threshold used for quantization process in Mbps for band 6. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743ba13d5c4f18b1001231fd8f91584789f2b" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_QUANT_BAND_6_MAX_THRESHOLD</name>
+          <briefdescription>
+<para>Maximum threshold used for quantization process in Mbps for band 6. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743ba1c38e8df3ff25b3fcce0f6676a8ea7d7" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_QUANT_BAND_7_MIN_THRESHOLD</name>
+          <briefdescription>
+<para>Minimum threshold used for quantization process in Mbps for band 7. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743ba9ab0972477ac5e2081a21ba8450d6421" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_QUANT_BAND_7_MAX_THRESHOLD</name>
+          <briefdescription>
+<para>Maximum threshold used for quantization process in Mbps for band 7. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743ba4c0e428446614aaf41af1eadd3a2bf19" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_ENABLE_IPV4</name>
+          <briefdescription>
+<para>Enable IPv4 traffic (ether type) for ARS processing. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743baae4b3613068508ddde050c8eafe41bf1" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_ENABLE_IPV6</name>
+          <briefdescription>
+<para>Enable IPv6 traffic (ether type) for ARS processing. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743ba8a063c18db17044ed5c9343d1fd2d688" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_LOAD_PAST_MIN_VAL</name>
+          <briefdescription>
+<para>Minimum past load threshold value for quantization process. Used by hardware to allocate the quantization bands. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743ba5b730ffb26f7ec7a4a043ed0aa7ac051" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_LOAD_PAST_MAX_VAL</name>
+          <briefdescription>
+<para>Maximum past load threshold value for quantization process. Used by hardware to allocate the quantization bands. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743ba44f5aae4dfe0293c3c4c27e63b3f9202" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_QUANT_BAND_MIN_THRESHOLD_LIST_LOAD_PAST</name>
+          <briefdescription>
+<para>Minimum threshold used for quantization bands for past load. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_u32_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743ba6bc8114ef3209d7a559c6c7b0c351be1" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_QUANT_BAND_MAX_THRESHOLD_LIST_LOAD_PAST</name>
+          <briefdescription>
+<para>Maximum threshold used for quantization bands for past load. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_u32_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743baa0e8453db209a0b243404ad18a150879" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_LOAD_FUTURE_MIN_VAL</name>
+          <briefdescription>
+<para>Minimum future load threshold value for quantization process. Used by hardware to allocate the quantization bands. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743bab9fb266c093b0bdd5b9d4fca6f7ccb18" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_LOAD_FUTURE_MAX_VAL</name>
+          <briefdescription>
+<para>Maximum future load threshold value for quantization process. Used by hardware to allocate the quantization bands. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743ba753c3c1efc7ff1268e9cc05b3c566532" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_QUANT_BAND_MIN_THRESHOLD_LIST_LOAD_FUTURE</name>
+          <briefdescription>
+<para>Minimum threshold used for quantization bands for future load. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_u32_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743ba1421788ba3d859f81b497cb7acfc856a" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_QUANT_BAND_MAX_THRESHOLD_LIST_LOAD_FUTURE</name>
+          <briefdescription>
+<para>Maximum threshold used for quantization bands for future load. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_u32_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743bac7841a3d17cbb579bebac8260c268a2d" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_LOAD_CURRENT_MIN_VAL</name>
+          <briefdescription>
+<para>Minimum current load threshold value for quantization process. Used by hardware to allocate the quantization bands. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743bac92fcfeb6cb99599c3f9332001d3c6fb" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_LOAD_CURRENT_MAX_VAL</name>
+          <briefdescription>
+<para>Maximum current load threshold value for quantization process. Used by hardware to allocate the quantization bands. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743baeb4d82f54278b7e41328a86cfa09166e" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_QUANT_BAND_MIN_THRESHOLD_LIST_LOAD_CURRENT</name>
+          <briefdescription>
+<para>Minimum threshold used for quantization bands for current load. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_u32_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743bacb5ed0b54b36bd831fda6c3821f5eb5b" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_QUANT_BAND_MAX_THRESHOLD_LIST_LOAD_CURRENT</name>
+          <briefdescription>
+<para>Maximum threshold used for quantization bands for current load. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_u32_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743ba754c2e9d0cb6247eed894829f6c17699" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_MAX_FLOWS</name>
+          <briefdescription>
+<para>Maximum flows supported for ARS processing. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743ba82571607866e316b6507c59c831d3229" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743bab1f29456fb729efbcd6c7f0e9fbcf7ac" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIARSPROFILE_1ggaaa781f99276391d892db15720ae0743bab85b05e652cb28dad1f317408bd12906" prot="public">
+          <name>SAI_ARS_PROFILE_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum defining attributes for ARS profile. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiarsprofile.h" line="49" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiarsprofile.h" bodystart="50" bodyend="475"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIARSPROFILE_1gac172588e1fc8bebfffebc74cb208b339" prot="public" static="no">
+        <type>enum <ref refid="group__SAIARSPROFILE_1ga19d4830ccebfc6267aee85bdf98a4ff7" kindref="member">_sai_ars_profile_algo_t</ref></type>
+        <definition>typedef enum _sai_ars_profile_algo_t sai_ars_profile_algo_t</definition>
+        <argsstring></argsstring>
+        <name>sai_ars_profile_algo_t</name>
+        <briefdescription>
+<para>Adaptive Routing and Switching quality measure algorithm. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiarsprofile.h" line="44" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIARSPROFILE_1gacc50d5f5e86b5c0ad2c574daa320de15" prot="public" static="no">
+        <type>enum <ref refid="group__SAIARSPROFILE_1gaaa781f99276391d892db15720ae0743b" kindref="member">_sai_ars_profile_attr_t</ref></type>
+        <definition>typedef enum _sai_ars_profile_attr_t sai_ars_profile_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_ars_profile_attr_t</name>
+        <briefdescription>
+<para>Enum defining attributes for ARS profile. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiarsprofile.h" line="475" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIARSPROFILE_1gaead63da930179b44b82c8c493653eee3" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_ars_profile_fn) (_Out_ sai_object_id_t *ars_profile_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *ars_profile_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_ars_profile_fn</name>
+        <briefdescription>
+<para>Create ARS Profile. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">ars_profile_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ARS Profile Id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiarsprofile.h" line="487" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiarsprofile.h" bodystart="487" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIARSPROFILE_1gabc3deb927f4a6e06083a7b65f475bbba" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_ars_profile_fn) (_In_ sai_object_id_t ars_profile_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t ars_profile_id)</argsstring>
+        <name>sai_remove_ars_profile_fn</name>
+        <briefdescription>
+<para>Remove ARS Profile. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ars_profile_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ARS Profile id to be removed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiarsprofile.h" line="500" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiarsprofile.h" bodystart="500" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIARSPROFILE_1ga35eb0dd1a8b71fb5be6d3dac7da2489d" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_ars_profile_attribute_fn) (_In_ sai_object_id_t ars_profile_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t ars_profile_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_ars_profile_attribute_fn</name>
+        <briefdescription>
+<para>Set attributes for ARS profile. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ars_profile_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ARS Profile Id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute to set</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiarsprofile.h" line="511" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiarsprofile.h" bodystart="511" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIARSPROFILE_1gaa65b36437fb0142201614b8ba85b62a0" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_ars_profile_attribute_fn) (_In_ sai_object_id_t ars_profile_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t ars_profile_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_ars_profile_attribute_fn</name>
+        <briefdescription>
+<para>Get attributes of ARS profile. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ars_profile_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ARS Profile id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiarsprofile.h" line="524" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiarsprofile.h" bodystart="524" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIARSPROFILE_1gaae173dba771f378008372c585a66ead9" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__ars__profile__api__t" kindref="compound">_sai_ars_profile_api_t</ref></type>
+        <definition>typedef struct _sai_ars_profile_api_t sai_ars_profile_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_ars_profile_api_t</name>
+        <briefdescription>
+<para>ARS Profile methods table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiarsprofile.h" line="539" column="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module defines SAI QOS Maps interface. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2014 Microsoft Open Technologies, Inc.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <ulink url="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</ulink></para>
+<para>THIS CODE IS PROVIDED ON AN <emphasis>AS IS</emphasis> BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</para>
+<para>See the Apache Version 2.0 License for specific language governing permissions and limitations under the License.</para>
+<para>Microsoft would like to thank the following companies for their review and assistance with these files: Intel Corporation, Mellanox Technologies Ltd, Dell Products, L.P., Facebook, Inc., Marvell International Ltd. </para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saiarsprofile.h"/>
+  </compounddef>
+</doxygen>

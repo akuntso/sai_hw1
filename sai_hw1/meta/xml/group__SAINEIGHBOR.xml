@@ -1,0 +1,683 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group__SAINEIGHBOR" kind="group">
+    <compoundname>SAINEIGHBOR</compoundname>
+    <title>SAI - Neighbor specific API definitions.</title>
+    <innerclass refid="struct__sai__neighbor__entry__t" prot="public">_sai_neighbor_entry_t</innerclass>
+    <innerclass refid="struct__sai__neighbor__api__t" prot="public">_sai_neighbor_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAINEIGHBOR_1gaae5e1a835bf95e5dab9f146c57b07e78" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_neighbor_entry_attr_t</name>
+        <enumvalue id="group__SAINEIGHBOR_1ggaae5e1a835bf95e5dab9f146c57b07e78a92d11481aa1caddc09d2ab7833b1a171" prot="public">
+          <name>SAI_NEIGHBOR_ENTRY_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEIGHBOR_1ggaae5e1a835bf95e5dab9f146c57b07e78af948159f8f46215a9d6c173d3ba3fc76" prot="public">
+          <name>SAI_NEIGHBOR_ENTRY_ATTR_DST_MAC_ADDRESS</name>
+          <initializer>= SAI_NEIGHBOR_ENTRY_ATTR_START</initializer>
+          <briefdescription>
+<para>Destination MAC address for the neighbor Valid only when SAI_NEIGHBOR_ENTRY_ATTR_IS_LOCAL == true. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_mac_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEIGHBOR_1ggaae5e1a835bf95e5dab9f146c57b07e78a47ea133a1582559e64137c4a1952bf14" prot="public">
+          <name>SAI_NEIGHBOR_ENTRY_ATTR_PACKET_ACTION</name>
+          <briefdescription>
+<para>L3 forwarding action for this neighbor. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_packet_action_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_PACKET_ACTION_FORWARD </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEIGHBOR_1ggaae5e1a835bf95e5dab9f146c57b07e78aa96ef83e1a66be060b30ccd7425b2b14" prot="public">
+          <name>SAI_NEIGHBOR_ENTRY_ATTR_USER_TRAP_ID</name>
+          <briefdescription>
+<para>Generate User Defined Trap ID for trap/log actions. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>When it is SAI_NULL_OBJECT_ID, then packet will not be trapped.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_HOSTIF_USER_DEFINED_TRAP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEIGHBOR_1ggaae5e1a835bf95e5dab9f146c57b07e78a52ea35d480ff6b48315f0da7d356f3ee" prot="public">
+          <name>SAI_NEIGHBOR_ENTRY_ATTR_NO_HOST_ROUTE</name>
+          <briefdescription>
+<para>Neighbor not to be programmed as a host route entry in ASIC and to be only used to setup next-hop purpose. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Typical use-case is to set this true for neighbor with IPv6 link-local addresses.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEIGHBOR_1ggaae5e1a835bf95e5dab9f146c57b07e78a6e46d0ac930923a1d14ed3652f160518" prot="public">
+          <name>SAI_NEIGHBOR_ENTRY_ATTR_META_DATA</name>
+          <briefdescription>
+<para>User based Meta Data. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Value Range <ref refid="group__SAISWITCH_1gga96df0871b3925f973f4a9079ffb3e634aaf0e9883048efe823e2a4b0de5bd64eb" kindref="member">SAI_SWITCH_ATTR_NEIGHBOR_DST_USER_META_DATA_RANGE</ref></para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEIGHBOR_1ggaae5e1a835bf95e5dab9f146c57b07e78a873513e5806cc78de2e9a39f8ed2bf6d" prot="public">
+          <name>SAI_NEIGHBOR_ENTRY_ATTR_COUNTER_ID</name>
+          <briefdescription>
+<para>Attach a counter. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>When it is empty, then packet hits won&apos;t be counted</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_COUNTER </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEIGHBOR_1ggaae5e1a835bf95e5dab9f146c57b07e78a96b07984af0d260412b78f0dc71badc2" prot="public">
+          <name>SAI_NEIGHBOR_ENTRY_ATTR_ENCAP_INDEX</name>
+          <briefdescription>
+<para>Encapsulation Index. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Defines the neighbor&apos;s encapsulation index</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         internal </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEIGHBOR_1ggaae5e1a835bf95e5dab9f146c57b07e78a8f616179db4b3507ae3c16bb205d37b8" prot="public">
+          <name>SAI_NEIGHBOR_ENTRY_ATTR_ENCAP_IMPOSE_INDEX</name>
+          <briefdescription>
+<para>Encapsulation index is imposed. This is deprecated. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>This attribute is deprecated This is a flag which states that the encap index was imposed. On create and set the SAI_NEIGHBOR_ENTRY_ATTR_ENCAP_INDEX must be present.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+<simplesect kind="par"><title>Deprecated:</title><para> @@deprecated      true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEIGHBOR_1ggaae5e1a835bf95e5dab9f146c57b07e78a0e03a35f2d495f3bfc9cdf447716c6be" prot="public">
+          <name>SAI_NEIGHBOR_ENTRY_ATTR_IS_LOCAL</name>
+          <briefdescription>
+<para>Is Neighbor Local. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>This is a flag which states that the neighbor being created is local. This can be used to sanity check the impose index flag. For example, in some implementations imposing an encap index when the RIF is port-based and the neighbor is local may not be allowed.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEIGHBOR_1ggaae5e1a835bf95e5dab9f146c57b07e78aea6d60a91234154b8b485722913df063" prot="public">
+          <name>SAI_NEIGHBOR_ENTRY_ATTR_IP_ADDR_FAMILY</name>
+          <briefdescription>
+<para>Neighbor entry IP address family. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>READ-ONLY</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_addr_family_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>IsResourceType:</title><para> @@isresourcetype  true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEIGHBOR_1ggaae5e1a835bf95e5dab9f146c57b07e78ae51e0a1467436480e82e07ff7728b7ef" prot="public">
+          <name>SAI_NEIGHBOR_ENTRY_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEIGHBOR_1ggaae5e1a835bf95e5dab9f146c57b07e78a33ae4a8d986c3be6b1e87b3eb332b6fa" prot="public">
+          <name>SAI_NEIGHBOR_ENTRY_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEIGHBOR_1ggaae5e1a835bf95e5dab9f146c57b07e78a298c495a6735b31a56c396bb6b919968" prot="public">
+          <name>SAI_NEIGHBOR_ENTRY_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute Id for SAI neighbor object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saineighbor.h" line="44" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saineighbor.h" bodystart="45" bodyend="180"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAINEIGHBOR_1ga52bb2cce3f96c12364d9fb2a5786be3e" prot="public" static="no">
+        <type>enum <ref refid="group__SAINEIGHBOR_1gaae5e1a835bf95e5dab9f146c57b07e78" kindref="member">_sai_neighbor_entry_attr_t</ref></type>
+        <definition>typedef enum _sai_neighbor_entry_attr_t sai_neighbor_entry_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_neighbor_entry_attr_t</name>
+        <briefdescription>
+<para>Attribute Id for SAI neighbor object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saineighbor.h" line="180" column="27"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINEIGHBOR_1gae1e8d0aa64419b76dd3c72a26207cb0c" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__neighbor__entry__t" kindref="compound">_sai_neighbor_entry_t</ref></type>
+        <definition>typedef struct _sai_neighbor_entry_t sai_neighbor_entry_t</definition>
+        <argsstring></argsstring>
+        <name>sai_neighbor_entry_t</name>
+        <briefdescription>
+<para>Neighbor entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saineighbor.h" line="206" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINEIGHBOR_1ga8e179b3fad2059f9edecab19e82583d8" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_neighbor_entry_fn) (_In_ const sai_neighbor_entry_t *neighbor_entry, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ const sai_neighbor_entry_t *neighbor_entry, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_neighbor_entry_fn</name>
+        <briefdescription>
+<para>Create neighbor entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Note: IP address expected in Network Byte Order.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">neighbor_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Neighbor entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saineighbor.h" line="219" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saineighbor.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINEIGHBOR_1ga920277ac5c74cc1f7d3759688dd678a4" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_neighbor_entry_fn) (_In_ const sai_neighbor_entry_t *neighbor_entry)</definition>
+        <argsstring>)(_In_ const sai_neighbor_entry_t *neighbor_entry)</argsstring>
+        <name>sai_remove_neighbor_entry_fn</name>
+        <briefdescription>
+<para>Remove neighbor entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Note: IP address expected in Network Byte Order.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">neighbor_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Neighbor entry</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saineighbor.h" line="233" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saineighbor.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINEIGHBOR_1gadb84f46515359209d22ce4bfd6e49266" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_neighbor_entry_attribute_fn) (_In_ const sai_neighbor_entry_t *neighbor_entry, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ const sai_neighbor_entry_t *neighbor_entry, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_neighbor_entry_attribute_fn</name>
+        <briefdescription>
+<para>Set neighbor attribute value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">neighbor_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Neighbor entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saineighbor.h" line="244" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saineighbor.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINEIGHBOR_1ga33896dfb5183f3fdc6d0746c5433b684" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_neighbor_entry_attribute_fn) (_In_ const sai_neighbor_entry_t *neighbor_entry, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ const sai_neighbor_entry_t *neighbor_entry, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_neighbor_entry_attribute_fn</name>
+        <briefdescription>
+<para>Get neighbor attribute value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">neighbor_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Neighbor entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saineighbor.h" line="257" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saineighbor.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINEIGHBOR_1ga67f0ac85a18c7e93e19e69f10ac4da9c" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_all_neighbor_entries_fn) (_In_ sai_object_id_t switch_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t switch_id)</argsstring>
+        <name>sai_remove_all_neighbor_entries_fn</name>
+        <briefdescription>
+<para>Remove all neighbor entries. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saineighbor.h" line="269" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saineighbor.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINEIGHBOR_1gacf556ad5f5983341d513714ce0a6913a" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_create_neighbor_entry_fn) (_In_ uint32_t object_count, _In_ const sai_neighbor_entry_t *neighbor_entry, _In_ const uint32_t *attr_count, _In_ const sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_neighbor_entry_t *neighbor_entry, _In_ const uint32_t *attr_count, _In_ const sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_create_neighbor_entry_fn</name>
+        <briefdescription>
+<para>Bulk create Neighbor entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to create </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">neighbor_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of object to create </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attr_count. Caller passes the number of attribute for each object to create. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attributes for every object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are created or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to create. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saineighbor.h" line="289" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saineighbor.h" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINEIGHBOR_1gae8d5c8edb9a2db7c5c33447745805ef2" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_remove_neighbor_entry_fn) (_In_ uint32_t object_count, _In_ const sai_neighbor_entry_t *neighbor_entry, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_neighbor_entry_t *neighbor_entry, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_remove_neighbor_entry_fn</name>
+        <briefdescription>
+<para>Bulk remove Neighbor entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to remove </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">neighbor_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of objects to remove </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are removed or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to remove. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saineighbor.h" line="311" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saineighbor.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINEIGHBOR_1ga186853169c011e62894fff60d649ca37" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_set_neighbor_entry_attribute_fn) (_In_ uint32_t object_count, _In_ const sai_neighbor_entry_t *neighbor_entry, _In_ const sai_attribute_t *attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_neighbor_entry_t *neighbor_entry, _In_ const sai_attribute_t *attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_set_neighbor_entry_attribute_fn</name>
+        <briefdescription>
+<para>Bulk set attribute on Neighbor entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to set attribute </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">neighbor_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of objects to set attribute </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attributes to set on objects, one attribute per object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are set or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to set. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saineighbor.h" line="332" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saineighbor.h" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINEIGHBOR_1ga115cd51d215f2aa3c5feee32fabaf9ce" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_get_neighbor_entry_attribute_fn) (_In_ uint32_t object_count, _In_ const sai_neighbor_entry_t *neighbor_entry, _In_ const uint32_t *attr_count, _Inout_ sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_neighbor_entry_t *neighbor_entry, _In_ const uint32_t *attr_count, _Inout_ sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_get_neighbor_entry_attribute_fn</name>
+        <briefdescription>
+<para>Bulk get attribute on Neighbor entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to get attribute </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">neighbor_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of objects to get attribute </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attr_count. Caller passes the number of attribute for each object to get </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attributes to get on objects, one attribute per object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are get or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to get. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saineighbor.h" line="356" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saineighbor.h" bodystart="356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINEIGHBOR_1gaba7f653459431779a87a79c178b70163" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__neighbor__api__t" kindref="compound">_sai_neighbor_api_t</ref></type>
+        <definition>typedef struct _sai_neighbor_api_t sai_neighbor_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_neighbor_api_t</name>
+        <briefdescription>
+<para>Neighbor table methods, retrieved via <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saineighbor.h" line="380" column="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

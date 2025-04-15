@@ -1,0 +1,403 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="saivirtualrouter_8h" kind="file" language="C++">
+    <compoundname>saivirtualrouter.h</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+    <includedby refid="sai_8h" local="yes">/home/andrii/sai_hw1/SAI/inc/sai.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saivirtualrouter.h</label>
+        <link refid="saivirtualrouter_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="5">
+        <label>sys/types.h</label>
+      </node>
+      <node id="2">
+        <label>saitypes.h</label>
+        <link refid="saitypes_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saivirtualrouter.h</label>
+        <link refid="saivirtualrouter_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/andrii/sai_hw1/SAI/inc/sai.h</label>
+        <link refid="sai_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</label>
+        <link refid="saiextensions_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct__sai__virtual__router__api__t" prot="public">_sai_virtual_router_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIROUTER_1ga8cf0cd9569ee13bb720da7ba07ac5dba" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_virtual_router_attr_t</name>
+        <enumvalue id="group__SAIROUTER_1gga8cf0cd9569ee13bb720da7ba07ac5dbaa0ffbc3fd72754d1f6f35cc885f1f6555" prot="public">
+          <name>SAI_VIRTUAL_ROUTER_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTER_1gga8cf0cd9569ee13bb720da7ba07ac5dbaa1ea12a6c38c8448b444d5084c81bcc35" prot="public">
+          <name>SAI_VIRTUAL_ROUTER_ATTR_ADMIN_V4_STATE</name>
+          <initializer>= SAI_VIRTUAL_ROUTER_ATTR_START</initializer>
+          <briefdescription>
+<para>Admin V4 state. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTER_1gga8cf0cd9569ee13bb720da7ba07ac5dbaa91e05fa76559eff6d058a8160faff05b" prot="public">
+          <name>SAI_VIRTUAL_ROUTER_ATTR_ADMIN_V6_STATE</name>
+          <briefdescription>
+<para>Admin V6 state. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTER_1gga8cf0cd9569ee13bb720da7ba07ac5dbaa22eb04b8956342c4e0f9a47a2a8d10be" prot="public">
+          <name>SAI_VIRTUAL_ROUTER_ATTR_SRC_MAC_ADDRESS</name>
+          <briefdescription>
+<para>MAC Address. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_mac_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         attrvalue SAI_SWITCH_ATTR_SRC_MAC_ADDRESS </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTER_1gga8cf0cd9569ee13bb720da7ba07ac5dbaa9ade7eb3de23ba41f621c2ed0ea879ca" prot="public">
+          <name>SAI_VIRTUAL_ROUTER_ATTR_VIOLATION_TTL1_PACKET_ACTION</name>
+          <briefdescription>
+<para>Action for Packets with TTL 0 or 1. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_packet_action_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_PACKET_ACTION_TRAP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTER_1gga8cf0cd9569ee13bb720da7ba07ac5dbaa58d90e54edfaeee4a341b5337ef7c187" prot="public">
+          <name>SAI_VIRTUAL_ROUTER_ATTR_VIOLATION_IP_OPTIONS_PACKET_ACTION</name>
+          <briefdescription>
+<para>Action for Packets with IP options. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_packet_action_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_PACKET_ACTION_TRAP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTER_1gga8cf0cd9569ee13bb720da7ba07ac5dbaab408f8700a2c96782156dc15c7baa403" prot="public">
+          <name>SAI_VIRTUAL_ROUTER_ATTR_UNKNOWN_L3_MULTICAST_PACKET_ACTION</name>
+          <briefdescription>
+<para>Action for Unknown L3 multicast Packets. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_packet_action_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_PACKET_ACTION_DROP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTER_1gga8cf0cd9569ee13bb720da7ba07ac5dbaae150a032f9abb63f77ce39718d0582d6" prot="public">
+          <name>SAI_VIRTUAL_ROUTER_ATTR_LABEL</name>
+          <briefdescription>
+<para>Label attribute used to unique identify empty VR. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            char </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         &quot;&quot; </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTER_1gga8cf0cd9569ee13bb720da7ba07ac5dbaa06516fedc28234636e5ad8a7c02dfa2b" prot="public">
+          <name>SAI_VIRTUAL_ROUTER_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTER_1gga8cf0cd9569ee13bb720da7ba07ac5dbaa1ea7d908c05e007620c27526044803c7" prot="public">
+          <name>SAI_VIRTUAL_ROUTER_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTER_1gga8cf0cd9569ee13bb720da7ba07ac5dbaa5bf85e0366abf2e6b52b4f25aeaa1c07" prot="public">
+          <name>SAI_VIRTUAL_ROUTER_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute Id in sai_set_virtual_router_attribute() and sai_get_virtual_router_attribute() calls. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saivirtualrouter.h" line="46" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saivirtualrouter.h" bodystart="47" bodyend="129"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIROUTER_1ga83480c5a6a2de9fba16d0f934382e979" prot="public" static="no">
+        <type>enum <ref refid="group__SAIROUTER_1ga8cf0cd9569ee13bb720da7ba07ac5dba" kindref="member">_sai_virtual_router_attr_t</ref></type>
+        <definition>typedef enum _sai_virtual_router_attr_t sai_virtual_router_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_virtual_router_attr_t</name>
+        <briefdescription>
+<para>Attribute Id in sai_set_virtual_router_attribute() and sai_get_virtual_router_attribute() calls. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saivirtualrouter.h" line="129" column="27"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIROUTER_1gabaa7380afb3f169a097c98b8147d69e7" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_virtual_router_fn) (_Out_ sai_object_id_t *virtual_router_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *virtual_router_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_virtual_router_fn</name>
+        <briefdescription>
+<para>Create virtual router. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">virtual_router_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Virtual router id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success <ref refid="group__SAISTATUS_1gace49a9918f273fa2642c14e6359591c3" kindref="member">SAI_STATUS_ADDR_NOT_FOUND</ref> if neither <ref refid="group__SAISWITCH_1gga96df0871b3925f973f4a9079ffb3e634aa9b8bfc9a9c78ef8d6c364e2d0423ba3" kindref="member">SAI_SWITCH_ATTR_SRC_MAC_ADDRESS</ref> nor <ref refid="group__SAIROUTER_1gga8cf0cd9569ee13bb720da7ba07ac5dbaa22eb04b8956342c4e0f9a47a2a8d10be" kindref="member">SAI_VIRTUAL_ROUTER_ATTR_SRC_MAC_ADDRESS</ref> is set. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saivirtualrouter.h" line="143" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saivirtualrouter.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIROUTER_1gafc88ee5b13b69d2d74abc6fc8c9b3656" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_virtual_router_fn) (_In_ sai_object_id_t virtual_router_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t virtual_router_id)</argsstring>
+        <name>sai_remove_virtual_router_fn</name>
+        <briefdescription>
+<para>Remove virtual router. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">virtual_router_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Virtual router id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saivirtualrouter.h" line="156" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saivirtualrouter.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIROUTER_1gaaeb6e970d5094967a6197b5c174244df" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_virtual_router_attribute_fn) (_In_ sai_object_id_t virtual_router_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t virtual_router_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_virtual_router_attribute_fn</name>
+        <briefdescription>
+<para>Set virtual router attribute Value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">virtual_router_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Virtual router id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saivirtualrouter.h" line="167" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saivirtualrouter.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIROUTER_1ga6ed6d5f830e4f58c7e55ae5dea331945" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_virtual_router_attribute_fn) (_In_ sai_object_id_t virtual_router_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t virtual_router_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_virtual_router_attribute_fn</name>
+        <briefdescription>
+<para>Get virtual router attribute Value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">virtual_router_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Virtual router id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saivirtualrouter.h" line="180" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saivirtualrouter.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIROUTER_1ga05ab282b8b3504316b55d33aad54a2c4" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__virtual__router__api__t" kindref="compound">_sai_virtual_router_api_t</ref></type>
+        <definition>typedef struct _sai_virtual_router_api_t sai_virtual_router_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_virtual_router_api_t</name>
+        <briefdescription>
+<para>Virtual router methods table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saivirtualrouter.h" line="195" column="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module defines SAI Virtual Router interface. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2014 Microsoft Open Technologies, Inc.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <ulink url="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</ulink></para>
+<para>THIS CODE IS PROVIDED ON AN <emphasis>AS IS</emphasis> BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</para>
+<para>See the Apache Version 2.0 License for specific language governing permissions and limitations under the License.</para>
+<para>Microsoft would like to thank the following companies for their review and assistance with these files: Intel Corporation, Mellanox Technologies Ltd, Dell Products, L.P., Facebook, Inc., Marvell International Ltd.</para>
+<para><simplesect kind="par"><title>Abstract</title><para></para>
+</simplesect>
+This module defines SAI Virtual Router (VR) API. Virtual Router should allow VRFs at a minimum, VRRP functionality is considered. </para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saivirtualrouter.h"/>
+  </compounddef>
+</doxygen>

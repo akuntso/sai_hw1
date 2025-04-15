@@ -1,0 +1,597 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="saiipmcgroup_8h" kind="file" language="C++">
+    <compoundname>saiipmcgroup.h</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+    <includedby refid="sai_8h" local="yes">/home/andrii/sai_hw1/SAI/inc/sai.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="5">
+        <label>sys/types.h</label>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saiipmcgroup.h</label>
+        <link refid="saiipmcgroup_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>saitypes.h</label>
+        <link refid="saitypes_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/andrii/sai_hw1/SAI/inc/sai.h</label>
+        <link refid="sai_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saiipmcgroup.h</label>
+        <link refid="saiipmcgroup_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</label>
+        <link refid="saiextensions_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct__sai__ipmc__group__api__t" prot="public">_sai_ipmc_group_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIIPMCGROUP_1ga9400b781b01a06817bd96c2a1a519a3d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_ipmc_group_attr_t</name>
+        <enumvalue id="group__SAIIPMCGROUP_1gga9400b781b01a06817bd96c2a1a519a3da57c9b7f1dbc60e7e04f8def5156975ff" prot="public">
+          <name>SAI_IPMC_GROUP_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPMCGROUP_1gga9400b781b01a06817bd96c2a1a519a3da1577a6c0c0657cdfdbbc1be289416c4e" prot="public">
+          <name>SAI_IPMC_GROUP_ATTR_IPMC_OUTPUT_COUNT</name>
+          <initializer>= SAI_IPMC_GROUP_ATTR_START</initializer>
+          <briefdescription>
+<para>Number of IPMC interfaces in the group. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPMCGROUP_1gga9400b781b01a06817bd96c2a1a519a3da6f45170e6ff0a4c99b24852e7e830b6f" prot="public">
+          <name>SAI_IPMC_GROUP_ATTR_IPMC_MEMBER_LIST</name>
+          <briefdescription>
+<para>IPMC member list. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_IPMC_GROUP_MEMBER </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPMCGROUP_1gga9400b781b01a06817bd96c2a1a519a3da039bcd39a3711895ef69cdc4c23fd8d2" prot="public">
+          <name>SAI_IPMC_GROUP_ATTR_IPMC_GROUP_WITH_MEMBERS</name>
+          <briefdescription>
+<para>Flag indicating that the member list is specified at create time. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPMCGROUP_1gga9400b781b01a06817bd96c2a1a519a3da885f14654339b0cdac49efebfd5f3c3a" prot="public">
+          <name>SAI_IPMC_GROUP_ATTR_IPMC_OUTPUT_LIST</name>
+          <briefdescription>
+<para>IPMC output list. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_NEXT_HOP </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_IPMC_GROUP_ATTR_IPMC_GROUP_WITH_MEMBERS == true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPMCGROUP_1gga9400b781b01a06817bd96c2a1a519a3da992cc235190be17a9cb8e8f69a8118f6" prot="public">
+          <name>SAI_IPMC_GROUP_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPMCGROUP_1gga9400b781b01a06817bd96c2a1a519a3da0b0c6a7eba44c56cebebe3668ac8e2cd" prot="public">
+          <name>SAI_IPMC_GROUP_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPMCGROUP_1gga9400b781b01a06817bd96c2a1a519a3daa6d8428c5b01a0243eff14aec3f0decb" prot="public">
+          <name>SAI_IPMC_GROUP_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attributes for IPMC group. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipmcgroup.h" line="39" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipmcgroup.h" bodystart="40" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIIPMCGROUP_1gab5e8b565c30fac94a94629b55a31ecb3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_ipmc_group_member_attr_t</name>
+        <enumvalue id="group__SAIIPMCGROUP_1ggab5e8b565c30fac94a94629b55a31ecb3afde4eeee5dfe599e8ef99023d363d4c1" prot="public">
+          <name>SAI_IPMC_GROUP_MEMBER_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPMCGROUP_1ggab5e8b565c30fac94a94629b55a31ecb3a043f9f4239e047bb28af5b8d19525990" prot="public">
+          <name>SAI_IPMC_GROUP_MEMBER_ATTR_IPMC_GROUP_ID</name>
+          <initializer>= SAI_IPMC_GROUP_MEMBER_ATTR_START</initializer>
+          <briefdescription>
+<para>IPMC group id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_IPMC_GROUP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPMCGROUP_1ggab5e8b565c30fac94a94629b55a31ecb3ae19ea81a4138c81f715abf942f492ee8" prot="public">
+          <name>SAI_IPMC_GROUP_MEMBER_ATTR_IPMC_OUTPUT_ID</name>
+          <briefdescription>
+<para>IPMC output id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_ROUTER_INTERFACE, SAI_OBJECT_TYPE_TUNNEL, SAI_OBJECT_TYPE_NEXT_HOP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPMCGROUP_1ggab5e8b565c30fac94a94629b55a31ecb3a0965a6a90eeb43b6b688b789826fd6c4" prot="public">
+          <name>SAI_IPMC_GROUP_MEMBER_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPMCGROUP_1ggab5e8b565c30fac94a94629b55a31ecb3ae81441540b4ace673513a16c1e0b82a5" prot="public">
+          <name>SAI_IPMC_GROUP_MEMBER_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPMCGROUP_1ggab5e8b565c30fac94a94629b55a31ecb3ad137e42d72dac704f8194a07c39d6b86" prot="public">
+          <name>SAI_IPMC_GROUP_MEMBER_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipmcgroup.h" line="96" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipmcgroup.h" bodystart="97" bodyend="132"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIIPMCGROUP_1ga646d827cb8b18e47c325df5928dbba4b" prot="public" static="no">
+        <type>enum <ref refid="group__SAIIPMCGROUP_1ga9400b781b01a06817bd96c2a1a519a3d" kindref="member">_sai_ipmc_group_attr_t</ref></type>
+        <definition>typedef enum _sai_ipmc_group_attr_t sai_ipmc_group_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_ipmc_group_attr_t</name>
+        <briefdescription>
+<para>Attributes for IPMC group. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipmcgroup.h" line="94" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPMCGROUP_1ga5e061e5f6de950d61f2e0cabf32bd4ff" prot="public" static="no">
+        <type>enum <ref refid="group__SAIIPMCGROUP_1gab5e8b565c30fac94a94629b55a31ecb3" kindref="member">_sai_ipmc_group_member_attr_t</ref></type>
+        <definition>typedef enum _sai_ipmc_group_member_attr_t sai_ipmc_group_member_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_ipmc_group_member_attr_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipmcgroup.h" line="132" column="30"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPMCGROUP_1ga54b4d0e194397f829d4549cfe5f18344" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_ipmc_group_fn) (_Out_ sai_object_id_t *ipmc_group_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *ipmc_group_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_ipmc_group_fn</name>
+        <briefdescription>
+<para>Create IPMC group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">ipmc_group_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IPMC group id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipmcgroup.h" line="144" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipmcgroup.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPMCGROUP_1ga211885e267163d98cca22641d31dc42b" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_ipmc_group_fn) (_In_ sai_object_id_t ipmc_group_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t ipmc_group_id)</argsstring>
+        <name>sai_remove_ipmc_group_fn</name>
+        <briefdescription>
+<para>Remove IPMC group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ipmc_group_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IPMC group id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipmcgroup.h" line="157" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipmcgroup.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPMCGROUP_1ga4419ac687fae0b28d3c356cb719b6a44" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_ipmc_group_attribute_fn) (_In_ sai_object_id_t ipmc_group_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t ipmc_group_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_ipmc_group_attribute_fn</name>
+        <briefdescription>
+<para>Set IPMC Group attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ipmc_group_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IPMC group id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipmcgroup.h" line="168" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipmcgroup.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPMCGROUP_1gadd7658dec849b9ae93457a93ba4e22a1" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_ipmc_group_attribute_fn) (_In_ sai_object_id_t ipmc_group_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t ipmc_group_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_ipmc_group_attribute_fn</name>
+        <briefdescription>
+<para>Get IPMC Group attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ipmc_group_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IPMC group id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipmcgroup.h" line="181" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipmcgroup.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPMCGROUP_1gabde0984d073636b2a4bffa6c889bbdd6" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_ipmc_group_member_fn) (_Out_ sai_object_id_t *ipmc_group_member_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *ipmc_group_member_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_ipmc_group_member_fn</name>
+        <briefdescription>
+<para>Create IPMC group member. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">ipmc_group_member_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IPMC group member id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipmcgroup.h" line="196" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipmcgroup.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPMCGROUP_1ga2f93e4aa0989336ac84fb39a3aa8aef6" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_ipmc_group_member_fn) (_In_ sai_object_id_t ipmc_group_member_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t ipmc_group_member_id)</argsstring>
+        <name>sai_remove_ipmc_group_member_fn</name>
+        <briefdescription>
+<para>Remove IPMC group member. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ipmc_group_member_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IPMC group member id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipmcgroup.h" line="209" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipmcgroup.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPMCGROUP_1gadd025044484aed9e0cd152600ffea492" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_ipmc_group_member_attribute_fn) (_In_ sai_object_id_t ipmc_group_member_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t ipmc_group_member_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_ipmc_group_member_attribute_fn</name>
+        <briefdescription>
+<para>Set IPMC Group attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ipmc_group_member_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IPMC group member id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipmcgroup.h" line="220" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipmcgroup.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPMCGROUP_1gab22e7aa6abc9af6ddb0c1a2144eecd9d" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_ipmc_group_member_attribute_fn) (_In_ sai_object_id_t ipmc_group_member_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t ipmc_group_member_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_ipmc_group_member_attribute_fn</name>
+        <briefdescription>
+<para>Get IPMC Group attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ipmc_group_member_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IPMC group member ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipmcgroup.h" line="233" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipmcgroup.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPMCGROUP_1gab44582c7f272aeb71b72974d51dc604a" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__ipmc__group__api__t" kindref="compound">_sai_ipmc_group_api_t</ref></type>
+        <definition>typedef struct _sai_ipmc_group_api_t sai_ipmc_group_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_ipmc_group_api_t</name>
+        <briefdescription>
+<para>IPMC group methods table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipmcgroup.h" line="252" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module defines SAI IPMC Group interface. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2014 Microsoft Open Technologies, Inc.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <ulink url="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</ulink></para>
+<para>THIS CODE IS PROVIDED ON AN <emphasis>AS IS</emphasis> BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</para>
+<para>See the Apache Version 2.0 License for specific language governing permissions and limitations under the License.</para>
+<para>Microsoft would like to thank the following companies for their review and assistance with these files: Intel Corporation, Mellanox Technologies Ltd, Dell Products, L.P., Facebook, Inc., Marvell International Ltd. </para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saiipmcgroup.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__acl__action__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_acl_action_data_t</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__acl__action__data__t_1a4ce6b9796905c2f72fee1a84da2c28ab" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_acl_action_data_t::enable</definition>
+        <argsstring></argsstring>
+        <name>enable</name>
+        <briefdescription>
+<para>Action enable/disable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="683" column="10" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="683" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__acl__action__data__t_1a60e833b318c5bf2a95f16467c1df8258" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga1acb78d9bf20d43d439faf6278526fc8" kindref="member">sai_acl_action_parameter_t</ref></type>
+        <definition>sai_acl_action_parameter_t _sai_acl_action_data_t::parameter</definition>
+        <argsstring></argsstring>
+        <name>parameter</name>
+        <briefdescription>
+<para>Action parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Pass paramater:</title><para> @@passparam       meta </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       enable == true </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="691" column="32" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="691" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines a single ACL action. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="note"><para>IPv4 and IPv6 Address expected in Network Byte Order</para>
+</simplesect>
+<simplesect kind="par"><title>Extra paramater:</title><para> @@extraparam      const sai_attr_metadata_t *meta </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>_sai_acl_action_data_t</label>
+        <link refid="struct__sai__acl__action__data__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>parameter</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>_sai_object_list_t</label>
+        <link refid="struct__sai__object__list__t"/>
+      </node>
+      <node id="4">
+        <label>_sai_ip_address_t</label>
+        <link refid="struct__sai__ip__address__t"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>addr</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>_sai_ip_addr_t</label>
+        <link refid="union__sai__ip__addr__t"/>
+      </node>
+      <node id="2">
+        <label>_sai_acl_action_parameter_t</label>
+        <link refid="union__sai__acl__action__parameter__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>objlist</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>ipaddr</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="678" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="679" bodyend="693"/>
+    <listofallmembers>
+      <member refid="struct__sai__acl__action__data__t_1a4ce6b9796905c2f72fee1a84da2c28ab" prot="public" virt="non-virtual"><scope>_sai_acl_action_data_t</scope><name>enable</name></member>
+      <member refid="struct__sai__acl__action__data__t_1a60e833b318c5bf2a95f16467c1df8258" prot="public" virt="non-virtual"><scope>_sai_acl_action_data_t</scope><name>parameter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

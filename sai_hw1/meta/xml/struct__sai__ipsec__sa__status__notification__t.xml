@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__ipsec__sa__status__notification__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_ipsec_sa_status_notification_t</compoundname>
+    <includes refid="saiipsec_8h" local="no">saiipsec.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__ipsec__sa__status__notification__t_1ae43c791ce5bdf57ed0a4385017777cf8" prot="public" static="no" mutable="no">
+        <type>sai_object_id_t</type>
+        <definition>sai_object_id_t _sai_ipsec_sa_status_notification_t::ipsec_sa_id</definition>
+        <argsstring></argsstring>
+        <name>ipsec_sa_id</name>
+        <briefdescription>
+<para>IPsec SA object id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_IPSEC_SA </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="83" column="21" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__ipsec__sa__status__notification__t_1ac0f3ec421e8a61f3bf39bf11c3140327" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIIPSEC_1gaebbb1cbfe79743bf350ca26875dc7394" kindref="member">sai_ipsec_sa_octet_count_status_t</ref></type>
+        <definition>sai_ipsec_sa_octet_count_status_t _sai_ipsec_sa_status_notification_t::ipsec_sa_octet_count_status</definition>
+        <argsstring></argsstring>
+        <name>ipsec_sa_octet_count_status</name>
+        <briefdescription>
+<para>IPsec SA byte count status. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="88" column="39" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__ipsec__sa__status__notification__t_1a05525de434a7964442e474f2d0f993de" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_ipsec_sa_status_notification_t::ipsec_egress_sn_at_max_limit</definition>
+        <argsstring></argsstring>
+        <name>ipsec_egress_sn_at_max_limit</name>
+        <briefdescription>
+<para>IPsec egress SA sequence number at max limit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="93" column="10" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>IPsec SA status for notification. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="76" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" bodystart="77" bodyend="95"/>
+    <listofallmembers>
+      <member refid="struct__sai__ipsec__sa__status__notification__t_1a05525de434a7964442e474f2d0f993de" prot="public" virt="non-virtual"><scope>_sai_ipsec_sa_status_notification_t</scope><name>ipsec_egress_sn_at_max_limit</name></member>
+      <member refid="struct__sai__ipsec__sa__status__notification__t_1ae43c791ce5bdf57ed0a4385017777cf8" prot="public" virt="non-virtual"><scope>_sai_ipsec_sa_status_notification_t</scope><name>ipsec_sa_id</name></member>
+      <member refid="struct__sai__ipsec__sa__status__notification__t_1ac0f3ec421e8a61f3bf39bf11c3140327" prot="public" virt="non-virtual"><scope>_sai_ipsec_sa_status_notification_t</scope><name>ipsec_sa_octet_count_status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

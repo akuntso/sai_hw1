@@ -1,0 +1,498 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="saiexperimentaldashvip_8h" kind="file" language="C++">
+    <compoundname>saiexperimentaldashvip.h</compoundname>
+    <includes refid="saitypesextensions_8h" local="no">saitypesextensions.h</includes>
+    <includedby refid="saiobject_8h" local="no">/home/andrii/sai_hw1/SAI/inc/saiobject.h</includedby>
+    <includedby refid="saiextensions_8h" local="yes">/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>stdbool.h</label>
+      </node>
+      <node id="4">
+        <label>stdint.h</label>
+      </node>
+      <node id="6">
+        <label>sys/types.h</label>
+      </node>
+      <node id="2">
+        <label>saitypesextensions.h</label>
+        <link refid="saitypesextensions_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvip.h</label>
+        <link refid="saiexperimentaldashvip_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>saitypes.h</label>
+        <link refid="saitypes_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>/home/andrii/sai_hw1/SAI/inc/sai.h</label>
+        <link refid="sai_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/andrii/sai_hw1/SAI/inc/saiobject.h</label>
+        <link refid="saiobject_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvip.h</label>
+        <link refid="saiexperimentaldashvip_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</label>
+        <link refid="saiextensions_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct__sai__vip__entry__t" prot="public">_sai_vip_entry_t</innerclass>
+    <innerclass refid="struct__sai__dash__vip__api__t" prot="public">_sai_dash_vip_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASHVIP_1gae420375c7356da6ff328a062f97376e7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_vip_entry_action_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASHVIP_1ggae420375c7356da6ff328a062f97376e7a1f987f59e0ee05abd31d43e96d038281" prot="public">
+          <name>SAI_VIP_ENTRY_ACTION_ACCEPT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute data for <ref refid="group__SAIEXPERIMENTALDASHVIP_1ggabbf5b9cb31d9a0a0da0ed8188f291dc7a5b50bdae7129ab2b438b79c8bec1d091" kindref="member">SAI_VIP_ENTRY_ATTR_ACTION</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvip.h" line="41" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvip.h" bodystart="42" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASHVIP_1gabbf5b9cb31d9a0a0da0ed8188f291dc7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_vip_entry_attr_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASHVIP_1ggabbf5b9cb31d9a0a0da0ed8188f291dc7a853a7bb69b4773d4657ebb48798996d8" prot="public">
+          <name>SAI_VIP_ENTRY_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHVIP_1ggabbf5b9cb31d9a0a0da0ed8188f291dc7a5b50bdae7129ab2b438b79c8bec1d091" prot="public">
+          <name>SAI_VIP_ENTRY_ATTR_ACTION</name>
+          <initializer>= SAI_VIP_ENTRY_ATTR_START</initializer>
+          <briefdescription>
+<para>Action. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_vip_entry_action_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_VIP_ENTRY_ACTION_ACCEPT </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHVIP_1ggabbf5b9cb31d9a0a0da0ed8188f291dc7ad1c9193cbf3a4d37f5bca615428bdfb2" prot="public">
+          <name>SAI_VIP_ENTRY_ATTR_IP_ADDR_FAMILY</name>
+          <briefdescription>
+<para>IP address family for resource accounting. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_addr_family_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>IsResourceType:</title><para> @@isresourcetype  true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHVIP_1ggabbf5b9cb31d9a0a0da0ed8188f291dc7a3192794d13939560fb4c638470b11e5b" prot="public">
+          <name>SAI_VIP_ENTRY_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHVIP_1ggabbf5b9cb31d9a0a0da0ed8188f291dc7aaa26b9581a4c863649f37aad5a2e54e5" prot="public">
+          <name>SAI_VIP_ENTRY_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHVIP_1ggabbf5b9cb31d9a0a0da0ed8188f291dc7a1b1fa37c3bceaa993733db8966520300" prot="public">
+          <name>SAI_VIP_ENTRY_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute ID for VIP entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvip.h" line="69" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvip.h" bodystart="70" bodyend="105"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHVIP_1gadd45371a312a13fd9f511ffa5e054f87" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASHVIP_1gae420375c7356da6ff328a062f97376e7" kindref="member">_sai_vip_entry_action_t</ref></type>
+        <definition>typedef enum _sai_vip_entry_action_t sai_vip_entry_action_t</definition>
+        <argsstring></argsstring>
+        <name>sai_vip_entry_action_t</name>
+        <briefdescription>
+<para>Attribute data for <ref refid="group__SAIEXPERIMENTALDASHVIP_1ggabbf5b9cb31d9a0a0da0ed8188f291dc7a5b50bdae7129ab2b438b79c8bec1d091" kindref="member">SAI_VIP_ENTRY_ATTR_ACTION</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvip.h" line="45" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHVIP_1gaa601dfcf1651ccc02e6532e9c0ad20aa" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__vip__entry__t" kindref="compound">_sai_vip_entry_t</ref></type>
+        <definition>typedef struct _sai_vip_entry_t sai_vip_entry_t</definition>
+        <argsstring></argsstring>
+        <name>sai_vip_entry_t</name>
+        <briefdescription>
+<para>Entry for vip_entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvip.h" line="64" column="17"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHVIP_1ga428364c4235a37c3e97a64c84db12cac" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASHVIP_1gabbf5b9cb31d9a0a0da0ed8188f291dc7" kindref="member">_sai_vip_entry_attr_t</ref></type>
+        <definition>typedef enum _sai_vip_entry_attr_t sai_vip_entry_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_vip_entry_attr_t</name>
+        <briefdescription>
+<para>Attribute ID for VIP entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvip.h" line="105" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHVIP_1ga9f092c145040602fbd8e47acf4c21020" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_vip_entry_fn) (_In_ const sai_vip_entry_t *vip_entry, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ const sai_vip_entry_t *vip_entry, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_vip_entry_fn</name>
+        <briefdescription>
+<para>Create VIP entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vip_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvip.h" line="116" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvip.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHVIP_1ga35506ab120206c7506848e5004c96550" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_vip_entry_fn) (_In_ const sai_vip_entry_t *vip_entry)</definition>
+        <argsstring>)(_In_ const sai_vip_entry_t *vip_entry)</argsstring>
+        <name>sai_remove_vip_entry_fn</name>
+        <briefdescription>
+<para>Remove VIP entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vip_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvip.h" line="128" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvip.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHVIP_1ga38772dc629f0e7cfe94a093ed7042836" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_vip_entry_attribute_fn) (_In_ const sai_vip_entry_t *vip_entry, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ const sai_vip_entry_t *vip_entry, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_vip_entry_attribute_fn</name>
+        <briefdescription>
+<para>Set attribute for VIP entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vip_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvip.h" line="139" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvip.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHVIP_1ga62ea1ca336620d72c72e0407ab55452a" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_vip_entry_attribute_fn) (_In_ const sai_vip_entry_t *vip_entry, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ const sai_vip_entry_t *vip_entry, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_vip_entry_attribute_fn</name>
+        <briefdescription>
+<para>Get attribute for VIP entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vip_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvip.h" line="152" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvip.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHVIP_1ga094a5a4083658b9c482f4a9747109b06" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_create_vip_entry_fn) (_In_ uint32_t object_count, _In_ const sai_vip_entry_t *vip_entry, _In_ const uint32_t *attr_count, _In_ const sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_vip_entry_t *vip_entry, _In_ const uint32_t *attr_count, _In_ const sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_create_vip_entry_fn</name>
+        <briefdescription>
+<para>Bulk create VIP entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to create </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">vip_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of object to create </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attr_count. Caller passes the number of attribute for each object to create. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attributes for every object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are created or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to create. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvip.h" line="174" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvip.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHVIP_1ga4ae6432aa4ee86569e36aa46fe908fbd" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_remove_vip_entry_fn) (_In_ uint32_t object_count, _In_ const sai_vip_entry_t *vip_entry, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_vip_entry_t *vip_entry, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_remove_vip_entry_fn</name>
+        <briefdescription>
+<para>Bulk remove VIP entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to remove </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">vip_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of objects to remove </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are removed or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to remove. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvip.h" line="196" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvip.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHVIP_1ga71831a27760772c7272918409c5d4f65" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__dash__vip__api__t" kindref="compound">_sai_dash_vip_api_t</ref></type>
+        <definition>typedef struct _sai_dash_vip_api_t sai_dash_vip_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dash_vip_api_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvip.h" line="211" column="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module defines SAI extensions for DASH VIP. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2014 Microsoft Open Technologies, Inc.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <ulink url="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</ulink></para>
+<para>THIS CODE IS PROVIDED ON AN <emphasis>AS IS</emphasis> BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</para>
+<para>See the Apache Version 2.0 License for specific language governing permissions and limitations under the License.</para>
+<para>Microsoft would like to thank the following companies for their review and assistance with these files: Intel Corporation, Mellanox Technologies Ltd, Dell Products, L.P., Facebook, Inc., Marvell International Ltd.</para>
+<para><simplesect kind="warning"><para>This module is a SAI experimental module </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvip.h"/>
+  </compounddef>
+</doxygen>

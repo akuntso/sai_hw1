@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="union__sai__health__data__t" kind="union" language="C++" prot="public">
+    <compoundname>_sai_health_data_t</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="union__sai__health__data__t_1aa588a4831d0bb18ae803f86b87049c5d" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__sai__ser__health__data__t" kindref="compound">sai_ser_health_data_t</ref></type>
+        <definition>sai_ser_health_data_t _sai_health_data_t::ser</definition>
+        <argsstring></argsstring>
+        <name>ser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Valid only when:</title><para> @@validonly       data_type == SAI_HEALTH_DATA_TYPE_SER </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="2021" column="27" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="2021" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Extra paramater:</title><para> @@extraparam      sai_health_data_type_t data_type </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>_sai_ser_health_data_t</label>
+        <link refid="struct__sai__ser__health__data__t"/>
+      </node>
+      <node id="1">
+        <label>_sai_health_data_t</label>
+        <link refid="union__sai__health__data__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ser</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="2018" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="2019" bodyend="2022"/>
+    <listofallmembers>
+      <member refid="union__sai__health__data__t_1aa588a4831d0bb18ae803f86b87049c5d" prot="public" virt="non-virtual"><scope>_sai_health_data_t</scope><name>ser</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

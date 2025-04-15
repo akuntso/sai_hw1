@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__qos__map__list__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_qos_map_list_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__qos__map__list__t_1acf78ba40059001201985886e64d1217c" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _sai_qos_map_list_t::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of entries in the map </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="777" column="14" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="777" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__qos__map__list__t_1a6490f2eda1b24c11fa0b3bc287c630c9" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__sai__qos__map__t" kindref="compound">sai_qos_map_t</ref> *</type>
+        <definition>sai_qos_map_t* _sai_qos_map_list_t::list</definition>
+        <argsstring></argsstring>
+        <name>list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Map list </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="780" column="19" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="780" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>_sai_qos_map_list_t</label>
+        <link refid="struct__sai__qos__map__list__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>_sai_qos_map_t</label>
+        <link refid="struct__sai__qos__map__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>key</edgelabel>
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>_sai_qos_map_params_t</label>
+        <link refid="struct__sai__qos__map__params__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="774" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="775" bodyend="782"/>
+    <listofallmembers>
+      <member refid="struct__sai__qos__map__list__t_1acf78ba40059001201985886e64d1217c" prot="public" virt="non-virtual"><scope>_sai_qos_map_list_t</scope><name>count</name></member>
+      <member refid="struct__sai__qos__map__list__t_1a6490f2eda1b24c11fa0b3bc287c630c9" prot="public" virt="non-virtual"><scope>_sai_qos_map_list_t</scope><name>list</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

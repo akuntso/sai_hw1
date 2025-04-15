@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__tlv__list__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_tlv_list_t</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__tlv__list__t_1a82b1e4f1b45e1b3af7b607bc6e42feaf" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _sai_tlv_list_t::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of Tag Length Value entries </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1114" column="14" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__tlv__list__t_1a6583af5c2d8246f29f90aa08c06ad26c" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga0874949cf5a3720173db4494cc43b451" kindref="member">sai_tlv_t</ref> *</type>
+        <definition>sai_tlv_t* _sai_tlv_list_t::list</definition>
+        <argsstring></argsstring>
+        <name>list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Tag Length Value list </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1117" column="15" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1117" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>List of Segment Routing Tag Length Value entries. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>_sai_tlv_t</label>
+        <link refid="struct__sai__tlv__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>entry</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>_sai_tlv_list_t</label>
+        <link refid="struct__sai__tlv__list__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>_sai_tlv_entry_t</label>
+        <link refid="union__sai__tlv__entry__t"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>hmac</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>_sai_hmac_t</label>
+        <link refid="struct__sai__hmac__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1111" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1112" bodyend="1118"/>
+    <listofallmembers>
+      <member refid="struct__sai__tlv__list__t_1a82b1e4f1b45e1b3af7b607bc6e42feaf" prot="public" virt="non-virtual"><scope>_sai_tlv_list_t</scope><name>count</name></member>
+      <member refid="struct__sai__tlv__list__t_1a6583af5c2d8246f29f90aa08c06ad26c" prot="public" virt="non-virtual"><scope>_sai_tlv_list_t</scope><name>list</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

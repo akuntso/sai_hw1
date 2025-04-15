@@ -1,0 +1,2474 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group__SAITUNNEL" kind="group">
+    <compoundname>SAITUNNEL</compoundname>
+    <title>SAI - Next hop specific API definitions</title>
+    <innerclass refid="struct__sai__tunnel__api__t" prot="public">_sai_tunnel_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAITUNNEL_1ga04ccced50501ec9caecbd0e9b073a4e0" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_tunnel_map_type_t</name>
+        <enumvalue id="group__SAITUNNEL_1gga04ccced50501ec9caecbd0e9b073a4e0a8cdbb04be363d9e2f838dddffd35a35f" prot="public">
+          <name>SAI_TUNNEL_MAP_TYPE_OECN_TO_UECN</name>
+          <initializer>= 0x00000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TUNNEL Map overlay ECN to underlay ECN (only valid for encap) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga04ccced50501ec9caecbd0e9b073a4e0a74f6e0f23154eb02b1217ee27623cab8" prot="public">
+          <name>SAI_TUNNEL_MAP_TYPE_UECN_OECN_TO_OECN</name>
+          <initializer>= 0x00000001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TUNNEL Map underlay ECN and overlay ECN to overlay ECN (only valid for decap) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga04ccced50501ec9caecbd0e9b073a4e0ad3d5770b936be8afbebf5bebafbc14ec" prot="public">
+          <name>SAI_TUNNEL_MAP_TYPE_VNI_TO_VLAN_ID</name>
+          <initializer>= 0x00000002</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TUNNEL Map VNI to VLAN ID </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga04ccced50501ec9caecbd0e9b073a4e0a05fff30201f2dc5616a5674de1d86719" prot="public">
+          <name>SAI_TUNNEL_MAP_TYPE_VLAN_ID_TO_VNI</name>
+          <initializer>= 0x00000003</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TUNNEL Map VLAN ID to VNI </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga04ccced50501ec9caecbd0e9b073a4e0a3ca9f04cd8a9d0da7eab736b4eb2bcca" prot="public">
+          <name>SAI_TUNNEL_MAP_TYPE_VNI_TO_BRIDGE_IF</name>
+          <initializer>= 0x00000004</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TUNNEL Map VNI to Bridge IF </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga04ccced50501ec9caecbd0e9b073a4e0a603ab1452422d1c8e6a14b0cedada08c" prot="public">
+          <name>SAI_TUNNEL_MAP_TYPE_BRIDGE_IF_TO_VNI</name>
+          <initializer>= 0x00000005</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TUNNEL Map Bridge IF to VNI </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga04ccced50501ec9caecbd0e9b073a4e0a4e34cd11b119eafb7067c7b7c3976553" prot="public">
+          <name>SAI_TUNNEL_MAP_TYPE_VNI_TO_VIRTUAL_ROUTER_ID</name>
+          <initializer>= 0x00000006</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TUNNEL Map VNI to Virtual Router ID </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga04ccced50501ec9caecbd0e9b073a4e0a9bac9f04751e6406fe596f6589e5dca7" prot="public">
+          <name>SAI_TUNNEL_MAP_TYPE_VIRTUAL_ROUTER_ID_TO_VNI</name>
+          <initializer>= 0x00000007</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TUNNEL Map Virtual Router ID to VNI </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga04ccced50501ec9caecbd0e9b073a4e0ac686590b4cacdb1ad00628332d8d17b4" prot="public">
+          <name>SAI_TUNNEL_MAP_TYPE_VSID_TO_VLAN_ID</name>
+          <initializer>= 0x00000008</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TUNNEL Map VSID to VLAN ID </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga04ccced50501ec9caecbd0e9b073a4e0a30aa5743011f95aadab5f97340603f6a" prot="public">
+          <name>SAI_TUNNEL_MAP_TYPE_VLAN_ID_TO_VSID</name>
+          <initializer>= 0x00000009</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TUNNEL Map VLAN ID to VSID </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga04ccced50501ec9caecbd0e9b073a4e0a7d82b2b42c5dcdf4345b9e6eccd720a5" prot="public">
+          <name>SAI_TUNNEL_MAP_TYPE_VSID_TO_BRIDGE_IF</name>
+          <initializer>= 0x0000000a</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TUNNEL Map VSID to Bridge IF </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga04ccced50501ec9caecbd0e9b073a4e0aa4df561fc97fcca1225de13d6e8882bd" prot="public">
+          <name>SAI_TUNNEL_MAP_TYPE_BRIDGE_IF_TO_VSID</name>
+          <initializer>= 0x0000000b</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TUNNEL Map Bridge IF to VSID </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga04ccced50501ec9caecbd0e9b073a4e0a12a9e3adb6e8a3de30309ff647a66950" prot="public">
+          <name>SAI_TUNNEL_MAP_TYPE_VIRTUAL_ROUTER_ID_TO_VPN_SID</name>
+          <initializer>= 0x0000000c</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TUNNEL Map Virtual Router ID to SRV6 VPN SID </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga04ccced50501ec9caecbd0e9b073a4e0a2c1eff8a5506e05f5efb2ba325ee0ebe" prot="public">
+          <name>SAI_TUNNEL_MAP_TYPE_PREFIX_AGG_ID_TO_SRV6_VPN_SID</name>
+          <initializer>= 0x0000000d</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TUNNEL Map Prefix Aggregation ID to SRV6 VPN SID </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga04ccced50501ec9caecbd0e9b073a4e0aef9b3e3659a4848eeb431cbc61cc7eea" prot="public">
+          <name>SAI_TUNNEL_MAP_TYPE_CUSTOM_RANGE_BASE</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum defining tunnel map types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="39" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" bodystart="40" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAITUNNEL_1ga1811b467fd844f65aa91678f1d2d8bd2" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_tunnel_map_entry_attr_t</name>
+        <enumvalue id="group__SAITUNNEL_1gga1811b467fd844f65aa91678f1d2d8bd2aa6d16bab0f9768b0dea517ea94b69143" prot="public">
+          <name>SAI_TUNNEL_MAP_ENTRY_ATTR_START</name>
+          <initializer>= 0x00000000</initializer>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1811b467fd844f65aa91678f1d2d8bd2a8ae91867e1a47ffa21a03e2d9c56f8d6" prot="public">
+          <name>SAI_TUNNEL_MAP_ENTRY_ATTR_TUNNEL_MAP_TYPE</name>
+          <initializer>= SAI_TUNNEL_MAP_ENTRY_ATTR_START</initializer>
+          <briefdescription>
+<para>Tunnel Map type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_tunnel_map_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1811b467fd844f65aa91678f1d2d8bd2a5bb214477264574ca0fa4eec22cba6d4" prot="public">
+          <name>SAI_TUNNEL_MAP_ENTRY_ATTR_TUNNEL_MAP</name>
+          <initializer>= 0x00000001</initializer>
+          <briefdescription>
+<para>Tunnel map ex. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_TUNNEL_MAP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1811b467fd844f65aa91678f1d2d8bd2a19347372d9baa3549b5006ddd5cb94c1" prot="public">
+          <name>SAI_TUNNEL_MAP_ENTRY_ATTR_OECN_KEY</name>
+          <initializer>= 0x00000002</initializer>
+          <briefdescription>
+<para>Inner ECN key. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_TUNNEL_MAP_ENTRY_ATTR_TUNNEL_MAP_TYPE == SAI_TUNNEL_MAP_TYPE_OECN_TO_UECN or SAI_TUNNEL_MAP_ENTRY_ATTR_TUNNEL_MAP_TYPE == SAI_TUNNEL_MAP_TYPE_UECN_OECN_TO_OECN </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1811b467fd844f65aa91678f1d2d8bd2ac652ce5cd5cc35267d105d79f7aecedc" prot="public">
+          <name>SAI_TUNNEL_MAP_ENTRY_ATTR_OECN_VALUE</name>
+          <initializer>= 0x00000003</initializer>
+          <briefdescription>
+<para>Inner ECN value. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_TUNNEL_MAP_ENTRY_ATTR_TUNNEL_MAP_TYPE == SAI_TUNNEL_MAP_TYPE_UECN_OECN_TO_OECN </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1811b467fd844f65aa91678f1d2d8bd2afc768cdc35905671ec3287ba9d1703d5" prot="public">
+          <name>SAI_TUNNEL_MAP_ENTRY_ATTR_UECN_KEY</name>
+          <initializer>= 0x00000004</initializer>
+          <briefdescription>
+<para>Outer ECN key. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_TUNNEL_MAP_ENTRY_ATTR_TUNNEL_MAP_TYPE == SAI_TUNNEL_MAP_TYPE_UECN_OECN_TO_OECN </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1811b467fd844f65aa91678f1d2d8bd2ae70576c4963e6bf228d669754242f5d8" prot="public">
+          <name>SAI_TUNNEL_MAP_ENTRY_ATTR_UECN_VALUE</name>
+          <initializer>= 0x00000005</initializer>
+          <briefdescription>
+<para>Outer ECN value. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_TUNNEL_MAP_ENTRY_ATTR_TUNNEL_MAP_TYPE == SAI_TUNNEL_MAP_TYPE_OECN_TO_UECN </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1811b467fd844f65aa91678f1d2d8bd2a6a04e1667bd530ec59bf3f5993c096c9" prot="public">
+          <name>SAI_TUNNEL_MAP_ENTRY_ATTR_VLAN_ID_KEY</name>
+          <initializer>= 0x00000006</initializer>
+          <briefdescription>
+<para>Vlan ID key. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          true </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_TUNNEL_MAP_ENTRY_ATTR_TUNNEL_MAP_TYPE == SAI_TUNNEL_MAP_TYPE_VLAN_ID_TO_VNI or SAI_TUNNEL_MAP_ENTRY_ATTR_TUNNEL_MAP_TYPE == SAI_TUNNEL_MAP_TYPE_VLAN_ID_TO_VSID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1811b467fd844f65aa91678f1d2d8bd2a046f44241cadb0b48c36a444c4a01e8c" prot="public">
+          <name>SAI_TUNNEL_MAP_ENTRY_ATTR_VLAN_ID_VALUE</name>
+          <initializer>= 0x00000007</initializer>
+          <briefdescription>
+<para>Vlan ID value. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          true </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_TUNNEL_MAP_ENTRY_ATTR_TUNNEL_MAP_TYPE == SAI_TUNNEL_MAP_TYPE_VNI_TO_VLAN_ID or SAI_TUNNEL_MAP_ENTRY_ATTR_TUNNEL_MAP_TYPE == SAI_TUNNEL_MAP_TYPE_VSID_TO_VLAN_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1811b467fd844f65aa91678f1d2d8bd2a71d5a3d2debf554a530605972a4567eb" prot="public">
+          <name>SAI_TUNNEL_MAP_ENTRY_ATTR_VNI_ID_KEY</name>
+          <initializer>= 0x00000008</initializer>
+          <briefdescription>
+<para>VNI ID key. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_TUNNEL_MAP_ENTRY_ATTR_TUNNEL_MAP_TYPE == SAI_TUNNEL_MAP_TYPE_VNI_TO_VLAN_ID or SAI_TUNNEL_MAP_ENTRY_ATTR_TUNNEL_MAP_TYPE == SAI_TUNNEL_MAP_TYPE_VNI_TO_BRIDGE_IF or SAI_TUNNEL_MAP_ENTRY_ATTR_TUNNEL_MAP_TYPE == SAI_TUNNEL_MAP_TYPE_VNI_TO_VIRTUAL_ROUTER_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1811b467fd844f65aa91678f1d2d8bd2a8914508ab2b3b3a0a14fccae183d06cc" prot="public">
+          <name>SAI_TUNNEL_MAP_ENTRY_ATTR_VNI_ID_VALUE</name>
+          <initializer>= 0x00000009</initializer>
+          <briefdescription>
+<para>VNI ID value. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_TUNNEL_MAP_ENTRY_ATTR_TUNNEL_MAP_TYPE == SAI_TUNNEL_MAP_TYPE_VLAN_ID_TO_VNI or SAI_TUNNEL_MAP_ENTRY_ATTR_TUNNEL_MAP_TYPE == SAI_TUNNEL_MAP_TYPE_BRIDGE_IF_TO_VNI or SAI_TUNNEL_MAP_ENTRY_ATTR_TUNNEL_MAP_TYPE == SAI_TUNNEL_MAP_TYPE_VIRTUAL_ROUTER_ID_TO_VNI </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1811b467fd844f65aa91678f1d2d8bd2a713e7e19826ed4a0f9806079ab8bd82c" prot="public">
+          <name>SAI_TUNNEL_MAP_ENTRY_ATTR_BRIDGE_ID_KEY</name>
+          <initializer>= 0x0000000a</initializer>
+          <briefdescription>
+<para>Bridge ID key. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_BRIDGE </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_TUNNEL_MAP_ENTRY_ATTR_TUNNEL_MAP_TYPE == SAI_TUNNEL_MAP_TYPE_BRIDGE_IF_TO_VNI or SAI_TUNNEL_MAP_ENTRY_ATTR_TUNNEL_MAP_TYPE == SAI_TUNNEL_MAP_TYPE_BRIDGE_IF_TO_VSID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1811b467fd844f65aa91678f1d2d8bd2ab85c3d57dec098e58f0327eaf03f75c5" prot="public">
+          <name>SAI_TUNNEL_MAP_ENTRY_ATTR_BRIDGE_ID_VALUE</name>
+          <initializer>= 0x0000000b</initializer>
+          <briefdescription>
+<para>Bridge ID value. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_BRIDGE </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_TUNNEL_MAP_ENTRY_ATTR_TUNNEL_MAP_TYPE == SAI_TUNNEL_MAP_TYPE_VNI_TO_BRIDGE_IF or SAI_TUNNEL_MAP_ENTRY_ATTR_TUNNEL_MAP_TYPE == SAI_TUNNEL_MAP_TYPE_VSID_TO_BRIDGE_IF </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1811b467fd844f65aa91678f1d2d8bd2a86ac99fc0ef48e9e119ebdcd336ece63" prot="public">
+          <name>SAI_TUNNEL_MAP_ENTRY_ATTR_VIRTUAL_ROUTER_ID_KEY</name>
+          <initializer>= 0x0000000c</initializer>
+          <briefdescription>
+<para>Virtual Router ID key. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_VIRTUAL_ROUTER </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_TUNNEL_MAP_ENTRY_ATTR_TUNNEL_MAP_TYPE == SAI_TUNNEL_MAP_TYPE_VIRTUAL_ROUTER_ID_TO_VNI or SAI_TUNNEL_MAP_ENTRY_ATTR_TUNNEL_MAP_TYPE == SAI_TUNNEL_MAP_TYPE_VIRTUAL_ROUTER_ID_TO_VPN_SID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1811b467fd844f65aa91678f1d2d8bd2a7f6d0a8f799b66f5d9e40d8103164981" prot="public">
+          <name>SAI_TUNNEL_MAP_ENTRY_ATTR_VIRTUAL_ROUTER_ID_VALUE</name>
+          <initializer>= 0x0000000d</initializer>
+          <briefdescription>
+<para>Virtual Router ID value. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_VIRTUAL_ROUTER </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_TUNNEL_MAP_ENTRY_ATTR_TUNNEL_MAP_TYPE == SAI_TUNNEL_MAP_TYPE_VNI_TO_VIRTUAL_ROUTER_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1811b467fd844f65aa91678f1d2d8bd2aa4c22b390f72adc33ed0ec75ec64df4c" prot="public">
+          <name>SAI_TUNNEL_MAP_ENTRY_ATTR_VSID_ID_KEY</name>
+          <initializer>= 0x0000000e</initializer>
+          <briefdescription>
+<para>VSID ID key. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_TUNNEL_MAP_ENTRY_ATTR_TUNNEL_MAP_TYPE == SAI_TUNNEL_MAP_TYPE_VSID_TO_VLAN_ID or SAI_TUNNEL_MAP_ENTRY_ATTR_TUNNEL_MAP_TYPE == SAI_TUNNEL_MAP_TYPE_VSID_TO_BRIDGE_IF </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1811b467fd844f65aa91678f1d2d8bd2a980eae8eaf24ece181f13e92704f2037" prot="public">
+          <name>SAI_TUNNEL_MAP_ENTRY_ATTR_VSID_ID_VALUE</name>
+          <initializer>= 0x0000000f</initializer>
+          <briefdescription>
+<para>VSID ID value. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_TUNNEL_MAP_ENTRY_ATTR_TUNNEL_MAP_TYPE == SAI_TUNNEL_MAP_TYPE_VLAN_ID_TO_VSID or SAI_TUNNEL_MAP_ENTRY_ATTR_TUNNEL_MAP_TYPE == SAI_TUNNEL_MAP_TYPE_BRIDGE_IF_TO_VSID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1811b467fd844f65aa91678f1d2d8bd2a0359ab0f24910de808fee18550b2f1a6" prot="public">
+          <name>SAI_TUNNEL_MAP_ENTRY_ATTR_PREFIX_AGG_ID_KEY</name>
+          <initializer>= 0x00000010</initializer>
+          <briefdescription>
+<para>Prefix Aggregation ID key. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_TUNNEL_MAP_ENTRY_ATTR_TUNNEL_MAP_TYPE == SAI_TUNNEL_MAP_TYPE_PREFIX_AGG_ID_TO_SRV6_VPN_SID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1811b467fd844f65aa91678f1d2d8bd2a292d9dbb3a92ca884cfc3d53b4afaf16" prot="public">
+          <name>SAI_TUNNEL_MAP_ENTRY_ATTR_SRV6_VPN_SID_VALUE</name>
+          <initializer>= 0x00000011</initializer>
+          <briefdescription>
+<para>SRV6 VPN SID. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip6_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_TUNNEL_MAP_ENTRY_ATTR_TUNNEL_MAP_TYPE == SAI_TUNNEL_MAP_TYPE_PREFIX_AGG_ID_TO_SRV6_VPN_SID or SAI_TUNNEL_MAP_ENTRY_ATTR_TUNNEL_MAP_TYPE == SAI_TUNNEL_MAP_TYPE_VIRTUAL_ROUTER_ID_TO_VPN_SID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1811b467fd844f65aa91678f1d2d8bd2aa15c5f31f47b5b5627f9a870723f98f1" prot="public">
+          <name>SAI_TUNNEL_MAP_ENTRY_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1811b467fd844f65aa91678f1d2d8bd2a6741c9204db28b3e772f595cdee99014" prot="public">
+          <name>SAI_TUNNEL_MAP_ENTRY_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1811b467fd844f65aa91678f1d2d8bd2a58b8e8da0354483aa984c2781e92d0ac" prot="public">
+          <name>SAI_TUNNEL_MAP_ENTRY_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="88" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" bodystart="89" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAITUNNEL_1gae0356fb489ab986867edf295dd4695f1" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_tunnel_map_attr_t</name>
+        <enumvalue id="group__SAITUNNEL_1ggae0356fb489ab986867edf295dd4695f1ac143478c33885979cac60b3bc626ffea" prot="public">
+          <name>SAI_TUNNEL_MAP_ATTR_START</name>
+          <initializer>= 0x00000000</initializer>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1ggae0356fb489ab986867edf295dd4695f1a3146870c03d589e8713edcf2be563563" prot="public">
+          <name>SAI_TUNNEL_MAP_ATTR_TYPE</name>
+          <initializer>= SAI_TUNNEL_MAP_ATTR_START</initializer>
+          <briefdescription>
+<para>Tunnel Map type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_tunnel_map_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1ggae0356fb489ab986867edf295dd4695f1ab77fe373e65e0b0dac4c672704c5c51d" prot="public">
+          <name>SAI_TUNNEL_MAP_ATTR_ENTRY_LIST</name>
+          <briefdescription>
+<para>Tunnel map entries associated with this map. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_TUNNEL_MAP_ENTRY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1ggae0356fb489ab986867edf295dd4695f1a92751096d330d8e3e0ec0c0137ad6f8c" prot="public">
+          <name>SAI_TUNNEL_MAP_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1ggae0356fb489ab986867edf295dd4695f1a1af60e1a89c7bd5781a184902f88c33b" prot="public">
+          <name>SAI_TUNNEL_MAP_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1ggae0356fb489ab986867edf295dd4695f1ae657eeef1a51fd3df7bb9464498ca190" prot="public">
+          <name>SAI_TUNNEL_MAP_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Defines tunnel map attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="278" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" bodystart="279" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAITUNNEL_1gac61059ace7204bca5501c4e1b5e5a2c3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_tunnel_ttl_mode_t</name>
+        <enumvalue id="group__SAITUNNEL_1ggac61059ace7204bca5501c4e1b5e5a2c3afaa6b6bb9d6b416ff298a01899556a74" prot="public">
+          <name>SAI_TUNNEL_TTL_MODE_UNIFORM_MODEL</name>
+          <briefdescription>
+<para>The uniform model. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Where the TTL field is preserved end-to-end by copying into the outer header on encapsulation and copying from the outer header on decapsulation. This is applicable for inner IP packets. If the inner packet is a non-IP packet, then the value is undefined and implementation can chose a valid/meaningful outer TTL value, say in the case of VXLAN encap. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1ggac61059ace7204bca5501c4e1b5e5a2c3a12d9000bc6b70d87aafb2ca9c41b2144" prot="public">
+          <name>SAI_TUNNEL_TTL_MODE_PIPE_MODEL</name>
+          <briefdescription>
+<para>The pipe model. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Where the outer header is independent of that in the inner header so it hides the TTL field of the inner header from any interaction with nodes along the tunnel.</para>
+<para>TTL field is user-defined for outer header on encapsulation. TTL field of inner header remains the same on decapsulation. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Defines tunnel TTL mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="370" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" bodystart="371" bodyend="395"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAITUNNEL_1ga3c73695cfa2ec381dfbec4f5ae6aa98f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_tunnel_dscp_mode_t</name>
+        <enumvalue id="group__SAITUNNEL_1gga3c73695cfa2ec381dfbec4f5ae6aa98faaa57fcb66e32560e01127d8fcbebebc5" prot="public">
+          <name>SAI_TUNNEL_DSCP_MODE_UNIFORM_MODEL</name>
+          <briefdescription>
+<para>The uniform model. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Where the DSCP field is preserved end-to-end by copying into the outer header on encapsulation and copying from the outer header on decapsulation. This is applicable for inner IP packets. If the inner packet is a non-IP packet, then the value is undefined and implementation can chose a valid/meaningful outer DSCP value, say in the case of VXLAN encap. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga3c73695cfa2ec381dfbec4f5ae6aa98fa9efc402a8dbc6388d84b02ce1748b523" prot="public">
+          <name>SAI_TUNNEL_DSCP_MODE_PIPE_MODEL</name>
+          <briefdescription>
+<para>The pipe model. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Where the outer header is independent of that in the inner header so it hides the DSCP field of the inner header from any interaction with nodes along the tunnel.</para>
+<para>DSCP field is user-defined for outer header on encapsulation. DSCP field of inner header remains the same on decapsulation. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Defines tunnel DSCP mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="400" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" bodystart="401" bodyend="425"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAITUNNEL_1gaf91cba34c08a7adcb256e82a95136270" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_tunnel_peer_mode_t</name>
+        <enumvalue id="group__SAITUNNEL_1ggaf91cba34c08a7adcb256e82a95136270a6e851763f0284f7c6e85fc593db0891e" prot="public">
+          <name>SAI_TUNNEL_PEER_MODE_P2P</name>
+          <briefdescription>
+<para>P2P Tunnel. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1ggaf91cba34c08a7adcb256e82a95136270a764b28e196d02cf4944090af018a36a9" prot="public">
+          <name>SAI_TUNNEL_PEER_MODE_P2MP</name>
+          <briefdescription>
+<para>P2MP Tunnel. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Defines tunnel peer mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="430" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" bodystart="431" bodyend="442"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAITUNNEL_1ga1d47564379bb47d99433f81a3dfae386" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_tunnel_attr_t</name>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386ad20ddaa74523b2821bfb934ebe0525a2" prot="public">
+          <name>SAI_TUNNEL_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386af72900b85e6e709a4a2c439173007bed" prot="public">
+          <name>SAI_TUNNEL_ATTR_TYPE</name>
+          <initializer>= SAI_TUNNEL_ATTR_START</initializer>
+          <briefdescription>
+<para>Tunnel type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_tunnel_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>IsResourceType:</title><para> @@isresourcetype  true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386a054f122dd9488d769d3a2b2bab98c69a" prot="public">
+          <name>SAI_TUNNEL_ATTR_UNDERLAY_INTERFACE</name>
+          <briefdescription>
+<para>Tunnel underlay interface. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Underlay interface is router interface when conditions are met.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_ROUTER_INTERFACE </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_TUNNEL_ATTR_TYPE == SAI_TUNNEL_TYPE_IPINIP or SAI_TUNNEL_ATTR_TYPE == SAI_TUNNEL_TYPE_IPINIP_GRE or SAI_TUNNEL_ATTR_TYPE == SAI_TUNNEL_TYPE_VXLAN or SAI_TUNNEL_ATTR_TYPE == SAI_TUNNEL_TYPE_SRV6 or SAI_TUNNEL_ATTR_TYPE == SAI_TUNNEL_TYPE_NVGRE or SAI_TUNNEL_ATTR_TYPE == SAI_TUNNEL_TYPE_IPINIP_ESP or SAI_TUNNEL_ATTR_TYPE == SAI_TUNNEL_TYPE_IPINIP_UDP_ESP or SAI_TUNNEL_ATTR_TYPE == SAI_TUNNEL_TYPE_VXLAN_UDP_ESP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386a7649a7ab2df847684f8e75e1516b06cd" prot="public">
+          <name>SAI_TUNNEL_ATTR_OVERLAY_INTERFACE</name>
+          <briefdescription>
+<para>Tunnel overlay interface. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Overlay interface is router interface when conditions are met.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_ROUTER_INTERFACE </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_TUNNEL_ATTR_TYPE == SAI_TUNNEL_TYPE_IPINIP or SAI_TUNNEL_ATTR_TYPE == SAI_TUNNEL_TYPE_IPINIP_GRE or SAI_TUNNEL_ATTR_TYPE == SAI_TUNNEL_TYPE_IPINIP_ESP or SAI_TUNNEL_ATTR_TYPE == SAI_TUNNEL_TYPE_IPINIP_UDP_ESP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386af533d5357c81380504a1649511d64985" prot="public">
+          <name>SAI_TUNNEL_ATTR_PEER_MODE</name>
+          <briefdescription>
+<para>Tunnel Peer Mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_tunnel_peer_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_TUNNEL_PEER_MODE_P2MP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386a85f24fad7dbdedbac3341441c87dbc56" prot="public">
+          <name>SAI_TUNNEL_ATTR_ENCAP_SRC_IP</name>
+          <briefdescription>
+<para>Tunnel src IP. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386a0d32a6f116c6e6cafd4dd653750ecac5" prot="public">
+          <name>SAI_TUNNEL_ATTR_ENCAP_DST_IP</name>
+          <briefdescription>
+<para>Tunnel Destination IP. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_TUNNEL_ATTR_PEER_MODE == SAI_TUNNEL_PEER_MODE_P2P </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386ae4665e1b6ceb78bcef6a81862a017b29" prot="public">
+          <name>SAI_TUNNEL_ATTR_ENCAP_TTL_MODE</name>
+          <briefdescription>
+<para>Tunnel TTL mode (pipe or uniform model) </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_tunnel_ttl_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_TUNNEL_TTL_MODE_UNIFORM_MODEL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386a5de2138958358851aa60728bbc254fe9" prot="public">
+          <name>SAI_TUNNEL_ATTR_ENCAP_TTL_VAL</name>
+          <briefdescription>
+<para>Tunnel TTL value. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         255 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_TUNNEL_ATTR_ENCAP_TTL_MODE == SAI_TUNNEL_TTL_MODE_PIPE_MODEL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386ae800764be67d3bc11c82bf205af7dbee" prot="public">
+          <name>SAI_TUNNEL_ATTR_ENCAP_DSCP_MODE</name>
+          <briefdescription>
+<para>Tunnel DSCP mode (pipe or uniform model) </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_tunnel_dscp_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_TUNNEL_DSCP_MODE_UNIFORM_MODEL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386ac06cbc986907b46669f9a4301249fa54" prot="public">
+          <name>SAI_TUNNEL_ATTR_ENCAP_DSCP_VAL</name>
+          <briefdescription>
+<para>Tunnel DSCP value (6 bits) </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_TUNNEL_ATTR_ENCAP_DSCP_MODE == SAI_TUNNEL_DSCP_MODE_PIPE_MODEL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386a116ea3891ab2ea0166a4444a457d84ca" prot="public">
+          <name>SAI_TUNNEL_ATTR_ENCAP_GRE_KEY_VALID</name>
+          <briefdescription>
+<para>Tunnel GRE key valid. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386ace72c3bcba2ecc00dd25883f9a2836ae" prot="public">
+          <name>SAI_TUNNEL_ATTR_ENCAP_GRE_KEY</name>
+          <briefdescription>
+<para>Tunnel GRE key. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_TUNNEL_ATTR_ENCAP_GRE_KEY_VALID == true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386a81fabf1f1a68691e4edb88118bcc59c3" prot="public">
+          <name>SAI_TUNNEL_ATTR_ENCAP_ECN_MODE</name>
+          <briefdescription>
+<para>Tunnel encap ECN mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_tunnel_encap_ecn_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_TUNNEL_ENCAP_ECN_MODE_STANDARD </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386a20c649b889374c7d894e155626daa63d" prot="public">
+          <name>SAI_TUNNEL_ATTR_ENCAP_MAPPERS</name>
+          <briefdescription>
+<para>Tunnel encap mappers. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_TUNNEL_MAP </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386a7059a95e6ccd1aa61df04a8fd49db55e" prot="public">
+          <name>SAI_TUNNEL_ATTR_DECAP_ECN_MODE</name>
+          <briefdescription>
+<para>Tunnel decap ECN mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_tunnel_decap_ecn_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_TUNNEL_DECAP_ECN_MODE_STANDARD </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386a994845b8e8819e515d092c78e125ddcb" prot="public">
+          <name>SAI_TUNNEL_ATTR_DECAP_MAPPERS</name>
+          <briefdescription>
+<para>Tunnel decap mappers. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_TUNNEL_MAP </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386ac8ebd0a90c48679b9922050281df839f" prot="public">
+          <name>SAI_TUNNEL_ATTR_DECAP_TTL_MODE</name>
+          <briefdescription>
+<para>Tunnel TTL mode (pipe or uniform model) </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_tunnel_ttl_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_TUNNEL_TTL_MODE_UNIFORM_MODEL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386a7923f3d91c94258085f9cfba200a170f" prot="public">
+          <name>SAI_TUNNEL_ATTR_DECAP_DSCP_MODE</name>
+          <briefdescription>
+<para>Tunnel DSCP mode (pipe or uniform model) </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_tunnel_dscp_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_TUNNEL_DSCP_MODE_UNIFORM_MODEL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386a59d4ad7495ed0a0f95f0191b6bdfc6a2" prot="public">
+          <name>SAI_TUNNEL_ATTR_TERM_TABLE_ENTRY_LIST</name>
+          <briefdescription>
+<para>Tunnel term table entries associated with this tunnel. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_TUNNEL_TERM_TABLE_ENTRY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386ae97d64f6939d9efaf83605b34ca73b37" prot="public">
+          <name>SAI_TUNNEL_ATTR_LOOPBACK_PACKET_ACTION</name>
+          <briefdescription>
+<para>Packet action when a packet ingress and gets routed back to same tunnel. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_packet_action_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_PACKET_ACTION_FORWARD </para>
+</simplesect>
+<simplesect kind="par"><title>IsResourceType:</title><para> @@isresourcetype  true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386aecbfee6051992cfcfacedee46caad425" prot="public">
+          <name>SAI_TUNNEL_ATTR_VXLAN_UDP_SPORT_MODE</name>
+          <briefdescription>
+<para>Tunnel VXLAN UDP source port mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_tunnel_vxlan_udp_sport_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_TUNNEL_VXLAN_UDP_SPORT_MODE_EPHEMERAL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386a717dd87374808a84da39effc72701462" prot="public">
+          <name>SAI_TUNNEL_ATTR_VXLAN_UDP_SPORT</name>
+          <briefdescription>
+<para>Tunnel UDP source port. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          false </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_TUNNEL_ATTR_TYPE == SAI_TUNNEL_TYPE_VXLAN and SAI_TUNNEL_ATTR_VXLAN_UDP_SPORT_MODE == SAI_TUNNEL_VXLAN_UDP_SPORT_MODE_USER_DEFINED </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386aaff27975af16539289600042f0693b1c" prot="public">
+          <name>SAI_TUNNEL_ATTR_VXLAN_UDP_SPORT_MASK</name>
+          <briefdescription>
+<para>Tunnel UDP source port mask. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Sport mask defining the number of least significant bits reserved for the calculated hash value. 0 means a fixed value.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          false </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_TUNNEL_ATTR_TYPE == SAI_TUNNEL_TYPE_VXLAN and SAI_TUNNEL_ATTR_VXLAN_UDP_SPORT_MODE == SAI_TUNNEL_VXLAN_UDP_SPORT_MODE_USER_DEFINED </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386adafefefdc9b4142edbabbaaebb494def" prot="public">
+          <name>SAI_TUNNEL_ATTR_SA_INDEX</name>
+          <briefdescription>
+<para>IPsec encryption SA index. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Index to bind an egress IPsec SA to a tunnel.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_TUNNEL_ATTR_TYPE == SAI_TUNNEL_TYPE_IPINIP_ESP or SAI_TUNNEL_ATTR_TYPE == SAI_TUNNEL_TYPE_IPINIP_UDP_ESP or SAI_TUNNEL_ATTR_TYPE == SAI_TUNNEL_TYPE_VXLAN_UDP_ESP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386a994210f8bd0fbf0aa711e6180b8b9e57" prot="public">
+          <name>SAI_TUNNEL_ATTR_IPSEC_SA_PORT_LIST</name>
+          <briefdescription>
+<para>List of ports that are programmed with SAs for this IPsec tunnel. Useful only when IPsec is implemented in a PHY Chip (different sai_switch object). </para>
+          </briefdescription>
+          <detaileddescription>
+<para>For IPsec hardware in the Switch ASIC, the per-tunnel port list can be derived from the union of SAI_IPSEC_SA_ATTR_IPSEC_PORT_LIST for all sai_ipsec_sa objects for that tunnel.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_PORT </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386a5fcac947f5704db8aa207507328d578c" prot="public">
+          <name>SAI_TUNNEL_ATTR_ENCAP_QOS_TC_AND_COLOR_TO_DSCP_MAP</name>
+          <briefdescription>
+<para>Enable TC AND COLOR -&gt; DSCP MAP on tunnel at encapsulation (access-to-network) node to remark the DSCP in tunnel header. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_QOS_MAP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386a6cafa41fbf0d5380dd31a189a46f5755" prot="public">
+          <name>SAI_TUNNEL_ATTR_ENCAP_QOS_TC_TO_QUEUE_MAP</name>
+          <briefdescription>
+<para>Enable TC -&gt; Queue MAP on tunnel encap. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Map id = <ref refid="group__SAITYPES_1ga05f6bb4ef9f7ddf0ceb2056dc6ac8c6c" kindref="member">SAI_NULL_OBJECT_ID</ref> to disable map on tunnel. Default no map, i.e. packets are queued with static mapping.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_QOS_MAP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386a03e8d232c5a0a7bf2c15de5a3c2ec1fc" prot="public">
+          <name>SAI_TUNNEL_ATTR_DECAP_QOS_DSCP_TO_TC_MAP</name>
+          <briefdescription>
+<para>Enable DSCP -&gt; TC MAP on tunnel at termination (Network-to-access) node. This map if configured overrides the port MAP. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_QOS_MAP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386a2453cdfa4599df0d2022041e58f11275" prot="public">
+          <name>SAI_TUNNEL_ATTR_DECAP_QOS_TC_TO_PRIORITY_GROUP_MAP</name>
+          <briefdescription>
+<para>Enable TC -&gt; Priority Group MAP. TC is derived from the tunnel MAP. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Map id = <ref refid="group__SAITYPES_1ga05f6bb4ef9f7ddf0ceb2056dc6ac8c6c" kindref="member">SAI_NULL_OBJECT_ID</ref> to disable map on port. Default no map</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_QOS_MAP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386a2133edb339bc2b7f46cf7de5232711ef" prot="public">
+          <name>SAI_TUNNEL_ATTR_VXLAN_UDP_SPORT_SECURITY</name>
+          <briefdescription>
+<para>Drop tunnel packets with not allowed UDP source port. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Upon enabling this feature, if the tunnel packet ingresses with UDP source port outside of range defined for this tunnel, it will be dropped.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_TUNNEL_ATTR_TYPE == SAI_TUNNEL_TYPE_VXLAN and SAI_TUNNEL_ATTR_VXLAN_UDP_SPORT_MODE == SAI_TUNNEL_VXLAN_UDP_SPORT_MODE_USER_DEFINED </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386a4a5bf85fbefadf5f9db72d3d147df354" prot="public">
+          <name>SAI_TUNNEL_ATTR_STATS_COUNT_MODE</name>
+          <briefdescription>
+<para>Set tunnel statistics counting mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_stats_count_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_STATS_COUNT_MODE_PACKET_AND_BYTE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386a329dd79d5b02cfa80f844a6ef21790b6" prot="public">
+          <name>SAI_TUNNEL_ATTR_SELECTIVE_COUNTER_LIST</name>
+          <briefdescription>
+<para>Attach counter object list. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Counter object should be of type Selective. Fill (<ref refid="group__SAICOUNTER_1ggac5e99b5b04f2a0f0665babc2a60c9641a2835fed0aa18e2fb59824c903bd712ea" kindref="member">SAI_COUNTER_ATTR_TYPE</ref> with <ref refid="group__SAICOUNTER_1gga4e3da19e4589261e88197d6576020cf1aa4b87a1c99256ee3601553c9455cb92c" kindref="member">SAI_COUNTER_TYPE_SELECTIVE</ref>).</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_COUNTER </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386ae37be1d3e95e3e64cd2526911645c7f3" prot="public">
+          <name>SAI_TUNNEL_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386a3b871dd4f91fe5d9985885aaf03f6a45" prot="public">
+          <name>SAI_TUNNEL_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga1d47564379bb47d99433f81a3dfae386a2ce5b8416a6d952ac2de9de3593a5fcc" prot="public">
+          <name>SAI_TUNNEL_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Defines tunnel attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="447" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" bodystart="448" bodyend="810"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAITUNNEL_1gab005c2dc59a1092680efb1da435bb7f5" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_tunnel_stat_t</name>
+        <enumvalue id="group__SAITUNNEL_1ggab005c2dc59a1092680efb1da435bb7f5a68e776e7968dcca9d112b39735a847c1" prot="public">
+          <name>SAI_TUNNEL_STAT_IN_OCTETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ingress byte stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1ggab005c2dc59a1092680efb1da435bb7f5a95f2348cfc3015c610da5deea5e1cd66" prot="public">
+          <name>SAI_TUNNEL_STAT_IN_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ingress packet stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1ggab005c2dc59a1092680efb1da435bb7f5aebc05c302a1a90faf5d4b99d11fd5371" prot="public">
+          <name>SAI_TUNNEL_STAT_OUT_OCTETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Egress byte stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1ggab005c2dc59a1092680efb1da435bb7f5a3af9ad8cdee74c3986c9ac31c253cd4f" prot="public">
+          <name>SAI_TUNNEL_STAT_OUT_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Egress packet stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Tunnel counter IDs in sai_get_tunnel_stats() call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="815" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" bodystart="816" bodyend="829"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAITUNNEL_1ga68481f8a6d4e812146008a1755f37059" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_tunnel_term_table_entry_type_t</name>
+        <enumvalue id="group__SAITUNNEL_1gga68481f8a6d4e812146008a1755f37059a66a2a51beb4564cf418a1bc6cd64168f" prot="public">
+          <name>SAI_TUNNEL_TERM_TABLE_ENTRY_TYPE_P2P</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Tunnel termination table point to point entry match on dst &amp; src IP &amp; tunnel type </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga68481f8a6d4e812146008a1755f37059a7dd0f9335a06458e676b62ea6d91c853" prot="public">
+          <name>SAI_TUNNEL_TERM_TABLE_ENTRY_TYPE_P2MP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Tunnel termination table destination point to multi point source entry match on dst IP &amp; src IP+mask &amp; tunnel type </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga68481f8a6d4e812146008a1755f37059a2cf4fa606363c7600c46b4f427d8e8c1" prot="public">
+          <name>SAI_TUNNEL_TERM_TABLE_ENTRY_TYPE_MP2P</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Tunnel termination table multi point destination to point source entry match on dst IP+mask &amp; src IP &amp; tunnel type </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga68481f8a6d4e812146008a1755f37059ad89597613d433b215cfb7f3e244cf614" prot="public">
+          <name>SAI_TUNNEL_TERM_TABLE_ENTRY_TYPE_MP2MP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Tunnel termination table multi point to multi point entry match on dst IP+mask &amp; src IP+mask &amp; tunnel type </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Defines tunnel termination table entry type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="934" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" bodystart="935" bodyend="948"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAITUNNEL_1ga9eca33be16fc6e6a25ea79ac6ce84b26" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_tunnel_term_table_entry_attr_t</name>
+        <enumvalue id="group__SAITUNNEL_1gga9eca33be16fc6e6a25ea79ac6ce84b26a02a9b43005cff0e9aa53ab99d2616414" prot="public">
+          <name>SAI_TUNNEL_TERM_TABLE_ENTRY_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga9eca33be16fc6e6a25ea79ac6ce84b26a1d9ffc476277664c91fcf22cb4ddb08b" prot="public">
+          <name>SAI_TUNNEL_TERM_TABLE_ENTRY_ATTR_VR_ID</name>
+          <initializer>= SAI_TUNNEL_TERM_TABLE_ENTRY_ATTR_START</initializer>
+          <briefdescription>
+<para>Tunnel virtual router id This attribute is deprecated and removed from the termination entry key. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_VIRTUAL_ROUTER </para>
+</simplesect>
+<simplesect kind="par"><title>Deprecated:</title><para> @@deprecated      true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga9eca33be16fc6e6a25ea79ac6ce84b26aceb4a555adfe30c1207a289e8a9de734" prot="public">
+          <name>SAI_TUNNEL_TERM_TABLE_ENTRY_ATTR_TYPE</name>
+          <briefdescription>
+<para>Tunnel entry type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_tunnel_term_table_entry_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga9eca33be16fc6e6a25ea79ac6ce84b26a6acecc9b14a78a4349891df7f3ee88f1" prot="public">
+          <name>SAI_TUNNEL_TERM_TABLE_ENTRY_ATTR_DST_IP</name>
+          <briefdescription>
+<para>Tunnel termination IP address. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_TUNNEL_TERM_TABLE_ENTRY_ATTR_TYPE == SAI_TUNNEL_TERM_TABLE_ENTRY_TYPE_P2P or SAI_TUNNEL_TERM_TABLE_ENTRY_ATTR_TYPE == SAI_TUNNEL_TERM_TABLE_ENTRY_TYPE_P2MP </para>
+</simplesect>
+<simplesect kind="par"><title>Condition Relaxed:</title><para> @@relaxed         true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga9eca33be16fc6e6a25ea79ac6ce84b26a161e5b74ac5c69f590d0e67c64f80615" prot="public">
+          <name>SAI_TUNNEL_TERM_TABLE_ENTRY_ATTR_DST_IP_MASK</name>
+          <briefdescription>
+<para>Tunnel termination IP address mask. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_TUNNEL_TERM_TABLE_ENTRY_ATTR_TYPE == SAI_TUNNEL_TERM_TABLE_ENTRY_TYPE_MP2P or SAI_TUNNEL_TERM_TABLE_ENTRY_ATTR_TYPE == SAI_TUNNEL_TERM_TABLE_ENTRY_TYPE_MP2MP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga9eca33be16fc6e6a25ea79ac6ce84b26ae0b922d98ef22706b589bd84e1bfc27c" prot="public">
+          <name>SAI_TUNNEL_TERM_TABLE_ENTRY_ATTR_SRC_IP</name>
+          <briefdescription>
+<para>Tunnel source IP address. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_TUNNEL_TERM_TABLE_ENTRY_ATTR_TYPE == SAI_TUNNEL_TERM_TABLE_ENTRY_TYPE_P2P or SAI_TUNNEL_TERM_TABLE_ENTRY_ATTR_TYPE == SAI_TUNNEL_TERM_TABLE_ENTRY_TYPE_MP2P </para>
+</simplesect>
+<simplesect kind="par"><title>Condition Relaxed:</title><para> @@relaxed         true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga9eca33be16fc6e6a25ea79ac6ce84b26a062e3392c71c584b9caf5e853703bf8e" prot="public">
+          <name>SAI_TUNNEL_TERM_TABLE_ENTRY_ATTR_SRC_IP_MASK</name>
+          <briefdescription>
+<para>Tunnel source IP address mask. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_TUNNEL_TERM_TABLE_ENTRY_ATTR_TYPE == SAI_TUNNEL_TERM_TABLE_ENTRY_TYPE_P2MP or SAI_TUNNEL_TERM_TABLE_ENTRY_ATTR_TYPE == SAI_TUNNEL_TERM_TABLE_ENTRY_TYPE_MP2MP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga9eca33be16fc6e6a25ea79ac6ce84b26a0f55648cd9c0d862ed83d894e09769b9" prot="public">
+          <name>SAI_TUNNEL_TERM_TABLE_ENTRY_ATTR_TUNNEL_TYPE</name>
+          <briefdescription>
+<para>Tunnel type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_tunnel_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga9eca33be16fc6e6a25ea79ac6ce84b26a45f8035773879a72954d31a111ac4007" prot="public">
+          <name>SAI_TUNNEL_TERM_TABLE_ENTRY_ATTR_ACTION_TUNNEL_ID</name>
+          <briefdescription>
+<para>Tunnel id to be use for decap. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_TUNNEL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga9eca33be16fc6e6a25ea79ac6ce84b26a0ce99f83514db6b7e3a5e397b6277c4b" prot="public">
+          <name>SAI_TUNNEL_TERM_TABLE_ENTRY_ATTR_IP_ADDR_FAMILY</name>
+          <briefdescription>
+<para>Tunnel term table entry IP address family. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>READ-ONLY</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_addr_family_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>IsResourceType:</title><para> @@isresourcetype  true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga9eca33be16fc6e6a25ea79ac6ce84b26a58b305487ab3a321d00b77cfc7aed245" prot="public">
+          <name>SAI_TUNNEL_TERM_TABLE_ENTRY_ATTR_IPSEC_VERIFIED</name>
+          <briefdescription>
+<para>IPsec packet verified by hardware Security Engine. Valid only for tunnel type SAI_TUNNEL_TYPE_IPINIP_ESP, SAI_TUNNEL_TYPE_IPINIP_UDP_ESP or SAI_TUNNEL_TYPE_VXLAN_UDP_ESP. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga9eca33be16fc6e6a25ea79ac6ce84b26aba7c7479e4aaddf5348f5382dbb0c9ae" prot="public">
+          <name>SAI_TUNNEL_TERM_TABLE_ENTRY_ATTR_PRIORITY</name>
+          <briefdescription>
+<para>Priority. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Value must be in the range defined in [<ref refid="group__SAISWITCH_1gga96df0871b3925f973f4a9079ffb3e634adceae22fa85814feb2169a14e1c357e8" kindref="member">SAI_SWITCH_ATTR_TUNNEL_TERM_TABLE_ENTRY_MINIMUM_PRIORITY</ref>, <ref refid="group__SAISWITCH_1gga96df0871b3925f973f4a9079ffb3e634ab0ebef187082d732dd900f959672e757" kindref="member">SAI_SWITCH_ATTR_TUNNEL_TERM_TABLE_ENTRY_MAXIMUM_PRIORITY</ref>] (default = <ref refid="group__SAISWITCH_1gga96df0871b3925f973f4a9079ffb3e634adceae22fa85814feb2169a14e1c357e8" kindref="member">SAI_SWITCH_ATTR_TUNNEL_TERM_TABLE_ENTRY_MINIMUM_PRIORITY</ref>) higher value in priority equals higher priority</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga9eca33be16fc6e6a25ea79ac6ce84b26a63c01386274daca6436b23a8aa8a7c14" prot="public">
+          <name>SAI_TUNNEL_TERM_TABLE_ENTRY_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga9eca33be16fc6e6a25ea79ac6ce84b26a627f7a0a1cb041771f65b80d0c3a1c46" prot="public">
+          <name>SAI_TUNNEL_TERM_TABLE_ENTRY_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAITUNNEL_1gga9eca33be16fc6e6a25ea79ac6ce84b26a536d3b0e39d9268045c64e45029e5e3d" prot="public">
+          <name>SAI_TUNNEL_TERM_TABLE_ENTRY_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Enc of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Defines tunnel termination table entry attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="953" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" bodystart="954" bodyend="1085"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAITUNNEL_1ga7faace90fc4d708d392031e80ebf46d3" prot="public" static="no">
+        <type>enum <ref refid="group__SAITUNNEL_1ga04ccced50501ec9caecbd0e9b073a4e0" kindref="member">_sai_tunnel_map_type_t</ref></type>
+        <definition>typedef enum _sai_tunnel_map_type_t sai_tunnel_map_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_tunnel_map_type_t</name>
+        <briefdescription>
+<para>Enum defining tunnel map types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="86" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAITUNNEL_1ga51b5ef0941f8fcebd4146a32abd6995b" prot="public" static="no">
+        <type>enum <ref refid="group__SAITUNNEL_1ga1811b467fd844f65aa91678f1d2d8bd2" kindref="member">_sai_tunnel_map_entry_attr_t</ref></type>
+        <definition>typedef enum _sai_tunnel_map_entry_attr_t sai_tunnel_map_entry_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_tunnel_map_entry_attr_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="273" column="29"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAITUNNEL_1gad6206c844c11326b622251ceac397b7c" prot="public" static="no">
+        <type>enum <ref refid="group__SAITUNNEL_1gae0356fb489ab986867edf295dd4695f1" kindref="member">_sai_tunnel_map_attr_t</ref></type>
+        <definition>typedef enum _sai_tunnel_map_attr_t sai_tunnel_map_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_tunnel_map_attr_t</name>
+        <briefdescription>
+<para>Defines tunnel map attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="313" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAITUNNEL_1ga4493d8a8045573c56304f3f60ae6f5a1" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_tunnel_map_fn) (_Out_ sai_object_id_t *tunnel_map_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *tunnel_map_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_tunnel_map_fn</name>
+        <briefdescription>
+<para>Create tunnel Map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">tunnel_map_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tunnel Map Id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch Id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="325" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAITUNNEL_1gac71696d10e2eab92219306dd9798c5ee" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_tunnel_map_fn) (_In_ sai_object_id_t tunnel_map_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t tunnel_map_id)</argsstring>
+        <name>sai_remove_tunnel_map_fn</name>
+        <briefdescription>
+<para>Remove tunnel Map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">tunnel_map_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tunnel Map id to be removed</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="338" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAITUNNEL_1ga2982891913ae2c3114cb794c8eaf0b21" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_tunnel_map_attribute_fn) (_In_ sai_object_id_t tunnel_map_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t tunnel_map_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_tunnel_map_attribute_fn</name>
+        <briefdescription>
+<para>Set attributes for tunnel map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">tunnel_map_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tunnel Map Id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute to set</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="349" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAITUNNEL_1ga6680da2e3ceaa3ef7e5580fc9d74498e" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_tunnel_map_attribute_fn) (_In_ sai_object_id_t tunnel_map_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t tunnel_map_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_tunnel_map_attribute_fn</name>
+        <briefdescription>
+<para>Get attributes of tunnel map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">tunnel_map_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tunnel map id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="362" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" bodystart="362" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAITUNNEL_1ga87b60d4813119ae92e8212e628eb7517" prot="public" static="no">
+        <type>enum <ref refid="group__SAITUNNEL_1gac61059ace7204bca5501c4e1b5e5a2c3" kindref="member">_sai_tunnel_ttl_mode_t</ref></type>
+        <definition>typedef enum _sai_tunnel_ttl_mode_t sai_tunnel_ttl_mode_t</definition>
+        <argsstring></argsstring>
+        <name>sai_tunnel_ttl_mode_t</name>
+        <briefdescription>
+<para>Defines tunnel TTL mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="395" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAITUNNEL_1gaf3b4347cede8f98ecee10202f9cce88e" prot="public" static="no">
+        <type>enum <ref refid="group__SAITUNNEL_1ga3c73695cfa2ec381dfbec4f5ae6aa98f" kindref="member">_sai_tunnel_dscp_mode_t</ref></type>
+        <definition>typedef enum _sai_tunnel_dscp_mode_t sai_tunnel_dscp_mode_t</definition>
+        <argsstring></argsstring>
+        <name>sai_tunnel_dscp_mode_t</name>
+        <briefdescription>
+<para>Defines tunnel DSCP mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="425" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAITUNNEL_1gada1c380dffe6f2f37ebe8828b12564e5" prot="public" static="no">
+        <type>enum <ref refid="group__SAITUNNEL_1gaf91cba34c08a7adcb256e82a95136270" kindref="member">_sai_tunnel_peer_mode_t</ref></type>
+        <definition>typedef enum _sai_tunnel_peer_mode_t sai_tunnel_peer_mode_t</definition>
+        <argsstring></argsstring>
+        <name>sai_tunnel_peer_mode_t</name>
+        <briefdescription>
+<para>Defines tunnel peer mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="442" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAITUNNEL_1gac8e0d96510c44d05190fb850ef590ea4" prot="public" static="no">
+        <type>enum <ref refid="group__SAITUNNEL_1ga1d47564379bb47d99433f81a3dfae386" kindref="member">_sai_tunnel_attr_t</ref></type>
+        <definition>typedef enum _sai_tunnel_attr_t sai_tunnel_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_tunnel_attr_t</name>
+        <briefdescription>
+<para>Defines tunnel attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="810" column="19"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAITUNNEL_1ga07d4feef05baf5e83ad6d6e7cbe9d560" prot="public" static="no">
+        <type>enum <ref refid="group__SAITUNNEL_1gab005c2dc59a1092680efb1da435bb7f5" kindref="member">_sai_tunnel_stat_t</ref></type>
+        <definition>typedef enum _sai_tunnel_stat_t sai_tunnel_stat_t</definition>
+        <argsstring></argsstring>
+        <name>sai_tunnel_stat_t</name>
+        <briefdescription>
+<para>Tunnel counter IDs in sai_get_tunnel_stats() call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="829" column="19"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAITUNNEL_1ga70145223d93ac8223233e941de7618f6" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_tunnel_fn) (_Out_ sai_object_id_t *tunnel_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *tunnel_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_tunnel_fn</name>
+        <briefdescription>
+<para>Create tunnel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">tunnel_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tunnel id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch Id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="841" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" bodystart="841" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAITUNNEL_1ga44e799aebe213972e63fbb300107b2fa" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_tunnel_fn) (_In_ sai_object_id_t tunnel_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t tunnel_id)</argsstring>
+        <name>sai_remove_tunnel_fn</name>
+        <briefdescription>
+<para>Remove tunnel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">tunnel_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tunnel id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="854" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" bodystart="854" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAITUNNEL_1ga6b10ff3304322fb813fa1ad04606e761" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_tunnel_attribute_fn) (_In_ sai_object_id_t tunnel_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t tunnel_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_tunnel_attribute_fn</name>
+        <briefdescription>
+<para>Set tunnel attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">tunnel_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tunnel id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="865" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" bodystart="865" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAITUNNEL_1ga58ca8217ff8b29db72dfcb822616128d" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_tunnel_attribute_fn) (_In_ sai_object_id_t tunnel_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t tunnel_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_tunnel_attribute_fn</name>
+        <briefdescription>
+<para>Get tunnel attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">tunnel_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tunnel id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="878" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" bodystart="878" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAITUNNEL_1gad81c4845449ba3b62a90745dc30e0dda" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_tunnel_stats_fn) (_In_ sai_object_id_t tunnel_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t tunnel_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_tunnel_stats_fn</name>
+        <briefdescription>
+<para>Get tunnel statistics counters. Deprecated for backward compatibility. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">tunnel_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tunnel id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="893" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" bodystart="893" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAITUNNEL_1ga64562d50565054ff56fd0d5ca351a16f" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_tunnel_stats_ext_fn) (_In_ sai_object_id_t tunnel_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t tunnel_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_tunnel_stats_ext_fn</name>
+        <briefdescription>
+<para>Get tunnel statistics counters extended. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">tunnel_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tunnel id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Statistics mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="910" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" bodystart="910" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAITUNNEL_1ga0f7847c94ef38a3d8a37cc1eaac552f8" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_clear_tunnel_stats_fn) (_In_ sai_object_id_t tunnel_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</definition>
+        <argsstring>)(_In_ sai_object_id_t tunnel_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</argsstring>
+        <name>sai_clear_tunnel_stats_fn</name>
+        <briefdescription>
+<para>Clear tunnel statistics counters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">tunnel_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tunnel id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="926" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" bodystart="926" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAITUNNEL_1ga46f0d19cb7f320855caa17ea8fdd6317" prot="public" static="no">
+        <type>enum <ref refid="group__SAITUNNEL_1ga68481f8a6d4e812146008a1755f37059" kindref="member">_sai_tunnel_term_table_entry_type_t</ref></type>
+        <definition>typedef enum _sai_tunnel_term_table_entry_type_t sai_tunnel_term_table_entry_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_tunnel_term_table_entry_type_t</name>
+        <briefdescription>
+<para>Defines tunnel termination table entry type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="948" column="36"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAITUNNEL_1gaa65abb6aaac7ae72d496b2f61f1e55cf" prot="public" static="no">
+        <type>enum <ref refid="group__SAITUNNEL_1ga9eca33be16fc6e6a25ea79ac6ce84b26" kindref="member">_sai_tunnel_term_table_entry_attr_t</ref></type>
+        <definition>typedef enum _sai_tunnel_term_table_entry_attr_t sai_tunnel_term_table_entry_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_tunnel_term_table_entry_attr_t</name>
+        <briefdescription>
+<para>Defines tunnel termination table entry attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="1085" column="36"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAITUNNEL_1gabcffb65767a7436a3f9f0f3124b72ad7" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_tunnel_term_table_entry_fn) (_Out_ sai_object_id_t *tunnel_term_table_entry_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *tunnel_term_table_entry_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_tunnel_term_table_entry_fn</name>
+        <briefdescription>
+<para>Create tunnel termination table entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">tunnel_term_table_entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tunnel termination table entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch Id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="1097" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" bodystart="1097" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAITUNNEL_1ga49f50c63c30561e160867a92e7326be7" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_tunnel_term_table_entry_fn) (_In_ sai_object_id_t tunnel_term_table_entry_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t tunnel_term_table_entry_id)</argsstring>
+        <name>sai_remove_tunnel_term_table_entry_fn</name>
+        <briefdescription>
+<para>Remove tunnel termination table entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">tunnel_term_table_entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tunnel termination table entry id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="1110" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" bodystart="1110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAITUNNEL_1ga192502ea8b29661df56698e9f076717e" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_tunnel_term_table_entry_attribute_fn) (_In_ sai_object_id_t tunnel_term_table_entry_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t tunnel_term_table_entry_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_tunnel_term_table_entry_attribute_fn</name>
+        <briefdescription>
+<para>Set tunnel termination table entry attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">tunnel_term_table_entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tunnel termination table entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="1121" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" bodystart="1121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAITUNNEL_1gae39524c9b706161bb8d899e1eb83cf14" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_tunnel_term_table_entry_attribute_fn) (_In_ sai_object_id_t tunnel_term_table_entry_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t tunnel_term_table_entry_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_tunnel_term_table_entry_attribute_fn</name>
+        <briefdescription>
+<para>Get tunnel termination table entry attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">tunnel_term_table_entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tunnel termination table entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="1134" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" bodystart="1134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAITUNNEL_1ga15d379f8068a4f52d05c7c325af0c5bf" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_tunnel_map_entry_fn) (_Out_ sai_object_id_t *tunnel_map_entry_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *tunnel_map_entry_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_tunnel_map_entry_fn</name>
+        <briefdescription>
+<para>Create tunnel map item. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">tunnel_map_entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tunnel map item id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch Id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="1149" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" bodystart="1149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAITUNNEL_1ga7189f509b4280bb2f1ad3c04d4ff78fe" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_tunnel_map_entry_fn) (_In_ sai_object_id_t tunnel_map_entry_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t tunnel_map_entry_id)</argsstring>
+        <name>sai_remove_tunnel_map_entry_fn</name>
+        <briefdescription>
+<para>Remove tunnel map item. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">tunnel_map_entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tunnel map item id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="1162" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" bodystart="1162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAITUNNEL_1gae5ed4a15f24fc0390f59eff5b8dba3a4" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_tunnel_map_entry_attribute_fn) (_In_ sai_object_id_t tunnel_map_entry_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t tunnel_map_entry_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_tunnel_map_entry_attribute_fn</name>
+        <briefdescription>
+<para>Set tunnel map item attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">tunnel_map_entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tunnel map item id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="1173" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" bodystart="1173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAITUNNEL_1gafc8b00aec49bea84a8bcb55f892a5a1d" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_tunnel_map_entry_attribute_fn) (_In_ sai_object_id_t tunnel_map_entry_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t tunnel_map_entry_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_tunnel_map_entry_attribute_fn</name>
+        <briefdescription>
+<para>Get tunnel map item attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">tunnel_map_entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tunnel map item id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="1186" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" bodystart="1186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAITUNNEL_1ga085d9828d984e69521278fe27a073665" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__tunnel__api__t" kindref="compound">_sai_tunnel_api_t</ref></type>
+        <definition>typedef struct _sai_tunnel_api_t sai_tunnel_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_tunnel_api_t</name>
+        <briefdescription>
+<para>Tunnel methods table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitunnel.h" line="1220" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__nat__entry__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_nat_entry_data_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__nat__entry__data__t_1a8e7e6d7bc1db1005e1e18073570a433f" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAINAT_1gacf40fe2c151c34cbdcbd913ada2af213" kindref="member">sai_nat_entry_key_t</ref></type>
+        <definition>sai_nat_entry_key_t _sai_nat_entry_data_t::key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <briefdescription>
+<para>NAT entry keys. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="308" column="25" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainat.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__nat__entry__data__t_1afb4a7ff81d3cf17de653220c73fc5326" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAINAT_1gafaa424fe7cb9ce82af21848c9189ad8b" kindref="member">sai_nat_entry_mask_t</ref></type>
+        <definition>sai_nat_entry_mask_t _sai_nat_entry_data_t::mask</definition>
+        <argsstring></argsstring>
+        <name>mask</name>
+        <briefdescription>
+<para>NAT entry keys. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="313" column="26" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainat.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="3">
+        <label>_sai_nat_entry_key_t</label>
+        <link refid="struct__sai__nat__entry__key__t"/>
+      </node>
+      <node id="2">
+        <label>_sai_nat_entry_mask_t</label>
+        <link refid="struct__sai__nat__entry__mask__t"/>
+      </node>
+      <node id="1">
+        <label>_sai_nat_entry_data_t</label>
+        <link refid="struct__sai__nat__entry__data__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>mask</edgelabel>
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>key</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="303" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainat.h" bodystart="304" bodyend="315"/>
+    <listofallmembers>
+      <member refid="struct__sai__nat__entry__data__t_1a8e7e6d7bc1db1005e1e18073570a433f" prot="public" virt="non-virtual"><scope>_sai_nat_entry_data_t</scope><name>key</name></member>
+      <member refid="struct__sai__nat__entry__data__t_1afb4a7ff81d3cf17de653220c73fc5326" prot="public" virt="non-virtual"><scope>_sai_nat_entry_data_t</scope><name>mask</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

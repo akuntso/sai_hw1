@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__timespec__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_timespec_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__timespec__t_1aa17138c1a47c1149f3f78714a4a0be45" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t _sai_timespec_t::tv_sec</definition>
+        <argsstring></argsstring>
+        <name>tv_sec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="137" column="14" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__timespec__t_1a66a95e0a69a975521a56a3e7a8a173b4" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _sai_timespec_t::tv_nsec</definition>
+        <argsstring></argsstring>
+        <name>tv_nsec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="138" column="14" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="135" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="136" bodyend="139"/>
+    <listofallmembers>
+      <member refid="struct__sai__timespec__t_1a66a95e0a69a975521a56a3e7a8a173b4" prot="public" virt="non-virtual"><scope>_sai_timespec_t</scope><name>tv_nsec</name></member>
+      <member refid="struct__sai__timespec__t_1aa17138c1a47c1149f3f78714a4a0be45" prot="public" virt="non-virtual"><scope>_sai_timespec_t</scope><name>tv_sec</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

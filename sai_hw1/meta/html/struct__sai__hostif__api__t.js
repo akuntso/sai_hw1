@@ -1,0 +1,27 @@
+var struct__sai__hostif__api__t =
+[
+    [ "allocate_hostif_packet", "struct__sai__hostif__api__t.html#abfb2a2890d04d331bd4db0ec3b432008", null ],
+    [ "create_hostif", "struct__sai__hostif__api__t.html#ad3afc2ff6ee3973be1c690de4281a817", null ],
+    [ "create_hostif_table_entry", "struct__sai__hostif__api__t.html#abfd11a3507e9b4d40017810f97019769", null ],
+    [ "create_hostif_trap", "struct__sai__hostif__api__t.html#a8b2ce4465fa43be0cc46fea2b8d083ec", null ],
+    [ "create_hostif_trap_group", "struct__sai__hostif__api__t.html#acc2662f4807dbc8b218f33f534c5e8a6", null ],
+    [ "create_hostif_user_defined_trap", "struct__sai__hostif__api__t.html#ab0045d857c9376259722c3cf40c9c583", null ],
+    [ "free_hostif_packet", "struct__sai__hostif__api__t.html#a03976b8daff72b13cb78600d601df2d9", null ],
+    [ "get_hostif_attribute", "struct__sai__hostif__api__t.html#a75f0e075af05fe805153b88252081dfc", null ],
+    [ "get_hostif_table_entry_attribute", "struct__sai__hostif__api__t.html#a0b832751eda908426a942d922352b1aa", null ],
+    [ "get_hostif_trap_attribute", "struct__sai__hostif__api__t.html#add5018c07896ee75107c4a4325127936", null ],
+    [ "get_hostif_trap_group_attribute", "struct__sai__hostif__api__t.html#ac62eda58ae4013699d6661e02b588bdd", null ],
+    [ "get_hostif_user_defined_trap_attribute", "struct__sai__hostif__api__t.html#ac2c3da51c29bd70c73b52ef69ad38bc1", null ],
+    [ "recv_hostif_packet", "struct__sai__hostif__api__t.html#afe7d0b40c40b715fdfa984dc436bd99f", null ],
+    [ "remove_hostif", "struct__sai__hostif__api__t.html#a930d009dd85a411f5ce54c8d07e41611", null ],
+    [ "remove_hostif_table_entry", "struct__sai__hostif__api__t.html#a17836b86af8ff1df33238897a5321067", null ],
+    [ "remove_hostif_trap", "struct__sai__hostif__api__t.html#ab7976b3ebae9d87d4d2eee4fdd682bd2", null ],
+    [ "remove_hostif_trap_group", "struct__sai__hostif__api__t.html#a623361655a6b45c280c6d01d08aa24a3", null ],
+    [ "remove_hostif_user_defined_trap", "struct__sai__hostif__api__t.html#a205c7da0de70a141e22f71c506e668f7", null ],
+    [ "send_hostif_packet", "struct__sai__hostif__api__t.html#a4a79086b1e328126c93bacdc22b89525", null ],
+    [ "set_hostif_attribute", "struct__sai__hostif__api__t.html#a4d3f652296868dfdd59adc84c03d6342", null ],
+    [ "set_hostif_table_entry_attribute", "struct__sai__hostif__api__t.html#abab33103eafa8c507ec419355af3feb8", null ],
+    [ "set_hostif_trap_attribute", "struct__sai__hostif__api__t.html#acf77e985a9b55d232a2ab1cc470c8e00", null ],
+    [ "set_hostif_trap_group_attribute", "struct__sai__hostif__api__t.html#abac525b694e55039512159b7eb28e896", null ],
+    [ "set_hostif_user_defined_trap_attribute", "struct__sai__hostif__api__t.html#abd684833788be498b482dd35e9826b2e", null ]
+];

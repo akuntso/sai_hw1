@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__nat__entry__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_nat_entry_t</compoundname>
+    <includes refid="sainat_8h" local="no">sainat.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__nat__entry__t_1a1a7be680f62b5981c404a74d3213a0c2" prot="public" static="no" mutable="no">
+        <type>sai_object_id_t</type>
+        <definition>sai_object_id_t _sai_nat_entry_t::switch_id</definition>
+        <argsstring></argsstring>
+        <name>switch_id</name>
+        <briefdescription>
+<para>Switch ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_SWITCH </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="327" column="21" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainat.h" bodystart="327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__nat__entry__t_1ac78c44e1c2fcf7977311a0de15bd63a6" prot="public" static="no" mutable="no">
+        <type>sai_object_id_t</type>
+        <definition>sai_object_id_t _sai_nat_entry_t::vr_id</definition>
+        <argsstring></argsstring>
+        <name>vr_id</name>
+        <briefdescription>
+<para>Virtual Router. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_VIRTUAL_ROUTER </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="334" column="21" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainat.h" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__nat__entry__t_1ad6be4c37dc4c3b8ef46cda30a4fd94a3" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAINAT_1gaa42d420722ebc7306da3a3fb2a14e764" kindref="member">sai_nat_type_t</ref></type>
+        <definition>sai_nat_type_t _sai_nat_entry_t::nat_type</definition>
+        <argsstring></argsstring>
+        <name>nat_type</name>
+        <briefdescription>
+<para>NAT entry type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="339" column="20" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainat.h" bodystart="339" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__nat__entry__t_1a91eeaab8e211b53d04d9fb6e77e78872" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__sai__nat__entry__data__t" kindref="compound">sai_nat_entry_data_t</ref></type>
+        <definition>sai_nat_entry_data_t _sai_nat_entry_t::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <briefdescription>
+<para>NAT entry data. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="344" column="26" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainat.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>NAT entry. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>_sai_nat_entry_t</label>
+        <link refid="struct__sai__nat__entry__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>_sai_nat_entry_key_t</label>
+        <link refid="struct__sai__nat__entry__key__t"/>
+      </node>
+      <node id="3">
+        <label>_sai_nat_entry_mask_t</label>
+        <link refid="struct__sai__nat__entry__mask__t"/>
+      </node>
+      <node id="2">
+        <label>_sai_nat_entry_data_t</label>
+        <link refid="struct__sai__nat__entry__data__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>mask</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>key</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="320" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainat.h" bodystart="321" bodyend="346"/>
+    <listofallmembers>
+      <member refid="struct__sai__nat__entry__t_1a91eeaab8e211b53d04d9fb6e77e78872" prot="public" virt="non-virtual"><scope>_sai_nat_entry_t</scope><name>data</name></member>
+      <member refid="struct__sai__nat__entry__t_1ad6be4c37dc4c3b8ef46cda30a4fd94a3" prot="public" virt="non-virtual"><scope>_sai_nat_entry_t</scope><name>nat_type</name></member>
+      <member refid="struct__sai__nat__entry__t_1a1a7be680f62b5981c404a74d3213a0c2" prot="public" virt="non-virtual"><scope>_sai_nat_entry_t</scope><name>switch_id</name></member>
+      <member refid="struct__sai__nat__entry__t_1ac78c44e1c2fcf7977311a0de15bd63a6" prot="public" virt="non-virtual"><scope>_sai_nat_entry_t</scope><name>vr_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

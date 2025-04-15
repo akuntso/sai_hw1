@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__dash__inbound__routing__api__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_dash_inbound_routing_api_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__dash__inbound__routing__api__t_1a0edef4e430983814f76c68a8e4679268" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1ga18888848df0b61b26a8f7c61efa1c51c" kindref="member">sai_create_inbound_routing_entry_fn</ref></type>
+        <definition>sai_create_inbound_routing_entry_fn _sai_dash_inbound_routing_api_t::create_inbound_routing_entry</definition>
+        <argsstring></argsstring>
+        <name>create_inbound_routing_entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h" line="264" column="51" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__dash__inbound__routing__api__t_1a03b025ac40290628868cc3eca6714667" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1ga140926fbfd1d62e77c9fe28650c71cf8" kindref="member">sai_remove_inbound_routing_entry_fn</ref></type>
+        <definition>sai_remove_inbound_routing_entry_fn _sai_dash_inbound_routing_api_t::remove_inbound_routing_entry</definition>
+        <argsstring></argsstring>
+        <name>remove_inbound_routing_entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h" line="265" column="51" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__dash__inbound__routing__api__t_1a5ae08ab03377e4e0c898f12001978f74" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1ga5bb6f18f6a4369df149f30ed6b7e9da4" kindref="member">sai_set_inbound_routing_entry_attribute_fn</ref></type>
+        <definition>sai_set_inbound_routing_entry_attribute_fn _sai_dash_inbound_routing_api_t::set_inbound_routing_entry_attribute</definition>
+        <argsstring></argsstring>
+        <name>set_inbound_routing_entry_attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h" line="266" column="51" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__dash__inbound__routing__api__t_1a2d7d6f27ac78eda692cf4d190a33a80c" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1ga8be3002c316689b806135306a185cd19" kindref="member">sai_get_inbound_routing_entry_attribute_fn</ref></type>
+        <definition>sai_get_inbound_routing_entry_attribute_fn _sai_dash_inbound_routing_api_t::get_inbound_routing_entry_attribute</definition>
+        <argsstring></argsstring>
+        <name>get_inbound_routing_entry_attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h" line="267" column="51" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__dash__inbound__routing__api__t_1adff8a95d1fabe4073a8712d724f77aa0" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1gad0fa0384323e208f17f7701ef2344c57" kindref="member">sai_bulk_create_inbound_routing_entry_fn</ref></type>
+        <definition>sai_bulk_create_inbound_routing_entry_fn _sai_dash_inbound_routing_api_t::create_inbound_routing_entries</definition>
+        <argsstring></argsstring>
+        <name>create_inbound_routing_entries</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h" line="268" column="51" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__dash__inbound__routing__api__t_1a8eaef128b51c2d7e4b50ff7b2fc942f0" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIEXPERIMENTALDASHINBOUNDROUTING_1gac378df7eece812ccc4ebd5e3409f644c" kindref="member">sai_bulk_remove_inbound_routing_entry_fn</ref></type>
+        <definition>sai_bulk_remove_inbound_routing_entry_fn _sai_dash_inbound_routing_api_t::remove_inbound_routing_entries</definition>
+        <argsstring></argsstring>
+        <name>remove_inbound_routing_entries</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h" line="269" column="51" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>_sai_dash_inbound_routing_api_t</label>
+        <link refid="struct__sai__dash__inbound__routing__api__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>create_inbound_routing_entries</edgelabel>
+          <edgelabel>create_inbound_routing_entry</edgelabel>
+          <edgelabel>get_inbound_routing_entry_attribute</edgelabel>
+          <edgelabel>remove_inbound_routing_entries</edgelabel>
+          <edgelabel>remove_inbound_routing_entry</edgelabel>
+          <edgelabel>set_inbound_routing_entry_attribute</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>_sai_ip_address_t</label>
+        <link refid="struct__sai__ip__address__t"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>addr</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>_sai_inbound_routing_entry_t</label>
+        <link refid="struct__sai__inbound__routing__entry__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>sip</edgelabel>
+          <edgelabel>sip_mask</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>_sai_ip_addr_t</label>
+        <link refid="union__sai__ip__addr__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h" line="262" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h" bodystart="263" bodyend="271"/>
+    <listofallmembers>
+      <member refid="struct__sai__dash__inbound__routing__api__t_1adff8a95d1fabe4073a8712d724f77aa0" prot="public" virt="non-virtual"><scope>_sai_dash_inbound_routing_api_t</scope><name>create_inbound_routing_entries</name></member>
+      <member refid="struct__sai__dash__inbound__routing__api__t_1a0edef4e430983814f76c68a8e4679268" prot="public" virt="non-virtual"><scope>_sai_dash_inbound_routing_api_t</scope><name>create_inbound_routing_entry</name></member>
+      <member refid="struct__sai__dash__inbound__routing__api__t_1a2d7d6f27ac78eda692cf4d190a33a80c" prot="public" virt="non-virtual"><scope>_sai_dash_inbound_routing_api_t</scope><name>get_inbound_routing_entry_attribute</name></member>
+      <member refid="struct__sai__dash__inbound__routing__api__t_1a8eaef128b51c2d7e4b50ff7b2fc942f0" prot="public" virt="non-virtual"><scope>_sai_dash_inbound_routing_api_t</scope><name>remove_inbound_routing_entries</name></member>
+      <member refid="struct__sai__dash__inbound__routing__api__t_1a03b025ac40290628868cc3eca6714667" prot="public" virt="non-virtual"><scope>_sai_dash_inbound_routing_api_t</scope><name>remove_inbound_routing_entry</name></member>
+      <member refid="struct__sai__dash__inbound__routing__api__t_1a5ae08ab03377e4e0c898f12001978f74" prot="public" virt="non-virtual"><scope>_sai_dash_inbound_routing_api_t</scope><name>set_inbound_routing_entry_attribute</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,694 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="saiprefixcompression_8h" kind="file" language="C++">
+    <compoundname>saiprefixcompression.h</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+    <includedby refid="saiobject_8h" local="no">/home/andrii/sai_hw1/SAI/inc/saiobject.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h</label>
+        <link refid="saiprefixcompression_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="5">
+        <label>sys/types.h</label>
+      </node>
+      <node id="2">
+        <label>saitypes.h</label>
+        <link refid="saitypes_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h</label>
+        <link refid="saiprefixcompression_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/andrii/sai_hw1/SAI/inc/sai.h</label>
+        <link refid="sai_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/andrii/sai_hw1/SAI/inc/saiobject.h</label>
+        <link refid="saiobject_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</label>
+        <link refid="saiextensions_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct__sai__prefix__compression__entry__t" prot="public">_sai_prefix_compression_entry_t</innerclass>
+    <innerclass refid="struct__sai__prefix__compression__api__t" prot="public">_sai_prefix_compression_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIPREFIXCOMPRESSION_1ga24876548b86434536ff31c544d2d9a68" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_prefix_compression_table_attr_t</name>
+        <enumvalue id="group__SAIPREFIXCOMPRESSION_1gga24876548b86434536ff31c544d2d9a68aca038f9d5a9e96e1af5ec4280d4b1a1e" prot="public">
+          <name>SAI_PREFIX_COMPRESSION_TABLE_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPREFIXCOMPRESSION_1gga24876548b86434536ff31c544d2d9a68a4e542a66be833c54b28f77e4fff01c77" prot="public">
+          <name>SAI_PREFIX_COMPRESSION_TABLE_ATTR_LABEL</name>
+          <initializer>= SAI_PREFIX_COMPRESSION_TABLE_ATTR_START</initializer>
+          <briefdescription>
+<para>Label attribute used to unique identify Table. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            char </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         &quot;&quot; </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPREFIXCOMPRESSION_1gga24876548b86434536ff31c544d2d9a68aaccda7937314ff94fa47510202f03595" prot="public">
+          <name>SAI_PREFIX_COMPRESSION_TABLE_ATTR_PREFIX_COMPRESSION_STAGE</name>
+          <briefdescription>
+<para>Prefix Compression table stage. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_prefix_compression_stage_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPREFIXCOMPRESSION_1gga24876548b86434536ff31c544d2d9a68a4d98b4cfe7abcde84540873f3e11b07c" prot="public">
+          <name>SAI_PREFIX_COMPRESSION_TABLE_ATTR_PREFIX_COMPRESSION_TYPE</name>
+          <briefdescription>
+<para>Prefix Compression table type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_prefix_compression_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>IsResourceType:</title><para> @@isresourcetype  true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPREFIXCOMPRESSION_1gga24876548b86434536ff31c544d2d9a68a6f5e482cf530798a3c862364a63a4251" prot="public">
+          <name>SAI_PREFIX_COMPRESSION_TABLE_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPREFIXCOMPRESSION_1gga24876548b86434536ff31c544d2d9a68a6bab65ddaae3d8fb080784868cfbfc29" prot="public">
+          <name>SAI_PREFIX_COMPRESSION_TABLE_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPREFIXCOMPRESSION_1gga24876548b86434536ff31c544d2d9a68a7fd72a9bfd4b6559e19ed2ad7cc86f9e" prot="public">
+          <name>SAI_PREFIX_COMPRESSION_TABLE_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute Id for SAI prefix compression object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" line="39" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" bodystart="40" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIPREFIXCOMPRESSION_1ga942af4bd00009450e160459b4e704d11" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_prefix_compression_entry_attr_t</name>
+        <enumvalue id="group__SAIPREFIXCOMPRESSION_1gga942af4bd00009450e160459b4e704d11a92cceb2653042d1454a03456daa6cce6" prot="public">
+          <name>SAI_PREFIX_COMPRESSION_ENTRY_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPREFIXCOMPRESSION_1gga942af4bd00009450e160459b4e704d11a417956bd9b1f39d49813baa6d3808624" prot="public">
+          <name>SAI_PREFIX_COMPRESSION_ENTRY_ATTR_META</name>
+          <initializer>= SAI_PREFIX_COMPRESSION_ENTRY_ATTR_START</initializer>
+          <briefdescription>
+<para>Prefix Compression entry meta data. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPREFIXCOMPRESSION_1gga942af4bd00009450e160459b4e704d11a3b682001c5de6a4b9082770940377905" prot="public">
+          <name>SAI_PREFIX_COMPRESSION_ENTRY_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPREFIXCOMPRESSION_1gga942af4bd00009450e160459b4e704d11aeebc1cb0f1f3967a6ce80be191ac7630" prot="public">
+          <name>SAI_PREFIX_COMPRESSION_ENTRY_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPREFIXCOMPRESSION_1gga942af4bd00009450e160459b4e704d11a68e1c1888db970f2bdee09f5ccb32dd9" prot="public">
+          <name>SAI_PREFIX_COMPRESSION_ENTRY_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute Id for SAI prefix compression object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" line="88" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" bodystart="89" bodyend="114"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIPREFIXCOMPRESSION_1ga838ad107edcbbc3d0edef8a72be726c5" prot="public" static="no">
+        <type>enum <ref refid="group__SAIPREFIXCOMPRESSION_1ga24876548b86434536ff31c544d2d9a68" kindref="member">_sai_prefix_compression_table_attr_t</ref></type>
+        <definition>typedef enum _sai_prefix_compression_table_attr_t sai_prefix_compression_table_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_prefix_compression_table_attr_t</name>
+        <briefdescription>
+<para>Attribute Id for SAI prefix compression object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" line="83" column="37"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIPREFIXCOMPRESSION_1gacf0cf9bfbf0e21ceb754cff2e19e8fd7" prot="public" static="no">
+        <type>enum <ref refid="group__SAIPREFIXCOMPRESSION_1ga942af4bd00009450e160459b4e704d11" kindref="member">_sai_prefix_compression_entry_attr_t</ref></type>
+        <definition>typedef enum _sai_prefix_compression_entry_attr_t sai_prefix_compression_entry_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_prefix_compression_entry_attr_t</name>
+        <briefdescription>
+<para>Attribute Id for SAI prefix compression object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" line="114" column="37"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIPREFIXCOMPRESSION_1ga1bdb09b8283c16db0ce6371d33707071" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__prefix__compression__entry__t" kindref="compound">_sai_prefix_compression_entry_t</ref></type>
+        <definition>typedef struct _sai_prefix_compression_entry_t sai_prefix_compression_entry_t</definition>
+        <argsstring></argsstring>
+        <name>sai_prefix_compression_entry_t</name>
+        <briefdescription>
+<para>Prefix Compression entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" line="140" column="32"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIPREFIXCOMPRESSION_1ga49ace38aa764db6628704c1a54450efc" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_prefix_compression_table_fn) (_Out_ sai_object_id_t *prefix_compression_table_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *prefix_compression_table_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_prefix_compression_table_fn</name>
+        <briefdescription>
+<para>Create prefix compression table. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">prefix_compression_table_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Prefix compression table ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" line="152" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIPREFIXCOMPRESSION_1gac46d7c79b15e249be5141cb5808a97ef" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_prefix_compression_table_fn) (_In_ sai_object_id_t prefix_compression_table_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t prefix_compression_table_id)</argsstring>
+        <name>sai_remove_prefix_compression_table_fn</name>
+        <briefdescription>
+<para>Remove prefix compression table. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">prefix_compression_table_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Prefix compression table ID</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" line="165" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIPREFIXCOMPRESSION_1ga860b5d43a4197b1c6b7fb40e4f43d683" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_prefix_compression_table_attribute_fn) (_In_ sai_object_id_t prefix_compression_table_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t prefix_compression_table_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_prefix_compression_table_attribute_fn</name>
+        <briefdescription>
+<para>Set prefix compression attribute Value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">prefix_compression_table_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Prefix compression table ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" line="176" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIPREFIXCOMPRESSION_1ga66abeaffc609c3be89f3167ff4ffac66" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_prefix_compression_table_attribute_fn) (_In_ sai_object_id_t prefix_compression_table_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t prefix_compression_table_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_prefix_compression_table_attribute_fn</name>
+        <briefdescription>
+<para>Get prefix compression attribute Value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">prefix_compression_table_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Prefix compression table ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" line="189" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIPREFIXCOMPRESSION_1ga6d368dd829df9e6716cd62ff318df5f6" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_prefix_compression_entry_fn) (_In_ const sai_prefix_compression_entry_t *prefix_compression_entry, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ const sai_prefix_compression_entry_t *prefix_compression_entry, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_prefix_compression_entry_fn</name>
+        <briefdescription>
+<para>Create prefix compression Entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Note: IP prefix/mask expected in Network Byte Order.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">prefix_compression_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Prefix Compression entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" line="205" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIPREFIXCOMPRESSION_1gafed790616bc90e22f7bed402910dab60" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_prefix_compression_entry_fn) (_In_ const sai_prefix_compression_entry_t *prefix_compression_entry)</definition>
+        <argsstring>)(_In_ const sai_prefix_compression_entry_t *prefix_compression_entry)</argsstring>
+        <name>sai_remove_prefix_compression_entry_fn</name>
+        <briefdescription>
+<para>Remove prefix compression Entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Note: IP prefix/mask expected in Network Byte Order.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">prefix_compression_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Prefix Compression entry</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" line="219" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIPREFIXCOMPRESSION_1gaf5699d0af1cc62fc6295c0ab17935ee9" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_prefix_compression_entry_attribute_fn) (_In_ const sai_prefix_compression_entry_t *prefix_compression_entry, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ const sai_prefix_compression_entry_t *prefix_compression_entry, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_prefix_compression_entry_attribute_fn</name>
+        <briefdescription>
+<para>Set prefix compression attribute value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">prefix_compression_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Prefix Compression entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" line="230" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIPREFIXCOMPRESSION_1gad0f0bf575e44c2ca91b93c1cfe58b0fc" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_prefix_compression_entry_attribute_fn) (_In_ const sai_prefix_compression_entry_t *prefix_compression_entry, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ const sai_prefix_compression_entry_t *prefix_compression_entry, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_prefix_compression_entry_attribute_fn</name>
+        <briefdescription>
+<para>Get prefix compression attribute value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">prefix_compression_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Prefix Compression entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" line="243" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIPREFIXCOMPRESSION_1ga371f0e35b38f4ce16106db57b99f369a" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_create_prefix_compression_entry_fn) (_In_ uint32_t object_count, _In_ const sai_prefix_compression_entry_t *prefix_compression_entry, _In_ const uint32_t *attr_count, _In_ const sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_prefix_compression_entry_t *prefix_compression_entry, _In_ const uint32_t *attr_count, _In_ const sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_create_prefix_compression_entry_fn</name>
+        <briefdescription>
+<para>Bulk create prefix compression entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to create </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">prefix_compression_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of object to create </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attr_count. Caller passes the number of attribute for each object to create. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attributes for every object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are created or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to create. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" line="265" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIPREFIXCOMPRESSION_1ga193679bdd60e2219b29b6ce632b90bdc" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_remove_prefix_compression_entry_fn) (_In_ uint32_t object_count, _In_ const sai_prefix_compression_entry_t *prefix_compression_entry, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_prefix_compression_entry_t *prefix_compression_entry, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_remove_prefix_compression_entry_fn</name>
+        <briefdescription>
+<para>Bulk remove prefix compression entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to remove </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">prefix_compression_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of objects to remove </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are removed or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to remove. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" line="287" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" bodystart="287" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIPREFIXCOMPRESSION_1ga7f3080791d0deadc25a794698e0cf1d0" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__prefix__compression__api__t" kindref="compound">_sai_prefix_compression_api_t</ref></type>
+        <definition>typedef struct _sai_prefix_compression_api_t sai_prefix_compression_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_prefix_compression_api_t</name>
+        <briefdescription>
+<para>Prefix Compression methods table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" line="308" column="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module defines SAI prefix compression interface. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2024 Microsoft Open Technologies, Inc.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <ulink url="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</ulink></para>
+<para>THIS CODE IS PROVIDED ON AN <emphasis>AS IS</emphasis> BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</para>
+<para>See the Apache Version 2.0 License for specific language governing permissions and limitations under the License.</para>
+<para>Microsoft would like to thank the following companies for their review and assistance with these files: Intel Corporation, Mellanox Technologies Ltd, Dell Products, L.P., Facebook, Inc., Marvell International Ltd. </para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h"/>
+  </compounddef>
+</doxygen>

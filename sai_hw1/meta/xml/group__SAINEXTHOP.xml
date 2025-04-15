@@ -1,0 +1,636 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group__SAINEXTHOP" kind="group">
+    <compoundname>SAINEXTHOP</compoundname>
+    <title>SAI - Next hop specific API definitions.</title>
+    <innerclass refid="struct__sai__next__hop__api__t" prot="public">_sai_next_hop_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAINEXTHOP_1ga88fc4a34fc14ea69cdf7565f01f5dee0" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_next_hop_type_t</name>
+        <enumvalue id="group__SAINEXTHOP_1gga88fc4a34fc14ea69cdf7565f01f5dee0ad352013b8754bd3cbc51fb44cfcac837" prot="public">
+          <name>SAI_NEXT_HOP_TYPE_IP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>IP next hop </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEXTHOP_1gga88fc4a34fc14ea69cdf7565f01f5dee0ada24af382930ed3e7db2f5dcc5ae27e3" prot="public">
+          <name>SAI_NEXT_HOP_TYPE_MPLS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>MPLS(outsegment) next hop </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEXTHOP_1gga88fc4a34fc14ea69cdf7565f01f5dee0ae9eee04709856495f8b480b5a58f28c3" prot="public">
+          <name>SAI_NEXT_HOP_TYPE_TUNNEL_ENCAP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Tunnel next hop </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEXTHOP_1gga88fc4a34fc14ea69cdf7565f01f5dee0af4e1e73154e6d3933ee60a114d5755cc" prot="public">
+          <name>SAI_NEXT_HOP_TYPE_SRV6_SIDLIST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>SRV6 SID List </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEXTHOP_1gga88fc4a34fc14ea69cdf7565f01f5dee0a4f396fc0c03b33a96b30be035efdc707" prot="public">
+          <name>SAI_NEXT_HOP_TYPE_IPMC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>IPMC next hop </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEXTHOP_1gga88fc4a34fc14ea69cdf7565f01f5dee0a9e3dcc0e1dfb7e06a9dcc265675be2e6" prot="public">
+          <name>SAI_NEXT_HOP_TYPE_BRIDGE_PORT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Next hop group is for bridge port </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Next hop type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainexthop.h" line="39" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainexthop.h" bodystart="40" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAINEXTHOP_1gae3ae8aa0eadbc0759dc68009f267dd4c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_next_hop_attr_t</name>
+        <enumvalue id="group__SAINEXTHOP_1ggae3ae8aa0eadbc0759dc68009f267dd4ca5d389c10b963429a2234d63d7b149b4b" prot="public">
+          <name>SAI_NEXT_HOP_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEXTHOP_1ggae3ae8aa0eadbc0759dc68009f267dd4caca65d446a371d6ebb498a02d94817654" prot="public">
+          <name>SAI_NEXT_HOP_ATTR_TYPE</name>
+          <initializer>= SAI_NEXT_HOP_ATTR_START</initializer>
+          <briefdescription>
+<para>Next hop entry type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_next_hop_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>IsResourceType:</title><para> @@isresourcetype  true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEXTHOP_1ggae3ae8aa0eadbc0759dc68009f267dd4caec952816333fd2afa86b67dab9b21995" prot="public">
+          <name>SAI_NEXT_HOP_ATTR_IP</name>
+          <briefdescription>
+<para>Next hop entry IPv4 address. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_NEXT_HOP_ATTR_TYPE == SAI_NEXT_HOP_TYPE_IP or SAI_NEXT_HOP_ATTR_TYPE == SAI_NEXT_HOP_TYPE_MPLS or SAI_NEXT_HOP_ATTR_TYPE == SAI_NEXT_HOP_TYPE_TUNNEL_ENCAP or SAI_NEXT_HOP_ATTR_TYPE == SAI_NEXT_HOP_TYPE_IPMC or SAI_NEXT_HOP_ATTR_TYPE == SAI_NEXT_HOP_TYPE_BRIDGE_PORT </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEXTHOP_1ggae3ae8aa0eadbc0759dc68009f267dd4caac038c2fda9cf4587a018a85c200b1e7" prot="public">
+          <name>SAI_NEXT_HOP_ATTR_ROUTER_INTERFACE_ID</name>
+          <briefdescription>
+<para>Next hop entry router interface id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_ROUTER_INTERFACE </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_NEXT_HOP_ATTR_TYPE == SAI_NEXT_HOP_TYPE_IP or SAI_NEXT_HOP_ATTR_TYPE == SAI_NEXT_HOP_TYPE_MPLS or SAI_NEXT_HOP_ATTR_TYPE == SAI_NEXT_HOP_TYPE_IPMC </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEXTHOP_1ggae3ae8aa0eadbc0759dc68009f267dd4ca258a0ab3a4b85ee4a5c5b992735af19f" prot="public">
+          <name>SAI_NEXT_HOP_ATTR_TUNNEL_ID</name>
+          <briefdescription>
+<para>Next hop entry tunnel-id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_TUNNEL </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_NEXT_HOP_ATTR_TYPE == SAI_NEXT_HOP_TYPE_TUNNEL_ENCAP or SAI_NEXT_HOP_ATTR_TYPE == SAI_NEXT_HOP_TYPE_SRV6_SIDLIST or SAI_NEXT_HOP_ATTR_TYPE == SAI_NEXT_HOP_TYPE_BRIDGE_PORT </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEXTHOP_1ggae3ae8aa0eadbc0759dc68009f267dd4ca0bf7e9b2010d74a2ebb0a208bf9bdd1d" prot="public">
+          <name>SAI_NEXT_HOP_ATTR_TUNNEL_VNI</name>
+          <briefdescription>
+<para>Next hop entry VNI (override tunnel mapper) </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_NEXT_HOP_ATTR_TYPE == SAI_NEXT_HOP_TYPE_TUNNEL_ENCAP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEXTHOP_1ggae3ae8aa0eadbc0759dc68009f267dd4ca88ca8a406dced7de7da55fef5d5c3279" prot="public">
+          <name>SAI_NEXT_HOP_ATTR_TUNNEL_MAC</name>
+          <briefdescription>
+<para>Inner destination MAC address. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_mac_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         attrvalue SAI_SWITCH_ATTR_VXLAN_DEFAULT_ROUTER_MAC </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_NEXT_HOP_ATTR_TYPE == SAI_NEXT_HOP_TYPE_TUNNEL_ENCAP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEXTHOP_1ggae3ae8aa0eadbc0759dc68009f267dd4cace8de7dff98c5dd1722ecd6051eb97ec" prot="public">
+          <name>SAI_NEXT_HOP_ATTR_SRV6_SIDLIST_ID</name>
+          <briefdescription>
+<para>Next hop entry SRV6 SID List. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_SRV6_SIDLIST </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_NEXT_HOP_ATTR_TYPE == SAI_NEXT_HOP_TYPE_SRV6_SIDLIST </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEXTHOP_1ggae3ae8aa0eadbc0759dc68009f267dd4caf0a8d53e30e7b428e89ec4f583899bc1" prot="public">
+          <name>SAI_NEXT_HOP_ATTR_LABELSTACK</name>
+          <briefdescription>
+<para>Push label. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_u32_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_NEXT_HOP_ATTR_TYPE == SAI_NEXT_HOP_TYPE_MPLS </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEXTHOP_1ggae3ae8aa0eadbc0759dc68009f267dd4ca2bc50f5f2915aa354a7a792154cafe94" prot="public">
+          <name>SAI_NEXT_HOP_ATTR_COUNTER_ID</name>
+          <briefdescription>
+<para>Attach a counter. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>When it is empty, then packet hits won&apos;t be counted</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_COUNTER </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEXTHOP_1ggae3ae8aa0eadbc0759dc68009f267dd4ca312942e5d99a5aa19f990a47e4a61ea4" prot="public">
+          <name>SAI_NEXT_HOP_ATTR_DISABLE_DECREMENT_TTL</name>
+          <briefdescription>
+<para>To enable/disable Decrement TTL. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEXTHOP_1ggae3ae8aa0eadbc0759dc68009f267dd4caffae4df1fd4094c5db4de36954d6b7e1" prot="public">
+          <name>SAI_NEXT_HOP_ATTR_OUTSEG_TYPE</name>
+          <briefdescription>
+<para>MPLS Outsegment type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_outseg_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_OUTSEG_TYPE_SWAP </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_NEXT_HOP_ATTR_TYPE == SAI_NEXT_HOP_TYPE_MPLS </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEXTHOP_1ggae3ae8aa0eadbc0759dc68009f267dd4cab0cb403d663788090bacbb7a31b099a5" prot="public">
+          <name>SAI_NEXT_HOP_ATTR_OUTSEG_TTL_MODE</name>
+          <briefdescription>
+<para>MPLS Outsegment TTL mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_outseg_ttl_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_OUTSEG_TTL_MODE_UNIFORM </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_NEXT_HOP_ATTR_TYPE == SAI_NEXT_HOP_TYPE_MPLS and SAI_NEXT_HOP_ATTR_OUTSEG_TYPE == SAI_OUTSEG_TYPE_PUSH </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEXTHOP_1ggae3ae8aa0eadbc0759dc68009f267dd4caf661ef56b2db9b162da89e8acdd700c4" prot="public">
+          <name>SAI_NEXT_HOP_ATTR_OUTSEG_TTL_VALUE</name>
+          <briefdescription>
+<para>MPLS Outsegment TTL value for pipe mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         255 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_NEXT_HOP_ATTR_TYPE == SAI_NEXT_HOP_TYPE_MPLS and SAI_NEXT_HOP_ATTR_OUTSEG_TYPE == SAI_OUTSEG_TYPE_PUSH and SAI_NEXT_HOP_ATTR_OUTSEG_TTL_MODE == SAI_OUTSEG_TTL_MODE_PIPE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEXTHOP_1ggae3ae8aa0eadbc0759dc68009f267dd4ca83aac2cb9b5e2699130192e56226701b" prot="public">
+          <name>SAI_NEXT_HOP_ATTR_OUTSEG_EXP_MODE</name>
+          <briefdescription>
+<para>MPLS Outsegment MPLS EXP mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_outseg_exp_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_OUTSEG_EXP_MODE_UNIFORM </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_NEXT_HOP_ATTR_TYPE == SAI_NEXT_HOP_TYPE_MPLS and SAI_NEXT_HOP_ATTR_OUTSEG_TYPE == SAI_OUTSEG_TYPE_PUSH </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEXTHOP_1ggae3ae8aa0eadbc0759dc68009f267dd4ca310e40dfaa69bd9631af5d7eaeb30eb5" prot="public">
+          <name>SAI_NEXT_HOP_ATTR_OUTSEG_EXP_VALUE</name>
+          <briefdescription>
+<para>MPLS Outsegment EXP value for pipe mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_NEXT_HOP_ATTR_TYPE == SAI_NEXT_HOP_TYPE_MPLS and SAI_NEXT_HOP_ATTR_OUTSEG_TYPE == SAI_OUTSEG_TYPE_PUSH and SAI_NEXT_HOP_ATTR_OUTSEG_TTL_MODE == SAI_OUTSEG_TTL_MODE_PIPE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEXTHOP_1ggae3ae8aa0eadbc0759dc68009f267dd4ca1961c97455f4756fdf2759ed254afc73" prot="public">
+          <name>SAI_NEXT_HOP_ATTR_QOS_TC_AND_COLOR_TO_MPLS_EXP_MAP</name>
+          <briefdescription>
+<para>TC AND COLOR -&gt; MPLS EXP MAP for Uniform Mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>If present overrides SAI_SWITCH_ATTR_QOS_TC_AND_COLOR_TO_MPLS_EXP_MAP and SAI_PORT_ATTR_QOS_TC_AND_COLOR_TO_MPLS_EXP_MAP</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_QOS_MAP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_NEXT_HOP_ATTR_TYPE == SAI_NEXT_HOP_TYPE_MPLS and SAI_NEXT_HOP_ATTR_OUTSEG_TYPE == SAI_OUTSEG_TYPE_PUSH and SAI_NEXT_HOP_ATTR_OUTSEG_TTL_MODE == SAI_OUTSEG_TTL_MODE_UNIFORM </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEXTHOP_1ggae3ae8aa0eadbc0759dc68009f267dd4caa2006f9a286af6fe9295b0b9d16204b5" prot="public">
+          <name>SAI_NEXT_HOP_ATTR_DISABLE_SRC_MAC_REWRITE</name>
+          <briefdescription>
+<para>To enable/disable source MAC rewrite. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEXTHOP_1ggae3ae8aa0eadbc0759dc68009f267dd4ca6f8dc1be75d6c5535d5f1e5faa6b999e" prot="public">
+          <name>SAI_NEXT_HOP_ATTR_DISABLE_DST_MAC_REWRITE</name>
+          <briefdescription>
+<para>To enable/disable destination MAC rewrite. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEXTHOP_1ggae3ae8aa0eadbc0759dc68009f267dd4ca5473f8870a1ac85b0101da0d751ef12e" prot="public">
+          <name>SAI_NEXT_HOP_ATTR_DISABLE_VLAN_REWRITE</name>
+          <briefdescription>
+<para>To enable/disable VLAN rewrite. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEXTHOP_1ggae3ae8aa0eadbc0759dc68009f267dd4caf93bb2e08f3138b3ca882f982f0a0c7b" prot="public">
+          <name>SAI_NEXT_HOP_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEXTHOP_1ggae3ae8aa0eadbc0759dc68009f267dd4cac1065922d01dd4465461adb8e1a99677" prot="public">
+          <name>SAI_NEXT_HOP_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINEXTHOP_1ggae3ae8aa0eadbc0759dc68009f267dd4cab067a898a72c1bdf199b7faa05a7d790" prot="public">
+          <name>SAI_NEXT_HOP_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute id for next hop. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainexthop.h" line="63" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainexthop.h" bodystart="64" bodyend="272"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAINEXTHOP_1gac68d214fba52001229e3a2e79d024c65" prot="public" static="no">
+        <type>enum <ref refid="group__SAINEXTHOP_1ga88fc4a34fc14ea69cdf7565f01f5dee0" kindref="member">_sai_next_hop_type_t</ref></type>
+        <definition>typedef enum _sai_next_hop_type_t sai_next_hop_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_next_hop_type_t</name>
+        <briefdescription>
+<para>Next hop type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainexthop.h" line="58" column="21"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINEXTHOP_1gac996e7118f0b37451b5d6ad54fdf0ddc" prot="public" static="no">
+        <type>enum <ref refid="group__SAINEXTHOP_1gae3ae8aa0eadbc0759dc68009f267dd4c" kindref="member">_sai_next_hop_attr_t</ref></type>
+        <definition>typedef enum _sai_next_hop_attr_t sai_next_hop_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_next_hop_attr_t</name>
+        <briefdescription>
+<para>Attribute id for next hop. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainexthop.h" line="272" column="21"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINEXTHOP_1ga09e80358a43b20f699b10d4f58c3109f" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_next_hop_fn) (_Out_ sai_object_id_t *next_hop_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *next_hop_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_next_hop_fn</name>
+        <briefdescription>
+<para>Create next hop. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Note: IP address expected in Network Byte Order.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">next_hop_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Next hop id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainexthop.h" line="286" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainexthop.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINEXTHOP_1ga4426819485b91f86c57d44845fe68830" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_next_hop_fn) (_In_ sai_object_id_t next_hop_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t next_hop_id)</argsstring>
+        <name>sai_remove_next_hop_fn</name>
+        <briefdescription>
+<para>Remove next hop. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">next_hop_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Next hop id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainexthop.h" line="299" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainexthop.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINEXTHOP_1ga218cb404eb8b6b6c1614112e6dbe6ad9" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_next_hop_attribute_fn) (_In_ sai_object_id_t next_hop_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t next_hop_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_next_hop_attribute_fn</name>
+        <briefdescription>
+<para>Set Next Hop attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">next_hop_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Next hop id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainexthop.h" line="310" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainexthop.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINEXTHOP_1ga188d6759549f1040095bfa03524b91ff" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_next_hop_attribute_fn) (_In_ sai_object_id_t next_hop_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t next_hop_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_next_hop_attribute_fn</name>
+        <briefdescription>
+<para>Get Next Hop attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">next_hop_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Next hop id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainexthop.h" line="323" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainexthop.h" bodystart="323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINEXTHOP_1ga822455ca407bdb835e060a28b2d67c9e" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__next__hop__api__t" kindref="compound">_sai_next_hop_api_t</ref></type>
+        <definition>typedef struct _sai_next_hop_api_t sai_next_hop_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_next_hop_api_t</name>
+        <briefdescription>
+<para>Next Hop methods table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainexthop.h" line="342" column="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__acl__chain__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_acl_chain_t</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__acl__chain__t_1a467c53cc9b993efdcb76867ee4a21900" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga91de96ef87456c79900d2a9e27062234" kindref="member">sai_acl_table_chain_group_stage_t</ref></type>
+        <definition>sai_acl_table_chain_group_stage_t _sai_acl_chain_t::chain_group_stage</definition>
+        <argsstring></argsstring>
+        <name>chain_group_stage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ACL table chain stage </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="842" column="39" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="842" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__acl__chain__t_1a8a75709b07c1aa65a530fcd0e48e320e" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1gada671d2f02c33f619c57b718e91a48c8" kindref="member">sai_acl_table_supported_match_type_t</ref></type>
+        <definition>sai_acl_table_supported_match_type_t _sai_acl_chain_t::supported_match_type</definition>
+        <argsstring></argsstring>
+        <name>supported_match_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Table type supported for this stage </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="845" column="42" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="845" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure for ACL chain stage and corresponding table type. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="839" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="840" bodyend="846"/>
+    <listofallmembers>
+      <member refid="struct__sai__acl__chain__t_1a467c53cc9b993efdcb76867ee4a21900" prot="public" virt="non-virtual"><scope>_sai_acl_chain_t</scope><name>chain_group_stage</name></member>
+      <member refid="struct__sai__acl__chain__t_1a8a75709b07c1aa65a530fcd0e48e320e" prot="public" virt="non-virtual"><scope>_sai_acl_chain_t</scope><name>supported_match_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

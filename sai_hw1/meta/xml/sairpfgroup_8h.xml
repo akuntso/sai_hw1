@@ -1,0 +1,563 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="sairpfgroup_8h" kind="file" language="C++">
+    <compoundname>sairpfgroup.h</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+    <includedby refid="sai_8h" local="yes">/home/andrii/sai_hw1/SAI/inc/sai.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="5">
+        <label>sys/types.h</label>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/sairpfgroup.h</label>
+        <link refid="sairpfgroup_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>saitypes.h</label>
+        <link refid="saitypes_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/andrii/sai_hw1/SAI/inc/sai.h</label>
+        <link refid="sai_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/sairpfgroup.h</label>
+        <link refid="sairpfgroup_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</label>
+        <link refid="saiextensions_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct__sai__rpf__group__api__t" prot="public">_sai_rpf_group_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIRPFGROUP_1ga8acbebc8aadb641e8ae6e5a778fa712b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_rpf_group_attr_t</name>
+        <enumvalue id="group__SAIRPFGROUP_1gga8acbebc8aadb641e8ae6e5a778fa712bacc1f5ff3921db3dd27f6f0cc06187b23" prot="public">
+          <name>SAI_RPF_GROUP_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIRPFGROUP_1gga8acbebc8aadb641e8ae6e5a778fa712baa102ea365c18d1c6ec40bba182c931d0" prot="public">
+          <name>SAI_RPF_GROUP_ATTR_RPF_INTERFACE_COUNT</name>
+          <initializer>= SAI_RPF_GROUP_ATTR_START</initializer>
+          <briefdescription>
+<para>Number of RPF interfaces in the group. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIRPFGROUP_1gga8acbebc8aadb641e8ae6e5a778fa712ba6eb0fb062e7211e181d0c877820446e6" prot="public">
+          <name>SAI_RPF_GROUP_ATTR_RPF_MEMBER_LIST</name>
+          <briefdescription>
+<para>RPF member list. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_RPF_GROUP_MEMBER </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIRPFGROUP_1gga8acbebc8aadb641e8ae6e5a778fa712ba787a90ac7bbf0188f639a02836190173" prot="public">
+          <name>SAI_RPF_GROUP_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIRPFGROUP_1gga8acbebc8aadb641e8ae6e5a778fa712bafeca69f421ac2b8d584198cbfe060d5d" prot="public">
+          <name>SAI_RPF_GROUP_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIRPFGROUP_1gga8acbebc8aadb641e8ae6e5a778fa712bae3fc4ddd582d0227f70524bef1901bcd" prot="public">
+          <name>SAI_RPF_GROUP_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attributes for RPF interface group. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairpfgroup.h" line="39" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/sairpfgroup.h" bodystart="40" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIRPFGROUP_1ga76bdba6493ab811afd3918bcba139e4f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_rpf_group_member_attr_t</name>
+        <enumvalue id="group__SAIRPFGROUP_1gga76bdba6493ab811afd3918bcba139e4fa00f5a2f80904b862020391d7d2d689d2" prot="public">
+          <name>SAI_RPF_GROUP_MEMBER_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIRPFGROUP_1gga76bdba6493ab811afd3918bcba139e4faed5373462d3316f5190a2a0fed37f1d7" prot="public">
+          <name>SAI_RPF_GROUP_MEMBER_ATTR_RPF_GROUP_ID</name>
+          <initializer>= SAI_RPF_GROUP_MEMBER_ATTR_START</initializer>
+          <briefdescription>
+<para>RPF interface group id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_RPF_GROUP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIRPFGROUP_1gga76bdba6493ab811afd3918bcba139e4fabbb35445e5b5baa9c036671e6f02c3e8" prot="public">
+          <name>SAI_RPF_GROUP_MEMBER_ATTR_RPF_INTERFACE_ID</name>
+          <briefdescription>
+<para>RPF interface id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_ROUTER_INTERFACE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIRPFGROUP_1gga76bdba6493ab811afd3918bcba139e4fa55b30b80ca480d91ada2f69f36beb638" prot="public">
+          <name>SAI_RPF_GROUP_MEMBER_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIRPFGROUP_1gga76bdba6493ab811afd3918bcba139e4fa37a77d2e4eb49810925057c23d108b97" prot="public">
+          <name>SAI_RPF_GROUP_MEMBER_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIRPFGROUP_1gga76bdba6493ab811afd3918bcba139e4fa4dcb4a9c09fbfa0f2c1f65ae2dec0125" prot="public">
+          <name>SAI_RPF_GROUP_MEMBER_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairpfgroup.h" line="76" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/sairpfgroup.h" bodystart="77" bodyend="112"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIRPFGROUP_1ga5ed88ec08d6f53c64c26dfdb8fa286bc" prot="public" static="no">
+        <type>enum <ref refid="group__SAIRPFGROUP_1ga8acbebc8aadb641e8ae6e5a778fa712b" kindref="member">_sai_rpf_group_attr_t</ref></type>
+        <definition>typedef enum _sai_rpf_group_attr_t sai_rpf_group_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_rpf_group_attr_t</name>
+        <briefdescription>
+<para>Attributes for RPF interface group. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairpfgroup.h" line="74" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIRPFGROUP_1gaa64cc4ef624f97a26574982862245739" prot="public" static="no">
+        <type>enum <ref refid="group__SAIRPFGROUP_1ga76bdba6493ab811afd3918bcba139e4f" kindref="member">_sai_rpf_group_member_attr_t</ref></type>
+        <definition>typedef enum _sai_rpf_group_member_attr_t sai_rpf_group_member_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_rpf_group_member_attr_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairpfgroup.h" line="112" column="29"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIRPFGROUP_1ga80ca9514a04b25677ed71115eb4bab40" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_rpf_group_fn) (_Out_ sai_object_id_t *rpf_group_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *rpf_group_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_rpf_group_fn</name>
+        <briefdescription>
+<para>Create RPF interface group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">rpf_group_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RPF interface group id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairpfgroup.h" line="124" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sairpfgroup.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIRPFGROUP_1ga9c5ecd7e6fc37b98f75e1df2b7eddfc2" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_rpf_group_fn) (_In_ sai_object_id_t rpf_group_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t rpf_group_id)</argsstring>
+        <name>sai_remove_rpf_group_fn</name>
+        <briefdescription>
+<para>Remove RPF interface group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">rpf_group_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RPF interface group id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairpfgroup.h" line="137" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sairpfgroup.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIRPFGROUP_1ga4acefd7a61b878a7007ba6afcf520050" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_rpf_group_attribute_fn) (_In_ sai_object_id_t rpf_group_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t rpf_group_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_rpf_group_attribute_fn</name>
+        <briefdescription>
+<para>Set RPF interface Group attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">rpf_group_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RPF interface group id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairpfgroup.h" line="148" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sairpfgroup.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIRPFGROUP_1gae6c8d20f37ca026a9a2db9211560d6e5" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_rpf_group_attribute_fn) (_In_ sai_object_id_t rpf_group_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t rpf_group_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_rpf_group_attribute_fn</name>
+        <briefdescription>
+<para>Get RPF interface Group attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">rpf_group_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RPF interface group id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairpfgroup.h" line="161" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sairpfgroup.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIRPFGROUP_1gace9503afcaf878164a31b093b7c0b5dd" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_rpf_group_member_fn) (_Out_ sai_object_id_t *rpf_group_member_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *rpf_group_member_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_rpf_group_member_fn</name>
+        <briefdescription>
+<para>Create RPF interface group member. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">rpf_group_member_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RPF interface group member id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairpfgroup.h" line="176" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sairpfgroup.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIRPFGROUP_1ga00c141332fc34bb97d698975b4551e2e" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_rpf_group_member_fn) (_In_ sai_object_id_t rpf_group_member_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t rpf_group_member_id)</argsstring>
+        <name>sai_remove_rpf_group_member_fn</name>
+        <briefdescription>
+<para>Remove RPF interface group member. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">rpf_group_member_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RPF interface group member id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairpfgroup.h" line="189" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sairpfgroup.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIRPFGROUP_1gaf2f6e8980345762d9b7471c3c236b938" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_rpf_group_member_attribute_fn) (_In_ sai_object_id_t rpf_group_member_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t rpf_group_member_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_rpf_group_member_attribute_fn</name>
+        <briefdescription>
+<para>Set RPF interface Group attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">rpf_group_member_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RPF interface group member id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairpfgroup.h" line="200" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sairpfgroup.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIRPFGROUP_1ga5dce54bf2644ca111399a0bf47bb8b5a" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_rpf_group_member_attribute_fn) (_In_ sai_object_id_t rpf_group_member_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t rpf_group_member_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_rpf_group_member_attribute_fn</name>
+        <briefdescription>
+<para>Get RPF interface Group attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">rpf_group_member_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>RPF group member ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairpfgroup.h" line="213" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sairpfgroup.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIRPFGROUP_1gaa9422b4c3ee03b2afe94a011b7c6348a" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__rpf__group__api__t" kindref="compound">_sai_rpf_group_api_t</ref></type>
+        <definition>typedef struct _sai_rpf_group_api_t sai_rpf_group_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_rpf_group_api_t</name>
+        <briefdescription>
+<para>RPF group methods table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairpfgroup.h" line="232" column="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module defines SAI RPF Group interface. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2014 Microsoft Open Technologies, Inc.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <ulink url="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</ulink></para>
+<para>THIS CODE IS PROVIDED ON AN <emphasis>AS IS</emphasis> BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</para>
+<para>See the Apache Version 2.0 License for specific language governing permissions and limitations under the License.</para>
+<para>Microsoft would like to thank the following companies for their review and assistance with these files: Intel Corporation, Mellanox Technologies Ltd, Dell Products, L.P., Facebook, Inc., Marvell International Ltd. </para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/sairpfgroup.h"/>
+  </compounddef>
+</doxygen>

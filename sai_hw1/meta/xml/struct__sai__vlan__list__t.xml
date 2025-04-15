@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__vlan__list__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_vlan_list_t</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__vlan__list__t_1aa3a6af2c34b0af767120b064d365508a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _sai_vlan_list_t::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of VLANs </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="387" column="14" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="387" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__vlan__list__t_1a5f501fdb7335430ce3c6c9aab73351d3" prot="public" static="no" mutable="no">
+        <type>sai_vlan_id_t *</type>
+        <definition>sai_vlan_id_t* _sai_vlan_list_t::list</definition>
+        <argsstring></argsstring>
+        <name>list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>List of VLANs </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="390" column="19" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="390" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines a vlan list data structure. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="384" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="385" bodyend="392"/>
+    <listofallmembers>
+      <member refid="struct__sai__vlan__list__t_1aa3a6af2c34b0af767120b064d365508a" prot="public" virt="non-virtual"><scope>_sai_vlan_list_t</scope><name>count</name></member>
+      <member refid="struct__sai__vlan__list__t_1a5f501fdb7335430ce3c6c9aab73351d3" prot="public" virt="non-virtual"><scope>_sai_vlan_list_t</scope><name>list</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

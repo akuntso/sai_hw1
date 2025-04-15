@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__s8__list__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_s8_list_t</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__s8__list__t_1a0dc82963a13c57cb11ac5face82aeb24" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _sai_s8_list_t::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="329" column="14" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__s8__list__t_1a6d41bb741759f6a7eeede958e76197bd" prot="public" static="no" mutable="no">
+        <type>int8_t *</type>
+        <definition>int8_t* _sai_s8_list_t::list</definition>
+        <argsstring></argsstring>
+        <name>list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="330" column="12" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines a s8 list or string. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>String should be null terminated and count should include &apos;\0&apos;. </para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="327" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="328" bodyend="331"/>
+    <listofallmembers>
+      <member refid="struct__sai__s8__list__t_1a0dc82963a13c57cb11ac5face82aeb24" prot="public" virt="non-virtual"><scope>_sai_s8_list_t</scope><name>count</name></member>
+      <member refid="struct__sai__s8__list__t_1a6d41bb741759f6a7eeede958e76197bd" prot="public" virt="non-virtual"><scope>_sai_s8_list_t</scope><name>list</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

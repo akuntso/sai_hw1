@@ -1,0 +1,803 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group__SAIMPLS" kind="group">
+    <compoundname>SAIMPLS</compoundname>
+    <title>SAI - MPLS specific API definitions</title>
+    <innerclass refid="struct__sai__inseg__entry__t" prot="public">_sai_inseg_entry_t</innerclass>
+    <innerclass refid="struct__sai__mpls__api__t" prot="public">_sai_mpls_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIMPLS_1ga1ae340414d9ca6df1da91d596a7c790b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_inseg_entry_psc_type_t</name>
+        <enumvalue id="group__SAIMPLS_1gga1ae340414d9ca6df1da91d596a7c790bacc55152ab0d4b85ed083ac395b346d80" prot="public">
+          <name>SAI_INSEG_ENTRY_PSC_TYPE_ELSP</name>
+          <briefdescription>
+<para>EXP of MPLS label infers both TC and COLOR. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMPLS_1gga1ae340414d9ca6df1da91d596a7c790baa9eeff029bdb9e9b948891c2baeb5ab6" prot="public">
+          <name>SAI_INSEG_ENTRY_PSC_TYPE_LLSP</name>
+          <briefdescription>
+<para>MPLS label infers TC and EXP of MPLS label infers COLOR. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimpls.h" line="35" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimpls.h" bodystart="36" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIMPLS_1ga2930a9273cdb4bc4a2a28473ca2829f1" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_inseg_entry_pop_ttl_mode_t</name>
+        <enumvalue id="group__SAIMPLS_1gga2930a9273cdb4bc4a2a28473ca2829f1adac79e8af616a1e3fc99a275f3d79245" prot="public">
+          <name>SAI_INSEG_ENTRY_POP_TTL_MODE_UNIFORM</name>
+          <briefdescription>
+<para>Uniform mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>TTL of inner header is computed based on TTL of outer header on pop. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMPLS_1gga2930a9273cdb4bc4a2a28473ca2829f1a5c7fd30dcd7315903c8e180b70237d9d" prot="public">
+          <name>SAI_INSEG_ENTRY_POP_TTL_MODE_PIPE</name>
+          <briefdescription>
+<para>Pipe mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>TTL of inner header is left unchanged on pop. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimpls.h" line="48" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimpls.h" bodystart="49" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIMPLS_1ga0eea598c11839415cfa35bcc86d4195a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_inseg_entry_pop_qos_mode_t</name>
+        <enumvalue id="group__SAIMPLS_1gga0eea598c11839415cfa35bcc86d4195aa2f70dbb46561be7b9ba5e77f4ab3ec2c" prot="public">
+          <name>SAI_INSEG_ENTRY_POP_QOS_MODE_UNIFORM</name>
+          <briefdescription>
+<para>Uniform mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>DSCP or EXP of inner header is computed based on TC AND COLOR of outer header on pop. </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMPLS_1gga0eea598c11839415cfa35bcc86d4195aa81e5ce6738c380b86e2c8a8a0527a995" prot="public">
+          <name>SAI_INSEG_ENTRY_POP_QOS_MODE_PIPE</name>
+          <briefdescription>
+<para>Uniform mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>DSCP or EXP of inner header is left unchanged on pop. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimpls.h" line="65" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimpls.h" bodystart="66" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIMPLS_1gade8e49bf0aac569fcf7cd64cb9c152f7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_inseg_entry_attr_t</name>
+        <enumvalue id="group__SAIMPLS_1ggade8e49bf0aac569fcf7cd64cb9c152f7a2619feecf6a664af074e93cc1f185044" prot="public">
+          <name>SAI_INSEG_ENTRY_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMPLS_1ggade8e49bf0aac569fcf7cd64cb9c152f7ad1aee8a3ca07938d8d2a3ea96e05b84f" prot="public">
+          <name>SAI_INSEG_ENTRY_ATTR_NUM_OF_POP</name>
+          <initializer>= SAI_INSEG_ENTRY_ATTR_START</initializer>
+          <briefdescription>
+<para>Number of pops. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMPLS_1ggade8e49bf0aac569fcf7cd64cb9c152f7a38401a5927513b231bb023ec6a91a60c" prot="public">
+          <name>SAI_INSEG_ENTRY_ATTR_PACKET_ACTION</name>
+          <briefdescription>
+<para>Packet action. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_packet_action_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_PACKET_ACTION_FORWARD </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMPLS_1ggade8e49bf0aac569fcf7cd64cb9c152f7a46e3fc21002ac81f5204a868c3a18668" prot="public">
+          <name>SAI_INSEG_ENTRY_ATTR_TRAP_PRIORITY</name>
+          <briefdescription>
+<para>Packet priority for trap/log actions. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMPLS_1ggade8e49bf0aac569fcf7cd64cb9c152f7a5fe738e9c27473b4681e85a1f6dd7817" prot="public">
+          <name>SAI_INSEG_ENTRY_ATTR_NEXT_HOP_ID</name>
+          <briefdescription>
+<para>The next hop id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_NEXT_HOP, SAI_OBJECT_TYPE_NEXT_HOP_GROUP, SAI_OBJECT_TYPE_ROUTER_INTERFACE </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMPLS_1ggade8e49bf0aac569fcf7cd64cb9c152f7a6d931b58dac1b0d43fe04f45fc839950" prot="public">
+          <name>SAI_INSEG_ENTRY_ATTR_PSC_TYPE</name>
+          <briefdescription>
+<para>Define PSC type for a label. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Defines how to infer both TC and COLOR</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_inseg_entry_psc_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_INSEG_ENTRY_PSC_TYPE_ELSP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMPLS_1ggade8e49bf0aac569fcf7cd64cb9c152f7adda19607eb2ed499623d88c4072454e1" prot="public">
+          <name>SAI_INSEG_ENTRY_ATTR_QOS_TC</name>
+          <briefdescription>
+<para>TC for a label. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Associate TC by a label (override TC provided by QOS MAP) Mainly used for L-LSP tunnels, where label infers TC and EXP infers COLOR</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_INSEG_ENTRY_ATTR_PSC_TYPE == SAI_INSEG_ENTRY_PSC_TYPE_LLSP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMPLS_1ggade8e49bf0aac569fcf7cd64cb9c152f7a04e3b7adf27770134e6cae038e7ce161" prot="public">
+          <name>SAI_INSEG_ENTRY_ATTR_MPLS_EXP_TO_TC_MAP</name>
+          <briefdescription>
+<para>Enable EXP -&gt; TC MAP on label. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Associate TC by a QOS MAP Mainly used for E-LSP tunnels, where EXP infers both TC and COLOR Overrides SAI_SWITCH_ATTR_QOS_MPLS_EXP_TO_TC_MAP and SAI_PORT_ATTR_QOS_MPLS_EXP_TO_TC_MAP</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_QOS_MAP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_INSEG_ENTRY_ATTR_PSC_TYPE == SAI_INSEG_ENTRY_PSC_TYPE_ELSP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMPLS_1ggade8e49bf0aac569fcf7cd64cb9c152f7a22653511eaea75c6deaf20f10f9f49e1" prot="public">
+          <name>SAI_INSEG_ENTRY_ATTR_MPLS_EXP_TO_COLOR_MAP</name>
+          <briefdescription>
+<para>Enable EXP -&gt; COLOR MAP on label. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Associate COLOR by a QOS MAP Overrides SAI_SWITCH_ATTR_QOS_MPLS_EXP_TO_COLOR_MAP and SAI_PORT_ATTR_QOS_MPLS_EXP_TO_COLOR_MAP</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_QOS_MAP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMPLS_1ggade8e49bf0aac569fcf7cd64cb9c152f7a69aa7ea95a92c4e8462211f71a9a5fcd" prot="public">
+          <name>SAI_INSEG_ENTRY_ATTR_POP_TTL_MODE</name>
+          <briefdescription>
+<para>Define TTL setting for PHP or POP. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_inseg_entry_pop_ttl_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_INSEG_ENTRY_POP_TTL_MODE_UNIFORM </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMPLS_1ggade8e49bf0aac569fcf7cd64cb9c152f7aa39a3546aaf6e63f892f87b1a31b27db" prot="public">
+          <name>SAI_INSEG_ENTRY_ATTR_POP_QOS_MODE</name>
+          <briefdescription>
+<para>Define QOS setting for PHP or POP. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_inseg_entry_pop_qos_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_INSEG_ENTRY_POP_QOS_MODE_UNIFORM </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMPLS_1ggade8e49bf0aac569fcf7cd64cb9c152f7a5bc2deae6155e8d5a07fb60366a0e67c" prot="public">
+          <name>SAI_INSEG_ENTRY_ATTR_COUNTER_ID</name>
+          <briefdescription>
+<para>Attach a counter. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>When it is empty, then packet hits won&apos;t be counted</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_COUNTER </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMPLS_1ggade8e49bf0aac569fcf7cd64cb9c152f7ae8d4ee06b3fe49e011fa5dc5d2d5b040" prot="public">
+          <name>SAI_INSEG_ENTRY_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMPLS_1ggade8e49bf0aac569fcf7cd64cb9c152f7a079c23efa2c491e844b2575dba6cc2d6" prot="public">
+          <name>SAI_INSEG_ENTRY_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMPLS_1ggade8e49bf0aac569fcf7cd64cb9c152f7a51ddfa1fbfaed6263e95f495a1b1ed39" prot="public">
+          <name>SAI_INSEG_ENTRY_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute Id for SAI in segment. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimpls.h" line="85" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimpls.h" bodystart="86" bodyend="226"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIMPLS_1gab4ec0a139fd2b8e825c002f281d08ba0" prot="public" static="no">
+        <type>enum <ref refid="group__SAIMPLS_1ga1ae340414d9ca6df1da91d596a7c790b" kindref="member">_sai_inseg_entry_psc_type_t</ref></type>
+        <definition>typedef enum _sai_inseg_entry_psc_type_t sai_inseg_entry_psc_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_inseg_entry_psc_type_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimpls.h" line="46" column="28"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMPLS_1gacee67193089a3e4bb827b1e7cef8b9cb" prot="public" static="no">
+        <type>enum <ref refid="group__SAIMPLS_1ga2930a9273cdb4bc4a2a28473ca2829f1" kindref="member">_sai_inseg_entry_pop_ttl_mode_t</ref></type>
+        <definition>typedef enum _sai_inseg_entry_pop_ttl_mode_t sai_inseg_entry_pop_ttl_mode_t</definition>
+        <argsstring></argsstring>
+        <name>sai_inseg_entry_pop_ttl_mode_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimpls.h" line="63" column="32"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMPLS_1ga7596c9287b1de5cb4bbec24042cc1f04" prot="public" static="no">
+        <type>enum <ref refid="group__SAIMPLS_1ga0eea598c11839415cfa35bcc86d4195a" kindref="member">_sai_inseg_entry_pop_qos_mode_t</ref></type>
+        <definition>typedef enum _sai_inseg_entry_pop_qos_mode_t sai_inseg_entry_pop_qos_mode_t</definition>
+        <argsstring></argsstring>
+        <name>sai_inseg_entry_pop_qos_mode_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimpls.h" line="80" column="32"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMPLS_1ga56f2a0bf47c8939f91df3dacfae55e18" prot="public" static="no">
+        <type>enum <ref refid="group__SAIMPLS_1gade8e49bf0aac569fcf7cd64cb9c152f7" kindref="member">_sai_inseg_entry_attr_t</ref></type>
+        <definition>typedef enum _sai_inseg_entry_attr_t sai_inseg_entry_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_inseg_entry_attr_t</name>
+        <briefdescription>
+<para>Attribute Id for SAI in segment. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimpls.h" line="226" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMPLS_1gaaf4f5b997dfd86777344ad0f7b1ed9ee" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__inseg__entry__t" kindref="compound">_sai_inseg_entry_t</ref></type>
+        <definition>typedef struct _sai_inseg_entry_t sai_inseg_entry_t</definition>
+        <argsstring></argsstring>
+        <name>sai_inseg_entry_t</name>
+        <briefdescription>
+<para>In segment entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimpls.h" line="245" column="19"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMPLS_1ga55332db5eeaab7d247ddb49902c5950f" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_inseg_entry_fn) (_In_ const sai_inseg_entry_t *inseg_entry, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ const sai_inseg_entry_t *inseg_entry, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_inseg_entry_fn</name>
+        <briefdescription>
+<para>Create In Segment entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">inseg_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>InSegment entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimpls.h" line="256" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimpls.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMPLS_1ga8b7a2ebe4adc6b0b571fa9d5a455f891" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_inseg_entry_fn) (_In_ const sai_inseg_entry_t *inseg_entry)</definition>
+        <argsstring>)(_In_ const sai_inseg_entry_t *inseg_entry)</argsstring>
+        <name>sai_remove_inseg_entry_fn</name>
+        <briefdescription>
+<para>Remove In Segment entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">inseg_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>InSegment entry</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimpls.h" line="268" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimpls.h" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMPLS_1ga3a67e1195b01233e074cd26298dafe8c" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_inseg_entry_attribute_fn) (_In_ const sai_inseg_entry_t *inseg_entry, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ const sai_inseg_entry_t *inseg_entry, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_inseg_entry_attribute_fn</name>
+        <briefdescription>
+<para>Set In Segment attribute value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">inseg_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>InSegment entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimpls.h" line="279" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimpls.h" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMPLS_1ga4e2aeb2e139b959d054d5efd254497f6" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_inseg_entry_attribute_fn) (_In_ const sai_inseg_entry_t *inseg_entry, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ const sai_inseg_entry_t *inseg_entry, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_inseg_entry_attribute_fn</name>
+        <briefdescription>
+<para>Get In Segment attribute value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">inseg_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>InSegment entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimpls.h" line="292" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimpls.h" bodystart="292" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMPLS_1gad7aa3364315baa4d3b2c8e201b57c4a3" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_create_inseg_entry_fn) (_In_ uint32_t object_count, _In_ const sai_inseg_entry_t *inseg_entry, _In_ const uint32_t *attr_count, _In_ const sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_inseg_entry_t *inseg_entry, _In_ const uint32_t *attr_count, _In_ const sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_create_inseg_entry_fn</name>
+        <briefdescription>
+<para>Bulk create In Segment entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to create </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">inseg_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of object to create </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attr_count. Caller passes the number of attribute for each object to create. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attributes for every object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are created or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to create. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimpls.h" line="314" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimpls.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMPLS_1ga3e519b2f4656df2089a05b45fc94c366" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_remove_inseg_entry_fn) (_In_ uint32_t object_count, _In_ const sai_inseg_entry_t *inseg_entry, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_inseg_entry_t *inseg_entry, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_remove_inseg_entry_fn</name>
+        <briefdescription>
+<para>Bulk remove In Segment entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to remove </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">inseg_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of objects to remove </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are removed or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to remove. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimpls.h" line="336" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimpls.h" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMPLS_1gaa1b8f22b85409aec2416782a2286c50c" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_set_inseg_entry_attribute_fn) (_In_ uint32_t object_count, _In_ const sai_inseg_entry_t *inseg_entry, _In_ const sai_attribute_t *attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_inseg_entry_t *inseg_entry, _In_ const sai_attribute_t *attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_set_inseg_entry_attribute_fn</name>
+        <briefdescription>
+<para>Bulk set attribute on In Segment entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to set attribute </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">inseg_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of objects to set attribute </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attributes to set on objects, one attribute per object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are removed or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to remove. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimpls.h" line="357" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimpls.h" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMPLS_1ga20ca3d950b6ac98cf26febec07a4ba34" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_get_inseg_entry_attribute_fn) (_In_ uint32_t object_count, _In_ const sai_inseg_entry_t *inseg_entry, _In_ const uint32_t *attr_count, _Inout_ sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_inseg_entry_t *inseg_entry, _In_ const uint32_t *attr_count, _Inout_ sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_get_inseg_entry_attribute_fn</name>
+        <briefdescription>
+<para>Bulk get attribute on In Segment entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to set attribute </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">inseg_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of objects to set attribute </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attr_count. Caller passes the number of attribute for each object to get </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attributes to set on objects, one attribute per object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are removed or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to remove. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimpls.h" line="381" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimpls.h" bodystart="381" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMPLS_1ga6331ce4d87a247cbc3b373d2a454f09b" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__mpls__api__t" kindref="compound">_sai_mpls_api_t</ref></type>
+        <definition>typedef struct _sai_mpls_api_t sai_mpls_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_mpls_api_t</name>
+        <briefdescription>
+<para>MPLS methods table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimpls.h" line="404" column="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

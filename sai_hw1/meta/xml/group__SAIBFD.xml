@@ -1,0 +1,1380 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group__SAIBFD" kind="group">
+    <compoundname>SAIBFD</compoundname>
+    <title>SAI - BFD specific public APIs and data structures</title>
+    <innerclass refid="struct__sai__bfd__session__state__notification__t" prot="public">_sai_bfd_session_state_notification_t</innerclass>
+    <innerclass refid="struct__sai__bfd__api__t" prot="public">_sai_bfd_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIBFD_1gaac05472c9336ff0646119db1ecb4dba8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_bfd_session_type_t</name>
+        <enumvalue id="group__SAIBFD_1ggaac05472c9336ff0646119db1ecb4dba8ae2124442bd9d3c31812f28814ad555a0" prot="public">
+          <name>SAI_BFD_SESSION_TYPE_DEMAND_ACTIVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Demand Active Mode </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1ggaac05472c9336ff0646119db1ecb4dba8aec1de46722817e8b0569fbe7b7ee68fa" prot="public">
+          <name>SAI_BFD_SESSION_TYPE_DEMAND_PASSIVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Demand Passive Mode </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1ggaac05472c9336ff0646119db1ecb4dba8a4e4dd11812733aa1daecf03713a70fdd" prot="public">
+          <name>SAI_BFD_SESSION_TYPE_ASYNC_ACTIVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Asynchronous Active Mode </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1ggaac05472c9336ff0646119db1ecb4dba8ad5d22c01dc28b8695943e90132637c80" prot="public">
+          <name>SAI_BFD_SESSION_TYPE_ASYNC_PASSIVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Asynchronous Passive Mode </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>SAI session type of BFD. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibfd.h" line="39" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibfd.h" bodystart="40" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIBFD_1gaf07d62c319a36c1d5f120155dcc5471c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_bfd_session_offload_type_t</name>
+        <enumvalue id="group__SAIBFD_1ggaf07d62c319a36c1d5f120155dcc5471caba7c6f50e3ffa380781957ba5d9f4a73" prot="public">
+          <name>SAI_BFD_SESSION_OFFLOAD_TYPE_NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No Offload: No offload supported </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1ggaf07d62c319a36c1d5f120155dcc5471ca4abecf7ca83b53499d30caf6414449ad" prot="public">
+          <name>SAI_BFD_SESSION_OFFLOAD_TYPE_FULL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Full Offload: both session establishment and sustenance </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1ggaf07d62c319a36c1d5f120155dcc5471ca47afc075b9ff9e90713a94126990791a" prot="public">
+          <name>SAI_BFD_SESSION_OFFLOAD_TYPE_SUSTENANCE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sustenance Offload: Session Sustenance only. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>SAI offload type of BFD session. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibfd.h" line="58" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibfd.h" bodystart="59" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIBFD_1gae8ef375385103b39492a9a5e2798c838" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_bfd_encapsulation_type_t</name>
+        <enumvalue id="group__SAIBFD_1ggae8ef375385103b39492a9a5e2798c838a8c27ab6b494f5d498ac398e20574df38" prot="public">
+          <name>SAI_BFD_ENCAPSULATION_TYPE_IP_IN_IP</name>
+          <briefdescription>
+<para>IP in IP Encapsulation | L2 Ethernet header | IP header | Inner IP header | Original BFD packet. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1ggae8ef375385103b39492a9a5e2798c838a4c5ba5637b70fda64947798c6b842713" prot="public">
+          <name>SAI_BFD_ENCAPSULATION_TYPE_L3_GRE_TUNNEL</name>
+          <briefdescription>
+<para>L3 GRE Tunnel Encapsulation | L2 Ethernet header | IP header | GRE header | Original BFD packet. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1ggae8ef375385103b39492a9a5e2798c838a7fce34475a92d9009301093b229f4d37" prot="public">
+          <name>SAI_BFD_ENCAPSULATION_TYPE_NONE</name>
+          <briefdescription>
+<para>No Encapsulation. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1ggae8ef375385103b39492a9a5e2798c838a38186ffdcd525d9372a80e82613f8b85" prot="public">
+          <name>SAI_BFD_ENCAPSULATION_TYPE_SRV6</name>
+          <briefdescription>
+<para>SRV6 Tunnel Encapsulation | L2 Ethernet header | IPV6 Header | SRV6 Header | Inner IP header | Original BFD packet. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>SAI type of encapsulation for BFD. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibfd.h" line="74" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibfd.h" bodystart="75" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIBFD_1gadb5fd6b5bfef90ad18a26b62e501ec34" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_bfd_session_state_t</name>
+        <enumvalue id="group__SAIBFD_1ggadb5fd6b5bfef90ad18a26b62e501ec34ac0cabaa2732570554281264b3ec330cf" prot="public">
+          <name>SAI_BFD_SESSION_STATE_ADMIN_DOWN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>BFD Session is in Admin down </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1ggadb5fd6b5bfef90ad18a26b62e501ec34a919322af2b9e319b078df558fab63b52" prot="public">
+          <name>SAI_BFD_SESSION_STATE_DOWN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>BFD Session is Down </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1ggadb5fd6b5bfef90ad18a26b62e501ec34a85616f18adbf5bea4b1607b4c824eeaf" prot="public">
+          <name>SAI_BFD_SESSION_STATE_INIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>BFD Session is in Initialization </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1ggadb5fd6b5bfef90ad18a26b62e501ec34a86dd31bf524eaf71854691e20b789119" prot="public">
+          <name>SAI_BFD_SESSION_STATE_UP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>BFD Session is Up </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>SAI BFD session state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibfd.h" line="101" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibfd.h" bodystart="102" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIBFD_1ga447e86ac278a7a786dba33d606901763" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_bfd_session_attr_t</name>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763ac70803c81dee2268d34c992cb59f6e85" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a41b5e3d108e9d6d7c6cd822f5e70c095" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_TYPE</name>
+          <initializer>= SAI_BFD_SESSION_ATTR_START</initializer>
+          <briefdescription>
+<para>BFD Session type DEMAND/ASYNCHRONOUS. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_bfd_session_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a33d5226bc4210383692442040d8e70d0" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_HW_LOOKUP_VALID</name>
+          <briefdescription>
+<para>Hardware lookup valid. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a3e69e93b0cdc6fc673814af502ead706" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_VIRTUAL_ROUTER</name>
+          <briefdescription>
+<para>Virtual Router. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_VIRTUAL_ROUTER </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_BFD_SESSION_ATTR_HW_LOOKUP_VALID == true and SAI_BFD_SESSION_ATTR_USE_NEXT_HOP == false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763aa369864ed24c06ff4c03830b2054cb24" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_PORT</name>
+          <briefdescription>
+<para>Destination Port. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_PORT </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_BFD_SESSION_ATTR_HW_LOOKUP_VALID == false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a67af49a6600c51838a8c2ce7ac3d4d2b" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_LOCAL_DISCRIMINATOR</name>
+          <briefdescription>
+<para>Local discriminator. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a9d3a14640066a4ac89ce520aa8320ac4" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_REMOTE_DISCRIMINATOR</name>
+          <briefdescription>
+<para>Remote discriminator. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a0fb7e390d6ab87946c891432eb65897e" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_UDP_SRC_PORT</name>
+          <briefdescription>
+<para>UDP Source port. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763ae3d6fa44a955004e357b247e360dcce8" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_TC</name>
+          <briefdescription>
+<para>Class-of-Service (Traffic Class) </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a44893ea12d1cfd24b77bcff2ef7f0ffb" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_VLAN_TPID</name>
+          <briefdescription>
+<para>L2 header TPID. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          false </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0x8100 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_BFD_SESSION_ATTR_VLAN_HEADER_VALID == true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a89d8e9a3b6fffbb5cf1bec08082819d0" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_VLAN_ID</name>
+          <briefdescription>
+<para>L2 header VLAN Id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          true </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_BFD_SESSION_ATTR_VLAN_HEADER_VALID == true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a4bae147c6da318b6dd44eb65e47e8568" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_VLAN_PRI</name>
+          <briefdescription>
+<para>L2 header packet priority (3 bits). </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_BFD_SESSION_ATTR_VLAN_HEADER_VALID == true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a9fbe981e663b2717078a5364f5b3f50f" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_VLAN_CFI</name>
+          <briefdescription>
+<para>L2 header Vlan CFI (1 bit). </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_BFD_SESSION_ATTR_VLAN_HEADER_VALID == true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a8cad4495745e68d24744abfd40f65bee" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_VLAN_HEADER_VALID</name>
+          <briefdescription>
+<para>Vlan header valid. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a7c7af05f9b41c8307ec53cfdc22e07f9" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_BFD_ENCAPSULATION_TYPE</name>
+          <briefdescription>
+<para>Encapsulation type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_bfd_encapsulation_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a62e3a39cbff30f44b15dd53b1cbeabc0" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_IPHDR_VERSION</name>
+          <briefdescription>
+<para>IP header version. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a191c395569da64d50dfc6adae300572d" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_TOS</name>
+          <briefdescription>
+<para>IP header TOS. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a3884abbe8343180c539277abef3a525c" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_TTL</name>
+          <briefdescription>
+<para>IP header TTL. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         255 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a5c43723454b4eeaff58c21fb48cbea3e" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_SRC_IP_ADDRESS</name>
+          <briefdescription>
+<para>Source IP. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a8235937319a3e4fe21936f1fce765606" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_DST_IP_ADDRESS</name>
+          <briefdescription>
+<para>Destination IP. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a3fc1feb9a769e93c7f57e9624969896e" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_TUNNEL_TOS</name>
+          <briefdescription>
+<para>Tunnel IP header TOS. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_BFD_SESSION_ATTR_BFD_ENCAPSULATION_TYPE == SAI_BFD_ENCAPSULATION_TYPE_IP_IN_IP or SAI_BFD_SESSION_ATTR_BFD_ENCAPSULATION_TYPE == SAI_BFD_ENCAPSULATION_TYPE_SRV6 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a6b1eccf83a7dd99212a9afb480c18686" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_TUNNEL_TTL</name>
+          <briefdescription>
+<para>Tunnel IP header TTL. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         255 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_BFD_SESSION_ATTR_BFD_ENCAPSULATION_TYPE == SAI_BFD_ENCAPSULATION_TYPE_IP_IN_IP or SAI_BFD_SESSION_ATTR_BFD_ENCAPSULATION_TYPE == SAI_BFD_ENCAPSULATION_TYPE_SRV6 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a94eb701c3ab9b37ab4dd8f1b0b3c5c5a" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_TUNNEL_SRC_IP_ADDRESS</name>
+          <briefdescription>
+<para>Tunnel source IP. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_BFD_SESSION_ATTR_BFD_ENCAPSULATION_TYPE == SAI_BFD_ENCAPSULATION_TYPE_IP_IN_IP or SAI_BFD_SESSION_ATTR_BFD_ENCAPSULATION_TYPE == SAI_BFD_ENCAPSULATION_TYPE_SRV6 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a9606d38e2748811574fcd1f6cb461fa6" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_TUNNEL_DST_IP_ADDRESS</name>
+          <briefdescription>
+<para>Tunnel destination IP. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_BFD_SESSION_ATTR_BFD_ENCAPSULATION_TYPE == SAI_BFD_ENCAPSULATION_TYPE_IP_IN_IP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763aba41e5b3d32dfb8cdd70863901373caa" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_SRC_MAC_ADDRESS</name>
+          <briefdescription>
+<para>L2 source MAC address. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_mac_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_BFD_SESSION_ATTR_HW_LOOKUP_VALID == false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a5b3ad695d871c4c3789f6fa5ae951a8c" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_DST_MAC_ADDRESS</name>
+          <briefdescription>
+<para>L2 destination MAC address. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_mac_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_BFD_SESSION_ATTR_HW_LOOKUP_VALID == false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a7c71e93f1e85834829faac2b23f71374" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_ECHO_ENABLE</name>
+          <briefdescription>
+<para>To enable echo function on BFD session. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a18a91b58acb85415ae2c5a0881789525" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_MULTIHOP</name>
+          <briefdescription>
+<para>Multi hop BFD session. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763ac7a3ef67dcec96736c09d0da9a3cd709" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_CBIT</name>
+          <briefdescription>
+<para>Control Plane Independent. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a156399a702bfeace9adbb681d6066ab8" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_MIN_TX</name>
+          <briefdescription>
+<para>Minimum Transmit interval in microseconds. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a77babc3daab08ed839b242b332a7e297" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_MIN_RX</name>
+          <briefdescription>
+<para>Minimum Receive interval in microseconds. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a2a19b640c72d5931b0a7c98d030f93f4" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_MULTIPLIER</name>
+          <briefdescription>
+<para>Detect time Multiplier. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a8256c5b4623fb138bfbac7e7e65ad24b" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_REMOTE_MIN_TX</name>
+          <briefdescription>
+<para>Minimum Remote Transmit interval in microseconds. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a5dde7403863336bcfdc4d86453f34cf5" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_REMOTE_MIN_RX</name>
+          <briefdescription>
+<para>Minimum Remote Receive interval in microseconds. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763aa2972936ba499dc8ea4af03f589b990d" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_STATE</name>
+          <briefdescription>
+<para>BFD Session state. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_bfd_session_state_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a1bab7ef2521b4be5ca8ec1fd707480a3" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_OFFLOAD_TYPE</name>
+          <briefdescription>
+<para>Offload type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_bfd_session_offload_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_BFD_SESSION_OFFLOAD_TYPE_NONE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a32accaabc25652cdfff6ab15c97cddb2" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_NEGOTIATED_TX</name>
+          <briefdescription>
+<para>Negotiated Transmit interval in microseconds. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763aa926bc5df1dab918ca1c9f5f61478f6b" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_NEGOTIATED_RX</name>
+          <briefdescription>
+<para>Negotiated Receive interval in microseconds. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763ac6bdc4b5e11a2bacb7a49802645c030f" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_LOCAL_DIAG</name>
+          <briefdescription>
+<para>Local Diagnostic code field as specified by RFC. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763ad2cb70c4997c97a62ced2200c8f93f39" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_REMOTE_DIAG</name>
+          <briefdescription>
+<para>Remote Diagnostic code field. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a845e7426bc2bb1752f5ae88383503730" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_REMOTE_MULTIPLIER</name>
+          <briefdescription>
+<para>Remote time Multiplier. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a0015631bef61213e3089744563f9a214" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_SRV6_SIDLIST_ID</name>
+          <briefdescription>
+<para>SID List with Endpoint for SRV6 Encap. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_SRV6_SIDLIST </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_BFD_SESSION_ATTR_BFD_ENCAPSULATION_TYPE == SAI_BFD_ENCAPSULATION_TYPE_SRV6 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a9e5631a7d3e75b69a32a29afb9dcfbec" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_STATS_COUNT_MODE</name>
+          <briefdescription>
+<para>Set BFD session statistics counting mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_stats_count_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_STATS_COUNT_MODE_PACKET_AND_BYTE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763abb6b03794904366dd807fc91da0dc558" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_SELECTIVE_COUNTER_LIST</name>
+          <briefdescription>
+<para>Attach counter object list. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Counter object should be of type Selective. Fill (<ref refid="group__SAICOUNTER_1ggac5e99b5b04f2a0f0665babc2a60c9641a2835fed0aa18e2fb59824c903bd712ea" kindref="member">SAI_COUNTER_ATTR_TYPE</ref> with <ref refid="group__SAICOUNTER_1gga4e3da19e4589261e88197d6576020cf1aa4b87a1c99256ee3601553c9455cb92c" kindref="member">SAI_COUNTER_TYPE_SELECTIVE</ref>).</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_COUNTER </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a4e7bb63a524c6a5257eda23a07f77c44" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_USE_NEXT_HOP</name>
+          <briefdescription>
+<para>Use next hop. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763a4eaa321220d4a66e4aa2ad3923e33983" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_NEXT_HOP_ID</name>
+          <briefdescription>
+<para>Next Hop ID for single hop BFD session. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_NEXT_HOP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_BFD_SESSION_ATTR_USE_NEXT_HOP == true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763afa0ce7981f01760283377f564e67251b" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763adc357d53055434bf6579d2967bde5270" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1gga447e86ac278a7a786dba33d606901763aa32d5bf022d0b889007f91d59a757c67" prot="public">
+          <name>SAI_BFD_SESSION_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>SAI attributes for BFD session. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibfd.h" line="137" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibfd.h" bodystart="138" bodyend="557"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIBFD_1gabd788e55b3b0b247a7bd268edc2760ac" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_bfd_session_stat_t</name>
+        <enumvalue id="group__SAIBFD_1ggabd788e55b3b0b247a7bd268edc2760aca4a9b63d783757b637e93da73957b4435" prot="public">
+          <name>SAI_BFD_SESSION_STAT_IN_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ingress packet stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1ggabd788e55b3b0b247a7bd268edc2760aca97636fb54194a0ca730eea99380884ee" prot="public">
+          <name>SAI_BFD_SESSION_STAT_OUT_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Egress packet stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBFD_1ggabd788e55b3b0b247a7bd268edc2760aca5c1b7f38e73f9cb9b128f72116eba78c" prot="public">
+          <name>SAI_BFD_SESSION_STAT_DROP_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Packet Drop stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>BFD Session counter IDs in sai_get_bfd_session_stats() call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibfd.h" line="562" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibfd.h" bodystart="563" bodyend="573"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIBFD_1ga30fd6136e43da51d400d97e40833d778" prot="public" static="no">
+        <type>enum <ref refid="group__SAIBFD_1gaac05472c9336ff0646119db1ecb4dba8" kindref="member">_sai_bfd_session_type_t</ref></type>
+        <definition>typedef enum _sai_bfd_session_type_t sai_bfd_session_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_bfd_session_type_t</name>
+        <briefdescription>
+<para>SAI session type of BFD. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibfd.h" line="53" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBFD_1gacaab1addfb8663aac510f5b40bad4529" prot="public" static="no">
+        <type>enum <ref refid="group__SAIBFD_1gaf07d62c319a36c1d5f120155dcc5471c" kindref="member">_sai_bfd_session_offload_type_t</ref></type>
+        <definition>typedef enum _sai_bfd_session_offload_type_t sai_bfd_session_offload_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_bfd_session_offload_type_t</name>
+        <briefdescription>
+<para>SAI offload type of BFD session. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibfd.h" line="69" column="32"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBFD_1ga1ef636e2da8273ef5c370fb99a9d5555" prot="public" static="no">
+        <type>enum <ref refid="group__SAIBFD_1gae8ef375385103b39492a9a5e2798c838" kindref="member">_sai_bfd_encapsulation_type_t</ref></type>
+        <definition>typedef enum _sai_bfd_encapsulation_type_t sai_bfd_encapsulation_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_bfd_encapsulation_type_t</name>
+        <briefdescription>
+<para>SAI type of encapsulation for BFD. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibfd.h" line="96" column="30"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBFD_1ga753791d9cac651dcb5e18abe67d75ac3" prot="public" static="no">
+        <type>enum <ref refid="group__SAIBFD_1gadb5fd6b5bfef90ad18a26b62e501ec34" kindref="member">_sai_bfd_session_state_t</ref></type>
+        <definition>typedef enum _sai_bfd_session_state_t sai_bfd_session_state_t</definition>
+        <argsstring></argsstring>
+        <name>sai_bfd_session_state_t</name>
+        <briefdescription>
+<para>SAI BFD session state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibfd.h" line="115" column="25"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBFD_1ga43c010cf2a5129ebe38b6f31e67fb67b" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__bfd__session__state__notification__t" kindref="compound">_sai_bfd_session_state_notification_t</ref></type>
+        <definition>typedef struct _sai_bfd_session_state_notification_t sai_bfd_session_state_notification_t</definition>
+        <argsstring></argsstring>
+        <name>sai_bfd_session_state_notification_t</name>
+        <briefdescription>
+<para>Defines the operational status of the BFD session. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibfd.h" line="132" column="38"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBFD_1ga363b90037a5a759a46abc4207a8a6fb6" prot="public" static="no">
+        <type>enum <ref refid="group__SAIBFD_1ga447e86ac278a7a786dba33d606901763" kindref="member">_sai_bfd_session_attr_t</ref></type>
+        <definition>typedef enum _sai_bfd_session_attr_t sai_bfd_session_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_bfd_session_attr_t</name>
+        <briefdescription>
+<para>SAI attributes for BFD session. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibfd.h" line="557" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBFD_1ga8d4ddb1d0f5474aa0061476f54c141a2" prot="public" static="no">
+        <type>enum <ref refid="group__SAIBFD_1gabd788e55b3b0b247a7bd268edc2760ac" kindref="member">_sai_bfd_session_stat_t</ref></type>
+        <definition>typedef enum _sai_bfd_session_stat_t sai_bfd_session_stat_t</definition>
+        <argsstring></argsstring>
+        <name>sai_bfd_session_stat_t</name>
+        <briefdescription>
+<para>BFD Session counter IDs in sai_get_bfd_session_stats() call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibfd.h" line="573" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBFD_1ga3c6b7da2eb42ebdcba06c73d1903aea6" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_bfd_session_fn) (_Out_ sai_object_id_t *bfd_session_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *bfd_session_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_bfd_session_fn</name>
+        <briefdescription>
+<para>Create BFD session. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">bfd_session_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>BFD session id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> if operation is successful otherwise a different error code is returned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibfd.h" line="586" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibfd.h" bodystart="586" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBFD_1ga6689ad900356ea584dcf41fe59d335f6" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_bfd_session_fn) (_In_ sai_object_id_t bfd_session_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t bfd_session_id)</argsstring>
+        <name>sai_remove_bfd_session_fn</name>
+        <briefdescription>
+<para>Remove BFD session. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">bfd_session_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>BFD session id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> if operation is successful otherwise a different error code is returned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibfd.h" line="600" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibfd.h" bodystart="600" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBFD_1gaa102192b0ec67e5029d7634f9a16f6cd" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_bfd_session_attribute_fn) (_In_ sai_object_id_t bfd_session_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t bfd_session_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_bfd_session_attribute_fn</name>
+        <briefdescription>
+<para>Set BFD session attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">bfd_session_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>BFD session id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> if operation is successful otherwise a different error code is returned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibfd.h" line="612" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibfd.h" bodystart="612" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBFD_1ga8f9aaddfa3c6febbe75aee39a9098f2b" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_bfd_session_attribute_fn) (_In_ sai_object_id_t bfd_session_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t bfd_session_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_bfd_session_attribute_fn</name>
+        <briefdescription>
+<para>Get BFD session attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">bfd_session_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>BFD session id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> if operation is successful otherwise a different error code is returned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibfd.h" line="626" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibfd.h" bodystart="626" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBFD_1ga052a27992d9674bbcc61328910761ca6" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_bfd_session_stats_fn) (_In_ sai_object_id_t bfd_session_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t bfd_session_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_bfd_session_stats_fn</name>
+        <briefdescription>
+<para>Get BFD session statistics counters. Deprecated for backward compatibility. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">bfd_session_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>BFD session id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibfd.h" line="641" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibfd.h" bodystart="641" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBFD_1ga91836d6460ee11d52221d5d711c48e98" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_bfd_session_stats_ext_fn) (_In_ sai_object_id_t bfd_session_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t bfd_session_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_bfd_session_stats_ext_fn</name>
+        <briefdescription>
+<para>Get BFD session statistics counters extended. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">bfd_session_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>BFD session id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Statistics mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibfd.h" line="658" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibfd.h" bodystart="658" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBFD_1gab3e7eef2c32716e7de10010808cf5a00" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_clear_bfd_session_stats_fn) (_In_ sai_object_id_t bfd_session_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</definition>
+        <argsstring>)(_In_ sai_object_id_t bfd_session_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</argsstring>
+        <name>sai_clear_bfd_session_stats_fn</name>
+        <briefdescription>
+<para>Clear BFD session statistics counters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">bfd_session_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>BFD session id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibfd.h" line="674" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibfd.h" bodystart="674" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBFD_1ga6b899898b97610adcf78c12f1d3922ce" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* sai_bfd_session_state_change_notification_fn) (_In_ uint32_t count, _In_ const sai_bfd_session_state_notification_t *data)</definition>
+        <argsstring>)(_In_ uint32_t count, _In_ const sai_bfd_session_state_notification_t *data)</argsstring>
+        <name>sai_bfd_session_state_change_notification_fn</name>
+        <briefdescription>
+<para>BFD session state change notification. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Passed as a parameter into sai_initialize_switch()</para>
+<para><simplesect kind="par"><title>Count:</title><para> @@count           data[count]</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of notifications </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of BFD session state </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibfd.h" line="689" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibfd.h" bodystart="689" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBFD_1ga63a5468b8e51c1adec85d346f320d745" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__bfd__api__t" kindref="compound">_sai_bfd_api_t</ref></type>
+        <definition>typedef struct _sai_bfd_api_t sai_bfd_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_bfd_api_t</name>
+        <briefdescription>
+<para>BFD method table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibfd.h" line="706" column="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

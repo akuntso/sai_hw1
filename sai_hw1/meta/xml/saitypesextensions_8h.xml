@@ -1,0 +1,1384 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="saitypesextensions_8h" kind="file" language="C++">
+    <compoundname>saitypesextensions.h</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+    <includedby refid="saiexperimentaldashacl_8h" local="no">/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashacl.h</includedby>
+    <includedby refid="saiexperimentaldashappliance_8h" local="no">/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashappliance.h</includedby>
+    <includedby refid="saiexperimentaldashdirectionlookup_8h" local="no">/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashdirectionlookup.h</includedby>
+    <includedby refid="saiexperimentaldasheni_8h" local="no">/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h</includedby>
+    <includedby refid="saiexperimentaldashflow_8h" local="no">/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h</includedby>
+    <includedby refid="saiexperimentaldashha_8h" local="no">/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h</includedby>
+    <includedby refid="saiexperimentaldashinboundrouting_8h" local="no">/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h</includedby>
+    <includedby refid="saiexperimentaldashmeter_8h" local="no">/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h</includedby>
+    <includedby refid="saiexperimentaldashoutboundcatopa_8h" local="no">/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundcatopa.h</includedby>
+    <includedby refid="saiexperimentaldashoutboundrouting_8h" local="no">/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundrouting.h</includedby>
+    <includedby refid="saiexperimentaldashpavalidation_8h" local="no">/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashpavalidation.h</includedby>
+    <includedby refid="saiexperimentaldashtunnel_8h" local="no">/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h</includedby>
+    <includedby refid="saiexperimentaldashvip_8h" local="no">/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvip.h</includedby>
+    <includedby refid="saiexperimentaldashvnet_8h" local="no">/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvnet.h</includedby>
+    <includedby refid="saiextensions_8h" local="yes">/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</includedby>
+    <includedby refid="saiswitchextensions_8h" local="no">/home/andrii/sai_hw1/SAI/experimental/saiswitchextensions.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="5">
+        <label>sys/types.h</label>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h</label>
+        <link refid="saitypesextensions_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>saitypes.h</label>
+        <link refid="saitypes_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="12">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h</label>
+        <link refid="saiexperimentaldashmeter_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h</label>
+        <link refid="saiexperimentaldashtunnel_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundcatopa.h</label>
+        <link refid="saiexperimentaldashoutboundcatopa_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundrouting.h</label>
+        <link refid="saiexperimentaldashoutboundrouting_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/andrii/sai_hw1/SAI/inc/sai.h</label>
+        <link refid="sai_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashdirectionlookup.h</label>
+        <link refid="saiexperimentaldashdirectionlookup_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h</label>
+        <link refid="saiexperimentaldashha_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/andrii/sai_hw1/SAI/inc/saiobject.h</label>
+        <link refid="saiobject_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashpavalidation.h</label>
+        <link refid="saiexperimentaldashpavalidation_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashappliance.h</label>
+        <link refid="saiexperimentaldashappliance_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h</label>
+        <link refid="saitypesextensions_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvip.h</label>
+        <link refid="saiexperimentaldashvip_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiswitchextensions.h</label>
+        <link refid="saiswitchextensions_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h</label>
+        <link refid="saiexperimentaldasheni_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashacl.h</label>
+        <link refid="saiexperimentaldashacl_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h</label>
+        <link refid="saiexperimentaldashflow_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</label>
+        <link refid="saiextensions_8h"/>
+      </node>
+      <node id="11">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashinboundrouting.h</label>
+        <link refid="saiexperimentaldashinboundrouting_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvnet.h</label>
+        <link refid="saiexperimentaldashvnet_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="saitypesextensions_8h_1af7f2d7d34ddad9279635e70aed2ad3c2" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_object_type_extensions_t</name>
+        <enumvalue id="saitypesextensions_8h_1af7f2d7d34ddad9279635e70aed2ad3c2a8d41325a7e3010ad760b31888548ff98" prot="public">
+          <name>SAI_OBJECT_TYPE_EXTENSIONS_RANGE_START</name>
+          <initializer>= SAI_OBJECT_TYPE_EXTENSIONS_RANGE_BASE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af7f2d7d34ddad9279635e70aed2ad3c2a4f9fcafeba8f0f9bb962dd8dbcc4477b" prot="public">
+          <name>SAI_OBJECT_TYPE_TABLE_BITMAP_CLASSIFICATION_ENTRY</name>
+          <initializer>= SAI_OBJECT_TYPE_EXTENSIONS_RANGE_START</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af7f2d7d34ddad9279635e70aed2ad3c2a627c8b39d2315f73c10f53b2a5cc9eab" prot="public">
+          <name>SAI_OBJECT_TYPE_TABLE_BITMAP_ROUTER_ENTRY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af7f2d7d34ddad9279635e70aed2ad3c2a2e0259ce7502cc79027ecc89619215a3" prot="public">
+          <name>SAI_OBJECT_TYPE_TABLE_META_TUNNEL_ENTRY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af7f2d7d34ddad9279635e70aed2ad3c2a528f80040156913699aabd7cfd009d0d" prot="public">
+          <name>SAI_OBJECT_TYPE_DASH_ACL_GROUP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af7f2d7d34ddad9279635e70aed2ad3c2a7ce0451eabad6515a54128becb96cc51" prot="public">
+          <name>SAI_OBJECT_TYPE_DASH_ACL_RULE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af7f2d7d34ddad9279635e70aed2ad3c2ac56f0f3912da762fa6efca42108fa7be" prot="public">
+          <name>SAI_OBJECT_TYPE_DIRECTION_LOOKUP_ENTRY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af7f2d7d34ddad9279635e70aed2ad3c2a9f18e72fb3e854a9b83d6e8d250fd651" prot="public">
+          <name>SAI_OBJECT_TYPE_ENI_ETHER_ADDRESS_MAP_ENTRY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af7f2d7d34ddad9279635e70aed2ad3c2a0437bee1240ca3d1b355811ad0a4352d" prot="public">
+          <name>SAI_OBJECT_TYPE_ENI</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af7f2d7d34ddad9279635e70aed2ad3c2a363d68a628b1330edb8bebae2b1bd45d" prot="public">
+          <name>SAI_OBJECT_TYPE_INBOUND_ROUTING_ENTRY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af7f2d7d34ddad9279635e70aed2ad3c2ad01388d3d2ac6f608ffc0637bcbbc745" prot="public">
+          <name>SAI_OBJECT_TYPE_METER_BUCKET_ENTRY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af7f2d7d34ddad9279635e70aed2ad3c2a6ffbc99602d714f2e26196be5e538a9f" prot="public">
+          <name>SAI_OBJECT_TYPE_METER_POLICY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af7f2d7d34ddad9279635e70aed2ad3c2a8dc02d31546ee7183a4f6031c5dd151f" prot="public">
+          <name>SAI_OBJECT_TYPE_METER_RULE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af7f2d7d34ddad9279635e70aed2ad3c2afe1636503fe9c846a056ae3064c1ce78" prot="public">
+          <name>SAI_OBJECT_TYPE_OUTBOUND_CA_TO_PA_ENTRY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af7f2d7d34ddad9279635e70aed2ad3c2a004dee7d66b9bc694df9d31321eca5b2" prot="public">
+          <name>SAI_OBJECT_TYPE_OUTBOUND_ROUTING_ENTRY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af7f2d7d34ddad9279635e70aed2ad3c2aebcbfef3a5364b4c2f24a5a250277c0f" prot="public">
+          <name>SAI_OBJECT_TYPE_VNET</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af7f2d7d34ddad9279635e70aed2ad3c2a136010174998096ddc04b5b44182ebb8" prot="public">
+          <name>SAI_OBJECT_TYPE_PA_VALIDATION_ENTRY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af7f2d7d34ddad9279635e70aed2ad3c2abcd2e807c4f1ebdcc4527deda759cda4" prot="public">
+          <name>SAI_OBJECT_TYPE_VIP_ENTRY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af7f2d7d34ddad9279635e70aed2ad3c2a47504835f2b8d7f0f5e8c7c8aac66013" prot="public">
+          <name>SAI_OBJECT_TYPE_HA_SET</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af7f2d7d34ddad9279635e70aed2ad3c2a48b7fd083e40bf907327846d2757bd09" prot="public">
+          <name>SAI_OBJECT_TYPE_HA_SCOPE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af7f2d7d34ddad9279635e70aed2ad3c2a4f66feac9e752d15975a954eb250eed4" prot="public">
+          <name>SAI_OBJECT_TYPE_DASH_TUNNEL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af7f2d7d34ddad9279635e70aed2ad3c2ac1ce60477bafff4a2bc9719f4feff469" prot="public">
+          <name>SAI_OBJECT_TYPE_OUTBOUND_ROUTING_GROUP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af7f2d7d34ddad9279635e70aed2ad3c2a284ce03f4d3da67e513d583ed62233b6" prot="public">
+          <name>SAI_OBJECT_TYPE_FLOW_TABLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af7f2d7d34ddad9279635e70aed2ad3c2a9da950e077ff94c7f8c8bf3e68c96f83" prot="public">
+          <name>SAI_OBJECT_TYPE_FLOW_ENTRY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af7f2d7d34ddad9279635e70aed2ad3c2a0a7958cc9b390d06982dd12341e3e8c3" prot="public">
+          <name>SAI_OBJECT_TYPE_FLOW_ENTRY_BULK_GET_SESSION_FILTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af7f2d7d34ddad9279635e70aed2ad3c2ac5bc7a393fc468decee664ef0fe613f9" prot="public">
+          <name>SAI_OBJECT_TYPE_FLOW_ENTRY_BULK_GET_SESSION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af7f2d7d34ddad9279635e70aed2ad3c2aa5d6399514cedf2745914835ac3217cf" prot="public">
+          <name>SAI_OBJECT_TYPE_DASH_APPLIANCE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af7f2d7d34ddad9279635e70aed2ad3c2a1dde5f338faef3e3364c90919c0758f3" prot="public">
+          <name>SAI_OBJECT_TYPE_DASH_TUNNEL_MEMBER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af7f2d7d34ddad9279635e70aed2ad3c2ab35bf9cdd9dc5694850724314993f8d3" prot="public">
+          <name>SAI_OBJECT_TYPE_DASH_TUNNEL_NEXT_HOP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af7f2d7d34ddad9279635e70aed2ad3c2a6d0718e3202afa924311514b2124c2c9" prot="public">
+          <name>SAI_OBJECT_TYPE_EXTENSIONS_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>SAI object type extensions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Flags:</title><para> @@flags           free </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" line="35" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" bodystart="36" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="enum" id="saitypesextensions_8h_1ae678c095f5e7a44c057183771cb009c6" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_dash_direction_t</name>
+        <enumvalue id="saitypesextensions_8h_1ae678c095f5e7a44c057183771cb009c6afa9d0484cf7152f575e67a8b749c22e3" prot="public">
+          <name>SAI_DASH_DIRECTION_INVALID</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1ae678c095f5e7a44c057183771cb009c6a0d26018a7b5bb2f901f8f6a02b43912e" prot="public">
+          <name>SAI_DASH_DIRECTION_OUTBOUND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1ae678c095f5e7a44c057183771cb009c6a028dad43d86d228356031608b8324776" prot="public">
+          <name>SAI_DASH_DIRECTION_INBOUND</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" line="101" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" bodystart="102" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="enum" id="saitypesextensions_8h_1ab851357c9f94f60cfc90a93358a40610" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_dash_encapsulation_t</name>
+        <enumvalue id="saitypesextensions_8h_1ab851357c9f94f60cfc90a93358a40610a4ce4be7a183212128da2202d1d1e41b9" prot="public">
+          <name>SAI_DASH_ENCAPSULATION_INVALID</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1ab851357c9f94f60cfc90a93358a40610aadae022b098c9d1d782a76aaddd1e2b2" prot="public">
+          <name>SAI_DASH_ENCAPSULATION_VXLAN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1ab851357c9f94f60cfc90a93358a40610ae9d932533a960588817866fd0bb29e2b" prot="public">
+          <name>SAI_DASH_ENCAPSULATION_NVGRE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" line="111" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" bodystart="112" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="enum" id="saitypesextensions_8h_1ac7f2fe4632bd07372bc87ce5fec536b7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_dash_tunnel_dscp_mode_t</name>
+        <enumvalue id="saitypesextensions_8h_1ac7f2fe4632bd07372bc87ce5fec536b7ac6b291be8846b6850c2cc7bbff1ca4c5" prot="public">
+          <name>SAI_DASH_TUNNEL_DSCP_MODE_PRESERVE_MODEL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1ac7f2fe4632bd07372bc87ce5fec536b7a0650245f433d31b21af56be28cfbee1c" prot="public">
+          <name>SAI_DASH_TUNNEL_DSCP_MODE_PIPE_MODEL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" line="121" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" bodystart="122" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="enum" id="saitypesextensions_8h_1a34573437e44045d41f103248522df8b5" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_dash_routing_actions_t</name>
+        <enumvalue id="saitypesextensions_8h_1a34573437e44045d41f103248522df8b5adde2b3652ad22724c64d93d758948bda" prot="public">
+          <name>SAI_DASH_ROUTING_ACTIONS_STATIC_ENCAP</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1a34573437e44045d41f103248522df8b5a55306464bf87128060363aed6c1fa3ff" prot="public">
+          <name>SAI_DASH_ROUTING_ACTIONS_NAT</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1a34573437e44045d41f103248522df8b5a76e1af3ffdb97fba6ace9075b45713cc" prot="public">
+          <name>SAI_DASH_ROUTING_ACTIONS_NAT46</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1a34573437e44045d41f103248522df8b5a984d45ff37044cc637953a093ef56ae5" prot="public">
+          <name>SAI_DASH_ROUTING_ACTIONS_NAT64</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1a34573437e44045d41f103248522df8b5a4249f55af5987d43fbb4940f945509ed" prot="public">
+          <name>SAI_DASH_ROUTING_ACTIONS_NAT_PORT</name>
+          <initializer>= 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Defines a list of enums for dash_routing_actions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Flags:</title><para> @@flags           strict </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" line="134" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" bodystart="135" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="enum" id="saitypesextensions_8h_1adb2d3e14f91ce166a7ba0611ddb87568" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_dash_ha_role_t</name>
+        <enumvalue id="saitypesextensions_8h_1adb2d3e14f91ce166a7ba0611ddb87568ab0fe9167b784847f8af32f964c8f3183" prot="public">
+          <name>SAI_DASH_HA_ROLE_DEAD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1adb2d3e14f91ce166a7ba0611ddb87568aa288c859f7289fd7de0905ee62e0f232" prot="public">
+          <name>SAI_DASH_HA_ROLE_ACTIVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1adb2d3e14f91ce166a7ba0611ddb87568a77a20dab7e1ffbca220dc96cae574fd6" prot="public">
+          <name>SAI_DASH_HA_ROLE_STANDBY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1adb2d3e14f91ce166a7ba0611ddb87568a433ba4fd084eaab86b5c9ceefb0d6d47" prot="public">
+          <name>SAI_DASH_HA_ROLE_STANDALONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1adb2d3e14f91ce166a7ba0611ddb87568a145749d00fcb870f092b0339032b07ce" prot="public">
+          <name>SAI_DASH_HA_ROLE_SWITCHING_TO_ACTIVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" line="148" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" bodystart="149" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="enum" id="saitypesextensions_8h_1ad15ba0bc5edc1ee5d8af9c8c09204edf" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_dash_flow_enabled_key_t</name>
+        <enumvalue id="saitypesextensions_8h_1ad15ba0bc5edc1ee5d8af9c8c09204edfa4cbe96586991f41545148c1dbc4bf0f5" prot="public">
+          <name>SAI_DASH_FLOW_ENABLED_KEY_ENI_MAC</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1ad15ba0bc5edc1ee5d8af9c8c09204edfaf4205b324f98c8208f8dbab05a2fd459" prot="public">
+          <name>SAI_DASH_FLOW_ENABLED_KEY_VNI</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1ad15ba0bc5edc1ee5d8af9c8c09204edfa22183cb475d5aca2a1bb18cc19df1391" prot="public">
+          <name>SAI_DASH_FLOW_ENABLED_KEY_PROTOCOL</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1ad15ba0bc5edc1ee5d8af9c8c09204edfa3906e5d704d5e5b13d99da2ad23f7211" prot="public">
+          <name>SAI_DASH_FLOW_ENABLED_KEY_SRC_IP</name>
+          <initializer>= 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1ad15ba0bc5edc1ee5d8af9c8c09204edfa605dd5b416d945d2176d7ee50db0b4db" prot="public">
+          <name>SAI_DASH_FLOW_ENABLED_KEY_DST_IP</name>
+          <initializer>= 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1ad15ba0bc5edc1ee5d8af9c8c09204edfa7c7e4e7762200927c36e35cd01a20c39" prot="public">
+          <name>SAI_DASH_FLOW_ENABLED_KEY_SRC_PORT</name>
+          <initializer>= 32</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1ad15ba0bc5edc1ee5d8af9c8c09204edfae7b05836526668da54061b33584a63f9" prot="public">
+          <name>SAI_DASH_FLOW_ENABLED_KEY_DST_PORT</name>
+          <initializer>= 64</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Defines a list of enums for dash_flow_enabled_key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Flags:</title><para> @@flags           strict </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" line="167" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" bodystart="168" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="enum" id="saitypesextensions_8h_1ae792748e3b72b721908188c6bfe09471" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_dash_flow_action_t</name>
+        <enumvalue id="saitypesextensions_8h_1ae792748e3b72b721908188c6bfe09471a831df3cb711a7e80f2daf791d7980df4" prot="public">
+          <name>SAI_DASH_FLOW_ACTION_NONE</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1ae792748e3b72b721908188c6bfe09471a418addfaf53f5dd3b139705b7312f650" prot="public">
+          <name>SAI_DASH_FLOW_ACTION_ENCAP_U0</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1ae792748e3b72b721908188c6bfe09471ab1816d6aeb5c44a48937549d4b8dcb21" prot="public">
+          <name>SAI_DASH_FLOW_ACTION_ENCAP_U1</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1ae792748e3b72b721908188c6bfe09471abfd829d7ac34040733f140769b27e994" prot="public">
+          <name>SAI_DASH_FLOW_ACTION_SET_SMAC</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1ae792748e3b72b721908188c6bfe09471af03a26da50edc7ee9fefe404361f2ffa" prot="public">
+          <name>SAI_DASH_FLOW_ACTION_SET_DMAC</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1ae792748e3b72b721908188c6bfe09471a4be0d6c5b157a264caab774ed0f24a88" prot="public">
+          <name>SAI_DASH_FLOW_ACTION_SNAT</name>
+          <initializer>= 1 &lt;&lt; 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1ae792748e3b72b721908188c6bfe09471ac6199f9da7969874e550699249ae19a7" prot="public">
+          <name>SAI_DASH_FLOW_ACTION_DNAT</name>
+          <initializer>= 1 &lt;&lt; 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1ae792748e3b72b721908188c6bfe09471ab360707d6fed491ba903f0bf89bc9010" prot="public">
+          <name>SAI_DASH_FLOW_ACTION_NAT46</name>
+          <initializer>= 1 &lt;&lt; 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1ae792748e3b72b721908188c6bfe09471a6951542391a0182821199f92b71a1f94" prot="public">
+          <name>SAI_DASH_FLOW_ACTION_NAT64</name>
+          <initializer>= 1 &lt;&lt; 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1ae792748e3b72b721908188c6bfe09471a4d303153f269576845eee221dcbf5a4b" prot="public">
+          <name>SAI_DASH_FLOW_ACTION_SNAT_PORT</name>
+          <initializer>= 1 &lt;&lt; 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1ae792748e3b72b721908188c6bfe09471a2958f5845574f2005fc1d7796cfdfbd5" prot="public">
+          <name>SAI_DASH_FLOW_ACTION_DNAT_PORT</name>
+          <initializer>= 1 &lt;&lt; 9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Defines a list of enums for dash_flow_action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Flags:</title><para> @@flags           strict </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" line="190" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" bodystart="191" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="enum" id="saitypesextensions_8h_1a19a33c8d96c0d6e7c980d58dc8b605ea" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_dash_ha_state_t</name>
+        <enumvalue id="saitypesextensions_8h_1a19a33c8d96c0d6e7c980d58dc8b605eaa7e89626884b26c97be7f9a55c1ba7f75" prot="public">
+          <name>SAI_DASH_HA_STATE_DEAD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1a19a33c8d96c0d6e7c980d58dc8b605eaad38ea034e99a006e99e83e8b3cd32533" prot="public">
+          <name>SAI_DASH_HA_STATE_CONNECTING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1a19a33c8d96c0d6e7c980d58dc8b605eaa80a89cdf17b3c56f7fe9c103af525ef5" prot="public">
+          <name>SAI_DASH_HA_STATE_CONNECTED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1a19a33c8d96c0d6e7c980d58dc8b605eaa0abdbcf7fe2a17c5c101e800dcd208a9" prot="public">
+          <name>SAI_DASH_HA_STATE_INITIALIZING_TO_ACTIVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1a19a33c8d96c0d6e7c980d58dc8b605eaa3e1a445b27a3a3bd33bb35c5d4f9c642" prot="public">
+          <name>SAI_DASH_HA_STATE_INITIALIZING_TO_STANDBY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1a19a33c8d96c0d6e7c980d58dc8b605eaa7d1581fca7486226fb7d0bfbccfeb8ee" prot="public">
+          <name>SAI_DASH_HA_STATE_PENDING_STANDALONE_ACTIVATION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1a19a33c8d96c0d6e7c980d58dc8b605eaa9aea81d8c4ef748350d9fb5b72884f49" prot="public">
+          <name>SAI_DASH_HA_STATE_PENDING_ACTIVE_ACTIVATION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1a19a33c8d96c0d6e7c980d58dc8b605eaab59fe286589ea88ae2b2bba0d1fc45a0" prot="public">
+          <name>SAI_DASH_HA_STATE_PENDING_STANDBY_ACTIVATION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1a19a33c8d96c0d6e7c980d58dc8b605eaa70aad04541b5054f2c73519ed731261c" prot="public">
+          <name>SAI_DASH_HA_STATE_STANDALONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1a19a33c8d96c0d6e7c980d58dc8b605eaaee38c227413aa758d6df26dae9f382b9" prot="public">
+          <name>SAI_DASH_HA_STATE_ACTIVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1a19a33c8d96c0d6e7c980d58dc8b605eaa28229eb72eb8bcb1bf8c1e06241c7a1f" prot="public">
+          <name>SAI_DASH_HA_STATE_STANDBY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1a19a33c8d96c0d6e7c980d58dc8b605eaae40529fe428f82b20aa951a7155948ee" prot="public">
+          <name>SAI_DASH_HA_STATE_DESTROYING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1a19a33c8d96c0d6e7c980d58dc8b605eaa127cc2189f6f745e5572c73f83062bb4" prot="public">
+          <name>SAI_DASH_HA_STATE_SWITCHING_TO_STANDALONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Defines a list of enums for dash_ha_state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" line="219" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" bodystart="220" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="enum" id="saitypesextensions_8h_1a3a65d93617d9a35e9f2f398e35997414" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_dash_flow_entry_bulk_get_session_op_key_t</name>
+        <enumvalue id="saitypesextensions_8h_1a3a65d93617d9a35e9f2f398e35997414a3cf8979c67e083aaf69aa83e50201eb1" prot="public">
+          <name>SAI_DASH_FLOW_ENTRY_BULK_GET_SESSION_OP_KEY_FILTER_OP_INVALID</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1a3a65d93617d9a35e9f2f398e35997414a960fcacc2365c4e8c4596281bd2c7501" prot="public">
+          <name>SAI_DASH_FLOW_ENTRY_BULK_GET_SESSION_OP_KEY_FILTER_OP_EQUAL_TO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1a3a65d93617d9a35e9f2f398e35997414a2ed1fb6be02f83f93e0bf82ccecb78ac" prot="public">
+          <name>SAI_DASH_FLOW_ENTRY_BULK_GET_SESSION_OP_KEY_FILTER_OP_GREATER_THAN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1a3a65d93617d9a35e9f2f398e35997414a5eb869c8ad07a0769e31e4a7ad7c8bac" prot="public">
+          <name>SAI_DASH_FLOW_ENTRY_BULK_GET_SESSION_OP_KEY_FILTER_OP_GREATER_THAN_OR_EQUAL_TO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1a3a65d93617d9a35e9f2f398e35997414a7f0ea911abb9fc094675c9056ed82530" prot="public">
+          <name>SAI_DASH_FLOW_ENTRY_BULK_GET_SESSION_OP_KEY_FILTER_OP_LESS_THAN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1a3a65d93617d9a35e9f2f398e35997414ac47c248eee0b6f0fd0314eaef244da5a" prot="public">
+          <name>SAI_DASH_FLOW_ENTRY_BULK_GET_SESSION_OP_KEY_FILTER_OP_LESS_THAN_OR_EQUAL_TO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Defines a list of enums for dash_flow_entry_bulk_get_session_op_key. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" line="252" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" bodystart="253" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="enum" id="saitypesextensions_8h_1a79f198683519d8698819239b417a8bd7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_dash_flow_entry_bulk_get_session_mode_t</name>
+        <enumvalue id="saitypesextensions_8h_1a79f198683519d8698819239b417a8bd7a23ce3a01e966e84ad601b23b2f026fee" prot="public">
+          <name>SAI_DASH_FLOW_ENTRY_BULK_GET_SESSION_MODE_SAI_DASH_FLOW_ENTRY_BULK_GET_SESSION_MODE_GRPC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1a79f198683519d8698819239b417a8bd7ad54b72ec2a578a2df56c664007a23161" prot="public">
+          <name>SAI_DASH_FLOW_ENTRY_BULK_GET_SESSION_MODE_SAI_DASH_FLOW_ENTRY_BULK_GET_SESSION_MODE_VENDOR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1a79f198683519d8698819239b417a8bd7abaa244528aa5a75f5c8fd17c5d7ebf75" prot="public">
+          <name>SAI_DASH_FLOW_ENTRY_BULK_GET_SESSION_MODE_SAI_DASH_FLOW_ENTRY_BULK_GET_SESSION_MODE_EVENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1a79f198683519d8698819239b417a8bd7ab67eb234c6eaae441d8d8d1f7a41f778" prot="public">
+          <name>SAI_DASH_FLOW_ENTRY_BULK_GET_SESSION_MODE_SAI_DASH_FLOW_ENTRY_BULK_GET_SESSION_MODE_EVENT_WITHOUT_FLOW_STATE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Defines a list of enums for dash_flow_entry_bulk_get_session_mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" line="271" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" bodystart="272" bodyend="281"/>
+      </memberdef>
+      <memberdef kind="enum" id="saitypesextensions_8h_1af9630518597569358cc5750c657d164c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_dash_flow_entry_bulk_get_session_filter_key_t</name>
+        <enumvalue id="saitypesextensions_8h_1af9630518597569358cc5750c657d164cadc5193652e7be1110e85ad0cb1dd28c8" prot="public">
+          <name>SAI_DASH_FLOW_ENTRY_BULK_GET_SESSION_FILTER_KEY_INVAILD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af9630518597569358cc5750c657d164ca60754943bc9d2a6b77d5d1a8d5214060" prot="public">
+          <name>SAI_DASH_FLOW_ENTRY_BULK_GET_SESSION_FILTER_KEY_FLOW_TABLE_ID</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af9630518597569358cc5750c657d164ca7b79bc793d3c4bece0708ae86749aa20" prot="public">
+          <name>SAI_DASH_FLOW_ENTRY_BULK_GET_SESSION_FILTER_KEY_ENI_ADDR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af9630518597569358cc5750c657d164ca4509e2e3aa5189ff4e5d33d2dc5e6913" prot="public">
+          <name>SAI_DASH_FLOW_ENTRY_BULK_GET_SESSION_FILTER_KEY_IP_PROTOCOL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af9630518597569358cc5750c657d164ca7e3ac4dd66d888aa73b1a4848c6a7626" prot="public">
+          <name>SAI_DASH_FLOW_ENTRY_BULK_GET_SESSION_FILTER_KEY_SRC_IP_ADDR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af9630518597569358cc5750c657d164ca5bcc2178b7fe7f32506e7ea2d7102d2e" prot="public">
+          <name>SAI_DASH_FLOW_ENTRY_BULK_GET_SESSION_FILTER_KEY_DST_IP_ADDR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af9630518597569358cc5750c657d164ca5ff2a2a8082eb983fa4fa75904c56e00" prot="public">
+          <name>SAI_DASH_FLOW_ENTRY_BULK_GET_SESSION_FILTER_KEY_SRC_L4_PORT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af9630518597569358cc5750c657d164ca1401724c68e71ee0d059f9f6cd2db1c6" prot="public">
+          <name>SAI_DASH_FLOW_ENTRY_BULK_GET_SESSION_FILTER_KEY_DST_L4_PORT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1af9630518597569358cc5750c657d164ca1224f426c646bc205b120fc8c1c49f53" prot="public">
+          <name>SAI_DASH_FLOW_ENTRY_BULK_GET_SESSION_FILTER_KEY_KEY_VERSION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Defines a list of enums for dash_flow_entry_bulk_get_session_filter_key. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" line="286" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" bodystart="287" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="enum" id="saitypesextensions_8h_1a5e7889c2b1ec69fe676d6d6919b7d5c8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_dash_eni_mac_override_type_t</name>
+        <enumvalue id="saitypesextensions_8h_1a5e7889c2b1ec69fe676d6d6919b7d5c8a33896691594998c3f4196da54aebeb01" prot="public">
+          <name>SAI_DASH_ENI_MAC_OVERRIDE_TYPE_NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1a5e7889c2b1ec69fe676d6d6919b7d5c8ab3f1e6d8adbaf4a9117be884bfc58f5a" prot="public">
+          <name>SAI_DASH_ENI_MAC_OVERRIDE_TYPE_SRC_MAC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1a5e7889c2b1ec69fe676d6d6919b7d5c8a54494d82ed3fc215e2751ac64db091b2" prot="public">
+          <name>SAI_DASH_ENI_MAC_OVERRIDE_TYPE_DST_MAC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Defines a list of enums for dash_eni_mac_override_type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" line="311" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" bodystart="312" bodyend="319"/>
+      </memberdef>
+      <memberdef kind="enum" id="saitypesextensions_8h_1a14fcfac79138904fc978cca26faae64c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_dash_flow_sync_state_t</name>
+        <enumvalue id="saitypesextensions_8h_1a14fcfac79138904fc978cca26faae64ca80def7ab67da4668575cbb054bba588b" prot="public">
+          <name>SAI_DASH_FLOW_SYNC_STATE_FLOW_MISS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1a14fcfac79138904fc978cca26faae64ca86f5f4ded8b0e917bd346d84468d9bfb" prot="public">
+          <name>SAI_DASH_FLOW_SYNC_STATE_FLOW_CREATED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1a14fcfac79138904fc978cca26faae64caa28003bf8370c064049bd20d22507ac8" prot="public">
+          <name>SAI_DASH_FLOW_SYNC_STATE_FLOW_SYNCED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1a14fcfac79138904fc978cca26faae64cae9d5569b5562bcdcfe63ddd24cd69bad" prot="public">
+          <name>SAI_DASH_FLOW_SYNC_STATE_FLOW_PENDING_DELETE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saitypesextensions_8h_1a14fcfac79138904fc978cca26faae64ca6e51e449890493287329fd0fb7bbe1b2" prot="public">
+          <name>SAI_DASH_FLOW_SYNC_STATE_FLOW_PENDING_RESIMULATION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Defines a list of enums for dash_flow_sync_state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" line="324" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" bodystart="325" bodyend="336"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="saitypesextensions_8h_1a532c7498953d29eb761ee10fe3ea66ee" prot="public" static="no">
+        <type>enum <ref refid="saitypesextensions_8h_1af7f2d7d34ddad9279635e70aed2ad3c2" kindref="member">_sai_object_type_extensions_t</ref></type>
+        <definition>typedef enum _sai_object_type_extensions_t sai_object_type_extensions_t</definition>
+        <argsstring></argsstring>
+        <name>sai_object_type_extensions_t</name>
+        <briefdescription>
+<para>SAI object type extensions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Flags:</title><para> @@flags           free </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" line="99" column="30"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saitypesextensions_8h_1ac461456f03eb8f9c0801f682b315d932" prot="public" static="no">
+        <type>enum _sai_dash_direction_t</type>
+        <definition>typedef enum _sai_dash_direction_t sai_dash_direction_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dash_direction_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" line="109" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saitypesextensions_8h_1ac6c58b8c1136d14a3ef8053f8fe65577" prot="public" static="no">
+        <type>enum _sai_dash_encapsulation_t</type>
+        <definition>typedef enum _sai_dash_encapsulation_t sai_dash_encapsulation_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dash_encapsulation_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" line="119" column="26"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saitypesextensions_8h_1a9e551204bf4678573c76a4558d67328a" prot="public" static="no">
+        <type>enum _sai_dash_tunnel_dscp_mode_t</type>
+        <definition>typedef enum _sai_dash_tunnel_dscp_mode_t sai_dash_tunnel_dscp_mode_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dash_tunnel_dscp_mode_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" line="127" column="29"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saitypesextensions_8h_1a560a47fdd1e46cb53054fc624b411078" prot="public" static="no">
+        <type>enum <ref refid="saitypesextensions_8h_1a34573437e44045d41f103248522df8b5" kindref="member">_sai_dash_routing_actions_t</ref></type>
+        <definition>typedef enum _sai_dash_routing_actions_t sai_dash_routing_actions_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dash_routing_actions_t</name>
+        <briefdescription>
+<para>Defines a list of enums for dash_routing_actions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Flags:</title><para> @@flags           strict </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" line="146" column="28"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saitypesextensions_8h_1a9e36db8624a9a1a5e585b172143a3f5f" prot="public" static="no">
+        <type>enum _sai_dash_ha_role_t</type>
+        <definition>typedef enum _sai_dash_ha_role_t sai_dash_ha_role_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dash_ha_role_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" line="160" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saitypesextensions_8h_1a541adfc63ddba15cf1c2ab32cda10a96" prot="public" static="no">
+        <type>enum <ref refid="saitypesextensions_8h_1ad15ba0bc5edc1ee5d8af9c8c09204edf" kindref="member">_sai_dash_flow_enabled_key_t</ref></type>
+        <definition>typedef enum _sai_dash_flow_enabled_key_t sai_dash_flow_enabled_key_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dash_flow_enabled_key_t</name>
+        <briefdescription>
+<para>Defines a list of enums for dash_flow_enabled_key. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Flags:</title><para> @@flags           strict </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" line="183" column="29"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saitypesextensions_8h_1af768a53939634df2a8694c00fc77ba73" prot="public" static="no">
+        <type>enum <ref refid="saitypesextensions_8h_1ae792748e3b72b721908188c6bfe09471" kindref="member">_sai_dash_flow_action_t</ref></type>
+        <definition>typedef enum _sai_dash_flow_action_t sai_dash_flow_action_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dash_flow_action_t</name>
+        <briefdescription>
+<para>Defines a list of enums for dash_flow_action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Flags:</title><para> @@flags           strict </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" line="214" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saitypesextensions_8h_1a5e7ee9152526fc1b8c75e0bf8bc6ae4f" prot="public" static="no">
+        <type>enum <ref refid="saitypesextensions_8h_1a19a33c8d96c0d6e7c980d58dc8b605ea" kindref="member">_sai_dash_ha_state_t</ref></type>
+        <definition>typedef enum _sai_dash_ha_state_t sai_dash_ha_state_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dash_ha_state_t</name>
+        <briefdescription>
+<para>Defines a list of enums for dash_ha_state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" line="247" column="21"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saitypesextensions_8h_1ade9e41d74aecc28111ac641d89247ede" prot="public" static="no">
+        <type>enum <ref refid="saitypesextensions_8h_1a3a65d93617d9a35e9f2f398e35997414" kindref="member">_sai_dash_flow_entry_bulk_get_session_op_key_t</ref></type>
+        <definition>typedef enum _sai_dash_flow_entry_bulk_get_session_op_key_t sai_dash_flow_entry_bulk_get_session_op_key_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dash_flow_entry_bulk_get_session_op_key_t</name>
+        <briefdescription>
+<para>Defines a list of enums for dash_flow_entry_bulk_get_session_op_key. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" line="266" column="47"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saitypesextensions_8h_1a2f0a2018317fd0c54d59fb4712e761ad" prot="public" static="no">
+        <type>enum <ref refid="saitypesextensions_8h_1a79f198683519d8698819239b417a8bd7" kindref="member">_sai_dash_flow_entry_bulk_get_session_mode_t</ref></type>
+        <definition>typedef enum _sai_dash_flow_entry_bulk_get_session_mode_t sai_dash_flow_entry_bulk_get_session_mode_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dash_flow_entry_bulk_get_session_mode_t</name>
+        <briefdescription>
+<para>Defines a list of enums for dash_flow_entry_bulk_get_session_mode. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" line="281" column="45"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saitypesextensions_8h_1acf65d4a1621727b74f49c9ebf5adfc2f" prot="public" static="no">
+        <type>enum <ref refid="saitypesextensions_8h_1af9630518597569358cc5750c657d164c" kindref="member">_sai_dash_flow_entry_bulk_get_session_filter_key_t</ref></type>
+        <definition>typedef enum _sai_dash_flow_entry_bulk_get_session_filter_key_t sai_dash_flow_entry_bulk_get_session_filter_key_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dash_flow_entry_bulk_get_session_filter_key_t</name>
+        <briefdescription>
+<para>Defines a list of enums for dash_flow_entry_bulk_get_session_filter_key. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" line="306" column="51"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saitypesextensions_8h_1a41f06612ec92a5cc880db0fc2e1bcf3c" prot="public" static="no">
+        <type>enum <ref refid="saitypesextensions_8h_1a5e7889c2b1ec69fe676d6d6919b7d5c8" kindref="member">_sai_dash_eni_mac_override_type_t</ref></type>
+        <definition>typedef enum _sai_dash_eni_mac_override_type_t sai_dash_eni_mac_override_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dash_eni_mac_override_type_t</name>
+        <briefdescription>
+<para>Defines a list of enums for dash_eni_mac_override_type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" line="319" column="34"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saitypesextensions_8h_1a0917c94b5c1b9a489265fec097019381" prot="public" static="no">
+        <type>enum <ref refid="saitypesextensions_8h_1a14fcfac79138904fc978cca26faae64c" kindref="member">_sai_dash_flow_sync_state_t</ref></type>
+        <definition>typedef enum _sai_dash_flow_sync_state_t sai_dash_flow_sync_state_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dash_flow_sync_state_t</name>
+        <briefdescription>
+<para>Defines a list of enums for dash_flow_sync_state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h" line="336" column="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module defines type extensions of the Switch Abstraction Interface (SAI) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2018 Microsoft Open Technologies, Inc.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <ulink url="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</ulink></para>
+<para>THIS CODE IS PROVIDED ON AN <emphasis>AS IS</emphasis> BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</para>
+<para>See the Apache Version 2.0 License for specific language governing permissions and limitations under the License.</para>
+<para>Microsoft would like to thank the following companies for their review and assistance with these files: Intel Corporation, Mellanox Technologies Ltd, Dell Products, L.P., Facebook, Inc., Marvell International Ltd. </para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/experimental/saitypesextensions.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__neighbor__entry__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_neighbor_entry_t</compoundname>
+    <includes refid="saineighbor_8h" local="no">saineighbor.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__neighbor__entry__t_1a8d6331df88854e594efc0626ddb53d13" prot="public" static="no" mutable="no">
+        <type>sai_object_id_t</type>
+        <definition>sai_object_id_t _sai_neighbor_entry_t::switch_id</definition>
+        <argsstring></argsstring>
+        <name>switch_id</name>
+        <briefdescription>
+<para>Switch ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_SWITCH </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saineighbor.h" line="192" column="21" bodyfile="/home/andrii/sai_hw1/SAI/inc/saineighbor.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__neighbor__entry__t_1adf7a6d41fe8f4047e5c29514f124c1d0" prot="public" static="no" mutable="no">
+        <type>sai_object_id_t</type>
+        <definition>sai_object_id_t _sai_neighbor_entry_t::rif_id</definition>
+        <argsstring></argsstring>
+        <name>rif_id</name>
+        <briefdescription>
+<para>Router interface ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_ROUTER_INTERFACE </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saineighbor.h" line="199" column="21" bodyfile="/home/andrii/sai_hw1/SAI/inc/saineighbor.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__neighbor__entry__t_1a9517b25cc65bc359b4d5610052802179" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__sai__ip__address__t" kindref="compound">sai_ip_address_t</ref></type>
+        <definition>sai_ip_address_t _sai_neighbor_entry_t::ip_address</definition>
+        <argsstring></argsstring>
+        <name>ip_address</name>
+        <briefdescription>
+<para>IP address. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saineighbor.h" line="204" column="22" bodyfile="/home/andrii/sai_hw1/SAI/inc/saineighbor.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Neighbor entry. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>_sai_neighbor_entry_t</label>
+        <link refid="struct__sai__neighbor__entry__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>ip_address</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>_sai_ip_address_t</label>
+        <link refid="struct__sai__ip__address__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>addr</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>_sai_ip_addr_t</label>
+        <link refid="union__sai__ip__addr__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saineighbor.h" line="185" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saineighbor.h" bodystart="186" bodyend="206"/>
+    <listofallmembers>
+      <member refid="struct__sai__neighbor__entry__t_1a9517b25cc65bc359b4d5610052802179" prot="public" virt="non-virtual"><scope>_sai_neighbor_entry_t</scope><name>ip_address</name></member>
+      <member refid="struct__sai__neighbor__entry__t_1adf7a6d41fe8f4047e5c29514f124c1d0" prot="public" virt="non-virtual"><scope>_sai_neighbor_entry_t</scope><name>rif_id</name></member>
+      <member refid="struct__sai__neighbor__entry__t_1a8d6331df88854e594efc0626ddb53d13" prot="public" virt="non-virtual"><scope>_sai_neighbor_entry_t</scope><name>switch_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

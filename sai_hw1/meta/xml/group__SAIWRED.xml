@@ -1,0 +1,1075 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group__SAIWRED" kind="group">
+    <compoundname>SAIWRED</compoundname>
+    <title>SAI - QOS WRED specific API definitions</title>
+    <innerclass refid="struct__sai__wred__api__t" prot="public">_sai_wred_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIWRED_1ga641f8567d50f41e99a321f7be23e212d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_ecn_mark_mode_t</name>
+        <enumvalue id="group__SAIWRED_1gga641f8567d50f41e99a321f7be23e212dae2c1d4847f7eb4f918cb92d31dd9e331" prot="public">
+          <name>SAI_ECN_MARK_MODE_NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Disable ECN marking for all colors </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1gga641f8567d50f41e99a321f7be23e212da832709c65c5850ceb8ea16b10271ddc2" prot="public">
+          <name>SAI_ECN_MARK_MODE_GREEN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Enable ECN marking for green color. Yellow and red are disabled </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1gga641f8567d50f41e99a321f7be23e212dabc80d9e448d83d46fa098c220283ffb8" prot="public">
+          <name>SAI_ECN_MARK_MODE_YELLOW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Enable ECN marking for yellow color. Green and red are disabled </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1gga641f8567d50f41e99a321f7be23e212da4c387367c980445b2dcd7a221486644b" prot="public">
+          <name>SAI_ECN_MARK_MODE_RED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Enable ECN marking for red color. Green and yellow are disabled </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1gga641f8567d50f41e99a321f7be23e212dace612fd7809028751ccec675dfa8524f" prot="public">
+          <name>SAI_ECN_MARK_MODE_GREEN_YELLOW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Enable ECN marking for green and yellow colors. Red is disabled </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1gga641f8567d50f41e99a321f7be23e212daed56e5d6d9c3efb21852c31b65870281" prot="public">
+          <name>SAI_ECN_MARK_MODE_GREEN_RED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Enable ECN marking for green and red colors. Yellow is disabled </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1gga641f8567d50f41e99a321f7be23e212daba59f6ccd104f09316e6a18c5ceb22a6" prot="public">
+          <name>SAI_ECN_MARK_MODE_YELLOW_RED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Enable ECN marking for yellow and red colors. Green is disabled </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1gga641f8567d50f41e99a321f7be23e212da119e0ee0aa4354ed59999fb1cd454dbb" prot="public">
+          <name>SAI_ECN_MARK_MODE_ALL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Enable ECN marking for all colors </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute data for <ref refid="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89a18bc27fa1e1551d5b6afbd90972a450f" kindref="member">SAI_WRED_ATTR_ECN_MARK_MODE</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiwred.h" line="39" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiwred.h" bodystart="40" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIWRED_1gae3d96cebd897bc0ef674a81de5248c89" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_wred_attr_t</name>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89aa8a7256be490074e7f458cbc2dd79291" prot="public">
+          <name>SAI_WRED_ATTR_START</name>
+          <initializer>= 0x00000000</initializer>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89a6db7d203612b7729ca688da1c31c5fe1" prot="public">
+          <name>SAI_WRED_ATTR_GREEN_ENABLE</name>
+          <initializer>= SAI_WRED_ATTR_START</initializer>
+          <briefdescription>
+<para>Green enable. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89a8a930e92b084c32303d94bc9d6fdbbcd" prot="public">
+          <name>SAI_WRED_ATTR_GREEN_MIN_THRESHOLD</name>
+          <initializer>= 0x00000001</initializer>
+          <briefdescription>
+<para>Green minimum threshold bytes. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Range 1 - Max Buffer size.</para>
+<para>Default to 0 i.e. maximum buffer size.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_WRED_ATTR_GREEN_ENABLE == true or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_YELLOW or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89a734253f2e9210f236582bb9da484816e" prot="public">
+          <name>SAI_WRED_ATTR_GREEN_MAX_THRESHOLD</name>
+          <initializer>= 0x00000002</initializer>
+          <briefdescription>
+<para>Green maximum threshold. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Range 1 - Max Buffer size. Default to 0 i.e. maximum buffer size.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_WRED_ATTR_GREEN_ENABLE == true or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_YELLOW or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89a1d3172d1383acc79d31aac58e99baee6" prot="public">
+          <name>SAI_WRED_ATTR_GREEN_DROP_PROBABILITY</name>
+          <initializer>= 0x00000003</initializer>
+          <briefdescription>
+<para>Percentage 0 ~ 100. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         100 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89a5a9323dc66e17ca751e02704eaf6b573" prot="public">
+          <name>SAI_WRED_ATTR_YELLOW_ENABLE</name>
+          <initializer>= 0x00000004</initializer>
+          <briefdescription>
+<para>Yellow enable. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89a21fbd8d98ef4040eacec898b228f4afe" prot="public">
+          <name>SAI_WRED_ATTR_YELLOW_MIN_THRESHOLD</name>
+          <initializer>= 0x00000005</initializer>
+          <briefdescription>
+<para>Yellow minimum threshold. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Range 1 - Max Buffer size. default to 0 i.e Maximum buffer size</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_WRED_ATTR_YELLOW_ENABLE == true or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_YELLOW or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_YELLOW or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_YELLOW_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89a403ac241bd7e2d90cf349895369d8ed2" prot="public">
+          <name>SAI_WRED_ATTR_YELLOW_MAX_THRESHOLD</name>
+          <initializer>= 0x00000006</initializer>
+          <briefdescription>
+<para>Yellow maximum threshold. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Range 1 - Max Buffer size. default to 0 i.e Maximum buffer size</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_WRED_ATTR_YELLOW_ENABLE == true or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_YELLOW or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_YELLOW or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_YELLOW_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89a35f5768035efd505b071ec18e02f9c51" prot="public">
+          <name>SAI_WRED_ATTR_YELLOW_DROP_PROBABILITY</name>
+          <initializer>= 0x00000007</initializer>
+          <briefdescription>
+<para>Percentage 0 ~ 100. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         100 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89a4a2fd4506afa81da6490fb3c0e0a85e8" prot="public">
+          <name>SAI_WRED_ATTR_RED_ENABLE</name>
+          <initializer>= 0x00000008</initializer>
+          <briefdescription>
+<para>Red enable. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89ae89d2fc8f87c29765767487543279666" prot="public">
+          <name>SAI_WRED_ATTR_RED_MIN_THRESHOLD</name>
+          <initializer>= 0x00000009</initializer>
+          <briefdescription>
+<para>Red minimum threshold. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Range 1 - Max Buffer size. default to 0 i.e Maximum buffer size</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_WRED_ATTR_RED_ENABLE == true or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_YELLOW_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89aa6e007500d6416f2e67a28ff9ce801da" prot="public">
+          <name>SAI_WRED_ATTR_RED_MAX_THRESHOLD</name>
+          <initializer>= 0x0000000a</initializer>
+          <briefdescription>
+<para>Red maximum threshold. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Range 1 - Max Buffer size. default to 0 i.e Maximum buffer size</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_WRED_ATTR_RED_ENABLE == true or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_YELLOW_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89aac861eb51508bd854662412b88e3ac57" prot="public">
+          <name>SAI_WRED_ATTR_RED_DROP_PROBABILITY</name>
+          <initializer>= 0x0000000b</initializer>
+          <briefdescription>
+<para>Percentage 0 ~ 100. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         100 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89abdbb80b88ec04dabf27b251be9dba1a2" prot="public">
+          <name>SAI_WRED_ATTR_WEIGHT</name>
+          <initializer>= 0x0000000c</initializer>
+          <briefdescription>
+<para>Weight 0 ~ 15. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89a18bc27fa1e1551d5b6afbd90972a450f" prot="public">
+          <name>SAI_WRED_ATTR_ECN_MARK_MODE</name>
+          <initializer>= 0x0000000d</initializer>
+          <briefdescription>
+<para>ECN mark mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Enable/disable ECN marking</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ecn_mark_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_ECN_MARK_MODE_NONE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89a180b5e43a4a1d8fa17c9ad8bd0196524" prot="public">
+          <name>SAI_WRED_ATTR_ECN_GREEN_MIN_THRESHOLD</name>
+          <initializer>= 0x0000000e</initializer>
+          <briefdescription>
+<para>Green minimum threshold bytes for ECT traffic. In absence of this attribute, green ECT traffic would use SAI_WRED_ATTR_GREEN_MIN_THRESHOLD value as min threshold. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Valid when SAI_SWITCH_ATTR_ECN_ECT_THRESHOLD_ENABLE == true. Range 1 - Max Buffer size.</para>
+<para>Default to 0 i.e. maximum buffer size.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_YELLOW or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89a0e7839e4f8e67d055a801a8a537362e7" prot="public">
+          <name>SAI_WRED_ATTR_ECN_GREEN_MAX_THRESHOLD</name>
+          <initializer>= 0x0000000f</initializer>
+          <briefdescription>
+<para>Green maximum threshold for ECT traffic In absence of this attribute, green ECT traffic would use SAI_WRED_ATTR_GREEN_MAX_THRESHOLD value as max threshold. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Valid when SAI_SWITCH_ATTR_ECN_ECT_THRESHOLD_ENABLE == true. Range 1 - Max Buffer size. Default to 0 i.e. maximum buffer size.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_YELLOW or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89a0a3ec1ace06738c73770c01d9ac23ce8" prot="public">
+          <name>SAI_WRED_ATTR_ECN_GREEN_MARK_PROBABILITY</name>
+          <initializer>= 0x00000010</initializer>
+          <briefdescription>
+<para>Marking percentage 0 ~ 100 for green ECT traffic In absence of this attribute, green ECT traffic would use SAI_WRED_ATTR_GREEN_DROP_PROBABILITY value as marking probability. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Valid when SAI_SWITCH_ATTR_ECN_ECT_THRESHOLD_ENABLE == true.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         100 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_YELLOW or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89ad6da68af91d39a419ac59a9b0fe558eb" prot="public">
+          <name>SAI_WRED_ATTR_ECN_YELLOW_MIN_THRESHOLD</name>
+          <initializer>= 0x00000011</initializer>
+          <briefdescription>
+<para>Yellow minimum threshold for ECT traffic In absence of this attribute, yellow ECT traffic would use SAI_WRED_ATTR_YELLOW_MIN_THRESHOLD value as min threshold. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Valid when SAI_SWITCH_ATTR_ECN_ECT_THRESHOLD_ENABLE == true. Range 1 - Max Buffer size. default to 0 i.e Maximum buffer size</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_YELLOW or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_YELLOW or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_YELLOW_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89ac65c4a16368cc03450a480183f39c0b8" prot="public">
+          <name>SAI_WRED_ATTR_ECN_YELLOW_MAX_THRESHOLD</name>
+          <initializer>= 0x00000012</initializer>
+          <briefdescription>
+<para>Yellow maximum threshold for ECT traffic In absence of this attribute, yellow ECT traffic would use SAI_WRED_ATTR_YELLOW_MAX_THRESHOLD value as max threshold. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Valid when SAI_SWITCH_ATTR_ECN_ECT_THRESHOLD_ENABLE == true. Range 1 - Max Buffer size. default to 0 i.e Maximum buffer size</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_YELLOW or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_YELLOW or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_YELLOW_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89a99c6dc7af39924266ed74c3239186442" prot="public">
+          <name>SAI_WRED_ATTR_ECN_YELLOW_MARK_PROBABILITY</name>
+          <initializer>= 0x00000013</initializer>
+          <briefdescription>
+<para>Marking percentage 0 ~ 100 for yellow ECT traffic In absence of this attribute, yellow ECT traffic would use SAI_WRED_ATTR_YELLOW_DROP_PROBABILITY value as marking probability. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Valid when SAI_SWITCH_ATTR_ECN_ECT_THRESHOLD_ENABLE == true.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         100 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_YELLOW or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_YELLOW or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_YELLOW_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89a073fd1e7b8f5fbc58597bb88bc3ad890" prot="public">
+          <name>SAI_WRED_ATTR_ECN_RED_MIN_THRESHOLD</name>
+          <initializer>= 0x00000014</initializer>
+          <briefdescription>
+<para>Red minimum threshold for ECT traffic In absence of this attribute, red ECT traffic would use SAI_WRED_ATTR_RED_MIN_THRESHOLD value as min threshold. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Valid when SAI_SWITCH_ATTR_ECN_ECT_THRESHOLD_ENABLE == true. Range 1 - Max Buffer size. default to 0 i.e Maximum buffer size</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_YELLOW_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89a743180acb1b2b7242f98412a05c4e5c7" prot="public">
+          <name>SAI_WRED_ATTR_ECN_RED_MAX_THRESHOLD</name>
+          <initializer>= 0x00000015</initializer>
+          <briefdescription>
+<para>Red maximum threshold for ECT traffic In absence of this attribute, red ECT traffic would use SAI_WRED_ATTR_RED_MAX_THRESHOLD value as max threshold. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Valid when SAI_SWITCH_ATTR_ECN_ECT_THRESHOLD_ENABLE == true. Range 1 - Max Buffer size. default to 0 i.e Maximum buffer size</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_YELLOW_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89a5347cd5f193c90f7e6ae774a6a9d72f0" prot="public">
+          <name>SAI_WRED_ATTR_ECN_RED_MARK_PROBABILITY</name>
+          <initializer>= 0x00000016</initializer>
+          <briefdescription>
+<para>Marking percentage 0 ~ 100 for red ECT traffic In absence of this attribute, red ECT traffic would use SAI_WRED_ATTR_RED_DROP_PROBABILITY value as marking probability. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Valid when SAI_SWITCH_ATTR_ECN_ECT_THRESHOLD_ENABLE == true.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         100 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_YELLOW_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89a0d4b45b0045e6e3ab64515ffcca6ca94" prot="public">
+          <name>SAI_WRED_ATTR_ECN_COLOR_UNAWARE_MIN_THRESHOLD</name>
+          <initializer>= 0x00000017</initializer>
+          <briefdescription>
+<para>Color unaware minimum threshold for ECT traffic. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Range 1 - Max Buffer size. default to 0 i.e Maximum buffer size</para>
+<para>Valid when SAI_SWITCH_ATTR_ECN_ECT_THRESHOLD_ENABLE == true.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89a16169219ff8f2102e2bbfdf5ee269795" prot="public">
+          <name>SAI_WRED_ATTR_ECN_COLOR_UNAWARE_MAX_THRESHOLD</name>
+          <initializer>= 0x00000018</initializer>
+          <briefdescription>
+<para>Color unaware maximum threshold for ECT traffic. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Valid when SAI_SWITCH_ATTR_ECN_ECT_THRESHOLD_ENABLE == true. Range 1 - Max Buffer size. default to 0 i.e Maximum buffer size</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89a8f6e398bdbf0c1c450f5475790ea29f4" prot="public">
+          <name>SAI_WRED_ATTR_ECN_COLOR_UNAWARE_MARK_PROBABILITY</name>
+          <initializer>= 0x00000019</initializer>
+          <briefdescription>
+<para>Marking percentage 0 ~ 100 for color unaware ECT traffic. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Valid when SAI_SWITCH_ATTR_ECN_ECT_THRESHOLD_ENABLE == true.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         100 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89afb3ac8ba174cd55d123498f6a490ef5a" prot="public">
+          <name>SAI_WRED_ATTR_GREEN_MIN_THRESHOLD_64</name>
+          <initializer>= 0x0000001a</initializer>
+          <briefdescription>
+<para>Green minimum threshold bytes for large buffer size. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Range 1 - Max Buffer size.</para>
+<para>Default to 0 i.e. maximum buffer size.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_WRED_ATTR_GREEN_ENABLE == true or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_YELLOW or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89a856d786a71a77ac71130615363f4c02e" prot="public">
+          <name>SAI_WRED_ATTR_GREEN_MAX_THRESHOLD_64</name>
+          <initializer>= 0x0000001b</initializer>
+          <briefdescription>
+<para>Green maximum threshold for large buffer size. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Range 1 - Max Buffer size. Default to 0 i.e. maximum buffer size.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_WRED_ATTR_GREEN_ENABLE == true or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_YELLOW or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89ae5bb3f875be3f0e08a5e1ea084d4be20" prot="public">
+          <name>SAI_WRED_ATTR_YELLOW_MIN_THRESHOLD_64</name>
+          <initializer>= 0x0000001c</initializer>
+          <briefdescription>
+<para>Yellow minimum threshold for large buffer size. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Range 1 - Max Buffer size. default to 0 i.e Maximum buffer size</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_WRED_ATTR_YELLOW_ENABLE == true or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_YELLOW or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_YELLOW or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_YELLOW_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89a12837288b8d46046696eacc91bf31213" prot="public">
+          <name>SAI_WRED_ATTR_YELLOW_MAX_THRESHOLD_64</name>
+          <initializer>= 0x0000001d</initializer>
+          <briefdescription>
+<para>Yellow maximum threshold for large buffer size. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Range 1 - Max Buffer size. default to 0 i.e Maximum buffer size</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_WRED_ATTR_YELLOW_ENABLE == true or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_YELLOW or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_YELLOW or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_YELLOW_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89ae6540e69d60485a7eb2f79e7e53c6e2b" prot="public">
+          <name>SAI_WRED_ATTR_RED_MIN_THRESHOLD_64</name>
+          <initializer>= 0x0000001e</initializer>
+          <briefdescription>
+<para>Red minimum threshold for large buffer size. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Range 1 - Max Buffer size. default to 0 i.e Maximum buffer size</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_WRED_ATTR_RED_ENABLE == true or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_YELLOW_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89a3706598cb19d3c63630133ebf217fe29" prot="public">
+          <name>SAI_WRED_ATTR_RED_MAX_THRESHOLD_64</name>
+          <initializer>= 0x0000001f</initializer>
+          <briefdescription>
+<para>Red maximum threshold for large buffer size. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Range 1 - Max Buffer size. default to 0 i.e Maximum buffer size</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_WRED_ATTR_RED_ENABLE == true or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_YELLOW_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89a6fdddc751e785e67e497dcfd1e7b7df7" prot="public">
+          <name>SAI_WRED_ATTR_ECN_GREEN_MIN_THRESHOLD_64</name>
+          <initializer>= 0x00000020</initializer>
+          <briefdescription>
+<para>Green minimum threshold bytes for ECT traffic for large buffer size. In absence of this attribute, green ECT traffic would use SAI_WRED_ATTR_GREEN_MIN_THRESHOLD_64 value as min threshold. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Valid when SAI_SWITCH_ATTR_ECN_ECT_THRESHOLD_ENABLE == true. Range 1 - Max Buffer size.</para>
+<para>Default to 0 i.e. maximum buffer size.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_YELLOW or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89ab4e62009c2c6946a4ad94ea0fab9877d" prot="public">
+          <name>SAI_WRED_ATTR_ECN_GREEN_MAX_THRESHOLD_64</name>
+          <initializer>= 0x00000021</initializer>
+          <briefdescription>
+<para>Green maximum threshold bytes for ECT traffic for large buffer size. In absence of this attribute, green ECT traffic would use SAI_WRED_ATTR_GREEN_MAX_THRESHOLD_64 value as max threshold. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Valid when SAI_SWITCH_ATTR_ECN_ECT_THRESHOLD_ENABLE == true. Range 1 - Max Buffer size. Default to 0 i.e. maximum buffer size.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_YELLOW or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89a256f14454cb9e9345a43ae322cfb98c9" prot="public">
+          <name>SAI_WRED_ATTR_ECN_YELLOW_MIN_THRESHOLD_64</name>
+          <initializer>= 0x00000022</initializer>
+          <briefdescription>
+<para>Yellow minimum threshold for ECT traffic for large buffer size. In absence of this attribute, yellow ECT traffic would use SAI_WRED_ATTR_YELLOW_MIN_THRESHOLD_64 value as min threshold. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Valid when SAI_SWITCH_ATTR_ECN_ECT_THRESHOLD_ENABLE == true. Range 1 - Max Buffer size. default to 0 i.e Maximum buffer size</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_YELLOW or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_YELLOW or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_YELLOW_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89a0d2b034585158b9394995117e7105382" prot="public">
+          <name>SAI_WRED_ATTR_ECN_YELLOW_MAX_THRESHOLD_64</name>
+          <initializer>= 0x00000023</initializer>
+          <briefdescription>
+<para>Yellow maximum threshold for ECT traffic for large buffer size. In absence of this attribute, yellow ECT traffic would use SAI_WRED_ATTR_YELLOW_MAX_THRESHOLD_64 value as max threshold. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Valid when SAI_SWITCH_ATTR_ECN_ECT_THRESHOLD_ENABLE == true. Range 1 - Max Buffer size. default to 0 i.e Maximum buffer size</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_YELLOW or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_YELLOW or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_YELLOW_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89a6d3a7db23ed13ab421d9101f35e651b3" prot="public">
+          <name>SAI_WRED_ATTR_ECN_RED_MIN_THRESHOLD_64</name>
+          <initializer>= 0x00000024</initializer>
+          <briefdescription>
+<para>Red minimum threshold for ECT traffic for large buffer size. In absence of this attribute, red ECT traffic would use SAI_WRED_ATTR_RED_MIN_THRESHOLD_64 value as min threshold. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Valid when SAI_SWITCH_ATTR_ECN_ECT_THRESHOLD_ENABLE == true. Range 1 - Max Buffer size. default to 0 i.e Maximum buffer size</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_YELLOW_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89aaebc1947f1639dfd9e6d76ce13bbe816" prot="public">
+          <name>SAI_WRED_ATTR_ECN_RED_MAX_THRESHOLD_64</name>
+          <initializer>= 0x00000025</initializer>
+          <briefdescription>
+<para>Red maximum threshold for ECT traffic for large buffer size In absence of this attribute, red ECT traffic would use SAI_WRED_ATTR_RED_MAX_THRESHOLD_64 value as max threshold. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Valid when SAI_SWITCH_ATTR_ECN_ECT_THRESHOLD_ENABLE == true. Range 1 - Max Buffer size. default to 0 i.e Maximum buffer size</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_GREEN_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_YELLOW_RED or SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89a75432004f44f7e3a7e4be04ded312c5f" prot="public">
+          <name>SAI_WRED_ATTR_ECN_COLOR_UNAWARE_MIN_THRESHOLD_64</name>
+          <initializer>= 0x00000026</initializer>
+          <briefdescription>
+<para>Color unaware minimum threshold for ECT traffic for large buffer size. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Range 1 - Max Buffer size. default to 0 i.e Maximum buffer size</para>
+<para>Valid when SAI_SWITCH_ATTR_ECN_ECT_THRESHOLD_ENABLE == true.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89a944f4c19c592a48ad24276b7752c1b8a" prot="public">
+          <name>SAI_WRED_ATTR_ECN_COLOR_UNAWARE_MAX_THRESHOLD_64</name>
+          <initializer>= 0x00000027</initializer>
+          <briefdescription>
+<para>Color unaware maximum threshold for ECT traffic for large buffer size. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Valid when SAI_SWITCH_ATTR_ECN_ECT_THRESHOLD_ENABLE == true. Range 1 - Max Buffer size. default to 0 i.e Maximum buffer size</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_WRED_ATTR_ECN_MARK_MODE == SAI_ECN_MARK_MODE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89ae78ff046e6b47e09fdfd7f1d8289fbdf" prot="public">
+          <name>SAI_WRED_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89a336d2383732dd71933219bcad6a66e93" prot="public">
+          <name>SAI_WRED_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89aff2c50fc6d4fe0259d36de16abdc7c15" prot="public">
+          <name>SAI_WRED_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum defining WRED profile attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiwred.h" line="70" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiwred.h" bodystart="71" bodyend="626"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIWRED_1gab1f20772e808acf0d968827cd35ff5b6" prot="public" static="no">
+        <type>enum <ref refid="group__SAIWRED_1ga641f8567d50f41e99a321f7be23e212d" kindref="member">_sai_ecn_mark_mode_t</ref></type>
+        <definition>typedef enum _sai_ecn_mark_mode_t sai_ecn_mark_mode_t</definition>
+        <argsstring></argsstring>
+        <name>sai_ecn_mark_mode_t</name>
+        <briefdescription>
+<para>Attribute data for <ref refid="group__SAIWRED_1ggae3d96cebd897bc0ef674a81de5248c89a18bc27fa1e1551d5b6afbd90972a450f" kindref="member">SAI_WRED_ATTR_ECN_MARK_MODE</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiwred.h" line="65" column="21"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIWRED_1gaeb718a1a68d299019fd1faf40815f657" prot="public" static="no">
+        <type>enum <ref refid="group__SAIWRED_1gae3d96cebd897bc0ef674a81de5248c89" kindref="member">_sai_wred_attr_t</ref></type>
+        <definition>typedef enum _sai_wred_attr_t sai_wred_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_wred_attr_t</name>
+        <briefdescription>
+<para>Enum defining WRED profile attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiwred.h" line="626" column="17"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIWRED_1gad126dadce18f4d0f371f251e4654912d" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_wred_fn) (_Out_ sai_object_id_t *wred_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *wred_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_wred_fn</name>
+        <briefdescription>
+<para>Create WRED Profile. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">wred_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>WRED profile Id. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch Id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiwred.h" line="638" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiwred.h" bodystart="638" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIWRED_1ga3b7b9cc59df9a6a2b7e5d83098c89dcf" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_wred_fn) (_In_ sai_object_id_t wred_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t wred_id)</argsstring>
+        <name>sai_remove_wred_fn</name>
+        <briefdescription>
+<para>Remove WRED Profile. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">wred_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>WRED profile Id.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiwred.h" line="651" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiwred.h" bodystart="651" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIWRED_1ga2b7f0a11875da945038ba384c3a592aa" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_wred_attribute_fn) (_In_ sai_object_id_t wred_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t wred_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_wred_attribute_fn</name>
+        <briefdescription>
+<para>Set attributes to WRED profile. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">wred_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>WRED profile Id. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiwred.h" line="662" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiwred.h" bodystart="662" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIWRED_1ga1f6e6bab88ad3e3756578acbdbe09e14" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_wred_attribute_fn) (_In_ sai_object_id_t wred_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t wred_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_wred_attribute_fn</name>
+        <briefdescription>
+<para>Get WRED profile attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">wred_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>WRED Profile Id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiwred.h" line="675" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiwred.h" bodystart="675" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIWRED_1ga4551c847f491a4f3c78f315c8b50d386" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__wred__api__t" kindref="compound">_sai_wred_api_t</ref></type>
+        <definition>typedef struct _sai_wred_api_t sai_wred_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_wred_api_t</name>
+        <briefdescription>
+<para>WRED methods table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiwred.h" line="690" column="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

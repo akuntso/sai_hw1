@@ -1,0 +1,1312 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__attr__metadata__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_attr_metadata_t</compoundname>
+    <includes refid="saimetadatatypes_8h" local="no">saimetadatatypes.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1abb8b24b6b025948b2a30cccc90d23b73" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga1ca8e8725c9b140661ffae60b880fe95" kindref="member">sai_object_type_t</ref></type>
+        <definition>sai_object_type_t _sai_attr_metadata_t::objecttype</definition>
+        <argsstring></argsstring>
+        <name>objecttype</name>
+        <briefdescription>
+<para>Specifies valid SAI object type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="924" column="49" bodyfile="saimetadatatypes.h" bodystart="924" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1ad37b05d77b301a4379d14e3aeb0bad7c" prot="public" static="no" mutable="no">
+        <type>sai_attr_id_t</type>
+        <definition>sai_attr_id_t _sai_attr_metadata_t::attrid</definition>
+        <argsstring></argsstring>
+        <name>attrid</name>
+        <briefdescription>
+<para>Specifies valid attribute id for this object type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="929" column="49" bodyfile="saimetadatatypes.h" bodystart="929" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a36ae0b2707567d7c8ac23c63df804de7" prot="public" static="no" mutable="no">
+        <type>const char *const</type>
+        <definition>const char* const _sai_attr_metadata_t::attridname</definition>
+        <argsstring></argsstring>
+        <name>attridname</name>
+        <briefdescription>
+<para>Specifies valid attribute id name for this object type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="934" column="48" bodyfile="saimetadatatypes.h" bodystart="934" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1ad524189ace7ee077991c8f98a07922ff" prot="public" static="no" mutable="no">
+        <type>const char *const</type>
+        <definition>const char* const _sai_attr_metadata_t::brief</definition>
+        <argsstring></argsstring>
+        <name>brief</name>
+        <briefdescription>
+<para>Extracted brief description from Doxygen comment. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="939" column="48" bodyfile="saimetadatatypes.h" bodystart="939" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a8c1377e48a005d4f322320a7bf7ae33a" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIMETADATATYPES_1gab83b6ea7e43cbb4cddb2371f228ed785" kindref="member">sai_attr_value_type_t</ref></type>
+        <definition>sai_attr_value_type_t _sai_attr_metadata_t::attrvaluetype</definition>
+        <argsstring></argsstring>
+        <name>attrvaluetype</name>
+        <briefdescription>
+<para>Specifies attribute value type for this attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="944" column="49" bodyfile="saimetadatatypes.h" bodystart="944" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1ac839b70b2188a70f097b3564be7bae7f" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIMETADATATYPES_1ga582019ce7917089f3c33a4f8ed765ef5" kindref="member">sai_attr_flags_t</ref></type>
+        <definition>sai_attr_flags_t _sai_attr_metadata_t::flags</definition>
+        <argsstring></argsstring>
+        <name>flags</name>
+        <briefdescription>
+<para>Specifies flags for this attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="949" column="49" bodyfile="saimetadatatypes.h" bodystart="949" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a2bb3acb04b558ef8c6f0f4e265caa439" prot="public" static="no" mutable="no">
+        <type>const <ref refid="group__SAITYPES_1ga1ca8e8725c9b140661ffae60b880fe95" kindref="member">sai_object_type_t</ref> *const</type>
+        <definition>const sai_object_type_t* const _sai_attr_metadata_t::allowedobjecttypes</definition>
+        <argsstring></argsstring>
+        <name>allowedobjecttypes</name>
+        <briefdescription>
+<para>Specified allowed object types. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If object attr value type is OBJECT_ID this list specifies what object type can be used. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="957" column="48" bodyfile="saimetadatatypes.h" bodystart="957" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a4ae0225e79fc0815487026fe4c243b5d" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t _sai_attr_metadata_t::allowedobjecttypeslength</definition>
+        <argsstring></argsstring>
+        <name>allowedobjecttypeslength</name>
+        <briefdescription>
+<para>Length of allowed object types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="962" column="49" bodyfile="saimetadatatypes.h" bodystart="962" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a597fea8ffe1bfecd7777bca96550edd9" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_attr_metadata_t::allowrepetitiononlist</definition>
+        <argsstring></argsstring>
+        <name>allowrepetitiononlist</name>
+        <briefdescription>
+<para>Allows repetitions on object list. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Can be useful when using object id list. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="969" column="49" bodyfile="saimetadatatypes.h" bodystart="969" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a5e76cce5ae418d81167bbf660979fba5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_attr_metadata_t::allowmixedobjecttypes</definition>
+        <argsstring></argsstring>
+        <name>allowmixedobjecttypes</name>
+        <briefdescription>
+<para>Allows mixed object id types on list like port and LAG. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="975" column="49" bodyfile="saimetadatatypes.h" bodystart="975" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1af1f7f9afa6f8b510700bcc4bbd957a99" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_attr_metadata_t::allowemptylist</definition>
+        <argsstring></argsstring>
+        <name>allowemptylist</name>
+        <briefdescription>
+<para>Allows empty list to be set on list value type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="980" column="49" bodyfile="saimetadatatypes.h" bodystart="980" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a44a41d8699da2fd59fe600a92528197e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_attr_metadata_t::allownullobjectid</definition>
+        <argsstring></argsstring>
+        <name>allownullobjectid</name>
+        <briefdescription>
+<para>Allows null object id to be passed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If object attr value type is OBJECT_ID it tells whether SAI_NULL_OBJECT_ID can be used as actual id. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="989" column="49" bodyfile="saimetadatatypes.h" bodystart="989" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a00fc5942206ee5e84adbc3651b8dc328" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_attr_metadata_t::isoidattribute</definition>
+        <argsstring></argsstring>
+        <name>isoidattribute</name>
+        <briefdescription>
+<para>Determines whether attribute contains OIDs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="994" column="49" bodyfile="saimetadatatypes.h" bodystart="994" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a1c4b0a1298f45bfe1dd8827424f2207f" prot="public" static="no" mutable="no">
+        <type>const <ref refid="group__SAIMETADATATYPES_1ga2ec64f076a67f925f2dfd2384d7274f5" kindref="member">sai_default_value_type_t</ref></type>
+        <definition>const sai_default_value_type_t _sai_attr_metadata_t::defaultvaluetype</definition>
+        <argsstring></argsstring>
+        <name>defaultvaluetype</name>
+        <briefdescription>
+<para>Specifies default value type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Default value can be a const assigned by switch (which is not known at compile), can be obtained by GET API, or a min/max value in specific range also assigned by switch at run time.</para>
+<para>Default value can be also an object id. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1006" column="49" bodyfile="saimetadatatypes.h" bodystart="1006" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a2457f5e4e015eb009a86c04de3ee0086" prot="public" static="no" mutable="no">
+        <type>const <ref refid="group__SAITYPES_1gab42aceb4b4dd647f478c9e5123a60aec" kindref="member">sai_attribute_value_t</ref> *const</type>
+        <definition>const sai_attribute_value_t* const _sai_attr_metadata_t::defaultvalue</definition>
+        <argsstring></argsstring>
+        <name>defaultvalue</name>
+        <briefdescription>
+<para>Provides default value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If creation flag is CREATE_ONLY or CREATE_AND_SET then default value must be provided for attribute.</para>
+<para><simplesect kind="note"><para>Default value may not apply for ACL field or ACL entry, need special care. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1017" column="48" bodyfile="saimetadatatypes.h" bodystart="1017" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a7e95075fcefc4e1a4804e825f8ca99e3" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga1ca8e8725c9b140661ffae60b880fe95" kindref="member">sai_object_type_t</ref></type>
+        <definition>sai_object_type_t _sai_attr_metadata_t::defaultvalueobjecttype</definition>
+        <argsstring></argsstring>
+        <name>defaultvalueobjecttype</name>
+        <briefdescription>
+<para>Default value object type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Required when default value type is pointing to different object type. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1025" column="49" bodyfile="saimetadatatypes.h" bodystart="1025" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1ab90de05a1b0862f6a016a31b05efb2af" prot="public" static="no" mutable="no">
+        <type>sai_attr_id_t</type>
+        <definition>sai_attr_id_t _sai_attr_metadata_t::defaultvalueattrid</definition>
+        <argsstring></argsstring>
+        <name>defaultvalueattrid</name>
+        <briefdescription>
+<para>Default value object id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Required when default value type is pointing to different object attribute. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1033" column="49" bodyfile="saimetadatatypes.h" bodystart="1033" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1af96c85880c324226b8585e7822a1e0a0" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_attr_metadata_t::storedefaultvalue</definition>
+        <argsstring></argsstring>
+        <name>storedefaultvalue</name>
+        <briefdescription>
+<para>Indicates whether default value needs to be saved. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>When switch is created some objects are created internally like vlan 1, vlan members, bridge port, virtual router etc. Some of those objects has attributes assigned by vendor like switch MAC address. When user changes that value then there is no way to go back and set it&apos;s previous value if user didn&apos;t query it first. This member will indicate whether user needs to query it first (and store) before change, if he wants to bring original attribute value later.</para>
+<para>Some of those attributes can be OID attributes with flags MANDATORY_ON_CREATE and CREATE_AND_SET. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1049" column="49" bodyfile="saimetadatatypes.h" bodystart="1049" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a261e2a9acb55cb4763998a0e848029ff" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_attr_metadata_t::isenum</definition>
+        <argsstring></argsstring>
+        <name>isenum</name>
+        <briefdescription>
+<para>Indicates whether attribute is enum value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Attribute type must be set as INT32.</para>
+<para><simplesect kind="note"><para>Could be deduced from enum type string or enum vector values and attr value type. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1059" column="49" bodyfile="saimetadatatypes.h" bodystart="1059" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a19fbc7e364cfdee31f6dc6012e7f245f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_attr_metadata_t::isenumlist</definition>
+        <argsstring></argsstring>
+        <name>isenumlist</name>
+        <briefdescription>
+<para>Indicates whether attribute is enum list value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Attribute value must be set INT32 LIST.</para>
+<para><simplesect kind="note"><para>Could be deduced from enum type string or enum vector values and attr value type. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1069" column="49" bodyfile="saimetadatatypes.h" bodystart="1069" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a3bb699253f47f2ca66486fb002aed31d" prot="public" static="no" mutable="no">
+        <type>const <ref refid="group__SAIMETADATATYPES_1ga3958ad8fbdf3830857358199fe733509" kindref="member">sai_enum_metadata_t</ref> *const</type>
+        <definition>const sai_enum_metadata_t* const _sai_attr_metadata_t::enummetadata</definition>
+        <argsstring></argsstring>
+        <name>enummetadata</name>
+        <briefdescription>
+<para>Provides enum metadata if attribute is enum or enum list. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1075" column="48" bodyfile="saimetadatatypes.h" bodystart="1075" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a257d8b0e49036337db27c13dbda035d5" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIMETADATATYPES_1ga6a3a61c74e9ef2a9542e1725b5b340cb" kindref="member">sai_attr_condition_type_t</ref></type>
+        <definition>sai_attr_condition_type_t _sai_attr_metadata_t::conditiontype</definition>
+        <argsstring></argsstring>
+        <name>conditiontype</name>
+        <briefdescription>
+<para>Specifies condition type of attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Currently all conditions are &quot;OR&quot; conditions so we can deduce if this is conditional type if any conditions are defined. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1084" column="49" bodyfile="saimetadatatypes.h" bodystart="1084" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a72449f8300474c48ddadf8260cdbf868" prot="public" static="no" mutable="no">
+        <type>const <ref refid="group__SAIMETADATATYPES_1gad02c157058b7eee2ad51834999e72899" kindref="member">sai_attr_condition_t</ref> *const  *const</type>
+        <definition>const sai_attr_condition_t* const* const _sai_attr_metadata_t::conditions</definition>
+        <argsstring></argsstring>
+        <name>conditions</name>
+        <briefdescription>
+<para>Provide conditions for attribute under which this attribute will be mandatory on create. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1090" column="47" bodyfile="saimetadatatypes.h" bodystart="1090" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a6bcd5cabc6f0e4630b95d82ac86fdd9f" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t _sai_attr_metadata_t::conditionslength</definition>
+        <argsstring></argsstring>
+        <name>conditionslength</name>
+        <briefdescription>
+<para>Length of the conditions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1095" column="49" bodyfile="saimetadatatypes.h" bodystart="1095" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1aa2865d5325e57865d9b8fe539a667617" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_attr_metadata_t::isconditional</definition>
+        <argsstring></argsstring>
+        <name>isconditional</name>
+        <briefdescription>
+<para>Indicates whether attribute is conditional. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1100" column="49" bodyfile="saimetadatatypes.h" bodystart="1100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a77f2873cb5e150a72f6939c688a1a2bc" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIMETADATATYPES_1ga6a3a61c74e9ef2a9542e1725b5b340cb" kindref="member">sai_attr_condition_type_t</ref></type>
+        <definition>sai_attr_condition_type_t _sai_attr_metadata_t::validonlytype</definition>
+        <argsstring></argsstring>
+        <name>validonlytype</name>
+        <briefdescription>
+<para>Specifies valid only type of attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Currently all valid only are &quot;OR&quot; conditions so we can deduce if this is conditional type if any conditions are defined. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1109" column="49" bodyfile="saimetadatatypes.h" bodystart="1109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1af19a9427dcb5a47b1ce9bf5d53d0f7f8" prot="public" static="no" mutable="no">
+        <type>const <ref refid="group__SAIMETADATATYPES_1gad02c157058b7eee2ad51834999e72899" kindref="member">sai_attr_condition_t</ref> *const  *const</type>
+        <definition>const sai_attr_condition_t* const* const _sai_attr_metadata_t::validonly</definition>
+        <argsstring></argsstring>
+        <name>validonly</name>
+        <briefdescription>
+<para>Provides conditions when this attribute is valid. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If conditions are specified (OR condition assumed) then this attribute is only valid when different attribute has condition value set. Valid only attribute (against we check) can be dynamic so this attribute can&apos;t be marked as MANDATORY on create since default value will be required.</para>
+<para><simplesect kind="note"><para>There is only handful of attributes with valid only mark. For now we will check that in specific attribute logic. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1125" column="47" bodyfile="saimetadatatypes.h" bodystart="1125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a8a5b02e41373c3b37f3ebfb431c41a42" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t _sai_attr_metadata_t::validonlylength</definition>
+        <argsstring></argsstring>
+        <name>validonlylength</name>
+        <briefdescription>
+<para>Length of the valid only when conditions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1130" column="49" bodyfile="saimetadatatypes.h" bodystart="1130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1aa499f1b6aaf7cacfe94a8bb3d8febb3c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_attr_metadata_t::isvalidonly</definition>
+        <argsstring></argsstring>
+        <name>isvalidonly</name>
+        <briefdescription>
+<para>Indicates whether attribute is valid only. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1135" column="49" bodyfile="saimetadatatypes.h" bodystart="1135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a0ffecf292dc6bc7ae90bb7af7e6de5a2" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_attr_metadata_t::getsave</definition>
+        <argsstring></argsstring>
+        <name>getsave</name>
+        <briefdescription>
+<para>When calling GET API result will be put in local db for future use (extra logic). </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This flag must be taken with care, since when set on dynamic attribute it may provide inconsistent data.</para>
+<para>Value should be updated after successful set or remove. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1146" column="49" bodyfile="saimetadatatypes.h" bodystart="1146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a0b5d08d44ffebde78bd8385673647234" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_attr_metadata_t::isvlan</definition>
+        <argsstring></argsstring>
+        <name>isvlan</name>
+        <briefdescription>
+<para>Determines whether value is vlan. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Can only be set on sai_uint16_t value type. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1153" column="49" bodyfile="saimetadatatypes.h" bodystart="1153" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a688fd8f27842af7d0e7a887f4a04937c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_attr_metadata_t::isaclfield</definition>
+        <argsstring></argsstring>
+        <name>isaclfield</name>
+        <briefdescription>
+<para>Determines whether attribute is ACL field. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This will become handy for fast determination whether default value is present. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1161" column="49" bodyfile="saimetadatatypes.h" bodystart="1161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a020d73a8021eef793a1a1eeb20c7b186" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_attr_metadata_t::isaclaction</definition>
+        <argsstring></argsstring>
+        <name>isaclaction</name>
+        <briefdescription>
+<para>Determines whether attribute is ACL action. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This will become handy for fast determination whether default value is present. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1169" column="49" bodyfile="saimetadatatypes.h" bodystart="1169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a476720bf0cc6cca679f02573368bcb1e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_attr_metadata_t::isaclmask</definition>
+        <argsstring></argsstring>
+        <name>isaclmask</name>
+        <briefdescription>
+<para>Determines whether attribute is ACL mask. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Can only be set for ACL table mask </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1176" column="49" bodyfile="saimetadatatypes.h" bodystart="1176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a7b6117e00e43445ff8a699a3032d60d6" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_attr_metadata_t::ismandatoryoncreate</definition>
+        <argsstring></argsstring>
+        <name>ismandatoryoncreate</name>
+        <briefdescription>
+<para>Determines whether attribute is mandatory on create. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1181" column="49" bodyfile="saimetadatatypes.h" bodystart="1181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a8fd61aa32de20f50797134c1b1d3da16" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_attr_metadata_t::iscreateonly</definition>
+        <argsstring></argsstring>
+        <name>iscreateonly</name>
+        <briefdescription>
+<para>Determines whether attribute is create only. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1186" column="49" bodyfile="saimetadatatypes.h" bodystart="1186" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a80d8ca4c963f82d3f2dd3b29f9167686" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_attr_metadata_t::iscreateandset</definition>
+        <argsstring></argsstring>
+        <name>iscreateandset</name>
+        <briefdescription>
+<para>Determines whether attribute is create and set. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1191" column="49" bodyfile="saimetadatatypes.h" bodystart="1191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a78bd0db55007c66d4ad6c97d94ecf817" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_attr_metadata_t::isreadonly</definition>
+        <argsstring></argsstring>
+        <name>isreadonly</name>
+        <briefdescription>
+<para>Determines whether attribute is read only. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1196" column="49" bodyfile="saimetadatatypes.h" bodystart="1196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a18bd14c66068172b4440ecbc02a9ab3f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_attr_metadata_t::iskey</definition>
+        <argsstring></argsstring>
+        <name>iskey</name>
+        <briefdescription>
+<para>Determines whether attribute is key. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1201" column="49" bodyfile="saimetadatatypes.h" bodystart="1201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a115165449986b2416027897979172e96" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_attr_metadata_t::isprimitive</definition>
+        <argsstring></argsstring>
+        <name>isprimitive</name>
+        <briefdescription>
+<para>Determines whether attribute value is primitive. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Primitive values will not contain any pointers so value can be transferred by regular assignment operator. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1209" column="49" bodyfile="saimetadatatypes.h" bodystart="1209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1aa669cd9768dc22236eb567c0f5b2166c" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _sai_attr_metadata_t::notificationtype</definition>
+        <argsstring></argsstring>
+        <name>notificationtype</name>
+        <briefdescription>
+<para>Notification type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If attribute value type is POINTER then attribute value is pointer to switch notification. Enum sai_switch_notification_type_t is auto generated so it can&apos;t be used here, int will be used instead. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1219" column="49" bodyfile="saimetadatatypes.h" bodystart="1219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a93123c16a4ed69bc66369685af9dc999" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_attr_metadata_t::iscallback</definition>
+        <argsstring></argsstring>
+        <name>iscallback</name>
+        <briefdescription>
+<para>Is callback function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Set to true if attribute is callback function but not notification. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1226" column="49" bodyfile="saimetadatatypes.h" bodystart="1226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a36d8fcb36f85a9b6d665550cd8baf48d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _sai_attr_metadata_t::pointertype</definition>
+        <argsstring></argsstring>
+        <name>pointertype</name>
+        <briefdescription>
+<para>Pointer type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If attribute value type is POINTER then attribute value is pointer to switch. Enum sai_switch_pointer_type_t is auto generated so it can&apos;t be used here, int will be used instead. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1236" column="49" bodyfile="saimetadatatypes.h" bodystart="1236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a64004b295f73b01ec4ddffa35c218360" prot="public" static="no" mutable="no">
+        <type>const <ref refid="group__SAIMETADATATYPES_1ga0774525a623e7349f9a5e45656512f75" kindref="member">sai_attr_capability_metadata_t</ref> *const  *const</type>
+        <definition>const sai_attr_capability_metadata_t* const* const _sai_attr_metadata_t::capability</definition>
+        <argsstring></argsstring>
+        <name>capability</name>
+        <briefdescription>
+<para>Attribute capabilities. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Represents attribute capability for each specific ASIC. Since each vendor may support different capabilities for each attribute, this field is optional. Also, since SAI API supports multiple switches (switch ids) at the same time, then switches may support different capabilities on different attributes. Vendor ID is provided inside capability struct for difference.</para>
+<para>This data is designed for vendor internal usage. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1250" column="54" bodyfile="saimetadatatypes.h" bodystart="1250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a00ace41aa196f88b2852d46a48132f79" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t _sai_attr_metadata_t::capabilitylength</definition>
+        <argsstring></argsstring>
+        <name>capabilitylength</name>
+        <briefdescription>
+<para>Length of attribute capabilities. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1255" column="49" bodyfile="saimetadatatypes.h" bodystart="1255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a52d33df3643cc53b9e9ffd106d4feef0" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_attr_metadata_t::isextensionattr</definition>
+        <argsstring></argsstring>
+        <name>isextensionattr</name>
+        <briefdescription>
+<para>Indicates whether attribute is extension attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1260" column="49" bodyfile="saimetadatatypes.h" bodystart="1260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a9362767b371312f5129b9b659746807d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_attr_metadata_t::isresourcetype</definition>
+        <argsstring></argsstring>
+        <name>isresourcetype</name>
+        <briefdescription>
+<para>Tells if attribute is a resource type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If true, attribute is used in getting object type availability to distinguish between pools of resources. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1268" column="49" bodyfile="saimetadatatypes.h" bodystart="1268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a8fab91e53b3010d2fcf498cc488dacc4" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_attr_metadata_t::isdeprecated</definition>
+        <argsstring></argsstring>
+        <name>isdeprecated</name>
+        <briefdescription>
+<para>Indicates whether attribute is deprecated. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If true, attribute is deprecated and should not be used. Is up to vendor to check this field and give run time warning about this attribute. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1276" column="49" bodyfile="saimetadatatypes.h" bodystart="1276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a6fba7efb20ce148c887705dffb261ee8" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_attr_metadata_t::isconditionrelaxed</definition>
+        <argsstring></argsstring>
+        <name>isconditionrelaxed</name>
+        <briefdescription>
+<para>Indicates whether condition is relaxed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If attribute is MANDATORY_ON_CREATE and relaxed flag is set to true then given attribute can be passed to create function even if the condition is not met. If relaxed flag is set to false, then attribute is forbidden to be passed to create function is condition is not met. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1286" column="49" bodyfile="saimetadatatypes.h" bodystart="1286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a637e566281f1042167577600405ed984" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_attr_metadata_t::iscustom</definition>
+        <argsstring></argsstring>
+        <name>iscustom</name>
+        <briefdescription>
+<para>Indicates whether attribute is custom attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Custom attribute values begins with SAI_XXX_ATTR_CUSTOM_RANGE_START. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1293" column="49" bodyfile="saimetadatatypes.h" bodystart="1293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a56db8b8e492cfed8459de887decf2757" prot="public" static="no" mutable="no">
+        <type>sai_api_version_t</type>
+        <definition>sai_api_version_t _sai_attr_metadata_t::apiversion</definition>
+        <argsstring></argsstring>
+        <name>apiversion</name>
+        <briefdescription>
+<para>Specifies API version at which attribute was introduced. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If no version is available, then this value will be SAI_VERSION(0,0,0).</para>
+<para>This field should be used with nextrelease field. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1302" column="49" bodyfile="saimetadatatypes.h" bodystart="1302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__metadata__t_1a7be7009b22ec8b0ecdd8e396e7b72d7f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_attr_metadata_t::nextrelease</definition>
+        <argsstring></argsstring>
+        <name>nextrelease</name>
+        <briefdescription>
+<para>Specified whether attribute will be present in next API release. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It may happen that there are new attributes defined after stable release, and they will be part of next release. In this case API version will have value of current API version and nextrelease set to true.</para>
+<para>For example, if attr is defined between v1.14 and v1.15, then API version will be v1.15 and next release is false. If attr is defined on top of v1.15 and there is not next release defined, then API version will be v1.15 and next release set to true. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1316" column="49" bodyfile="saimetadatatypes.h" bodystart="1316" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines attribute metadata. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="51">
+        <label>_sai_port_snr_values_t</label>
+        <link refid="struct__sai__port__snr__values__t"/>
+      </node>
+      <node id="60">
+        <label>_sai_enum_metadata_t</label>
+        <link refid="struct__sai__enum__metadata__t"/>
+      </node>
+      <node id="4">
+        <label>_sai_attr_condition_t</label>
+        <link refid="struct__sai__attr__condition__t"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>condition</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>_sai_u16_range_list_t</label>
+        <link refid="struct__sai__u16__range__list__t"/>
+        <childnode refid="17" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="35">
+        <label>_sai_system_port_config_list_t</label>
+        <link refid="struct__sai__system__port__config__list__t"/>
+        <childnode refid="36" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="41">
+        <label>_sai_port_frequency_offset_ppm_list_t</label>
+        <link refid="struct__sai__port__frequency__offset__ppm__list__t"/>
+        <childnode refid="42" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>_sai_acl_resource_t</label>
+        <link refid="struct__sai__acl__resource__t"/>
+      </node>
+      <node id="13">
+        <label>_sai_qos_map_list_t</label>
+        <link refid="struct__sai__qos__map__list__t"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="39">
+        <label>_sai_fabric_port_reachability_t</label>
+        <link refid="struct__sai__fabric__port__reachability__t"/>
+      </node>
+      <node id="1">
+        <label>_sai_attr_metadata_t</label>
+        <link refid="struct__sai__attr__metadata__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>capability</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>conditions</edgelabel>
+          <edgelabel>validonly</edgelabel>
+        </childnode>
+        <childnode refid="60" relation="usage">
+          <edgelabel>enummetadata</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>defaultvalue</edgelabel>
+        </childnode>
+      </node>
+      <node id="46">
+        <label>_sai_acl_action_data_t</label>
+        <link refid="struct__sai__acl__action__data__t"/>
+        <childnode refid="47" relation="usage">
+          <edgelabel>parameter</edgelabel>
+        </childnode>
+      </node>
+      <node id="36">
+        <label>_sai_system_port_config_t</label>
+        <link refid="struct__sai__system__port__config__t"/>
+      </node>
+      <node id="28">
+        <label>_sai_object_list_t</label>
+        <link refid="struct__sai__object__list__t"/>
+      </node>
+      <node id="14">
+        <label>_sai_qos_map_t</label>
+        <link refid="struct__sai__qos__map__t"/>
+        <childnode refid="15" relation="usage">
+          <edgelabel>key</edgelabel>
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="15">
+        <label>_sai_qos_map_params_t</label>
+        <link refid="struct__sai__qos__map__params__t"/>
+      </node>
+      <node id="53">
+        <label>_sai_s16_list_t</label>
+        <link refid="struct__sai__s16__list__t"/>
+      </node>
+      <node id="26">
+        <label>_sai_acl_field_data_t</label>
+        <link refid="struct__sai__acl__field__data__t"/>
+        <childnode refid="27" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>mask</edgelabel>
+        </childnode>
+      </node>
+      <node id="55">
+        <label>_sai_port_eye_values_list_t</label>
+        <link refid="struct__sai__port__eye__values__list__t"/>
+        <childnode refid="56" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="8">
+        <label>_sai_tlv_t</label>
+        <link refid="struct__sai__tlv__t"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>entry</edgelabel>
+        </childnode>
+      </node>
+      <node id="20">
+        <label>_sai_port_lane_latch_status_list_t</label>
+        <link refid="struct__sai__port__lane__latch__status__list__t"/>
+        <childnode refid="21" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>_sai_tlv_list_t</label>
+        <link refid="struct__sai__tlv__list__t"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="40">
+        <label>_sai_u32_range_t</label>
+        <link refid="struct__sai__u32__range__t"/>
+      </node>
+      <node id="6">
+        <label>_sai_port_err_status_list_t</label>
+        <link refid="struct__sai__port__err__status__list__t"/>
+      </node>
+      <node id="18">
+        <label>_sai_json_t</label>
+        <link refid="struct__sai__json__t"/>
+        <childnode refid="19" relation="usage">
+          <edgelabel>json</edgelabel>
+        </childnode>
+      </node>
+      <node id="37">
+        <label>_sai_segment_list_t</label>
+        <link refid="struct__sai__segment__list__t"/>
+      </node>
+      <node id="19">
+        <label>_sai_s8_list_t</label>
+        <link refid="struct__sai__s8__list__t"/>
+      </node>
+      <node id="5">
+        <label>_sai_attribute_value_t</label>
+        <link refid="union__sai__attribute__value__t"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>porterror</edgelabel>
+        </childnode>
+        <childnode refid="7" relation="usage">
+          <edgelabel>tlvlist</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>aclresource</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>qosmap</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>u16rangelist</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>json</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>portlanelatchstatuslist</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>ipaddrlist</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>aclfield</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>u16list</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>ipprefix</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>aclchainlist</edgelabel>
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>sysportconfiglist</edgelabel>
+        </childnode>
+        <childnode refid="37" relation="usage">
+          <edgelabel>segmentlist</edgelabel>
+        </childnode>
+        <childnode refid="38" relation="usage">
+          <edgelabel>portpowerconsumption</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>latchstatus</edgelabel>
+        </childnode>
+        <childnode refid="39" relation="usage">
+          <edgelabel>reachability</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>sysportconfig</edgelabel>
+        </childnode>
+        <childnode refid="40" relation="usage">
+          <edgelabel>u32range</edgelabel>
+        </childnode>
+        <childnode refid="41" relation="usage">
+          <edgelabel>portfrequencyoffsetppmlist</edgelabel>
+        </childnode>
+        <childnode refid="43" relation="usage">
+          <edgelabel>s32list</edgelabel>
+        </childnode>
+        <childnode refid="44" relation="usage">
+          <edgelabel>ipprefixlist</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>aclmask</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>objlist</edgelabel>
+        </childnode>
+        <childnode refid="45" relation="usage">
+          <edgelabel>timespec</edgelabel>
+        </childnode>
+        <childnode refid="46" relation="usage">
+          <edgelabel>aclaction</edgelabel>
+        </childnode>
+        <childnode refid="48" relation="usage">
+          <edgelabel>vlanlist</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>ipaddr</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>u8list</edgelabel>
+        </childnode>
+        <childnode refid="49" relation="usage">
+          <edgelabel>rx_state</edgelabel>
+        </childnode>
+        <childnode refid="50" relation="usage">
+          <edgelabel>portsnrlist</edgelabel>
+        </childnode>
+        <childnode refid="52" relation="usage">
+          <edgelabel>u32list</edgelabel>
+        </childnode>
+        <childnode refid="53" relation="usage">
+          <edgelabel>s16list</edgelabel>
+        </childnode>
+        <childnode refid="54" relation="usage">
+          <edgelabel>aclcapability</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>s8list</edgelabel>
+        </childnode>
+        <childnode refid="55" relation="usage">
+          <edgelabel>porteyevalues</edgelabel>
+        </childnode>
+        <childnode refid="57" relation="usage">
+          <edgelabel>maplist</edgelabel>
+        </childnode>
+        <childnode refid="59" relation="usage">
+          <edgelabel>s32range</edgelabel>
+        </childnode>
+      </node>
+      <node id="50">
+        <label>_sai_port_snr_list_t</label>
+        <link refid="struct__sai__port__snr__list__t"/>
+        <childnode refid="51" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="27">
+        <label>_sai_acl_field_data_data_t</label>
+        <link refid="union__sai__acl__field__data__data__t"/>
+        <childnode refid="28" relation="usage">
+          <edgelabel>objlist</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>u8list</edgelabel>
+        </childnode>
+      </node>
+      <node id="34">
+        <label>_sai_acl_chain_t</label>
+        <link refid="struct__sai__acl__chain__t"/>
+      </node>
+      <node id="32">
+        <label>_sai_ip_prefix_t</label>
+        <link refid="struct__sai__ip__prefix__t"/>
+        <childnode refid="25" relation="usage">
+          <edgelabel>addr</edgelabel>
+          <edgelabel>mask</edgelabel>
+        </childnode>
+      </node>
+      <node id="52">
+        <label>_sai_u32_list_t</label>
+        <link refid="struct__sai__u32__list__t"/>
+      </node>
+      <node id="17">
+        <label>_sai_u16_range_t</label>
+        <link refid="struct__sai__u16__range__t"/>
+      </node>
+      <node id="48">
+        <label>_sai_vlan_list_t</label>
+        <link refid="struct__sai__vlan__list__t"/>
+      </node>
+      <node id="21">
+        <label>_sai_port_lane_latch_status_t</label>
+        <link refid="struct__sai__port__lane__latch__status__t"/>
+        <childnode refid="22" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="38">
+        <label>_sai_poe_port_power_consumption_t</label>
+        <link refid="struct__sai__poe__port__power__consumption__t"/>
+      </node>
+      <node id="9">
+        <label>_sai_tlv_entry_t</label>
+        <link refid="union__sai__tlv__entry__t"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>hmac</edgelabel>
+        </childnode>
+      </node>
+      <node id="33">
+        <label>_sai_acl_chain_list_t</label>
+        <link refid="struct__sai__acl__chain__list__t"/>
+        <childnode refid="34" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="57">
+        <label>_sai_map_list_t</label>
+        <link refid="struct__sai__map__list__t"/>
+        <childnode refid="58" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="59">
+        <label>_sai_s32_range_t</label>
+        <link refid="struct__sai__s32__range__t"/>
+      </node>
+      <node id="10">
+        <label>_sai_hmac_t</label>
+        <link refid="struct__sai__hmac__t"/>
+      </node>
+      <node id="2">
+        <label>_sai_attr_capability_metadata_t</label>
+        <link refid="struct__sai__attr__capability__metadata__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>operationcapability</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>_sai_acl_field_data_mask_t</label>
+        <link refid="union__sai__acl__field__data__mask__t"/>
+        <childnode refid="29" relation="usage">
+          <edgelabel>u8list</edgelabel>
+        </childnode>
+      </node>
+      <node id="45">
+        <label>_sai_timespec_t</label>
+        <link refid="struct__sai__timespec__t"/>
+      </node>
+      <node id="3">
+        <label>_sai_attr_capability_t</label>
+        <link refid="struct__sai__attr__capability__t"/>
+      </node>
+      <node id="58">
+        <label>_sai_map_t</label>
+        <link refid="struct__sai__map__t"/>
+      </node>
+      <node id="56">
+        <label>_sai_port_lane_eye_values_t</label>
+        <link refid="struct__sai__port__lane__eye__values__t"/>
+      </node>
+      <node id="22">
+        <label>_sai_latch_status_t</label>
+        <link refid="struct__sai__latch__status__t"/>
+      </node>
+      <node id="11">
+        <label>_sai_acl_resource_list_t</label>
+        <link refid="struct__sai__acl__resource__list__t"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>_sai_ip_address_t</label>
+        <link refid="struct__sai__ip__address__t"/>
+        <childnode refid="25" relation="usage">
+          <edgelabel>addr</edgelabel>
+        </childnode>
+      </node>
+      <node id="44">
+        <label>_sai_ip_prefix_list_t</label>
+        <link refid="struct__sai__ip__prefix__list__t"/>
+        <childnode refid="32" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="43">
+        <label>_sai_s32_list_t</label>
+        <link refid="struct__sai__s32__list__t"/>
+      </node>
+      <node id="23">
+        <label>_sai_ip_address_list_t</label>
+        <link refid="struct__sai__ip__address__list__t"/>
+        <childnode refid="24" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>_sai_ip_addr_t</label>
+        <link refid="union__sai__ip__addr__t"/>
+      </node>
+      <node id="29">
+        <label>_sai_u8_list_t</label>
+        <link refid="struct__sai__u8__list__t"/>
+      </node>
+      <node id="31">
+        <label>_sai_u16_list_t</label>
+        <link refid="struct__sai__u16__list__t"/>
+      </node>
+      <node id="47">
+        <label>_sai_acl_action_parameter_t</label>
+        <link refid="union__sai__acl__action__parameter__t"/>
+        <childnode refid="28" relation="usage">
+          <edgelabel>objlist</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>ipaddr</edgelabel>
+        </childnode>
+      </node>
+      <node id="42">
+        <label>_sai_port_frequency_offset_ppm_values_t</label>
+        <link refid="struct__sai__port__frequency__offset__ppm__values__t"/>
+      </node>
+      <node id="54">
+        <label>_sai_acl_capability_t</label>
+        <link refid="struct__sai__acl__capability__t"/>
+        <childnode refid="43" relation="usage">
+          <edgelabel>action_list</edgelabel>
+        </childnode>
+      </node>
+      <node id="49">
+        <label>_sai_prbs_rx_state_t</label>
+        <link refid="struct__sai__prbs__rx__state__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="saimetadatatypes.h" line="919" column="1" bodyfile="saimetadatatypes.h" bodystart="920" bodyend="1318"/>
+    <listofallmembers>
+      <member refid="struct__sai__attr__metadata__t_1a2bb3acb04b558ef8c6f0f4e265caa439" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>allowedobjecttypes</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a4ae0225e79fc0815487026fe4c243b5d" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>allowedobjecttypeslength</name></member>
+      <member refid="struct__sai__attr__metadata__t_1af1f7f9afa6f8b510700bcc4bbd957a99" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>allowemptylist</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a5e76cce5ae418d81167bbf660979fba5" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>allowmixedobjecttypes</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a44a41d8699da2fd59fe600a92528197e" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>allownullobjectid</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a597fea8ffe1bfecd7777bca96550edd9" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>allowrepetitiononlist</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a56db8b8e492cfed8459de887decf2757" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>apiversion</name></member>
+      <member refid="struct__sai__attr__metadata__t_1ad37b05d77b301a4379d14e3aeb0bad7c" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>attrid</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a36ae0b2707567d7c8ac23c63df804de7" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>attridname</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a8c1377e48a005d4f322320a7bf7ae33a" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>attrvaluetype</name></member>
+      <member refid="struct__sai__attr__metadata__t_1ad524189ace7ee077991c8f98a07922ff" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>brief</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a64004b295f73b01ec4ddffa35c218360" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>capability</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a00ace41aa196f88b2852d46a48132f79" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>capabilitylength</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a72449f8300474c48ddadf8260cdbf868" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>conditions</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a6bcd5cabc6f0e4630b95d82ac86fdd9f" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>conditionslength</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a257d8b0e49036337db27c13dbda035d5" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>conditiontype</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a2457f5e4e015eb009a86c04de3ee0086" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>defaultvalue</name></member>
+      <member refid="struct__sai__attr__metadata__t_1ab90de05a1b0862f6a016a31b05efb2af" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>defaultvalueattrid</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a7e95075fcefc4e1a4804e825f8ca99e3" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>defaultvalueobjecttype</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a1c4b0a1298f45bfe1dd8827424f2207f" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>defaultvaluetype</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a3bb699253f47f2ca66486fb002aed31d" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>enummetadata</name></member>
+      <member refid="struct__sai__attr__metadata__t_1ac839b70b2188a70f097b3564be7bae7f" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>flags</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a0ffecf292dc6bc7ae90bb7af7e6de5a2" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>getsave</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a020d73a8021eef793a1a1eeb20c7b186" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>isaclaction</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a688fd8f27842af7d0e7a887f4a04937c" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>isaclfield</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a476720bf0cc6cca679f02573368bcb1e" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>isaclmask</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a93123c16a4ed69bc66369685af9dc999" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>iscallback</name></member>
+      <member refid="struct__sai__attr__metadata__t_1aa2865d5325e57865d9b8fe539a667617" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>isconditional</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a6fba7efb20ce148c887705dffb261ee8" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>isconditionrelaxed</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a80d8ca4c963f82d3f2dd3b29f9167686" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>iscreateandset</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a8fd61aa32de20f50797134c1b1d3da16" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>iscreateonly</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a637e566281f1042167577600405ed984" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>iscustom</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a8fab91e53b3010d2fcf498cc488dacc4" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>isdeprecated</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a261e2a9acb55cb4763998a0e848029ff" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>isenum</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a19fbc7e364cfdee31f6dc6012e7f245f" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>isenumlist</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a52d33df3643cc53b9e9ffd106d4feef0" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>isextensionattr</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a18bd14c66068172b4440ecbc02a9ab3f" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>iskey</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a7b6117e00e43445ff8a699a3032d60d6" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>ismandatoryoncreate</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a00fc5942206ee5e84adbc3651b8dc328" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>isoidattribute</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a115165449986b2416027897979172e96" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>isprimitive</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a78bd0db55007c66d4ad6c97d94ecf817" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>isreadonly</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a9362767b371312f5129b9b659746807d" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>isresourcetype</name></member>
+      <member refid="struct__sai__attr__metadata__t_1aa499f1b6aaf7cacfe94a8bb3d8febb3c" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>isvalidonly</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a0b5d08d44ffebde78bd8385673647234" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>isvlan</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a7be7009b22ec8b0ecdd8e396e7b72d7f" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>nextrelease</name></member>
+      <member refid="struct__sai__attr__metadata__t_1aa669cd9768dc22236eb567c0f5b2166c" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>notificationtype</name></member>
+      <member refid="struct__sai__attr__metadata__t_1abb8b24b6b025948b2a30cccc90d23b73" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>objecttype</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a36d8fcb36f85a9b6d665550cd8baf48d" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>pointertype</name></member>
+      <member refid="struct__sai__attr__metadata__t_1af96c85880c324226b8585e7822a1e0a0" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>storedefaultvalue</name></member>
+      <member refid="struct__sai__attr__metadata__t_1af19a9427dcb5a47b1ce9bf5d53d0f7f8" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>validonly</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a8a5b02e41373c3b37f3ebfb431c41a42" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>validonlylength</name></member>
+      <member refid="struct__sai__attr__metadata__t_1a77f2873cb5e150a72f6939c688a1a2bc" prot="public" virt="non-virtual"><scope>_sai_attr_metadata_t</scope><name>validonlytype</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

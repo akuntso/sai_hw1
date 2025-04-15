@@ -1,0 +1,1421 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group__SAIVLAN" kind="group">
+    <compoundname>SAIVLAN</compoundname>
+    <title>SAI - VLAN specific API definitions</title>
+    <innerclass refid="struct__sai__vlan__api__t" prot="public">_sai_vlan_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIVLAN_1gab0a0af7d3e6ae36eac67b3235cdaaad5" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_vlan_tagging_mode_t</name>
+        <enumvalue id="group__SAIVLAN_1ggab0a0af7d3e6ae36eac67b3235cdaaad5aa33fbd2f07463ce038a73ff14fbb3657" prot="public">
+          <name>SAI_VLAN_TAGGING_MODE_UNTAGGED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggab0a0af7d3e6ae36eac67b3235cdaaad5a8c435397a46dc6e4f398ee6856600cad" prot="public">
+          <name>SAI_VLAN_TAGGING_MODE_TAGGED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggab0a0af7d3e6ae36eac67b3235cdaaad5a1ebc463229700c2ed20ca311a2233f1c" prot="public">
+          <name>SAI_VLAN_TAGGING_MODE_PRIORITY_TAGGED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute data for tagging_mode parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saivlan.h" line="44" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saivlan.h" bodystart="45" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIVLAN_1ga30517eff3c618d464795bc3e7f92c06b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_vlan_mcast_lookup_key_type_t</name>
+        <enumvalue id="group__SAIVLAN_1gga30517eff3c618d464795bc3e7f92c06bafd8ec9f48968b43b33b927240099d6a8" prot="public">
+          <name>SAI_VLAN_MCAST_LOOKUP_KEY_TYPE_MAC_DA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1gga30517eff3c618d464795bc3e7f92c06ba85c6e04cba98d9b79ac758acc1395203" prot="public">
+          <name>SAI_VLAN_MCAST_LOOKUP_KEY_TYPE_XG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1gga30517eff3c618d464795bc3e7f92c06ba05cd0897f7c907f617bf84f7edbb2649" prot="public">
+          <name>SAI_VLAN_MCAST_LOOKUP_KEY_TYPE_SG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1gga30517eff3c618d464795bc3e7f92c06ba2d7b13bd3fa4ad40cdd57170ae9df958" prot="public">
+          <name>SAI_VLAN_MCAST_LOOKUP_KEY_TYPE_XG_AND_SG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute data for multicast_lookup_key_type parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saivlan.h" line="57" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saivlan.h" bodystart="58" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIVLAN_1ga1af45a026cce0ec78ee2c44ba24ded76" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_vlan_flood_control_type_t</name>
+        <enumvalue id="group__SAIVLAN_1gga1af45a026cce0ec78ee2c44ba24ded76acbd3cd9aa0e1909683729d02be003bf5" prot="public">
+          <name>SAI_VLAN_FLOOD_CONTROL_TYPE_ALL</name>
+          <briefdescription>
+<para>Flood on all vlan members. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>When setting all to broadcast or unknown multicast flood, it also includes flooding to the router. When setting all to unknown unicast flood, it does not include flooding to the router </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1gga1af45a026cce0ec78ee2c44ba24ded76a9167dc9cc2f892912366e81476220c1b" prot="public">
+          <name>SAI_VLAN_FLOOD_CONTROL_TYPE_NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Disable flooding </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1gga1af45a026cce0ec78ee2c44ba24ded76a9f57329c77a157d41dc390b4b6dfcf98" prot="public">
+          <name>SAI_VLAN_FLOOD_CONTROL_TYPE_L2MC_GROUP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Flood on the L2MC group </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1gga1af45a026cce0ec78ee2c44ba24ded76a3b4c7bc2107717a34777918384525b19" prot="public">
+          <name>SAI_VLAN_FLOOD_CONTROL_TYPE_COMBINED</name>
+          <briefdescription>
+<para>Flood on all vlan members and L2MC group. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Flood on all vlan members, without the router In addition, flood on the supplied L2MC group </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute data for unknown unicast, unknown multicast and broadcast flood controls. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saivlan.h" line="73" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saivlan.h" bodystart="74" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIVLAN_1gab2ff78d1ae1fab3ade115fadee03284c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_vlan_attr_t</name>
+        <enumvalue id="group__SAIVLAN_1ggab2ff78d1ae1fab3ade115fadee03284cab480a2e5573eafc92b4c8733521b92c2" prot="public">
+          <name>SAI_VLAN_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggab2ff78d1ae1fab3ade115fadee03284caaf13b6bcfe3d380ff5a4720a7325e0bd" prot="public">
+          <name>SAI_VLAN_ATTR_VLAN_ID</name>
+          <initializer>= SAI_VLAN_ATTR_START</initializer>
+          <briefdescription>
+<para>Vlan Id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY | KEY </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggab2ff78d1ae1fab3ade115fadee03284cad475acea38ae5ce6983b63963bf7c1c2" prot="public">
+          <name>SAI_VLAN_ATTR_MEMBER_LIST</name>
+          <briefdescription>
+<para>List of vlan members in a VLAN. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_VLAN_MEMBER </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggab2ff78d1ae1fab3ade115fadee03284ca76c4cc2d68198b828d06949c9ca30386" prot="public">
+          <name>SAI_VLAN_ATTR_MAX_LEARNED_ADDRESSES</name>
+          <briefdescription>
+<para>Maximum number of learned MAC addresses. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Zero means learning limit is disabled.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggab2ff78d1ae1fab3ade115fadee03284cafdcb4ada167164f0be67c442ed8f7750" prot="public">
+          <name>SAI_VLAN_ATTR_STP_INSTANCE</name>
+          <briefdescription>
+<para>STP Instance that the VLAN is associated to. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Default to default STP instance id</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_STP </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         attrvalue SAI_SWITCH_ATTR_DEFAULT_STP_INST_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggab2ff78d1ae1fab3ade115fadee03284ca3386518d24b595ea4995fd78cfed8d6e" prot="public">
+          <name>SAI_VLAN_ATTR_LEARN_DISABLE</name>
+          <briefdescription>
+<para>To disable learning on a VLAN. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>This should override port learn settings. If this is set to true on a vlan, then the source MAC learning is disabled for this vlan on a member port even if learn is enable on the port (based on port learn attribute).</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggab2ff78d1ae1fab3ade115fadee03284ca89f6e278c3c9a476673a03e459f90728" prot="public">
+          <name>SAI_VLAN_ATTR_IPV4_MCAST_LOOKUP_KEY_TYPE</name>
+          <briefdescription>
+<para>To set IPv4 multicast lookup key on a VLAN. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_vlan_mcast_lookup_key_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_VLAN_MCAST_LOOKUP_KEY_TYPE_MAC_DA </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggab2ff78d1ae1fab3ade115fadee03284cab5e6b7f0b3a7417c179136e08adfdaaa" prot="public">
+          <name>SAI_VLAN_ATTR_IPV6_MCAST_LOOKUP_KEY_TYPE</name>
+          <briefdescription>
+<para>To set IPv6 multicast lookup key on a VLAN. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_vlan_mcast_lookup_key_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_VLAN_MCAST_LOOKUP_KEY_TYPE_MAC_DA </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggab2ff78d1ae1fab3ade115fadee03284caa8527e9a3d159995172b0b032abe37d1" prot="public">
+          <name>SAI_VLAN_ATTR_UNKNOWN_NON_IP_MCAST_OUTPUT_GROUP_ID</name>
+          <briefdescription>
+<para>L2MC Group ID that unknown non-IP mcast packets forwarded to. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Indicating the output ports/LAGs for unknown non-IP multicast packets. This attribute only takes effect when one of the following conditions is met: (1) non-IP multicast packet (2) IPv4 multicast packet &amp;&amp; not linklocal &amp;&amp; IPv4 mcast snooping disabled for vlan (3) IPv6 multicast packet &amp;&amp; not linklocal &amp;&amp; IPv6 mcast snooping disabled for vlan In case of SAI_NULL_OBJECT_ID, unknown multicast packets will be discarded. If the group has no member, unknown multicast packets will be discarded.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_L2MC_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggab2ff78d1ae1fab3ade115fadee03284cad9d31077af51435349bf2f36e97a6f5a" prot="public">
+          <name>SAI_VLAN_ATTR_UNKNOWN_IPV4_MCAST_OUTPUT_GROUP_ID</name>
+          <briefdescription>
+<para>L2MC Group ID that unknown IPv4 mcast packets forwarded to. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Indicating the output ports/LAGs for unknown IPv4 multicast packets. This attribute only takes effect when the following condition is met: (1) IPv4 multicast packet &amp;&amp; not linklocal &amp;&amp; IPv4 mcast snooping enabled for vlan In case of SAI_NULL_OBJECT_ID, unknown multicast packets will be discarded. If the group has no member, unknown multicast packets will be discarded.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_L2MC_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggab2ff78d1ae1fab3ade115fadee03284cabfcc072dbdd2ca857357653b9ef221e1" prot="public">
+          <name>SAI_VLAN_ATTR_UNKNOWN_IPV6_MCAST_OUTPUT_GROUP_ID</name>
+          <briefdescription>
+<para>L2MC Group ID that unknown IPv6 mcast packets forwarded to. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Indicating the output ports/LAGs for unknown IPv6 multicast packets. This attribute only takes effect when the following condition is met: (1) IPv6 multicast packet &amp;&amp; not linklocal &amp;&amp; IPv6 mcast snooping enabled for vlan In case of SAI_NULL_OBJECT_ID, unknown multicast packets will be discarded. If the group has no member, unknown multicast packets will be discarded.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_L2MC_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggab2ff78d1ae1fab3ade115fadee03284cae23d5db3f1e863317c39a06e6aa533e0" prot="public">
+          <name>SAI_VLAN_ATTR_UNKNOWN_LINKLOCAL_MCAST_OUTPUT_GROUP_ID</name>
+          <briefdescription>
+<para>L2MC Group ID that unknown linklocal mcast packets forwarded to. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Indicating the output ports/LAGs for unknown linklocal multicast packets. This attribute only takes effect when the following condition is met: (1) IPv4 multicast packet &amp;&amp; linklocal address &amp;&amp; IPv4 mcast snooping enabled for vlan (2) IPv6 multicast packet &amp;&amp; linklocal address &amp;&amp; IPv6 mcast snooping enabled for vlan In case of SAI_NULL_OBJECT_ID, unknown multicast packets will be discarded. If the group has no member, unknown multicast packets will be discarded.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_L2MC_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggab2ff78d1ae1fab3ade115fadee03284caef740e75b2ae0537604449bb3c24e249" prot="public">
+          <name>SAI_VLAN_ATTR_INGRESS_ACL</name>
+          <briefdescription>
+<para>VLAN bind point for ingress ACL object. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Bind (or unbind) an ingress ACL table or ACL group on a VLAN. Enable/Update ingress ACL table or ACL group filtering by assigning the list of valid object id. Disable ingress filtering by assigning SAI_NULL_OBJECT_ID in the attribute value.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_ACL_TABLE, SAI_OBJECT_TYPE_ACL_TABLE_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggab2ff78d1ae1fab3ade115fadee03284ca4f1dcc545cb8f8fe433eb9127d3c8501" prot="public">
+          <name>SAI_VLAN_ATTR_EGRESS_ACL</name>
+          <briefdescription>
+<para>VLAN bind point for egress ACL object. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Bind (or unbind) an egress ACL table or ACL group on a VLAN. Enable/Update egress ACL table or ACL group filtering by assigning the list of valid object id. Disable egress filtering by assigning SAI_NULL_OBJECT_ID in the attribute value.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_ACL_TABLE, SAI_OBJECT_TYPE_ACL_TABLE_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggab2ff78d1ae1fab3ade115fadee03284ca0d730755eaf55d83b3b4ba2c719d59ca" prot="public">
+          <name>SAI_VLAN_ATTR_META_DATA</name>
+          <briefdescription>
+<para>User based Meta Data. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Value Range <ref refid="group__SAISWITCH_1gga96df0871b3925f973f4a9079ffb3e634a860f01dc23cde3a8964ceca6f1f247cb" kindref="member">SAI_SWITCH_ATTR_VLAN_USER_META_DATA_RANGE</ref></para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggab2ff78d1ae1fab3ade115fadee03284ca3fe6bb9d4f59f156d7470ab2002152c3" prot="public">
+          <name>SAI_VLAN_ATTR_UNKNOWN_UNICAST_FLOOD_CONTROL_TYPE</name>
+          <briefdescription>
+<para>Unknown unicast flood control type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_vlan_flood_control_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_VLAN_FLOOD_CONTROL_TYPE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggab2ff78d1ae1fab3ade115fadee03284ca536c0876be3db6f1d93277c23a1d231d" prot="public">
+          <name>SAI_VLAN_ATTR_UNKNOWN_UNICAST_FLOOD_GROUP</name>
+          <briefdescription>
+<para>Unknown unicast flood group. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Provides control on the set of vlan members on which unknown unicast packets need to be flooded. This attribute would be used when the SAI_VLAN_ATTR_UNKNOWN_UNICAST_FLOOD_CONTROL_TYPE is set as SAI_VLAN_FLOOD_CONTROL_TYPE_L2MC_GROUP or SAI_VLAN_FLOOD_CONTROL_TYPE_COMBINED. When this attribute&apos;s value is SAI_NULL_OBJECT_ID, then flooding would be disabled.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_L2MC_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_VLAN_ATTR_UNKNOWN_UNICAST_FLOOD_CONTROL_TYPE == SAI_VLAN_FLOOD_CONTROL_TYPE_L2MC_GROUP or SAI_VLAN_ATTR_UNKNOWN_UNICAST_FLOOD_CONTROL_TYPE == SAI_VLAN_FLOOD_CONTROL_TYPE_COMBINED </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggab2ff78d1ae1fab3ade115fadee03284cadbc910298c62d9df9560a3a3de872ff2" prot="public">
+          <name>SAI_VLAN_ATTR_UNKNOWN_MULTICAST_FLOOD_CONTROL_TYPE</name>
+          <briefdescription>
+<para>Unknown unicast flood control type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_vlan_flood_control_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_VLAN_FLOOD_CONTROL_TYPE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggab2ff78d1ae1fab3ade115fadee03284ca2d51d2533b4aed7abede6952c1097233" prot="public">
+          <name>SAI_VLAN_ATTR_UNKNOWN_MULTICAST_FLOOD_GROUP</name>
+          <briefdescription>
+<para>Unknown multicast flood group. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Provides control on the set of vlan members on which unknown multicast packets need to be flooded. This attribute would be used when the SAI_VLAN_ATTR_UNKNOWN_MULTICAST_FLOOD_CONTROL_TYPE is set as SAI_VLAN_FLOOD_CONTROL_TYPE_L2MC_GROUP or SAI_VLAN_FLOOD_CONTROL_TYPE_COMBINED. When this attribute&apos;s value is SAI_NULL_OBJECT_ID, then flooding would be disabled.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_L2MC_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_VLAN_ATTR_UNKNOWN_MULTICAST_FLOOD_CONTROL_TYPE == SAI_VLAN_FLOOD_CONTROL_TYPE_L2MC_GROUP or SAI_VLAN_ATTR_UNKNOWN_MULTICAST_FLOOD_CONTROL_TYPE == SAI_VLAN_FLOOD_CONTROL_TYPE_COMBINED </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggab2ff78d1ae1fab3ade115fadee03284ca76b48d0cc6a811ac891c689001b2e03c" prot="public">
+          <name>SAI_VLAN_ATTR_BROADCAST_FLOOD_CONTROL_TYPE</name>
+          <briefdescription>
+<para>Broadcast flood control type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_vlan_flood_control_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_VLAN_FLOOD_CONTROL_TYPE_ALL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggab2ff78d1ae1fab3ade115fadee03284ca44f5f7cf7b1e8e796c26018fc77008df" prot="public">
+          <name>SAI_VLAN_ATTR_BROADCAST_FLOOD_GROUP</name>
+          <briefdescription>
+<para>Broadcast flood group. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Provides control on the set of vlan members on which broadcast packets need to be flooded. This attribute would be used when the SAI_VLAN_ATTR_BROADCAST_FLOOD_CONTROL_TYPE is set as SAI_VLAN_FLOOD_CONTROL_TYPE_L2MC_GROUP or SAI_VLAN_FLOOD_CONTROL_TYPE_COMBINED. When this attribute&apos;s value is SAI_NULL_OBJECT_ID, then flooding would be disabled.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_L2MC_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_VLAN_ATTR_BROADCAST_FLOOD_CONTROL_TYPE == SAI_VLAN_FLOOD_CONTROL_TYPE_L2MC_GROUP or SAI_VLAN_ATTR_BROADCAST_FLOOD_CONTROL_TYPE == SAI_VLAN_FLOOD_CONTROL_TYPE_COMBINED </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggab2ff78d1ae1fab3ade115fadee03284ca31d40297b087264496b70daa37a0d33b" prot="public">
+          <name>SAI_VLAN_ATTR_CUSTOM_IGMP_SNOOPING_ENABLE</name>
+          <briefdescription>
+<para>IGMP Snooping enable or disable control for VLAN. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>IGMP Snooping enable control for VLAN. Default is disabled</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggab2ff78d1ae1fab3ade115fadee03284cacbc71709925b8df2aaa94e82682be6c7" prot="public">
+          <name>SAI_VLAN_ATTR_TAM_OBJECT</name>
+          <briefdescription>
+<para>Vlan bind point for TAM object. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_TAM </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggab2ff78d1ae1fab3ade115fadee03284cae2c928e4b424f051ad616ef9a82f4a78" prot="public">
+          <name>SAI_VLAN_ATTR_STATS_COUNT_MODE</name>
+          <briefdescription>
+<para>Set vlan statistics counting mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_stats_count_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_STATS_COUNT_MODE_PACKET_AND_BYTE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggab2ff78d1ae1fab3ade115fadee03284caf336adfc07fa30ac5f3d3568545d5bc4" prot="public">
+          <name>SAI_VLAN_ATTR_SELECTIVE_COUNTER_LIST</name>
+          <briefdescription>
+<para>Attach counter object list. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Counter object should be of type Selective. Fill (<ref refid="group__SAICOUNTER_1ggac5e99b5b04f2a0f0665babc2a60c9641a2835fed0aa18e2fb59824c903bd712ea" kindref="member">SAI_COUNTER_ATTR_TYPE</ref> with <ref refid="group__SAICOUNTER_1gga4e3da19e4589261e88197d6576020cf1aa4b87a1c99256ee3601553c9455cb92c" kindref="member">SAI_COUNTER_TYPE_SELECTIVE</ref>).</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_COUNTER </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggab2ff78d1ae1fab3ade115fadee03284caa376adf9beb6c53205a84f43d3350fa6" prot="public">
+          <name>SAI_VLAN_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggab2ff78d1ae1fab3ade115fadee03284ca9414073eeafadd8467b4fbcb56f55319" prot="public">
+          <name>SAI_VLAN_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggab2ff78d1ae1fab3ade115fadee03284cac8f9444f5603fcf94af251ced6eb069d" prot="public">
+          <name>SAI_VLAN_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute Id in sai_set_vlan_attribute() and sai_get_vlan_attribute() calls. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saivlan.h" line="104" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saivlan.h" bodystart="105" bodyend="436"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIVLAN_1ga114a1b9058706353bffa3325402c7c38" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_vlan_member_attr_t</name>
+        <enumvalue id="group__SAIVLAN_1gga114a1b9058706353bffa3325402c7c38a108998e158a1d1e530664e819036ba17" prot="public">
+          <name>SAI_VLAN_MEMBER_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1gga114a1b9058706353bffa3325402c7c38a9ac4a472c9d388fd95dfe24688ef703b" prot="public">
+          <name>SAI_VLAN_MEMBER_ATTR_VLAN_ID</name>
+          <initializer>= SAI_VLAN_MEMBER_ATTR_START</initializer>
+          <briefdescription>
+<para>VLAN ID. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_VLAN </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1gga114a1b9058706353bffa3325402c7c38a3f142d19c0bf0768330d102a7dbf02e4" prot="public">
+          <name>SAI_VLAN_MEMBER_ATTR_BRIDGE_PORT_ID</name>
+          <briefdescription>
+<para>Bridge port ID. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Valid only for .1Q bridge ports.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_BRIDGE_PORT </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1gga114a1b9058706353bffa3325402c7c38a84c579969da9c4c5274819adf6b38fa2" prot="public">
+          <name>SAI_VLAN_MEMBER_ATTR_VLAN_TAGGING_MODE</name>
+          <briefdescription>
+<para>VLAN tagging mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_vlan_tagging_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_VLAN_TAGGING_MODE_UNTAGGED </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1gga114a1b9058706353bffa3325402c7c38a85c725b5c91ef95160104d1f0e543154" prot="public">
+          <name>SAI_VLAN_MEMBER_ATTR_TUNNEL_TERM_BUM_TX_DROP</name>
+          <briefdescription>
+<para>Indicates if the bridge port is set to drop the Tunnel Terminated broadcast, unknown unicast and multicast traffic. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>When set to true, egress BUM traffic will be dropped Valid only when the SAI_VLAN_MEMBER_ATTR_BRIDGE_PORT_ID is of type SAI_BRIDGE_PORT_TYPE_PORT. Valid only for .1Q bridge ports.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1gga114a1b9058706353bffa3325402c7c38a64bbf76f5b2f1b36d34d6b471c6a4324" prot="public">
+          <name>SAI_VLAN_MEMBER_ATTR_RX_DROP</name>
+          <briefdescription>
+<para>Indicates if the vlan member is set to drop the ingress traffic. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>When set to true, ingress traffic will be dropped</para>
+<para>Valid only when the SAI_VLAN_MEMBER_ATTR_BRIDGE_PORT_ID is of type SAI_BRIDGE_PORT_TYPE_PORT. Valid only for .1Q bridge ports.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1gga114a1b9058706353bffa3325402c7c38a8b0c3cd910363936b5c18a16ac18af8e" prot="public">
+          <name>SAI_VLAN_MEMBER_ATTR_TX_DROP</name>
+          <briefdescription>
+<para>Indicates if the vlan member is set to drop the egress traffic. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>When set to true, egress traffic will be dropped</para>
+<para>Valid only when the SAI_VLAN_MEMBER_ATTR_BRIDGE_PORT_ID is of type SAI_BRIDGE_PORT_TYPE_PORT. Valid only for .1Q bridge ports.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1gga114a1b9058706353bffa3325402c7c38ab66d58e41dfcd221124c023493d0ed85" prot="public">
+          <name>SAI_VLAN_MEMBER_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1gga114a1b9058706353bffa3325402c7c38a398ac603d6cd4da7c8c848bfbaa57e0f" prot="public">
+          <name>SAI_VLAN_MEMBER_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1gga114a1b9058706353bffa3325402c7c38a9c6d8ed073237549bb7f5474025daecf" prot="public">
+          <name>SAI_VLAN_MEMBER_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>List of VLAN Member Attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saivlan.h" line="441" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saivlan.h" bodystart="442" bodyend="529"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIVLAN_1gabef55bfdc4ebce5649f7f9d25a256439" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_vlan_stat_t</name>
+        <enumvalue id="group__SAIVLAN_1ggabef55bfdc4ebce5649f7f9d25a256439ae920bfb3ac6fe9d772232f904b21364e" prot="public">
+          <name>SAI_VLAN_STAT_IN_OCTETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggabef55bfdc4ebce5649f7f9d25a256439a98dfae1b98a96ba0be45b9a37467fae1" prot="public">
+          <name>SAI_VLAN_STAT_IN_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggabef55bfdc4ebce5649f7f9d25a256439a5fe07a6d2a9a89425e01f7ae60b79864" prot="public">
+          <name>SAI_VLAN_STAT_IN_UCAST_PKTS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggabef55bfdc4ebce5649f7f9d25a256439ad97b1e2aa81b32ee35aa64a4199712b7" prot="public">
+          <name>SAI_VLAN_STAT_IN_NON_UCAST_PKTS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggabef55bfdc4ebce5649f7f9d25a256439a8b0a5a1bcd7cd0945f3a9f842189b42a" prot="public">
+          <name>SAI_VLAN_STAT_IN_DISCARDS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggabef55bfdc4ebce5649f7f9d25a256439a8055d222130947da9171f74c968475aa" prot="public">
+          <name>SAI_VLAN_STAT_IN_ERRORS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggabef55bfdc4ebce5649f7f9d25a256439a20920fd9bf6b4b788ac179af42da2b8b" prot="public">
+          <name>SAI_VLAN_STAT_IN_UNKNOWN_PROTOS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggabef55bfdc4ebce5649f7f9d25a256439a587038e8d041aeeb11a68aaaee75c912" prot="public">
+          <name>SAI_VLAN_STAT_OUT_OCTETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggabef55bfdc4ebce5649f7f9d25a256439ab834e0812ea5663aa2fc00d9b20b3f2d" prot="public">
+          <name>SAI_VLAN_STAT_OUT_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggabef55bfdc4ebce5649f7f9d25a256439a979bb7c8429f70378e0d4ca63eb85de2" prot="public">
+          <name>SAI_VLAN_STAT_OUT_UCAST_PKTS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggabef55bfdc4ebce5649f7f9d25a256439ae9c1fae98e013a577c5de987fc417534" prot="public">
+          <name>SAI_VLAN_STAT_OUT_NON_UCAST_PKTS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggabef55bfdc4ebce5649f7f9d25a256439abbcdb2f2f382f85d19bba36d6e5b6df2" prot="public">
+          <name>SAI_VLAN_STAT_OUT_DISCARDS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggabef55bfdc4ebce5649f7f9d25a256439a8f04aed935ed1e37482cfdf0ae138662" prot="public">
+          <name>SAI_VLAN_STAT_OUT_ERRORS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIVLAN_1ggabef55bfdc4ebce5649f7f9d25a256439a2a801885a2e43575b05dbe9163a9108b" prot="public">
+          <name>SAI_VLAN_STAT_OUT_QLEN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>VLAN counter IDs in sai_get_vlan_stats() call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saivlan.h" line="534" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saivlan.h" bodystart="535" bodyend="551"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIVLAN_1ga0d381f8db7bc5002ac67304da2e5e274" prot="public" static="no">
+        <type>enum <ref refid="group__SAIVLAN_1gab0a0af7d3e6ae36eac67b3235cdaaad5" kindref="member">_sai_vlan_tagging_mode_t</ref></type>
+        <definition>typedef enum _sai_vlan_tagging_mode_t sai_vlan_tagging_mode_t</definition>
+        <argsstring></argsstring>
+        <name>sai_vlan_tagging_mode_t</name>
+        <briefdescription>
+<para>Attribute data for tagging_mode parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saivlan.h" line="52" column="25"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIVLAN_1ga317f9efdc393297150447a62e8698b12" prot="public" static="no">
+        <type>enum <ref refid="group__SAIVLAN_1ga30517eff3c618d464795bc3e7f92c06b" kindref="member">_sai_vlan_mcast_lookup_key_type_t</ref></type>
+        <definition>typedef enum _sai_vlan_mcast_lookup_key_type_t sai_vlan_mcast_lookup_key_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_vlan_mcast_lookup_key_type_t</name>
+        <briefdescription>
+<para>Attribute data for multicast_lookup_key_type parameter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saivlan.h" line="67" column="34"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIVLAN_1gadb9554a891eda87b618deefb84bcad5b" prot="public" static="no">
+        <type>enum <ref refid="group__SAIVLAN_1ga1af45a026cce0ec78ee2c44ba24ded76" kindref="member">_sai_vlan_flood_control_type_t</ref></type>
+        <definition>typedef enum _sai_vlan_flood_control_type_t sai_vlan_flood_control_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_vlan_flood_control_type_t</name>
+        <briefdescription>
+<para>Attribute data for unknown unicast, unknown multicast and broadcast flood controls. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saivlan.h" line="98" column="31"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIVLAN_1ga78115f97b211dc1da49c18db14fcb930" prot="public" static="no">
+        <type>enum <ref refid="group__SAIVLAN_1gab2ff78d1ae1fab3ade115fadee03284c" kindref="member">_sai_vlan_attr_t</ref></type>
+        <definition>typedef enum _sai_vlan_attr_t sai_vlan_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_vlan_attr_t</name>
+        <briefdescription>
+<para>Attribute Id in sai_set_vlan_attribute() and sai_get_vlan_attribute() calls. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saivlan.h" line="436" column="17"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIVLAN_1ga210380a0b2ed983587fd535a99971cc2" prot="public" static="no">
+        <type>enum <ref refid="group__SAIVLAN_1ga114a1b9058706353bffa3325402c7c38" kindref="member">_sai_vlan_member_attr_t</ref></type>
+        <definition>typedef enum _sai_vlan_member_attr_t sai_vlan_member_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_vlan_member_attr_t</name>
+        <briefdescription>
+<para>List of VLAN Member Attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saivlan.h" line="529" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIVLAN_1ga4af42c7efafbd43f76c1a1d6020d591b" prot="public" static="no">
+        <type>enum <ref refid="group__SAIVLAN_1gabef55bfdc4ebce5649f7f9d25a256439" kindref="member">_sai_vlan_stat_t</ref></type>
+        <definition>typedef enum _sai_vlan_stat_t sai_vlan_stat_t</definition>
+        <argsstring></argsstring>
+        <name>sai_vlan_stat_t</name>
+        <briefdescription>
+<para>VLAN counter IDs in sai_get_vlan_stats() call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saivlan.h" line="551" column="17"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIVLAN_1ga665ff5c1a16dcc02ef7be1b8d8a8bc5c" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_vlan_fn) (_Out_ sai_object_id_t *vlan_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *vlan_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_vlan_fn</name>
+        <briefdescription>
+<para>Create a VLAN. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">vlan_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>VLAN ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saivlan.h" line="563" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saivlan.h" bodystart="563" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIVLAN_1gadafb8c8050169b33040ee3e72654e5e8" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_vlan_fn) (_In_ sai_object_id_t vlan_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t vlan_id)</argsstring>
+        <name>sai_remove_vlan_fn</name>
+        <briefdescription>
+<para>Remove VLAN. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vlan_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>VLAN member ID</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saivlan.h" line="576" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saivlan.h" bodystart="576" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIVLAN_1gaed81fe0afb16e0294e2263249a3dd661" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_vlan_attribute_fn) (_In_ sai_object_id_t vlan_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t vlan_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_vlan_attribute_fn</name>
+        <briefdescription>
+<para>Set VLAN Attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vlan_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>VLAN ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute structure containing ID and value</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saivlan.h" line="587" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saivlan.h" bodystart="587" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIVLAN_1gae826a4e242532545280c408e6f231d08" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_vlan_attribute_fn) (_In_ sai_object_id_t vlan_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t vlan_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_vlan_attribute_fn</name>
+        <briefdescription>
+<para>Get VLAN Attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vlan_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>VLAN ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attribute structures containing ID and value</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saivlan.h" line="600" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saivlan.h" bodystart="600" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIVLAN_1gab0ce98cf01f5c04e0323383af71d149a" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_vlan_member_fn) (_Out_ sai_object_id_t *vlan_member_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *vlan_member_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_vlan_member_fn</name>
+        <briefdescription>
+<para>Create VLAN Member. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">vlan_member_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>VLAN member ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saivlan.h" line="615" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saivlan.h" bodystart="615" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIVLAN_1gadd4e6e2d6c9de1c88509813ec9a32926" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_vlan_member_fn) (_In_ sai_object_id_t vlan_member_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t vlan_member_id)</argsstring>
+        <name>sai_remove_vlan_member_fn</name>
+        <briefdescription>
+<para>Remove VLAN Member. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vlan_member_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>VLAN member ID</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saivlan.h" line="628" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saivlan.h" bodystart="628" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIVLAN_1ga3fed4430cdd8bd5b63dac19be7fd595d" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_vlan_member_attribute_fn) (_In_ sai_object_id_t vlan_member_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t vlan_member_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_vlan_member_attribute_fn</name>
+        <briefdescription>
+<para>Set VLAN Member Attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vlan_member_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>VLAN member ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute structure containing ID and value</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saivlan.h" line="639" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saivlan.h" bodystart="639" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIVLAN_1gae5d28576054d46610fa28a9a68bcc43f" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_vlan_member_attribute_fn) (_In_ sai_object_id_t vlan_member_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t vlan_member_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_vlan_member_attribute_fn</name>
+        <briefdescription>
+<para>Get VLAN Member Attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vlan_member_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>VLAN member ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attribute structures containing ID and value</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saivlan.h" line="652" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saivlan.h" bodystart="652" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIVLAN_1ga09e7a3c596d1491150ee080c62e02ced" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_vlan_stats_fn) (_In_ sai_object_id_t vlan_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t vlan_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_vlan_stats_fn</name>
+        <briefdescription>
+<para>Get vlan statistics counters. Deprecated for backward compatibility. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vlan_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>VLAN id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saivlan.h" line="667" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saivlan.h" bodystart="667" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIVLAN_1ga121bf76ab67aa80dec6e3b139820e476" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_vlan_stats_ext_fn) (_In_ sai_object_id_t vlan_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t vlan_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_vlan_stats_ext_fn</name>
+        <briefdescription>
+<para>Get vlan statistics counters extended. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vlan_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>VLAN id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Statistics mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saivlan.h" line="684" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saivlan.h" bodystart="684" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIVLAN_1ga779f20bb6a22895bac1082e0e9058894" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_clear_vlan_stats_fn) (_In_ sai_object_id_t vlan_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</definition>
+        <argsstring>)(_In_ sai_object_id_t vlan_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</argsstring>
+        <name>sai_clear_vlan_stats_fn</name>
+        <briefdescription>
+<para>Clear vlan statistics counters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vlan_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vlan id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saivlan.h" line="700" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saivlan.h" bodystart="700" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIVLAN_1gafa7bca59a93026d07ed5650736535af6" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__vlan__api__t" kindref="compound">_sai_vlan_api_t</ref></type>
+        <definition>typedef struct _sai_vlan_api_t sai_vlan_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_vlan_api_t</name>
+        <briefdescription>
+<para>VLAN methods table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saivlan.h" line="724" column="16"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__SAIVLAN_1gad41f0f5b70bff9cc41b802e22910ddb5" prot="public" static="no">
+        <name>SAI_VLAN_COUNTER_SET_DEFAULT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saivlan.h" line="39" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saivlan.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

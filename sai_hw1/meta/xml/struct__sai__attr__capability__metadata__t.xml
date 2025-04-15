@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__attr__capability__metadata__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_attr_capability_metadata_t</compoundname>
+    <includes refid="saimetadatatypes_8h" local="no">saimetadatatypes.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__attr__capability__metadata__t_1a4f744e3cbf66a923aca4a837a34714e5" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t _sai_attr_capability_metadata_t::vendorid</definition>
+        <argsstring></argsstring>
+        <name>vendorid</name>
+        <briefdescription>
+<para>Vendor ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Used to distinguish different capabilities of the same attribute for different ASIC instances. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="892" column="33" bodyfile="saimetadatatypes.h" bodystart="892" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__capability__metadata__t_1af3ab0cc3b95a04fff8651cc29c403349" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIOBJECT_1ga8ca56e0ca8bd01b6ee22cc9410bd54db" kindref="member">sai_attr_capability_t</ref></type>
+        <definition>sai_attr_capability_t _sai_attr_capability_metadata_t::operationcapability</definition>
+        <argsstring></argsstring>
+        <name>operationcapability</name>
+        <briefdescription>
+<para>Operation capability. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Defines which operation is supported on specific attribute. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="899" column="33" bodyfile="saimetadatatypes.h" bodystart="899" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__capability__metadata__t_1adc0cb9eb9aecf250317aa34772ff4e79" prot="public" static="no" mutable="no">
+        <type>const size_t</type>
+        <definition>const size_t _sai_attr_capability_metadata_t::enumvaluescount</definition>
+        <argsstring></argsstring>
+        <name>enumvaluescount</name>
+        <briefdescription>
+<para>Enum values count. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>When attribute is and enum, this list defines enum values supported by vendor on that attribute. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="907" column="33" bodyfile="saimetadatatypes.h" bodystart="907" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__capability__metadata__t_1a31c00fb70bc33ece2a144948add21262" prot="public" static="no" mutable="no">
+        <type>const int *const</type>
+        <definition>const int* const _sai_attr_capability_metadata_t::enumvalues</definition>
+        <argsstring></argsstring>
+        <name>enumvalues</name>
+        <briefdescription>
+<para>Enum values count. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="912" column="32" bodyfile="saimetadatatypes.h" bodystart="912" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines attribute capability metadata. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>_sai_attr_capability_metadata_t</label>
+        <link refid="struct__sai__attr__capability__metadata__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>operationcapability</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>_sai_attr_capability_t</label>
+        <link refid="struct__sai__attr__capability__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="saimetadatatypes.h" line="884" column="1" bodyfile="saimetadatatypes.h" bodystart="885" bodyend="914"/>
+    <listofallmembers>
+      <member refid="struct__sai__attr__capability__metadata__t_1a31c00fb70bc33ece2a144948add21262" prot="public" virt="non-virtual"><scope>_sai_attr_capability_metadata_t</scope><name>enumvalues</name></member>
+      <member refid="struct__sai__attr__capability__metadata__t_1adc0cb9eb9aecf250317aa34772ff4e79" prot="public" virt="non-virtual"><scope>_sai_attr_capability_metadata_t</scope><name>enumvaluescount</name></member>
+      <member refid="struct__sai__attr__capability__metadata__t_1af3ab0cc3b95a04fff8651cc29c403349" prot="public" virt="non-virtual"><scope>_sai_attr_capability_metadata_t</scope><name>operationcapability</name></member>
+      <member refid="struct__sai__attr__capability__metadata__t_1a4f744e3cbf66a923aca4a837a34714e5" prot="public" virt="non-virtual"><scope>_sai_attr_capability_metadata_t</scope><name>vendorid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__nat__entry__mask__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_nat_entry_mask_t</compoundname>
+    <includes refid="sainat_8h" local="no">sainat.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__nat__entry__mask__t_1a4cc13399f838f0f0c88909c2a999bb1a" prot="public" static="no" mutable="no">
+        <type>sai_ip4_t</type>
+        <definition>sai_ip4_t _sai_nat_entry_mask_t::src_ip</definition>
+        <argsstring></argsstring>
+        <name>src_ip</name>
+        <briefdescription>
+<para>IPv4 source address mask. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="279" column="15" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainat.h" bodystart="279" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__nat__entry__mask__t_1a20999e4a8a3833ff5c63002435333e01" prot="public" static="no" mutable="no">
+        <type>sai_ip4_t</type>
+        <definition>sai_ip4_t _sai_nat_entry_mask_t::dst_ip</definition>
+        <argsstring></argsstring>
+        <name>dst_ip</name>
+        <briefdescription>
+<para>IPv4 destination address mask. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="284" column="15" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainat.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__nat__entry__mask__t_1af9910dc3d980757258d023c847e27a37" prot="public" static="no" mutable="no">
+        <type>sai_uint8_t</type>
+        <definition>sai_uint8_t _sai_nat_entry_mask_t::proto</definition>
+        <argsstring></argsstring>
+        <name>proto</name>
+        <briefdescription>
+<para>IP protocol mask. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="289" column="17" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainat.h" bodystart="289" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__nat__entry__mask__t_1a84fd6693a3c89d5fb65e6a2b1e9c820e" prot="public" static="no" mutable="no">
+        <type>sai_uint16_t</type>
+        <definition>sai_uint16_t _sai_nat_entry_mask_t::l4_src_port</definition>
+        <argsstring></argsstring>
+        <name>l4_src_port</name>
+        <briefdescription>
+<para>IP layer 4 source port mask. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="294" column="18" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainat.h" bodystart="294" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__nat__entry__mask__t_1a16fd8f05fb0645e4b86f9c8e3664dc6c" prot="public" static="no" mutable="no">
+        <type>sai_uint16_t</type>
+        <definition>sai_uint16_t _sai_nat_entry_mask_t::l4_dst_port</definition>
+        <argsstring></argsstring>
+        <name>l4_dst_port</name>
+        <briefdescription>
+<para>IP layer 4 destination port mask. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="299" column="18" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainat.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>NAT entry key masks. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="274" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainat.h" bodystart="275" bodyend="301"/>
+    <listofallmembers>
+      <member refid="struct__sai__nat__entry__mask__t_1a20999e4a8a3833ff5c63002435333e01" prot="public" virt="non-virtual"><scope>_sai_nat_entry_mask_t</scope><name>dst_ip</name></member>
+      <member refid="struct__sai__nat__entry__mask__t_1a16fd8f05fb0645e4b86f9c8e3664dc6c" prot="public" virt="non-virtual"><scope>_sai_nat_entry_mask_t</scope><name>l4_dst_port</name></member>
+      <member refid="struct__sai__nat__entry__mask__t_1a84fd6693a3c89d5fb65e6a2b1e9c820e" prot="public" virt="non-virtual"><scope>_sai_nat_entry_mask_t</scope><name>l4_src_port</name></member>
+      <member refid="struct__sai__nat__entry__mask__t_1af9910dc3d980757258d023c847e27a37" prot="public" virt="non-virtual"><scope>_sai_nat_entry_mask_t</scope><name>proto</name></member>
+      <member refid="struct__sai__nat__entry__mask__t_1a4cc13399f838f0f0c88909c2a999bb1a" prot="public" virt="non-virtual"><scope>_sai_nat_entry_mask_t</scope><name>src_ip</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

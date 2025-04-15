@@ -1,0 +1,1897 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="saiexperimentaldashflow_8h" kind="file" language="C++">
+    <compoundname>saiexperimentaldashflow.h</compoundname>
+    <includes refid="saitypesextensions_8h" local="no">saitypesextensions.h</includes>
+    <includedby refid="saiobject_8h" local="no">/home/andrii/sai_hw1/SAI/inc/saiobject.h</includedby>
+    <includedby refid="saiextensions_8h" local="yes">/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>stdbool.h</label>
+      </node>
+      <node id="4">
+        <label>stdint.h</label>
+      </node>
+      <node id="6">
+        <label>sys/types.h</label>
+      </node>
+      <node id="2">
+        <label>saitypesextensions.h</label>
+        <link refid="saitypesextensions_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h</label>
+        <link refid="saiexperimentaldashflow_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>saitypes.h</label>
+        <link refid="saitypes_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>/home/andrii/sai_hw1/SAI/inc/sai.h</label>
+        <link refid="sai_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/andrii/sai_hw1/SAI/inc/saiobject.h</label>
+        <link refid="saiobject_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h</label>
+        <link refid="saiexperimentaldashflow_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</label>
+        <link refid="saiextensions_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct__sai__flow__entry__t" prot="public">_sai_flow_entry_t</innerclass>
+    <innerclass refid="struct__sai__dash__flow__api__t" prot="public">_sai_dash_flow_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASHFLOW_1gafff5a04504c41ecfa3deba619d8fb9e2" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_flow_entry_action_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1ggafff5a04504c41ecfa3deba619d8fb9e2a643f0a3519aca1ab26fd29aa5947c551" prot="public">
+          <name>SAI_FLOW_ENTRY_ACTION_SET_FLOW_ENTRY_ATTR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute data for <ref refid="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180faa9bbacf4f9b49c0ac9d205ad25e740be" kindref="member">SAI_FLOW_ENTRY_ATTR_ACTION</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" line="41" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" bodystart="42" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASHFLOW_1gae610099568236ce31ea4963fa6bae145" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_flow_table_attr_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1ggae610099568236ce31ea4963fa6bae145a979186e8863cd3cb0d7ebc8bfec0477d" prot="public">
+          <name>SAI_FLOW_TABLE_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1ggae610099568236ce31ea4963fa6bae145a4097f5a7eac3206235434d00e74457a2" prot="public">
+          <name>SAI_FLOW_TABLE_ATTR_MAX_FLOW_COUNT</name>
+          <initializer>= SAI_FLOW_TABLE_ATTR_START</initializer>
+          <briefdescription>
+<para>Action parameter max flow count. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1ggae610099568236ce31ea4963fa6bae145a6c3f3ec6a76bf9bb2c56a1609038f625" prot="public">
+          <name>SAI_FLOW_TABLE_ATTR_DASH_FLOW_ENABLED_KEY</name>
+          <briefdescription>
+<para>Action parameter DASH flow enabled key. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_dash_flow_enabled_key_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_DASH_FLOW_ENABLED_KEY_ENI_MAC </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1ggae610099568236ce31ea4963fa6bae145af237db6053c348d790c6b33a218e4d93" prot="public">
+          <name>SAI_FLOW_TABLE_ATTR_FLOW_TTL_IN_MILLISECONDS</name>
+          <briefdescription>
+<para>Action parameter flow TTL in milliseconds. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1ggae610099568236ce31ea4963fa6bae145ac930a843077ce265e0afc0fda05ed7c4" prot="public">
+          <name>SAI_FLOW_TABLE_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1ggae610099568236ce31ea4963fa6bae145a428d3fb08defa40fa81458650e66eddf" prot="public">
+          <name>SAI_FLOW_TABLE_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1ggae610099568236ce31ea4963fa6bae145af584f4582650eb185c79f613f8311a7d" prot="public">
+          <name>SAI_FLOW_TABLE_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute ID for flow table. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" line="50" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" bodystart="51" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASHFLOW_1ga435aa57324d95a20c5e5045eabb9180f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_flow_entry_attr_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180fa32707269c6564999551e16799ed6054e" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180faa9bbacf4f9b49c0ac9d205ad25e740be" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_ACTION</name>
+          <initializer>= SAI_FLOW_ENTRY_ATTR_START</initializer>
+          <briefdescription>
+<para>Action. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_flow_entry_action_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_FLOW_ENTRY_ACTION_SET_FLOW_ENTRY_ATTR </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180fa908c4635c48813e707ff687018b0d466" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_VERSION</name>
+          <briefdescription>
+<para>Action parameter version. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180faa3592c1475e9417409a127a05644ea63" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_DASH_DIRECTION</name>
+          <briefdescription>
+<para>Action parameter DASH direction. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_dash_direction_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_DASH_DIRECTION_INVALID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180fadcee784af9cc4c8f90abff72044efa2f" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_DASH_FLOW_ACTION</name>
+          <briefdescription>
+<para>Action parameter DASH flow action. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_dash_flow_action_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_DASH_FLOW_ACTION_NONE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180fa7d6287a92504d499ac3c7d82a247a7c0" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_METER_CLASS</name>
+          <briefdescription>
+<para>Action parameter meter class. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180fa366081181e55eeeec1000e1cfd55580f" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_IS_UNIDIRECTIONAL_FLOW</name>
+          <briefdescription>
+<para>Action parameter is unidirectional flow. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180fa3bfc087a5dda210aadff5d79c763e504" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_REVERSE_FLOW_ENI_MAC</name>
+          <briefdescription>
+<para>Action parameter reverse flow ENI MAC. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_mac_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         vendor </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180fa4e19a731930bed4b94530781fc6fe980" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_REVERSE_FLOW_VNET_ID</name>
+          <briefdescription>
+<para>Action parameter reverse flow VNET id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180fa40d662f6fcae9a98397d58784275acff" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_REVERSE_FLOW_IP_PROTO</name>
+          <briefdescription>
+<para>Action parameter reverse flow IP protocol. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180fa22e66fdabd556c8dfb43b159b63fe11f" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_REVERSE_FLOW_SRC_IP</name>
+          <briefdescription>
+<para>Action parameter reverse flow src IP. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180fab2b6275379060688520947ea5d8177d8" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_REVERSE_FLOW_DST_IP</name>
+          <briefdescription>
+<para>Action parameter reverse flow dst IP. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180fa6316cc8b7ab62e9d9b384fbc8c0fb0fc" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_REVERSE_FLOW_SRC_PORT</name>
+          <briefdescription>
+<para>Action parameter reverse flow src port. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180fabc0ea3d62e048a230a20563f6cd4e8ef" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_REVERSE_FLOW_DST_PORT</name>
+          <briefdescription>
+<para>Action parameter reverse flow dst port. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180faca01168973f2768869a0a7a9043fc8b6" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_UNDERLAY0_VNET_ID</name>
+          <briefdescription>
+<para>Action parameter underlay0 VNET id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180fa91ea49ca65a1f64e5da0a459aee7d248" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_UNDERLAY0_SIP</name>
+          <briefdescription>
+<para>Action parameter underlay0 sip. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180fa4e4d55e539248ea5cf42e53eb106c146" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_UNDERLAY0_DIP</name>
+          <briefdescription>
+<para>Action parameter underlay0 dip. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180fa9066c4b3485d4fc923ab2785e26c3722" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_UNDERLAY0_DASH_ENCAPSULATION</name>
+          <briefdescription>
+<para>Action parameter underlay0 DASH encapsulation. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_dash_encapsulation_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_DASH_ENCAPSULATION_INVALID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180fa76e7f6a8ea2bc0ad6d4d0b27d6b626fe" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_UNDERLAY1_VNET_ID</name>
+          <briefdescription>
+<para>Action parameter underlay1 VNET id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180fa7afd7fedafd82b5653777114368067a4" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_UNDERLAY1_SIP</name>
+          <briefdescription>
+<para>Action parameter underlay1 sip. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180fadc6c2e92d375b03c18ddf92dd336526f" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_UNDERLAY1_DIP</name>
+          <briefdescription>
+<para>Action parameter underlay1 dip. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180fad5e0f33318f2c4450fac0930a73ae3f7" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_UNDERLAY1_SMAC</name>
+          <briefdescription>
+<para>Action parameter underlay1 source MAC. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_mac_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         vendor </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180fa356b7e8a5a1a0eecd21813706bd2c9a6" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_UNDERLAY1_DMAC</name>
+          <briefdescription>
+<para>Action parameter underlay1 destination MAC. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_mac_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         vendor </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180fa0d470f96ed48e042aad0baa1a1954cd9" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_UNDERLAY1_DASH_ENCAPSULATION</name>
+          <briefdescription>
+<para>Action parameter underlay1 DASH encapsulation. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_dash_encapsulation_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_DASH_ENCAPSULATION_INVALID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180fab320c7be2cda7f516c96f265272df298" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_DST_MAC</name>
+          <briefdescription>
+<para>Action parameter dst MAC. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_mac_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         vendor </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180fa7e595ae08eccf5f657b2568d6124f30b" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_SIP</name>
+          <briefdescription>
+<para>Action parameter sip. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180fa8717af4e7b97e307caf42b8d27c7043f" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_DIP</name>
+          <briefdescription>
+<para>Action parameter dip. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180fa585aa66c56a4f37515bb4c76ec572dd2" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_SIP_MASK</name>
+          <briefdescription>
+<para>Action parameter sip mask. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180fa0efef9c1f0d80886df6278283b2889eb" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_DIP_MASK</name>
+          <briefdescription>
+<para>Action parameter dip mask. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180faf61a22dabd7c3a69feac5b4f3451dd11" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_VENDOR_METADATA</name>
+          <briefdescription>
+<para>Action parameter vendor metadata. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_u8_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180fa29d6613db965597174b877de403b0a46" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_FLOW_DATA_PB</name>
+          <briefdescription>
+<para>Action parameter flow data protocol buffer. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_u8_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180fa1a4eef49f580c682f4221b0219d1cf1a" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_IP_ADDR_FAMILY</name>
+          <briefdescription>
+<para>IP address family for resource accounting. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_addr_family_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>IsResourceType:</title><para> @@isresourcetype  true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180fa35b7f12abdfc5c0410caafad4f9e98b2" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_DASH_FLOW_SYNC_STATE</name>
+          <briefdescription>
+<para>Action parameter DASH flow sync state. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_dash_flow_sync_state_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_DASH_FLOW_SYNC_STATE_FLOW_MISS </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180fa3ae9a24da45098b53e514e45b79fe487" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_UNDERLAY0_SMAC</name>
+          <briefdescription>
+<para>Action parameter underlay0 source MAC. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_mac_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         vendor </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180fa01df28ae2c739219e5ac06a8de642258" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_UNDERLAY0_DMAC</name>
+          <briefdescription>
+<para>Action parameter underlay0 destination MAC. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_mac_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         vendor </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180fade251cec98d48cff1f2c99dfe81c8d2f" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180fa4ae08e0eb137e6a4298744757e4e0c57" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180fa322387c8190c8df2f3a2ece97a156a6c" prot="public">
+          <name>SAI_FLOW_ENTRY_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute ID for flow entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" line="149" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" bodystart="150" bodyend="476"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASHFLOW_1ga1e4b387b8ee8ed42a606e0b4e96dd3c7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_flow_entry_bulk_get_session_filter_attr_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga1e4b387b8ee8ed42a606e0b4e96dd3c7a2ea66fd4b1940895ed59a5d3bde9e253" prot="public">
+          <name>SAI_FLOW_ENTRY_BULK_GET_SESSION_FILTER_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga1e4b387b8ee8ed42a606e0b4e96dd3c7aff16c491b3d1c0716bce83a8dd17bcd1" prot="public">
+          <name>SAI_FLOW_ENTRY_BULK_GET_SESSION_FILTER_ATTR_DASH_FLOW_ENTRY_BULK_GET_SESSION_FILTER_KEY</name>
+          <initializer>= SAI_FLOW_ENTRY_BULK_GET_SESSION_FILTER_ATTR_START</initializer>
+          <briefdescription>
+<para>Action parameter DASH flow entry bulk get session filter key. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_dash_flow_entry_bulk_get_session_filter_key_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_DASH_FLOW_ENTRY_BULK_GET_SESSION_FILTER_KEY_INVAILD </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga1e4b387b8ee8ed42a606e0b4e96dd3c7accf5882d01103d07221641caef497f7c" prot="public">
+          <name>SAI_FLOW_ENTRY_BULK_GET_SESSION_FILTER_ATTR_DASH_FLOW_ENTRY_BULK_GET_SESSION_OP_KEY</name>
+          <briefdescription>
+<para>Action parameter DASH flow entry bulk get session op key. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_dash_flow_entry_bulk_get_session_op_key_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_DASH_FLOW_ENTRY_BULK_GET_SESSION_OP_KEY_FILTER_OP_INVALID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga1e4b387b8ee8ed42a606e0b4e96dd3c7ac76dd3d0a2c4058cb8477e11a963ea5f" prot="public">
+          <name>SAI_FLOW_ENTRY_BULK_GET_SESSION_FILTER_ATTR_INT_VALUE</name>
+          <briefdescription>
+<para>Action parameter int value. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga1e4b387b8ee8ed42a606e0b4e96dd3c7acbfb195affc216f26543e09fdaca5f13" prot="public">
+          <name>SAI_FLOW_ENTRY_BULK_GET_SESSION_FILTER_ATTR_IP_VALUE</name>
+          <briefdescription>
+<para>Action parameter IP value. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga1e4b387b8ee8ed42a606e0b4e96dd3c7a2e94fd14575534ad130b410b61b84166" prot="public">
+          <name>SAI_FLOW_ENTRY_BULK_GET_SESSION_FILTER_ATTR_MAC_VALUE</name>
+          <briefdescription>
+<para>Action parameter MAC value. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_mac_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         vendor </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga1e4b387b8ee8ed42a606e0b4e96dd3c7aa158d92c5d61cb104de9f6724836b1df" prot="public">
+          <name>SAI_FLOW_ENTRY_BULK_GET_SESSION_FILTER_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga1e4b387b8ee8ed42a606e0b4e96dd3c7a3f33cc0af7bdf74cbaa52380b9ef938e" prot="public">
+          <name>SAI_FLOW_ENTRY_BULK_GET_SESSION_FILTER_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga1e4b387b8ee8ed42a606e0b4e96dd3c7acd4b1473b8c5d6c088df126f2007797a" prot="public">
+          <name>SAI_FLOW_ENTRY_BULK_GET_SESSION_FILTER_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute ID for flow entry bulk get session filter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" line="481" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" bodystart="482" bodyend="544"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASHFLOW_1ga0346ffc4d20e71d16a7b44ad40fc101f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_flow_entry_bulk_get_session_attr_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga0346ffc4d20e71d16a7b44ad40fc101fa5478ea871ed4792bb761a07204c93acc" prot="public">
+          <name>SAI_FLOW_ENTRY_BULK_GET_SESSION_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga0346ffc4d20e71d16a7b44ad40fc101faac0ad0f8c9f7f51d08386efc129d0f40" prot="public">
+          <name>SAI_FLOW_ENTRY_BULK_GET_SESSION_ATTR_DASH_FLOW_ENTRY_BULK_GET_SESSION_MODE</name>
+          <initializer>= SAI_FLOW_ENTRY_BULK_GET_SESSION_ATTR_START</initializer>
+          <briefdescription>
+<para>Action parameter DASH flow entry bulk get session mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_dash_flow_entry_bulk_get_session_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_DASH_FLOW_ENTRY_BULK_GET_SESSION_MODE_SAI_DASH_FLOW_ENTRY_BULK_GET_SESSION_MODE_GRPC </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga0346ffc4d20e71d16a7b44ad40fc101faa1ec3a07a499c04957a6053a1ac9e29b" prot="public">
+          <name>SAI_FLOW_ENTRY_BULK_GET_SESSION_ATTR_BULK_GET_ENTRY_LIMITATION</name>
+          <briefdescription>
+<para>Action parameter bulk get entry limitation. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga0346ffc4d20e71d16a7b44ad40fc101fa5a3a1b0bb307a02e2e5e0c5ee5b6fd07" prot="public">
+          <name>SAI_FLOW_ENTRY_BULK_GET_SESSION_ATTR_BULK_GET_SESSION_SERVER_IP</name>
+          <briefdescription>
+<para>Action parameter bulk get session server IP. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga0346ffc4d20e71d16a7b44ad40fc101fa5b5af4bfb12b4870d1571c29e5e70d1c" prot="public">
+          <name>SAI_FLOW_ENTRY_BULK_GET_SESSION_ATTR_BULK_GET_SESSION_SERVER_PORT</name>
+          <briefdescription>
+<para>Action parameter bulk get session server port. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga0346ffc4d20e71d16a7b44ad40fc101fa15a46684c62faaca3cca5c719d0f01b4" prot="public">
+          <name>SAI_FLOW_ENTRY_BULK_GET_SESSION_ATTR_FIRST_FLOW_ENTRY_BULK_GET_SESSION_FILTER_ID</name>
+          <briefdescription>
+<para>Action parameter first flow entry bulk get session filter id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_FLOW_ENTRY_BULK_GET_SESSION_FILTER </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga0346ffc4d20e71d16a7b44ad40fc101fa689c5bcb7dcbda4350376fb9f9774880" prot="public">
+          <name>SAI_FLOW_ENTRY_BULK_GET_SESSION_ATTR_SECOND_FLOW_ENTRY_BULK_GET_SESSION_FILTER_ID</name>
+          <briefdescription>
+<para>Action parameter second flow entry bulk get session filter id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_FLOW_ENTRY_BULK_GET_SESSION_FILTER </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga0346ffc4d20e71d16a7b44ad40fc101fae798428ae4a3cc77d13d83f83a2a6532" prot="public">
+          <name>SAI_FLOW_ENTRY_BULK_GET_SESSION_ATTR_THIRD_FLOW_ENTRY_BULK_GET_SESSION_FILTER_ID</name>
+          <briefdescription>
+<para>Action parameter third flow entry bulk get session filter id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_FLOW_ENTRY_BULK_GET_SESSION_FILTER </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga0346ffc4d20e71d16a7b44ad40fc101fab2adc5edc1abce6b226f1b574fc1ae72" prot="public">
+          <name>SAI_FLOW_ENTRY_BULK_GET_SESSION_ATTR_FOURTH_FLOW_ENTRY_BULK_GET_SESSION_FILTER_ID</name>
+          <briefdescription>
+<para>Action parameter fourth flow entry bulk get session filter id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_FLOW_ENTRY_BULK_GET_SESSION_FILTER </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga0346ffc4d20e71d16a7b44ad40fc101fa7c7acac66c4ed4f983c527b99a373ebc" prot="public">
+          <name>SAI_FLOW_ENTRY_BULK_GET_SESSION_ATTR_FIFTH_FLOW_ENTRY_BULK_GET_SESSION_FILTER_ID</name>
+          <briefdescription>
+<para>Action parameter fifth flow entry bulk get session filter id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_FLOW_ENTRY_BULK_GET_SESSION_FILTER </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga0346ffc4d20e71d16a7b44ad40fc101faf5411cd36ea38d098699a155dda8ad9d" prot="public">
+          <name>SAI_FLOW_ENTRY_BULK_GET_SESSION_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga0346ffc4d20e71d16a7b44ad40fc101fa65f01df2359fa6454782553f31f13bbd" prot="public">
+          <name>SAI_FLOW_ENTRY_BULK_GET_SESSION_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHFLOW_1gga0346ffc4d20e71d16a7b44ad40fc101fa41416e279636260fabc519971812a656" prot="public">
+          <name>SAI_FLOW_ENTRY_BULK_GET_SESSION_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute ID for flow entry bulk get session. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" line="549" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" bodystart="550" bodyend="659"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHFLOW_1gaf859d1ba328e6d0b538388c60d0042cf" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASHFLOW_1gafff5a04504c41ecfa3deba619d8fb9e2" kindref="member">_sai_flow_entry_action_t</ref></type>
+        <definition>typedef enum _sai_flow_entry_action_t sai_flow_entry_action_t</definition>
+        <argsstring></argsstring>
+        <name>sai_flow_entry_action_t</name>
+        <briefdescription>
+<para>Attribute data for <ref refid="group__SAIEXPERIMENTALDASHFLOW_1gga435aa57324d95a20c5e5045eabb9180faa9bbacf4f9b49c0ac9d205ad25e740be" kindref="member">SAI_FLOW_ENTRY_ATTR_ACTION</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" line="45" column="25"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHFLOW_1ga86b48dec7d5b692d0e8273e945fac8b7" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASHFLOW_1gae610099568236ce31ea4963fa6bae145" kindref="member">_sai_flow_table_attr_t</ref></type>
+        <definition>typedef enum _sai_flow_table_attr_t sai_flow_table_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_flow_table_attr_t</name>
+        <briefdescription>
+<para>Attribute ID for flow table. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" line="95" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHFLOW_1gab6bb89fd028d2c4bd4a4d497857059e9" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__flow__entry__t" kindref="compound">_sai_flow_entry_t</ref></type>
+        <definition>typedef struct _sai_flow_entry_t sai_flow_entry_t</definition>
+        <argsstring></argsstring>
+        <name>sai_flow_entry_t</name>
+        <briefdescription>
+<para>Entry for flow_entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" line="144" column="18"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHFLOW_1gaed8fd4d3227a0e333188ff31818e108c" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASHFLOW_1ga435aa57324d95a20c5e5045eabb9180f" kindref="member">_sai_flow_entry_attr_t</ref></type>
+        <definition>typedef enum _sai_flow_entry_attr_t sai_flow_entry_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_flow_entry_attr_t</name>
+        <briefdescription>
+<para>Attribute ID for flow entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" line="476" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHFLOW_1ga740df7e4998090f16951ff7e9b8bbb2f" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASHFLOW_1ga1e4b387b8ee8ed42a606e0b4e96dd3c7" kindref="member">_sai_flow_entry_bulk_get_session_filter_attr_t</ref></type>
+        <definition>typedef enum _sai_flow_entry_bulk_get_session_filter_attr_t sai_flow_entry_bulk_get_session_filter_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_flow_entry_bulk_get_session_filter_attr_t</name>
+        <briefdescription>
+<para>Attribute ID for flow entry bulk get session filter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" line="544" column="47"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHFLOW_1ga4e760f5eaa61bcfc24e9a2a292511c26" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASHFLOW_1ga0346ffc4d20e71d16a7b44ad40fc101f" kindref="member">_sai_flow_entry_bulk_get_session_attr_t</ref></type>
+        <definition>typedef enum _sai_flow_entry_bulk_get_session_attr_t sai_flow_entry_bulk_get_session_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_flow_entry_bulk_get_session_attr_t</name>
+        <briefdescription>
+<para>Attribute ID for flow entry bulk get session. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" line="659" column="40"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHFLOW_1ga2ef4966748f622835563d015dddf131e" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_flow_table_fn) (_Out_ sai_object_id_t *flow_table_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *flow_table_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_flow_table_fn</name>
+        <briefdescription>
+<para>Create flow table. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">flow_table_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" line="671" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" bodystart="671" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHFLOW_1ga8c5e636fe21e30d8cf19297ad64bd62d" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_flow_table_fn) (_In_ sai_object_id_t flow_table_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t flow_table_id)</argsstring>
+        <name>sai_remove_flow_table_fn</name>
+        <briefdescription>
+<para>Remove flow table. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">flow_table_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" line="684" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" bodystart="684" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHFLOW_1ga5325669b404538e376b2d6f206eb34c4" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_flow_table_attribute_fn) (_In_ sai_object_id_t flow_table_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t flow_table_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_flow_table_attribute_fn</name>
+        <briefdescription>
+<para>Set attribute for flow table. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">flow_table_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" line="695" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" bodystart="695" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHFLOW_1ga053452e236da3a08997349e865bd03e0" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_flow_table_attribute_fn) (_In_ sai_object_id_t flow_table_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t flow_table_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_flow_table_attribute_fn</name>
+        <briefdescription>
+<para>Get attribute for flow table. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">flow_table_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" line="708" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" bodystart="708" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHFLOW_1gad2417bd9b0ef034e940c2effcbcacbfc" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_flow_entry_fn) (_In_ const sai_flow_entry_t *flow_entry, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ const sai_flow_entry_t *flow_entry, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_flow_entry_fn</name>
+        <briefdescription>
+<para>Create flow entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">flow_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" line="722" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" bodystart="722" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHFLOW_1ga3234112049417fe54be6f4fba794b50c" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_flow_entry_fn) (_In_ const sai_flow_entry_t *flow_entry)</definition>
+        <argsstring>)(_In_ const sai_flow_entry_t *flow_entry)</argsstring>
+        <name>sai_remove_flow_entry_fn</name>
+        <briefdescription>
+<para>Remove flow entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">flow_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" line="734" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" bodystart="734" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHFLOW_1ga29ff8c8cb61f83ac5a9a989a04c17156" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_flow_entry_attribute_fn) (_In_ const sai_flow_entry_t *flow_entry, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ const sai_flow_entry_t *flow_entry, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_flow_entry_attribute_fn</name>
+        <briefdescription>
+<para>Set attribute for flow entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">flow_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" line="745" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" bodystart="745" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHFLOW_1gaaf331d971404b8290ab7ce2fe83e028d" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_flow_entry_attribute_fn) (_In_ const sai_flow_entry_t *flow_entry, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ const sai_flow_entry_t *flow_entry, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_flow_entry_attribute_fn</name>
+        <briefdescription>
+<para>Get attribute for flow entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">flow_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" line="758" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" bodystart="758" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHFLOW_1ga534925608e389ff23904b8c2b95e55ae" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_create_flow_entry_fn) (_In_ uint32_t object_count, _In_ const sai_flow_entry_t *flow_entry, _In_ const uint32_t *attr_count, _In_ const sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_flow_entry_t *flow_entry, _In_ const uint32_t *attr_count, _In_ const sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_create_flow_entry_fn</name>
+        <briefdescription>
+<para>Bulk create flow entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to create </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flow_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of object to create </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attr_count. Caller passes the number of attribute for each object to create. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attributes for every object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are created or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to create. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" line="780" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" bodystart="780" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHFLOW_1ga414485bd2b2f086c89d9715a25403fd7" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_remove_flow_entry_fn) (_In_ uint32_t object_count, _In_ const sai_flow_entry_t *flow_entry, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_flow_entry_t *flow_entry, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_remove_flow_entry_fn</name>
+        <briefdescription>
+<para>Bulk remove flow entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to remove </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">flow_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of objects to remove </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are removed or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to remove. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" line="802" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" bodystart="802" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHFLOW_1ga9441ab8d93437248ba82d46ec60836a6" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_flow_entry_bulk_get_session_filter_fn) (_Out_ sai_object_id_t *flow_entry_bulk_get_session_filter_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *flow_entry_bulk_get_session_filter_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_flow_entry_bulk_get_session_filter_fn</name>
+        <briefdescription>
+<para>Create flow entry bulk get session filter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">flow_entry_bulk_get_session_filter_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" line="818" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" bodystart="818" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHFLOW_1ga131530c88a79e7c3b7bb5239ade70f83" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_flow_entry_bulk_get_session_filter_fn) (_In_ sai_object_id_t flow_entry_bulk_get_session_filter_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t flow_entry_bulk_get_session_filter_id)</argsstring>
+        <name>sai_remove_flow_entry_bulk_get_session_filter_fn</name>
+        <briefdescription>
+<para>Remove flow entry bulk get session filter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">flow_entry_bulk_get_session_filter_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" line="831" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" bodystart="831" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHFLOW_1gaf6affb3e27bf9124b96b432c92a60bc4" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_flow_entry_bulk_get_session_filter_attribute_fn) (_In_ sai_object_id_t flow_entry_bulk_get_session_filter_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t flow_entry_bulk_get_session_filter_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_flow_entry_bulk_get_session_filter_attribute_fn</name>
+        <briefdescription>
+<para>Set attribute for flow entry bulk get session filter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">flow_entry_bulk_get_session_filter_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" line="842" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" bodystart="842" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHFLOW_1gab68e05987353889aae18210e10626093" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_flow_entry_bulk_get_session_filter_attribute_fn) (_In_ sai_object_id_t flow_entry_bulk_get_session_filter_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t flow_entry_bulk_get_session_filter_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_flow_entry_bulk_get_session_filter_attribute_fn</name>
+        <briefdescription>
+<para>Get attribute for flow entry bulk get session filter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">flow_entry_bulk_get_session_filter_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" line="855" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" bodystart="855" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHFLOW_1ga55e73cb114430e4c29ccdead4c8c841d" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_flow_entry_bulk_get_session_fn) (_Out_ sai_object_id_t *flow_entry_bulk_get_session_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *flow_entry_bulk_get_session_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_flow_entry_bulk_get_session_fn</name>
+        <briefdescription>
+<para>Create flow entry bulk get session. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">flow_entry_bulk_get_session_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" line="870" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" bodystart="870" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHFLOW_1gaa9ec66d8b9605e49c43fed4f1a086832" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_flow_entry_bulk_get_session_fn) (_In_ sai_object_id_t flow_entry_bulk_get_session_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t flow_entry_bulk_get_session_id)</argsstring>
+        <name>sai_remove_flow_entry_bulk_get_session_fn</name>
+        <briefdescription>
+<para>Remove flow entry bulk get session. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">flow_entry_bulk_get_session_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" line="883" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" bodystart="883" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHFLOW_1ga2c129e3f7191b05fc7800d5de9d7384b" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_flow_entry_bulk_get_session_attribute_fn) (_In_ sai_object_id_t flow_entry_bulk_get_session_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t flow_entry_bulk_get_session_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_flow_entry_bulk_get_session_attribute_fn</name>
+        <briefdescription>
+<para>Set attribute for flow entry bulk get session. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">flow_entry_bulk_get_session_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" line="894" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" bodystart="894" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHFLOW_1gaa3a76817830f6999cb8f9105d34751b4" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_flow_entry_bulk_get_session_attribute_fn) (_In_ sai_object_id_t flow_entry_bulk_get_session_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t flow_entry_bulk_get_session_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_flow_entry_bulk_get_session_attribute_fn</name>
+        <briefdescription>
+<para>Get attribute for flow entry bulk get session. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">flow_entry_bulk_get_session_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" line="907" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" bodystart="907" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHFLOW_1gab39cd35ab7cbd5fdf453f914dbbf3fac" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__dash__flow__api__t" kindref="compound">_sai_dash_flow_api_t</ref></type>
+        <definition>typedef struct _sai_dash_flow_api_t sai_dash_flow_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dash_flow_api_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h" line="942" column="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module defines SAI extensions for DASH flow. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2014 Microsoft Open Technologies, Inc.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <ulink url="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</ulink></para>
+<para>THIS CODE IS PROVIDED ON AN <emphasis>AS IS</emphasis> BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</para>
+<para>See the Apache Version 2.0 License for specific language governing permissions and limitations under the License.</para>
+<para>Microsoft would like to thank the following companies for their review and assistance with these files: Intel Corporation, Mellanox Technologies Ltd, Dell Products, L.P., Facebook, Inc., Marvell International Ltd.</para>
+<para><simplesect kind="warning"><para>This module is a SAI experimental module </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashflow.h"/>
+  </compounddef>
+</doxygen>

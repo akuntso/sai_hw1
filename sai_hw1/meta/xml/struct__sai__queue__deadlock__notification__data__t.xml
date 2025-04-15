@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__queue__deadlock__notification__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_queue_deadlock_notification_data_t</compoundname>
+    <includes refid="saiqueue_8h" local="no">saiqueue.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__queue__deadlock__notification__data__t_1aea18b5deb24b8eb8ccbf0b62caf96a1c" prot="public" static="no" mutable="no">
+        <type>sai_object_id_t</type>
+        <definition>sai_object_id_t _sai_queue_deadlock_notification_data_t::queue_id</definition>
+        <argsstring></argsstring>
+        <name>queue_id</name>
+        <briefdescription>
+<para>Queue id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_QUEUE </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" line="464" column="21" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" bodystart="464" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__queue__deadlock__notification__data__t_1a2abe5853871f3d8b929314b2bbed9a8c" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIQUEUE_1ga8284031415109bd4cd6deaa0b6adb7ca" kindref="member">sai_queue_pfc_deadlock_event_type_t</ref></type>
+        <definition>sai_queue_pfc_deadlock_event_type_t _sai_queue_deadlock_notification_data_t::event</definition>
+        <argsstring></argsstring>
+        <name>event</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Deadlock event </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" line="467" column="41" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" bodystart="467" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__queue__deadlock__notification__data__t_1aaf68e677d4088b6a9d0de510fb19267c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_queue_deadlock_notification_data_t::app_managed_recovery</definition>
+        <argsstring></argsstring>
+        <name>app_managed_recovery</name>
+        <briefdescription>
+<para>Application based recovery management indicator. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is a return value from host adapter. If set to TRUE then host application will manage deadlock recovery else SAI adapter or SDK will manage deadlock recovery and also generate recovery ended notification. Applicable only when event is == SAI_QUEUE_PFC_DEADLOCK_EVENT_TYPE_DETECTED. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" line="478" column="10" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" bodystart="478" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Notification data format received from SAI queue deadlock event callback. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" line="457" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiqueue.h" bodystart="458" bodyend="480"/>
+    <listofallmembers>
+      <member refid="struct__sai__queue__deadlock__notification__data__t_1aaf68e677d4088b6a9d0de510fb19267c" prot="public" virt="non-virtual"><scope>_sai_queue_deadlock_notification_data_t</scope><name>app_managed_recovery</name></member>
+      <member refid="struct__sai__queue__deadlock__notification__data__t_1a2abe5853871f3d8b929314b2bbed9a8c" prot="public" virt="non-virtual"><scope>_sai_queue_deadlock_notification_data_t</scope><name>event</name></member>
+      <member refid="struct__sai__queue__deadlock__notification__data__t_1aea18b5deb24b8eb8ccbf0b62caf96a1c" prot="public" virt="non-virtual"><scope>_sai_queue_deadlock_notification_data_t</scope><name>queue_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

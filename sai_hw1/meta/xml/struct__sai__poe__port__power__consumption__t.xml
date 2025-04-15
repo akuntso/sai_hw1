@@ -1,0 +1,168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__poe__port__power__consumption__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_poe_port_power_consumption_t</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__poe__port__power__consumption__t_1a2aa2e3b9666314987aeb5b3b77ed92b2" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1gab77617799fb557864efafd82cfa83a2a" kindref="member">sai_poe_port_active_channel_type_t</ref></type>
+        <definition>sai_poe_port_active_channel_type_t _sai_poe_port_power_consumption_t::active_channel</definition>
+        <argsstring></argsstring>
+        <name>active_channel</name>
+        <briefdescription>
+<para>Active channel: a/b/ab. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1273" column="40" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__poe__port__power__consumption__t_1a54dd40f56d43762b9941de7d65f1d84b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _sai_poe_port_power_consumption_t::voltage</definition>
+        <argsstring></argsstring>
+        <name>voltage</name>
+        <briefdescription>
+<para>Voltage in MILLI volts. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1278" column="14" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__poe__port__power__consumption__t_1ab290c84fa0ef0103c2431b6227966895" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _sai_poe_port_power_consumption_t::current</definition>
+        <argsstring></argsstring>
+        <name>current</name>
+        <briefdescription>
+<para>Current in MILLI ampere. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1283" column="14" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__poe__port__power__consumption__t_1a4c172e294a83fc4bc9d93e4ca41b8b01" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _sai_poe_port_power_consumption_t::consumption</definition>
+        <argsstring></argsstring>
+        <name>consumption</name>
+        <briefdescription>
+<para>Consumption in MILLI watts. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1288" column="14" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1288" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__poe__port__power__consumption__t_1a709fc3df8653f6cd63d7ae147df95445" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga28965789a4d84820cc6c92ace4a670b4" kindref="member">sai_poe_port_signature_type_t</ref></type>
+        <definition>sai_poe_port_signature_type_t _sai_poe_port_power_consumption_t::signature_type</definition>
+        <argsstring></argsstring>
+        <name>signature_type</name>
+        <briefdescription>
+<para>Single or dual signature port. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1293" column="35" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__poe__port__power__consumption__t_1a866f47f41571f3cd13e3461eaadcbd1a" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1gad93c102a5abf3c75f73e95143167d423" kindref="member">sai_poe_port_class_method_type_t</ref></type>
+        <definition>sai_poe_port_class_method_type_t _sai_poe_port_power_consumption_t::class_method</definition>
+        <argsstring></argsstring>
+        <name>class_method</name>
+        <briefdescription>
+<para>IEEE 802.3bt port class method type regular/auto. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1298" column="38" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1298" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__poe__port__power__consumption__t_1a07c9ff6dfe2c3284b094460589aeec06" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t _sai_poe_port_power_consumption_t::measured_class_a</definition>
+        <argsstring></argsstring>
+        <name>measured_class_a</name>
+        <briefdescription>
+<para>Measured class for channel a. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1303" column="13" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__poe__port__power__consumption__t_1ab7a01c6db59d9061520b9c40923ad4f0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t _sai_poe_port_power_consumption_t::assigned_class_a</definition>
+        <argsstring></argsstring>
+        <name>assigned_class_a</name>
+        <briefdescription>
+<para>Assigned (final) class for channel a. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1308" column="13" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__poe__port__power__consumption__t_1aa4d8d43227ce591931ae9f7bd3608dbf" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t _sai_poe_port_power_consumption_t::measured_class_b</definition>
+        <argsstring></argsstring>
+        <name>measured_class_b</name>
+        <briefdescription>
+<para>Dual signature IEEE 802.3bt port - measured class for channel b. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1313" column="13" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__poe__port__power__consumption__t_1a8a41870c53bf42b0608ead949794060a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t _sai_poe_port_power_consumption_t::assigned_class_b</definition>
+        <argsstring></argsstring>
+        <name>assigned_class_b</name>
+        <briefdescription>
+<para>Dual signature IEEE 802.3bt port - assigned (final) class for channel b. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1318" column="13" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1318" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines a port consumption structure. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Data that is needed and available when a port is delivering power </para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1268" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1269" bodyend="1320"/>
+    <listofallmembers>
+      <member refid="struct__sai__poe__port__power__consumption__t_1a2aa2e3b9666314987aeb5b3b77ed92b2" prot="public" virt="non-virtual"><scope>_sai_poe_port_power_consumption_t</scope><name>active_channel</name></member>
+      <member refid="struct__sai__poe__port__power__consumption__t_1ab7a01c6db59d9061520b9c40923ad4f0" prot="public" virt="non-virtual"><scope>_sai_poe_port_power_consumption_t</scope><name>assigned_class_a</name></member>
+      <member refid="struct__sai__poe__port__power__consumption__t_1a8a41870c53bf42b0608ead949794060a" prot="public" virt="non-virtual"><scope>_sai_poe_port_power_consumption_t</scope><name>assigned_class_b</name></member>
+      <member refid="struct__sai__poe__port__power__consumption__t_1a866f47f41571f3cd13e3461eaadcbd1a" prot="public" virt="non-virtual"><scope>_sai_poe_port_power_consumption_t</scope><name>class_method</name></member>
+      <member refid="struct__sai__poe__port__power__consumption__t_1a4c172e294a83fc4bc9d93e4ca41b8b01" prot="public" virt="non-virtual"><scope>_sai_poe_port_power_consumption_t</scope><name>consumption</name></member>
+      <member refid="struct__sai__poe__port__power__consumption__t_1ab290c84fa0ef0103c2431b6227966895" prot="public" virt="non-virtual"><scope>_sai_poe_port_power_consumption_t</scope><name>current</name></member>
+      <member refid="struct__sai__poe__port__power__consumption__t_1a07c9ff6dfe2c3284b094460589aeec06" prot="public" virt="non-virtual"><scope>_sai_poe_port_power_consumption_t</scope><name>measured_class_a</name></member>
+      <member refid="struct__sai__poe__port__power__consumption__t_1aa4d8d43227ce591931ae9f7bd3608dbf" prot="public" virt="non-virtual"><scope>_sai_poe_port_power_consumption_t</scope><name>measured_class_b</name></member>
+      <member refid="struct__sai__poe__port__power__consumption__t_1a709fc3df8653f6cd63d7ae147df95445" prot="public" virt="non-virtual"><scope>_sai_poe_port_power_consumption_t</scope><name>signature_type</name></member>
+      <member refid="struct__sai__poe__port__power__consumption__t_1a54dd40f56d43762b9941de7d65f1d84b" prot="public" virt="non-virtual"><scope>_sai_poe_port_power_consumption_t</scope><name>voltage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

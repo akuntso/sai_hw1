@@ -1,0 +1,3109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group__SAIMACSEC" kind="group">
+    <compoundname>SAIMACSEC</compoundname>
+    <title>SAI - MACsec specific API definitions</title>
+    <innerclass refid="struct__sai__macsec__api__t" prot="public">_sai_macsec_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIMACSEC_1ga403a5cfe73b26d82d229707ddc5f1835" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_macsec_direction_t</name>
+        <enumvalue id="group__SAIMACSEC_1gga403a5cfe73b26d82d229707ddc5f1835a92a87c43b88e58afc82763e4651fa2c4" prot="public">
+          <name>SAI_MACSEC_DIRECTION_EGRESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga403a5cfe73b26d82d229707ddc5f1835ab096e2fd10d31b929e106fab4563f0f9" prot="public">
+          <name>SAI_MACSEC_DIRECTION_INGRESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>MACsec direction types For PHY ASIC Egress is system to line direction and ingress is the opposite. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="40" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="41" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIMACSEC_1ga02ca17cd3bfdef81874f9d7f6d62f9a8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_macsec_cipher_suite_t</name>
+        <enumvalue id="group__SAIMACSEC_1gga02ca17cd3bfdef81874f9d7f6d62f9a8ad40c2a1a5de00eecd4eb434ee463d6fa" prot="public">
+          <name>SAI_MACSEC_CIPHER_SUITE_GCM_AES_128</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga02ca17cd3bfdef81874f9d7f6d62f9a8aa13f24682d739f6699c834e9a42ff970" prot="public">
+          <name>SAI_MACSEC_CIPHER_SUITE_GCM_AES_256</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga02ca17cd3bfdef81874f9d7f6d62f9a8afb71c567f38a5df8cae67bbe0691ea7d" prot="public">
+          <name>SAI_MACSEC_CIPHER_SUITE_GCM_AES_XPN_128</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga02ca17cd3bfdef81874f9d7f6d62f9a8ab1fda87352515804e8e0a693e4a29c8d" prot="public">
+          <name>SAI_MACSEC_CIPHER_SUITE_GCM_AES_XPN_256</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>MACsec Cipher Suites. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="49" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="50" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIMACSEC_1gafcbfd00e51757d8c8207d3cd106a232a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_macsec_max_secure_associations_per_sc_t</name>
+        <enumvalue id="group__SAIMACSEC_1ggafcbfd00e51757d8c8207d3cd106a232aa9a290564596cac3120f8ac4a2f2275da" prot="public">
+          <name>SAI_MACSEC_MAX_SECURE_ASSOCIATIONS_PER_SC_TWO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggafcbfd00e51757d8c8207d3cd106a232aac1c7c3dc373cc401b09c5a301f6c1bff" prot="public">
+          <name>SAI_MACSEC_MAX_SECURE_ASSOCIATIONS_PER_SC_FOUR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Max number of secure associations for each secure channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>An implementation may support either two or four associations depending on whether it stores the secure association number in one or two bits. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="64" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="65" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIMACSEC_1ga6428fa378b2f8d2a47ec437b28e2bf3a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_macsec_attr_t</name>
+        <enumvalue id="group__SAIMACSEC_1gga6428fa378b2f8d2a47ec437b28e2bf3aa0a4de02b847291c52783f43848af3f01" prot="public">
+          <name>SAI_MACSEC_ATTR_START</name>
+          <briefdescription>
+<para>Start of MACsec attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga6428fa378b2f8d2a47ec437b28e2bf3aa36b677d82d7e698a9e0783987ad7c807" prot="public">
+          <name>SAI_MACSEC_ATTR_DIRECTION</name>
+          <initializer>= SAI_MACSEC_ATTR_START</initializer>
+          <briefdescription>
+<para>MACsec direction. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_macsec_direction_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga6428fa378b2f8d2a47ec437b28e2bf3aab58e07eea334b29e269ffc3cbbeff4f8" prot="public">
+          <name>SAI_MACSEC_ATTR_SWITCHING_MODE_CUT_THROUGH_SUPPORTED</name>
+          <briefdescription>
+<para>SAI_SWITCH_SWITCHING_MODE_CUT_THROUGH supported. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga6428fa378b2f8d2a47ec437b28e2bf3aa44835827f0066c0d0bd64f0e0d838126" prot="public">
+          <name>SAI_MACSEC_ATTR_SWITCHING_MODE_STORE_AND_FORWARD_SUPPORTED</name>
+          <briefdescription>
+<para>SAI_SWITCH_SWITCHING_MODE_STORE_AND_FORWARD supported. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga6428fa378b2f8d2a47ec437b28e2bf3aa5d26d7fd43ea655d7890188603a7b47a" prot="public">
+          <name>SAI_MACSEC_ATTR_STATS_MODE_READ_SUPPORTED</name>
+          <briefdescription>
+<para>SAI_STATS_MODE_READ supported. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga6428fa378b2f8d2a47ec437b28e2bf3aad53d8ecb798ce7b841881cff6384c50c" prot="public">
+          <name>SAI_MACSEC_ATTR_STATS_MODE_READ_CLEAR_SUPPORTED</name>
+          <briefdescription>
+<para>SAI_STATS_MODE_READ_CLEAR supported. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga6428fa378b2f8d2a47ec437b28e2bf3aae95c7f429999bebc5fec68ce87d2ec5e" prot="public">
+          <name>SAI_MACSEC_ATTR_SCI_IN_INGRESS_MACSEC_ACL</name>
+          <briefdescription>
+<para>Indicates if ingress can use SCI only as an ACL field. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>False means one 1 flow can be associated with multiple ACL entries and multiple SC. True means SCI can only be used as ACL field i.e. 1 ingress flow can be associated with only 1 ACL entry and 1 SC. Valid only for ingress.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga6428fa378b2f8d2a47ec437b28e2bf3aa09e63bc2f0325db9149ebd40bb405ff0" prot="public">
+          <name>SAI_MACSEC_ATTR_SUPPORTED_CIPHER_SUITE_LIST</name>
+          <briefdescription>
+<para>List of supported cipher-suites. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_s32_list_t sai_macsec_cipher_suite_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga6428fa378b2f8d2a47ec437b28e2bf3aae487fa649d783c73c33dc9b630f40839" prot="public">
+          <name>SAI_MACSEC_ATTR_PN_32BIT_SUPPORTED</name>
+          <briefdescription>
+<para>Indicates if 32-bit Packer Number (PN) is supported. This is deprecated, subsumed under SAI_MACSEC_ATTR_SUPPORTED_CIPHER_SUITE_LIST. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Deprecated:</title><para> @@deprecated      true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga6428fa378b2f8d2a47ec437b28e2bf3aa621c6c1aeb7206679af97071a4990031" prot="public">
+          <name>SAI_MACSEC_ATTR_XPN_64BIT_SUPPORTED</name>
+          <briefdescription>
+<para>Indicates if 64-bit Extended Packer Number (PN) is supported. This is deprecated, subsumed under SAI_MACSEC_ATTR_SUPPORTED_CIPHER_SUITE_LIST. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Deprecated:</title><para> @@deprecated      true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga6428fa378b2f8d2a47ec437b28e2bf3aaecf42c7b4661455191ba1cb499fb3c26" prot="public">
+          <name>SAI_MACSEC_ATTR_GCM_AES128_SUPPORTED</name>
+          <briefdescription>
+<para>Indicates if GCM-AES128 cipher-suite is supported. This is deprecated, subsumed under SAI_MACSEC_ATTR_SUPPORTED_CIPHER_SUITE_LIST. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Deprecated:</title><para> @@deprecated      true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga6428fa378b2f8d2a47ec437b28e2bf3aa775618c1c68b7c68fe5bc0a3fad4db08" prot="public">
+          <name>SAI_MACSEC_ATTR_GCM_AES256_SUPPORTED</name>
+          <briefdescription>
+<para>Indicates if GCM-AES256 cipher-suite is supported. This is deprecated, subsumed under SAI_MACSEC_ATTR_SUPPORTED_CIPHER_SUITE_LIST. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Deprecated:</title><para> @@deprecated      true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga6428fa378b2f8d2a47ec437b28e2bf3aa5044c973e7fb0ad579aac563754c267a" prot="public">
+          <name>SAI_MACSEC_ATTR_SECTAG_OFFSETS_SUPPORTED</name>
+          <briefdescription>
+<para>List of supported SecTAG offset values for both ingress parsing and for egress. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_u8_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga6428fa378b2f8d2a47ec437b28e2bf3aaec3ae6d67c0c89fabfced5c67813196d" prot="public">
+          <name>SAI_MACSEC_ATTR_SYSTEM_SIDE_MTU</name>
+          <briefdescription>
+<para>MACsec MTU capability on system side (not including MACsec overhead). </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga6428fa378b2f8d2a47ec437b28e2bf3aa8ad5315775bb30688694b813b1827c00" prot="public">
+          <name>SAI_MACSEC_ATTR_WARM_BOOT_SUPPORTED</name>
+          <briefdescription>
+<para>Warm boot is supported for all saimacsec objects. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga6428fa378b2f8d2a47ec437b28e2bf3aad91c5ac2d24d02dca066a7590edcec5f" prot="public">
+          <name>SAI_MACSEC_ATTR_WARM_BOOT_ENABLE</name>
+          <briefdescription>
+<para>When false disables creation of saimacsec objects during warm-boot. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga6428fa378b2f8d2a47ec437b28e2bf3aa3d5ef1e7245ea4d87b522eae57e400df" prot="public">
+          <name>SAI_MACSEC_ATTR_CTAG_TPID</name>
+          <briefdescription>
+<para>TPID value used to identify packet C-tag. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          false </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0x8100 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga6428fa378b2f8d2a47ec437b28e2bf3aa2f85d136ed8c470b5fb7738a43a7ebf0" prot="public">
+          <name>SAI_MACSEC_ATTR_STAG_TPID</name>
+          <briefdescription>
+<para>TPID value used to identify packet S-tag. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          false </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0x88A8 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga6428fa378b2f8d2a47ec437b28e2bf3aadf72cc8c2d431b9b9e07499f20ebdfe7" prot="public">
+          <name>SAI_MACSEC_ATTR_MAX_VLAN_TAGS_PARSED</name>
+          <briefdescription>
+<para>Maximum number of VLAN tags to parse. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga6428fa378b2f8d2a47ec437b28e2bf3aa220f29cf9a9225446401a799502e7760" prot="public">
+          <name>SAI_MACSEC_ATTR_STATS_MODE</name>
+          <briefdescription>
+<para>Global setting of read-clear or read-only for statistics read. The mode parameter for get_macsec_&lt;foo&gt;_stats_ext should match this. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_stats_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_STATS_MODE_READ_AND_CLEAR </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga6428fa378b2f8d2a47ec437b28e2bf3aaf0a873d6c93370b3985d4c5f598d34a7" prot="public">
+          <name>SAI_MACSEC_ATTR_PHYSICAL_BYPASS_ENABLE</name>
+          <briefdescription>
+<para>Enables physical bypass of MACsec module. Packets can physically bypass MACsec module only when there is no macsec_port object associated with and MACsec-capable port. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga6428fa378b2f8d2a47ec437b28e2bf3aa5ceaeb3b0ac00b26b121f49c74c20569" prot="public">
+          <name>SAI_MACSEC_ATTR_SUPPORTED_PORT_LIST</name>
+          <briefdescription>
+<para>List of ports that can support MACsec. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_PORT </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga6428fa378b2f8d2a47ec437b28e2bf3aadc8c022f228e0d6c4aecea1d429d413a" prot="public">
+          <name>SAI_MACSEC_ATTR_AVAILABLE_MACSEC_FLOW</name>
+          <briefdescription>
+<para>Available MACsec flows. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga6428fa378b2f8d2a47ec437b28e2bf3aa3131be0e6a05ef85dd4c8858e61b9dd3" prot="public">
+          <name>SAI_MACSEC_ATTR_FLOW_LIST</name>
+          <briefdescription>
+<para>List of MACsec flow associated with this MACsec object. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_MACSEC_FLOW </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga6428fa378b2f8d2a47ec437b28e2bf3aa06fc1997b5afc799f3854470727cf184" prot="public">
+          <name>SAI_MACSEC_ATTR_AVAILABLE_MACSEC_SC</name>
+          <briefdescription>
+<para>Available MACsec Secure Channels. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga6428fa378b2f8d2a47ec437b28e2bf3aa714893ded874e70a966d418aeaf9a7fd" prot="public">
+          <name>SAI_MACSEC_ATTR_AVAILABLE_MACSEC_SA</name>
+          <briefdescription>
+<para>Available MACsec Secure Associations. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga6428fa378b2f8d2a47ec437b28e2bf3aa664f942fedb0375b801f1bf62031d10d" prot="public">
+          <name>SAI_MACSEC_ATTR_MAX_SECURE_ASSOCIATIONS_PER_SC</name>
+          <briefdescription>
+<para>MACsec Secure Associations Limit. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_macsec_max_secure_associations_per_sc_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga6428fa378b2f8d2a47ec437b28e2bf3aa8f0cf96da5257893b33cc0249aa0fe85" prot="public">
+          <name>SAI_MACSEC_ATTR_END</name>
+          <briefdescription>
+<para>End of MACsec attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga6428fa378b2f8d2a47ec437b28e2bf3aa122a4040c8a732b33ed87643e6f2e67a" prot="public">
+          <name>SAI_MACSEC_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+<para>Custom range base value. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga6428fa378b2f8d2a47ec437b28e2bf3aab02cf572a5c925dcecb649db6f7c98a7" prot="public">
+          <name>SAI_MACSEC_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+<para>End of custom range base. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute Id for sai_macsec. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="73" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="74" bodyend="330"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIMACSEC_1gab401f83ffeab261ea751c1b138367954" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_macsec_port_attr_t</name>
+        <enumvalue id="group__SAIMACSEC_1ggab401f83ffeab261ea751c1b138367954a67806f2def070582d285609a356ee03a" prot="public">
+          <name>SAI_MACSEC_PORT_ATTR_START</name>
+          <briefdescription>
+<para>Start of MACsec Port attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggab401f83ffeab261ea751c1b138367954aa2671fa29646ee920942779d8ad338d4" prot="public">
+          <name>SAI_MACSEC_PORT_ATTR_MACSEC_DIRECTION</name>
+          <initializer>= SAI_MACSEC_PORT_ATTR_START</initializer>
+          <briefdescription>
+<para>MACsec direction. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_macsec_direction_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggab401f83ffeab261ea751c1b138367954ab314b957696f5d6676b143b2192a8ff8" prot="public">
+          <name>SAI_MACSEC_PORT_ATTR_PORT_ID</name>
+          <briefdescription>
+<para>Associated port id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_PORT </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggab401f83ffeab261ea751c1b138367954a62df8c6c94b8e9bc787ae8e836ef503a" prot="public">
+          <name>SAI_MACSEC_PORT_ATTR_CTAG_ENABLE</name>
+          <briefdescription>
+<para>Enable vlan tag parsing for C-tag TPID. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggab401f83ffeab261ea751c1b138367954a67c717a723c41302d7181abe70443b94" prot="public">
+          <name>SAI_MACSEC_PORT_ATTR_STAG_ENABLE</name>
+          <briefdescription>
+<para>Enable vlan tag parsing for S-tag TPID. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggab401f83ffeab261ea751c1b138367954a87984c543990218edff3fea61574b836" prot="public">
+          <name>SAI_MACSEC_PORT_ATTR_SWITCH_SWITCHING_MODE</name>
+          <briefdescription>
+<para>Switching mode for port. If configured as cut-through, the IPG for Tx MAC in the switch ASIC has to be increased to accommodate the MACsec packet size expansion. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_switch_switching_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_SWITCH_SWITCHING_MODE_CUT_THROUGH </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggab401f83ffeab261ea751c1b138367954a3b6e36d9b79eab4ff04fff90a4300093" prot="public">
+          <name>SAI_MACSEC_PORT_ATTR_STATS_COUNT_MODE</name>
+          <briefdescription>
+<para>Set MACSEC port statistics counting mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_stats_count_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_STATS_COUNT_MODE_PACKET_AND_BYTE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggab401f83ffeab261ea751c1b138367954a94550b5f3875e5c5b0e377ea57bad333" prot="public">
+          <name>SAI_MACSEC_PORT_ATTR_SELECTIVE_COUNTER_LIST</name>
+          <briefdescription>
+<para>Attach counter object list. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Counter object should be of type Selective. Fill (<ref refid="group__SAICOUNTER_1ggac5e99b5b04f2a0f0665babc2a60c9641a2835fed0aa18e2fb59824c903bd712ea" kindref="member">SAI_COUNTER_ATTR_TYPE</ref> with <ref refid="group__SAICOUNTER_1gga4e3da19e4589261e88197d6576020cf1aa4b87a1c99256ee3601553c9455cb92c" kindref="member">SAI_COUNTER_TYPE_SELECTIVE</ref>).</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_COUNTER </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggab401f83ffeab261ea751c1b138367954a51fb5e7b93f8cfcf2a8fac0ccd6f4d96" prot="public">
+          <name>SAI_MACSEC_PORT_ATTR_END</name>
+          <briefdescription>
+<para>End of MACsec Port attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggab401f83ffeab261ea751c1b138367954ad3834abfc0155d7c6e4f85d74a1bf445" prot="public">
+          <name>SAI_MACSEC_PORT_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+<para>Custom range base value. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggab401f83ffeab261ea751c1b138367954a5f9d8e25ad87bec259d0c03753e02536" prot="public">
+          <name>SAI_MACSEC_PORT_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+<para>End of custom range base. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute Id for sai_macsec_port. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="335" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="336" bodyend="424"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIMACSEC_1ga6772a88d273f1072445d0abc88a4a451" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_macsec_port_stat_t</name>
+        <enumvalue id="group__SAIMACSEC_1gga6772a88d273f1072445d0abc88a4a451a95991e0611eceb429bc3f09b8faeebd5" prot="public">
+          <name>SAI_MACSEC_PORT_STAT_PRE_MACSEC_DROP_PKTS</name>
+          <briefdescription>
+<para>Malformed packets dropped before MACsec processing, not in 802.1ae MIB. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga6772a88d273f1072445d0abc88a4a451af429e6a86da0962a0da24a2bbbf413ce" prot="public">
+          <name>SAI_MACSEC_PORT_STAT_CONTROL_PKTS</name>
+          <briefdescription>
+<para>Packets classified as control packets for MACsec processing, not in 802.1ae MIB. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga6772a88d273f1072445d0abc88a4a451a016e5a39bf37d8328670575467cb14e6" prot="public">
+          <name>SAI_MACSEC_PORT_STAT_DATA_PKTS</name>
+          <briefdescription>
+<para>Packets classified as data packets for MACsec processing, not in 802.1ae MIB. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>MACsec port counter IDs in sai_get_macsec_stats() call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="429" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="430" bodyend="445"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIMACSEC_1ga4da193eca8c693b1dffc779d93962d1c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_macsec_flow_attr_t</name>
+        <enumvalue id="group__SAIMACSEC_1gga4da193eca8c693b1dffc779d93962d1cacd898bfc5e9b4356381f4b8671eb8313" prot="public">
+          <name>SAI_MACSEC_FLOW_ATTR_START</name>
+          <briefdescription>
+<para>Start of MACsec Flow attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga4da193eca8c693b1dffc779d93962d1cafd9e1a9cbd12d228153593e0ac71e69d" prot="public">
+          <name>SAI_MACSEC_FLOW_ATTR_MACSEC_DIRECTION</name>
+          <initializer>= SAI_MACSEC_FLOW_ATTR_START</initializer>
+          <briefdescription>
+<para>MACsec direction. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_macsec_direction_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga4da193eca8c693b1dffc779d93962d1cabbeba07f53852bb95770af83e643d021" prot="public">
+          <name>SAI_MACSEC_FLOW_ATTR_ACL_ENTRY_LIST</name>
+          <briefdescription>
+<para>List of MACsec ACL entries associated with this flow. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_ACL_ENTRY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga4da193eca8c693b1dffc779d93962d1ca9c7095b3e75e46d1cef267b638cc6606" prot="public">
+          <name>SAI_MACSEC_FLOW_ATTR_SC_LIST</name>
+          <briefdescription>
+<para>List of MACsec Secure Channels associated with this flow. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_MACSEC_SC </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga4da193eca8c693b1dffc779d93962d1cac4af3206c338afb635285d4b79c21c88" prot="public">
+          <name>SAI_MACSEC_FLOW_ATTR_STATS_COUNT_MODE</name>
+          <briefdescription>
+<para>Set MACSEC flow statistics counting mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_stats_count_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_STATS_COUNT_MODE_PACKET_AND_BYTE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga4da193eca8c693b1dffc779d93962d1ca8a335ad3ddcfc7908e6b67652ed1cc96" prot="public">
+          <name>SAI_MACSEC_FLOW_ATTR_SELECTIVE_COUNTER_LIST</name>
+          <briefdescription>
+<para>Attach counter object list. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Counter object should be of type Selective. Fill (<ref refid="group__SAICOUNTER_1ggac5e99b5b04f2a0f0665babc2a60c9641a2835fed0aa18e2fb59824c903bd712ea" kindref="member">SAI_COUNTER_ATTR_TYPE</ref> with <ref refid="group__SAICOUNTER_1gga4e3da19e4589261e88197d6576020cf1aa4b87a1c99256ee3601553c9455cb92c" kindref="member">SAI_COUNTER_TYPE_SELECTIVE</ref>).</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_COUNTER </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga4da193eca8c693b1dffc779d93962d1cabf3df07314eced64924d3c51dbf03778" prot="public">
+          <name>SAI_MACSEC_FLOW_ATTR_END</name>
+          <briefdescription>
+<para>End of MACsec Flow attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga4da193eca8c693b1dffc779d93962d1cafd5139f40a0855f4218fea3168da49c4" prot="public">
+          <name>SAI_MACSEC_FLOW_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+<para>Custom range base value. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga4da193eca8c693b1dffc779d93962d1ca5d26d7ca86faed48b687e4ad5812977b" prot="public">
+          <name>SAI_MACSEC_FLOW_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+<para>End of custom range base. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute Id for sai_macsec_flow. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="450" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="451" bodyend="519"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIMACSEC_1ga2bffeeed497dc78a11936cc78e3b0cd3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_macsec_flow_stat_t</name>
+        <enumvalue id="group__SAIMACSEC_1gga2bffeeed497dc78a11936cc78e3b0cd3a887da88ed723352dc6cd062ecc2e34f8" prot="public">
+          <name>SAI_MACSEC_FLOW_STAT_OTHER_ERR</name>
+          <briefdescription>
+<para>Packets dropped/error for In or Out interface before MACsec processing for controlled and uncontrolled port, not in 802.1ae MIB. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga2bffeeed497dc78a11936cc78e3b0cd3a64a428fe0aec6fe9f61c6d9cffaa67ad" prot="public">
+          <name>SAI_MACSEC_FLOW_STAT_OCTETS_UNCONTROLLED</name>
+          <briefdescription>
+<para>IEEE 802.1ae defined ifOutOctets or ifInOctets for MACSEC uncontrolled port. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga2bffeeed497dc78a11936cc78e3b0cd3a836dbf80eccbdcfbc76d2c76ba3ff50a" prot="public">
+          <name>SAI_MACSEC_FLOW_STAT_OCTETS_CONTROLLED</name>
+          <briefdescription>
+<para>IEEE 802.1ae defined ifOutOctets or ifInOctets for MACSEC controlled port. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga2bffeeed497dc78a11936cc78e3b0cd3aa500d27486c67c091a99a699a8796650" prot="public">
+          <name>SAI_MACSEC_FLOW_STAT_OUT_OCTETS_COMMON</name>
+          <briefdescription>
+<para>IEEE 802.1ae defined ifOutOctets for MACSEC common port. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga2bffeeed497dc78a11936cc78e3b0cd3aa66e7b0bfdd9a5863156eb4150c32197" prot="public">
+          <name>SAI_MACSEC_FLOW_STAT_UCAST_PKTS_UNCONTROLLED</name>
+          <briefdescription>
+<para>IEEE 802.1ae defined ifOutUcastPkts or ifInUcastPkts for MACSEC uncontrolled port. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga2bffeeed497dc78a11936cc78e3b0cd3a6a8a81646cfb66143ee0664f997a0051" prot="public">
+          <name>SAI_MACSEC_FLOW_STAT_UCAST_PKTS_CONTROLLED</name>
+          <briefdescription>
+<para>IEEE 802.1ae defined ifOutUcastPkts or ifInUcastPkts for MACSEC controlled port. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga2bffeeed497dc78a11936cc78e3b0cd3afca31d4476fed27d56ab724bd7b31b96" prot="public">
+          <name>SAI_MACSEC_FLOW_STAT_MULTICAST_PKTS_UNCONTROLLED</name>
+          <briefdescription>
+<para>IEEE 802.1ae defined ifOutMulticastPkts or ifInMulticastPkts for MACSEC uncontrolled port. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga2bffeeed497dc78a11936cc78e3b0cd3a012146851d6c00ebb01c2ca44499423b" prot="public">
+          <name>SAI_MACSEC_FLOW_STAT_MULTICAST_PKTS_CONTROLLED</name>
+          <briefdescription>
+<para>IEEE 802.1ae defined ifOutMulticastPkts or ifInMulticastPkts for MACSEC controlled port. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga2bffeeed497dc78a11936cc78e3b0cd3ac609b0ee137c834209f7b555db8fa963" prot="public">
+          <name>SAI_MACSEC_FLOW_STAT_BROADCAST_PKTS_UNCONTROLLED</name>
+          <briefdescription>
+<para>IEEE 802.1ae defined ifOutBroadcastPkts or ifInBroadcastPkts for MACSEC uncontrolled port. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga2bffeeed497dc78a11936cc78e3b0cd3a4918f5cfc0e523e1e4e172534b5124a2" prot="public">
+          <name>SAI_MACSEC_FLOW_STAT_BROADCAST_PKTS_CONTROLLED</name>
+          <briefdescription>
+<para>IEEE 802.1ae defined ifOutBroadcastPkts or ifInBroadcastPkts for MACSEC controlled port. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga2bffeeed497dc78a11936cc78e3b0cd3ac57c2ff3bc7b38a65339876edcd637bb" prot="public">
+          <name>SAI_MACSEC_FLOW_STAT_CONTROL_PKTS</name>
+          <briefdescription>
+<para>Control packets which are not secured (using MACsec uncontrolled port) - not in 802.1ae MIB. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga2bffeeed497dc78a11936cc78e3b0cd3ac1d06dccad78d65a2a4939829de57bd6" prot="public">
+          <name>SAI_MACSEC_FLOW_STAT_PKTS_UNTAGGED</name>
+          <briefdescription>
+<para>IEEE 802.1ae defined OutPktsUntagged or InPktsUntagged. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga2bffeeed497dc78a11936cc78e3b0cd3a6548347ec33376a4e9c73ec31b6627dc" prot="public">
+          <name>SAI_MACSEC_FLOW_STAT_IN_TAGGED_CONTROL_PKTS</name>
+          <briefdescription>
+<para>Control packets with SecTAG which are not secured (using MACsec uncontrolled port) - not in 802.1ae MIB. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga2bffeeed497dc78a11936cc78e3b0cd3a42015573244428624cd8bfb6550ae76d" prot="public">
+          <name>SAI_MACSEC_FLOW_STAT_OUT_PKTS_TOO_LONG</name>
+          <briefdescription>
+<para>IEEE 802.1ae defined OutPktsTooLong. Valid for egress, always returns 0 for ingress. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga2bffeeed497dc78a11936cc78e3b0cd3a4ef1d77412bf41b43fff7aa8d3fe994b" prot="public">
+          <name>SAI_MACSEC_FLOW_STAT_IN_PKTS_NO_TAG</name>
+          <briefdescription>
+<para>IEEE 802.1ae defined InPktsNoTag. Valid for ingress, always returns 0 for egress. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga2bffeeed497dc78a11936cc78e3b0cd3a2fc9a0c5209821299504f9e6b3cab014" prot="public">
+          <name>SAI_MACSEC_FLOW_STAT_IN_PKTS_BAD_TAG</name>
+          <briefdescription>
+<para>IEEE 802.1ae defined InPktsBadTag. Valid for ingress, always returns 0 for egress. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga2bffeeed497dc78a11936cc78e3b0cd3ad87bf8128acc0f1acc6fae105b5803f2" prot="public">
+          <name>SAI_MACSEC_FLOW_STAT_IN_PKTS_NO_SCI</name>
+          <briefdescription>
+<para>IEEE 802.1ae defined InPktsNoSci. Valid for ingress, always returns 0 for egress. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga2bffeeed497dc78a11936cc78e3b0cd3a07c06a47a99698b8d83663cba6d373ef" prot="public">
+          <name>SAI_MACSEC_FLOW_STAT_IN_PKTS_UNKNOWN_SCI</name>
+          <briefdescription>
+<para>IEEE 802.1ae defined InPktsUnknownSci. Valid for ingress, always returns 0 for egress. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga2bffeeed497dc78a11936cc78e3b0cd3a82f51320a9cb7b73971a29d46777a9fd" prot="public">
+          <name>SAI_MACSEC_FLOW_STAT_IN_PKTS_OVERRUN</name>
+          <briefdescription>
+<para>IEEE 802.1ae defined InPktsOverrun. Valid for ingress, always returns 0 for egress. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>MACsec flow counter IDs in sai_get_macsec_stats() call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="524" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="525" bodyend="628"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIMACSEC_1gaf71fe4d9dbabd435a926ea6d53d301c0" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_macsec_sc_attr_t</name>
+        <enumvalue id="group__SAIMACSEC_1ggaf71fe4d9dbabd435a926ea6d53d301c0abe8ed07bccfe52e37da27205fc795370" prot="public">
+          <name>SAI_MACSEC_SC_ATTR_START</name>
+          <briefdescription>
+<para>Start of MACsec Secure Channel attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggaf71fe4d9dbabd435a926ea6d53d301c0a89b9a54eea0c7f912388ec61097395a2" prot="public">
+          <name>SAI_MACSEC_SC_ATTR_MACSEC_DIRECTION</name>
+          <initializer>= SAI_MACSEC_SC_ATTR_START</initializer>
+          <briefdescription>
+<para>MACsec direction. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_macsec_direction_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggaf71fe4d9dbabd435a926ea6d53d301c0af1c9783f1f78cc620c792e8c1c136139" prot="public">
+          <name>SAI_MACSEC_SC_ATTR_FLOW_ID</name>
+          <briefdescription>
+<para>MACsec flow object id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_MACSEC_FLOW </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggaf71fe4d9dbabd435a926ea6d53d301c0ad93caab0e2872d49336c5e075f4ddfc3" prot="public">
+          <name>SAI_MACSEC_SC_ATTR_MACSEC_SCI</name>
+          <briefdescription>
+<para>SCI value for this Secure Channel, carried in MACsec packet SecTAG. The MAC address of SCI is stored in the lowest memory address, The port id of SCI is stored in the highest memory address. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggaf71fe4d9dbabd435a926ea6d53d301c0a3cad880e7558abbe4efa2b8d25a224ff" prot="public">
+          <name>SAI_MACSEC_SC_ATTR_MACSEC_EXPLICIT_SCI_ENABLE</name>
+          <briefdescription>
+<para>Explicit SCI enable for this Secure Channel. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_MACSEC_SC_ATTR_MACSEC_DIRECTION == SAI_MACSEC_DIRECTION_EGRESS </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggaf71fe4d9dbabd435a926ea6d53d301c0a1f8dd56f009a49cfd00564b94c1496aa" prot="public">
+          <name>SAI_MACSEC_SC_ATTR_MACSEC_SECTAG_OFFSET</name>
+          <briefdescription>
+<para>SecTAG offset for this Secure Channel with respect to 802.1ae standard SecTAG location. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggaf71fe4d9dbabd435a926ea6d53d301c0a382b9dd8f8c3d12330967024ae806628" prot="public">
+          <name>SAI_MACSEC_SC_ATTR_ACTIVE_EGRESS_SA_ID</name>
+          <briefdescription>
+<para>Active MACsec SA identifier. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_MACSEC_SA </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggaf71fe4d9dbabd435a926ea6d53d301c0a330015a72fe29b327886652da569b87c" prot="public">
+          <name>SAI_MACSEC_SC_ATTR_MACSEC_REPLAY_PROTECTION_ENABLE</name>
+          <briefdescription>
+<para>Replay protection enable for this Secure Channel. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         true </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_MACSEC_SC_ATTR_MACSEC_DIRECTION == SAI_MACSEC_DIRECTION_INGRESS </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggaf71fe4d9dbabd435a926ea6d53d301c0aaded652ef837652744091ece7a3e82b4" prot="public">
+          <name>SAI_MACSEC_SC_ATTR_MACSEC_REPLAY_PROTECTION_WINDOW</name>
+          <briefdescription>
+<para>Replay protection window for this Secure Channel. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_MACSEC_SC_ATTR_MACSEC_DIRECTION == SAI_MACSEC_DIRECTION_INGRESS </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggaf71fe4d9dbabd435a926ea6d53d301c0a24db3c2ebe2905e1d1b17e4c3b69e9cc" prot="public">
+          <name>SAI_MACSEC_SC_ATTR_SA_LIST</name>
+          <briefdescription>
+<para>MACsec SA list. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_MACSEC_SA </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggaf71fe4d9dbabd435a926ea6d53d301c0a5a8a689f84aad9a27ccc9453b10798f2" prot="public">
+          <name>SAI_MACSEC_SC_ATTR_MACSEC_CIPHER_SUITE</name>
+          <briefdescription>
+<para>Cipher suite for this Secure Channel. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_macsec_cipher_suite_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggaf71fe4d9dbabd435a926ea6d53d301c0aef9825a952ae01ee7cb4c7aef5d40c93" prot="public">
+          <name>SAI_MACSEC_SC_ATTR_ENCRYPTION_ENABLE</name>
+          <briefdescription>
+<para>True means encryption is enabled. False means encryption is disabled. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggaf71fe4d9dbabd435a926ea6d53d301c0a314f4001d4a42d696f3fc9625aad2e51" prot="public">
+          <name>SAI_MACSEC_SC_ATTR_MACSEC_PORT_ID</name>
+          <briefdescription>
+<para>Bind MACsec Port object id with MACsec Secure Channel. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_MACSEC_PORT </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggaf71fe4d9dbabd435a926ea6d53d301c0a3ff3c18a782beae0facd149bc7df23d2" prot="public">
+          <name>SAI_MACSEC_SC_ATTR_END</name>
+          <briefdescription>
+<para>End of MACsec Secure Channel attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggaf71fe4d9dbabd435a926ea6d53d301c0a997e695bebde4d2b020f876b5eaf6dcb" prot="public">
+          <name>SAI_MACSEC_SC_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+<para>Custom range base value. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggaf71fe4d9dbabd435a926ea6d53d301c0a951466814b5e215516278e66961caa41" prot="public">
+          <name>SAI_MACSEC_SC_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+<para>End of custom range base. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute Id for sai_macsec_sc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="633" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="634" bodyend="767"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIMACSEC_1ga305c32c14cec870495922b5e2bd3c9d9" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_macsec_sc_stat_t</name>
+        <enumvalue id="group__SAIMACSEC_1gga305c32c14cec870495922b5e2bd3c9d9a732adc793dbb751fff6a964a03918bf9" prot="public">
+          <name>SAI_MACSEC_SC_STAT_SA_NOT_IN_USE</name>
+          <briefdescription>
+<para>Packets that have valid SCI, but the AN value does not have associated SA - not in 802.1ae MIB. Provides the sum of InPktsNotUsingSA for all invalid SAs for a SC. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>MACsec Secure Channel counter IDs in sai_get_macsec_sc_stats() call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="772" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="773" bodyend="780"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIMACSEC_1ga4450f618766670336fdeb53b24586815" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_macsec_sa_attr_t</name>
+        <enumvalue id="group__SAIMACSEC_1gga4450f618766670336fdeb53b24586815a5e5042fbdf7811d333f9cefdb3a7784a" prot="public">
+          <name>SAI_MACSEC_SA_ATTR_START</name>
+          <briefdescription>
+<para>Start of MACsec Secure Association attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga4450f618766670336fdeb53b24586815a951cab1a81fe466d3600753283bbc55e" prot="public">
+          <name>SAI_MACSEC_SA_ATTR_MACSEC_DIRECTION</name>
+          <initializer>= SAI_MACSEC_SA_ATTR_START</initializer>
+          <briefdescription>
+<para>MACsec direction. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_macsec_direction_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga4450f618766670336fdeb53b24586815a3f08c931563b247b99ad0aa25eb6f012" prot="public">
+          <name>SAI_MACSEC_SA_ATTR_SC_ID</name>
+          <briefdescription>
+<para>MACSEC Secure Channel object id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_MACSEC_SC </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga4450f618766670336fdeb53b24586815aaf95469a85ae42115b83076d60080788" prot="public">
+          <name>SAI_MACSEC_SA_ATTR_AN</name>
+          <briefdescription>
+<para>AN value (2-bit) for this Secure Channel, carried in MACsec packet SecTAG. The value must be distinct from other Secure Associations for the same Secure Channel. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga4450f618766670336fdeb53b24586815acc0a6073708f3fdcc83bade2556fadd2" prot="public">
+          <name>SAI_MACSEC_SA_ATTR_SAK</name>
+          <briefdescription>
+<para>MACsec SAK (Secure Association Key) used for encryption/decryption. Network Byte order. 128-bit SAK uses only Bytes 16..31. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_macsec_sak_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga4450f618766670336fdeb53b24586815ac91ca755bb5af336fd396ed128493913" prot="public">
+          <name>SAI_MACSEC_SA_ATTR_SALT</name>
+          <briefdescription>
+<para>MACsec Salt used for encryption/decryption. Network Byte order. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Valid when SAI_MACSEC_SC_ATTR_MACSEC_CIPHER_SUITE == SAI_MACSEC_CIPHER_SUITE_GCM_AES_XPN_128 or SAI_MACSEC_SC_ATTR_MACSEC_CIPHER_SUITE == SAI_MACSEC_CIPHER_SUITE_GCM_AES_XPN_256.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_macsec_salt_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga4450f618766670336fdeb53b24586815a190a120b7834728bdefd5127c6db6b97" prot="public">
+          <name>SAI_MACSEC_SA_ATTR_AUTH_KEY</name>
+          <briefdescription>
+<para>MACsec Authentication Key Network Byte order. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_macsec_auth_key_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga4450f618766670336fdeb53b24586815a480e419caea8af1d4949fe248354acb4" prot="public">
+          <name>SAI_MACSEC_SA_ATTR_CONFIGURED_EGRESS_XPN</name>
+          <briefdescription>
+<para>Configured value of next MACsec egress packet number (PN/XPN). </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_MACSEC_SA_ATTR_MACSEC_DIRECTION == SAI_MACSEC_DIRECTION_EGRESS </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga4450f618766670336fdeb53b24586815a4e2a94b974429e4bd56988e5402e0464" prot="public">
+          <name>SAI_MACSEC_SA_ATTR_CURRENT_XPN</name>
+          <briefdescription>
+<para>MACsec current packet number (PN/XPN). For ingress, largest received packet number. For egress, 1 less than the next packet number. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga4450f618766670336fdeb53b24586815a1d704bf5afe9ff3a225215ffdf67299b" prot="public">
+          <name>SAI_MACSEC_SA_ATTR_XPN</name>
+          <initializer>= SAI_MACSEC_SA_ATTR_CURRENT_XPN</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Ignored:</title><para> @@ignore          - for backward compatibility </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga4450f618766670336fdeb53b24586815a2dbd1f4c27206508229ba02e1db13571" prot="public">
+          <name>SAI_MACSEC_SA_ATTR_MINIMUM_INGRESS_XPN</name>
+          <briefdescription>
+<para>Configured minimum acceptable ingress MACsec packet number (PN/XPN). Updated by value from MACsec peer by Key Agreement protocol. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         1 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_MACSEC_SA_ATTR_MACSEC_DIRECTION == SAI_MACSEC_DIRECTION_INGRESS </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga4450f618766670336fdeb53b24586815ac7dfe1473c967b9d916fd1d221620e83" prot="public">
+          <name>SAI_MACSEC_SA_ATTR_MINIMUM_XPN</name>
+          <initializer>= SAI_MACSEC_SA_ATTR_MINIMUM_INGRESS_XPN</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Ignored:</title><para> @@ignore          - for backward compatibility </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga4450f618766670336fdeb53b24586815ac3a201f2cb32f60175978e4d9d37e5f1" prot="public">
+          <name>SAI_MACSEC_SA_ATTR_MACSEC_SSCI</name>
+          <briefdescription>
+<para>SSCI value for this Secure Association Host Byte Order. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Valid when SAI_MACSEC_SC_ATTR_MACSEC_CIPHER_SUITE == SAI_MACSEC_CIPHER_SUITE_GCM_AES_XPN_128 or SAI_MACSEC_SC_ATTR_MACSEC_CIPHER_SUITE == SAI_MACSEC_CIPHER_SUITE_GCM_AES_XPN_256.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga4450f618766670336fdeb53b24586815ae5c5011aa9f50caae434207098ffbeff" prot="public">
+          <name>SAI_MACSEC_SA_ATTR_END</name>
+          <briefdescription>
+<para>End of MACsec Secure Association attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga4450f618766670336fdeb53b24586815a0c7c79d9cc0a344fb73fbe4fb7c990aa" prot="public">
+          <name>SAI_MACSEC_SA_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+<para>Custom range base value. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1gga4450f618766670336fdeb53b24586815a1c5b9a694964a0afe0eda0bbf23f59b8" prot="public">
+          <name>SAI_MACSEC_SA_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+<para>End of custom range base. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute Id for sai_macsec_sa. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="785" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="786" bodyend="908"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIMACSEC_1gafed29407250c2270d02c804e0a821655" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_macsec_sa_stat_t</name>
+        <enumvalue id="group__SAIMACSEC_1ggafed29407250c2270d02c804e0a821655a33e26d54e768a8a7859fef0ae92dc378" prot="public">
+          <name>SAI_MACSEC_SA_STAT_OCTETS_ENCRYPTED</name>
+          <briefdescription>
+<para>The sum of this count over all Secure Associations of a Secure Channel gives 802.1ae statistics outOctetsEncrypted for egress and inOctetsDecrypted for ingress. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggafed29407250c2270d02c804e0a821655a82f1d4af22f1e133318da204df43bb8b" prot="public">
+          <name>SAI_MACSEC_SA_STAT_OCTETS_PROTECTED</name>
+          <briefdescription>
+<para>The sum of this count over Secure Associations gives 802.1ae statistics outOctetsProtected for egress and inOctetsValidated for ingress. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggafed29407250c2270d02c804e0a821655ad581f8625a11b8e95554767400a25ba9" prot="public">
+          <name>SAI_MACSEC_SA_STAT_OUT_PKTS_ENCRYPTED</name>
+          <briefdescription>
+<para>The sum of this count over Secure Associations gives 802.1ae statistics OutPktsEncrypted. Valid for egress, always returns 0 for ingress. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggafed29407250c2270d02c804e0a821655ac29f0bbd986ce18863f8d260f31f99de" prot="public">
+          <name>SAI_MACSEC_SA_STAT_OUT_PKTS_PROTECTED</name>
+          <briefdescription>
+<para>The sum of this count over Secure Associations gives 802.1ae statistics OutPktsProtected. Valid for egress, always returns 0 for ingress. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggafed29407250c2270d02c804e0a821655a65eea47d96b2d9f4f7906463d806340e" prot="public">
+          <name>SAI_MACSEC_SA_STAT_IN_PKTS_UNCHECKED</name>
+          <briefdescription>
+<para>The sum of this count over Secure Associations gives 802.1ae statistics InPktsUnchecked. Valid for ingress, always returns 0 for egress. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggafed29407250c2270d02c804e0a821655a6881c90ea275bf7850c2470f332178e3" prot="public">
+          <name>SAI_MACSEC_SA_STAT_IN_PKTS_DELAYED</name>
+          <briefdescription>
+<para>The sum of this count over Secure Associations gives 802.1ae statistics InPktsDelayed. Valid for ingress, always returns 0 for egress. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggafed29407250c2270d02c804e0a821655a0b40cab2eec239b66757b79801e44cda" prot="public">
+          <name>SAI_MACSEC_SA_STAT_IN_PKTS_LATE</name>
+          <briefdescription>
+<para>The sum of this count over Secure Associations gives 802.1ae statistics InPktsLate. Valid for ingress, always returns 0 for egress. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggafed29407250c2270d02c804e0a821655a6eeeb48b217df83c3af21ec7db7d2c39" prot="public">
+          <name>SAI_MACSEC_SA_STAT_IN_PKTS_INVALID</name>
+          <briefdescription>
+<para>IEEE 802.1ae defined InPktsInvalid. Valid for ingress, always returns 0 for egress. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggafed29407250c2270d02c804e0a821655afa6e96ca8d5157a5820ceab525af73f2" prot="public">
+          <name>SAI_MACSEC_SA_STAT_IN_PKTS_NOT_VALID</name>
+          <briefdescription>
+<para>IEEE 802.1ae defined InPktsNotValid. Valid for ingress, always returns 0 for egress. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggafed29407250c2270d02c804e0a821655ac368531a1ec6792b8ea6c765a48295e5" prot="public">
+          <name>SAI_MACSEC_SA_STAT_IN_PKTS_NOT_USING_SA</name>
+          <briefdescription>
+<para>IEEE 802.1ae defined InPktsNotUsingSA. Valid for ingress, always returns 0 for egress. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggafed29407250c2270d02c804e0a821655a4fa50ae9b88f00c8d105b0c0764871d0" prot="public">
+          <name>SAI_MACSEC_SA_STAT_IN_PKTS_UNUSED_SA</name>
+          <briefdescription>
+<para>IEEE 802.1ae defined InPktsUnusedSA. Valid for ingress, always returns 0 for egress. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIMACSEC_1ggafed29407250c2270d02c804e0a821655a33f3835c9abd3a0834fdf09ba85eac2e" prot="public">
+          <name>SAI_MACSEC_SA_STAT_IN_PKTS_OK</name>
+          <briefdescription>
+<para>IEEE 802.1ae defined InPktsOk. Valid for ingress, always returns 0 for egress. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>MACsec flow counter IDs in sai_get_macsec_sa_stats() call. Some of these counters appear as per Secure Channel counters in 802.1ae MIB. The application (NOS) has to add these per Secure Association counters to get the per Secure Channel value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="916" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="917" bodyend="995"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIMACSEC_1ga6425c1f01a3476b9565713b04eb27893" prot="public" static="no">
+        <type>enum <ref refid="group__SAIMACSEC_1ga403a5cfe73b26d82d229707ddc5f1835" kindref="member">_sai_macsec_direction_t</ref></type>
+        <definition>typedef enum _sai_macsec_direction_t sai_macsec_direction_t</definition>
+        <argsstring></argsstring>
+        <name>sai_macsec_direction_t</name>
+        <briefdescription>
+<para>MACsec direction types For PHY ASIC Egress is system to line direction and ingress is the opposite. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="44" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1gafc48df6cb53d8ddb875221f721ca6139" prot="public" static="no">
+        <type>enum <ref refid="group__SAIMACSEC_1ga02ca17cd3bfdef81874f9d7f6d62f9a8" kindref="member">_sai_macsec_cipher_suite_t</ref></type>
+        <definition>typedef enum _sai_macsec_cipher_suite_t sai_macsec_cipher_suite_t</definition>
+        <argsstring></argsstring>
+        <name>sai_macsec_cipher_suite_t</name>
+        <briefdescription>
+<para>MACsec Cipher Suites. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="55" column="27"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1gadffefc5129d0b13b5122be5e89756547" prot="public" static="no">
+        <type>enum <ref refid="group__SAIMACSEC_1gafcbfd00e51757d8c8207d3cd106a232a" kindref="member">_sai_macsec_max_secure_associations_per_sc_t</ref></type>
+        <definition>typedef enum _sai_macsec_max_secure_associations_per_sc_t sai_macsec_max_secure_associations_per_sc_t</definition>
+        <argsstring></argsstring>
+        <name>sai_macsec_max_secure_associations_per_sc_t</name>
+        <briefdescription>
+<para>Max number of secure associations for each secure channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>An implementation may support either two or four associations depending on whether it stores the secure association number in one or two bits. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="68" column="45"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1ga1a2ccf90f8ebdeafce3b2b1865391e35" prot="public" static="no">
+        <type>enum <ref refid="group__SAIMACSEC_1ga6428fa378b2f8d2a47ec437b28e2bf3a" kindref="member">_sai_macsec_attr_t</ref></type>
+        <definition>typedef enum _sai_macsec_attr_t sai_macsec_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_macsec_attr_t</name>
+        <briefdescription>
+<para>Attribute Id for sai_macsec. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="330" column="19"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1ga60be047ef673fc7e6d0cc15baac64238" prot="public" static="no">
+        <type>enum <ref refid="group__SAIMACSEC_1gab401f83ffeab261ea751c1b138367954" kindref="member">_sai_macsec_port_attr_t</ref></type>
+        <definition>typedef enum _sai_macsec_port_attr_t sai_macsec_port_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_macsec_port_attr_t</name>
+        <briefdescription>
+<para>Attribute Id for sai_macsec_port. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="424" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1ga3d1874bb25ace1a1c45808bfe0227d14" prot="public" static="no">
+        <type>enum <ref refid="group__SAIMACSEC_1ga6772a88d273f1072445d0abc88a4a451" kindref="member">_sai_macsec_port_stat_t</ref></type>
+        <definition>typedef enum _sai_macsec_port_stat_t sai_macsec_port_stat_t</definition>
+        <argsstring></argsstring>
+        <name>sai_macsec_port_stat_t</name>
+        <briefdescription>
+<para>MACsec port counter IDs in sai_get_macsec_stats() call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="445" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1ga0e0cfcfbe0033fada001bfc1e877e976" prot="public" static="no">
+        <type>enum <ref refid="group__SAIMACSEC_1ga4da193eca8c693b1dffc779d93962d1c" kindref="member">_sai_macsec_flow_attr_t</ref></type>
+        <definition>typedef enum _sai_macsec_flow_attr_t sai_macsec_flow_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_macsec_flow_attr_t</name>
+        <briefdescription>
+<para>Attribute Id for sai_macsec_flow. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="519" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1gab888d932d02787c5b46ace450bcc8cb5" prot="public" static="no">
+        <type>enum <ref refid="group__SAIMACSEC_1ga2bffeeed497dc78a11936cc78e3b0cd3" kindref="member">_sai_macsec_flow_stat_t</ref></type>
+        <definition>typedef enum _sai_macsec_flow_stat_t sai_macsec_flow_stat_t</definition>
+        <argsstring></argsstring>
+        <name>sai_macsec_flow_stat_t</name>
+        <briefdescription>
+<para>MACsec flow counter IDs in sai_get_macsec_stats() call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="628" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1gada1dd54b861fbdf7fff17084d6b6c90f" prot="public" static="no">
+        <type>enum <ref refid="group__SAIMACSEC_1gaf71fe4d9dbabd435a926ea6d53d301c0" kindref="member">_sai_macsec_sc_attr_t</ref></type>
+        <definition>typedef enum _sai_macsec_sc_attr_t sai_macsec_sc_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_macsec_sc_attr_t</name>
+        <briefdescription>
+<para>Attribute Id for sai_macsec_sc. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="767" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1ga834abe2e74c8c3dc2066639e57caf0a6" prot="public" static="no">
+        <type>enum <ref refid="group__SAIMACSEC_1ga305c32c14cec870495922b5e2bd3c9d9" kindref="member">_sai_macsec_sc_stat_t</ref></type>
+        <definition>typedef enum _sai_macsec_sc_stat_t sai_macsec_sc_stat_t</definition>
+        <argsstring></argsstring>
+        <name>sai_macsec_sc_stat_t</name>
+        <briefdescription>
+<para>MACsec Secure Channel counter IDs in sai_get_macsec_sc_stats() call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="780" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1ga375e061ab8afd2945e78bd5f592dc8a0" prot="public" static="no">
+        <type>enum <ref refid="group__SAIMACSEC_1ga4450f618766670336fdeb53b24586815" kindref="member">_sai_macsec_sa_attr_t</ref></type>
+        <definition>typedef enum _sai_macsec_sa_attr_t sai_macsec_sa_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_macsec_sa_attr_t</name>
+        <briefdescription>
+<para>Attribute Id for sai_macsec_sa. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="908" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1ga2ea89b119a5223f88dde7bcd898d6fb7" prot="public" static="no">
+        <type>enum <ref refid="group__SAIMACSEC_1gafed29407250c2270d02c804e0a821655" kindref="member">_sai_macsec_sa_stat_t</ref></type>
+        <definition>typedef enum _sai_macsec_sa_stat_t sai_macsec_sa_stat_t</definition>
+        <argsstring></argsstring>
+        <name>sai_macsec_sa_stat_t</name>
+        <briefdescription>
+<para>MACsec flow counter IDs in sai_get_macsec_sa_stats() call. Some of these counters appear as per Secure Channel counters in 802.1ae MIB. The application (NOS) has to add these per Secure Association counters to get the per Secure Channel value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="995" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1gac1977ddc02d7fc321ffcb2e339af611f" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_macsec_fn) (_Out_ sai_object_id_t *macsec_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *macsec_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_macsec_fn</name>
+        <briefdescription>
+<para>Create a MACsec object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">macsec_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MACsec object id associated with this switch/PHY </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The switch/PHY Object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="1007" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="1007" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1ga241f064d75775f8057466ac2ca9b53fb" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_macsec_fn) (_In_ sai_object_id_t macsec_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t macsec_id)</argsstring>
+        <name>sai_remove_macsec_fn</name>
+        <briefdescription>
+<para>Delete the MACsec object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">macsec_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MACsec object id associated with this switch/PHY</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="1020" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="1020" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1gae53b9a8757540b044a07432eb708cd31" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_macsec_attribute_fn) (_In_ sai_object_id_t macsec_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t macsec_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_macsec_attribute_fn</name>
+        <briefdescription>
+<para>Set MACsec attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">macsec_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MACsec object id associated with this switch/PHY </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="1031" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="1031" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1ga8dd222403fce4c2dfc3019cabf2d326a" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_macsec_attribute_fn) (_In_ sai_object_id_t macsec_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t macsec_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_macsec_attribute_fn</name>
+        <briefdescription>
+<para>Get MACsec attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">macsec_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MACsec object id associated with this switch/PHY </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="1044" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="1044" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1gab00ab038ab90f7531f228eead94e15e9" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_macsec_port_fn) (_Out_ sai_object_id_t *macsec_port_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *macsec_port_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_macsec_port_fn</name>
+        <briefdescription>
+<para>Create a MACsec port. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">macsec_port_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MACsec port id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The switch/PHY Object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="1059" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="1059" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1ga6ad0b204edd2ea86c3c89a7aabb5f085" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_macsec_port_fn) (_In_ sai_object_id_t macsec_port_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t macsec_port_id)</argsstring>
+        <name>sai_remove_macsec_port_fn</name>
+        <briefdescription>
+<para>Delete a MACsec port. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">macsec_port_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MACsec port id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="1072" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="1072" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1ga4e9572bfdb23d9b0342afe5c17aa6529" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_macsec_port_attribute_fn) (_In_ sai_object_id_t macsec_port_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t macsec_port_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_macsec_port_attribute_fn</name>
+        <briefdescription>
+<para>Set MACsec port attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">macsec_port_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MACsec port id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="1083" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="1083" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1ga2fbd5a212b02b75f5de4eb6230cf9b34" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_macsec_port_attribute_fn) (_In_ sai_object_id_t macsec_port_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t macsec_port_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_macsec_port_attribute_fn</name>
+        <briefdescription>
+<para>Get MACsec port attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">macsec_port_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MACsec port id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="1096" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="1096" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1ga50c94f197a126f7cd20abb3cab2f855d" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_macsec_port_stats_fn) (_In_ sai_object_id_t macsec_port_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t macsec_port_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_macsec_port_stats_fn</name>
+        <briefdescription>
+<para>Get MACsec port counters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">macsec_port_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MACsec port id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="1111" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="1111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1ga6de8a1b205a81e511003ef331e8fbe9c" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_macsec_port_stats_ext_fn) (_In_ sai_object_id_t macsec_port_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t macsec_port_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_macsec_port_stats_ext_fn</name>
+        <briefdescription>
+<para>Get MACsec port counters extended. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">macsec_port_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MACsec port id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Should match SAI_MACSEC_ATTR_STATS_MODE </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="1128" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="1128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1gaf7db663c188e7981ed9e20550673a28f" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_clear_macsec_port_stats_fn) (_In_ sai_object_id_t macsec_port_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</definition>
+        <argsstring>)(_In_ sai_object_id_t macsec_port_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</argsstring>
+        <name>sai_clear_macsec_port_stats_fn</name>
+        <briefdescription>
+<para>Clear MACsec port counters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">macsec_port_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MACsec port id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="1144" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="1144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1gaae4fd63ad2181bbf408e6e33a65c09c1" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_macsec_flow_fn) (_Out_ sai_object_id_t *macsec_flow_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *macsec_flow_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_macsec_flow_fn</name>
+        <briefdescription>
+<para>Create a MACsec flow. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">macsec_flow_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MACsec flow id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The switch/PHY Object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="1159" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="1159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1ga92d25c260b51134543f62efc671c8f3b" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_macsec_flow_fn) (_In_ sai_object_id_t macsec_flow_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t macsec_flow_id)</argsstring>
+        <name>sai_remove_macsec_flow_fn</name>
+        <briefdescription>
+<para>Delete a MACsec flow. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">macsec_flow_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MACsec flow id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="1172" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="1172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1gab8b8a0ae8341780a1002fc8794c2833a" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_macsec_flow_attribute_fn) (_In_ sai_object_id_t macsec_flow_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t macsec_flow_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_macsec_flow_attribute_fn</name>
+        <briefdescription>
+<para>Set MACsec flow attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">macsec_flow_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MACsec flow id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="1183" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="1183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1ga697f4137e5eed5827de1914a596a9e00" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_macsec_flow_attribute_fn) (_In_ sai_object_id_t macsec_flow_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t macsec_flow_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_macsec_flow_attribute_fn</name>
+        <briefdescription>
+<para>Get MACsec flow attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">macsec_flow_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MACsec flow id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="1196" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="1196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1gad564f60384ac24318b580c2e934973b7" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_macsec_flow_stats_fn) (_In_ sai_object_id_t macsec_flow_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t macsec_flow_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_macsec_flow_stats_fn</name>
+        <briefdescription>
+<para>Get MACsec flow counters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">macsec_flow_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MACsec flow id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="1211" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="1211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1gab57c473b81e7b163a2f23ea48a2468e1" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_macsec_flow_stats_ext_fn) (_In_ sai_object_id_t macsec_flow_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t macsec_flow_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_macsec_flow_stats_ext_fn</name>
+        <briefdescription>
+<para>Get MACsec flow counters extended. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">macsec_flow_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MACsec flow id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Should match SAI_MACSEC_ATTR_STATS_MODE </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="1228" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="1228" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1ga8dadf581e3365b88996bcf36638a43dd" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_clear_macsec_flow_stats_fn) (_In_ sai_object_id_t macsec_flow_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</definition>
+        <argsstring>)(_In_ sai_object_id_t macsec_flow_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</argsstring>
+        <name>sai_clear_macsec_flow_stats_fn</name>
+        <briefdescription>
+<para>Clear MACsec flow counters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">macsec_flow_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MACsec flow id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="1244" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="1244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1ga8c8ef43aa49ddf2181ceed4ed6d181ac" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_macsec_sc_fn) (_Out_ sai_object_id_t *macsec_sc_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *macsec_sc_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_macsec_sc_fn</name>
+        <briefdescription>
+<para>Create a MACsec Secure Channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">macsec_sc_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MACsec Secure Channel id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The switch/PHY Object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="1259" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="1259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1gab8c98b7ee7924e14cd807559c8a361f9" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_macsec_sc_fn) (_In_ sai_object_id_t macsec_sc_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t macsec_sc_id)</argsstring>
+        <name>sai_remove_macsec_sc_fn</name>
+        <briefdescription>
+<para>Delete a MACsec Secure Channel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">macsec_sc_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MACsec Secure Channel id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="1272" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="1272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1ga1812c55d0135e78a61cde370eab74e6e" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_macsec_sc_attribute_fn) (_In_ sai_object_id_t macsec_sc_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t macsec_sc_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_macsec_sc_attribute_fn</name>
+        <briefdescription>
+<para>Set MACsec Secure Channel attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">macsec_sc_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MACsec Secure Channel id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="1283" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="1283" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1gabfed790f1383b6f01a4ea27821f78d39" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_macsec_sc_attribute_fn) (_In_ sai_object_id_t macsec_sc_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t macsec_sc_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_macsec_sc_attribute_fn</name>
+        <briefdescription>
+<para>Get MACsec Secure Channel attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">macsec_sc_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MACsec Secure Channel id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="1296" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="1296" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1ga31077da7c6bd99cc6ffabf71a72504f9" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_macsec_sc_stats_fn) (_In_ sai_object_id_t macsec_sc_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t macsec_sc_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_macsec_sc_stats_fn</name>
+        <briefdescription>
+<para>Get MACsec Secure Channel counters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">macsec_sc_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MACsec Secure Channel id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="1311" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="1311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1ga99da15d53bb0fd930b427fb9163849b9" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_macsec_sc_stats_ext_fn) (_In_ sai_object_id_t macsec_sc_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t macsec_sc_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_macsec_sc_stats_ext_fn</name>
+        <briefdescription>
+<para>Get MACsec Secure Channel counters extended. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">macsec_sc_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MACsec Secure Channel id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Should match SAI_MACSEC_ATTR_STATS_MODE </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="1328" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="1328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1ga54ec052398d058a9b2368a2e7b07d731" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_clear_macsec_sc_stats_fn) (_In_ sai_object_id_t macsec_sc_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</definition>
+        <argsstring>)(_In_ sai_object_id_t macsec_sc_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</argsstring>
+        <name>sai_clear_macsec_sc_stats_fn</name>
+        <briefdescription>
+<para>Clear MACsec Secure Channel counters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">macsec_sc_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MACsec Secure Channel id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="1344" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="1344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1ga65b151669409184143c2e643a2aab157" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_macsec_sa_fn) (_Out_ sai_object_id_t *macsec_sa_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *macsec_sa_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_macsec_sa_fn</name>
+        <briefdescription>
+<para>Create a MACsec Secure Association. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">macsec_sa_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MACsec Secure Association id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The switch/PHY Object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="1359" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="1359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1gab21695bb2f3e7ef0c5267d555a606be9" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_macsec_sa_fn) (_In_ sai_object_id_t macsec_sa_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t macsec_sa_id)</argsstring>
+        <name>sai_remove_macsec_sa_fn</name>
+        <briefdescription>
+<para>Delete a MACsec Secure Association. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">macsec_sa_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MACsec Secure Association id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="1372" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="1372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1ga4855000d6ef5170733d335cacd0b8cfb" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_macsec_sa_attribute_fn) (_In_ sai_object_id_t macsec_sa_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t macsec_sa_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_macsec_sa_attribute_fn</name>
+        <briefdescription>
+<para>Set MACsec Secure Association attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">macsec_sa_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The MACsec Secure Association id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="1383" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="1383" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1gace8c20c74c59e86f44f4e1b51644a6f4" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_macsec_sa_attribute_fn) (_In_ sai_object_id_t macsec_sa_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t macsec_sa_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_macsec_sa_attribute_fn</name>
+        <briefdescription>
+<para>Get MACsec Secure Association attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">macsec_sa_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MACsec Secure Association id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="1396" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="1396" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1ga494f602fff642167434b4045db4458ac" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_macsec_sa_stats_fn) (_In_ sai_object_id_t macsec_sa_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t macsec_sa_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_macsec_sa_stats_fn</name>
+        <briefdescription>
+<para>Get MACsec Secure Association counters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">macsec_sa_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MACsec Secure Association id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="1411" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="1411" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1gacba638f241ccbacb0e59a1c35dcd8d42" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_macsec_sa_stats_ext_fn) (_In_ sai_object_id_t macsec_sa_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t macsec_sa_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_macsec_sa_stats_ext_fn</name>
+        <briefdescription>
+<para>Get MACsec Secure Association counters extended. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">macsec_sa_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MACsec Secure Association id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Should match SAI_MACSEC_ATTR_STATS_MODE </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="1428" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="1428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1gae5cdd92540c33158332fbe1a26f47c3b" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_clear_macsec_sa_stats_fn) (_In_ sai_object_id_t macsec_sa_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</definition>
+        <argsstring>)(_In_ sai_object_id_t macsec_sa_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</argsstring>
+        <name>sai_clear_macsec_sa_stats_fn</name>
+        <briefdescription>
+<para>Clear MACsec Secure Association counters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">macsec_sa_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>MACsec Secure Association id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="1444" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" bodystart="1444" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIMACSEC_1gada90824f373e5a6e90cd0e4a219135ce" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__macsec__api__t" kindref="compound">_sai_macsec_api_t</ref></type>
+        <definition>typedef struct _sai_macsec_api_t sai_macsec_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_macsec_api_t</name>
+        <briefdescription>
+<para>MACsec methods table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimacsec.h" line="1486" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

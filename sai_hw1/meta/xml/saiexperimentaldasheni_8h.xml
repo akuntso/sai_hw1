@@ -1,0 +1,2265 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="saiexperimentaldasheni_8h" kind="file" language="C++">
+    <compoundname>saiexperimentaldasheni.h</compoundname>
+    <includes refid="saitypesextensions_8h" local="no">saitypesextensions.h</includes>
+    <includedby refid="saiobject_8h" local="no">/home/andrii/sai_hw1/SAI/inc/saiobject.h</includedby>
+    <includedby refid="saiextensions_8h" local="yes">/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>stdbool.h</label>
+      </node>
+      <node id="4">
+        <label>stdint.h</label>
+      </node>
+      <node id="6">
+        <label>sys/types.h</label>
+      </node>
+      <node id="2">
+        <label>saitypesextensions.h</label>
+        <link refid="saitypesextensions_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h</label>
+        <link refid="saiexperimentaldasheni_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>saitypes.h</label>
+        <link refid="saitypes_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>/home/andrii/sai_hw1/SAI/inc/sai.h</label>
+        <link refid="sai_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/andrii/sai_hw1/SAI/inc/saiobject.h</label>
+        <link refid="saiobject_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h</label>
+        <link refid="saiexperimentaldasheni_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</label>
+        <link refid="saiextensions_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct__sai__eni__ether__address__map__entry__t" prot="public">_sai_eni_ether_address_map_entry_t</innerclass>
+    <innerclass refid="struct__sai__dash__eni__api__t" prot="public">_sai_dash_eni_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASHENI_1ga56ba01c23a126a7850aa38a9b245466b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_eni_ether_address_map_entry_action_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga56ba01c23a126a7850aa38a9b245466baa8468f95ffa872ca069827dece7f2399" prot="public">
+          <name>SAI_ENI_ETHER_ADDRESS_MAP_ENTRY_ACTION_SET_ENI</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute data for <ref refid="group__SAIEXPERIMENTALDASHENI_1ggaae990330a5465ccd35788761858e81c3a591b51f107625f655256a5d883865743" kindref="member">SAI_ENI_ETHER_ADDRESS_MAP_ENTRY_ATTR_ACTION</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" line="41" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" bodystart="42" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASHENI_1gaae990330a5465ccd35788761858e81c3" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_eni_ether_address_map_entry_attr_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1ggaae990330a5465ccd35788761858e81c3aa5ce1a6678260e983cfaffebc76fe840" prot="public">
+          <name>SAI_ENI_ETHER_ADDRESS_MAP_ENTRY_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1ggaae990330a5465ccd35788761858e81c3a591b51f107625f655256a5d883865743" prot="public">
+          <name>SAI_ENI_ETHER_ADDRESS_MAP_ENTRY_ATTR_ACTION</name>
+          <initializer>= SAI_ENI_ETHER_ADDRESS_MAP_ENTRY_ATTR_START</initializer>
+          <briefdescription>
+<para>Action. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_eni_ether_address_map_entry_action_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_ENI_ETHER_ADDRESS_MAP_ENTRY_ACTION_SET_ENI </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1ggaae990330a5465ccd35788761858e81c3a5718ba11a62d7db81e0554a4a34c434c" prot="public">
+          <name>SAI_ENI_ETHER_ADDRESS_MAP_ENTRY_ATTR_ENI_ID</name>
+          <briefdescription>
+<para>Action parameter ENI id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_ENI </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1ggaae990330a5465ccd35788761858e81c3ae33a7cda9e8fb0a124986a1b273c786f" prot="public">
+          <name>SAI_ENI_ETHER_ADDRESS_MAP_ENTRY_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1ggaae990330a5465ccd35788761858e81c3abb9a04e1a1be1241030880b17e37d539" prot="public">
+          <name>SAI_ENI_ETHER_ADDRESS_MAP_ENTRY_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1ggaae990330a5465ccd35788761858e81c3a860770f4c415ddcaeb6c3fd06efde1c0" prot="public">
+          <name>SAI_ENI_ETHER_ADDRESS_MAP_ENTRY_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute ID for ENI ether address map entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" line="69" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" bodystart="70" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASHENI_1ga4bcfc30fee019c115823684bb64033f4" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_eni_attr_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4a11509daf3213c27c52a1443814f191de" prot="public">
+          <name>SAI_ENI_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4a38c0b8f41b61fda2986f7f4acd72739f" prot="public">
+          <name>SAI_ENI_ATTR_CPS</name>
+          <initializer>= SAI_ENI_ATTR_START</initializer>
+          <briefdescription>
+<para>Action parameter CPS. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4a242b4554df1e0bd4bbefdaa263b6b84e" prot="public">
+          <name>SAI_ENI_ATTR_PPS</name>
+          <briefdescription>
+<para>Action parameter PPS. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4a8e0e06dcd3c4fb785ddde472250714b3" prot="public">
+          <name>SAI_ENI_ATTR_FLOWS</name>
+          <briefdescription>
+<para>Action parameter flows. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4a7352425feff44de917aeda6ecc275cb4" prot="public">
+          <name>SAI_ENI_ATTR_ADMIN_STATE</name>
+          <briefdescription>
+<para>Action parameter admin state. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4aadd41530b23327ec9ac4ea6a5bb6cf12" prot="public">
+          <name>SAI_ENI_ATTR_HA_SCOPE_ID</name>
+          <briefdescription>
+<para>Action parameter HA scope id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_HA_SCOPE </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4a2a66fd769d26ac7d4985f3968b786dd3" prot="public">
+          <name>SAI_ENI_ATTR_VM_UNDERLAY_DIP</name>
+          <briefdescription>
+<para>Action parameter underlay dip. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4a3d6d5619c274790a82dd0c1278b2031f" prot="public">
+          <name>SAI_ENI_ATTR_VM_VNI</name>
+          <briefdescription>
+<para>Action parameter VNI. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4a019fb7434a62f5e53c5a8d00ac8a76e6" prot="public">
+          <name>SAI_ENI_ATTR_VNET_ID</name>
+          <briefdescription>
+<para>Action parameter VNET id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_VNET </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4ac9883478ec47e05b0acc0e5f21eb4669" prot="public">
+          <name>SAI_ENI_ATTR_PL_SIP</name>
+          <briefdescription>
+<para>Action parameter PL sip. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4a6a3ef4ed04f9d9dd45bc058b701816fa" prot="public">
+          <name>SAI_ENI_ATTR_PL_SIP_MASK</name>
+          <briefdescription>
+<para>Action parameter PL sip mask. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4a03fb598ed83ac5d2af203aa2e0ff76c4" prot="public">
+          <name>SAI_ENI_ATTR_PL_UNDERLAY_SIP</name>
+          <briefdescription>
+<para>Action parameter PL underlay sip. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4a36cc69bcd01bd325d0854389f7cc0062" prot="public">
+          <name>SAI_ENI_ATTR_V4_METER_POLICY_ID</name>
+          <briefdescription>
+<para>Action parameter v4 meter policy id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_METER_POLICY </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4ac2b69270c587308dc98bcfe733ab15fc" prot="public">
+          <name>SAI_ENI_ATTR_V6_METER_POLICY_ID</name>
+          <briefdescription>
+<para>Action parameter v6 meter policy id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_METER_POLICY </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4a5ad25ba703980466863085570053dae0" prot="public">
+          <name>SAI_ENI_ATTR_DASH_TUNNEL_DSCP_MODE</name>
+          <briefdescription>
+<para>Action parameter DASH tunnel DSCP mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_dash_tunnel_dscp_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_DASH_TUNNEL_DSCP_MODE_PRESERVE_MODEL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4ad0a205a8aa889055988939d960d2d83b" prot="public">
+          <name>SAI_ENI_ATTR_DSCP</name>
+          <briefdescription>
+<para>Action parameter DSCP. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_ENI_ATTR_DASH_TUNNEL_DSCP_MODE == SAI_DASH_TUNNEL_DSCP_MODE_PIPE_MODEL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4ae2d60995a3fc514acee4a28d199049ba" prot="public">
+          <name>SAI_ENI_ATTR_INBOUND_V4_STAGE1_DASH_ACL_GROUP_ID</name>
+          <briefdescription>
+<para>Action parameter inbound v4 stage1 DASH ACL group id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_DASH_ACL_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4ab583243bda5724f65701a9dc6200bae2" prot="public">
+          <name>SAI_ENI_ATTR_INBOUND_V4_STAGE2_DASH_ACL_GROUP_ID</name>
+          <briefdescription>
+<para>Action parameter inbound v4 stage2 DASH ACL group id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_DASH_ACL_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4a83e6f3b996e6a76871d37b6059d45264" prot="public">
+          <name>SAI_ENI_ATTR_INBOUND_V4_STAGE3_DASH_ACL_GROUP_ID</name>
+          <briefdescription>
+<para>Action parameter inbound v4 stage3 DASH ACL group id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_DASH_ACL_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4a343c7030c7c8697550ed50413dc60792" prot="public">
+          <name>SAI_ENI_ATTR_INBOUND_V4_STAGE4_DASH_ACL_GROUP_ID</name>
+          <briefdescription>
+<para>Action parameter inbound v4 stage4 DASH ACL group id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_DASH_ACL_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4afdd1e2262304bc7f0c26ad30079c6ae6" prot="public">
+          <name>SAI_ENI_ATTR_INBOUND_V4_STAGE5_DASH_ACL_GROUP_ID</name>
+          <briefdescription>
+<para>Action parameter inbound v4 stage5 DASH ACL group id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_DASH_ACL_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4a6f7b8674d0d7b8cfb17a43f418eb2d7d" prot="public">
+          <name>SAI_ENI_ATTR_INBOUND_V6_STAGE1_DASH_ACL_GROUP_ID</name>
+          <briefdescription>
+<para>Action parameter inbound v6 stage1 DASH ACL group id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_DASH_ACL_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4ab9d5a5f9b5e56b71efc7b1c443a3ab37" prot="public">
+          <name>SAI_ENI_ATTR_INBOUND_V6_STAGE2_DASH_ACL_GROUP_ID</name>
+          <briefdescription>
+<para>Action parameter inbound v6 stage2 DASH ACL group id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_DASH_ACL_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4ac1ab6b8a21011e283b6403d59255af00" prot="public">
+          <name>SAI_ENI_ATTR_INBOUND_V6_STAGE3_DASH_ACL_GROUP_ID</name>
+          <briefdescription>
+<para>Action parameter inbound v6 stage3 DASH ACL group id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_DASH_ACL_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4ae7722a1bc6d5987297b3a8f0fe6d50f4" prot="public">
+          <name>SAI_ENI_ATTR_INBOUND_V6_STAGE4_DASH_ACL_GROUP_ID</name>
+          <briefdescription>
+<para>Action parameter inbound v6 stage4 DASH ACL group id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_DASH_ACL_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4a6fc2f8f7b94073fb9318c4df30ded977" prot="public">
+          <name>SAI_ENI_ATTR_INBOUND_V6_STAGE5_DASH_ACL_GROUP_ID</name>
+          <briefdescription>
+<para>Action parameter inbound v6 stage5 DASH ACL group id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_DASH_ACL_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4a5b5ed6a7ec92acac90bcc62b612c0aa9" prot="public">
+          <name>SAI_ENI_ATTR_OUTBOUND_V4_STAGE1_DASH_ACL_GROUP_ID</name>
+          <briefdescription>
+<para>Action parameter outbound v4 stage1 DASH ACL group id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_DASH_ACL_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4aaf143d235873ed8fd31171a16a883afb" prot="public">
+          <name>SAI_ENI_ATTR_OUTBOUND_V4_STAGE2_DASH_ACL_GROUP_ID</name>
+          <briefdescription>
+<para>Action parameter outbound v4 stage2 DASH ACL group id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_DASH_ACL_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4a1fbe268f0dcc61049c018bf6e6240c57" prot="public">
+          <name>SAI_ENI_ATTR_OUTBOUND_V4_STAGE3_DASH_ACL_GROUP_ID</name>
+          <briefdescription>
+<para>Action parameter outbound v4 stage3 DASH ACL group id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_DASH_ACL_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4aef278245792ed15e100380cb8fd4d1d2" prot="public">
+          <name>SAI_ENI_ATTR_OUTBOUND_V4_STAGE4_DASH_ACL_GROUP_ID</name>
+          <briefdescription>
+<para>Action parameter outbound v4 stage4 DASH ACL group id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_DASH_ACL_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4ad03882bd4418ec3af763948b1e1e1ddb" prot="public">
+          <name>SAI_ENI_ATTR_OUTBOUND_V4_STAGE5_DASH_ACL_GROUP_ID</name>
+          <briefdescription>
+<para>Action parameter outbound v4 stage5 DASH ACL group id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_DASH_ACL_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4a703446b7a95ee1812aaf9c4a24833fc1" prot="public">
+          <name>SAI_ENI_ATTR_OUTBOUND_V6_STAGE1_DASH_ACL_GROUP_ID</name>
+          <briefdescription>
+<para>Action parameter outbound v6 stage1 DASH ACL group id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_DASH_ACL_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4a54bd3e3a672bb145fb953f4a8a0de573" prot="public">
+          <name>SAI_ENI_ATTR_OUTBOUND_V6_STAGE2_DASH_ACL_GROUP_ID</name>
+          <briefdescription>
+<para>Action parameter outbound v6 stage2 DASH ACL group id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_DASH_ACL_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4a994992fa0e28bd4f74245ea5feaae4e4" prot="public">
+          <name>SAI_ENI_ATTR_OUTBOUND_V6_STAGE3_DASH_ACL_GROUP_ID</name>
+          <briefdescription>
+<para>Action parameter outbound v6 stage3 DASH ACL group id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_DASH_ACL_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4aae65d3858f0768dfd89e20c4ff1089cb" prot="public">
+          <name>SAI_ENI_ATTR_OUTBOUND_V6_STAGE4_DASH_ACL_GROUP_ID</name>
+          <briefdescription>
+<para>Action parameter outbound v6 stage4 DASH ACL group id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_DASH_ACL_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4abac4939dcf7b62c8ca0dd8a7a7573333" prot="public">
+          <name>SAI_ENI_ATTR_OUTBOUND_V6_STAGE5_DASH_ACL_GROUP_ID</name>
+          <briefdescription>
+<para>Action parameter outbound v6 stage5 DASH ACL group id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_DASH_ACL_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4a2104ce471af18620525b7868246866e3" prot="public">
+          <name>SAI_ENI_ATTR_DISABLE_FAST_PATH_ICMP_FLOW_REDIRECTION</name>
+          <briefdescription>
+<para>Action parameter disable fast path ICMP flow redirection. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4a3d0ca8a89ae4271b8d1d462514253175" prot="public">
+          <name>SAI_ENI_ATTR_FULL_FLOW_RESIMULATION_REQUESTED</name>
+          <briefdescription>
+<para>Action parameter full flow re-simulation requested. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4a7408613cb7ed37dc4190cb4c3c71850d" prot="public">
+          <name>SAI_ENI_ATTR_MAX_RESIMULATED_FLOW_PER_SECOND</name>
+          <briefdescription>
+<para>Action parameter max re-simulated flow per second. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4a5f8dc4b720a0b300dfece5f2557d47ad" prot="public">
+          <name>SAI_ENI_ATTR_OUTBOUND_ROUTING_GROUP_ID</name>
+          <briefdescription>
+<para>Action parameter outbound routing group id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_OUTBOUND_ROUTING_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4aa7900a4d9ae5b1513c9dcccfc71e3b3e" prot="public">
+          <name>SAI_ENI_ATTR_IS_HA_FLOW_OWNER</name>
+          <briefdescription>
+<para>Action parameter is HA flow owner. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4a2ca07ee7a63f82d4f8b569f9729d229e" prot="public">
+          <name>SAI_ENI_ATTR_ENABLE_REVERSE_TUNNEL_LEARNING</name>
+          <briefdescription>
+<para>Action parameter enable reverse tunnel learning. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4afc40728244f8669b7663fe3fd26887e8" prot="public">
+          <name>SAI_ENI_ATTR_REVERSE_TUNNEL_SIP</name>
+          <briefdescription>
+<para>Action parameter reverse tunnel sip. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4a98d1d01eab36648e373ce7ad84627b5d" prot="public">
+          <name>SAI_ENI_ATTR_FLOW_TABLE_ID</name>
+          <briefdescription>
+<para>Action parameter flow table id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_FLOW_TABLE </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4a0a26e72d58051bb62f8a31fc74ee26a5" prot="public">
+          <name>SAI_ENI_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4a0a6b40d162a6d02aa923ba08d6b19ef5" prot="public">
+          <name>SAI_ENI_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4bcfc30fee019c115823684bb64033f4ad9a0e447d399bee787a790aa254fcad4" prot="public">
+          <name>SAI_ENI_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute ID for ENI. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" line="112" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" bodystart="113" bodyend="570"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASHENI_1ga4d52ac1ae893cfe7c52d0c6b6737b47a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_eni_stat_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa388ae4b6440104c48691f3ac3a28343b" prot="public">
+          <name>SAI_ENI_STAT_RX_BYTES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI RX_BYTES stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aafdd83d109e99f8b4e93db0e192a4a37b" prot="public">
+          <name>SAI_ENI_STAT_RX_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI RX_PACKETS stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa5aef4b5a7a66437fe4fea7e32073fcc2" prot="public">
+          <name>SAI_ENI_STAT_TX_BYTES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI TX_BYTES stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aafc18bae55776f9616079c7e2228b16f2" prot="public">
+          <name>SAI_ENI_STAT_TX_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI TX_PACKETS stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa6380f097c688a42a02d2f1ac8a8a9021" prot="public">
+          <name>SAI_ENI_STAT_OUTBOUND_RX_BYTES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI OUTBOUND_RX_BYTES stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa89b01f2d8756e38057f2496403762683" prot="public">
+          <name>SAI_ENI_STAT_OUTBOUND_RX_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI OUTBOUND_RX_PACKETS stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa70a8379c1acc73586d96fa48af14ea18" prot="public">
+          <name>SAI_ENI_STAT_OUTBOUND_TX_BYTES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI OUTBOUND_TX_BYTES stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aac07037bfd91e960c227d76fb60928101" prot="public">
+          <name>SAI_ENI_STAT_OUTBOUND_TX_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI OUTBOUND_TX_PACKETS stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa58a3ee75d46a4dbd2503e9adf30b56c6" prot="public">
+          <name>SAI_ENI_STAT_INBOUND_RX_BYTES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI INBOUND_RX_BYTES stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aaa5847ab0b5a1e675f90ee4cb4d6ce939" prot="public">
+          <name>SAI_ENI_STAT_INBOUND_RX_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI INBOUND_RX_PACKETS stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aab22b9bc8bf079039bb18d7485cd0b2c9" prot="public">
+          <name>SAI_ENI_STAT_INBOUND_TX_BYTES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI INBOUND_TX_BYTES stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa656b161c6a0a7abe6c68a29aa91b3043" prot="public">
+          <name>SAI_ENI_STAT_INBOUND_TX_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI INBOUND_TX_PACKETS stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aab26df0baf347321177a86ba130eafa49" prot="public">
+          <name>SAI_ENI_STAT_LB_FAST_PATH_ICMP_IN_BYTES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI LB_FAST_PATH_ICMP_IN_BYTES stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa1dab3b301793181785b9b044d5ed0cf7" prot="public">
+          <name>SAI_ENI_STAT_LB_FAST_PATH_ICMP_IN_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI LB_FAST_PATH_ICMP_IN_PACKETS stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aaaacf95765cf0f0826a4f4dd15c675be1" prot="public">
+          <name>SAI_ENI_STAT_FLOW_CREATED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI FLOW_CREATED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aac42c471756f1c69097658506fb485210" prot="public">
+          <name>SAI_ENI_STAT_FLOW_CREATE_FAILED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI FLOW_CREATE_FAILED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aabaca8ee41e42a9406374fcbf6cc91df3" prot="public">
+          <name>SAI_ENI_STAT_FLOW_UPDATED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI FLOW_UPDATED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa169a14a389cce637779b8f07a9eb1f52" prot="public">
+          <name>SAI_ENI_STAT_FLOW_UPDATE_FAILED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI FLOW_UPDATE_FAILED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aaf2b56748e931883dda28943906e3e644" prot="public">
+          <name>SAI_ENI_STAT_FLOW_UPDATED_BY_RESIMULATION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI FLOW_UPDATED_BY_RESIMULATION stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa02e2c7a25d5011cce5dcca43c7ad133d" prot="public">
+          <name>SAI_ENI_STAT_FLOW_UPDATE_BY_RESIMULATION_FAILED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI FLOW_UPDATE_BY_RESIMULATION_FAILED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa4aa109dd77213fd409c28267cb0dbd66" prot="public">
+          <name>SAI_ENI_STAT_FLOW_DELETED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI FLOW_DELETED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa1b2aff33023712d5bcced2a034b3c6f0" prot="public">
+          <name>SAI_ENI_STAT_FLOW_DELETE_FAILED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI FLOW_DELETE_FAILED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa47ed858fd8da3e73f4a3b6d9f7746687" prot="public">
+          <name>SAI_ENI_STAT_FLOW_AGED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI FLOW_AGED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa71052fcde29d8eb7aac9062a40b1966a" prot="public">
+          <name>SAI_ENI_STAT_INLINE_SYNC_PACKET_RX_BYTES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI INLINE_SYNC_PACKET_RX_BYTES stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa2c81d58e40ca896de697a1be4fe28883" prot="public">
+          <name>SAI_ENI_STAT_INLINE_SYNC_PACKET_RX_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI INLINE_SYNC_PACKET_RX_PACKETS stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa0e881659b0fd2c79fc729421f4d8493a" prot="public">
+          <name>SAI_ENI_STAT_INLINE_SYNC_PACKET_TX_BYTES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI INLINE_SYNC_PACKET_TX_BYTES stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa6d5a84d613e43970421d57f36d060543" prot="public">
+          <name>SAI_ENI_STAT_INLINE_SYNC_PACKET_TX_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI INLINE_SYNC_PACKET_TX_PACKETS stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa65e0610f38f4a74a4e8379a3c3a85293" prot="public">
+          <name>SAI_ENI_STAT_TIMED_SYNC_PACKET_RX_BYTES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI TIMED_SYNC_PACKET_RX_BYTES stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa1b4ed53002b3997dce95864204c9e5de" prot="public">
+          <name>SAI_ENI_STAT_TIMED_SYNC_PACKET_RX_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI TIMED_SYNC_PACKET_RX_PACKETS stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa38ab3f972d43806653d5b418aed62ce2" prot="public">
+          <name>SAI_ENI_STAT_TIMED_SYNC_PACKET_TX_BYTES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI TIMED_SYNC_PACKET_TX_BYTES stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aacd2e1d08471e9c50128d11fd918fe4ce" prot="public">
+          <name>SAI_ENI_STAT_TIMED_SYNC_PACKET_TX_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI TIMED_SYNC_PACKET_TX_PACKETS stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa3a848ab37cc93cfea934406670994cc0" prot="public">
+          <name>SAI_ENI_STAT_INLINE_FLOW_CREATE_REQ_SENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI INLINE_FLOW_CREATE_REQ_SENT stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa90b504991049947bf60e82f9fd179730" prot="public">
+          <name>SAI_ENI_STAT_INLINE_FLOW_CREATE_REQ_RECV</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI INLINE_FLOW_CREATE_REQ_RECV stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aacd4f9fe52a7fd19a4bcca0760e4ebb16" prot="public">
+          <name>SAI_ENI_STAT_INLINE_FLOW_CREATE_REQ_FAILED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI INLINE_FLOW_CREATE_REQ_FAILED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa907c8ef6ceb2bdb1bab74847b576c355" prot="public">
+          <name>SAI_ENI_STAT_INLINE_FLOW_CREATE_REQ_IGNORED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI INLINE_FLOW_CREATE_REQ_IGNORED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa5486c46fde4b6f2bb1cd55689ea2c55c" prot="public">
+          <name>SAI_ENI_STAT_INLINE_FLOW_CREATE_ACK_RECV</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI INLINE_FLOW_CREATE_ACK_RECV stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa07a0cde60dfbfd4f1d18d47380e9c9ae" prot="public">
+          <name>SAI_ENI_STAT_INLINE_FLOW_CREATE_ACK_FAILED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI INLINE_FLOW_CREATE_ACK_FAILED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa380e9acd806abc51b457ba9ddc8dbd7b" prot="public">
+          <name>SAI_ENI_STAT_INLINE_FLOW_CREATE_ACK_IGNORED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI INLINE_FLOW_CREATE_ACK_IGNORED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aad52d793cbe05298812ff89a520664e66" prot="public">
+          <name>SAI_ENI_STAT_TIMED_FLOW_CREATE_REQ_SENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI TIMED_FLOW_CREATE_REQ_SENT stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aadb12de0572a486c6f61a37865afd50e7" prot="public">
+          <name>SAI_ENI_STAT_TIMED_FLOW_CREATE_REQ_RECV</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI TIMED_FLOW_CREATE_REQ_RECV stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa033ef9b2f9acef6d14a607bc44bc60b8" prot="public">
+          <name>SAI_ENI_STAT_TIMED_FLOW_CREATE_REQ_FAILED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI TIMED_FLOW_CREATE_REQ_FAILED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aab593910fbcba5075b72c6ab27269d3f5" prot="public">
+          <name>SAI_ENI_STAT_TIMED_FLOW_CREATE_REQ_IGNORED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI TIMED_FLOW_CREATE_REQ_IGNORED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa20e162723f9180547da09366254cb7ca" prot="public">
+          <name>SAI_ENI_STAT_TIMED_FLOW_CREATE_ACK_RECV</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI TIMED_FLOW_CREATE_ACK_RECV stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aac9a0d127ddc09761c195f3565717535d" prot="public">
+          <name>SAI_ENI_STAT_TIMED_FLOW_CREATE_ACK_FAILED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI TIMED_FLOW_CREATE_ACK_FAILED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa0680133ed72f15f6be9879647834aab4" prot="public">
+          <name>SAI_ENI_STAT_TIMED_FLOW_CREATE_ACK_IGNORED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI TIMED_FLOW_CREATE_ACK_IGNORED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa8ceecee998098844fa750a8d9b7ac57f" prot="public">
+          <name>SAI_ENI_STAT_INLINE_FLOW_UPDATE_REQ_SENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI INLINE_FLOW_UPDATE_REQ_SENT stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aaf23f0a7fe84a289df5598c0a88f985e5" prot="public">
+          <name>SAI_ENI_STAT_INLINE_FLOW_UPDATE_REQ_RECV</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI INLINE_FLOW_UPDATE_REQ_RECV stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa4906eb4f41993e0e534ed28045b6f5fb" prot="public">
+          <name>SAI_ENI_STAT_INLINE_FLOW_UPDATE_REQ_FAILED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI INLINE_FLOW_UPDATE_REQ_FAILED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aabf21775675a0d22c8aed2d960651268a" prot="public">
+          <name>SAI_ENI_STAT_INLINE_FLOW_UPDATE_REQ_IGNORED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI INLINE_FLOW_UPDATE_REQ_IGNORED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aad34ca9ac2c89ef97dcf2c03eaf4d05a9" prot="public">
+          <name>SAI_ENI_STAT_INLINE_FLOW_UPDATE_ACK_RECV</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI INLINE_FLOW_UPDATE_ACK_RECV stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aadac12c938a82042f4a6ac98dc46c35c1" prot="public">
+          <name>SAI_ENI_STAT_INLINE_FLOW_UPDATE_ACK_FAILED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI INLINE_FLOW_UPDATE_ACK_FAILED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aad40732d6b4458db58982253d3505381d" prot="public">
+          <name>SAI_ENI_STAT_INLINE_FLOW_UPDATE_ACK_IGNORED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI INLINE_FLOW_UPDATE_ACK_IGNORED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa7fc01f843de62c3d5dbbe920ed63e065" prot="public">
+          <name>SAI_ENI_STAT_TIMED_FLOW_UPDATE_REQ_SENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI TIMED_FLOW_UPDATE_REQ_SENT stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa0ee6b3cb0f237da088ad942943adae6b" prot="public">
+          <name>SAI_ENI_STAT_TIMED_FLOW_UPDATE_REQ_RECV</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI TIMED_FLOW_UPDATE_REQ_RECV stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa05aca36fc623156d461d34c696aa16a5" prot="public">
+          <name>SAI_ENI_STAT_TIMED_FLOW_UPDATE_REQ_FAILED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI TIMED_FLOW_UPDATE_REQ_FAILED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aac4a0972b630791e1b4411e9c810c61be" prot="public">
+          <name>SAI_ENI_STAT_TIMED_FLOW_UPDATE_REQ_IGNORED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI TIMED_FLOW_UPDATE_REQ_IGNORED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aaae9a5c228ce46c3eba124bead14d882f" prot="public">
+          <name>SAI_ENI_STAT_TIMED_FLOW_UPDATE_ACK_RECV</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI TIMED_FLOW_UPDATE_ACK_RECV stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aad2b165aab87db4753bac6717902b342a" prot="public">
+          <name>SAI_ENI_STAT_TIMED_FLOW_UPDATE_ACK_FAILED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI TIMED_FLOW_UPDATE_ACK_FAILED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa15edafa5b08ee1205656ffdc807d4010" prot="public">
+          <name>SAI_ENI_STAT_TIMED_FLOW_UPDATE_ACK_IGNORED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI TIMED_FLOW_UPDATE_ACK_IGNORED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa844a0c6c988f16e0f99c74c65b9f30df" prot="public">
+          <name>SAI_ENI_STAT_INLINE_FLOW_DELETE_REQ_SENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI INLINE_FLOW_DELETE_REQ_SENT stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa6ff0c71cfa70e29e59644a59181536bc" prot="public">
+          <name>SAI_ENI_STAT_INLINE_FLOW_DELETE_REQ_RECV</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI INLINE_FLOW_DELETE_REQ_RECV stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa0b9ae36572e28f2032ba941c9f4322fc" prot="public">
+          <name>SAI_ENI_STAT_INLINE_FLOW_DELETE_REQ_FAILED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI INLINE_FLOW_DELETE_REQ_FAILED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aaaf6de9d5c19ca08ea7bffa3fa9778857" prot="public">
+          <name>SAI_ENI_STAT_INLINE_FLOW_DELETE_REQ_IGNORED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI INLINE_FLOW_DELETE_REQ_IGNORED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aac3448490719b3042560249a7e92f22d1" prot="public">
+          <name>SAI_ENI_STAT_INLINE_FLOW_DELETE_ACK_RECV</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI INLINE_FLOW_DELETE_ACK_RECV stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aafc2d69d1f038861cf3a97c4fda46c492" prot="public">
+          <name>SAI_ENI_STAT_INLINE_FLOW_DELETE_ACK_FAILED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI INLINE_FLOW_DELETE_ACK_FAILED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa0a5538e6773f7748a12528e168a14cad" prot="public">
+          <name>SAI_ENI_STAT_INLINE_FLOW_DELETE_ACK_IGNORED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI INLINE_FLOW_DELETE_ACK_IGNORED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aab9409d40852b0d1fc31285cd89c9f353" prot="public">
+          <name>SAI_ENI_STAT_TIMED_FLOW_DELETE_REQ_SENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI TIMED_FLOW_DELETE_REQ_SENT stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aad59d9ba17924c96e92a744611e77a46f" prot="public">
+          <name>SAI_ENI_STAT_TIMED_FLOW_DELETE_REQ_RECV</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI TIMED_FLOW_DELETE_REQ_RECV stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa55973cafbbb0e5c5c324c9cd41fa8e28" prot="public">
+          <name>SAI_ENI_STAT_TIMED_FLOW_DELETE_REQ_FAILED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI TIMED_FLOW_DELETE_REQ_FAILED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aaa602d57e92c1c885cc734c1453b00c24" prot="public">
+          <name>SAI_ENI_STAT_TIMED_FLOW_DELETE_REQ_IGNORED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI TIMED_FLOW_DELETE_REQ_IGNORED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aaaf8dee354276c6c147a8199ce3ef2e83" prot="public">
+          <name>SAI_ENI_STAT_TIMED_FLOW_DELETE_ACK_RECV</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI TIMED_FLOW_DELETE_ACK_RECV stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aad88238a5bd41ca5b721729e9bdb52aa3" prot="public">
+          <name>SAI_ENI_STAT_TIMED_FLOW_DELETE_ACK_FAILED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI TIMED_FLOW_DELETE_ACK_FAILED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa7ed4762992deb91f058d4a626a798ce3" prot="public">
+          <name>SAI_ENI_STAT_TIMED_FLOW_DELETE_ACK_IGNORED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI TIMED_FLOW_DELETE_ACK_IGNORED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa0da4b73fff9292d9544e02d0a33629a3" prot="public">
+          <name>SAI_ENI_STAT_OUTBOUND_ROUTING_ENTRY_MISS_DROP_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI OUTBOUND_ROUTING_ENTRY_MISS_DROP_PACKETS stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa06dacc97d6c7396d009e4bd487a5a844" prot="public">
+          <name>SAI_ENI_STAT_OUTBOUND_CA_PA_ENTRY_MISS_DROP_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI OUTBOUND_CA_PA_ENTRY_MISS_DROP_PACKETS stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aaad3954e47242040057f4fe16c0d35177" prot="public">
+          <name>SAI_ENI_STAT_INBOUND_ROUTING_ENTRY_MISS_DROP_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI INBOUND_ROUTING_ENTRY_MISS_DROP_PACKETS stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa9c0592d0841dc352e30a50070314b0e9" prot="public">
+          <name>SAI_ENI_STAT_OUTBOUND_ROUTING_GROUP_MISS_DROP_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI OUTBOUND_ROUTING_GROUP_MISS_DROP_PACKETS stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHENI_1gga4d52ac1ae893cfe7c52d0c6b6737b47aa7d0cc4c7698ed2d87dbef619f05be1ac" prot="public">
+          <name>SAI_ENI_STAT_OUTBOUND_ROUTING_GROUP_DISABLED_DROP_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH ENI OUTBOUND_ROUTING_GROUP_DISABLED_DROP_PACKETS stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Counter IDs for ENI. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" line="575" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" bodystart="576" bodyend="811"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHENI_1gaa927ec6cbc2447468ae33b92a96bf550" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASHENI_1ga56ba01c23a126a7850aa38a9b245466b" kindref="member">_sai_eni_ether_address_map_entry_action_t</ref></type>
+        <definition>typedef enum _sai_eni_ether_address_map_entry_action_t sai_eni_ether_address_map_entry_action_t</definition>
+        <argsstring></argsstring>
+        <name>sai_eni_ether_address_map_entry_action_t</name>
+        <briefdescription>
+<para>Attribute data for <ref refid="group__SAIEXPERIMENTALDASHENI_1ggaae990330a5465ccd35788761858e81c3a591b51f107625f655256a5d883865743" kindref="member">SAI_ENI_ETHER_ADDRESS_MAP_ENTRY_ATTR_ACTION</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" line="45" column="42"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHENI_1gae3fe650f8ee91ad3a689616918a36c99" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__eni__ether__address__map__entry__t" kindref="compound">_sai_eni_ether_address_map_entry_t</ref></type>
+        <definition>typedef struct _sai_eni_ether_address_map_entry_t sai_eni_ether_address_map_entry_t</definition>
+        <argsstring></argsstring>
+        <name>sai_eni_ether_address_map_entry_t</name>
+        <briefdescription>
+<para>Entry for eni_ether_address_map_entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" line="64" column="35"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHENI_1ga2980d3ea7af56057aaa3a72a236bff27" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASHENI_1gaae990330a5465ccd35788761858e81c3" kindref="member">_sai_eni_ether_address_map_entry_attr_t</ref></type>
+        <definition>typedef enum _sai_eni_ether_address_map_entry_attr_t sai_eni_ether_address_map_entry_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_eni_ether_address_map_entry_attr_t</name>
+        <briefdescription>
+<para>Attribute ID for ENI ether address map entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" line="107" column="40"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHENI_1ga4808b437d08331bf6d81d5bfd0d61d87" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASHENI_1ga4bcfc30fee019c115823684bb64033f4" kindref="member">_sai_eni_attr_t</ref></type>
+        <definition>typedef enum _sai_eni_attr_t sai_eni_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_eni_attr_t</name>
+        <briefdescription>
+<para>Attribute ID for ENI. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" line="570" column="16"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHENI_1ga6b52de7995ffc94f096c8c2a785c8667" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASHENI_1ga4d52ac1ae893cfe7c52d0c6b6737b47a" kindref="member">_sai_eni_stat_t</ref></type>
+        <definition>typedef enum _sai_eni_stat_t sai_eni_stat_t</definition>
+        <argsstring></argsstring>
+        <name>sai_eni_stat_t</name>
+        <briefdescription>
+<para>Counter IDs for ENI. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" line="811" column="16"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHENI_1gadcee9bd892648db4a628d9c128b9d50c" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_eni_ether_address_map_entry_fn) (_In_ const sai_eni_ether_address_map_entry_t *eni_ether_address_map_entry, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ const sai_eni_ether_address_map_entry_t *eni_ether_address_map_entry, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_eni_ether_address_map_entry_fn</name>
+        <briefdescription>
+<para>Create ENI ether address map entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">eni_ether_address_map_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" line="822" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" bodystart="822" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHENI_1ga46a1f72bcd9addd249b0f399c2174b86" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_eni_ether_address_map_entry_fn) (_In_ const sai_eni_ether_address_map_entry_t *eni_ether_address_map_entry)</definition>
+        <argsstring>)(_In_ const sai_eni_ether_address_map_entry_t *eni_ether_address_map_entry)</argsstring>
+        <name>sai_remove_eni_ether_address_map_entry_fn</name>
+        <briefdescription>
+<para>Remove ENI ether address map entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">eni_ether_address_map_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" line="834" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" bodystart="834" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHENI_1ga95edce382f30948f96e8751a719e5582" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_eni_ether_address_map_entry_attribute_fn) (_In_ const sai_eni_ether_address_map_entry_t *eni_ether_address_map_entry, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ const sai_eni_ether_address_map_entry_t *eni_ether_address_map_entry, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_eni_ether_address_map_entry_attribute_fn</name>
+        <briefdescription>
+<para>Set attribute for ENI ether address map entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">eni_ether_address_map_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" line="845" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" bodystart="845" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHENI_1ga521976e865ae78568e400f2bf2efb79c" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_eni_ether_address_map_entry_attribute_fn) (_In_ const sai_eni_ether_address_map_entry_t *eni_ether_address_map_entry, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ const sai_eni_ether_address_map_entry_t *eni_ether_address_map_entry, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_eni_ether_address_map_entry_attribute_fn</name>
+        <briefdescription>
+<para>Get attribute for ENI ether address map entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">eni_ether_address_map_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" line="858" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" bodystart="858" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHENI_1ga0db41b69774c3c877f90952e8e6ff261" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_create_eni_ether_address_map_entry_fn) (_In_ uint32_t object_count, _In_ const sai_eni_ether_address_map_entry_t *eni_ether_address_map_entry, _In_ const uint32_t *attr_count, _In_ const sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_eni_ether_address_map_entry_t *eni_ether_address_map_entry, _In_ const uint32_t *attr_count, _In_ const sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_create_eni_ether_address_map_entry_fn</name>
+        <briefdescription>
+<para>Bulk create ENI ether address map entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to create </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">eni_ether_address_map_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of object to create </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attr_count. Caller passes the number of attribute for each object to create. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attributes for every object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are created or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to create. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" line="880" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" bodystart="880" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHENI_1gaa6056795e1137f1e6c98842a8df2d426" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_remove_eni_ether_address_map_entry_fn) (_In_ uint32_t object_count, _In_ const sai_eni_ether_address_map_entry_t *eni_ether_address_map_entry, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_eni_ether_address_map_entry_t *eni_ether_address_map_entry, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_remove_eni_ether_address_map_entry_fn</name>
+        <briefdescription>
+<para>Bulk remove ENI ether address map entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to remove </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">eni_ether_address_map_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of objects to remove </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are removed or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to remove. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" line="902" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" bodystart="902" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHENI_1ga595e3e7deff0011eec3f8f1b02bf4165" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_eni_fn) (_Out_ sai_object_id_t *eni_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *eni_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_eni_fn</name>
+        <briefdescription>
+<para>Create ENI. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">eni_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" line="918" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" bodystart="918" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHENI_1ga90fa8f4770ee446777e277c0ec78b638" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_eni_fn) (_In_ sai_object_id_t eni_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t eni_id)</argsstring>
+        <name>sai_remove_eni_fn</name>
+        <briefdescription>
+<para>Remove ENI. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">eni_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" line="931" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" bodystart="931" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHENI_1ga0302aeaf83a69e5f71f6c644064ae126" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_eni_attribute_fn) (_In_ sai_object_id_t eni_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t eni_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_eni_attribute_fn</name>
+        <briefdescription>
+<para>Set attribute for ENI. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">eni_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" line="942" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" bodystart="942" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHENI_1ga27e9465861a99273d7529c1b53a6beb4" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_eni_attribute_fn) (_In_ sai_object_id_t eni_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t eni_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_eni_attribute_fn</name>
+        <briefdescription>
+<para>Get attribute for ENI. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">eni_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" line="955" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" bodystart="955" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHENI_1ga2c5f9c095139015c90bf259b48acd6a6" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_eni_stats_fn) (_In_ sai_object_id_t eni_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t eni_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_eni_stats_fn</name>
+        <briefdescription>
+<para>Get ENI statistics counters. Deprecated for backward compatibility. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">eni_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" line="970" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" bodystart="970" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHENI_1gaca34580bedd4407e4caedefcb61f208b" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_eni_stats_ext_fn) (_In_ sai_object_id_t eni_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t eni_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_eni_stats_ext_fn</name>
+        <briefdescription>
+<para>Get ENI statistics counters extended. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">eni_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Statistics mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" line="987" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" bodystart="987" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHENI_1ga91ca2392e933a242b984a4774a40ad1d" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_clear_eni_stats_fn) (_In_ sai_object_id_t eni_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</definition>
+        <argsstring>)(_In_ sai_object_id_t eni_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</argsstring>
+        <name>sai_clear_eni_stats_fn</name>
+        <briefdescription>
+<para>Clear ENI statistics counters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">eni_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" line="1003" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" bodystart="1003" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHENI_1gaad52251d4152c020d8281093f46705a8" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__dash__eni__api__t" kindref="compound">_sai_dash_eni_api_t</ref></type>
+        <definition>typedef struct _sai_dash_eni_api_t sai_dash_eni_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dash_eni_api_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h" line="1027" column="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module defines SAI extensions for DASH ENI. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2014 Microsoft Open Technologies, Inc.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <ulink url="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</ulink></para>
+<para>THIS CODE IS PROVIDED ON AN <emphasis>AS IS</emphasis> BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</para>
+<para>See the Apache Version 2.0 License for specific language governing permissions and limitations under the License.</para>
+<para>Microsoft would like to thank the following companies for their review and assistance with these files: Intel Corporation, Mellanox Technologies Ltd, Dell Products, L.P., Facebook, Inc., Marvell International Ltd.</para>
+<para><simplesect kind="warning"><para>This module is a SAI experimental module </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldasheni.h"/>
+  </compounddef>
+</doxygen>

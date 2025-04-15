@@ -1,0 +1,1642 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group__SAIEXPERIMENTALBMTOR" kind="group">
+    <compoundname>SAIEXPERIMENTALBMTOR</compoundname>
+    <title>SAI - Experimental: BMTOR specific API definitions</title>
+    <innerclass refid="struct__sai__bmtor__api__t" prot="public">_sai_bmtor_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALBMTOR_1gaf28ce4b6fc1ac1bf754b16d1e9ec2e2d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_table_bitmap_classification_entry_action_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggaf28ce4b6fc1ac1bf754b16d1e9ec2e2da4ba7ea2dce9ee2e47359150924ac5286" prot="public">
+          <name>SAI_TABLE_BITMAP_CLASSIFICATION_ENTRY_ACTION_SET_METADATA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggaf28ce4b6fc1ac1bf754b16d1e9ec2e2da854a39c5cb0ab76b2876b5e494e43eb9" prot="public">
+          <name>SAI_TABLE_BITMAP_CLASSIFICATION_ENTRY_ACTION_NOACTION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute data for <ref refid="group__SAIEXPERIMENTALBMTOR_1ggab03d4e0918a919b5f23394a99ffc60c2a7c19efb20981c723a0902dfb256d8437" kindref="member">SAI_TABLE_BITMAP_CLASSIFICATION_ENTRY_ATTR_ACTION</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="41" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" bodystart="42" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALBMTOR_1ga34ac5750822847ee4d86230a703b1d84" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_table_bitmap_router_entry_action_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1gga34ac5750822847ee4d86230a703b1d84a05b80ca198ebec1491195b3bc5c23d60" prot="public">
+          <name>SAI_TABLE_BITMAP_ROUTER_ENTRY_ACTION_TO_NEXTHOP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1gga34ac5750822847ee4d86230a703b1d84af0a12023a6b6bb6199150d32b185d45a" prot="public">
+          <name>SAI_TABLE_BITMAP_ROUTER_ENTRY_ACTION_TO_LOCAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1gga34ac5750822847ee4d86230a703b1d84ad4b878e26110288da7861e7f5dd768b9" prot="public">
+          <name>SAI_TABLE_BITMAP_ROUTER_ENTRY_ACTION_TO_CPU</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1gga34ac5750822847ee4d86230a703b1d84a78f73ca94852f7ebf222bc768a63ebc1" prot="public">
+          <name>SAI_TABLE_BITMAP_ROUTER_ENTRY_ACTION_DROP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1gga34ac5750822847ee4d86230a703b1d84a3a797aa7426837cd6d570ddb025e704f" prot="public">
+          <name>SAI_TABLE_BITMAP_ROUTER_ENTRY_ACTION_NOACTION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute data for <ref refid="group__SAIEXPERIMENTALBMTOR_1ggae174414f761267604434cc5f9ae78bd5ae4bffb55f7711530b691ee71254b000f" kindref="member">SAI_TABLE_BITMAP_ROUTER_ENTRY_ATTR_ACTION</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="52" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" bodystart="53" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALBMTOR_1gaec7f35be145c552bf840f7c1b1732d10" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_table_meta_tunnel_entry_action_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggaec7f35be145c552bf840f7c1b1732d10a932a8572e0e0b5bce1e597776d71753e" prot="public">
+          <name>SAI_TABLE_META_TUNNEL_ENTRY_ACTION_TUNNEL_ENCAP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggaec7f35be145c552bf840f7c1b1732d10a9f61b6c2cec23306058f24f22bff9000" prot="public">
+          <name>SAI_TABLE_META_TUNNEL_ENTRY_ACTION_NOACTION</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute data for <ref refid="group__SAIEXPERIMENTALBMTOR_1ggadccb7036650ac9d01283f38c719c76a6a3bb35494053e6784301f43bc2aabbc23" kindref="member">SAI_TABLE_META_TUNNEL_ENTRY_ATTR_ACTION</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="69" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" bodystart="70" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALBMTOR_1gab03d4e0918a919b5f23394a99ffc60c2" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_table_bitmap_classification_entry_attr_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggab03d4e0918a919b5f23394a99ffc60c2a7419bd1a773e91bc10ab37fac06626f4" prot="public">
+          <name>SAI_TABLE_BITMAP_CLASSIFICATION_ENTRY_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggab03d4e0918a919b5f23394a99ffc60c2a7c19efb20981c723a0902dfb256d8437" prot="public">
+          <name>SAI_TABLE_BITMAP_CLASSIFICATION_ENTRY_ATTR_ACTION</name>
+          <initializer>= SAI_TABLE_BITMAP_CLASSIFICATION_ENTRY_ATTR_START</initializer>
+          <briefdescription>
+<para>Action. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_table_bitmap_classification_entry_action_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggab03d4e0918a919b5f23394a99ffc60c2a62a480b8beab717c2fb56aaabc0fdcee" prot="public">
+          <name>SAI_TABLE_BITMAP_CLASSIFICATION_ENTRY_ATTR_ROUTER_INTERFACE_KEY</name>
+          <briefdescription>
+<para>Exact Matched key router_interface. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_ROUTER_INTERFACE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggab03d4e0918a919b5f23394a99ffc60c2a7de4cb6419aceef7b366691d26973691" prot="public">
+          <name>SAI_TABLE_BITMAP_CLASSIFICATION_ENTRY_ATTR_IS_DEFAULT</name>
+          <briefdescription>
+<para>Is default entry. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggab03d4e0918a919b5f23394a99ffc60c2a1c4be190010e51738af254eda13a8553" prot="public">
+          <name>SAI_TABLE_BITMAP_CLASSIFICATION_ENTRY_ATTR_IN_RIF_METADATA</name>
+          <briefdescription>
+<para>Action set_metadata parameter in_rif_metadata. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_TABLE_BITMAP_CLASSIFICATION_ENTRY_ATTR_ACTION == SAI_TABLE_BITMAP_CLASSIFICATION_ENTRY_ACTION_SET_METADATA </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggab03d4e0918a919b5f23394a99ffc60c2ac2af21ec951871955d6e575501d78fb0" prot="public">
+          <name>SAI_TABLE_BITMAP_CLASSIFICATION_ENTRY_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggab03d4e0918a919b5f23394a99ffc60c2afad7c5e777bd4b8df9efd78cd999cc3e" prot="public">
+          <name>SAI_TABLE_BITMAP_CLASSIFICATION_ENTRY_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggab03d4e0918a919b5f23394a99ffc60c2a7e8c4499edea1f044bdba97129c7e154" prot="public">
+          <name>SAI_TABLE_BITMAP_CLASSIFICATION_ENTRY_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute ID for table_bitmap_classification. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="80" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" bodystart="81" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALBMTOR_1gae174414f761267604434cc5f9ae78bd5" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_table_bitmap_router_entry_attr_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggae174414f761267604434cc5f9ae78bd5acf0e2a2cf521d2c5dc4d5f072ad5f059" prot="public">
+          <name>SAI_TABLE_BITMAP_ROUTER_ENTRY_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggae174414f761267604434cc5f9ae78bd5ae4bffb55f7711530b691ee71254b000f" prot="public">
+          <name>SAI_TABLE_BITMAP_ROUTER_ENTRY_ATTR_ACTION</name>
+          <initializer>= SAI_TABLE_BITMAP_ROUTER_ENTRY_ATTR_START</initializer>
+          <briefdescription>
+<para>Action. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_table_bitmap_router_entry_action_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggae174414f761267604434cc5f9ae78bd5a3c90caf63de8deb281114c0cb09e1691" prot="public">
+          <name>SAI_TABLE_BITMAP_ROUTER_ENTRY_ATTR_PRIORITY</name>
+          <briefdescription>
+<para>Rule priority in table. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggae174414f761267604434cc5f9ae78bd5ad210c29ad75449d3faabfcd2197531d2" prot="public">
+          <name>SAI_TABLE_BITMAP_ROUTER_ENTRY_ATTR_IN_RIF_METADATA_KEY</name>
+          <briefdescription>
+<para>Ternary Matched key in_rif_metadata (key) </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggae174414f761267604434cc5f9ae78bd5a5b67a1150afe6d3619309182d03db43f" prot="public">
+          <name>SAI_TABLE_BITMAP_ROUTER_ENTRY_ATTR_IN_RIF_METADATA_MASK</name>
+          <briefdescription>
+<para>Ternary Matched mask in_rif_metadata (mask) </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggae174414f761267604434cc5f9ae78bd5a820a3bb50a4f512b0f9b7909a4110a74" prot="public">
+          <name>SAI_TABLE_BITMAP_ROUTER_ENTRY_ATTR_DST_IP_KEY</name>
+          <briefdescription>
+<para>LPM Matched key dst_ip. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_prefix_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggae174414f761267604434cc5f9ae78bd5aeaa2653e953568f384df3d46ca369714" prot="public">
+          <name>SAI_TABLE_BITMAP_ROUTER_ENTRY_ATTR_TUNNEL_INDEX</name>
+          <briefdescription>
+<para>Action to_nexthop parameter tunnel_index. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          false </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_TABLE_BITMAP_ROUTER_ENTRY_ATTR_ACTION == SAI_TABLE_BITMAP_ROUTER_ENTRY_ACTION_TO_NEXTHOP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggae174414f761267604434cc5f9ae78bd5aeac2751e5e87ede009d229506eedc04e" prot="public">
+          <name>SAI_TABLE_BITMAP_ROUTER_ENTRY_ATTR_NEXT_HOP</name>
+          <briefdescription>
+<para>Action to_nexthop parameter next_hop. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_NEXT_HOP </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_TABLE_BITMAP_ROUTER_ENTRY_ATTR_ACTION == SAI_TABLE_BITMAP_ROUTER_ENTRY_ACTION_TO_NEXTHOP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggae174414f761267604434cc5f9ae78bd5ac8169ca300206ec5f7fbd846529a53db" prot="public">
+          <name>SAI_TABLE_BITMAP_ROUTER_ENTRY_ATTR_ROUTER_INTERFACE</name>
+          <briefdescription>
+<para>Action to_local parameter router_interface. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_ROUTER_INTERFACE </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_TABLE_BITMAP_ROUTER_ENTRY_ATTR_ACTION == SAI_TABLE_BITMAP_ROUTER_ENTRY_ACTION_TO_LOCAL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggae174414f761267604434cc5f9ae78bd5a50751159eed5fa47893385afa1d152cf" prot="public">
+          <name>SAI_TABLE_BITMAP_ROUTER_ENTRY_ATTR_TRAP_ID</name>
+          <briefdescription>
+<para>Action to_cpu parameter trap_id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_HOSTIF_TRAP </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_TABLE_BITMAP_ROUTER_ENTRY_ATTR_ACTION == SAI_TABLE_BITMAP_ROUTER_ENTRY_ACTION_TO_CPU </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggae174414f761267604434cc5f9ae78bd5a03779c08f477ac82686602724185c65c" prot="public">
+          <name>SAI_TABLE_BITMAP_ROUTER_ENTRY_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggae174414f761267604434cc5f9ae78bd5abcab54cd227fc0bfb33bef1753861ebe" prot="public">
+          <name>SAI_TABLE_BITMAP_ROUTER_ENTRY_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggae174414f761267604434cc5f9ae78bd5a5274866263157b8f7e7682ee12a6399a" prot="public">
+          <name>SAI_TABLE_BITMAP_ROUTER_ENTRY_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute ID for table_bitmap_router. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="138" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" bodystart="139" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALBMTOR_1gadccb7036650ac9d01283f38c719c76a6" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_table_meta_tunnel_entry_attr_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggadccb7036650ac9d01283f38c719c76a6a0b05d8b312c8f94b2314a09aad7a378d" prot="public">
+          <name>SAI_TABLE_META_TUNNEL_ENTRY_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggadccb7036650ac9d01283f38c719c76a6a3bb35494053e6784301f43bc2aabbc23" prot="public">
+          <name>SAI_TABLE_META_TUNNEL_ENTRY_ATTR_ACTION</name>
+          <initializer>= SAI_TABLE_META_TUNNEL_ENTRY_ATTR_START</initializer>
+          <briefdescription>
+<para>Action. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_table_meta_tunnel_entry_action_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggadccb7036650ac9d01283f38c719c76a6a4499f34ccb8b75d8c4638d72c3768e57" prot="public">
+          <name>SAI_TABLE_META_TUNNEL_ENTRY_ATTR_METADATA_KEY</name>
+          <briefdescription>
+<para>Exact Matched key metadata. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggadccb7036650ac9d01283f38c719c76a6a9bff62df080acd680716e663aeb9947c" prot="public">
+          <name>SAI_TABLE_META_TUNNEL_ENTRY_ATTR_IS_DEFAULT</name>
+          <briefdescription>
+<para>Is default entry. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggadccb7036650ac9d01283f38c719c76a6a3f5da03ebcfdd33db42f7ab3c5ba8e40" prot="public">
+          <name>SAI_TABLE_META_TUNNEL_ENTRY_ATTR_TUNNEL_ID</name>
+          <briefdescription>
+<para>Action tunnel_encap parameter tunnel_id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_TUNNEL </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_TABLE_META_TUNNEL_ENTRY_ATTR_ACTION == SAI_TABLE_META_TUNNEL_ENTRY_ACTION_TUNNEL_ENCAP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggadccb7036650ac9d01283f38c719c76a6acffbd6f1456399c808531555f87c4595" prot="public">
+          <name>SAI_TABLE_META_TUNNEL_ENTRY_ATTR_UNDERLAY_DIP</name>
+          <briefdescription>
+<para>Action tunnel_encap parameter underlay_dip. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_TABLE_META_TUNNEL_ENTRY_ATTR_ACTION == SAI_TABLE_META_TUNNEL_ENTRY_ACTION_TUNNEL_ENCAP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggadccb7036650ac9d01283f38c719c76a6afc6466a62f4b80b4c1f880ec5383ed14" prot="public">
+          <name>SAI_TABLE_META_TUNNEL_ENTRY_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggadccb7036650ac9d01283f38c719c76a6afd9762b8b9c5ed75c90cdcef99f7ac05" prot="public">
+          <name>SAI_TABLE_META_TUNNEL_ENTRY_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggadccb7036650ac9d01283f38c719c76a6a1bb69f0a23c9efdf8614625974f3821f" prot="public">
+          <name>SAI_TABLE_META_TUNNEL_ENTRY_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute ID for table_meta_tunnel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="241" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" bodystart="242" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALBMTOR_1gade02a711f21f915bebdb3fe608148e82" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_table_bitmap_classification_entry_stat_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggade02a711f21f915bebdb3fe608148e82a7ea5fe641cd6f1c3d87e5465be35ac21" prot="public">
+          <name>SAI_TABLE_BITMAP_CLASSIFICATION_ENTRY_STAT_HIT_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggade02a711f21f915bebdb3fe608148e82a163cb65f2874851459a62f83194e3f89" prot="public">
+          <name>SAI_TABLE_BITMAP_CLASSIFICATION_ENTRY_STAT_HIT_OCTETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Counter IDs in sai_get_table_bitmap_classification_entry_stats() call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="309" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" bodystart="310" bodyend="313"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALBMTOR_1ga09e7cdcbfd1a0691158701bdef2b1ef2" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_table_bitmap_router_entry_stat_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1gga09e7cdcbfd1a0691158701bdef2b1ef2aca0392032ee3b7d847d043f0a0d0b548" prot="public">
+          <name>SAI_TABLE_BITMAP_ROUTER_ENTRY_STAT_HIT_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1gga09e7cdcbfd1a0691158701bdef2b1ef2a3e37dca86dad91c2fa77161b92f90902" prot="public">
+          <name>SAI_TABLE_BITMAP_ROUTER_ENTRY_STAT_HIT_OCTETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Counter IDs in sai_get_table_bitmap_router_entry_stats() call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="318" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" bodystart="319" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALBMTOR_1gad3f9cb60591d9434d3f64b3863903aab" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_table_meta_tunnel_entry_stat_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggad3f9cb60591d9434d3f64b3863903aabad4ac70b4b6e04f58bedfa18d754b5ceb" prot="public">
+          <name>SAI_TABLE_META_TUNNEL_ENTRY_STAT_HIT_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALBMTOR_1ggad3f9cb60591d9434d3f64b3863903aaba45685c771613b00fcc5742771bc54471" prot="public">
+          <name>SAI_TABLE_META_TUNNEL_ENTRY_STAT_HIT_OCTETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Counter IDs in sai_get_table_meta_tunnel_entry_stats() call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="327" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" bodystart="328" bodyend="331"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALBMTOR_1ga6a402d5724059e791d9a34d52a01688b" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALBMTOR_1gaf28ce4b6fc1ac1bf754b16d1e9ec2e2d" kindref="member">_sai_table_bitmap_classification_entry_action_t</ref></type>
+        <definition>typedef enum _sai_table_bitmap_classification_entry_action_t sai_table_bitmap_classification_entry_action_t</definition>
+        <argsstring></argsstring>
+        <name>sai_table_bitmap_classification_entry_action_t</name>
+        <briefdescription>
+<para>Attribute data for <ref refid="group__SAIEXPERIMENTALBMTOR_1ggab03d4e0918a919b5f23394a99ffc60c2a7c19efb20981c723a0902dfb256d8437" kindref="member">SAI_TABLE_BITMAP_CLASSIFICATION_ENTRY_ATTR_ACTION</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="47" column="48"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALBMTOR_1ga2cbc5039056db1b704988dd715037f3f" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALBMTOR_1ga34ac5750822847ee4d86230a703b1d84" kindref="member">_sai_table_bitmap_router_entry_action_t</ref></type>
+        <definition>typedef enum _sai_table_bitmap_router_entry_action_t sai_table_bitmap_router_entry_action_t</definition>
+        <argsstring></argsstring>
+        <name>sai_table_bitmap_router_entry_action_t</name>
+        <briefdescription>
+<para>Attribute data for <ref refid="group__SAIEXPERIMENTALBMTOR_1ggae174414f761267604434cc5f9ae78bd5ae4bffb55f7711530b691ee71254b000f" kindref="member">SAI_TABLE_BITMAP_ROUTER_ENTRY_ATTR_ACTION</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="64" column="40"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALBMTOR_1ga671f24e61f27829f93bfd7f6d559fa3c" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALBMTOR_1gaec7f35be145c552bf840f7c1b1732d10" kindref="member">_sai_table_meta_tunnel_entry_action_t</ref></type>
+        <definition>typedef enum _sai_table_meta_tunnel_entry_action_t sai_table_meta_tunnel_entry_action_t</definition>
+        <argsstring></argsstring>
+        <name>sai_table_meta_tunnel_entry_action_t</name>
+        <briefdescription>
+<para>Attribute data for <ref refid="group__SAIEXPERIMENTALBMTOR_1ggadccb7036650ac9d01283f38c719c76a6a3bb35494053e6784301f43bc2aabbc23" kindref="member">SAI_TABLE_META_TUNNEL_ENTRY_ATTR_ACTION</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="75" column="38"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALBMTOR_1gaa64cde9ccc0505c7c6e1d2fef3c946d1" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALBMTOR_1gab03d4e0918a919b5f23394a99ffc60c2" kindref="member">_sai_table_bitmap_classification_entry_attr_t</ref></type>
+        <definition>typedef enum _sai_table_bitmap_classification_entry_attr_t sai_table_bitmap_classification_entry_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_table_bitmap_classification_entry_attr_t</name>
+        <briefdescription>
+<para>Attribute ID for table_bitmap_classification. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="133" column="46"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALBMTOR_1gac645d7433c7def971f78812f5036288e" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALBMTOR_1gae174414f761267604434cc5f9ae78bd5" kindref="member">_sai_table_bitmap_router_entry_attr_t</ref></type>
+        <definition>typedef enum _sai_table_bitmap_router_entry_attr_t sai_table_bitmap_router_entry_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_table_bitmap_router_entry_attr_t</name>
+        <briefdescription>
+<para>Attribute ID for table_bitmap_router. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="236" column="38"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALBMTOR_1ga52cb5ced1297ed4beba413b70bd7a3ec" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALBMTOR_1gadccb7036650ac9d01283f38c719c76a6" kindref="member">_sai_table_meta_tunnel_entry_attr_t</ref></type>
+        <definition>typedef enum _sai_table_meta_tunnel_entry_attr_t sai_table_meta_tunnel_entry_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_table_meta_tunnel_entry_attr_t</name>
+        <briefdescription>
+<para>Attribute ID for table_meta_tunnel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="304" column="36"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALBMTOR_1gadc9c930ccb52f2492f2bc6fdad01aea4" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALBMTOR_1gade02a711f21f915bebdb3fe608148e82" kindref="member">_sai_table_bitmap_classification_entry_stat_t</ref></type>
+        <definition>typedef enum _sai_table_bitmap_classification_entry_stat_t sai_table_bitmap_classification_entry_stat_t</definition>
+        <argsstring></argsstring>
+        <name>sai_table_bitmap_classification_entry_stat_t</name>
+        <briefdescription>
+<para>Counter IDs in sai_get_table_bitmap_classification_entry_stats() call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="313" column="46"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALBMTOR_1gafdd8d6f6557d8183df2026c4a32bde3b" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALBMTOR_1ga09e7cdcbfd1a0691158701bdef2b1ef2" kindref="member">_sai_table_bitmap_router_entry_stat_t</ref></type>
+        <definition>typedef enum _sai_table_bitmap_router_entry_stat_t sai_table_bitmap_router_entry_stat_t</definition>
+        <argsstring></argsstring>
+        <name>sai_table_bitmap_router_entry_stat_t</name>
+        <briefdescription>
+<para>Counter IDs in sai_get_table_bitmap_router_entry_stats() call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="322" column="38"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALBMTOR_1gaf8aef04b870f7acd2331b3c2e8b1a3de" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALBMTOR_1gad3f9cb60591d9434d3f64b3863903aab" kindref="member">_sai_table_meta_tunnel_entry_stat_t</ref></type>
+        <definition>typedef enum _sai_table_meta_tunnel_entry_stat_t sai_table_meta_tunnel_entry_stat_t</definition>
+        <argsstring></argsstring>
+        <name>sai_table_meta_tunnel_entry_stat_t</name>
+        <briefdescription>
+<para>Counter IDs in sai_get_table_meta_tunnel_entry_stats() call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="331" column="36"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALBMTOR_1gafbaa0d104b4f75b0a89558eee7d25ec8" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_table_bitmap_classification_entry_fn) (_Out_ sai_object_id_t *table_bitmap_classification_entry_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *table_bitmap_classification_entry_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_table_bitmap_classification_entry_fn</name>
+        <briefdescription>
+<para>Create table_bitmap_classification_entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">table_bitmap_classification_entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="343" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALBMTOR_1gaca083b124e37f8c5c6812dcf758a9b80" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_table_bitmap_classification_entry_fn) (_In_ sai_object_id_t table_bitmap_classification_entry_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t table_bitmap_classification_entry_id)</argsstring>
+        <name>sai_remove_table_bitmap_classification_entry_fn</name>
+        <briefdescription>
+<para>Remove table_bitmap_classification_entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">table_bitmap_classification_entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="356" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" bodystart="356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALBMTOR_1ga30db47ab24b3af16235875938b6146c7" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_table_bitmap_classification_entry_attribute_fn) (_In_ sai_object_id_t table_bitmap_classification_entry_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t table_bitmap_classification_entry_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_table_bitmap_classification_entry_attribute_fn</name>
+        <briefdescription>
+<para>Set attribute for table_bitmap_classification_entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">table_bitmap_classification_entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="367" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" bodystart="367" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALBMTOR_1ga80a1584281932b664010b127c2df741d" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_table_bitmap_classification_entry_attribute_fn) (_In_ sai_object_id_t table_bitmap_classification_entry_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t table_bitmap_classification_entry_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_table_bitmap_classification_entry_attribute_fn</name>
+        <briefdescription>
+<para>Get attribute for table_bitmap_classification_entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">table_bitmap_classification_entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="380" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALBMTOR_1gadcbb1fc6cff9538892d1d905f4a12519" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_table_bitmap_classification_entry_stats_fn) (_In_ sai_object_id_t table_bitmap_classification_entry_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t table_bitmap_classification_entry_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_table_bitmap_classification_entry_stats_fn</name>
+        <briefdescription>
+<para>Get table_bitmap_classification statistics counters. Deprecated for backward compatibility. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">table_bitmap_classification_entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="395" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" bodystart="395" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALBMTOR_1ga43118a05ce22ee531a409baffe2bacb7" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_table_bitmap_classification_entry_stats_ext_fn) (_In_ sai_object_id_t table_bitmap_classification_entry_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t table_bitmap_classification_entry_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_table_bitmap_classification_entry_stats_ext_fn</name>
+        <briefdescription>
+<para>Get table_bitmap_classification statistics counters extended. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">table_bitmap_classification_entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Statistics mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="412" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" bodystart="412" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALBMTOR_1ga0ea476ad315d537a2703f3625a78fb6a" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_clear_table_bitmap_classification_entry_stats_fn) (_In_ sai_object_id_t table_bitmap_classification_entry_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</definition>
+        <argsstring>)(_In_ sai_object_id_t table_bitmap_classification_entry_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</argsstring>
+        <name>sai_clear_table_bitmap_classification_entry_stats_fn</name>
+        <briefdescription>
+<para>Clear statistics counters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">table_bitmap_classification_entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="428" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALBMTOR_1ga0b97d7b49046dbf3a2f6480a1b1babeb" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_table_bitmap_router_entry_fn) (_Out_ sai_object_id_t *table_bitmap_router_entry_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *table_bitmap_router_entry_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_table_bitmap_router_entry_fn</name>
+        <briefdescription>
+<para>Create table_bitmap_router_entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">table_bitmap_router_entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="443" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" bodystart="443" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALBMTOR_1ga39d82d1f7d3daf03013e4c0ac90d67a9" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_table_bitmap_router_entry_fn) (_In_ sai_object_id_t table_bitmap_router_entry_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t table_bitmap_router_entry_id)</argsstring>
+        <name>sai_remove_table_bitmap_router_entry_fn</name>
+        <briefdescription>
+<para>Remove table_bitmap_router_entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">table_bitmap_router_entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="456" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" bodystart="456" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALBMTOR_1ga98421a6a70d44399d68af191089fdf4e" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_table_bitmap_router_entry_attribute_fn) (_In_ sai_object_id_t table_bitmap_router_entry_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t table_bitmap_router_entry_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_table_bitmap_router_entry_attribute_fn</name>
+        <briefdescription>
+<para>Set attribute for table_bitmap_router_entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">table_bitmap_router_entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="467" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" bodystart="467" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALBMTOR_1ga179f67d4e8c710dc48557a616bedd88c" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_table_bitmap_router_entry_attribute_fn) (_In_ sai_object_id_t table_bitmap_router_entry_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t table_bitmap_router_entry_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_table_bitmap_router_entry_attribute_fn</name>
+        <briefdescription>
+<para>Get attribute for table_bitmap_router_entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">table_bitmap_router_entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="480" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" bodystart="480" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALBMTOR_1gad50ab2c8837e943b59b343535ba5d93b" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_table_bitmap_router_entry_stats_fn) (_In_ sai_object_id_t table_bitmap_router_entry_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t table_bitmap_router_entry_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_table_bitmap_router_entry_stats_fn</name>
+        <briefdescription>
+<para>Get table_bitmap_router statistics counters. Deprecated for backward compatibility. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">table_bitmap_router_entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="495" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" bodystart="495" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALBMTOR_1ga7abbf63954d70068e7f491ed9f7528f6" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_table_bitmap_router_entry_stats_ext_fn) (_In_ sai_object_id_t table_bitmap_router_entry_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t table_bitmap_router_entry_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_table_bitmap_router_entry_stats_ext_fn</name>
+        <briefdescription>
+<para>Get table_bitmap_router statistics counters extended. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">table_bitmap_router_entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Statistics mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="512" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" bodystart="512" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALBMTOR_1gacfd908e22c295bab59a5efe521e54218" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_clear_table_bitmap_router_entry_stats_fn) (_In_ sai_object_id_t table_bitmap_router_entry_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</definition>
+        <argsstring>)(_In_ sai_object_id_t table_bitmap_router_entry_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</argsstring>
+        <name>sai_clear_table_bitmap_router_entry_stats_fn</name>
+        <briefdescription>
+<para>Clear statistics counters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">table_bitmap_router_entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="528" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" bodystart="528" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALBMTOR_1ga02ba055bb173d36ee810d12fa08439f3" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_table_meta_tunnel_entry_fn) (_Out_ sai_object_id_t *table_meta_tunnel_entry_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *table_meta_tunnel_entry_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_table_meta_tunnel_entry_fn</name>
+        <briefdescription>
+<para>Create table_meta_tunnel_entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">table_meta_tunnel_entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="543" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" bodystart="543" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALBMTOR_1gac63e2a5f920e5d612e5bb168d8973a66" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_table_meta_tunnel_entry_fn) (_In_ sai_object_id_t table_meta_tunnel_entry_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t table_meta_tunnel_entry_id)</argsstring>
+        <name>sai_remove_table_meta_tunnel_entry_fn</name>
+        <briefdescription>
+<para>Remove table_meta_tunnel_entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">table_meta_tunnel_entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="556" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" bodystart="556" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALBMTOR_1ga4fcb28ea396d864f1ae0c9e3a6d42580" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_table_meta_tunnel_entry_attribute_fn) (_In_ sai_object_id_t table_meta_tunnel_entry_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t table_meta_tunnel_entry_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_table_meta_tunnel_entry_attribute_fn</name>
+        <briefdescription>
+<para>Set attribute for table_meta_tunnel_entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">table_meta_tunnel_entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="567" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" bodystart="567" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALBMTOR_1ga043f93884b4fa1c6500419d15aef901e" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_table_meta_tunnel_entry_attribute_fn) (_In_ sai_object_id_t table_meta_tunnel_entry_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t table_meta_tunnel_entry_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_table_meta_tunnel_entry_attribute_fn</name>
+        <briefdescription>
+<para>Get attribute for table_meta_tunnel_entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">table_meta_tunnel_entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="580" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" bodystart="580" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALBMTOR_1gafdfab135a04c00bd97851ec743cdfbca" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_table_meta_tunnel_entry_stats_fn) (_In_ sai_object_id_t table_meta_tunnel_entry_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t table_meta_tunnel_entry_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_table_meta_tunnel_entry_stats_fn</name>
+        <briefdescription>
+<para>Get table_meta_tunnel statistics counters. Deprecated for backward compatibility. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">table_meta_tunnel_entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="595" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" bodystart="595" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALBMTOR_1ga89c005548f618f0586acec6625c1b042" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_table_meta_tunnel_entry_stats_ext_fn) (_In_ sai_object_id_t table_meta_tunnel_entry_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t table_meta_tunnel_entry_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_table_meta_tunnel_entry_stats_ext_fn</name>
+        <briefdescription>
+<para>Get table_meta_tunnel statistics counters extended. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">table_meta_tunnel_entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Statistics mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="612" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" bodystart="612" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALBMTOR_1ga8b548cadfe6d86b2ef03b7ed8b35bd3e" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_clear_table_meta_tunnel_entry_stats_fn) (_In_ sai_object_id_t table_meta_tunnel_entry_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</definition>
+        <argsstring>)(_In_ sai_object_id_t table_meta_tunnel_entry_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</argsstring>
+        <name>sai_clear_table_meta_tunnel_entry_stats_fn</name>
+        <briefdescription>
+<para>Clear statistics counters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">table_meta_tunnel_entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="628" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" bodystart="628" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALBMTOR_1ga694b03353eefb02df241375514a24a2d" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__bmtor__api__t" kindref="compound">_sai_bmtor_api_t</ref></type>
+        <definition>typedef struct _sai_bmtor_api_t sai_bmtor_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_bmtor_api_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentalbmtor.h" line="656" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1179 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="saiexperimentaldashha_8h" kind="file" language="C++">
+    <compoundname>saiexperimentaldashha.h</compoundname>
+    <includes refid="saitypesextensions_8h" local="no">saitypesextensions.h</includes>
+    <includedby refid="saiobject_8h" local="no">/home/andrii/sai_hw1/SAI/inc/saiobject.h</includedby>
+    <includedby refid="saiextensions_8h" local="yes">/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>stdbool.h</label>
+      </node>
+      <node id="4">
+        <label>stdint.h</label>
+      </node>
+      <node id="6">
+        <label>sys/types.h</label>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h</label>
+        <link refid="saiexperimentaldashha_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>saitypesextensions.h</label>
+        <link refid="saitypesextensions_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>saitypes.h</label>
+        <link refid="saitypes_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>/home/andrii/sai_hw1/SAI/inc/sai.h</label>
+        <link refid="sai_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h</label>
+        <link refid="saiexperimentaldashha_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/andrii/sai_hw1/SAI/inc/saiobject.h</label>
+        <link refid="saiobject_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</label>
+        <link refid="saiextensions_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct__sai__dash__ha__api__t" prot="public">_sai_dash_ha_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASHHA_1gae3206635905ae2ff7e5b1b5c534c2080" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_ha_set_attr_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggae3206635905ae2ff7e5b1b5c534c2080a07a3902a17d189bae51adca6e783d937" prot="public">
+          <name>SAI_HA_SET_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggae3206635905ae2ff7e5b1b5c534c2080a0472ca50f5d05ff4fdb04faeb32a149c" prot="public">
+          <name>SAI_HA_SET_ATTR_LOCAL_IP</name>
+          <initializer>= SAI_HA_SET_ATTR_START</initializer>
+          <briefdescription>
+<para>Action parameter local IP. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggae3206635905ae2ff7e5b1b5c534c2080a2dec79786fe8de8fd4b8c6ac0b50e08b" prot="public">
+          <name>SAI_HA_SET_ATTR_PEER_IP</name>
+          <briefdescription>
+<para>Action parameter peer IP. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggae3206635905ae2ff7e5b1b5c534c2080af41fa1e1d33433e102d43ab834107eee" prot="public">
+          <name>SAI_HA_SET_ATTR_CP_DATA_CHANNEL_PORT</name>
+          <briefdescription>
+<para>Action parameter control plane data channel port. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggae3206635905ae2ff7e5b1b5c534c2080a0272d910b8690f8dc9853f86a43b2516" prot="public">
+          <name>SAI_HA_SET_ATTR_DP_CHANNEL_DST_PORT</name>
+          <briefdescription>
+<para>Action parameter data plane channel dst port. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggae3206635905ae2ff7e5b1b5c534c2080a412336a46df740ed4d866e72985e4f65" prot="public">
+          <name>SAI_HA_SET_ATTR_DP_CHANNEL_MIN_SRC_PORT</name>
+          <briefdescription>
+<para>Action parameter data plane channel min src port. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggae3206635905ae2ff7e5b1b5c534c2080aa38b741fa89ef41ed326791c7df07f5a" prot="public">
+          <name>SAI_HA_SET_ATTR_DP_CHANNEL_MAX_SRC_PORT</name>
+          <briefdescription>
+<para>Action parameter data plane channel max src port. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggae3206635905ae2ff7e5b1b5c534c2080a0c62a2c40d971944800632c38de1f6e7" prot="public">
+          <name>SAI_HA_SET_ATTR_DP_CHANNEL_PROBE_INTERVAL_MS</name>
+          <briefdescription>
+<para>Action parameter data plane channel probe interval ms. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggae3206635905ae2ff7e5b1b5c534c2080aa09cbc5c1f1e6c229d5d06e23fd21fa8" prot="public">
+          <name>SAI_HA_SET_ATTR_DP_CHANNEL_PROBE_FAIL_THRESHOLD</name>
+          <briefdescription>
+<para>Action parameter data plane channel probe fail threshold. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggae3206635905ae2ff7e5b1b5c534c2080acd3d813f2e0fc3f5bbdb578b6f1facf5" prot="public">
+          <name>SAI_HA_SET_ATTR_DP_CHANNEL_IS_ALIVE</name>
+          <briefdescription>
+<para>Action parameter data plane channel is alive. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggae3206635905ae2ff7e5b1b5c534c2080abffc820ed8ef1c091e2a66c4c547a636" prot="public">
+          <name>SAI_HA_SET_ATTR_DPU_DRIVEN_HA_SWITCHOVER_WAIT_TIME_MS</name>
+          <briefdescription>
+<para>Action parameter SAI vendor driven HA switchover wait time ms. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggae3206635905ae2ff7e5b1b5c534c2080a730a5c9015d6f856342a64ba0cfa3a21" prot="public">
+          <name>SAI_HA_SET_ATTR_PEER_BOUNCEBACK_IP</name>
+          <briefdescription>
+<para>Action parameter peer bounceback IP. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggae3206635905ae2ff7e5b1b5c534c2080a2c717ee926fad7308519e882906a06ad" prot="public">
+          <name>SAI_HA_SET_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggae3206635905ae2ff7e5b1b5c534c2080ad698023d746817b7c4869a1eef8ccc71" prot="public">
+          <name>SAI_HA_SET_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggae3206635905ae2ff7e5b1b5c534c2080a9ee5a485a4c98fb61d91d474733e4960" prot="public">
+          <name>SAI_HA_SET_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute ID for HA set. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h" line="41" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h" bodystart="42" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASHHA_1gad7a72c8517dc3dc14800d63a941dd446" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_ha_set_stat_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggad7a72c8517dc3dc14800d63a941dd446ad68daff9713924c4c08c2927f0568496" prot="public">
+          <name>SAI_HA_SET_STAT_DP_PROBE_REQ_RX_BYTES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH HA_SET DP_PROBE_REQ_RX_BYTES stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggad7a72c8517dc3dc14800d63a941dd446a8089b89429d36eb0bd017e411122e724" prot="public">
+          <name>SAI_HA_SET_STAT_DP_PROBE_REQ_RX_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH HA_SET DP_PROBE_REQ_RX_PACKETS stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggad7a72c8517dc3dc14800d63a941dd446a964a63a6cd8e0ee75a2ec63d2a90e741" prot="public">
+          <name>SAI_HA_SET_STAT_DP_PROBE_REQ_TX_BYTES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH HA_SET DP_PROBE_REQ_TX_BYTES stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggad7a72c8517dc3dc14800d63a941dd446ae45b76f103c69259cbecc6353f75799e" prot="public">
+          <name>SAI_HA_SET_STAT_DP_PROBE_REQ_TX_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH HA_SET DP_PROBE_REQ_TX_PACKETS stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggad7a72c8517dc3dc14800d63a941dd446a595aa83e74a3d2662703847b315f1e32" prot="public">
+          <name>SAI_HA_SET_STAT_DP_PROBE_ACK_RX_BYTES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH HA_SET DP_PROBE_ACK_RX_BYTES stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggad7a72c8517dc3dc14800d63a941dd446a483fd10fe25dd83e64faad5ae822c174" prot="public">
+          <name>SAI_HA_SET_STAT_DP_PROBE_ACK_RX_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH HA_SET DP_PROBE_ACK_RX_PACKETS stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggad7a72c8517dc3dc14800d63a941dd446a1dadbde1773c4dbc804ee17e7fe47e27" prot="public">
+          <name>SAI_HA_SET_STAT_DP_PROBE_ACK_TX_BYTES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH HA_SET DP_PROBE_ACK_TX_BYTES stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggad7a72c8517dc3dc14800d63a941dd446adb83b4d1860ca9295930591e1dffc987" prot="public">
+          <name>SAI_HA_SET_STAT_DP_PROBE_ACK_TX_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH HA_SET DP_PROBE_ACK_TX_PACKETS stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggad7a72c8517dc3dc14800d63a941dd446a8332e8b9fde9465423e6cd8786f4fadd" prot="public">
+          <name>SAI_HA_SET_STAT_DP_PROBE_FAILED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH HA_SET DP_PROBE_FAILED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggad7a72c8517dc3dc14800d63a941dd446aecbc615186e4fe8e476afda1fb19018e" prot="public">
+          <name>SAI_HA_SET_STAT_CP_DATA_CHANNEL_CONNECT_ATTEMPTED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH HA_SET CP_DATA_CHANNEL_CONNECT_ATTEMPTED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggad7a72c8517dc3dc14800d63a941dd446a7d9f46eff2b662ec101c5eb9a25ea7ac" prot="public">
+          <name>SAI_HA_SET_STAT_CP_DATA_CHANNEL_CONNECT_RECEIVED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH HA_SET CP_DATA_CHANNEL_CONNECT_RECEIVED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggad7a72c8517dc3dc14800d63a941dd446ae54eaa2ac4b091eb1ff88498e784560a" prot="public">
+          <name>SAI_HA_SET_STAT_CP_DATA_CHANNEL_CONNECT_SUCCEEDED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH HA_SET CP_DATA_CHANNEL_CONNECT_SUCCEEDED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggad7a72c8517dc3dc14800d63a941dd446afc4b55c08982d32c59904fc2ded0ae13" prot="public">
+          <name>SAI_HA_SET_STAT_CP_DATA_CHANNEL_CONNECT_FAILED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH HA_SET CP_DATA_CHANNEL_CONNECT_FAILED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggad7a72c8517dc3dc14800d63a941dd446a1a3d2ce0794f1806fd93036ea76e1fcb" prot="public">
+          <name>SAI_HA_SET_STAT_CP_DATA_CHANNEL_CONNECT_REJECTED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH HA_SET CP_DATA_CHANNEL_CONNECT_REJECTED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggad7a72c8517dc3dc14800d63a941dd446a32b85be0dd53537f87232435c24ab02a" prot="public">
+          <name>SAI_HA_SET_STAT_CP_DATA_CHANNEL_TIMEOUT_COUNT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH HA_SET CP_DATA_CHANNEL_TIMEOUT_COUNT stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggad7a72c8517dc3dc14800d63a941dd446a9171a1a6c599d56bb4adfb49671ca512" prot="public">
+          <name>SAI_HA_SET_STAT_BULK_SYNC_MESSAGE_RECEIVED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH HA_SET BULK_SYNC_MESSAGE_RECEIVED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggad7a72c8517dc3dc14800d63a941dd446aad02d6c54e7569b63631ab58676ae435" prot="public">
+          <name>SAI_HA_SET_STAT_BULK_SYNC_MESSAGE_SENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH HA_SET BULK_SYNC_MESSAGE_SENT stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggad7a72c8517dc3dc14800d63a941dd446aec60dfbd1d6bf7cde37d533367653df3" prot="public">
+          <name>SAI_HA_SET_STAT_BULK_SYNC_MESSAGE_SEND_FAILED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH HA_SET BULK_SYNC_MESSAGE_SEND_FAILED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggad7a72c8517dc3dc14800d63a941dd446af72decd142bf89874bab1077a4727c8a" prot="public">
+          <name>SAI_HA_SET_STAT_BULK_SYNC_FLOW_RECEIVED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH HA_SET BULK_SYNC_FLOW_RECEIVED stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1ggad7a72c8517dc3dc14800d63a941dd446a9c6a7cdb4d57f47506e5b8df6a40ce3c" prot="public">
+          <name>SAI_HA_SET_STAT_BULK_SYNC_FLOW_SENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH HA_SET BULK_SYNC_FLOW_SENT stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Counter IDs for HA set. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h" line="166" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h" bodystart="167" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASHHA_1ga9a5e60e5ead4871c89b484eea2378b39" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_ha_scope_attr_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1gga9a5e60e5ead4871c89b484eea2378b39af405492198f7358f9a9aee1152da531a" prot="public">
+          <name>SAI_HA_SCOPE_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1gga9a5e60e5ead4871c89b484eea2378b39a3bb97510ef8c3fc9787c48c927e17510" prot="public">
+          <name>SAI_HA_SCOPE_ATTR_HA_SET_ID</name>
+          <initializer>= SAI_HA_SCOPE_ATTR_START</initializer>
+          <briefdescription>
+<para>Action parameter HA set id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_HA_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1gga9a5e60e5ead4871c89b484eea2378b39a018885831f44184d9f3f1dd26ad788f1" prot="public">
+          <name>SAI_HA_SCOPE_ATTR_DASH_HA_ROLE</name>
+          <briefdescription>
+<para>Action parameter DASH HA role. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_dash_ha_role_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_DASH_HA_ROLE_DEAD </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1gga9a5e60e5ead4871c89b484eea2378b39ae6c0571a4bf3400065f27732458bb603" prot="public">
+          <name>SAI_HA_SCOPE_ATTR_FLOW_VERSION</name>
+          <briefdescription>
+<para>Action parameter flow version. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1gga9a5e60e5ead4871c89b484eea2378b39ac812ad7f056fbee1039d7adbebe2675d" prot="public">
+          <name>SAI_HA_SCOPE_ATTR_FLOW_RECONCILE_REQUESTED</name>
+          <briefdescription>
+<para>Action parameter flow reconcile requested. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1gga9a5e60e5ead4871c89b484eea2378b39a147d29d9cb5a29655afb2c04e1863e04" prot="public">
+          <name>SAI_HA_SCOPE_ATTR_FLOW_RECONCILE_NEEDED</name>
+          <briefdescription>
+<para>Action parameter flow reconcile needed. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1gga9a5e60e5ead4871c89b484eea2378b39a51c6584afb0aec649d70154613402160" prot="public">
+          <name>SAI_HA_SCOPE_ATTR_VIP_V4</name>
+          <briefdescription>
+<para>Action parameter VIP v4. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1gga9a5e60e5ead4871c89b484eea2378b39a2980951b3e18bb51fb84699ae0fbef56" prot="public">
+          <name>SAI_HA_SCOPE_ATTR_VIP_V6</name>
+          <briefdescription>
+<para>Action parameter VIP v6. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1gga9a5e60e5ead4871c89b484eea2378b39aedc6d423ff0bbff57f2d8248f425d3d1" prot="public">
+          <name>SAI_HA_SCOPE_ATTR_ADMIN_STATE</name>
+          <briefdescription>
+<para>Action parameter admin state. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1gga9a5e60e5ead4871c89b484eea2378b39ad547cf591b9f17abef2ded381400d741" prot="public">
+          <name>SAI_HA_SCOPE_ATTR_ACTIVATE_ROLE</name>
+          <briefdescription>
+<para>Action parameter activate role. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1gga9a5e60e5ead4871c89b484eea2378b39ad5b4b20bb1053c6175e46f34559a4d2d" prot="public">
+          <name>SAI_HA_SCOPE_ATTR_DASH_HA_STATE</name>
+          <briefdescription>
+<para>Action parameter DASH HA state. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_dash_ha_state_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1gga9a5e60e5ead4871c89b484eea2378b39a1af99e0f2d6279642dd54b2450d9ceb3" prot="public">
+          <name>SAI_HA_SCOPE_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1gga9a5e60e5ead4871c89b484eea2378b39acdd3cc89f93d854c783ab6ef08adf7f3" prot="public">
+          <name>SAI_HA_SCOPE_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHHA_1gga9a5e60e5ead4871c89b484eea2378b39af43b57dab1a0c2f138a1235200840741" prot="public">
+          <name>SAI_HA_SCOPE_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute ID for HA scope. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h" line="233" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h" bodystart="234" bodyend="340"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHHA_1ga2831b562fd2f557862ae91b06d3ddb50" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASHHA_1gae3206635905ae2ff7e5b1b5c534c2080" kindref="member">_sai_ha_set_attr_t</ref></type>
+        <definition>typedef enum _sai_ha_set_attr_t sai_ha_set_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_ha_set_attr_t</name>
+        <briefdescription>
+<para>Attribute ID for HA set. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h" line="161" column="19"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHHA_1ga55d4e9f4690c32df32c9c5bc364e66a4" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASHHA_1gad7a72c8517dc3dc14800d63a941dd446" kindref="member">_sai_ha_set_stat_t</ref></type>
+        <definition>typedef enum _sai_ha_set_stat_t sai_ha_set_stat_t</definition>
+        <argsstring></argsstring>
+        <name>sai_ha_set_stat_t</name>
+        <briefdescription>
+<para>Counter IDs for HA set. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h" line="228" column="19"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHHA_1gae41b6467510e8c04205c88ed94172ee2" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASHHA_1ga9a5e60e5ead4871c89b484eea2378b39" kindref="member">_sai_ha_scope_attr_t</ref></type>
+        <definition>typedef enum _sai_ha_scope_attr_t sai_ha_scope_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_ha_scope_attr_t</name>
+        <briefdescription>
+<para>Attribute ID for HA scope. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h" line="340" column="21"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHHA_1ga13bbe28657398ebe3353eba325b72129" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_ha_set_fn) (_Out_ sai_object_id_t *ha_set_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *ha_set_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_ha_set_fn</name>
+        <briefdescription>
+<para>Create HA set. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">ha_set_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h" line="352" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h" bodystart="352" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHHA_1ga2e978829b67c3de17588c028bd77cb73" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_ha_set_fn) (_In_ sai_object_id_t ha_set_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t ha_set_id)</argsstring>
+        <name>sai_remove_ha_set_fn</name>
+        <briefdescription>
+<para>Remove HA set. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ha_set_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h" line="365" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h" bodystart="365" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHHA_1ga12d5d08acf4e92d3e6e6ec4b90cdf1bc" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_ha_set_attribute_fn) (_In_ sai_object_id_t ha_set_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t ha_set_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_ha_set_attribute_fn</name>
+        <briefdescription>
+<para>Set attribute for HA set. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ha_set_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h" line="376" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHHA_1gac4abd4add04b5131c50ad8e898d25cb4" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_ha_set_attribute_fn) (_In_ sai_object_id_t ha_set_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t ha_set_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_ha_set_attribute_fn</name>
+        <briefdescription>
+<para>Get attribute for HA set. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ha_set_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h" line="389" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h" bodystart="389" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHHA_1gaa308473229c7a797ccbf5e9648506cbe" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_ha_set_stats_fn) (_In_ sai_object_id_t ha_set_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t ha_set_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_ha_set_stats_fn</name>
+        <briefdescription>
+<para>Get HA_SET statistics counters. Deprecated for backward compatibility. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ha_set_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h" line="404" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h" bodystart="404" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHHA_1gad1ea599c0cf04a1927ac45effa7b7c03" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_ha_set_stats_ext_fn) (_In_ sai_object_id_t ha_set_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t ha_set_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_ha_set_stats_ext_fn</name>
+        <briefdescription>
+<para>Get HA_SET statistics counters extended. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ha_set_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Statistics mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h" line="421" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h" bodystart="421" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHHA_1gaf92ce8ede531104055c3cc97b3fd8fe0" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_clear_ha_set_stats_fn) (_In_ sai_object_id_t ha_set_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</definition>
+        <argsstring>)(_In_ sai_object_id_t ha_set_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</argsstring>
+        <name>sai_clear_ha_set_stats_fn</name>
+        <briefdescription>
+<para>Clear HA_SET statistics counters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ha_set_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h" line="437" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h" bodystart="437" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHHA_1ga7ba1319563c58887800a5271918510ad" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_ha_scope_fn) (_Out_ sai_object_id_t *ha_scope_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *ha_scope_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_ha_scope_fn</name>
+        <briefdescription>
+<para>Create HA scope. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">ha_scope_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h" line="452" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h" bodystart="452" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHHA_1ga01fa9ce93d6c5deded23fe44331edc4a" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_ha_scope_fn) (_In_ sai_object_id_t ha_scope_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t ha_scope_id)</argsstring>
+        <name>sai_remove_ha_scope_fn</name>
+        <briefdescription>
+<para>Remove HA scope. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ha_scope_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h" line="465" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h" bodystart="465" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHHA_1gab8f4de2555b9e4f65d35782ceac3cbc2" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_ha_scope_attribute_fn) (_In_ sai_object_id_t ha_scope_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t ha_scope_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_ha_scope_attribute_fn</name>
+        <briefdescription>
+<para>Set attribute for HA scope. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ha_scope_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h" line="476" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h" bodystart="476" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHHA_1gac14fa41bd0d893a0a104d2fb0388dbc7" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_ha_scope_attribute_fn) (_In_ sai_object_id_t ha_scope_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t ha_scope_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_ha_scope_attribute_fn</name>
+        <briefdescription>
+<para>Get attribute for HA scope. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ha_scope_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h" line="489" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h" bodystart="489" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHHA_1ga73565034146807e90f63d29c82fb3221" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__dash__ha__api__t" kindref="compound">_sai_dash_ha_api_t</ref></type>
+        <definition>typedef struct _sai_dash_ha_api_t sai_dash_ha_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dash_ha_api_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h" line="513" column="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module defines SAI extensions for DASH HA. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2014 Microsoft Open Technologies, Inc.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <ulink url="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</ulink></para>
+<para>THIS CODE IS PROVIDED ON AN <emphasis>AS IS</emphasis> BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</para>
+<para>See the Apache Version 2.0 License for specific language governing permissions and limitations under the License.</para>
+<para>Microsoft would like to thank the following companies for their review and assistance with these files: Intel Corporation, Mellanox Technologies Ltd, Dell Products, L.P., Facebook, Inc., Marvell International Ltd.</para>
+<para><simplesect kind="warning"><para>This module is a SAI experimental module </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashha.h"/>
+  </compounddef>
+</doxygen>

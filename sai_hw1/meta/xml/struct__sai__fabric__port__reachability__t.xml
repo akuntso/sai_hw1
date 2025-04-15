@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__fabric__port__reachability__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_fabric_port_reachability_t</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__fabric__port__reachability__t_1af503800fb3a3c4ecc71467345587c162" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _sai_fabric_port_reachability_t::switch_id</definition>
+        <argsstring></argsstring>
+        <name>switch_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remote switch ID (SAI_SWITCH_TYPE_NPU) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1405" column="14" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1405" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__fabric__port__reachability__t_1a52f8c1114b9d6c892b38b50cca314ba1" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_fabric_port_reachability_t::reachable</definition>
+        <argsstring></argsstring>
+        <name>reachable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remote switch ID is reachable through the fabric port </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1408" column="10" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1408" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Fabric port reachability. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1402" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1403" bodyend="1409"/>
+    <listofallmembers>
+      <member refid="struct__sai__fabric__port__reachability__t_1a52f8c1114b9d6c892b38b50cca314ba1" prot="public" virt="non-virtual"><scope>_sai_fabric_port_reachability_t</scope><name>reachable</name></member>
+      <member refid="struct__sai__fabric__port__reachability__t_1af503800fb3a3c4ecc71467345587c162" prot="public" virt="non-virtual"><scope>_sai_fabric_port_reachability_t</scope><name>switch_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,900 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__port__api__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_port_api_t</compoundname>
+    <includes refid="saiport_8h" local="no">saiport.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__port__api__t_1a0ff1189a0ff40e3b4bd041219585df27" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIPORT_1ga71f9c1598d27f11ef0de4faf5a19282c" kindref="member">sai_create_port_fn</ref></type>
+        <definition>sai_create_port_fn _sai_port_api_t::create_port</definition>
+        <argsstring></argsstring>
+        <name>create_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="4302" column="44" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="4302" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__api__t_1af5e235947f614fe9525ec89330f0eb8a" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIPORT_1gaa889b91fe49a19c5c8ad9f44f772d9c4" kindref="member">sai_remove_port_fn</ref></type>
+        <definition>sai_remove_port_fn _sai_port_api_t::remove_port</definition>
+        <argsstring></argsstring>
+        <name>remove_port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="4303" column="44" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="4303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__api__t_1a5175c7a9167a5b499f88d72c3ff6a739" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIPORT_1ga684307c7fba7af4525af37a1bc8267cb" kindref="member">sai_set_port_attribute_fn</ref></type>
+        <definition>sai_set_port_attribute_fn _sai_port_api_t::set_port_attribute</definition>
+        <argsstring></argsstring>
+        <name>set_port_attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="4304" column="44" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="4304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__api__t_1aed05c5adc9303e4680c906bd3567ac29" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIPORT_1gae9952e226fd8751263631c3d3980cd2f" kindref="member">sai_get_port_attribute_fn</ref></type>
+        <definition>sai_get_port_attribute_fn _sai_port_api_t::get_port_attribute</definition>
+        <argsstring></argsstring>
+        <name>get_port_attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="4305" column="44" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="4305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__api__t_1a99aac21bc7ff82157ee492ad454e07c6" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIPORT_1ga2749ad9c4c944f5506cc1e67a0ecc825" kindref="member">sai_get_port_stats_fn</ref></type>
+        <definition>sai_get_port_stats_fn _sai_port_api_t::get_port_stats</definition>
+        <argsstring></argsstring>
+        <name>get_port_stats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="4306" column="44" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="4306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__api__t_1a44a290eed41a1f30628526f4d02d8f8a" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIPORT_1ga6c85dd9c9e9830d54fff0945f82aa7f7" kindref="member">sai_get_port_stats_ext_fn</ref></type>
+        <definition>sai_get_port_stats_ext_fn _sai_port_api_t::get_port_stats_ext</definition>
+        <argsstring></argsstring>
+        <name>get_port_stats_ext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="4307" column="44" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="4307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__api__t_1abdaa94e3d0d8c9ae30bd9df90bda6e3a" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIPORT_1gab4cb66bb6deb2256f0772089b82035f9" kindref="member">sai_clear_port_stats_fn</ref></type>
+        <definition>sai_clear_port_stats_fn _sai_port_api_t::clear_port_stats</definition>
+        <argsstring></argsstring>
+        <name>clear_port_stats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="4308" column="44" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="4308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__api__t_1a29ed298b85c1ef1f0a24c6ccb8f7faac" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIPORT_1ga728dd4931d62e4206a6e05a0950dd0b3" kindref="member">sai_clear_port_all_stats_fn</ref></type>
+        <definition>sai_clear_port_all_stats_fn _sai_port_api_t::clear_port_all_stats</definition>
+        <argsstring></argsstring>
+        <name>clear_port_all_stats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="4309" column="44" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="4309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__api__t_1a81752623c5de33efaf3833f2f2dc439b" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIPORT_1ga44beda9748c47d14f6877c09c64b3904" kindref="member">sai_create_port_pool_fn</ref></type>
+        <definition>sai_create_port_pool_fn _sai_port_api_t::create_port_pool</definition>
+        <argsstring></argsstring>
+        <name>create_port_pool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="4310" column="44" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="4310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__api__t_1a1d006cd8a504405eae662c210a30d6f0" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIPORT_1ga601cc4b3b847e45ac09c5685f36a03f9" kindref="member">sai_remove_port_pool_fn</ref></type>
+        <definition>sai_remove_port_pool_fn _sai_port_api_t::remove_port_pool</definition>
+        <argsstring></argsstring>
+        <name>remove_port_pool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="4311" column="44" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="4311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__api__t_1ae852429a883773a831873cc1634efbc7" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIPORT_1ga49d19412e680b10acc064911f56ce757" kindref="member">sai_set_port_pool_attribute_fn</ref></type>
+        <definition>sai_set_port_pool_attribute_fn _sai_port_api_t::set_port_pool_attribute</definition>
+        <argsstring></argsstring>
+        <name>set_port_pool_attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="4312" column="44" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="4312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__api__t_1a050fb7fae42d44b3da8b4d5ed79107cb" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIPORT_1ga5a290f3f5c48eee0d3cc2c290f8a70a7" kindref="member">sai_get_port_pool_attribute_fn</ref></type>
+        <definition>sai_get_port_pool_attribute_fn _sai_port_api_t::get_port_pool_attribute</definition>
+        <argsstring></argsstring>
+        <name>get_port_pool_attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="4313" column="44" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="4313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__api__t_1a1ac1750bc0ba9fa9b7a204f92dd8b36f" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIPORT_1ga8cfb83a4278848857d6764f2dc44a53e" kindref="member">sai_get_port_pool_stats_fn</ref></type>
+        <definition>sai_get_port_pool_stats_fn _sai_port_api_t::get_port_pool_stats</definition>
+        <argsstring></argsstring>
+        <name>get_port_pool_stats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="4314" column="44" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="4314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__api__t_1ab4fa51617aeeb222d6a05f717fbc0aca" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIPORT_1ga754b76b60261bb31f6164dc6b89dfab8" kindref="member">sai_get_port_pool_stats_ext_fn</ref></type>
+        <definition>sai_get_port_pool_stats_ext_fn _sai_port_api_t::get_port_pool_stats_ext</definition>
+        <argsstring></argsstring>
+        <name>get_port_pool_stats_ext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="4315" column="44" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="4315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__api__t_1aebf73a40b828e692005842e856042b32" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIPORT_1ga3d5691683e01883d6ece79063006a296" kindref="member">sai_clear_port_pool_stats_fn</ref></type>
+        <definition>sai_clear_port_pool_stats_fn _sai_port_api_t::clear_port_pool_stats</definition>
+        <argsstring></argsstring>
+        <name>clear_port_pool_stats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="4316" column="44" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="4316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__api__t_1a77c096d004e94abd59f98b4746c3cb52" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIPORT_1ga2159693e32752c1d51339935bf2fc88a" kindref="member">sai_create_port_connector_fn</ref></type>
+        <definition>sai_create_port_connector_fn _sai_port_api_t::create_port_connector</definition>
+        <argsstring></argsstring>
+        <name>create_port_connector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="4317" column="44" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="4317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__api__t_1adf86922a0bdb38ceb7ee964ded1e2904" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIPORT_1ga0a9043f14ed740f126d1accc4c68b086" kindref="member">sai_remove_port_connector_fn</ref></type>
+        <definition>sai_remove_port_connector_fn _sai_port_api_t::remove_port_connector</definition>
+        <argsstring></argsstring>
+        <name>remove_port_connector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="4318" column="44" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="4318" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__api__t_1a8f960e57783ea364569c8a72a814c7a3" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIPORT_1ga6cd1447cff30fb8989b294f0493018d8" kindref="member">sai_set_port_connector_attribute_fn</ref></type>
+        <definition>sai_set_port_connector_attribute_fn _sai_port_api_t::set_port_connector_attribute</definition>
+        <argsstring></argsstring>
+        <name>set_port_connector_attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="4319" column="44" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="4319" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__api__t_1a6bcc6ecc92028b987e2c90532b07d409" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIPORT_1ga8342b2d1643023b9bf4898ae48a37dfc" kindref="member">sai_get_port_connector_attribute_fn</ref></type>
+        <definition>sai_get_port_connector_attribute_fn _sai_port_api_t::get_port_connector_attribute</definition>
+        <argsstring></argsstring>
+        <name>get_port_connector_attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="4320" column="44" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="4320" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__api__t_1a8c014d526b0f3970d0c672a7c21b81e7" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIPORT_1ga5d64ab48a9ffe27c6c9eaab16dac8344" kindref="member">sai_create_port_serdes_fn</ref></type>
+        <definition>sai_create_port_serdes_fn _sai_port_api_t::create_port_serdes</definition>
+        <argsstring></argsstring>
+        <name>create_port_serdes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="4321" column="44" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="4321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__api__t_1a8d97c946480df924ce582dcb9ee51bda" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIPORT_1ga4436e9fa48bec5a3cd80c36948b5bba8" kindref="member">sai_remove_port_serdes_fn</ref></type>
+        <definition>sai_remove_port_serdes_fn _sai_port_api_t::remove_port_serdes</definition>
+        <argsstring></argsstring>
+        <name>remove_port_serdes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="4322" column="44" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="4322" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__api__t_1a95c915051832452d119a70cad405ab57" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIPORT_1ga79538ab0af3dd5e513642ee1ce7383ca" kindref="member">sai_set_port_serdes_attribute_fn</ref></type>
+        <definition>sai_set_port_serdes_attribute_fn _sai_port_api_t::set_port_serdes_attribute</definition>
+        <argsstring></argsstring>
+        <name>set_port_serdes_attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="4323" column="44" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="4323" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__api__t_1a9f6c070fb9344bf6769a52acdef590eb" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIPORT_1gafe4c844c91bf6c69e661d0e81aeb0294" kindref="member">sai_get_port_serdes_attribute_fn</ref></type>
+        <definition>sai_get_port_serdes_attribute_fn _sai_port_api_t::get_port_serdes_attribute</definition>
+        <argsstring></argsstring>
+        <name>get_port_serdes_attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="4324" column="44" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="4324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__api__t_1a191c17558f1855ac06aea7c25ebfaf25" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga4610f346b1ad7a6272ba9d9bf933da94" kindref="member">sai_bulk_object_create_fn</ref></type>
+        <definition>sai_bulk_object_create_fn _sai_port_api_t::create_ports</definition>
+        <argsstring></argsstring>
+        <name>create_ports</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="4325" column="44" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="4325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__api__t_1a748c44bbc368309baa22ea64cdd259d3" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga4bbefb281d59e3e5c25ad8b9868d35c7" kindref="member">sai_bulk_object_remove_fn</ref></type>
+        <definition>sai_bulk_object_remove_fn _sai_port_api_t::remove_ports</definition>
+        <argsstring></argsstring>
+        <name>remove_ports</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="4326" column="44" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="4326" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__api__t_1a8559c785a5356717d0b5fc7a1b844ba5" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1gac70ee7964e1bbe312df8efa023fd9c09" kindref="member">sai_bulk_object_set_attribute_fn</ref></type>
+        <definition>sai_bulk_object_set_attribute_fn _sai_port_api_t::set_ports_attribute</definition>
+        <argsstring></argsstring>
+        <name>set_ports_attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="4327" column="44" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="4327" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__api__t_1a528c440c1d191575887b4744634d9e42" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga2ab56d3f0d9cfe8964f3cbfd32a6e5ea" kindref="member">sai_bulk_object_get_attribute_fn</ref></type>
+        <definition>sai_bulk_object_get_attribute_fn _sai_port_api_t::get_ports_attribute</definition>
+        <argsstring></argsstring>
+        <name>get_ports_attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="4328" column="44" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="4328" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__api__t_1a196f672ee294295a0cb9aadaa2926f6a" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga4610f346b1ad7a6272ba9d9bf933da94" kindref="member">sai_bulk_object_create_fn</ref></type>
+        <definition>sai_bulk_object_create_fn _sai_port_api_t::create_port_serdess</definition>
+        <argsstring></argsstring>
+        <name>create_port_serdess</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="4329" column="44" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="4329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__api__t_1acee8921336c7820ae45b98a80b7685e8" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga4bbefb281d59e3e5c25ad8b9868d35c7" kindref="member">sai_bulk_object_remove_fn</ref></type>
+        <definition>sai_bulk_object_remove_fn _sai_port_api_t::remove_port_serdess</definition>
+        <argsstring></argsstring>
+        <name>remove_port_serdess</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="4330" column="44" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="4330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__api__t_1a0738fe18d2ce8cdf2fb87b48749a6922" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1gac70ee7964e1bbe312df8efa023fd9c09" kindref="member">sai_bulk_object_set_attribute_fn</ref></type>
+        <definition>sai_bulk_object_set_attribute_fn _sai_port_api_t::set_port_serdess_attribute</definition>
+        <argsstring></argsstring>
+        <name>set_port_serdess_attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="4331" column="44" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="4331" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__api__t_1a1f174eb5b3c60d64fb1f4804f6a30697" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga2ab56d3f0d9cfe8964f3cbfd32a6e5ea" kindref="member">sai_bulk_object_get_attribute_fn</ref></type>
+        <definition>sai_bulk_object_get_attribute_fn _sai_port_api_t::get_port_serdess_attribute</definition>
+        <argsstring></argsstring>
+        <name>get_port_serdess_attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="4332" column="44" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="4332" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Port methods table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="49">
+        <label>_sai_port_snr_values_t</label>
+        <link refid="struct__sai__port__snr__values__t"/>
+      </node>
+      <node id="14">
+        <label>_sai_u16_range_list_t</label>
+        <link refid="struct__sai__u16__range__list__t"/>
+        <childnode refid="15" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="33">
+        <label>_sai_system_port_config_list_t</label>
+        <link refid="struct__sai__system__port__config__list__t"/>
+        <childnode refid="34" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="39">
+        <label>_sai_port_frequency_offset_ppm_list_t</label>
+        <link refid="struct__sai__port__frequency__offset__ppm__list__t"/>
+        <childnode refid="40" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>_sai_acl_resource_t</label>
+        <link refid="struct__sai__acl__resource__t"/>
+      </node>
+      <node id="11">
+        <label>_sai_qos_map_list_t</label>
+        <link refid="struct__sai__qos__map__list__t"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="37">
+        <label>_sai_fabric_port_reachability_t</label>
+        <link refid="struct__sai__fabric__port__reachability__t"/>
+      </node>
+      <node id="44">
+        <label>_sai_acl_action_data_t</label>
+        <link refid="struct__sai__acl__action__data__t"/>
+        <childnode refid="45" relation="usage">
+          <edgelabel>parameter</edgelabel>
+        </childnode>
+      </node>
+      <node id="34">
+        <label>_sai_system_port_config_t</label>
+        <link refid="struct__sai__system__port__config__t"/>
+      </node>
+      <node id="26">
+        <label>_sai_object_list_t</label>
+        <link refid="struct__sai__object__list__t"/>
+      </node>
+      <node id="12">
+        <label>_sai_qos_map_t</label>
+        <link refid="struct__sai__qos__map__t"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>key</edgelabel>
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>_sai_qos_map_params_t</label>
+        <link refid="struct__sai__qos__map__params__t"/>
+      </node>
+      <node id="51">
+        <label>_sai_s16_list_t</label>
+        <link refid="struct__sai__s16__list__t"/>
+      </node>
+      <node id="24">
+        <label>_sai_acl_field_data_t</label>
+        <link refid="struct__sai__acl__field__data__t"/>
+        <childnode refid="25" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>mask</edgelabel>
+        </childnode>
+      </node>
+      <node id="53">
+        <label>_sai_port_eye_values_list_t</label>
+        <link refid="struct__sai__port__eye__values__list__t"/>
+        <childnode refid="54" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>_sai_tlv_t</label>
+        <link refid="struct__sai__tlv__t"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>entry</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>_sai_port_lane_latch_status_list_t</label>
+        <link refid="struct__sai__port__lane__latch__status__list__t"/>
+        <childnode refid="19" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>_sai_tlv_list_t</label>
+        <link refid="struct__sai__tlv__list__t"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="38">
+        <label>_sai_u32_range_t</label>
+        <link refid="struct__sai__u32__range__t"/>
+      </node>
+      <node id="4">
+        <label>_sai_port_err_status_list_t</label>
+        <link refid="struct__sai__port__err__status__list__t"/>
+      </node>
+      <node id="16">
+        <label>_sai_json_t</label>
+        <link refid="struct__sai__json__t"/>
+        <childnode refid="17" relation="usage">
+          <edgelabel>json</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>_sai_port_api_t</label>
+        <link refid="struct__sai__port__api__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>create_port</edgelabel>
+          <edgelabel>create_port_connector</edgelabel>
+          <edgelabel>create_port_pool</edgelabel>
+          <edgelabel>create_port_serdes</edgelabel>
+          <edgelabel>create_port_serdess</edgelabel>
+          <edgelabel>create_ports</edgelabel>
+          <edgelabel>get_port_attribute</edgelabel>
+          <edgelabel>get_port_connector_attribute</edgelabel>
+          <edgelabel>get_port_pool_attribute</edgelabel>
+          <edgelabel>get_port_serdes_attribute</edgelabel>
+          <edgelabel>...</edgelabel>
+        </childnode>
+      </node>
+      <node id="35">
+        <label>_sai_segment_list_t</label>
+        <link refid="struct__sai__segment__list__t"/>
+      </node>
+      <node id="17">
+        <label>_sai_s8_list_t</label>
+        <link refid="struct__sai__s8__list__t"/>
+      </node>
+      <node id="3">
+        <label>_sai_attribute_value_t</label>
+        <link refid="union__sai__attribute__value__t"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>porterror</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>tlvlist</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>aclresource</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>qosmap</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>u16rangelist</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>json</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>portlanelatchstatuslist</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>ipaddrlist</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>aclfield</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>u16list</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>ipprefix</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>aclchainlist</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>sysportconfiglist</edgelabel>
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>segmentlist</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>portpowerconsumption</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>latchstatus</edgelabel>
+        </childnode>
+        <childnode refid="37" relation="usage">
+          <edgelabel>reachability</edgelabel>
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>sysportconfig</edgelabel>
+        </childnode>
+        <childnode refid="38" relation="usage">
+          <edgelabel>u32range</edgelabel>
+        </childnode>
+        <childnode refid="39" relation="usage">
+          <edgelabel>portfrequencyoffsetppmlist</edgelabel>
+        </childnode>
+        <childnode refid="41" relation="usage">
+          <edgelabel>s32list</edgelabel>
+        </childnode>
+        <childnode refid="42" relation="usage">
+          <edgelabel>ipprefixlist</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>aclmask</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>objlist</edgelabel>
+        </childnode>
+        <childnode refid="43" relation="usage">
+          <edgelabel>timespec</edgelabel>
+        </childnode>
+        <childnode refid="44" relation="usage">
+          <edgelabel>aclaction</edgelabel>
+        </childnode>
+        <childnode refid="46" relation="usage">
+          <edgelabel>vlanlist</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>ipaddr</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>u8list</edgelabel>
+        </childnode>
+        <childnode refid="47" relation="usage">
+          <edgelabel>rx_state</edgelabel>
+        </childnode>
+        <childnode refid="48" relation="usage">
+          <edgelabel>portsnrlist</edgelabel>
+        </childnode>
+        <childnode refid="50" relation="usage">
+          <edgelabel>u32list</edgelabel>
+        </childnode>
+        <childnode refid="51" relation="usage">
+          <edgelabel>s16list</edgelabel>
+        </childnode>
+        <childnode refid="52" relation="usage">
+          <edgelabel>aclcapability</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>s8list</edgelabel>
+        </childnode>
+        <childnode refid="53" relation="usage">
+          <edgelabel>porteyevalues</edgelabel>
+        </childnode>
+        <childnode refid="55" relation="usage">
+          <edgelabel>maplist</edgelabel>
+        </childnode>
+        <childnode refid="57" relation="usage">
+          <edgelabel>s32range</edgelabel>
+        </childnode>
+      </node>
+      <node id="48">
+        <label>_sai_port_snr_list_t</label>
+        <link refid="struct__sai__port__snr__list__t"/>
+        <childnode refid="49" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>_sai_acl_field_data_data_t</label>
+        <link refid="union__sai__acl__field__data__data__t"/>
+        <childnode refid="26" relation="usage">
+          <edgelabel>objlist</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>u8list</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>_sai_attribute_t</label>
+        <link refid="struct__sai__attribute__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="32">
+        <label>_sai_acl_chain_t</label>
+        <link refid="struct__sai__acl__chain__t"/>
+      </node>
+      <node id="30">
+        <label>_sai_ip_prefix_t</label>
+        <link refid="struct__sai__ip__prefix__t"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>addr</edgelabel>
+          <edgelabel>mask</edgelabel>
+        </childnode>
+      </node>
+      <node id="50">
+        <label>_sai_u32_list_t</label>
+        <link refid="struct__sai__u32__list__t"/>
+      </node>
+      <node id="15">
+        <label>_sai_u16_range_t</label>
+        <link refid="struct__sai__u16__range__t"/>
+      </node>
+      <node id="46">
+        <label>_sai_vlan_list_t</label>
+        <link refid="struct__sai__vlan__list__t"/>
+      </node>
+      <node id="19">
+        <label>_sai_port_lane_latch_status_t</label>
+        <link refid="struct__sai__port__lane__latch__status__t"/>
+        <childnode refid="20" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="36">
+        <label>_sai_poe_port_power_consumption_t</label>
+        <link refid="struct__sai__poe__port__power__consumption__t"/>
+      </node>
+      <node id="7">
+        <label>_sai_tlv_entry_t</label>
+        <link refid="union__sai__tlv__entry__t"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>hmac</edgelabel>
+        </childnode>
+      </node>
+      <node id="31">
+        <label>_sai_acl_chain_list_t</label>
+        <link refid="struct__sai__acl__chain__list__t"/>
+        <childnode refid="32" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="55">
+        <label>_sai_map_list_t</label>
+        <link refid="struct__sai__map__list__t"/>
+        <childnode refid="56" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="57">
+        <label>_sai_s32_range_t</label>
+        <link refid="struct__sai__s32__range__t"/>
+      </node>
+      <node id="8">
+        <label>_sai_hmac_t</label>
+        <link refid="struct__sai__hmac__t"/>
+      </node>
+      <node id="28">
+        <label>_sai_acl_field_data_mask_t</label>
+        <link refid="union__sai__acl__field__data__mask__t"/>
+        <childnode refid="27" relation="usage">
+          <edgelabel>u8list</edgelabel>
+        </childnode>
+      </node>
+      <node id="43">
+        <label>_sai_timespec_t</label>
+        <link refid="struct__sai__timespec__t"/>
+      </node>
+      <node id="56">
+        <label>_sai_map_t</label>
+        <link refid="struct__sai__map__t"/>
+      </node>
+      <node id="54">
+        <label>_sai_port_lane_eye_values_t</label>
+        <link refid="struct__sai__port__lane__eye__values__t"/>
+      </node>
+      <node id="20">
+        <label>_sai_latch_status_t</label>
+        <link refid="struct__sai__latch__status__t"/>
+      </node>
+      <node id="9">
+        <label>_sai_acl_resource_list_t</label>
+        <link refid="struct__sai__acl__resource__list__t"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>_sai_ip_address_t</label>
+        <link refid="struct__sai__ip__address__t"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>addr</edgelabel>
+        </childnode>
+      </node>
+      <node id="42">
+        <label>_sai_ip_prefix_list_t</label>
+        <link refid="struct__sai__ip__prefix__list__t"/>
+        <childnode refid="30" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="41">
+        <label>_sai_s32_list_t</label>
+        <link refid="struct__sai__s32__list__t"/>
+      </node>
+      <node id="21">
+        <label>_sai_ip_address_list_t</label>
+        <link refid="struct__sai__ip__address__list__t"/>
+        <childnode refid="22" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>_sai_ip_addr_t</label>
+        <link refid="union__sai__ip__addr__t"/>
+      </node>
+      <node id="27">
+        <label>_sai_u8_list_t</label>
+        <link refid="struct__sai__u8__list__t"/>
+      </node>
+      <node id="29">
+        <label>_sai_u16_list_t</label>
+        <link refid="struct__sai__u16__list__t"/>
+      </node>
+      <node id="45">
+        <label>_sai_acl_action_parameter_t</label>
+        <link refid="union__sai__acl__action__parameter__t"/>
+        <childnode refid="26" relation="usage">
+          <edgelabel>objlist</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>ipaddr</edgelabel>
+        </childnode>
+      </node>
+      <node id="40">
+        <label>_sai_port_frequency_offset_ppm_values_t</label>
+        <link refid="struct__sai__port__frequency__offset__ppm__values__t"/>
+      </node>
+      <node id="52">
+        <label>_sai_acl_capability_t</label>
+        <link refid="struct__sai__acl__capability__t"/>
+        <childnode refid="41" relation="usage">
+          <edgelabel>action_list</edgelabel>
+        </childnode>
+      </node>
+      <node id="47">
+        <label>_sai_prbs_rx_state_t</label>
+        <link refid="struct__sai__prbs__rx__state__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="4300" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="4301" bodyend="4333"/>
+    <listofallmembers>
+      <member refid="struct__sai__port__api__t_1a29ed298b85c1ef1f0a24c6ccb8f7faac" prot="public" virt="non-virtual"><scope>_sai_port_api_t</scope><name>clear_port_all_stats</name></member>
+      <member refid="struct__sai__port__api__t_1aebf73a40b828e692005842e856042b32" prot="public" virt="non-virtual"><scope>_sai_port_api_t</scope><name>clear_port_pool_stats</name></member>
+      <member refid="struct__sai__port__api__t_1abdaa94e3d0d8c9ae30bd9df90bda6e3a" prot="public" virt="non-virtual"><scope>_sai_port_api_t</scope><name>clear_port_stats</name></member>
+      <member refid="struct__sai__port__api__t_1a0ff1189a0ff40e3b4bd041219585df27" prot="public" virt="non-virtual"><scope>_sai_port_api_t</scope><name>create_port</name></member>
+      <member refid="struct__sai__port__api__t_1a77c096d004e94abd59f98b4746c3cb52" prot="public" virt="non-virtual"><scope>_sai_port_api_t</scope><name>create_port_connector</name></member>
+      <member refid="struct__sai__port__api__t_1a81752623c5de33efaf3833f2f2dc439b" prot="public" virt="non-virtual"><scope>_sai_port_api_t</scope><name>create_port_pool</name></member>
+      <member refid="struct__sai__port__api__t_1a8c014d526b0f3970d0c672a7c21b81e7" prot="public" virt="non-virtual"><scope>_sai_port_api_t</scope><name>create_port_serdes</name></member>
+      <member refid="struct__sai__port__api__t_1a196f672ee294295a0cb9aadaa2926f6a" prot="public" virt="non-virtual"><scope>_sai_port_api_t</scope><name>create_port_serdess</name></member>
+      <member refid="struct__sai__port__api__t_1a191c17558f1855ac06aea7c25ebfaf25" prot="public" virt="non-virtual"><scope>_sai_port_api_t</scope><name>create_ports</name></member>
+      <member refid="struct__sai__port__api__t_1aed05c5adc9303e4680c906bd3567ac29" prot="public" virt="non-virtual"><scope>_sai_port_api_t</scope><name>get_port_attribute</name></member>
+      <member refid="struct__sai__port__api__t_1a6bcc6ecc92028b987e2c90532b07d409" prot="public" virt="non-virtual"><scope>_sai_port_api_t</scope><name>get_port_connector_attribute</name></member>
+      <member refid="struct__sai__port__api__t_1a050fb7fae42d44b3da8b4d5ed79107cb" prot="public" virt="non-virtual"><scope>_sai_port_api_t</scope><name>get_port_pool_attribute</name></member>
+      <member refid="struct__sai__port__api__t_1a1ac1750bc0ba9fa9b7a204f92dd8b36f" prot="public" virt="non-virtual"><scope>_sai_port_api_t</scope><name>get_port_pool_stats</name></member>
+      <member refid="struct__sai__port__api__t_1ab4fa51617aeeb222d6a05f717fbc0aca" prot="public" virt="non-virtual"><scope>_sai_port_api_t</scope><name>get_port_pool_stats_ext</name></member>
+      <member refid="struct__sai__port__api__t_1a9f6c070fb9344bf6769a52acdef590eb" prot="public" virt="non-virtual"><scope>_sai_port_api_t</scope><name>get_port_serdes_attribute</name></member>
+      <member refid="struct__sai__port__api__t_1a1f174eb5b3c60d64fb1f4804f6a30697" prot="public" virt="non-virtual"><scope>_sai_port_api_t</scope><name>get_port_serdess_attribute</name></member>
+      <member refid="struct__sai__port__api__t_1a99aac21bc7ff82157ee492ad454e07c6" prot="public" virt="non-virtual"><scope>_sai_port_api_t</scope><name>get_port_stats</name></member>
+      <member refid="struct__sai__port__api__t_1a44a290eed41a1f30628526f4d02d8f8a" prot="public" virt="non-virtual"><scope>_sai_port_api_t</scope><name>get_port_stats_ext</name></member>
+      <member refid="struct__sai__port__api__t_1a528c440c1d191575887b4744634d9e42" prot="public" virt="non-virtual"><scope>_sai_port_api_t</scope><name>get_ports_attribute</name></member>
+      <member refid="struct__sai__port__api__t_1af5e235947f614fe9525ec89330f0eb8a" prot="public" virt="non-virtual"><scope>_sai_port_api_t</scope><name>remove_port</name></member>
+      <member refid="struct__sai__port__api__t_1adf86922a0bdb38ceb7ee964ded1e2904" prot="public" virt="non-virtual"><scope>_sai_port_api_t</scope><name>remove_port_connector</name></member>
+      <member refid="struct__sai__port__api__t_1a1d006cd8a504405eae662c210a30d6f0" prot="public" virt="non-virtual"><scope>_sai_port_api_t</scope><name>remove_port_pool</name></member>
+      <member refid="struct__sai__port__api__t_1a8d97c946480df924ce582dcb9ee51bda" prot="public" virt="non-virtual"><scope>_sai_port_api_t</scope><name>remove_port_serdes</name></member>
+      <member refid="struct__sai__port__api__t_1acee8921336c7820ae45b98a80b7685e8" prot="public" virt="non-virtual"><scope>_sai_port_api_t</scope><name>remove_port_serdess</name></member>
+      <member refid="struct__sai__port__api__t_1a748c44bbc368309baa22ea64cdd259d3" prot="public" virt="non-virtual"><scope>_sai_port_api_t</scope><name>remove_ports</name></member>
+      <member refid="struct__sai__port__api__t_1a5175c7a9167a5b499f88d72c3ff6a739" prot="public" virt="non-virtual"><scope>_sai_port_api_t</scope><name>set_port_attribute</name></member>
+      <member refid="struct__sai__port__api__t_1a8f960e57783ea364569c8a72a814c7a3" prot="public" virt="non-virtual"><scope>_sai_port_api_t</scope><name>set_port_connector_attribute</name></member>
+      <member refid="struct__sai__port__api__t_1ae852429a883773a831873cc1634efbc7" prot="public" virt="non-virtual"><scope>_sai_port_api_t</scope><name>set_port_pool_attribute</name></member>
+      <member refid="struct__sai__port__api__t_1a95c915051832452d119a70cad405ab57" prot="public" virt="non-virtual"><scope>_sai_port_api_t</scope><name>set_port_serdes_attribute</name></member>
+      <member refid="struct__sai__port__api__t_1a0738fe18d2ce8cdf2fb87b48749a6922" prot="public" virt="non-virtual"><scope>_sai_port_api_t</scope><name>set_port_serdess_attribute</name></member>
+      <member refid="struct__sai__port__api__t_1a8559c785a5356717d0b5fc7a1b844ba5" prot="public" virt="non-virtual"><scope>_sai_port_api_t</scope><name>set_ports_attribute</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

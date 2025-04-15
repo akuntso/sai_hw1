@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__object__list__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_object_list_t</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__object__list__t_1a618a68d874d71c668d822299287ffabc" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _sai_object_list_t::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="165" column="14" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__object__list__t_1ad2eaa2368bdae142250ff586b2b2fcbc" prot="public" static="no" mutable="no">
+        <type>sai_object_id_t *</type>
+        <definition>sai_object_id_t* _sai_object_list_t::list</definition>
+        <argsstring></argsstring>
+        <name>list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="166" column="21" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines a list of SAI object ids used as SAI attribute value. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>In set attribute function call, the count member defines the number of objects.</para>
+<para>In get attribute function call, the function call returns a list of objects to the caller in the list member. The caller is responsible for allocating the buffer for the list member and set the count member to the size of allocated object list. If the size is large enough to accommodate the list of object id, the callee will then fill the list member and set the count member to the actual number of objects. If the list size is not large enough, the callee will set the count member to the actual number of object id and return <ref refid="group__SAISTATUS_1ga7255b9d60f461644acd8459627a43288" kindref="member">SAI_STATUS_BUFFER_OVERFLOW</ref>. Once the caller gets such return code, it should use the returned count member to re-allocate list and retry. </para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="163" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="164" bodyend="167"/>
+    <listofallmembers>
+      <member refid="struct__sai__object__list__t_1a618a68d874d71c668d822299287ffabc" prot="public" virt="non-virtual"><scope>_sai_object_list_t</scope><name>count</name></member>
+      <member refid="struct__sai__object__list__t_1ad2eaa2368bdae142250ff586b2b2fcbc" prot="public" virt="non-virtual"><scope>_sai_object_list_t</scope><name>list</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

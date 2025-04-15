@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="saiversion_8h" kind="file" language="C++">
+    <compoundname>saiversion.h</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+    <includedby refid="sai_8h" local="yes">/home/andrii/sai_hw1/SAI/inc/sai.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="5">
+        <label>sys/types.h</label>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saiversion.h</label>
+        <link refid="saiversion_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>saitypes.h</label>
+        <link refid="saitypes_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/andrii/sai_hw1/SAI/inc/sai.h</label>
+        <link refid="sai_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saiversion.h</label>
+        <link refid="saiversion_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</label>
+        <link refid="saiextensions_8h"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="saiversion_8h_1afed11ed82932f2ec493d2820b5abe94d" prot="public" static="no">
+        <name>SAI_MAJOR</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiversion.h" line="30" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiversion.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="saiversion_8h_1a24f0ad33d392556b8b70733de2a82600" prot="public" static="no">
+        <name>SAI_MINOR</name>
+        <initializer>15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiversion.h" line="31" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiversion.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="saiversion_8h_1a0128228e20c8656536c87138fe1ce7b0" prot="public" static="no">
+        <name>SAI_REVISION</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiversion.h" line="32" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiversion.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="saiversion_8h_1a835b448289bf5a0b347e44a728511ecb" prot="public" static="no">
+        <name>SAI_VERSION</name>
+        <param><defname>major</defname></param>
+        <param><defname>minor</defname></param>
+        <param><defname>revision</defname></param>
+        <initializer>(10000 * (major) + 100 * (minor) + (revision))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiversion.h" line="34" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiversion.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="saiversion_8h_1a444743b8142e39b3500ad466a71addf7" prot="public" static="no">
+        <name>SAI_API_VERSION</name>
+        <initializer>SAI_VERSION(SAI_MAJOR, SAI_MINOR, SAI_REVISION)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiversion.h" line="36" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiversion.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="saiversion_8h_1a4ff10f09dc255c473e95eeaafb6aa05c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sai_status_t</type>
+        <definition>sai_status_t sai_query_api_version</definition>
+        <argsstring>(_Out_ sai_api_version_t *version)</argsstring>
+        <name>sai_query_api_version</name>
+        <param>
+          <type>_Out_ sai_api_version_t *</type>
+          <declname>version</declname>
+        </param>
+        <briefdescription>
+<para>Retrieve a SAI API version this implementation is aligned to. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">version</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Version number</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiversion.h" line="45" column="14" declfile="/home/andrii/sai_hw1/SAI/inc/saiversion.h" declline="45" declcolumn="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Define the current version. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2014 Microsoft Open Technologies, Inc.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <ulink url="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</ulink></para>
+<para>THIS CODE IS PROVIDED ON AN <emphasis>AS IS</emphasis> BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</para>
+<para>See the Apache Version 2.0 License for specific language governing permissions and limitations under the License.</para>
+<para>Microsoft would like to thank the following companies for their review and assistance with these files: Intel Corporation, Mellanox Technologies Ltd, Dell Products, L.P., Facebook, Inc., Marvell International Ltd. </para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saiversion.h"/>
+  </compounddef>
+</doxygen>

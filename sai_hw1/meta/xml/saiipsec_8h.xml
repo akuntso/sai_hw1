@@ -1,0 +1,2152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="saiipsec_8h" kind="file" language="C++">
+    <compoundname>saiipsec.h</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+    <includedby refid="sai_8h" local="yes">/home/andrii/sai_hw1/SAI/inc/sai.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="5">
+        <label>sys/types.h</label>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saiipsec.h</label>
+        <link refid="saiipsec_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>saitypes.h</label>
+        <link refid="saitypes_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/andrii/sai_hw1/SAI/inc/sai.h</label>
+        <link refid="sai_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saiipsec.h</label>
+        <link refid="saiipsec_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</label>
+        <link refid="saiextensions_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct__sai__ipsec__sa__status__notification__t" prot="public">_sai_ipsec_sa_status_notification_t</innerclass>
+    <innerclass refid="struct__sai__ipsec__api__t" prot="public">_sai_ipsec_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIIPSEC_1gabe049c335051a86fe9e12652ac435da2" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_ipsec_direction_t</name>
+        <enumvalue id="group__SAIIPSEC_1ggabe049c335051a86fe9e12652ac435da2ac68542f02325bb98f44579d4cf78862f" prot="public">
+          <name>SAI_IPSEC_DIRECTION_EGRESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1ggabe049c335051a86fe9e12652ac435da2a2ae37b913bcc2fe5bc636befe0a6dc65" prot="public">
+          <name>SAI_IPSEC_DIRECTION_INGRESS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>IPsec direction types For PHY ASIC Egress is system to line direction and ingress is the opposite. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="40" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" bodystart="41" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIIPSEC_1ga78e819e3a8056ccdc608df8e62ca13fd" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_ipsec_cipher_t</name>
+        <enumvalue id="group__SAIIPSEC_1gga78e819e3a8056ccdc608df8e62ca13fdaea0fdd190f8f6e0647bcf1fd9712d911" prot="public">
+          <name>SAI_IPSEC_CIPHER_AES128_GCM16</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga78e819e3a8056ccdc608df8e62ca13fda68aa2a5d931a3c105668cd81a1359f99" prot="public">
+          <name>SAI_IPSEC_CIPHER_AES256_GCM16</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga78e819e3a8056ccdc608df8e62ca13fda1dacc731ad649841dba7171aeb7b90ac" prot="public">
+          <name>SAI_IPSEC_CIPHER_AES128_GMAC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga78e819e3a8056ccdc608df8e62ca13fdaa1fdc3b3689e73a103920ad4b8001dc9" prot="public">
+          <name>SAI_IPSEC_CIPHER_AES256_GMAC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>IPsec cipher suite types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="49" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" bodystart="50" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIIPSEC_1ga32f7bd2c706c4b32f0c493d1d63c92c8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_ipsec_sa_octet_count_status_t</name>
+        <enumvalue id="group__SAIIPSEC_1gga32f7bd2c706c4b32f0c493d1d63c92c8a4203a9596ba2df9003b27f753ef99751" prot="public">
+          <name>SAI_IPSEC_SA_OCTET_COUNT_STATUS_BELOW_LOW_WATERMARK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>SA byte count below lower of 2 watermarks </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga32f7bd2c706c4b32f0c493d1d63c92c8aca667c5f70049eef1173151a612e5874" prot="public">
+          <name>SAI_IPSEC_SA_OCTET_COUNT_STATUS_BELOW_HIGH_WATERMARK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>SA byte count below higher of 2 watermarks </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga32f7bd2c706c4b32f0c493d1d63c92c8a8d4a1264cc48593576e474a4ae212a04" prot="public">
+          <name>SAI_IPSEC_SA_OCTET_COUNT_STATUS_ABOVE_HIGH_WATERMARK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>SA byte count above higher of 2 watermarks </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>IPsec SA sequence number status type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="60" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" bodystart="61" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIIPSEC_1ga186432b79ed39ae72d2b85a3df969c5b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_ipsec_attr_t</name>
+        <enumvalue id="group__SAIIPSEC_1gga186432b79ed39ae72d2b85a3df969c5ba37c21d0cb2139810720047339e98736f" prot="public">
+          <name>SAI_IPSEC_ATTR_START</name>
+          <briefdescription>
+<para>Start of IPsec attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga186432b79ed39ae72d2b85a3df969c5ba0015119ff4b3c345ac9af6e5cec75740" prot="public">
+          <name>SAI_IPSEC_ATTR_TERM_REMOTE_IP_MATCH_SUPPORTED</name>
+          <initializer>= SAI_IPSEC_ATTR_START</initializer>
+          <briefdescription>
+<para>Security Engine supports matching source IP address for tunnel termination. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>If false, source IP address cannot be checked before decryption.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga186432b79ed39ae72d2b85a3df969c5ba454f77cd9de2af782de5f809f478c11c" prot="public">
+          <name>SAI_IPSEC_ATTR_SWITCHING_MODE_CUT_THROUGH_SUPPORTED</name>
+          <briefdescription>
+<para>SAI_SWITCH_SWITCHING_MODE_CUT_THROUGH supported. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga186432b79ed39ae72d2b85a3df969c5baeef6d288044a4a07087e9aeac0ace19b" prot="public">
+          <name>SAI_IPSEC_ATTR_SWITCHING_MODE_STORE_AND_FORWARD_SUPPORTED</name>
+          <briefdescription>
+<para>SAI_SWITCH_SWITCHING_MODE_STORE_AND_FORWARD supported. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga186432b79ed39ae72d2b85a3df969c5ba17d1134e1b34ee66c66eaabb6e13a0ff" prot="public">
+          <name>SAI_IPSEC_ATTR_STATS_MODE_READ_SUPPORTED</name>
+          <briefdescription>
+<para>SAI_STATS_MODE_READ supported. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga186432b79ed39ae72d2b85a3df969c5ba02bf533c35b3a6f58f80152bc8062e9c" prot="public">
+          <name>SAI_IPSEC_ATTR_STATS_MODE_READ_CLEAR_SUPPORTED</name>
+          <briefdescription>
+<para>SAI_STATS_MODE_READ_CLEAR supported. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga186432b79ed39ae72d2b85a3df969c5bacb10bedf97b87e68a8068fc1b2b35bac" prot="public">
+          <name>SAI_IPSEC_ATTR_SN_32BIT_SUPPORTED</name>
+          <briefdescription>
+<para>Indicates if 32-bit Sequence Number (SN) is supported. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga186432b79ed39ae72d2b85a3df969c5ba6aaaebd53514d58fc009534b3b11966d" prot="public">
+          <name>SAI_IPSEC_ATTR_ESN_64BIT_SUPPORTED</name>
+          <briefdescription>
+<para>Indicates if 64-bit Extended Sequence Number (ESN) is supported. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga186432b79ed39ae72d2b85a3df969c5ba454b40b9ed2e4e6fb5e9e936c2eff937" prot="public">
+          <name>SAI_IPSEC_ATTR_SUPPORTED_CIPHER_LIST</name>
+          <briefdescription>
+<para>List of supported cipher suites. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_s32_list_t sai_ipsec_cipher_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga186432b79ed39ae72d2b85a3df969c5ba0c281ba4b65457eb50675b161ab902de" prot="public">
+          <name>SAI_IPSEC_ATTR_SYSTEM_SIDE_MTU</name>
+          <briefdescription>
+<para>IPsec MTU capability on system side (not including IPsec overhead). </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga186432b79ed39ae72d2b85a3df969c5ba6b9b1a8645a079be8cd023516bef2f89" prot="public">
+          <name>SAI_IPSEC_ATTR_WARM_BOOT_SUPPORTED</name>
+          <briefdescription>
+<para>Warm boot is supported for all saiipsec objects. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga186432b79ed39ae72d2b85a3df969c5ba411f355315cd568eccb20b7046814158" prot="public">
+          <name>SAI_IPSEC_ATTR_WARM_BOOT_ENABLE</name>
+          <briefdescription>
+<para>If false, disables creation of saiipsec objects during warm-boot. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga186432b79ed39ae72d2b85a3df969c5ba5b23c7b8da37f8f537ff4da216100d67" prot="public">
+          <name>SAI_IPSEC_ATTR_EXTERNAL_SA_INDEX_ENABLE</name>
+          <briefdescription>
+<para>If true, SA Index is assigned by NOS. If false, SA Index is assigned by IPsec SAI driver. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga186432b79ed39ae72d2b85a3df969c5baa9ec2b7d2af245c27bb4221bbf413eab" prot="public">
+          <name>SAI_IPSEC_ATTR_CTAG_TPID</name>
+          <briefdescription>
+<para>TPID value used to identify C-tag. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          false </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0x8100 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga186432b79ed39ae72d2b85a3df969c5bae5219ea6855a891ac1894bbc32b25fe3" prot="public">
+          <name>SAI_IPSEC_ATTR_STAG_TPID</name>
+          <briefdescription>
+<para>TPID value used to identify S-tag. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          false </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0x88A8 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga186432b79ed39ae72d2b85a3df969c5ba0473d4f727d29dd989a8e05c4616ef32" prot="public">
+          <name>SAI_IPSEC_ATTR_MAX_VLAN_TAGS_PARSED</name>
+          <briefdescription>
+<para>Maximum number of VLAN tags to parse. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga186432b79ed39ae72d2b85a3df969c5ba3d3dca366d9bf9c7f04210190b2242a8" prot="public">
+          <name>SAI_IPSEC_ATTR_OCTET_COUNT_HIGH_WATERMARK</name>
+          <briefdescription>
+<para>High watermark for byte count. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>The sai_ipsec_sa_status changes when a new packet is processed and the per SA octet count crosses this watermark. This watermark is used even if only 1 watermark is needed.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga186432b79ed39ae72d2b85a3df969c5ba7f1e39483b7587038999e218f486882f" prot="public">
+          <name>SAI_IPSEC_ATTR_OCTET_COUNT_LOW_WATERMARK</name>
+          <briefdescription>
+<para>Low watermark for byte count. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>The sai_ipsec_sa_status changes when a new packet is processed and the per SA octet count crosses this watermark. This watermark is used only if 2 watermarks are needed.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga186432b79ed39ae72d2b85a3df969c5baa68f315fc55450de874d3674971c30c0" prot="public">
+          <name>SAI_IPSEC_ATTR_STATS_MODE</name>
+          <briefdescription>
+<para>Global setting of read-clear or read-only for statistics read. The mode parameter for get_ipsec_&lt;foo&gt;_stats_ext should match this. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_stats_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_STATS_MODE_READ_AND_CLEAR </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga186432b79ed39ae72d2b85a3df969c5baf87fd79d65de245bc409ba7ffd5e80d8" prot="public">
+          <name>SAI_IPSEC_ATTR_AVAILABLE_IPSEC_SA</name>
+          <briefdescription>
+<para>Available IPsec Security Associations. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga186432b79ed39ae72d2b85a3df969c5ba74584a93cfdd227540057f1fa1481f86" prot="public">
+          <name>SAI_IPSEC_ATTR_SA_LIST</name>
+          <briefdescription>
+<para>IPsec SA list. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_IPSEC_SA </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga186432b79ed39ae72d2b85a3df969c5bab6ffa46f9c0eacb191009fe362ae4264" prot="public">
+          <name>SAI_IPSEC_ATTR_END</name>
+          <briefdescription>
+<para>End of IPsec attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga186432b79ed39ae72d2b85a3df969c5badf4f39591062d93452b9fa52b6a2f129" prot="public">
+          <name>SAI_IPSEC_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+<para>Custom range base value. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga186432b79ed39ae72d2b85a3df969c5baf3271e7a5a6cc813f6968cadd4a7421c" prot="public">
+          <name>SAI_IPSEC_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+<para>End of custom range base. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute Id for sai_ipsec. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="100" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" bodystart="101" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIIPSEC_1ga70927c5ec7b6229ad4fdf69335221583" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_ipsec_port_attr_t</name>
+        <enumvalue id="group__SAIIPSEC_1gga70927c5ec7b6229ad4fdf69335221583a0e1384face4b5bc9a070a8a30dfece8c" prot="public">
+          <name>SAI_IPSEC_PORT_ATTR_START</name>
+          <briefdescription>
+<para>Start of IPsec Port attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga70927c5ec7b6229ad4fdf69335221583a97068f0f090271d0e7bad981adb6d96c" prot="public">
+          <name>SAI_IPSEC_PORT_ATTR_PORT_ID</name>
+          <initializer>= SAI_IPSEC_PORT_ATTR_START</initializer>
+          <briefdescription>
+<para>Associated port id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_PORT </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga70927c5ec7b6229ad4fdf69335221583a99c1311a36da29b406383217186bf78a" prot="public">
+          <name>SAI_IPSEC_PORT_ATTR_CTAG_ENABLE</name>
+          <briefdescription>
+<para>Enable vlan tag parsing for C-tag TPID. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga70927c5ec7b6229ad4fdf69335221583a8f33a3659499850c81d35e74c47f9141" prot="public">
+          <name>SAI_IPSEC_PORT_ATTR_STAG_ENABLE</name>
+          <briefdescription>
+<para>Enable vlan tag parsing for S-tag TPID. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga70927c5ec7b6229ad4fdf69335221583a286f371e26a0d856335ad884249fc5ad" prot="public">
+          <name>SAI_IPSEC_PORT_ATTR_NATIVE_VLAN_ID</name>
+          <briefdescription>
+<para>Port native Vlan Id used for Security Engine SA termination. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga70927c5ec7b6229ad4fdf69335221583a2995652b62b0c6c94e29547d96a40c1d" prot="public">
+          <name>SAI_IPSEC_PORT_ATTR_VRF_FROM_PACKET_VLAN_ENABLE</name>
+          <briefdescription>
+<para>Enable VRF identification from ingress parsed packet Vlan. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>False means only port native Vlan can be used for tunnel termination VRF. True means packet Vlan tag is also used.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga70927c5ec7b6229ad4fdf69335221583aed881a24e8f5d9eb83bde2438b363ccf" prot="public">
+          <name>SAI_IPSEC_PORT_ATTR_SWITCH_SWITCHING_MODE</name>
+          <briefdescription>
+<para>Switching mode for port. If configured as cut-through, the IPG for Tx MAC in the switch ASIC has to be increased to accommodate the IPsec packet size expansion. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_switch_switching_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_SWITCH_SWITCHING_MODE_CUT_THROUGH </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga70927c5ec7b6229ad4fdf69335221583a28c60be32f6d86801c009b88dc0067a5" prot="public">
+          <name>SAI_IPSEC_PORT_ATTR_STATS_COUNT_MODE</name>
+          <briefdescription>
+<para>Set IPSEC port statistics counting mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_stats_count_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_STATS_COUNT_MODE_PACKET_AND_BYTE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga70927c5ec7b6229ad4fdf69335221583a19f66fe9e6385d6a79bb872635825742" prot="public">
+          <name>SAI_IPSEC_PORT_ATTR_SELECTIVE_COUNTER_LIST</name>
+          <briefdescription>
+<para>Attach counter object list. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Counter object should be of type Selective. Fill (<ref refid="group__SAICOUNTER_1ggac5e99b5b04f2a0f0665babc2a60c9641a2835fed0aa18e2fb59824c903bd712ea" kindref="member">SAI_COUNTER_ATTR_TYPE</ref> with <ref refid="group__SAICOUNTER_1gga4e3da19e4589261e88197d6576020cf1aa4b87a1c99256ee3601553c9455cb92c" kindref="member">SAI_COUNTER_TYPE_SELECTIVE</ref>).</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_COUNTER </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga70927c5ec7b6229ad4fdf69335221583a9bfb31d6f428812c66682205fcd95dcb" prot="public">
+          <name>SAI_IPSEC_PORT_ATTR_END</name>
+          <briefdescription>
+<para>End of IPsec Port attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga70927c5ec7b6229ad4fdf69335221583ad0390e007dbd7e5e62ae9535d1a1d169" prot="public">
+          <name>SAI_IPSEC_PORT_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+<para>Custom range base value. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga70927c5ec7b6229ad4fdf69335221583a77c855d6d5b487ede8157846cbdadb63" prot="public">
+          <name>SAI_IPSEC_PORT_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+<para>End of custom range base. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute Id for sai_ipsec_port. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="309" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" bodystart="310" bodyend="411"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIIPSEC_1gaad89eddb9c29c589e3d1b7a593a41f90" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_ipsec_port_stat_t</name>
+        <enumvalue id="group__SAIIPSEC_1ggaad89eddb9c29c589e3d1b7a593a41f90a07ad0976c4053f5d3f2611c676240754" prot="public">
+          <name>SAI_IPSEC_PORT_STAT_TX_ERROR_PKTS</name>
+          <briefdescription>
+<para>Packets dropped after receive MAC and before IPsec SA processing. This could be due to malformed header, buffer overrun, etc. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1ggaad89eddb9c29c589e3d1b7a593a41f90a66bc029edd1c3651f9a8f98bffddb987" prot="public">
+          <name>SAI_IPSEC_PORT_STAT_TX_IPSEC_PKTS</name>
+          <briefdescription>
+<para>Packets mapped to an SA for IPsec processing. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1ggaad89eddb9c29c589e3d1b7a593a41f90ad9b2dac6eed4471a351b82d586dba741" prot="public">
+          <name>SAI_IPSEC_PORT_STAT_TX_NON_IPSEC_PKTS</name>
+          <briefdescription>
+<para>Non-IPsec packets that pass through this port. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1ggaad89eddb9c29c589e3d1b7a593a41f90a9d7cf174b7258cfe51e1807e912ae624" prot="public">
+          <name>SAI_IPSEC_PORT_STAT_RX_ERROR_PKTS</name>
+          <briefdescription>
+<para>Packets dropped after receive MAC and before IPsec SA processing. This could be due to malformed header, buffer overrun, etc. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1ggaad89eddb9c29c589e3d1b7a593a41f90aa93959444a29a3e6b4e4d261c6b1c5cf" prot="public">
+          <name>SAI_IPSEC_PORT_STAT_RX_IPSEC_PKTS</name>
+          <briefdescription>
+<para>Packets mapped to an SA for IPsec processing. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1ggaad89eddb9c29c589e3d1b7a593a41f90adea3602cb9863066af6736554d77d92a" prot="public">
+          <name>SAI_IPSEC_PORT_STAT_RX_NON_IPSEC_PKTS</name>
+          <briefdescription>
+<para>Non-IPsec packets that pass through this port. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>IPsec flow counter IDs in sai_get_ipsec_sa_stats() call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="416" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" bodystart="417" bodyend="449"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIIPSEC_1ga560f0c8758c4f69aef1958a90ffdf551" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_ipsec_sa_attr_t</name>
+        <enumvalue id="group__SAIIPSEC_1gga560f0c8758c4f69aef1958a90ffdf551a8c7e1097631bf2670a8a62ebdff38809" prot="public">
+          <name>SAI_IPSEC_SA_ATTR_START</name>
+          <briefdescription>
+<para>Start of IPsec Security Association attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga560f0c8758c4f69aef1958a90ffdf551a80004f8fd518f94383ef1371e7265dda" prot="public">
+          <name>SAI_IPSEC_SA_ATTR_IPSEC_DIRECTION</name>
+          <initializer>= SAI_IPSEC_SA_ATTR_START</initializer>
+          <briefdescription>
+<para>IPsec direction. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ipsec_direction_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga560f0c8758c4f69aef1958a90ffdf551add07840b9ecf8e4133605496bdc3ba9d" prot="public">
+          <name>SAI_IPSEC_SA_ATTR_IPSEC_ID</name>
+          <briefdescription>
+<para>IPsec object id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_IPSEC </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga560f0c8758c4f69aef1958a90ffdf551a5cca6a8c5d14749d184f74cf4b14bf19" prot="public">
+          <name>SAI_IPSEC_SA_ATTR_OCTET_COUNT_STATUS</name>
+          <briefdescription>
+<para>SA byte count status. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ipsec_sa_octet_count_status_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga560f0c8758c4f69aef1958a90ffdf551a775f0e5c57805949e98155b334a75a79" prot="public">
+          <name>SAI_IPSEC_SA_ATTR_EXTERNAL_SA_INDEX</name>
+          <briefdescription>
+<para>Externally assigned SA Index value for this Security Association. Used only when SAI_IPSEC_ATTR_EXTERNAL_SA_INDEX_ENABLE == true. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga560f0c8758c4f69aef1958a90ffdf551a639a12f0bdce1ea3d496882c251ffd72" prot="public">
+          <name>SAI_IPSEC_SA_ATTR_SA_INDEX</name>
+          <briefdescription>
+<para>SA Index value for this Security Association. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga560f0c8758c4f69aef1958a90ffdf551a09e7871c1a39ddd2ea4058e9fbf06387" prot="public">
+          <name>SAI_IPSEC_SA_ATTR_IPSEC_PORT_LIST</name>
+          <briefdescription>
+<para>List of IPsec ports for this SA. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_IPSEC_PORT </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga560f0c8758c4f69aef1958a90ffdf551a2fbcc36bb101c7aa63c8e5a1e6842df2" prot="public">
+          <name>SAI_IPSEC_SA_ATTR_IPSEC_SPI</name>
+          <briefdescription>
+<para>SPI value for this Security Association, carried in ESP header. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga560f0c8758c4f69aef1958a90ffdf551a7f7cdd209dfeafe7a95075bc3b4f6e64" prot="public">
+          <name>SAI_IPSEC_SA_ATTR_IPSEC_ESN_ENABLE</name>
+          <briefdescription>
+<para>Enable 64-bit ESN (vs 32-bit SN) for this Security Association. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga560f0c8758c4f69aef1958a90ffdf551aab809c4dc40ea25d6c4128dbd12d090b" prot="public">
+          <name>SAI_IPSEC_SA_ATTR_IPSEC_CIPHER</name>
+          <briefdescription>
+<para>Cipher suite for this SA. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ipsec_cipher_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_IPSEC_CIPHER_AES256_GCM16 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga560f0c8758c4f69aef1958a90ffdf551a7b41eb8384255e6278c25eefbdcc9246" prot="public">
+          <name>SAI_IPSEC_SA_ATTR_ENCRYPT_KEY</name>
+          <briefdescription>
+<para>IPsec Traffic Encryption Key used for encryption/decryption. Network Byte order. AES128 uses only Bytes 16..31. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_encrypt_key_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga560f0c8758c4f69aef1958a90ffdf551a001dda2e85bd713aa77852b19bff3b36" prot="public">
+          <name>SAI_IPSEC_SA_ATTR_SALT</name>
+          <briefdescription>
+<para>IPsec Salt portion of IV Network Byte order. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga560f0c8758c4f69aef1958a90ffdf551a9d5be37e2c49ba77950fcd08571f7b1b" prot="public">
+          <name>SAI_IPSEC_SA_ATTR_AUTH_KEY</name>
+          <briefdescription>
+<para>IPsec Authentication Key Network Byte order. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_auth_key_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga560f0c8758c4f69aef1958a90ffdf551a151b95dfc1eeacfa7558060b79e5f04f" prot="public">
+          <name>SAI_IPSEC_SA_ATTR_IPSEC_REPLAY_PROTECTION_ENABLE</name>
+          <briefdescription>
+<para>Replay protection enable for this Security Association. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_IPSEC_SA_ATTR_IPSEC_DIRECTION == SAI_IPSEC_DIRECTION_INGRESS </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga560f0c8758c4f69aef1958a90ffdf551ad6f894067f0e70c584d5c1f6a67b3758" prot="public">
+          <name>SAI_IPSEC_SA_ATTR_IPSEC_REPLAY_PROTECTION_WINDOW</name>
+          <briefdescription>
+<para>Replay protection window for this Security Association. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_IPSEC_SA_ATTR_IPSEC_DIRECTION == SAI_IPSEC_DIRECTION_INGRESS </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga560f0c8758c4f69aef1958a90ffdf551ac644d3cfcf5caf4329790994d30261f8" prot="public">
+          <name>SAI_IPSEC_SA_ATTR_TERM_DST_IP</name>
+          <briefdescription>
+<para>SA local IP address for tunnel termination. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_IPSEC_SA_ATTR_IPSEC_DIRECTION == SAI_IPSEC_DIRECTION_INGRESS </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga560f0c8758c4f69aef1958a90ffdf551ac13f25a6bdcca21656138b8d263ca74f" prot="public">
+          <name>SAI_IPSEC_SA_ATTR_TERM_VLAN_ID_ENABLE</name>
+          <briefdescription>
+<para>Match Vlan Id for tunnel termination. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_IPSEC_SA_ATTR_IPSEC_DIRECTION == SAI_IPSEC_DIRECTION_INGRESS </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga560f0c8758c4f69aef1958a90ffdf551aac6c4f6d39eb4980a26728af76e5ab0b" prot="public">
+          <name>SAI_IPSEC_SA_ATTR_TERM_VLAN_ID</name>
+          <briefdescription>
+<para>Vlan Id for tunnel termination. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          true </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_IPSEC_SA_ATTR_IPSEC_DIRECTION == SAI_IPSEC_DIRECTION_INGRESS and SAI_IPSEC_SA_ATTR_TERM_VLAN_ID_ENABLE == true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga560f0c8758c4f69aef1958a90ffdf551afb31fc6438dfba705e8b7fe810569af6" prot="public">
+          <name>SAI_IPSEC_SA_ATTR_TERM_SRC_IP_ENABLE</name>
+          <briefdescription>
+<para>Match remote IP address for tunnel termination. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_IPSEC_SA_ATTR_IPSEC_DIRECTION == SAI_IPSEC_DIRECTION_INGRESS </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga560f0c8758c4f69aef1958a90ffdf551a766a021197ce74565b270742234ce2cc" prot="public">
+          <name>SAI_IPSEC_SA_ATTR_TERM_SRC_IP</name>
+          <briefdescription>
+<para>Remote IP address for tunnel termination. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_IPSEC_SA_ATTR_IPSEC_DIRECTION == SAI_IPSEC_DIRECTION_INGRESS and SAI_IPSEC_SA_ATTR_TERM_SRC_IP_ENABLE == true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga560f0c8758c4f69aef1958a90ffdf551a373f68f99b3d165d70a177c9f3a8c25e" prot="public">
+          <name>SAI_IPSEC_SA_ATTR_EGRESS_ESN</name>
+          <briefdescription>
+<para>IPsec egress sequence number (SN). One less than the next SN. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_IPSEC_SA_ATTR_IPSEC_DIRECTION == SAI_IPSEC_DIRECTION_EGRESS </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga560f0c8758c4f69aef1958a90ffdf551a6be0f445a86368bf4989fb5c154f422c" prot="public">
+          <name>SAI_IPSEC_SA_ATTR_MINIMUM_INGRESS_ESN</name>
+          <briefdescription>
+<para>Minimum value of ingress IPsec sequence number (SN). Can be Updated by value from IPsec peer for gross level delay prevention. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         1 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_IPSEC_SA_ATTR_IPSEC_DIRECTION == SAI_IPSEC_DIRECTION_INGRESS </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga560f0c8758c4f69aef1958a90ffdf551a4dcbbcf326d6e0bcc08878b685a43478" prot="public">
+          <name>SAI_IPSEC_SA_ATTR_STATS_COUNT_MODE</name>
+          <briefdescription>
+<para>Set IPSEC SA statistics counting mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_stats_count_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_STATS_COUNT_MODE_PACKET_AND_BYTE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga560f0c8758c4f69aef1958a90ffdf551aa0fb0a3c17b6be350eef513ed274f9e0" prot="public">
+          <name>SAI_IPSEC_SA_ATTR_SELECTIVE_COUNTER_LIST</name>
+          <briefdescription>
+<para>Attach counter object list. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Counter object should be of type Selective. Fill (<ref refid="group__SAICOUNTER_1ggac5e99b5b04f2a0f0665babc2a60c9641a2835fed0aa18e2fb59824c903bd712ea" kindref="member">SAI_COUNTER_ATTR_TYPE</ref> with <ref refid="group__SAICOUNTER_1gga4e3da19e4589261e88197d6576020cf1aa4b87a1c99256ee3601553c9455cb92c" kindref="member">SAI_COUNTER_TYPE_SELECTIVE</ref>).</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_COUNTER </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga560f0c8758c4f69aef1958a90ffdf551afa0951c3eda7b16cc20af9ebaaed3d01" prot="public">
+          <name>SAI_IPSEC_SA_ATTR_END</name>
+          <briefdescription>
+<para>End of IPsec Security Association attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga560f0c8758c4f69aef1958a90ffdf551a01ea5bf58bbbbcd42bf546e1871c2518" prot="public">
+          <name>SAI_IPSEC_SA_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+<para>Custom range base value. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga560f0c8758c4f69aef1958a90ffdf551a2eee846606a57d8bf50841dcbcdc99be" prot="public">
+          <name>SAI_IPSEC_SA_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+<para>End of custom range base. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute Id for sai_ipsec_sa. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="454" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" bodystart="455" bodyend="692"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIIPSEC_1ga3385808ba9a7255591278d2c79704cf8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_ipsec_sa_stat_t</name>
+        <enumvalue id="group__SAIIPSEC_1gga3385808ba9a7255591278d2c79704cf8af0dc409d8a488a22f3bb1dca3d7c22d2" prot="public">
+          <name>SAI_IPSEC_SA_STAT_PROTECTED_OCTETS</name>
+          <briefdescription>
+<para>Total octets in all Ethernet frames processed by this SA. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga3385808ba9a7255591278d2c79704cf8adfad14139cded1cc7b3abaa33e218304" prot="public">
+          <name>SAI_IPSEC_SA_STAT_PROTECTED_PKTS</name>
+          <briefdescription>
+<para>Count of Ethernet frames processed by this SA. This should normally be the sum of all the good and error packets for this SA. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga3385808ba9a7255591278d2c79704cf8a06ff3e1616e1f701ed675d3505abe121" prot="public">
+          <name>SAI_IPSEC_SA_STAT_GOOD_PKTS</name>
+          <briefdescription>
+<para>Count of validated error-free received (ingress) packets for this SA. Valid only for ingress, always returns 0 for egress. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga3385808ba9a7255591278d2c79704cf8aba5307d55c4ce5ad81b302bf0286abd5" prot="public">
+          <name>SAI_IPSEC_SA_STAT_BAD_HEADER_PKTS_IN</name>
+          <briefdescription>
+<para>Count of packets with bad header for this SA. This could be due the packet header being different from the format expected for this SA. Valid only for ingress, always returns 0 for egress. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga3385808ba9a7255591278d2c79704cf8a69872699431e8ec7ae2dbd854b85576a" prot="public">
+          <name>SAI_IPSEC_SA_STAT_REPLAYED_PKTS_IN</name>
+          <briefdescription>
+<para>Count of replayed packets. This also includes late packets if the hardware does not provide a separate counter for late packets. Valid only for ingress, always returns 0 for egress. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga3385808ba9a7255591278d2c79704cf8a17bcbb3e858a6c725c0e28481112b995" prot="public">
+          <name>SAI_IPSEC_SA_STAT_LATE_PKTS_IN</name>
+          <briefdescription>
+<para>Count of packets outside the replay window. Always 0 if the hardware does not provide a separate counter for late packets. Valid only for ingress, always returns 0 for egress. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga3385808ba9a7255591278d2c79704cf8a3a1e49a4a46a21586694725404c44c04" prot="public">
+          <name>SAI_IPSEC_SA_STAT_BAD_TRAILER_PKTS_IN</name>
+          <briefdescription>
+<para>Count of packets with bad trailer. This could be due to insufficient or invalid padding, etc. For cut-through switching, this drop would normally be implemented as CRC corruption. Valid only for ingress, always returns 0 for egress. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga3385808ba9a7255591278d2c79704cf8a3bc6e5bceac63e8b3bc59039fd0c9240" prot="public">
+          <name>SAI_IPSEC_SA_STAT_AUTH_FAIL_PKTS_IN</name>
+          <briefdescription>
+<para>Count of packets with authentication and integrity failure For cut-through switching, this drop would normally be implemented as CRC corruption. Valid only for ingress, always returns 0 for egress. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga3385808ba9a7255591278d2c79704cf8a1448622a965f0d3134b1bd76031c0566" prot="public">
+          <name>SAI_IPSEC_SA_STAT_DUMMY_DROPPED_PKTS_IN</name>
+          <briefdescription>
+<para>Count of dummy packets dropped by IPsec logic. These are packets with 59 as the next header field value in IPsec trailer. For cut-through switching, this drop would normally be implemented as CRC corruption. Valid only for ingress, always returns 0 for egress. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPSEC_1gga3385808ba9a7255591278d2c79704cf8a7280432e490aa6482b72a7b820a0c214" prot="public">
+          <name>SAI_IPSEC_SA_STAT_OTHER_DROPPED_PKTS</name>
+          <briefdescription>
+<para>Count of other packets dropped by IPsec logic. This could be due to not programmed or incorrectly programmed SA, MTU violation, etc. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>IPsec flow counter IDs in sai_get_ipsec_sa_stats() call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="697" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" bodystart="698" bodyend="768"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIIPSEC_1ga5b2640d703783a622d986708f0ec3c2b" prot="public" static="no">
+        <type>enum <ref refid="group__SAIIPSEC_1gabe049c335051a86fe9e12652ac435da2" kindref="member">_sai_ipsec_direction_t</ref></type>
+        <definition>typedef enum _sai_ipsec_direction_t sai_ipsec_direction_t</definition>
+        <argsstring></argsstring>
+        <name>sai_ipsec_direction_t</name>
+        <briefdescription>
+<para>IPsec direction types For PHY ASIC Egress is system to line direction and ingress is the opposite. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="44" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPSEC_1ga9676afaedf0d7cc0d2b27935f015b6a7" prot="public" static="no">
+        <type>enum <ref refid="group__SAIIPSEC_1ga78e819e3a8056ccdc608df8e62ca13fd" kindref="member">_sai_ipsec_cipher_t</ref></type>
+        <definition>typedef enum _sai_ipsec_cipher_t sai_ipsec_cipher_t</definition>
+        <argsstring></argsstring>
+        <name>sai_ipsec_cipher_t</name>
+        <briefdescription>
+<para>IPsec cipher suite types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="55" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPSEC_1gaebbb1cbfe79743bf350ca26875dc7394" prot="public" static="no">
+        <type>enum <ref refid="group__SAIIPSEC_1ga32f7bd2c706c4b32f0c493d1d63c92c8" kindref="member">_sai_ipsec_sa_octet_count_status_t</ref></type>
+        <definition>typedef enum _sai_ipsec_sa_octet_count_status_t sai_ipsec_sa_octet_count_status_t</definition>
+        <argsstring></argsstring>
+        <name>sai_ipsec_sa_octet_count_status_t</name>
+        <briefdescription>
+<para>IPsec SA sequence number status type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="71" column="35"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPSEC_1ga3ae5a5672a0de90c0d1491258fefab3e" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__ipsec__sa__status__notification__t" kindref="compound">_sai_ipsec_sa_status_notification_t</ref></type>
+        <definition>typedef struct _sai_ipsec_sa_status_notification_t sai_ipsec_sa_status_notification_t</definition>
+        <argsstring></argsstring>
+        <name>sai_ipsec_sa_status_notification_t</name>
+        <briefdescription>
+<para>IPsec SA status for notification. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="95" column="36"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPSEC_1ga3c0419853045181fc9e7ebc8492a3248" prot="public" static="no">
+        <type>enum <ref refid="group__SAIIPSEC_1ga186432b79ed39ae72d2b85a3df969c5b" kindref="member">_sai_ipsec_attr_t</ref></type>
+        <definition>typedef enum _sai_ipsec_attr_t sai_ipsec_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_ipsec_attr_t</name>
+        <briefdescription>
+<para>Attribute Id for sai_ipsec. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="304" column="18"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPSEC_1ga053de3e2a81b3efbb11b94c9afa02f76" prot="public" static="no">
+        <type>enum <ref refid="group__SAIIPSEC_1ga70927c5ec7b6229ad4fdf69335221583" kindref="member">_sai_ipsec_port_attr_t</ref></type>
+        <definition>typedef enum _sai_ipsec_port_attr_t sai_ipsec_port_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_ipsec_port_attr_t</name>
+        <briefdescription>
+<para>Attribute Id for sai_ipsec_port. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="411" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPSEC_1gae83a26541c3d349a65c2ed7c8c18caf5" prot="public" static="no">
+        <type>enum <ref refid="group__SAIIPSEC_1gaad89eddb9c29c589e3d1b7a593a41f90" kindref="member">_sai_ipsec_port_stat_t</ref></type>
+        <definition>typedef enum _sai_ipsec_port_stat_t sai_ipsec_port_stat_t</definition>
+        <argsstring></argsstring>
+        <name>sai_ipsec_port_stat_t</name>
+        <briefdescription>
+<para>IPsec flow counter IDs in sai_get_ipsec_sa_stats() call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="449" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPSEC_1ga73a3a14ac9278f35470a384761aafead" prot="public" static="no">
+        <type>enum <ref refid="group__SAIIPSEC_1ga560f0c8758c4f69aef1958a90ffdf551" kindref="member">_sai_ipsec_sa_attr_t</ref></type>
+        <definition>typedef enum _sai_ipsec_sa_attr_t sai_ipsec_sa_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_ipsec_sa_attr_t</name>
+        <briefdescription>
+<para>Attribute Id for sai_ipsec_sa. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="692" column="21"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPSEC_1ga2bbde0e14eafc4ce2e8460509ecef493" prot="public" static="no">
+        <type>enum <ref refid="group__SAIIPSEC_1ga3385808ba9a7255591278d2c79704cf8" kindref="member">_sai_ipsec_sa_stat_t</ref></type>
+        <definition>typedef enum _sai_ipsec_sa_stat_t sai_ipsec_sa_stat_t</definition>
+        <argsstring></argsstring>
+        <name>sai_ipsec_sa_stat_t</name>
+        <briefdescription>
+<para>IPsec flow counter IDs in sai_get_ipsec_sa_stats() call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="768" column="21"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPSEC_1ga360b4b3c18d50abc9edd263f364a25e0" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_ipsec_fn) (_Out_ sai_object_id_t *ipsec_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *ipsec_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_ipsec_fn</name>
+        <briefdescription>
+<para>Create a IPsec object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">ipsec_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The IPsec object id associated with this switch/PHY </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The switch/PHY Object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="780" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" bodystart="780" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPSEC_1ga2136e3313c3d6e34e0d6923ea54e9ce0" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_ipsec_fn) (_In_ sai_object_id_t ipsec_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t ipsec_id)</argsstring>
+        <name>sai_remove_ipsec_fn</name>
+        <briefdescription>
+<para>Delete the IPsec object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ipsec_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The IPsec object id associated with this switch/PHY</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="793" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" bodystart="793" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPSEC_1ga31a3b6fe783a6a95e68aa146c321ed9a" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_ipsec_attribute_fn) (_In_ sai_object_id_t ipsec_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t ipsec_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_ipsec_attribute_fn</name>
+        <briefdescription>
+<para>Set IPsec attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ipsec_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The IPsec object id associated with this switch/PHY </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="804" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" bodystart="804" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPSEC_1ga478c504b32c936bb8d85d29b7ed32e01" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_ipsec_attribute_fn) (_In_ sai_object_id_t ipsec_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t ipsec_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_ipsec_attribute_fn</name>
+        <briefdescription>
+<para>Get IPsec attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ipsec_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The IPsec object id associated with this switch/PHY </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="817" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" bodystart="817" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPSEC_1ga731a69c77154f651a35133ea5a2c4745" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_ipsec_port_fn) (_Out_ sai_object_id_t *ipsec_port_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *ipsec_port_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_ipsec_port_fn</name>
+        <briefdescription>
+<para>Create a IPsec port. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">ipsec_port_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The IPsec port id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The switch/PHY Object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="832" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" bodystart="832" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPSEC_1gab6805f53bf6b5030b6a3caf310963da8" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_ipsec_port_fn) (_In_ sai_object_id_t ipsec_port_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t ipsec_port_id)</argsstring>
+        <name>sai_remove_ipsec_port_fn</name>
+        <briefdescription>
+<para>Delete a IPsec port. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ipsec_port_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The IPsec port id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="845" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" bodystart="845" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPSEC_1ga778f2cd89548312f9f8463d2bba18136" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_ipsec_port_attribute_fn) (_In_ sai_object_id_t ipsec_port_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t ipsec_port_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_ipsec_port_attribute_fn</name>
+        <briefdescription>
+<para>Set IPsec port attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ipsec_port_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The IPsec port id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="856" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" bodystart="856" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPSEC_1ga4f92bd617e7446a8ab0ebc190c310df9" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_ipsec_port_attribute_fn) (_In_ sai_object_id_t ipsec_port_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t ipsec_port_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_ipsec_port_attribute_fn</name>
+        <briefdescription>
+<para>Get IPsec port attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ipsec_port_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IPsec port id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="869" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" bodystart="869" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPSEC_1ga9e0f1b12a5bc3b521a1d24456febae95" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_ipsec_port_stats_fn) (_In_ sai_object_id_t ipsec_port_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t ipsec_port_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_ipsec_port_stats_fn</name>
+        <briefdescription>
+<para>Get IPsec port counters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ipsec_port_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IPsec port id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="884" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" bodystart="884" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPSEC_1ga6409ca5a0cae0a73c72ad0b061bf24af" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_ipsec_port_stats_ext_fn) (_In_ sai_object_id_t ipsec_port_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t ipsec_port_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_ipsec_port_stats_ext_fn</name>
+        <briefdescription>
+<para>Get IPsec port counters extended. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ipsec_port_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IPsec port id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Should match SAI_IPSEC_ATTR_STATS_MODE </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="901" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" bodystart="901" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPSEC_1ga74349a6b6f232e5a5e0273bf0df0a449" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_clear_ipsec_port_stats_fn) (_In_ sai_object_id_t ipsec_port_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</definition>
+        <argsstring>)(_In_ sai_object_id_t ipsec_port_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</argsstring>
+        <name>sai_clear_ipsec_port_stats_fn</name>
+        <briefdescription>
+<para>Clear IPsec port counters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ipsec_port_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IPsec port id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="917" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" bodystart="917" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPSEC_1ga70768bd762b921af5c3230b29bd054f6" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_ipsec_sa_fn) (_Out_ sai_object_id_t *ipsec_sa_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *ipsec_sa_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_ipsec_sa_fn</name>
+        <briefdescription>
+<para>Create a IPsec Security Association. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">ipsec_sa_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The IPsec Security Association id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The switch/PHY Object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="932" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" bodystart="932" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPSEC_1ga76cd2b135e39d6120fac5c1c1c10ba2f" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_ipsec_sa_fn) (_In_ sai_object_id_t ipsec_sa_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t ipsec_sa_id)</argsstring>
+        <name>sai_remove_ipsec_sa_fn</name>
+        <briefdescription>
+<para>Delete a IPsec Security Association. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ipsec_sa_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The IPsec Security Association id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="945" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" bodystart="945" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPSEC_1ga352817576ca4d7960bffcd030460ad4b" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_ipsec_sa_attribute_fn) (_In_ sai_object_id_t ipsec_sa_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t ipsec_sa_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_ipsec_sa_attribute_fn</name>
+        <briefdescription>
+<para>Set IPsec Security Association attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ipsec_sa_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The IPsec Security Association id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="956" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" bodystart="956" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPSEC_1ga48016d8a76e69758c3eac1adc273a361" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_ipsec_sa_attribute_fn) (_In_ sai_object_id_t ipsec_sa_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t ipsec_sa_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_ipsec_sa_attribute_fn</name>
+        <briefdescription>
+<para>Get IPsec Security Association attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ipsec_sa_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IPsec Security Association id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="969" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" bodystart="969" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPSEC_1ga3fa73089f251ae960bcb0a93f9d69aeb" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_ipsec_sa_stats_fn) (_In_ sai_object_id_t ipsec_sa_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t ipsec_sa_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_ipsec_sa_stats_fn</name>
+        <briefdescription>
+<para>Get IPsec Security Association counters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ipsec_sa_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IPsec Security Association id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="984" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" bodystart="984" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPSEC_1gaad66bce37fc062c8bb0c2a406565189f" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_ipsec_sa_stats_ext_fn) (_In_ sai_object_id_t ipsec_sa_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t ipsec_sa_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_ipsec_sa_stats_ext_fn</name>
+        <briefdescription>
+<para>Get IPsec Security Association counters extended. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ipsec_sa_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IPsec Security Association id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Should match SAI_IPSEC_ATTR_STATS_MODE </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="1001" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" bodystart="1001" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPSEC_1gad157a2c9b77ff22ff3718e45351a85bf" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_clear_ipsec_sa_stats_fn) (_In_ sai_object_id_t ipsec_sa_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</definition>
+        <argsstring>)(_In_ sai_object_id_t ipsec_sa_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</argsstring>
+        <name>sai_clear_ipsec_sa_stats_fn</name>
+        <briefdescription>
+<para>Clear IPsec Security Association counters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ipsec_sa_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IPsec Security Association id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="1017" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" bodystart="1017" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPSEC_1gaeebc1a323c6c43c5a05277fea45a014e" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* sai_ipsec_sa_status_change_notification_fn) (_In_ uint32_t count, _In_ const sai_ipsec_sa_status_notification_t *data)</definition>
+        <argsstring>)(_In_ uint32_t count, _In_ const sai_ipsec_sa_status_notification_t *data)</argsstring>
+        <name>sai_ipsec_sa_status_change_notification_fn</name>
+        <briefdescription>
+<para>IPsec SA status change notification. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Passed as a parameter into sai_initialize_switch()</para>
+<para><simplesect kind="par"><title>Count:</title><para> @@count           data[count]</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of notifications </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of notifications </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="1032" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" bodystart="1032" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPSEC_1ga450c99b360b2152e71f3422cabb33364" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__ipsec__api__t" kindref="compound">_sai_ipsec_api_t</ref></type>
+        <definition>typedef struct _sai_ipsec_api_t sai_ipsec_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_ipsec_api_t</name>
+        <briefdescription>
+<para>IPsec methods table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h" line="1059" column="17"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module defines SAI IPsec interface. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2014 Microsoft Open Technologies, Inc.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <ulink url="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</ulink></para>
+<para>THIS CODE IS PROVIDED ON AN <emphasis>AS IS</emphasis> BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</para>
+<para>See the Apache Version 2.0 License for specific language governing permissions and limitations under the License.</para>
+<para>Microsoft would like to thank the following companies for their review and assistance with these files: Intel Corporation, Mellanox Technologies Ltd, Dell Products, L.P., Facebook, Inc., Marvell International Ltd. </para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saiipsec.h"/>
+  </compounddef>
+</doxygen>

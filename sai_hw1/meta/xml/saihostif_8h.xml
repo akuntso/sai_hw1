@@ -1,0 +1,3157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="saihostif_8h" kind="file" language="C++">
+    <compoundname>saihostif.h</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+    <includedby refid="sai_8h" local="yes">/home/andrii/sai_hw1/SAI/inc/sai.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saihostif.h</label>
+        <link refid="saihostif_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>sys/types.h</label>
+      </node>
+      <node id="2">
+        <label>saitypes.h</label>
+        <link refid="saitypes_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saihostif.h</label>
+        <link refid="saihostif_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/andrii/sai_hw1/SAI/inc/sai.h</label>
+        <link refid="sai_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</label>
+        <link refid="saiextensions_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct__sai__hostif__api__t" prot="public">_sai_hostif_api_t</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__SAIHOSTINTF_1ga33ba4c8e7f58d82fde73d2eb66513e2c" prot="public" static="no">
+        <name>SAI_HOSTIF_NAME_SIZE</name>
+        <initializer>16</initializer>
+        <briefdescription>
+<para>Defines maximum host interface name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="46" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SAIHOSTINTF_1ga62b08ca334606e51119fecab61a5c2da" prot="public" static="no">
+        <name>SAI_HOSTIF_GENETLINK_MCGRP_NAME_SIZE</name>
+        <initializer>16</initializer>
+        <briefdescription>
+<para>Defines maximum length of generic netlink multicast group name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="51" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIHOSTINTF_1gab760579bf061179f1c0e0f6e5e6b035b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_hostif_trap_group_attr_t</name>
+        <enumvalue id="group__SAIHOSTINTF_1ggab760579bf061179f1c0e0f6e5e6b035ba5b8b9ba0669b9619114b1ee0f3bef61a" prot="public">
+          <name>SAI_HOSTIF_TRAP_GROUP_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggab760579bf061179f1c0e0f6e5e6b035ba37676febcdf94374edef978436e72a43" prot="public">
+          <name>SAI_HOSTIF_TRAP_GROUP_ATTR_ADMIN_STATE</name>
+          <initializer>= SAI_HOSTIF_TRAP_GROUP_ATTR_START</initializer>
+          <briefdescription>
+<para>Admin Mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggab760579bf061179f1c0e0f6e5e6b035ba753a2909006778cf71884d30a5674e84" prot="public">
+          <name>SAI_HOSTIF_TRAP_GROUP_ATTR_QUEUE</name>
+          <briefdescription>
+<para>CPU egress queue. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggab760579bf061179f1c0e0f6e5e6b035ba071fed739753dbdc596a3657afbdeb4a" prot="public">
+          <name>SAI_HOSTIF_TRAP_GROUP_ATTR_POLICER</name>
+          <briefdescription>
+<para>SAI policer object id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_POLICER </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggab760579bf061179f1c0e0f6e5e6b035ba967704806459e6138204cde733b89968" prot="public">
+          <name>SAI_HOSTIF_TRAP_GROUP_ATTR_OBJECT_STAGE</name>
+          <briefdescription>
+<para>Hostif trap group object stage. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_stage_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_OBJECT_STAGE_BOTH </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggab760579bf061179f1c0e0f6e5e6b035bafec2ce8ea38086f299953194d0926f1a" prot="public">
+          <name>SAI_HOSTIF_TRAP_GROUP_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggab760579bf061179f1c0e0f6e5e6b035baf413a9828e6d196a481ddfeb340d9121" prot="public">
+          <name>SAI_HOSTIF_TRAP_GROUP_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Start of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggab760579bf061179f1c0e0f6e5e6b035ba0db94c1e4db9109f9246eb7e714a2fcf" prot="public">
+          <name>SAI_HOSTIF_TRAP_GROUP_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Host interface trap group attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="56" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="57" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIHOSTINTF_1ga99d83686daf81153e6d5a161fbbda0c9" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_hostif_trap_type_t</name>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a5b58c13092d79fa4547060dc38618961" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_START</name>
+          <initializer>= 0x00000000</initializer>
+          <briefdescription>
+<para>Start of trap types. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a7fb2c7236c7e81e43a45644dd3d2c4d0" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_STP</name>
+          <initializer>= SAI_HOSTIF_TRAP_TYPE_START</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default action is drop </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9ada471035fe945bc4b702506db411a5e9" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_LACP</name>
+          <initializer>= 0x00000001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default action is drop </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a546c215e13f986140b0ff289132edf91" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_EAPOL</name>
+          <initializer>= 0x00000002</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default action is drop </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a05c7ece8b689556415b3cf630083944e" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_LLDP</name>
+          <initializer>= 0x00000003</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default action is drop </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9aacfe3e9cc30f3a21e06df85edcaab328" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_PVRST</name>
+          <initializer>= 0x00000004</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default action is drop </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a1f12fab82d01e4484ffa22292c96c40e" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_IGMP_TYPE_QUERY</name>
+          <initializer>= 0x00000005</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default action is forward </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9adc93baebaaca4a9066a01a878f011f42" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_IGMP_TYPE_LEAVE</name>
+          <initializer>= 0x00000006</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default action is forward </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a89999d4d333600a1b2b7b29067219d15" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_IGMP_TYPE_V1_REPORT</name>
+          <initializer>= 0x00000007</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default action is forward </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9ad27545f63df2b2c53108d582ed950c56" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_IGMP_TYPE_V2_REPORT</name>
+          <initializer>= 0x00000008</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default action is forward </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a73da03ca279ad57a889bacd3b1b6cbc3" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_IGMP_TYPE_V3_REPORT</name>
+          <initializer>= 0x00000009</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default action is forward </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9ac4cdd3549b8b01a0fecba75819cf2ae0" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_SAMPLEPACKET</name>
+          <initializer>= 0x0000000a</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default action is drop </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a24a15bb62055f29a727c57fce002e5f2" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_UDLD</name>
+          <initializer>= 0x0000000b</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default action is drop </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a6dd8fed4330fd632b805da7c6ceec3c6" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_CDP</name>
+          <initializer>= 0x0000000c</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default action is drop </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a7a3f0f86be38146fc8d1485aa606b299" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_VTP</name>
+          <initializer>= 0x0000000d</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default action is drop </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a9a92cd6033cc2ba397d1890afc39df8d" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_DTP</name>
+          <initializer>= 0x0000000e</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default action is drop </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a71475f5a9450b5ae2992955c762a3399" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_PAGP</name>
+          <initializer>= 0x0000000f</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default action is drop </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9aa4927f7fb6843f07290f4744090b3299" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_PTP</name>
+          <initializer>= 0x00000010</initializer>
+          <briefdescription>
+<para>PTP traffic (EtherType = 0x88F7 or UDP dst port == 319 or UDP dst port == 320) (default packet action is drop) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9afce35bb60795d691eee4818559425e67" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_PTP_TX_EVENT</name>
+          <initializer>= 0x00000011</initializer>
+          <briefdescription>
+<para>PTP packet sent from CPU with updated TX timestamp (default packet action is drop) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a9265d5e10a95dcdef3265d48db33f16d" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_DHCP_L2</name>
+          <initializer>= 0x00000012</initializer>
+          <briefdescription>
+<para>DHCP traffic (UDP ports 67, 68) (default packet action is forward) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a02c4024528a9e2c38156891bd08043d6" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_DHCPV6_L2</name>
+          <initializer>= 0x00000013</initializer>
+          <briefdescription>
+<para>DHCPV6 traffic (UDP ports 546, 547) (default packet action is forward) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9afe46e376b92c58e143edbdbdd48a2bd9" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_SWITCH_CUSTOM_RANGE_BASE</name>
+          <initializer>= 0x00001000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Switch traps custom range start </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a73c31d427d5244462770754bbf4c16cc" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_ARP_REQUEST</name>
+          <initializer>= 0x00002000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default packet action is forward </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a0ee3376bb35be5b302376b66059df589" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_ARP_RESPONSE</name>
+          <initializer>= 0x00002001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default packet action is forward </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a9247ad5358dc166bc0cd3875ba68fdec" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_DHCP</name>
+          <initializer>= 0x00002002</initializer>
+          <briefdescription>
+<para>DHCP traffic (UDP ports 67, 68), either L3 broadcast or unicast to local router IP address (default packet action is forward) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a597e39fbd2f5d642e94a3c4a5b0f65a8" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_OSPF</name>
+          <initializer>= 0x00002003</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default packet action is forward </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9ac8ecc1bbcb92449c4b738eeb2f5268c0" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_PIM</name>
+          <initializer>= 0x00002004</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default packet action is forward </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a31999e072f824cd353971f0900c70320" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_VRRP</name>
+          <initializer>= 0x00002005</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default packet action is forward </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9af683fc98148606bdbcbde2cb1e182b92" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_DHCPV6</name>
+          <initializer>= 0x00002006</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default packet action is forward </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a9a373a1a9478aa38e7761febc3a8fc7c" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_OSPFV6</name>
+          <initializer>= 0x00002007</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default packet action is forward </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a70e208b7fede05c9ac7f5074c84f1c54" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_VRRPV6</name>
+          <initializer>= 0x00002008</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default packet action is forward </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9abecaca2933042c447185f60a242cdec8" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_IPV6_NEIGHBOR_DISCOVERY</name>
+          <initializer>= 0x00002009</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default packet action is forward </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a9bead011a82b7319284563309bc19553" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_IPV6_MLD_V1_V2</name>
+          <initializer>= 0x0000200a</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default packet action is forward </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a2b9db3a32b1af69bb1dc398c06985f29" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_IPV6_MLD_V1_REPORT</name>
+          <initializer>= 0x0000200b</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default packet action is forward </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a4fb3109b70cf9b7cc2041179a51ef6b6" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_IPV6_MLD_V1_DONE</name>
+          <initializer>= 0x0000200c</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default packet action is forward </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9aed085bfbb314271300a8ed632f9858a3" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_MLD_V2_REPORT</name>
+          <initializer>= 0x0000200d</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default packet action is forward </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a542b24e7828b5b44f54dbf5432f3661a" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_UNKNOWN_L3_MULTICAST</name>
+          <initializer>= 0x0000200e</initializer>
+          <briefdescription>
+<para>Unknown L3 multicast packets (default packet action is drop) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a3767a382273f7caca5acd2ff30fba96f" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_SNAT_MISS</name>
+          <initializer>= 0x0000200f</initializer>
+          <briefdescription>
+<para>Source NAT miss packets (default packet action is drop) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9aad9eb33a7af0dcc156cbdefce6a86857" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_DNAT_MISS</name>
+          <initializer>= 0x00002010</initializer>
+          <briefdescription>
+<para>Destination NAT miss packets (default packet action is drop) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a76d2dac24e18e0f83c1278829c625324" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_NAT_HAIRPIN</name>
+          <initializer>= 0x00002011</initializer>
+          <briefdescription>
+<para>NAT hairpin packets (default packet action is drop) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9af491efe34f5520ae260fbf151349fa71" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_IPV6_NEIGHBOR_SOLICITATION</name>
+          <initializer>= 0x00002012</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default packet action is forward </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9ad45e4ba0bfbc510a9b8310136c69a543" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_IPV6_NEIGHBOR_ADVERTISEMENT</name>
+          <initializer>= 0x00002013</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Default packet action is forward </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9aeeaf27a95995abdbb8b022ca1b76892f" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_ISIS</name>
+          <initializer>= 0x00002014</initializer>
+          <briefdescription>
+<para>Intermediate System-to-Intermediate System (IS-IS) protocol. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Traffic: L1 IS: 01:80:c2:00:00:14, All Level 1 Intermediate Systems Address L2 IS: 01:80:c2:00:00:15, All Level 2 Intermediate Systems Address All IS: 09:00:2b:00:00:05, All Intermediate System Network Entities address</para>
+<para>Default packet action is forward </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9abeb0f278a66a2f95f019188241103eb1" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_NEIGHBOR_MISS</name>
+          <initializer>= 0x00002015</initializer>
+          <briefdescription>
+<para>Packets matching subnet routes with NH pointing to router interface i.e., no neighbor entry route is present (default packet action is trap) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a6204e8a8d7a1ec3242bc3fda069b3a2f" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_ROUTER_CUSTOM_RANGE_BASE</name>
+          <initializer>= 0x00003000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Router traps custom range start </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a49b678befe2164372cf2fbf4866fbbee" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_IP2ME</name>
+          <initializer>= 0x00004000</initializer>
+          <briefdescription>
+<para>IP packets to local router IP address (routes with <ref refid="group__SAIROUTE_1gga3c594db3cf069b24b966654ed0947712ad57480d442547be7ed774bae14a16a53" kindref="member">SAI_ROUTE_ENTRY_ATTR_NEXT_HOP_ID</ref> = <ref refid="group__SAISWITCH_1gga96df0871b3925f973f4a9079ffb3e634a55aefdaaa8394c330bbb579243b8b728" kindref="member">SAI_SWITCH_ATTR_CPU_PORT</ref>) (default packet action is drop) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a8403f9dd17e3a0651fb1c1248b1b895c" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_SSH</name>
+          <initializer>= 0x00004001</initializer>
+          <briefdescription>
+<para>SSH traffic (TCP dst port == 22) to local router IP address (default packet action is drop) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9af398bdda3796b8937b4d05db56412e0b" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_SNMP</name>
+          <initializer>= 0x00004002</initializer>
+          <briefdescription>
+<para>SNMP traffic (UDP dst port == 161) to local router IP address (default packet action is drop) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a7d85477f066c16a0211ebab2ae025959" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_BGP</name>
+          <initializer>= 0x00004003</initializer>
+          <briefdescription>
+<para>BGP traffic (TCP src port == 179 or TCP dst port == 179) to local router IP address (default packet action is drop) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a5a380c2b8ccd26a5bdb63619686f90d1" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_BGPV6</name>
+          <initializer>= 0x00004004</initializer>
+          <briefdescription>
+<para>BGPv6 traffic (TCP src port == 179 or TCP dst port == 179) to local router IP address (default packet action is drop) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9aab4edb5e439ae03677c34ced34275500" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_BFD</name>
+          <initializer>= 0x00004005</initializer>
+          <briefdescription>
+<para>BFD traffic (UDP dst port == 3784 or UDP dst port == 4784) to local router IP address (default packet action is drop) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a6720c64aa023ed2de0eaedd59ca3db50" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_BFDV6</name>
+          <initializer>= 0x00004006</initializer>
+          <briefdescription>
+<para>BFDV6 traffic (UDP dst port == 3784 or UDP dst port == 4784) to local router IP address (default packet action is drop) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9aa6ffbbf4ec816af04d41a76bea43dc45" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_BFD_MICRO</name>
+          <initializer>= 0x00004007</initializer>
+          <briefdescription>
+<para>Micro BFD traffic (UDP dst port == 6784) to local router IP address (default packet action is drop) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9aab75ce1cf6aa48908e03fa9d785a83d9" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_BFDV6_MICRO</name>
+          <initializer>= 0x00004008</initializer>
+          <briefdescription>
+<para>Micro BFDV6 traffic (UDP dst port == 6784) to local router IP address (default packet action is drop) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a8e5a03ec409c19879d24a67c75344e31" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_LDP</name>
+          <initializer>= 0x00004009</initializer>
+          <briefdescription>
+<para>LDP traffic (TCP src port == 646 or TCP dst port == 646) to local router IP address or, (UDP dst port == 646) to the &apos;all routers on this subnet&apos; group multicast address (224.0.0.2) (default packet action is drop) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a64864760a44763285c04d0eaee4d360f" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_GNMI</name>
+          <initializer>= 0x0000400a</initializer>
+          <briefdescription>
+<para>GNMI traffic (TCP dst port == 9339) to local router IP address (default packet action is drop) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a0f5c3df8323a3fdf2aa2ad4a13a02a2f" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_P4RT</name>
+          <initializer>= 0x0000400b</initializer>
+          <briefdescription>
+<para>P4RT traffic (TCP dst port == 9559) to local router IP address (default packet action is drop) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a72a39d2092643a50b29d1b10601e20ce" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_NTPCLIENT</name>
+          <initializer>= 0x0000400c</initializer>
+          <briefdescription>
+<para>NTPCLIENT traffic (UDP/TCP src port == 123) to local router IP address (default packet action is drop) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a76b4b606f3e2e0437a15ad684961cc6d" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_NTPSERVER</name>
+          <initializer>= 0x0000400d</initializer>
+          <briefdescription>
+<para>NTPSERVER traffic (UDP/TCP dst port == 123) to local router IP address (default packet action is drop) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a450f828e0a8bd24ac9d14c69b003cc50" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_HTTPCLIENT</name>
+          <initializer>= 0x0000400e</initializer>
+          <briefdescription>
+<para>HTTPCLIENT traffic (TCP src port == 80) to local router IP address (default packet action is drop) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9ad04d0cfe5caac3b9a3a1a9403185647f" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_HTTPSERVER</name>
+          <initializer>= 0x0000400f</initializer>
+          <briefdescription>
+<para>HTTPSERVER traffic (TCP dst port == 80) to local router IP address (default packet action is drop) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a2b60fb331526e5dd6b18d5b75f8e8b0a" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_LOCAL_IP_CUSTOM_RANGE_BASE</name>
+          <initializer>= 0x00005000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Local IP traps custom range start </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a0b2285047feb990549bcfd8c22e084a2" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_L3_MTU_ERROR</name>
+          <initializer>= 0x00006000</initializer>
+          <briefdescription>
+<para>Packets size exceeds the router interface MTU size (default packet action is drop) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a8863bd9b862c0faac0ea8624c495cc89" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_TTL_ERROR</name>
+          <initializer>= 0x00006001</initializer>
+          <briefdescription>
+<para>Packets with TTL 0 or 1 (default packet action is drop) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a2a0488fe0a12fdc1fba1f4a468be57ec" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_STATIC_FDB_MOVE</name>
+          <initializer>= 0x00006002</initializer>
+          <briefdescription>
+<para>Packets trapped when station move is observed with static FDB entry (default packet action is drop) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a5fa69fdb5e1380522d5f68ed849ef6ea" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_PIPELINE_DISCARD_EGRESS_BUFFER</name>
+          <initializer>= 0x00007000</initializer>
+          <briefdescription>
+<para>Packets discarded due to egress buffer full (default packet action is drop) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a0ee08f89b26e927526364a55a16ff518" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_PIPELINE_DISCARD_WRED</name>
+          <initializer>= 0x00007001</initializer>
+          <briefdescription>
+<para>Packets discarded by WRED (default packet action is drop) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9aa7d7618abce258b1b56a7419e1285f2a" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_PIPELINE_DISCARD_ROUTER</name>
+          <initializer>= 0x00007002</initializer>
+          <briefdescription>
+<para>Packets discarded due to router causes, such as header checksum, router interface is down, matching a route with drop action (black holes), etc. (default packet action is drop) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a5fea331ebb6c7f7c74d8d5b91a4cc1ad" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_MPLS_TTL_ERROR</name>
+          <initializer>= 0x00008000</initializer>
+          <briefdescription>
+<para>MPLS packets with expiring TTL value of 1 (default packet action is drop) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9ab8e85fe1aaf2723cd3f1b35b502bd2c9" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_MPLS_ROUTER_ALERT_LABEL</name>
+          <initializer>= 0x00008001</initializer>
+          <briefdescription>
+<para>MPLS packet with router alert label (default packet action is forward) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a9aa5cb34589258a8a2a53902ba5ae466" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_MPLS_LABEL_LOOKUP_MISS</name>
+          <initializer>= 0x00008002</initializer>
+          <briefdescription>
+<para>MPLS packets discarded due to label lookup miss (default packet action is drop) </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a3907a2a2e216cf6497971daff8a4284d" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_CUSTOM_EXCEPTION_RANGE_BASE</name>
+          <initializer>= 0x00009000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Exception traps custom range start </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga99d83686daf81153e6d5a161fbbda0c9a7f897f97a913a13c0b61bbe6f9649f8a" prot="public">
+          <name>SAI_HOSTIF_TRAP_TYPE_END</name>
+          <initializer>= 0x0000a000</initializer>
+          <briefdescription>
+<para>End of trap types. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Host interface trap type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Flags:</title><para> @@flags           ranges </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="171" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="172" bodyend="527"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIHOSTINTF_1gad8175d7d802ee018bdd0036e8d1e050b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_hostif_trap_attr_t</name>
+        <enumvalue id="group__SAIHOSTINTF_1ggad8175d7d802ee018bdd0036e8d1e050ba5b2f5d02f5d5c14fca0cc22adb3b04c1" prot="public">
+          <name>SAI_HOSTIF_TRAP_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggad8175d7d802ee018bdd0036e8d1e050ba3dc8a1ab3fa2f1c0b0ecae6bc781f0de" prot="public">
+          <name>SAI_HOSTIF_TRAP_ATTR_TRAP_TYPE</name>
+          <initializer>= SAI_HOSTIF_TRAP_ATTR_START</initializer>
+          <briefdescription>
+<para>Host interface trap type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_hostif_trap_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY | KEY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggad8175d7d802ee018bdd0036e8d1e050bad137c920ffcc7362f6d60627b33636d7" prot="public">
+          <name>SAI_HOSTIF_TRAP_ATTR_PACKET_ACTION</name>
+          <briefdescription>
+<para>Trap action. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_packet_action_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggad8175d7d802ee018bdd0036e8d1e050ba081b9f3f4587a489db8a894fb8ac4d3e" prot="public">
+          <name>SAI_HOSTIF_TRAP_ATTR_TRAP_PRIORITY</name>
+          <briefdescription>
+<para>Trap priority. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>This is equivalent to ACL entry priority <ref refid="group__SAIACL_1gga25441fd99b0ba7ffdc071c8759912145ab5bc220294f00c2e35b0f0125d36e7a1" kindref="member">SAI_ACL_ENTRY_ATTR_PRIORITY</ref>.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         attrvalue SAI_SWITCH_ATTR_ACL_ENTRY_MINIMUM_PRIORITY </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_HOSTIF_TRAP_ATTR_PACKET_ACTION == SAI_PACKET_ACTION_TRAP or SAI_HOSTIF_TRAP_ATTR_PACKET_ACTION == SAI_PACKET_ACTION_COPY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggad8175d7d802ee018bdd0036e8d1e050ba3dcb7a7be2af6b85b57495e79239dbde" prot="public">
+          <name>SAI_HOSTIF_TRAP_ATTR_EXCLUDE_PORT_LIST</name>
+          <briefdescription>
+<para>List of SAI ports to be excluded (disabled) from the trap generation. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_PORT </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_HOSTIF_TRAP_ATTR_PACKET_ACTION == SAI_PACKET_ACTION_TRAP or SAI_HOSTIF_TRAP_ATTR_PACKET_ACTION == SAI_PACKET_ACTION_COPY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggad8175d7d802ee018bdd0036e8d1e050ba1b0bd1a58c1545b9a56b2d536278fd1c" prot="public">
+          <name>SAI_HOSTIF_TRAP_ATTR_TRAP_GROUP</name>
+          <briefdescription>
+<para>Trap group ID for the trap. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_HOSTIF_TRAP_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         attrvalue SAI_SWITCH_ATTR_DEFAULT_TRAP_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_HOSTIF_TRAP_ATTR_PACKET_ACTION == SAI_PACKET_ACTION_TRAP or SAI_HOSTIF_TRAP_ATTR_PACKET_ACTION == SAI_PACKET_ACTION_COPY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggad8175d7d802ee018bdd0036e8d1e050ba77bd44388e79d2347279f82ccb739dca" prot="public">
+          <name>SAI_HOSTIF_TRAP_ATTR_MIRROR_SESSION</name>
+          <briefdescription>
+<para>Mirror session for the trap. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_MIRROR_SESSION </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggad8175d7d802ee018bdd0036e8d1e050ba6456fe9bdcf75957acaa1978c70d454f" prot="public">
+          <name>SAI_HOSTIF_TRAP_ATTR_COUNTER_ID</name>
+          <briefdescription>
+<para>Attach a counter. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>When it is empty, then packet hits won&apos;t be counted</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_COUNTER </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggad8175d7d802ee018bdd0036e8d1e050bafead4d2563f468f30b1c8a999ac9e7b6" prot="public">
+          <name>SAI_HOSTIF_TRAP_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggad8175d7d802ee018bdd0036e8d1e050ba63084860edd2d54e2f8bba948aa6c8bc" prot="public">
+          <name>SAI_HOSTIF_TRAP_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range start </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggad8175d7d802ee018bdd0036e8d1e050baa7be9bdc2cfea1ed78bf471d40262b77" prot="public">
+          <name>SAI_HOSTIF_TRAP_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range end </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Host interface trap attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="532" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="533" bodyend="623"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIHOSTINTF_1ga5276040374e925d269744cd2f015d250" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_hostif_user_defined_trap_type_t</name>
+        <enumvalue id="group__SAIHOSTINTF_1gga5276040374e925d269744cd2f015d250a6eeb0e9aa0d91c03a187819928d38d6f" prot="public">
+          <name>SAI_HOSTIF_USER_DEFINED_TRAP_TYPE_START</name>
+          <initializer>= 0x00000000</initializer>
+          <briefdescription>
+<para>Start of user defined trap types. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga5276040374e925d269744cd2f015d250a6d12fc14770d1f4e2630cf4474d8ae1a" prot="public">
+          <name>SAI_HOSTIF_USER_DEFINED_TRAP_TYPE_ROUTER</name>
+          <initializer>= SAI_HOSTIF_USER_DEFINED_TRAP_TYPE_START</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Router traps </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga5276040374e925d269744cd2f015d250a6214d396d7d5f0e3ff52c8da88029e90" prot="public">
+          <name>SAI_HOSTIF_USER_DEFINED_TRAP_TYPE_NEIGHBOR</name>
+          <briefdescription>
+<para>Neighbor table traps. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Generated by neighbor table entry hit with action trap/log, or by neighbor table miss </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga5276040374e925d269744cd2f015d250ac1fd8f1685057a9467a8b0f0a3beb3ef" prot="public">
+          <name>SAI_HOSTIF_USER_DEFINED_TRAP_TYPE_NEIGH</name>
+          <initializer>= SAI_HOSTIF_USER_DEFINED_TRAP_TYPE_NEIGHBOR</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Ignored:</title><para> @@ignore          - for backward compatibility </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga5276040374e925d269744cd2f015d250ac12e67a18669589f41620e5ddafd0071" prot="public">
+          <name>SAI_HOSTIF_USER_DEFINED_TRAP_TYPE_ACL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>ACL traps </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga5276040374e925d269744cd2f015d250a4c74d89d8c5420939001bafbb30dca8e" prot="public">
+          <name>SAI_HOSTIF_USER_DEFINED_TRAP_TYPE_FDB</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FDB traps </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga5276040374e925d269744cd2f015d250adfb5721f1d2db8c7876458acc7fe8ebc" prot="public">
+          <name>SAI_HOSTIF_USER_DEFINED_TRAP_TYPE_INSEG_ENTRY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>In Segment Entry traps </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga5276040374e925d269744cd2f015d250a154a0d415373b19ac5a2d471df797a19" prot="public">
+          <name>SAI_HOSTIF_USER_DEFINED_TRAP_TYPE_TAM</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Traps to be associated with TAM collector </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga5276040374e925d269744cd2f015d250af9950bfda402dc98b623bde1d8bf838a" prot="public">
+          <name>SAI_HOSTIF_USER_DEFINED_TRAP_TYPE_END</name>
+          <briefdescription>
+<para>End of user defined trap types. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga5276040374e925d269744cd2f015d250a7109342ab855b68a8d6daa33986b5f8a" prot="public">
+          <name>SAI_HOSTIF_USER_DEFINED_TRAP_TYPE_CUSTOM_RANGE_BASE</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Host interface user defined trap type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>User defined traps action is controlled by the referencing object. For example, ACL entry with packet action trap and user trap object ID </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="683" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="684" bodyend="723"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIHOSTINTF_1gabdc80e767d1eda422ef477c76ba0d5c8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_hostif_user_defined_trap_attr_t</name>
+        <enumvalue id="group__SAIHOSTINTF_1ggabdc80e767d1eda422ef477c76ba0d5c8a1ad8bc11cf765e7283549c01f8ce7f0d" prot="public">
+          <name>SAI_HOSTIF_USER_DEFINED_TRAP_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggabdc80e767d1eda422ef477c76ba0d5c8a55c9ad8fc49024e2d2bdf67e3a8ccc3f" prot="public">
+          <name>SAI_HOSTIF_USER_DEFINED_TRAP_ATTR_TYPE</name>
+          <initializer>= SAI_HOSTIF_USER_DEFINED_TRAP_ATTR_START</initializer>
+          <briefdescription>
+<para>Host interface user defined trap type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>It is valid to create multiple instances of the same user defined type</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_hostif_user_defined_trap_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggabdc80e767d1eda422ef477c76ba0d5c8ab8deb3a3458670c803371c84a8ef3f6e" prot="public">
+          <name>SAI_HOSTIF_USER_DEFINED_TRAP_ATTR_TRAP_PRIORITY</name>
+          <briefdescription>
+<para>Trap priority. This is equivalent to ACL entry priority <ref refid="group__SAIACL_1gga25441fd99b0ba7ffdc071c8759912145ab5bc220294f00c2e35b0f0125d36e7a1" kindref="member">SAI_ACL_ENTRY_ATTR_PRIORITY</ref>. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         attrvalue SAI_SWITCH_ATTR_ACL_ENTRY_MINIMUM_PRIORITY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggabdc80e767d1eda422ef477c76ba0d5c8a59a340810186621750c3895abd8078e2" prot="public">
+          <name>SAI_HOSTIF_USER_DEFINED_TRAP_ATTR_TRAP_GROUP</name>
+          <briefdescription>
+<para>Trap group ID for the trap. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_HOSTIF_TRAP_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         attrvalue SAI_SWITCH_ATTR_DEFAULT_TRAP_GROUP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggabdc80e767d1eda422ef477c76ba0d5c8a2191a168d069d35fb39d598a07a74ea0" prot="public">
+          <name>SAI_HOSTIF_USER_DEFINED_TRAP_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggabdc80e767d1eda422ef477c76ba0d5c8a7e13eff42cdbc8f2050c61c1a9b98538" prot="public">
+          <name>SAI_HOSTIF_USER_DEFINED_TRAP_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range start </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggabdc80e767d1eda422ef477c76ba0d5c8ab78d3dbbbe990214c1e49011ff87ddaf" prot="public">
+          <name>SAI_HOSTIF_USER_DEFINED_TRAP_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range end </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Host interface user defined trap attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="728" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="729" bodyend="776"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIHOSTINTF_1ga820683e5ff6ed71cb024fd7ff3f63f1e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_hostif_type_t</name>
+        <enumvalue id="group__SAIHOSTINTF_1gga820683e5ff6ed71cb024fd7ff3f63f1eaba04e7f74ef7ff076dfc3400dba5a2d5" prot="public">
+          <name>SAI_HOSTIF_TYPE_NETDEV</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Netdevice </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga820683e5ff6ed71cb024fd7ff3f63f1ea50cb3f08aeaaebbfd53b208510354f1b" prot="public">
+          <name>SAI_HOSTIF_TYPE_FD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>File descriptor </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga820683e5ff6ed71cb024fd7ff3f63f1ea5343a8b0e40d0eb2e4347238e284bd56" prot="public">
+          <name>SAI_HOSTIF_TYPE_GENETLINK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Generic netlink </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute data for SAI_HOSTIF_ATTR_TYPE. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="833" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="834" bodyend="844"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIHOSTINTF_1ga38f277f5f654029f3b501388a56b346a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_hostif_vlan_tag_t</name>
+        <enumvalue id="group__SAIHOSTINTF_1gga38f277f5f654029f3b501388a56b346aa9ca2aa4c9ba4e766309c07f9d09f42af" prot="public">
+          <name>SAI_HOSTIF_VLAN_TAG_STRIP</name>
+          <briefdescription>
+<para>Strip vlan tag Strip vlan tag from the incoming packet when delivering the packet to host interface. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga38f277f5f654029f3b501388a56b346aa95ed58df4d3249430178ce42961963bf" prot="public">
+          <name>SAI_HOSTIF_VLAN_TAG_KEEP</name>
+          <briefdescription>
+<para>Keep vlan tag. When incoming packet is untagged, add PVID tag to the packet when delivering the packet to host interface. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga38f277f5f654029f3b501388a56b346aa4e3283f83105b5d2ded0f2ae36ec6231" prot="public">
+          <name>SAI_HOSTIF_VLAN_TAG_ORIGINAL</name>
+          <briefdescription>
+<para>Keep the packet same as the incoming packet. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>The packet delivered to host interface is the same as the original packet. When the host interface is PORT and LAG, the packet delivered to host interface is the same as the original packet seen by the PORT and LAG. When the host interface is VLAN, the packet delivered to host interface will not have tag. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute data for SAI_HOSTIF_ATTR_VLAN_TAG. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="849" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="850" bodyend="875"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIHOSTINTF_1ga976cb57afc9fc061c2dd087c5460e26c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_hostif_attr_t</name>
+        <enumvalue id="group__SAIHOSTINTF_1gga976cb57afc9fc061c2dd087c5460e26cae34113e2fe9c8c0b79c051192c6464e3" prot="public">
+          <name>SAI_HOSTIF_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga976cb57afc9fc061c2dd087c5460e26ca128d12a5192d2ad213cfc2acf8b2868c" prot="public">
+          <name>SAI_HOSTIF_ATTR_TYPE</name>
+          <initializer>= SAI_HOSTIF_ATTR_START</initializer>
+          <briefdescription>
+<para>Host interface type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_hostif_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga976cb57afc9fc061c2dd087c5460e26ca49a75f544ac9dd787d135ac7a361b23b" prot="public">
+          <name>SAI_HOSTIF_ATTR_OBJ_ID</name>
+          <briefdescription>
+<para>Host interface object ID. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Port netdev will be created when object type is SAI_OBJECT_TYPE_PORT LAG netdev will be created when object type is SAI_OBJECT_TYPE_LAG VLAN netdev will be created when object type is SAI_OBJECT_TYPE_VLAN System Port netdev will be created when object type is SAI_OBJECT_TYPE_SYSTEM_PORT</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_PORT, SAI_OBJECT_TYPE_LAG, SAI_OBJECT_TYPE_VLAN, SAI_OBJECT_TYPE_SYSTEM_PORT </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_HOSTIF_ATTR_TYPE == SAI_HOSTIF_TYPE_NETDEV </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga976cb57afc9fc061c2dd087c5460e26caa88c77a0a9fb648d1a52bec365fde117" prot="public">
+          <name>SAI_HOSTIF_ATTR_NAME</name>
+          <briefdescription>
+<para>Name [char[SAI_HOSTIF_NAME_SIZE]]. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>The maximum number of characters for the name is SAI_HOSTIF_NAME_SIZE - 1 since it needs the terminating null byte (&apos;\0&apos;) at the end.</para>
+<para>If Hostif is a generic netlink, this indicates the generic netlink family name.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            char </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_HOSTIF_ATTR_TYPE == SAI_HOSTIF_TYPE_NETDEV or SAI_HOSTIF_ATTR_TYPE == SAI_HOSTIF_TYPE_GENETLINK </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga976cb57afc9fc061c2dd087c5460e26ca8f16448ab2b2da659399e5c8a4f4fa5e" prot="public">
+          <name>SAI_HOSTIF_ATTR_OPER_STATUS</name>
+          <briefdescription>
+<para>Set the operational status for this host interface. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga976cb57afc9fc061c2dd087c5460e26ca641c3b9c27eebac2605b7b3ee1742d3c" prot="public">
+          <name>SAI_HOSTIF_ATTR_QUEUE</name>
+          <briefdescription>
+<para>Set the queue index to be used for packets going out through this interface. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga976cb57afc9fc061c2dd087c5460e26ca69ce03d40ff37d5af9acc857fb637ba1" prot="public">
+          <name>SAI_HOSTIF_ATTR_VLAN_TAG</name>
+          <briefdescription>
+<para>Strip/keep vlan tag for received packet. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_hostif_vlan_tag_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_HOSTIF_VLAN_TAG_STRIP </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_HOSTIF_ATTR_TYPE == SAI_HOSTIF_TYPE_NETDEV </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga976cb57afc9fc061c2dd087c5460e26ca0aa6b18c34df66af7433736b38e7174d" prot="public">
+          <name>SAI_HOSTIF_ATTR_GENETLINK_MCGRP_NAME</name>
+          <briefdescription>
+<para>Name [char[SAI_HOSTIF_GENETLINK_MCGRP_NAME_SIZE]]. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>The maximum number of characters for the name is SAI_HOSTIF_GENETLINK_MCGRP_NAME_SIZE - 1 Set the Generic netlink multicast group name on which the packets/buffers are received on this host interface</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            char </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_HOSTIF_ATTR_TYPE == SAI_HOSTIF_TYPE_GENETLINK </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga976cb57afc9fc061c2dd087c5460e26caf3ffc2659cd4ed389a6f6e808f799199" prot="public">
+          <name>SAI_HOSTIF_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga976cb57afc9fc061c2dd087c5460e26ca04493f756de6a98f3614f00e507976d6" prot="public">
+          <name>SAI_HOSTIF_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga976cb57afc9fc061c2dd087c5460e26ca398dd10e7ab9e0a0a24235509dedf87f" prot="public">
+          <name>SAI_HOSTIF_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Host interface attribute IDs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="880" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="881" bodyend="976"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIHOSTINTF_1ga5cdc613bbb888d608cfbc5092b130f47" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_hostif_table_entry_type_t</name>
+        <enumvalue id="group__SAIHOSTINTF_1gga5cdc613bbb888d608cfbc5092b130f47a8bd67442a7eea1fba659e0767a5afcf0" prot="public">
+          <name>SAI_HOSTIF_TABLE_ENTRY_TYPE_PORT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port-based Host Interface entry Type </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga5cdc613bbb888d608cfbc5092b130f47a3a5dd12dccc514e9adfaa8feb5de8e98" prot="public">
+          <name>SAI_HOSTIF_TABLE_ENTRY_TYPE_LAG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>LAG based Host Interface entry Type </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga5cdc613bbb888d608cfbc5092b130f47a3e9a3ab12576bf22fa3934137212617c" prot="public">
+          <name>SAI_HOSTIF_TABLE_ENTRY_TYPE_VLAN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Vlan based Host Interface entry Type </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga5cdc613bbb888d608cfbc5092b130f47a2a87a67567f737a00105f4a1f72902bc" prot="public">
+          <name>SAI_HOSTIF_TABLE_ENTRY_TYPE_TRAP_ID</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Wildcard Interface entry Type </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga5cdc613bbb888d608cfbc5092b130f47a727899d963c259d2a6cba09ef7663950" prot="public">
+          <name>SAI_HOSTIF_TABLE_ENTRY_TYPE_WILDCARD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Wildcard Interface, wildcard trap id </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute data for SAI_HOSTIF_TABLE_ENTRY_ATTR_TYPE. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="1033" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="1034" bodyend="1050"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIHOSTINTF_1ga15e92e1a261903c91b6fb22a661cab57" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_hostif_table_entry_channel_type_t</name>
+        <enumvalue id="group__SAIHOSTINTF_1gga15e92e1a261903c91b6fb22a661cab57aa5d2a83e4c4fc8e9800cfe1cd2a7320f" prot="public">
+          <name>SAI_HOSTIF_TABLE_ENTRY_CHANNEL_TYPE_CB</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Receive packets via callback </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga15e92e1a261903c91b6fb22a661cab57acc897d9227bb300e07d9fdd5cc323741" prot="public">
+          <name>SAI_HOSTIF_TABLE_ENTRY_CHANNEL_TYPE_FD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Receive packets via file descriptor </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga15e92e1a261903c91b6fb22a661cab57ab440da39f6c8a9809ef8f263cb300d1b" prot="public">
+          <name>SAI_HOSTIF_TABLE_ENTRY_CHANNEL_TYPE_NETDEV_PHYSICAL_PORT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Receive packets via Linux netdev type port </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga15e92e1a261903c91b6fb22a661cab57af3238a4215c9a42e6f508b120ce925ec" prot="public">
+          <name>SAI_HOSTIF_TABLE_ENTRY_CHANNEL_TYPE_NETDEV_LOGICAL_PORT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Receive packets via Linux netdev logical port (LAG or port) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga15e92e1a261903c91b6fb22a661cab57a635b253f3e9f6f2903debf67930daff7" prot="public">
+          <name>SAI_HOSTIF_TABLE_ENTRY_CHANNEL_TYPE_NETDEV_L3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Receive packets via Linux netdev L3 interface </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga15e92e1a261903c91b6fb22a661cab57a77153e9eee8ed2881435cddd7f9c7e0a" prot="public">
+          <name>SAI_HOSTIF_TABLE_ENTRY_CHANNEL_TYPE_GENETLINK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Receive packets via Linux generic netlink interface </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute data for SAI_HOSTIF_TABLE_ENTRY_ATTR_CHANNEL_TYPE. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="1055" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="1056" bodyend="1075"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIHOSTINTF_1ga9256291ae3017408639121224712c46e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_hostif_table_entry_attr_t</name>
+        <enumvalue id="group__SAIHOSTINTF_1gga9256291ae3017408639121224712c46eae7364cadeaadb2a4a4693eb077c6d173" prot="public">
+          <name>SAI_HOSTIF_TABLE_ENTRY_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga9256291ae3017408639121224712c46ea5cff6c75f9e08263f2c905394c925f70" prot="public">
+          <name>SAI_HOSTIF_TABLE_ENTRY_ATTR_TYPE</name>
+          <initializer>= SAI_HOSTIF_TABLE_ENTRY_ATTR_START</initializer>
+          <briefdescription>
+<para>Host interface table entry type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_hostif_table_entry_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga9256291ae3017408639121224712c46eabbc6c3a568e1a1f0ecb3727ef9354acd" prot="public">
+          <name>SAI_HOSTIF_TABLE_ENTRY_ATTR_OBJ_ID</name>
+          <briefdescription>
+<para>Host interface table entry match field object-id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Should be port object when type is SAI_HOSTIF_TABLE_ENTRY_TYPE_PORT. Should be LAG object when type is SAI_HOSTIF_TABLE_ENTRY_TYPE_LAG. Should be VLAN ID object when type is SAI_HOSTIF_TABLE_ENTRY_TYPE_VLAN.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_PORT, SAI_OBJECT_TYPE_LAG, SAI_OBJECT_TYPE_ROUTER_INTERFACE </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_HOSTIF_TABLE_ENTRY_ATTR_TYPE == SAI_HOSTIF_TABLE_ENTRY_TYPE_PORT or SAI_HOSTIF_TABLE_ENTRY_ATTR_TYPE == SAI_HOSTIF_TABLE_ENTRY_TYPE_VLAN or SAI_HOSTIF_TABLE_ENTRY_ATTR_TYPE == SAI_HOSTIF_TABLE_ENTRY_TYPE_LAG </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga9256291ae3017408639121224712c46eaecf7e55996364991e6ea1310db4bf46e" prot="public">
+          <name>SAI_HOSTIF_TABLE_ENTRY_ATTR_TRAP_ID</name>
+          <briefdescription>
+<para>Host interface table entry match field trap-id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_HOSTIF_TRAP, SAI_OBJECT_TYPE_HOSTIF_USER_DEFINED_TRAP </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_HOSTIF_TABLE_ENTRY_ATTR_TYPE == SAI_HOSTIF_TABLE_ENTRY_TYPE_PORT or SAI_HOSTIF_TABLE_ENTRY_ATTR_TYPE == SAI_HOSTIF_TABLE_ENTRY_TYPE_VLAN or SAI_HOSTIF_TABLE_ENTRY_ATTR_TYPE == SAI_HOSTIF_TABLE_ENTRY_TYPE_LAG or SAI_HOSTIF_TABLE_ENTRY_ATTR_TYPE == SAI_HOSTIF_TABLE_ENTRY_TYPE_TRAP_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga9256291ae3017408639121224712c46eaec02a25bfa276c30e0e55561ea424a55" prot="public">
+          <name>SAI_HOSTIF_TABLE_ENTRY_ATTR_CHANNEL_TYPE</name>
+          <briefdescription>
+<para>Host interface table entry action channel. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_hostif_table_entry_channel_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga9256291ae3017408639121224712c46ea80e5ed7a66990578fa2b1069c6b5a47f" prot="public">
+          <name>SAI_HOSTIF_TABLE_ENTRY_ATTR_HOST_IF</name>
+          <briefdescription>
+<para>Host interface table entry action target host interface object. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_HOSTIF </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_HOSTIF_TABLE_ENTRY_ATTR_CHANNEL_TYPE == SAI_HOSTIF_TABLE_ENTRY_CHANNEL_TYPE_FD or SAI_HOSTIF_TABLE_ENTRY_ATTR_CHANNEL_TYPE == SAI_HOSTIF_TABLE_ENTRY_CHANNEL_TYPE_GENETLINK </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga9256291ae3017408639121224712c46ea2061da9006543e832046fcb8eab3bfa0" prot="public">
+          <name>SAI_HOSTIF_TABLE_ENTRY_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga9256291ae3017408639121224712c46eaf1cb15c14c62cb10b562c2b4fdc1b505" prot="public">
+          <name>SAI_HOSTIF_TABLE_ENTRY_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga9256291ae3017408639121224712c46ea2d7953376d1dc780684bc09500559f7e" prot="public">
+          <name>SAI_HOSTIF_TABLE_ENTRY_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Host interface table entry attribute IDs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="1080" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="1081" bodyend="1148"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIHOSTINTF_1ga2bec7bf38599be14c8c759f77a09ef1b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_hostif_tx_type_t</name>
+        <enumvalue id="group__SAIHOSTINTF_1gga2bec7bf38599be14c8c759f77a09ef1baeece15d565878583a5d24e43dce57c21" prot="public">
+          <name>SAI_HOSTIF_TX_TYPE_PIPELINE_BYPASS</name>
+          <briefdescription>
+<para>Bypass switch ASIC processing pipeline, tx packet goes to the specified output port directly. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga2bec7bf38599be14c8c759f77a09ef1ba9167e090d66627bd70ec9035ae91231f" prot="public">
+          <name>SAI_HOSTIF_TX_TYPE_PIPELINE_LOOKUP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TX packet goes to the switch ASIC processing pipeline to decide the output port </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1gga2bec7bf38599be14c8c759f77a09ef1ba5dd042ac08c343f5da35bfef74e40682" prot="public">
+          <name>SAI_HOSTIF_TX_TYPE_CUSTOM_RANGE_BASE</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Host interface TX type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="1205" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="1206" bodyend="1219"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIHOSTINTF_1gadbd461f30a838a8c39e331e1afee71dd" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_hostif_packet_attr_t</name>
+        <enumvalue id="group__SAIHOSTINTF_1ggadbd461f30a838a8c39e331e1afee71dda34c22b5c1fb294c48e56abef835562e0" prot="public">
+          <name>SAI_HOSTIF_PACKET_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggadbd461f30a838a8c39e331e1afee71ddaef20db503d0068d83aeaf41b1f80611a" prot="public">
+          <name>SAI_HOSTIF_PACKET_ATTR_HOSTIF_TRAP_ID</name>
+          <initializer>= SAI_HOSTIF_PACKET_ATTR_START</initializer>
+          <briefdescription>
+<para>Trap ID (for receive-only) </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_HOSTIF_TRAP, SAI_OBJECT_TYPE_HOSTIF_USER_DEFINED_TRAP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggadbd461f30a838a8c39e331e1afee71dda0797d0083a3808db6bb1352490fe9559" prot="public">
+          <name>SAI_HOSTIF_PACKET_ATTR_INGRESS_PORT</name>
+          <briefdescription>
+<para>Ingress port (for receive-only) </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_PORT </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggadbd461f30a838a8c39e331e1afee71ddafc8f5b9465fce7f742c03dad53b27746" prot="public">
+          <name>SAI_HOSTIF_PACKET_ATTR_INGRESS_LAG</name>
+          <briefdescription>
+<para>Ingress LAG (for receive-only) </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_LAG </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggadbd461f30a838a8c39e331e1afee71ddac5963c5afc084b3449cf3ef234b22ada" prot="public">
+          <name>SAI_HOSTIF_PACKET_ATTR_HOSTIF_TX_TYPE</name>
+          <briefdescription>
+<para>Packet transmit type. (MANDATORY_ON_SEND) </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_hostif_tx_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggadbd461f30a838a8c39e331e1afee71dda294a368a371577b310ab5031ac853ba8" prot="public">
+          <name>SAI_HOSTIF_PACKET_ATTR_EGRESS_PORT_OR_LAG</name>
+          <briefdescription>
+<para>Egress port. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>For receive case, filled with the egress destination port for unicast packets. Egress LAG member port id to be filled for the LAG destination case. Applicable for use-case like samplepacket traps or PTP TX event</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_PORT </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_HOSTIF_PACKET_ATTR_HOSTIF_TX_TYPE == SAI_HOSTIF_TX_TYPE_PIPELINE_BYPASS </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggadbd461f30a838a8c39e331e1afee71dda98f89af9e129e4b367cae6a4d07906b7" prot="public">
+          <name>SAI_HOSTIF_PACKET_ATTR_BRIDGE_ID</name>
+          <briefdescription>
+<para>Bridge ID (for receive-only) </para>
+          </briefdescription>
+          <detaileddescription>
+<para>The .1D or .1Q bridge on which the packet was received.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_BRIDGE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggadbd461f30a838a8c39e331e1afee71dda3017ac4c3920ddd6d85a0bb787024360" prot="public">
+          <name>SAI_HOSTIF_PACKET_ATTR_TIMESTAMP</name>
+          <briefdescription>
+<para>Timestamp. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>The timestamp on which the packet was received, or sent for PTP TX event.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_timespec_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggadbd461f30a838a8c39e331e1afee71dda1b4198d536fe0952591948e80a19b0b3" prot="public">
+          <name>SAI_HOSTIF_PACKET_ATTR_EGRESS_QUEUE_INDEX</name>
+          <briefdescription>
+<para>Egress queue index. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>The egress queue id for egress port or LAG.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggadbd461f30a838a8c39e331e1afee71dda132414697f424b6f1ae9d881b958c546" prot="public">
+          <name>SAI_HOSTIF_PACKET_ATTR_ZERO_COPY_TX</name>
+          <briefdescription>
+<para>Flag to convey that buffer passed to sai_send_hostif_packet_fn can be used directly and does not need to be copied over. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggadbd461f30a838a8c39e331e1afee71ddabf62b8f86ed31eca26bf69c7f0ab4908" prot="public">
+          <name>SAI_HOSTIF_PACKET_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggadbd461f30a838a8c39e331e1afee71dda109a173bc512605c510e6282791897ec" prot="public">
+          <name>SAI_HOSTIF_PACKET_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIHOSTINTF_1ggadbd461f30a838a8c39e331e1afee71dda3a1765af01a6074d7bd058494d4cee7a" prot="public">
+          <name>SAI_HOSTIF_PACKET_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Host interface packet attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="1224" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="1225" bodyend="1334"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1ga52bd52749e1bbb51eeec91bb895afb95" prot="public" static="no">
+        <type>enum <ref refid="group__SAIHOSTINTF_1gab760579bf061179f1c0e0f6e5e6b035b" kindref="member">_sai_hostif_trap_group_attr_t</ref></type>
+        <definition>typedef enum _sai_hostif_trap_group_attr_t sai_hostif_trap_group_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_hostif_trap_group_attr_t</name>
+        <briefdescription>
+<para>Host interface trap group attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="112" column="30"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1gad861a00452ddce8cd6e00e3fa6e95d64" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_hostif_trap_group_fn) (_Out_ sai_object_id_t *hostif_trap_group_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *hostif_trap_group_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_hostif_trap_group_fn</name>
+        <briefdescription>
+<para>Create host interface trap group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">hostif_trap_group_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Host interface trap group id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="124" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1gac004ca35389860f2a0d40a21ad993aca" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_hostif_trap_group_fn) (_In_ sai_object_id_t hostif_trap_group_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t hostif_trap_group_id)</argsstring>
+        <name>sai_remove_hostif_trap_group_fn</name>
+        <briefdescription>
+<para>Remove host interface trap group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">hostif_trap_group_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Host interface trap group id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="137" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="137" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1ga3728a77291c6691515fe14c5fb58ab35" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_hostif_trap_group_attribute_fn) (_In_ sai_object_id_t hostif_trap_group_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t hostif_trap_group_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_hostif_trap_group_attribute_fn</name>
+        <briefdescription>
+<para>Set host interface trap group attribute value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">hostif_trap_group_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Host interface trap group id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="148" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1ga13e38a7e9744776505c211bd51de36a1" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_hostif_trap_group_attribute_fn) (_In_ sai_object_id_t hostif_trap_group_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t hostif_trap_group_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_hostif_trap_group_attribute_fn</name>
+        <briefdescription>
+<para>Get host interface trap group attribute value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">hostif_trap_group_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Host interface trap group id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="161" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1gabeec7560323648a622ae1331297b0446" prot="public" static="no">
+        <type>enum <ref refid="group__SAIHOSTINTF_1ga99d83686daf81153e6d5a161fbbda0c9" kindref="member">_sai_hostif_trap_type_t</ref></type>
+        <definition>typedef enum _sai_hostif_trap_type_t sai_hostif_trap_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_hostif_trap_type_t</name>
+        <briefdescription>
+<para>Host interface trap type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Flags:</title><para> @@flags           ranges </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="527" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1gad0760d471a98b222c6c8da89a2f3958a" prot="public" static="no">
+        <type>enum <ref refid="group__SAIHOSTINTF_1gad8175d7d802ee018bdd0036e8d1e050b" kindref="member">_sai_hostif_trap_attr_t</ref></type>
+        <definition>typedef enum _sai_hostif_trap_attr_t sai_hostif_trap_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_hostif_trap_attr_t</name>
+        <briefdescription>
+<para>Host interface trap attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="623" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1ga5a5e06d8d8f86ff2cbc00d0f2a741005" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_hostif_trap_fn) (_Out_ sai_object_id_t *hostif_trap_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *hostif_trap_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_hostif_trap_fn</name>
+        <briefdescription>
+<para>Create host interface trap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">hostif_trap_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Host interface trap id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="635" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="635" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1ga5a600169b29625b27f284746c7f88c47" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_hostif_trap_fn) (_In_ sai_object_id_t hostif_trap_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t hostif_trap_id)</argsstring>
+        <name>sai_remove_hostif_trap_fn</name>
+        <briefdescription>
+<para>Remove host interface trap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">hostif_trap_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Host interface trap id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="648" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="648" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1gaf60d3614a61f5c859c1d742d1f0d7ed3" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_hostif_trap_attribute_fn) (_In_ sai_object_id_t hostif_trap_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t hostif_trap_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_hostif_trap_attribute_fn</name>
+        <briefdescription>
+<para>Set trap attribute value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">hostif_trap_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Host interface trap id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="659" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="659" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1gaef2444992786f034af5682c074213471" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_hostif_trap_attribute_fn) (_In_ sai_object_id_t hostif_trap_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t hostif_trap_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_hostif_trap_attribute_fn</name>
+        <briefdescription>
+<para>Get trap attribute value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">hostif_trap_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Host interface trap id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="672" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="672" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1gaf63d7f9d9275d30cdfa60ea745c6c920" prot="public" static="no">
+        <type>enum <ref refid="group__SAIHOSTINTF_1ga5276040374e925d269744cd2f015d250" kindref="member">_sai_hostif_user_defined_trap_type_t</ref></type>
+        <definition>typedef enum _sai_hostif_user_defined_trap_type_t sai_hostif_user_defined_trap_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_hostif_user_defined_trap_type_t</name>
+        <briefdescription>
+<para>Host interface user defined trap type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>User defined traps action is controlled by the referencing object. For example, ACL entry with packet action trap and user trap object ID </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="723" column="37"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1gabf565f857ead980697ba66f757ef9510" prot="public" static="no">
+        <type>enum <ref refid="group__SAIHOSTINTF_1gabdc80e767d1eda422ef477c76ba0d5c8" kindref="member">_sai_hostif_user_defined_trap_attr_t</ref></type>
+        <definition>typedef enum _sai_hostif_user_defined_trap_attr_t sai_hostif_user_defined_trap_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_hostif_user_defined_trap_attr_t</name>
+        <briefdescription>
+<para>Host interface user defined trap attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="776" column="37"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1ga172aa414e9c7fc99a354ca905c794695" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_hostif_user_defined_trap_fn) (_Out_ sai_object_id_t *hostif_user_defined_trap_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *hostif_user_defined_trap_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_hostif_user_defined_trap_fn</name>
+        <briefdescription>
+<para>Create host interface user defined trap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">hostif_user_defined_trap_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Host interface user defined trap id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="788" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="788" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1gab3ac26b11e60741a4a3f27abae627444" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_hostif_user_defined_trap_fn) (_In_ sai_object_id_t hostif_user_defined_trap_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t hostif_user_defined_trap_id)</argsstring>
+        <name>sai_remove_hostif_user_defined_trap_fn</name>
+        <briefdescription>
+<para>Remove host interface user defined trap. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">hostif_user_defined_trap_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Host interface user defined trap id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="801" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="801" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1ga588dea9a99fbfe4da6c082a1c6a62299" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_hostif_user_defined_trap_attribute_fn) (_In_ sai_object_id_t hostif_user_defined_trap_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t hostif_user_defined_trap_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_hostif_user_defined_trap_attribute_fn</name>
+        <briefdescription>
+<para>Set user defined trap attribute value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">hostif_user_defined_trap_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Host interface user defined trap id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="812" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="812" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1ga76885c007c4957e0f8c3dd9eb261300f" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_hostif_user_defined_trap_attribute_fn) (_In_ sai_object_id_t hostif_user_defined_trap_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t hostif_user_defined_trap_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_hostif_user_defined_trap_attribute_fn</name>
+        <briefdescription>
+<para>Get user defined trap attribute value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">hostif_user_defined_trap_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Host interface user defined trap id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="825" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="825" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1ga9bca962a6184254de0d80a4b35d42a1b" prot="public" static="no">
+        <type>enum <ref refid="group__SAIHOSTINTF_1ga820683e5ff6ed71cb024fd7ff3f63f1e" kindref="member">_sai_hostif_type_t</ref></type>
+        <definition>typedef enum _sai_hostif_type_t sai_hostif_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_hostif_type_t</name>
+        <briefdescription>
+<para>Attribute data for SAI_HOSTIF_ATTR_TYPE. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="844" column="19"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1ga09a8f189471572b8e73d4e35d76c5622" prot="public" static="no">
+        <type>enum <ref refid="group__SAIHOSTINTF_1ga38f277f5f654029f3b501388a56b346a" kindref="member">_sai_hostif_vlan_tag_t</ref></type>
+        <definition>typedef enum _sai_hostif_vlan_tag_t sai_hostif_vlan_tag_t</definition>
+        <argsstring></argsstring>
+        <name>sai_hostif_vlan_tag_t</name>
+        <briefdescription>
+<para>Attribute data for SAI_HOSTIF_ATTR_VLAN_TAG. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="875" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1ga0b48e9f32d59eb55fb859e18cf2860bd" prot="public" static="no">
+        <type>enum <ref refid="group__SAIHOSTINTF_1ga976cb57afc9fc061c2dd087c5460e26c" kindref="member">_sai_hostif_attr_t</ref></type>
+        <definition>typedef enum _sai_hostif_attr_t sai_hostif_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_hostif_attr_t</name>
+        <briefdescription>
+<para>Host interface attribute IDs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="976" column="19"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1ga9e6d1d3a3616edc2147a7e24f399c01b" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_hostif_fn) (_Out_ sai_object_id_t *hostif_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *hostif_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_hostif_fn</name>
+        <briefdescription>
+<para>Create host interface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">hostif_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Host interface id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="988" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="988" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1ga332f0b59862a57becebf82352b47f8aa" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_hostif_fn) (_In_ sai_object_id_t hostif_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t hostif_id)</argsstring>
+        <name>sai_remove_hostif_fn</name>
+        <briefdescription>
+<para>Remove host interface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">hostif_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Host interface id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="1001" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="1001" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1ga5759436f815e027a818181de7fe111f7" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_hostif_attribute_fn) (_In_ sai_object_id_t hostif_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t hostif_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_hostif_attribute_fn</name>
+        <briefdescription>
+<para>Set host interface attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">hostif_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Host interface id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="1012" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="1012" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1ga5ea11e4e6082531ec1e6496c308f1795" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_hostif_attribute_fn) (_In_ sai_object_id_t hostif_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t hostif_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_hostif_attribute_fn</name>
+        <briefdescription>
+<para>Get host interface attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">hostif_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Host interface id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="1025" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="1025" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1ga9094f694f12da3dd69d16e721b089249" prot="public" static="no">
+        <type>enum <ref refid="group__SAIHOSTINTF_1ga5cdc613bbb888d608cfbc5092b130f47" kindref="member">_sai_hostif_table_entry_type_t</ref></type>
+        <definition>typedef enum _sai_hostif_table_entry_type_t sai_hostif_table_entry_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_hostif_table_entry_type_t</name>
+        <briefdescription>
+<para>Attribute data for SAI_HOSTIF_TABLE_ENTRY_ATTR_TYPE. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="1050" column="31"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1gae53b8d93e0313bf5cafd1155d3406dd6" prot="public" static="no">
+        <type>enum <ref refid="group__SAIHOSTINTF_1ga15e92e1a261903c91b6fb22a661cab57" kindref="member">_sai_hostif_table_entry_channel_type_t</ref></type>
+        <definition>typedef enum _sai_hostif_table_entry_channel_type_t sai_hostif_table_entry_channel_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_hostif_table_entry_channel_type_t</name>
+        <briefdescription>
+<para>Attribute data for SAI_HOSTIF_TABLE_ENTRY_ATTR_CHANNEL_TYPE. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="1075" column="39"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1ga1eb3e9d31b12c9f05b3109679c9a8281" prot="public" static="no">
+        <type>enum <ref refid="group__SAIHOSTINTF_1ga9256291ae3017408639121224712c46e" kindref="member">_sai_hostif_table_entry_attr_t</ref></type>
+        <definition>typedef enum _sai_hostif_table_entry_attr_t sai_hostif_table_entry_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_hostif_table_entry_attr_t</name>
+        <briefdescription>
+<para>Host interface table entry attribute IDs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="1148" column="31"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1ga49dc2795cf6e6ebfc414766625ecad91" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_hostif_table_entry_fn) (_Out_ sai_object_id_t *hostif_table_entry_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *hostif_table_entry_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_hostif_table_entry_fn</name>
+        <briefdescription>
+<para>Create host interface table entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">hostif_table_entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Host interface table entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="1160" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="1160" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1gaeb8fb5f8b5179a1e7d5c3c47c23887cb" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_hostif_table_entry_fn) (_In_ sai_object_id_t hostif_table_entry_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t hostif_table_entry_id)</argsstring>
+        <name>sai_remove_hostif_table_entry_fn</name>
+        <briefdescription>
+<para>Remove host interface table entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">hostif_table_entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Host interface table entry</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="1173" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="1173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1gad813bbf365472995e553c0b368c1e938" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_hostif_table_entry_attribute_fn) (_In_ sai_object_id_t hostif_table_entry_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t hostif_table_entry_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_hostif_table_entry_attribute_fn</name>
+        <briefdescription>
+<para>Set host interface table entry attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">hostif_table_entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Host interface table entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="1184" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="1184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1ga733686cf68b72fe0986c94c7267851b7" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_hostif_table_entry_attribute_fn) (_In_ sai_object_id_t hostif_table_entry_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t hostif_table_entry_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_hostif_table_entry_attribute_fn</name>
+        <briefdescription>
+<para>Get host interface table entry attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">hostif_table_entry_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Host interface table entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="1197" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="1197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1ga0f89e5dda7c2cd775db7bad1237f1687" prot="public" static="no">
+        <type>enum <ref refid="group__SAIHOSTINTF_1ga2bec7bf38599be14c8c759f77a09ef1b" kindref="member">_sai_hostif_tx_type_t</ref></type>
+        <definition>typedef enum _sai_hostif_tx_type_t sai_hostif_tx_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_hostif_tx_type_t</name>
+        <briefdescription>
+<para>Host interface TX type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="1219" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1ga316abd0c96b24c9435ddcc25cdf5a32d" prot="public" static="no">
+        <type>enum <ref refid="group__SAIHOSTINTF_1gadbd461f30a838a8c39e331e1afee71dd" kindref="member">_sai_hostif_packet_attr_t</ref></type>
+        <definition>typedef enum _sai_hostif_packet_attr_t sai_hostif_packet_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_hostif_packet_attr_t</name>
+        <briefdescription>
+<para>Host interface packet attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="1334" column="26"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1ga127afe4dff9f5c531f948fd1a6921950" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_recv_hostif_packet_fn) (_In_ sai_object_id_t hostif_id, _Inout_ sai_size_t *buffer_size, _Out_ void *buffer, _Inout_ uint32_t *attr_count, _Out_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t hostif_id, _Inout_ sai_size_t *buffer_size, _Out_ void *buffer, _Inout_ uint32_t *attr_count, _Out_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_recv_hostif_packet_fn</name>
+        <briefdescription>
+<para>Hostif receive function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">hostif_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Host interface id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">buffer_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Allocated buffer size [in], Actual packet size in bytes [out] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Packet buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Allocated list size [in], Number of attributes [out] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success <ref refid="group__SAISTATUS_1ga7255b9d60f461644acd8459627a43288" kindref="member">SAI_STATUS_BUFFER_OVERFLOW</ref> if buffer_size is insufficient, and buffer_size will be filled with required size. Or if attr_count is insufficient, and attr_count will be filled with required count. Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="1350" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="1350" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1ga31cb87e51882688f49e85c52b2791bb4" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_send_hostif_packet_fn) (_In_ sai_object_id_t hostif_id, _In_ sai_size_t buffer_size, _In_ const void *buffer, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t hostif_id, _In_ sai_size_t buffer_size, _In_ const void *buffer, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_send_hostif_packet_fn</name>
+        <briefdescription>
+<para>Hostif send function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">hostif_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Host interface id. When sending through FD channel, fill SAI_OBJECT_TYPE_HOST_INTERFACE object, of type <ref refid="group__SAIHOSTINTF_1gga820683e5ff6ed71cb024fd7ff3f63f1ea50cb3f08aeaaebbfd53b208510354f1b" kindref="member">SAI_HOSTIF_TYPE_FD</ref>. When sending through CB channel, fill Switch Object ID, SAI_OBJECT_TYPE_SWITCH. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Packet size in bytes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Packet buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="1370" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="1370" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1ga4d0b8e90cf980f8545fc2fca41ba2e2a" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_allocate_hostif_packet_fn) (_In_ sai_object_id_t hostif_id, _In_ sai_size_t buffer_size, _Out_ void **buffer, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t hostif_id, _In_ sai_size_t buffer_size, _Out_ void **buffer, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_allocate_hostif_packet_fn</name>
+        <briefdescription>
+<para>Hostif allocate function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">hostif_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Host interface id. When sending through FD channel, fill SAI_OBJECT_TYPE_HOST_INTERFACE object, of type <ref refid="group__SAIHOSTINTF_1gga820683e5ff6ed71cb024fd7ff3f63f1ea50cb3f08aeaaebbfd53b208510354f1b" kindref="member">SAI_HOSTIF_TYPE_FD</ref>. When sending through CB channel, fill Switch Object ID, SAI_OBJECT_TYPE_SWITCH. On sending such packets (say via the sai_send_hostif_packet_fn) application should set SAI_HOSTIF_PACKET_ATTR_ZERO_COPY_TX attribute to true </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Packet size in bytes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to Packet buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="1392" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="1392" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1ga6a9358c5aae7fa5235e10acfa262d005" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_free_hostif_packet_fn) (_In_ sai_object_id_t hostif_id, _Inout_ void *buffer)</definition>
+        <argsstring>)(_In_ sai_object_id_t hostif_id, _Inout_ void *buffer)</argsstring>
+        <name>sai_free_hostif_packet_fn</name>
+        <briefdescription>
+<para>Hostif free function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">hostif_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Host interface id. When sending through FD channel, fill SAI_OBJECT_TYPE_HOST_INTERFACE object, of type <ref refid="group__SAIHOSTINTF_1gga820683e5ff6ed71cb024fd7ff3f63f1ea50cb3f08aeaaebbfd53b208510354f1b" kindref="member">SAI_HOSTIF_TYPE_FD</ref>. When sending through CB channel, fill Switch Object ID, SAI_OBJECT_TYPE_SWITCH. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Packet buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="1409" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="1409" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1ga047654715f2d7ba9ab5cd8637ac9bf47" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* sai_packet_event_notification_fn) (_In_ sai_object_id_t switch_id, _In_ sai_size_t buffer_size, _In_ const void *buffer, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t switch_id, _In_ sai_size_t buffer_size, _In_ const void *buffer, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_packet_event_notification_fn</name>
+        <briefdescription>
+<para>Hostif receive callback. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Count:</title><para> @@count           attr_list[attr_count] </para>
+</simplesect>
+<simplesect kind="par"><title>Count:</title><para> @@count           buffer[buffer_size] </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         attr_list SAI_OBJECT_TYPE_HOSTIF_PACKET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         switch_id SAI_OBJECT_TYPE_SWITCH</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch Object ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Actual packet size in bytes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Packet buffer </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="1427" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saihostif.h" bodystart="1427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIHOSTINTF_1gaa82f405c602536e6c19b9a472f42054c" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__hostif__api__t" kindref="compound">_sai_hostif_api_t</ref></type>
+        <definition>typedef struct _sai_hostif_api_t sai_hostif_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_hostif_api_t</name>
+        <briefdescription>
+<para>Hostif methods table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h" line="1463" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module defines SAI host interface. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2014 Microsoft Open Technologies, Inc.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <ulink url="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</ulink></para>
+<para>THIS CODE IS PROVIDED ON AN <emphasis>AS IS</emphasis> BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</para>
+<para>See the Apache Version 2.0 License for specific language governing permissions and limitations under the License.</para>
+<para>Microsoft would like to thank the following companies for their review and assistance with these files: Intel Corporation, Mellanox Technologies Ltd, Dell Products, L.P., Facebook, Inc., Marvell International Ltd.</para>
+<para><simplesect kind="par"><title>Abstract</title><para></para>
+</simplesect>
+This module defines SAI Host Interface which is responsible for creating/deleting Linux netdev corresponding to the host interface type. All the management operations of the netdevs such as changing IP address are outside the scope of SAI. </para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saihostif.h"/>
+  </compounddef>
+</doxygen>

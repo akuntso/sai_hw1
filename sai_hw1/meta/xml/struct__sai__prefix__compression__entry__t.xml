@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__prefix__compression__entry__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_prefix_compression_entry_t</compoundname>
+    <includes refid="saiprefixcompression_8h" local="no">saiprefixcompression.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__prefix__compression__entry__t_1a9e5e240bba6871c95fa85b16b74e9d03" prot="public" static="no" mutable="no">
+        <type>sai_object_id_t</type>
+        <definition>sai_object_id_t _sai_prefix_compression_entry_t::switch_id</definition>
+        <argsstring></argsstring>
+        <name>switch_id</name>
+        <briefdescription>
+<para>Switch ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_SWITCH </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" line="126" column="21" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__prefix__compression__entry__t_1a4b57e6d3e24aabdcc3fd22434e0076b8" prot="public" static="no" mutable="no">
+        <type>sai_object_id_t</type>
+        <definition>sai_object_id_t _sai_prefix_compression_entry_t::prefix_table_id</definition>
+        <argsstring></argsstring>
+        <name>prefix_table_id</name>
+        <briefdescription>
+<para>Prefix Compression Table ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_PREFIX_COMPRESSION_TABLE </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" line="133" column="21" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__prefix__compression__entry__t_1a7c5ead859c997f548821418b24668c57" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__sai__ip__prefix__t" kindref="compound">sai_ip_prefix_t</ref></type>
+        <definition>sai_ip_prefix_t _sai_prefix_compression_entry_t::prefix</definition>
+        <argsstring></argsstring>
+        <name>prefix</name>
+        <briefdescription>
+<para>IP Prefix Destination. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" line="138" column="21" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Prefix Compression entry. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>_sai_ip_prefix_t</label>
+        <link refid="struct__sai__ip__prefix__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>addr</edgelabel>
+          <edgelabel>mask</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>_sai_prefix_compression_entry_t</label>
+        <link refid="struct__sai__prefix__compression__entry__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>prefix</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>_sai_ip_addr_t</label>
+        <link refid="union__sai__ip__addr__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" line="119" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiprefixcompression.h" bodystart="120" bodyend="140"/>
+    <listofallmembers>
+      <member refid="struct__sai__prefix__compression__entry__t_1a7c5ead859c997f548821418b24668c57" prot="public" virt="non-virtual"><scope>_sai_prefix_compression_entry_t</scope><name>prefix</name></member>
+      <member refid="struct__sai__prefix__compression__entry__t_1a4b57e6d3e24aabdcc3fd22434e0076b8" prot="public" virt="non-virtual"><scope>_sai_prefix_compression_entry_t</scope><name>prefix_table_id</name></member>
+      <member refid="struct__sai__prefix__compression__entry__t_1a9e5e240bba6871c95fa85b16b74e9d03" prot="public" virt="non-virtual"><scope>_sai_prefix_compression_entry_t</scope><name>switch_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

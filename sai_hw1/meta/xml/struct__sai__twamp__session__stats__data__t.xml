@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__twamp__session__stats__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_twamp_session_stats_data_t</compoundname>
+    <includes refid="saitwamp_8h" local="no">saitwamp.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__twamp__session__stats__data__t_1a9bc8c7f26d79f53a7af483c6a6fd2bb7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _sai_twamp_session_stats_data_t::index</definition>
+        <argsstring></argsstring>
+        <name>index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>TWAMP session statistics index </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitwamp.h" line="663" column="14" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitwamp.h" bodystart="663" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__twamp__session__stats__data__t_1ad74ff858bbb4f0ba2483df9e1a42c19a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _sai_twamp_session_stats_data_t::number_of_counters</definition>
+        <argsstring></argsstring>
+        <name>number_of_counters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Counters number </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitwamp.h" line="666" column="14" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitwamp.h" bodystart="666" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__twamp__session__stats__data__t_1a78ab6615b331e14c12df636b1b479838" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITWAMP_1ga87d03e02bad1e618fe945162b525ddd8" kindref="member">sai_twamp_session_stat_t</ref> *</type>
+        <definition>sai_twamp_session_stat_t* _sai_twamp_session_stats_data_t::counters_ids</definition>
+        <argsstring></argsstring>
+        <name>counters_ids</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the TWAMP session statistics counters ids </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitwamp.h" line="669" column="30" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitwamp.h" bodystart="669" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__twamp__session__stats__data__t_1abd99cd5a0b20522ff896dfb722e53651" prot="public" static="no" mutable="no">
+        <type>uint64_t *</type>
+        <definition>uint64_t* _sai_twamp_session_stats_data_t::counters</definition>
+        <argsstring></argsstring>
+        <name>counters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Specifies the TWAMP session statistics counters </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitwamp.h" line="672" column="14" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitwamp.h" bodystart="672" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Notification data format received from SAI TWAMP callback. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Count:</title><para> @@count           counters_ids[number_of_counters] </para>
+</simplesect>
+<simplesect kind="par"><title>Count:</title><para> @@count           counters[number_of_counters] </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saitwamp.h" line="660" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitwamp.h" bodystart="661" bodyend="674"/>
+    <listofallmembers>
+      <member refid="struct__sai__twamp__session__stats__data__t_1abd99cd5a0b20522ff896dfb722e53651" prot="public" virt="non-virtual"><scope>_sai_twamp_session_stats_data_t</scope><name>counters</name></member>
+      <member refid="struct__sai__twamp__session__stats__data__t_1a78ab6615b331e14c12df636b1b479838" prot="public" virt="non-virtual"><scope>_sai_twamp_session_stats_data_t</scope><name>counters_ids</name></member>
+      <member refid="struct__sai__twamp__session__stats__data__t_1a9bc8c7f26d79f53a7af483c6a6fd2bb7" prot="public" virt="non-virtual"><scope>_sai_twamp_session_stats_data_t</scope><name>index</name></member>
+      <member refid="struct__sai__twamp__session__stats__data__t_1ad74ff858bbb4f0ba2483df9e1a42c19a" prot="public" virt="non-virtual"><scope>_sai_twamp_session_stats_data_t</scope><name>number_of_counters</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

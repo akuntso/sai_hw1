@@ -1,0 +1,1338 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="sainat_8h" kind="file" language="C++">
+    <compoundname>sainat.h</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+    <includedby refid="sai_8h" local="yes">/home/andrii/sai_hw1/SAI/inc/sai.h</includedby>
+    <includedby refid="saiobject_8h" local="no">/home/andrii/sai_hw1/SAI/inc/saiobject.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/sainat.h</label>
+        <link refid="sainat_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="5">
+        <label>sys/types.h</label>
+      </node>
+      <node id="2">
+        <label>saitypes.h</label>
+        <link refid="saitypes_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/sainat.h</label>
+        <link refid="sainat_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/andrii/sai_hw1/SAI/inc/sai.h</label>
+        <link refid="sai_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/andrii/sai_hw1/SAI/inc/saiobject.h</label>
+        <link refid="saiobject_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</label>
+        <link refid="saiextensions_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct__sai__nat__entry__key__t" prot="public">_sai_nat_entry_key_t</innerclass>
+    <innerclass refid="struct__sai__nat__entry__mask__t" prot="public">_sai_nat_entry_mask_t</innerclass>
+    <innerclass refid="struct__sai__nat__entry__data__t" prot="public">_sai_nat_entry_data_t</innerclass>
+    <innerclass refid="struct__sai__nat__entry__t" prot="public">_sai_nat_entry_t</innerclass>
+    <innerclass refid="struct__sai__nat__event__notification__data__t" prot="public">_sai_nat_event_notification_data_t</innerclass>
+    <innerclass refid="struct__sai__nat__api__t" prot="public">_sai_nat_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAINAT_1ga4d3e682beb061a94e9a372988f3621a1" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_nat_type_t</name>
+        <enumvalue id="group__SAINAT_1gga4d3e682beb061a94e9a372988f3621a1a07528784900be413113016bcd996c91e" prot="public">
+          <name>SAI_NAT_TYPE_NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>No NAT </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINAT_1gga4d3e682beb061a94e9a372988f3621a1a15fca235964741d262207e39df8dcd1c" prot="public">
+          <name>SAI_NAT_TYPE_SOURCE_NAT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Source NAT </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINAT_1gga4d3e682beb061a94e9a372988f3621a1aa1649810d6f3e612843c2d00cd4fcc6a" prot="public">
+          <name>SAI_NAT_TYPE_DESTINATION_NAT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Destination NAT </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINAT_1gga4d3e682beb061a94e9a372988f3621a1a79d2fd31bd9ad4bf6fd1c4537f5db2c6" prot="public">
+          <name>SAI_NAT_TYPE_DOUBLE_NAT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Double NAT </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINAT_1gga4d3e682beb061a94e9a372988f3621a1aa4525ce33c0283ec4374006d48aa6a29" prot="public">
+          <name>SAI_NAT_TYPE_DESTINATION_NAT_POOL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Destination NAT Pool </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>NAT Type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="39" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainat.h" bodystart="40" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAINAT_1ga51fa4d72f69156ad4cbf96b4ae60ae3d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_nat_entry_attr_t</name>
+        <enumvalue id="group__SAINAT_1gga51fa4d72f69156ad4cbf96b4ae60ae3dafa1080debe7c97fb004f92592fc833af" prot="public">
+          <name>SAI_NAT_ENTRY_ATTR_START</name>
+          <briefdescription>
+<para>Start of Attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINAT_1gga51fa4d72f69156ad4cbf96b4ae60ae3daac32d3e659c272432bc60ed0d00c6bd2" prot="public">
+          <name>SAI_NAT_ENTRY_ATTR_NAT_TYPE</name>
+          <initializer>= SAI_NAT_ENTRY_ATTR_START</initializer>
+          <briefdescription>
+<para>NAT Type defined in sai_nat_type_t. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_nat_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NAT_TYPE_NONE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINAT_1gga51fa4d72f69156ad4cbf96b4ae60ae3da5912e4e666d990a9f8e2d8527450e2c4" prot="public">
+          <name>SAI_NAT_ENTRY_ATTR_SRC_IP</name>
+          <briefdescription>
+<para>Replace source IPv4 address in packet. NAT actions will be (source/destination/both is identified by type of NAT) </para>
+          </briefdescription>
+          <detaileddescription>
+<para><itemizedlist>
+<listitem><para>replace IP address</para>
+</listitem><listitem><para>replace layer 4 source port</para>
+</listitem><listitem><para>replace layer 4 destination port</para>
+</listitem></itemizedlist>
+</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip4_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_NAT_ENTRY_ATTR_NAT_TYPE == SAI_NAT_TYPE_SOURCE_NAT or SAI_NAT_ENTRY_ATTR_NAT_TYPE == SAI_NAT_TYPE_DOUBLE_NAT </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINAT_1gga51fa4d72f69156ad4cbf96b4ae60ae3daed008eb230a09e2d3355d587bd8cf901" prot="public">
+          <name>SAI_NAT_ENTRY_ATTR_SRC_IP_MASK</name>
+          <briefdescription>
+<para>Mask for source IPv4 address in packet. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip4_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_NAT_ENTRY_ATTR_NAT_TYPE == SAI_NAT_TYPE_SOURCE_NAT or SAI_NAT_ENTRY_ATTR_NAT_TYPE == SAI_NAT_TYPE_DOUBLE_NAT </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINAT_1gga51fa4d72f69156ad4cbf96b4ae60ae3da9311fd59b9f2f33867ca9567240c0e1a" prot="public">
+          <name>SAI_NAT_ENTRY_ATTR_VR_ID</name>
+          <briefdescription>
+<para>Replace virtual router id associate with DST_IP NAT actions will be (source/destination/both is identified by type of NAT) </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_VIRTUAL_ROUTER </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_NAT_ENTRY_ATTR_NAT_TYPE == SAI_NAT_TYPE_DESTINATION_NAT or SAI_NAT_ENTRY_ATTR_NAT_TYPE == SAI_NAT_TYPE_DOUBLE_NAT </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINAT_1gga51fa4d72f69156ad4cbf96b4ae60ae3da62e5aa4708768f09569e788e47d4d735" prot="public">
+          <name>SAI_NAT_ENTRY_ATTR_DST_IP</name>
+          <briefdescription>
+<para>Replace destination IPv4 address in packet. NAT actions will be (source/destination/both is identified by type of NAT) </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip4_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_NAT_ENTRY_ATTR_NAT_TYPE == SAI_NAT_TYPE_DESTINATION_NAT or SAI_NAT_ENTRY_ATTR_NAT_TYPE == SAI_NAT_TYPE_DOUBLE_NAT </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINAT_1gga51fa4d72f69156ad4cbf96b4ae60ae3daef4c24eddeb29a9dbffb20366640da92" prot="public">
+          <name>SAI_NAT_ENTRY_ATTR_DST_IP_MASK</name>
+          <briefdescription>
+<para>Mask for destination IPv4 address in packet. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip4_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_NAT_ENTRY_ATTR_NAT_TYPE == SAI_NAT_TYPE_DESTINATION_NAT or SAI_NAT_ENTRY_ATTR_NAT_TYPE == SAI_NAT_TYPE_DOUBLE_NAT </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINAT_1gga51fa4d72f69156ad4cbf96b4ae60ae3da58c0396363e1ad456f9a1eb3bd569d83" prot="public">
+          <name>SAI_NAT_ENTRY_ATTR_L4_SRC_PORT</name>
+          <briefdescription>
+<para>Replace L4 source port in packet. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          false </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINAT_1gga51fa4d72f69156ad4cbf96b4ae60ae3da6cebe84be894f87159f9ea8e143f439c" prot="public">
+          <name>SAI_NAT_ENTRY_ATTR_L4_DST_PORT</name>
+          <briefdescription>
+<para>Replace L4 destination port in packet. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          false </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINAT_1gga51fa4d72f69156ad4cbf96b4ae60ae3da5d2e967baa457fbbdf41f03cbb773319" prot="public">
+          <name>SAI_NAT_ENTRY_ATTR_ENABLE_PACKET_COUNT</name>
+          <briefdescription>
+<para>Enable/disable packet count. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINAT_1gga51fa4d72f69156ad4cbf96b4ae60ae3dae5f95406b00a4a97a1964765239d7c34" prot="public">
+          <name>SAI_NAT_ENTRY_ATTR_PACKET_COUNT</name>
+          <briefdescription>
+<para>Per NAT entry packet count. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINAT_1gga51fa4d72f69156ad4cbf96b4ae60ae3da71b8094ce13664bc7f2f1caf754f6114" prot="public">
+          <name>SAI_NAT_ENTRY_ATTR_ENABLE_BYTE_COUNT</name>
+          <briefdescription>
+<para>Enable/disable byte count. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINAT_1gga51fa4d72f69156ad4cbf96b4ae60ae3da5d4d00426f8a9322442933fba472af4b" prot="public">
+          <name>SAI_NAT_ENTRY_ATTR_BYTE_COUNT</name>
+          <briefdescription>
+<para>Per NAT entry byte count. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINAT_1gga51fa4d72f69156ad4cbf96b4ae60ae3da81828f70d3d5853183dabb6bf953ebb1" prot="public">
+          <name>SAI_NAT_ENTRY_ATTR_HIT_BIT_COR</name>
+          <briefdescription>
+<para>NAT entry hit bit clear on read flag. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINAT_1gga51fa4d72f69156ad4cbf96b4ae60ae3dac98964077318c1bbc3521ddc985ed845" prot="public">
+          <name>SAI_NAT_ENTRY_ATTR_HIT_BIT</name>
+          <briefdescription>
+<para>Per NAT entry hit bit state. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINAT_1gga51fa4d72f69156ad4cbf96b4ae60ae3da943af1c6ccc3310fa56ec32c799389d7" prot="public">
+          <name>SAI_NAT_ENTRY_ATTR_AGING_TIME</name>
+          <briefdescription>
+<para>NAT entry aging time in seconds. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Zero means aging is disabled.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINAT_1gga51fa4d72f69156ad4cbf96b4ae60ae3dad5db781c1b8a3c9e1e4180c28106af88" prot="public">
+          <name>SAI_NAT_ENTRY_ATTR_END</name>
+          <briefdescription>
+<para>End of NAT Entry attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINAT_1gga51fa4d72f69156ad4cbf96b4ae60ae3da591678441d6272bf5acb567dbd4d5038" prot="public">
+          <name>SAI_NAT_ENTRY_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINAT_1gga51fa4d72f69156ad4cbf96b4ae60ae3da2c38a2fea3632e245fb6919f98aec33a" prot="public">
+          <name>SAI_NAT_ENTRY_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>NAT Entry Attributes for Match. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="61" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainat.h" bodystart="62" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAINAT_1ga1517c5f6f1db5d8e8e96c94988cf8661" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_nat_event_t</name>
+        <enumvalue id="group__SAINAT_1gga1517c5f6f1db5d8e8e96c94988cf8661a5e94132372f054f8a3bf3e45915179d3" prot="public">
+          <name>SAI_NAT_EVENT_NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>NAT entry event none </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINAT_1gga1517c5f6f1db5d8e8e96c94988cf8661ae15c8a3aed1ae29f8328b3752b64f6fc" prot="public">
+          <name>SAI_NAT_EVENT_AGED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>NAT entry event aged </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>NAT event type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="351" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainat.h" bodystart="352" bodyend="359"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAINAT_1gaa821dfc74349eea6183add5b6d1aaa60" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_nat_zone_counter_attr_t</name>
+        <enumvalue id="group__SAINAT_1ggaa821dfc74349eea6183add5b6d1aaa60ab36b7d8cb55b365511586156c60ba085" prot="public">
+          <name>SAI_NAT_ZONE_COUNTER_ATTR_START</name>
+          <briefdescription>
+<para>Start of Attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINAT_1ggaa821dfc74349eea6183add5b6d1aaa60ae662ee73c247d9a2389fc7e15d0002ec" prot="public">
+          <name>SAI_NAT_ZONE_COUNTER_ATTR_NAT_TYPE</name>
+          <initializer>= SAI_NAT_ZONE_COUNTER_ATTR_START</initializer>
+          <briefdescription>
+<para>NAT Type defined in sai_nat_type_t. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_nat_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NAT_TYPE_NONE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINAT_1ggaa821dfc74349eea6183add5b6d1aaa60a497d0750b811d5b6785866b18a62d52b" prot="public">
+          <name>SAI_NAT_ZONE_COUNTER_ATTR_ZONE_ID</name>
+          <briefdescription>
+<para>NAT Zone ID. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINAT_1ggaa821dfc74349eea6183add5b6d1aaa60ad2f4450ec0a41075cdc84eade90000e1" prot="public">
+          <name>SAI_NAT_ZONE_COUNTER_ATTR_ENABLE_DISCARD</name>
+          <briefdescription>
+<para>Enable/disable discard count. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINAT_1ggaa821dfc74349eea6183add5b6d1aaa60a02cc213feb7c58c1d6bb50a9d8b2e82a" prot="public">
+          <name>SAI_NAT_ZONE_COUNTER_ATTR_DISCARD_PACKET_COUNT</name>
+          <briefdescription>
+<para>Discard packet count. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINAT_1ggaa821dfc74349eea6183add5b6d1aaa60ae24fe55af7e1a621af421e1b5d4f8026" prot="public">
+          <name>SAI_NAT_ZONE_COUNTER_ATTR_ENABLE_TRANSLATION_NEEDED</name>
+          <briefdescription>
+<para>Enable/disable translation needed count. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINAT_1ggaa821dfc74349eea6183add5b6d1aaa60aae2af710e4230dc5a536929394f17450" prot="public">
+          <name>SAI_NAT_ZONE_COUNTER_ATTR_TRANSLATION_NEEDED_PACKET_COUNT</name>
+          <briefdescription>
+<para>Translation needed packet count. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINAT_1ggaa821dfc74349eea6183add5b6d1aaa60ab19f26eae1f702a84552df813581c89a" prot="public">
+          <name>SAI_NAT_ZONE_COUNTER_ATTR_ENABLE_TRANSLATIONS</name>
+          <briefdescription>
+<para>Enable/disable translations count. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINAT_1ggaa821dfc74349eea6183add5b6d1aaa60a6f3bacfd38b3441130f517ff9dd7fe6e" prot="public">
+          <name>SAI_NAT_ZONE_COUNTER_ATTR_TRANSLATIONS_PACKET_COUNT</name>
+          <briefdescription>
+<para>Translations performed packet count. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINAT_1ggaa821dfc74349eea6183add5b6d1aaa60a0480c4fc98604f41471072dcd4117bdf" prot="public">
+          <name>SAI_NAT_ZONE_COUNTER_ATTR_END</name>
+          <briefdescription>
+<para>End of Attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINAT_1ggaa821dfc74349eea6183add5b6d1aaa60a16d190f67c05375a4f8abee31a36411e" prot="public">
+          <name>SAI_NAT_ZONE_COUNTER_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAINAT_1ggaa821dfc74349eea6183add5b6d1aaa60a68181a6674f378cfe589daac0ca04e34" prot="public">
+          <name>SAI_NAT_ZONE_COUNTER_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>NAT zone counters for each NAT type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="533" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainat.h" bodystart="534" bodyend="623"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAINAT_1gaa42d420722ebc7306da3a3fb2a14e764" prot="public" static="no">
+        <type>enum <ref refid="group__SAINAT_1ga4d3e682beb061a94e9a372988f3621a1" kindref="member">_sai_nat_type_t</ref></type>
+        <definition>typedef enum _sai_nat_type_t sai_nat_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_nat_type_t</name>
+        <briefdescription>
+<para>NAT Type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="56" column="16"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINAT_1ga4a31c332c3618627ff910cfc68c289ef" prot="public" static="no">
+        <type>enum <ref refid="group__SAINAT_1ga51fa4d72f69156ad4cbf96b4ae60ae3d" kindref="member">_sai_nat_entry_attr_t</ref></type>
+        <definition>typedef enum _sai_nat_entry_attr_t sai_nat_entry_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_nat_entry_attr_t</name>
+        <briefdescription>
+<para>NAT Entry Attributes for Match. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="234" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINAT_1gacf40fe2c151c34cbdcbd913ada2af213" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__nat__entry__key__t" kindref="compound">_sai_nat_entry_key_t</ref></type>
+        <definition>typedef struct _sai_nat_entry_key_t sai_nat_entry_key_t</definition>
+        <argsstring></argsstring>
+        <name>sai_nat_entry_key_t</name>
+        <briefdescription>
+<para>NAT entry keys API can be invoked with extra keys present. Driver MUST pick the right set of keys for a given NAT type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="269" column="21"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINAT_1gafaa424fe7cb9ce82af21848c9189ad8b" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__nat__entry__mask__t" kindref="compound">_sai_nat_entry_mask_t</ref></type>
+        <definition>typedef struct _sai_nat_entry_mask_t sai_nat_entry_mask_t</definition>
+        <argsstring></argsstring>
+        <name>sai_nat_entry_mask_t</name>
+        <briefdescription>
+<para>NAT entry key masks. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="301" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINAT_1ga87747e4adaebf0069fc39ac6ee5b9b70" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__nat__entry__data__t" kindref="compound">_sai_nat_entry_data_t</ref></type>
+        <definition>typedef struct _sai_nat_entry_data_t sai_nat_entry_data_t</definition>
+        <argsstring></argsstring>
+        <name>sai_nat_entry_data_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="315" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINAT_1gaa6147263f5a705af4580622f3caba4f3" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__nat__entry__t" kindref="compound">_sai_nat_entry_t</ref></type>
+        <definition>typedef struct _sai_nat_entry_t sai_nat_entry_t</definition>
+        <argsstring></argsstring>
+        <name>sai_nat_entry_t</name>
+        <briefdescription>
+<para>NAT entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="346" column="17"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINAT_1gac96bf0bde33a9e18a05286d58c7e7d49" prot="public" static="no">
+        <type>enum <ref refid="group__SAINAT_1ga1517c5f6f1db5d8e8e96c94988cf8661" kindref="member">_sai_nat_event_t</ref></type>
+        <definition>typedef enum _sai_nat_event_t sai_nat_event_t</definition>
+        <argsstring></argsstring>
+        <name>sai_nat_event_t</name>
+        <briefdescription>
+<para>NAT event type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="359" column="17"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINAT_1ga775c97f0ca14a2a2bbc2d0b33d5095aa" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__nat__event__notification__data__t" kindref="compound">_sai_nat_event_notification_data_t</ref></type>
+        <definition>typedef struct _sai_nat_event_notification_data_t sai_nat_event_notification_data_t</definition>
+        <argsstring></argsstring>
+        <name>sai_nat_event_notification_data_t</name>
+        <briefdescription>
+<para>Notification data format received from SAI NAT callback. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Count:</title><para> @@count           attr[attr_count] </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="374" column="35"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINAT_1gac987ec3839ada7d74fea5d19cb61603d" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_nat_entry_fn) (_In_ const sai_nat_entry_t *nat_entry, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ const sai_nat_entry_t *nat_entry, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_nat_entry_fn</name>
+        <briefdescription>
+<para>Create and return a NAT object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">nat_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NAT entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="385" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainat.h" bodystart="385" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINAT_1ga8532e36e56de2ab6e54c5d74a06bc9d4" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_nat_entry_fn) (_In_ const sai_nat_entry_t *nat_entry)</definition>
+        <argsstring>)(_In_ const sai_nat_entry_t *nat_entry)</argsstring>
+        <name>sai_remove_nat_entry_fn</name>
+        <briefdescription>
+<para>Remove NAT entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">nat_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NAT entry to be removed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="397" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainat.h" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINAT_1ga3b6b4552d9a2270093e60272dc340080" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_nat_entry_attribute_fn) (_In_ const sai_nat_entry_t *nat_entry, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ const sai_nat_entry_t *nat_entry, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_nat_entry_attribute_fn</name>
+        <briefdescription>
+<para>Set NAT entry attribute value(s). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">nat_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NAT entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute to set</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="408" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainat.h" bodystart="408" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINAT_1ga12915b48e93406eb112eff72c27e8548" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_nat_entry_attribute_fn) (_In_ const sai_nat_entry_t *nat_entry, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ const sai_nat_entry_t *nat_entry, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_nat_entry_attribute_fn</name>
+        <briefdescription>
+<para>Get values for specified NAT entry attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">nat_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NAT entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="421" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainat.h" bodystart="421" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINAT_1gae59b47d28e106ffcb58d9df9396f1b81" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* sai_nat_event_notification_fn) (_In_ uint32_t count, _In_ const sai_nat_event_notification_data_t *data)</definition>
+        <argsstring>)(_In_ uint32_t count, _In_ const sai_nat_event_notification_data_t *data)</argsstring>
+        <name>sai_nat_event_notification_fn</name>
+        <briefdescription>
+<para>NAT notifications. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Count:</title><para> @@count           data[count]</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of notifications </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to NAT event notification data array </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="434" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainat.h" bodystart="434" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINAT_1ga9513f80b6e1ab450bf14352abb82a76d" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_create_nat_entry_fn) (_In_ uint32_t object_count, _In_ const sai_nat_entry_t *nat_entry, _In_ const uint32_t *attr_count, _In_ const sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_nat_entry_t *nat_entry, _In_ const uint32_t *attr_count, _In_ const sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_create_nat_entry_fn</name>
+        <briefdescription>
+<para>Bulk create NAT entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to create </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nat_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of object to create </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attr_count. Caller passes the number of attribute for each object to create. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attributes for every object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are created or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to create. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="455" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainat.h" bodystart="455" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINAT_1gafba3d857f6e9ac3a1fe8111000eacf3b" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_remove_nat_entry_fn) (_In_ uint32_t object_count, _In_ const sai_nat_entry_t *nat_entry, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_nat_entry_t *nat_entry, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_remove_nat_entry_fn</name>
+        <briefdescription>
+<para>Bulk remove NAT entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to remove </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nat_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of objects to remove </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are removed or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to remove. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="477" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainat.h" bodystart="477" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINAT_1ga748ca64c85323616c8518ade1ac2a89b" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_set_nat_entry_attribute_fn) (_In_ uint32_t object_count, _In_ const sai_nat_entry_t *nat_entry, _In_ const sai_attribute_t *attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_nat_entry_t *nat_entry, _In_ const sai_attribute_t *attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_set_nat_entry_attribute_fn</name>
+        <briefdescription>
+<para>Bulk set attribute on NAT entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to set attribute </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nat_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of objects to set attribute </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attributes to set on objects, one attribute per object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are removed or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to remove. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="498" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainat.h" bodystart="498" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINAT_1gaa21ecc79a22b40ba8bc905160de0f30c" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_get_nat_entry_attribute_fn) (_In_ uint32_t object_count, _In_ const sai_nat_entry_t *nat_entry, _In_ const uint32_t *attr_count, _Inout_ sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_nat_entry_t *nat_entry, _In_ const uint32_t *attr_count, _Inout_ sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_get_nat_entry_attribute_fn</name>
+        <briefdescription>
+<para>Bulk get attribute on NAT entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to set attribute </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">nat_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of objects to set attribute </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attr_count. Caller passes the number of attribute for each object to get </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attributes to set on objects, one attribute per object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are removed or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to remove. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="522" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainat.h" bodystart="522" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINAT_1ga6c558d72f6a3136dad8efd51df5ed866" prot="public" static="no">
+        <type>enum <ref refid="group__SAINAT_1gaa821dfc74349eea6183add5b6d1aaa60" kindref="member">_sai_nat_zone_counter_attr_t</ref></type>
+        <definition>typedef enum _sai_nat_zone_counter_attr_t sai_nat_zone_counter_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_nat_zone_counter_attr_t</name>
+        <briefdescription>
+<para>NAT zone counters for each NAT type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="623" column="29"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINAT_1ga4ddccd58f3cf434b7de1d7879c374386" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_nat_zone_counter_fn) (_Out_ sai_object_id_t *nat_zone_counter_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *nat_zone_counter_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_nat_zone_counter_fn</name>
+        <briefdescription>
+<para>Create and return a NAT zone counter object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">nat_zone_counter_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NAT counter object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="635" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainat.h" bodystart="635" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINAT_1ga9f75effcc13a32b97696a1c2adb5119d" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_nat_zone_counter_fn) (_In_ sai_object_id_t nat_zone_counter_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t nat_zone_counter_id)</argsstring>
+        <name>sai_remove_nat_zone_counter_fn</name>
+        <briefdescription>
+<para>Deletes a specified NAT zone_counter object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Deleting a NAT counter object does not delete reference to it.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">nat_zone_counter_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NAT object to be removed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="650" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainat.h" bodystart="650" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINAT_1gaa3434aa8d24046e4f306f4e7667339ed" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_nat_zone_counter_attribute_fn) (_In_ sai_object_id_t nat_zone_counter_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t nat_zone_counter_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_nat_zone_counter_attribute_fn</name>
+        <briefdescription>
+<para>Set NAT zone counter attribute value(s). </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">nat_zone_counter_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NAT zone counter id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute to set</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="661" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainat.h" bodystart="661" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINAT_1ga7283024e727008551d3f4b1c85a918ca" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_nat_zone_counter_attribute_fn) (_In_ sai_object_id_t nat_zone_counter_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t nat_zone_counter_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_nat_zone_counter_attribute_fn</name>
+        <briefdescription>
+<para>Get values for specified NAT zone counter attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">nat_zone_counter_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>NAT counter zone object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="674" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sainat.h" bodystart="674" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAINAT_1ga803bbe61a702890192b0be1ca85a58b1" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__nat__api__t" kindref="compound">_sai_nat_api_t</ref></type>
+        <definition>typedef struct _sai_nat_api_t sai_nat_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_nat_api_t</name>
+        <briefdescription>
+<para>NAT API Router entry methods table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h" line="701" column="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module defines SAI NAT (Network Address Translation) spec. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2014 Microsoft Open Technologies, Inc.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <ulink url="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</ulink></para>
+<para>THIS CODE IS PROVIDED ON AN <emphasis>AS IS</emphasis> BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</para>
+<para>See the Apache Version 2.0 License for specific language governing permissions and limitations under the License.</para>
+<para>Microsoft would like to thank the following companies for their review and assistance with these files: Intel Corporation, Mellanox Technologies Ltd, Dell Products, L.P., Facebook, Inc., Marvell International Ltd. </para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/sainat.h"/>
+  </compounddef>
+</doxygen>

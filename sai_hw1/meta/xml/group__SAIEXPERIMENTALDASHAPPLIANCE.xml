@@ -1,0 +1,256 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group__SAIEXPERIMENTALDASHAPPLIANCE" kind="group">
+    <compoundname>SAIEXPERIMENTALDASHAPPLIANCE</compoundname>
+    <title>SAI - Experimental: DASH appliance specific API definitions</title>
+    <innerclass refid="struct__sai__dash__appliance__api__t" prot="public">_sai_dash_appliance_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASHAPPLIANCE_1ga04bab7a5996df408be7512fe02c2700e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_dash_appliance_attr_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASHAPPLIANCE_1gga04bab7a5996df408be7512fe02c2700ea9eeb99db92876dc530f09c9c2d6b6f19" prot="public">
+          <name>SAI_DASH_APPLIANCE_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHAPPLIANCE_1gga04bab7a5996df408be7512fe02c2700ea00d6b4e24c85fb75ade33fb382bcaa9b" prot="public">
+          <name>SAI_DASH_APPLIANCE_ATTR_LOCAL_REGION_ID</name>
+          <initializer>= SAI_DASH_APPLIANCE_ATTR_START</initializer>
+          <briefdescription>
+<para>Action parameter local region id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHAPPLIANCE_1gga04bab7a5996df408be7512fe02c2700eaf1b34c42ea27f775f130d177912ebe75" prot="public">
+          <name>SAI_DASH_APPLIANCE_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHAPPLIANCE_1gga04bab7a5996df408be7512fe02c2700eac760dff306845057f1f2ffb3c6af7974" prot="public">
+          <name>SAI_DASH_APPLIANCE_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHAPPLIANCE_1gga04bab7a5996df408be7512fe02c2700ea86dd016bf1155b1ab3c1b8b671b312b9" prot="public">
+          <name>SAI_DASH_APPLIANCE_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute ID for DASH appliance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashappliance.h" line="41" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashappliance.h" bodystart="42" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHAPPLIANCE_1gaf57be8bd1c9ef29e63b27bf0216dab4f" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASHAPPLIANCE_1ga04bab7a5996df408be7512fe02c2700e" kindref="member">_sai_dash_appliance_attr_t</ref></type>
+        <definition>typedef enum _sai_dash_appliance_attr_t sai_dash_appliance_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dash_appliance_attr_t</name>
+        <briefdescription>
+<para>Attribute ID for DASH appliance. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashappliance.h" line="68" column="27"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHAPPLIANCE_1ga4b71cddd1ac1277645abb2f265855957" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_dash_appliance_fn) (_Out_ sai_object_id_t *dash_appliance_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *dash_appliance_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_dash_appliance_fn</name>
+        <briefdescription>
+<para>Create DASH appliance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">dash_appliance_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashappliance.h" line="80" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashappliance.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHAPPLIANCE_1ga2e3138302acbefcd1bd5e58e554bb10c" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_dash_appliance_fn) (_In_ sai_object_id_t dash_appliance_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t dash_appliance_id)</argsstring>
+        <name>sai_remove_dash_appliance_fn</name>
+        <briefdescription>
+<para>Remove DASH appliance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dash_appliance_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashappliance.h" line="93" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashappliance.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHAPPLIANCE_1ga9447578a21d98922723ff8817cf41665" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_dash_appliance_attribute_fn) (_In_ sai_object_id_t dash_appliance_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t dash_appliance_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_dash_appliance_attribute_fn</name>
+        <briefdescription>
+<para>Set attribute for DASH appliance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dash_appliance_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashappliance.h" line="104" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashappliance.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHAPPLIANCE_1ga8a945f2f348ad47c2ee3bb7d8849e384" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_dash_appliance_attribute_fn) (_In_ sai_object_id_t dash_appliance_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t dash_appliance_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_dash_appliance_attribute_fn</name>
+        <briefdescription>
+<para>Get attribute for DASH appliance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dash_appliance_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashappliance.h" line="117" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashappliance.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHAPPLIANCE_1ga2a48ebc97030cf5ba8f5b62267db573e" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__dash__appliance__api__t" kindref="compound">_sai_dash_appliance_api_t</ref></type>
+        <definition>typedef struct _sai_dash_appliance_api_t sai_dash_appliance_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dash_appliance_api_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashappliance.h" line="131" column="26"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

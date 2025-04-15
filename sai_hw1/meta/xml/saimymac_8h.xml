@@ -1,0 +1,377 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="saimymac_8h" kind="file" language="C++">
+    <compoundname>saimymac.h</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+    <includedby refid="sai_8h" local="yes">/home/andrii/sai_hw1/SAI/inc/sai.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="5">
+        <label>sys/types.h</label>
+      </node>
+      <node id="2">
+        <label>saitypes.h</label>
+        <link refid="saitypes_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saimymac.h</label>
+        <link refid="saimymac_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/andrii/sai_hw1/SAI/inc/sai.h</label>
+        <link refid="sai_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</label>
+        <link refid="saiextensions_8h"/>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saimymac.h</label>
+        <link refid="saimymac_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct__sai__my__mac__api__t" prot="public">_sai_my_mac_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="saimymac_8h_1a3f82f5688ed8b4a31e2e1aaf1a2c84f8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_my_mac_attr_t</name>
+        <enumvalue id="saimymac_8h_1a3f82f5688ed8b4a31e2e1aaf1a2c84f8a1ca0090887b75d7eea2ed06ee4298bdd" prot="public">
+          <name>SAI_MY_MAC_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saimymac_8h_1a3f82f5688ed8b4a31e2e1aaf1a2c84f8abdb1e13e317c872b7d7349b0b399f8ab" prot="public">
+          <name>SAI_MY_MAC_ATTR_PRIORITY</name>
+          <initializer>= SAI_MY_MAC_ATTR_START</initializer>
+          <briefdescription>
+<para>Priority. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Value must be in the range defined in [<ref refid="group__SAISWITCH_1gga96df0871b3925f973f4a9079ffb3e634a62cc82a5651d1413a28d292d4426fa31" kindref="member">SAI_SWITCH_ATTR_MY_MAC_TABLE_MINIMUM_PRIORITY</ref>, <ref refid="group__SAISWITCH_1gga96df0871b3925f973f4a9079ffb3e634a65fc693907ede1ec7fbdd69511560adf" kindref="member">SAI_SWITCH_ATTR_MY_MAC_TABLE_MAXIMUM_PRIORITY</ref>] (default = <ref refid="group__SAISWITCH_1gga96df0871b3925f973f4a9079ffb3e634a62cc82a5651d1413a28d292d4426fa31" kindref="member">SAI_SWITCH_ATTR_MY_MAC_TABLE_MINIMUM_PRIORITY</ref>)</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saimymac_8h_1a3f82f5688ed8b4a31e2e1aaf1a2c84f8ad9806bf0629dcf4e3a9264d981bcbdf3" prot="public">
+          <name>SAI_MY_MAC_ATTR_PORT_ID</name>
+          <briefdescription>
+<para>Associated Port, LAG object id, if not specified any port will match. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_PORT, SAI_OBJECT_TYPE_LAG </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saimymac_8h_1a3f82f5688ed8b4a31e2e1aaf1a2c84f8a4589dc8039bfc68776f21a0c64bf8c4e" prot="public">
+          <name>SAI_MY_MAC_ATTR_VLAN_ID</name>
+          <briefdescription>
+<para>Associated Vlan Id, if not specified any vlan id will match. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saimymac_8h_1a3f82f5688ed8b4a31e2e1aaf1a2c84f8a687cb050317e336d8f31fc0c60f21485" prot="public">
+          <name>SAI_MY_MAC_ATTR_MAC_ADDRESS</name>
+          <briefdescription>
+<para>MAC Address. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_mac_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         vendor </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saimymac_8h_1a3f82f5688ed8b4a31e2e1aaf1a2c84f8a3cbe212f97c3028c66a3a69c2a6342ec" prot="public">
+          <name>SAI_MY_MAC_ATTR_MAC_ADDRESS_MASK</name>
+          <briefdescription>
+<para>MAC Address Mask. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_mac_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         vendor </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saimymac_8h_1a3f82f5688ed8b4a31e2e1aaf1a2c84f8a4183e8f09c9876eec4e2ce58567a0c57" prot="public">
+          <name>SAI_MY_MAC_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saimymac_8h_1a3f82f5688ed8b4a31e2e1aaf1a2c84f8a50e595e3aa2dfe97894c24f142282206" prot="public">
+          <name>SAI_MY_MAC_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saimymac_8h_1a3f82f5688ed8b4a31e2e1aaf1a2c84f8a47535e5bf197fe998689ea0643f0408d" prot="public">
+          <name>SAI_MY_MAC_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>My MAC entry attribute IDs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimymac.h" line="33" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimymac.h" bodystart="34" bodyend="106"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="saimymac_8h_1a36bebb0e917071d1351f3507118a1f47" prot="public" static="no">
+        <type>enum <ref refid="saimymac_8h_1a3f82f5688ed8b4a31e2e1aaf1a2c84f8" kindref="member">_sai_my_mac_attr_t</ref></type>
+        <definition>typedef enum _sai_my_mac_attr_t sai_my_mac_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_my_mac_attr_t</name>
+        <briefdescription>
+<para>My MAC entry attribute IDs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimymac.h" line="106" column="19"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saimymac_8h_1a0e0016c31ad63350f49aaf30d52b9c8f" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_my_mac_fn) (_Out_ sai_object_id_t *my_mac_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *my_mac_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_my_mac_fn</name>
+        <briefdescription>
+<para>Create My MAC entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">my_mac_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>My MAC id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimymac.h" line="118" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimymac.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saimymac_8h_1a6a8e9bdb1d648c33f65a40b7bcc82cff" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_my_mac_fn) (_In_ sai_object_id_t my_mac_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t my_mac_id)</argsstring>
+        <name>sai_remove_my_mac_fn</name>
+        <briefdescription>
+<para>Remove My MAC entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">my_mac_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>My MAC Id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimymac.h" line="131" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimymac.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saimymac_8h_1a998862004b3e5ef619aa963456c228a7" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_my_mac_attribute_fn) (_In_ sai_object_id_t my_mac_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t my_mac_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_my_mac_attribute_fn</name>
+        <briefdescription>
+<para>Set My MAC entry attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">my_mac_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>My MAC id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimymac.h" line="142" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimymac.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saimymac_8h_1aa4ac9b66699caa4fd19028c75fc0cb7f" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_my_mac_attribute_fn) (_In_ sai_object_id_t my_mac_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t my_mac_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_my_mac_attribute_fn</name>
+        <briefdescription>
+<para>Get My MAC entry attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">my_mac_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>My MAC id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimymac.h" line="155" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimymac.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saimymac_8h_1a0b6be383223a3e43f50f065f050d9bcf" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__my__mac__api__t" kindref="compound">_sai_my_mac_api_t</ref></type>
+        <definition>typedef struct _sai_my_mac_api_t sai_my_mac_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_my_mac_api_t</name>
+        <briefdescription>
+<para>My MAC methods table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimymac.h" line="170" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module defines SAI My MAC. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2014 Microsoft Open Technologies, Inc.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <ulink url="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</ulink></para>
+<para>THIS CODE IS PROVIDED ON AN <emphasis>AS IS</emphasis> BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</para>
+<para>See the Apache Version 2.0 License for specific language governing permissions and limitations under the License.</para>
+<para>Microsoft would like to thank the following companies for their review and assistance with these files: Intel Corporation, Mellanox Technologies Ltd, Dell Products, L.P., Facebook, Inc., Marvell International Ltd. </para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saimymac.h"/>
+  </compounddef>
+</doxygen>

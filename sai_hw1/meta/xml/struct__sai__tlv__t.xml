@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__tlv__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_tlv_t</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__tlv__t_1ab726691297aa22cc68af066e7d13aaaa" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1gacea8c732df2ede1c7bbadfe6282dac6e" kindref="member">sai_tlv_type_t</ref></type>
+        <definition>sai_tlv_type_t _sai_tlv_t::tlv_type</definition>
+        <argsstring></argsstring>
+        <name>tlv_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1102" column="20" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__tlv__t_1ab2ef9f22edca1e6aeb17b3e93309ff8d" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1gae18ff69d828154635c0aef9e664bbb86" kindref="member">sai_tlv_entry_t</ref></type>
+        <definition>sai_tlv_entry_t _sai_tlv_t::entry</definition>
+        <argsstring></argsstring>
+        <name>entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Pass paramater:</title><para> @@passparam       tlv_type </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1105" column="21" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1105" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Segment Routing Tag Length Value entry. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>_sai_tlv_t</label>
+        <link refid="struct__sai__tlv__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>entry</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>_sai_tlv_entry_t</label>
+        <link refid="union__sai__tlv__entry__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>hmac</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>_sai_hmac_t</label>
+        <link refid="struct__sai__hmac__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1100" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1101" bodyend="1106"/>
+    <listofallmembers>
+      <member refid="struct__sai__tlv__t_1ab2ef9f22edca1e6aeb17b3e93309ff8d" prot="public" virt="non-virtual"><scope>_sai_tlv_t</scope><name>entry</name></member>
+      <member refid="struct__sai__tlv__t_1ab726691297aa22cc68af066e7d13aaaa" prot="public" virt="non-virtual"><scope>_sai_tlv_t</scope><name>tlv_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

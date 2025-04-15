@@ -1,0 +1,797 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="sailag_8h" kind="file" language="C++">
+    <compoundname>sailag.h</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+    <includedby refid="sai_8h" local="yes">/home/andrii/sai_hw1/SAI/inc/sai.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="5">
+        <label>sys/types.h</label>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/sailag.h</label>
+        <link refid="sailag_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>saitypes.h</label>
+        <link refid="saitypes_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/andrii/sai_hw1/SAI/inc/sai.h</label>
+        <link refid="sai_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</label>
+        <link refid="saiextensions_8h"/>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/sailag.h</label>
+        <link refid="sailag_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct__sai__lag__api__t" prot="public">_sai_lag_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAILAG_1gab52b1729cf76c0ee64f90f36b91a8241" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_lag_attr_t</name>
+        <enumvalue id="group__SAILAG_1ggab52b1729cf76c0ee64f90f36b91a8241a845f6968205b46ac370fd0ffc9f66404" prot="public">
+          <name>SAI_LAG_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAILAG_1ggab52b1729cf76c0ee64f90f36b91a8241a6de55cf546f7dbd60f7c4c7f1f1ca0b3" prot="public">
+          <name>SAI_LAG_ATTR_PORT_LIST</name>
+          <initializer>= SAI_LAG_ATTR_START</initializer>
+          <briefdescription>
+<para>SAI port list. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_LAG_MEMBER </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAILAG_1ggab52b1729cf76c0ee64f90f36b91a8241a503318dc264f40bf4f50a47ad3cc5087" prot="public">
+          <name>SAI_LAG_ATTR_INGRESS_ACL</name>
+          <briefdescription>
+<para>LAG bind point for ingress ACL object. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>READ_WRITE</para>
+<para>Bind (or unbind) an ingress ACL table or ACL group on a LAG. Enable/Update ingress ACL table or ACL group filtering by assigning the list of valid object id. Disable ingress filtering by assigning SAI_NULL_OBJECT_ID in the attribute value.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_ACL_TABLE, SAI_OBJECT_TYPE_ACL_TABLE_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAILAG_1ggab52b1729cf76c0ee64f90f36b91a8241aa3da65f2ece95f20b97beb7054c339be" prot="public">
+          <name>SAI_LAG_ATTR_EGRESS_ACL</name>
+          <briefdescription>
+<para>LAG bind point for egress ACL object. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Bind (or unbind) an egress ACL tables or ACL groups on a LAG. Enable/Update egress ACL table or ACL group filtering by assigning the list of valid object id. Disable egress filtering by assigning SAI_NULL_OBJECT_ID in the attribute value.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_ACL_TABLE, SAI_OBJECT_TYPE_ACL_TABLE_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAILAG_1ggab52b1729cf76c0ee64f90f36b91a8241a8eeb3c5db48de3f579d8b88c6aaf384a" prot="public">
+          <name>SAI_LAG_ATTR_PORT_VLAN_ID</name>
+          <briefdescription>
+<para>Port VLAN ID. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Untagged ingress frames are tagged with Port VLAN ID (PVID)</para>
+<para>When a port joins a LAG: SAI automatically sets the joining port PVID to that of the LAG. SAI also saves in its internal database the original PVID state of the port.</para>
+<para>While a port is a member of a LAG, it is not possible to change the value of the following 4 attributes for the port: SAI_PORT_ATTR_PORT_VLAN_ID SAI_PORT_ATTR_DEFAULT_VLAN_PRIORITY SAI_PORT_ATTR_DROP_UNTAGGED SAI_PORT_ATTR_DROP_TAGGED</para>
+<para>When a port leaves the LAG: PVID is set to the original PVID by SAI Since the port is not associated with a bridge port or a router port at that point, it will not transfer traffic, until such object is attached to it.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         1 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAILAG_1ggab52b1729cf76c0ee64f90f36b91a8241a350951a14a6c96d639efd0603759d442" prot="public">
+          <name>SAI_LAG_ATTR_DEFAULT_VLAN_PRIORITY</name>
+          <briefdescription>
+<para>Default VLAN Priority. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAILAG_1ggab52b1729cf76c0ee64f90f36b91a8241aa2d5d7079cb335958fb1bde325957197" prot="public">
+          <name>SAI_LAG_ATTR_DROP_UNTAGGED</name>
+          <briefdescription>
+<para>Dropping of untagged frames on ingress. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAILAG_1ggab52b1729cf76c0ee64f90f36b91a8241aeb69c77aae8d3c37b88f057d3b1b23c6" prot="public">
+          <name>SAI_LAG_ATTR_DROP_TAGGED</name>
+          <briefdescription>
+<para>Dropping of tagged frames on ingress. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAILAG_1ggab52b1729cf76c0ee64f90f36b91a8241ac0f4cad770cb3d37974a5eed749d202c" prot="public">
+          <name>SAI_LAG_ATTR_TPID</name>
+          <briefdescription>
+<para>TPID. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          false </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0x8100 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAILAG_1ggab52b1729cf76c0ee64f90f36b91a8241a62747ac3dc6043f38496c7572538bdd3" prot="public">
+          <name>SAI_LAG_ATTR_SYSTEM_PORT_AGGREGATE_ID</name>
+          <briefdescription>
+<para>LAG system port ID. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>The application must manage the allocation of the system port aggregate IDs associated with the LAG for consistency across all switches in a VOQ based system. The system port aggregate ID range is from 1 to SAI_SWITCH_ATTR_NUMBER_OF_LAGS. The default value of 0 means this field is not used and SAI will allocate the system port aggregate ID internally. Valid only when SAI_SWITCH_ATTR_TYPE == SAI_SWITCH_TYPE_VOQ</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAILAG_1ggab52b1729cf76c0ee64f90f36b91a8241ac2a86746051f79273d0626de1b967c76" prot="public">
+          <name>SAI_LAG_ATTR_LABEL</name>
+          <briefdescription>
+<para>Label attribute used to unique identify empty LAG. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            char </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         &quot;&quot; </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAILAG_1ggab52b1729cf76c0ee64f90f36b91a8241a388a3fa409005e254151a84e09478562" prot="public">
+          <name>SAI_LAG_ATTR_ARS_OBJECT_ID</name>
+          <briefdescription>
+<para>Adaptive routing and switching object for this group. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_ARS </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAILAG_1ggab52b1729cf76c0ee64f90f36b91a8241aadcd9d64f66afd3b0abfeb7cbc8a1957" prot="public">
+          <name>SAI_LAG_ATTR_ARS_PACKET_DROPS</name>
+          <briefdescription>
+<para>Number of packets dropped by ARS mechanism. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAILAG_1ggab52b1729cf76c0ee64f90f36b91a8241aa09b027c703c6399e4412d5c37619421" prot="public">
+          <name>SAI_LAG_ATTR_ARS_PORT_REASSIGNMENTS</name>
+          <briefdescription>
+<para>Number of ARS port reassignments done. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAILAG_1ggab52b1729cf76c0ee64f90f36b91a8241a18b9bcbdca045c7fff14347fa1d6330b" prot="public">
+          <name>SAI_LAG_ATTR_HASH_ALGORITHM</name>
+          <briefdescription>
+<para>LAG hash algorithm Overrides value of SAI_SWITCH_ATTR_LAG_DEFAULT_HASH_ALGORITHM if not set to SAI_HASH_ALGORITHM_NONE. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_hash_algorithm_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_HASH_ALGORITHM_NONE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAILAG_1ggab52b1729cf76c0ee64f90f36b91a8241a8809c681298a2521d387d8d06a22e060" prot="public">
+          <name>SAI_LAG_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAILAG_1ggab52b1729cf76c0ee64f90f36b91a8241a18f82ab77323f876fa8c4850a4ab3132" prot="public">
+          <name>SAI_LAG_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAILAG_1ggab52b1729cf76c0ee64f90f36b91a8241a22e9f2fb1331f8792be96d5fc1211b91" prot="public">
+          <name>SAI_LAG_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>LAG attribute: List of attributes for LAG object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sailag.h" line="39" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/sailag.h" bodystart="40" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAILAG_1ga462c86f54ddb9071bd639019329f7c6b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_lag_member_attr_t</name>
+        <enumvalue id="group__SAILAG_1gga462c86f54ddb9071bd639019329f7c6bacc2a93154164e7a90da1312f9111891e" prot="public">
+          <name>SAI_LAG_MEMBER_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAILAG_1gga462c86f54ddb9071bd639019329f7c6bada1fb3e37d76ce3e4f0ddd6a542472d2" prot="public">
+          <name>SAI_LAG_MEMBER_ATTR_LAG_ID</name>
+          <initializer>= SAI_LAG_MEMBER_ATTR_START</initializer>
+          <briefdescription>
+<para>LAG ID. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_LAG </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAILAG_1gga462c86f54ddb9071bd639019329f7c6ba03d180c0554076c795cf5d82bb662503" prot="public">
+          <name>SAI_LAG_MEMBER_ATTR_PORT_ID</name>
+          <briefdescription>
+<para>Logical port ID. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_PORT, SAI_OBJECT_TYPE_SYSTEM_PORT </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAILAG_1gga462c86f54ddb9071bd639019329f7c6ba0bee1bab5c9039088b857a6fbd26c827" prot="public">
+          <name>SAI_LAG_MEMBER_ATTR_EGRESS_DISABLE</name>
+          <briefdescription>
+<para>Disable traffic distribution to this port as part of LAG. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAILAG_1gga462c86f54ddb9071bd639019329f7c6bab651f0abf95ba43d1930b6653f7bc1f6" prot="public">
+          <name>SAI_LAG_MEMBER_ATTR_INGRESS_DISABLE</name>
+          <briefdescription>
+<para>Disable traffic collection from this port as part of LAG. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAILAG_1gga462c86f54ddb9071bd639019329f7c6ba5f8a223686254156abb97fc3728b2354" prot="public">
+          <name>SAI_LAG_MEMBER_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAILAG_1gga462c86f54ddb9071bd639019329f7c6baf525ef7f8f399c429645e395e0d8adeb" prot="public">
+          <name>SAI_LAG_MEMBER_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAILAG_1gga462c86f54ddb9071bd639019329f7c6bad3252c6d7bf449ae473759c2d73d266a" prot="public">
+          <name>SAI_LAG_MEMBER_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>List of LAG member attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sailag.h" line="284" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/sailag.h" bodystart="285" bodyend="338"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAILAG_1ga6c07f4742b3cd4bac7c98676797fa078" prot="public" static="no">
+        <type>enum <ref refid="group__SAILAG_1gab52b1729cf76c0ee64f90f36b91a8241" kindref="member">_sai_lag_attr_t</ref></type>
+        <definition>typedef enum _sai_lag_attr_t sai_lag_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_lag_attr_t</name>
+        <briefdescription>
+<para>LAG attribute: List of attributes for LAG object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sailag.h" line="227" column="16"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAILAG_1ga7e59b70aa730aff117d1ffe28c081482" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_lag_fn) (_Out_ sai_object_id_t *lag_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *lag_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_lag_fn</name>
+        <briefdescription>
+<para>Create LAG. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">lag_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LAG id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sailag.h" line="239" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sailag.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAILAG_1ga5d263f7b50071331e96d734a380d6cf9" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_lag_fn) (_In_ sai_object_id_t lag_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t lag_id)</argsstring>
+        <name>sai_remove_lag_fn</name>
+        <briefdescription>
+<para>Remove LAG. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lag_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LAG id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sailag.h" line="252" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sailag.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAILAG_1ga4cd99284b050625df44172f607a28a8d" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_lag_attribute_fn) (_In_ sai_object_id_t lag_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t lag_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_lag_attribute_fn</name>
+        <briefdescription>
+<para>Set LAG Attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lag_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LAG id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Structure containing ID and value to be set</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sailag.h" line="263" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sailag.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAILAG_1ga71f7f8ed6572eda9bbf3df7fb01f92f2" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_lag_attribute_fn) (_In_ sai_object_id_t lag_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t lag_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_lag_attribute_fn</name>
+        <briefdescription>
+<para>Get LAG Attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lag_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LAG id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes to be get </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of structures containing ID and value to be get</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sailag.h" line="276" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sailag.h" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAILAG_1gaf58512099fd7289922eed2e83278c365" prot="public" static="no">
+        <type>enum <ref refid="group__SAILAG_1ga462c86f54ddb9071bd639019329f7c6b" kindref="member">_sai_lag_member_attr_t</ref></type>
+        <definition>typedef enum _sai_lag_member_attr_t sai_lag_member_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_lag_member_attr_t</name>
+        <briefdescription>
+<para>List of LAG member attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sailag.h" line="338" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAILAG_1gaaaad563993bc2af656d1e2eade389c39" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_lag_member_fn) (_Out_ sai_object_id_t *lag_member_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *lag_member_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_lag_member_fn</name>
+        <briefdescription>
+<para>Create LAG Member. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">lag_member_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LAG Member id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sailag.h" line="350" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sailag.h" bodystart="350" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAILAG_1ga1faffdbddf59a0cd1048fe2927beecd3" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_lag_member_fn) (_In_ sai_object_id_t lag_member_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t lag_member_id)</argsstring>
+        <name>sai_remove_lag_member_fn</name>
+        <briefdescription>
+<para>Remove LAG Member. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lag_member_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LAG Member id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sailag.h" line="363" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sailag.h" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAILAG_1gaf8926d500e575b2c478b0ab4eef7e3f1" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_lag_member_attribute_fn) (_In_ sai_object_id_t lag_member_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t lag_member_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_lag_member_attribute_fn</name>
+        <briefdescription>
+<para>Set LAG Member Attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lag_member_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LAG Member id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Structure containing ID and value to be set</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sailag.h" line="374" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sailag.h" bodystart="374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAILAG_1gaf4d56d15865f38d945095e7d3481db74" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_lag_member_attribute_fn) (_In_ sai_object_id_t lag_member_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t lag_member_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_lag_member_attribute_fn</name>
+        <briefdescription>
+<para>Get LAG Member Attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">lag_member_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>LAG Member id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes to be get </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of structures containing ID and value to be get</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sailag.h" line="387" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sailag.h" bodystart="387" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAILAG_1ga555192db89989a070a2ccc15c4da9dad" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__lag__api__t" kindref="compound">_sai_lag_api_t</ref></type>
+        <definition>typedef struct _sai_lag_api_t sai_lag_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_lag_api_t</name>
+        <briefdescription>
+<para>LAG methods table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sailag.h" line="407" column="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module defines SAI LAG interface. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2014 Microsoft Open Technologies, Inc.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <ulink url="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</ulink></para>
+<para>THIS CODE IS PROVIDED ON AN <emphasis>AS IS</emphasis> BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</para>
+<para>See the Apache Version 2.0 License for specific language governing permissions and limitations under the License.</para>
+<para>Microsoft would like to thank the following companies for their review and assistance with these files: Intel Corporation, Mellanox Technologies Ltd, Dell Products, L.P., Facebook, Inc., Marvell International Ltd. </para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/sailag.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_bfccd401955b95cf8c75461437045ac0" kind="dir">
+    <compoundname>/home/andrii/sai_hw1/SAI/inc</compoundname>
+    <innerfile refid="sai_8h">sai.h</innerfile>
+    <innerfile refid="saiacl_8h">saiacl.h</innerfile>
+    <innerfile refid="saiars_8h">saiars.h</innerfile>
+    <innerfile refid="saiarsprofile_8h">saiarsprofile.h</innerfile>
+    <innerfile refid="saibfd_8h">saibfd.h</innerfile>
+    <innerfile refid="saibridge_8h">saibridge.h</innerfile>
+    <innerfile refid="saibuffer_8h">saibuffer.h</innerfile>
+    <innerfile refid="saicounter_8h">saicounter.h</innerfile>
+    <innerfile refid="saidebugcounter_8h">saidebugcounter.h</innerfile>
+    <innerfile refid="saidtel_8h">saidtel.h</innerfile>
+    <innerfile refid="saifdb_8h">saifdb.h</innerfile>
+    <innerfile refid="saigenericprogrammable_8h">saigenericprogrammable.h</innerfile>
+    <innerfile refid="saihash_8h">saihash.h</innerfile>
+    <innerfile refid="saihostif_8h">saihostif.h</innerfile>
+    <innerfile refid="saiicmpecho_8h">saiicmpecho.h</innerfile>
+    <innerfile refid="saiipmc_8h">saiipmc.h</innerfile>
+    <innerfile refid="saiipmcgroup_8h">saiipmcgroup.h</innerfile>
+    <innerfile refid="saiipsec_8h">saiipsec.h</innerfile>
+    <innerfile refid="saiisolationgroup_8h">saiisolationgroup.h</innerfile>
+    <innerfile refid="sail2mc_8h">sail2mc.h</innerfile>
+    <innerfile refid="sail2mcgroup_8h">sail2mcgroup.h</innerfile>
+    <innerfile refid="sailag_8h">sailag.h</innerfile>
+    <innerfile refid="saimacsec_8h">saimacsec.h</innerfile>
+    <innerfile refid="saimcastfdb_8h">saimcastfdb.h</innerfile>
+    <innerfile refid="saimirror_8h">saimirror.h</innerfile>
+    <innerfile refid="saimpls_8h">saimpls.h</innerfile>
+    <innerfile refid="saimymac_8h">saimymac.h</innerfile>
+    <innerfile refid="sainat_8h">sainat.h</innerfile>
+    <innerfile refid="saineighbor_8h">saineighbor.h</innerfile>
+    <innerfile refid="sainexthop_8h">sainexthop.h</innerfile>
+    <innerfile refid="sainexthopgroup_8h">sainexthopgroup.h</innerfile>
+    <innerfile refid="saiobject_8h">saiobject.h</innerfile>
+    <innerfile refid="saipoe_8h">saipoe.h</innerfile>
+    <innerfile refid="saipolicer_8h">saipolicer.h</innerfile>
+    <innerfile refid="saiport_8h">saiport.h</innerfile>
+    <innerfile refid="saiprefixcompression_8h">saiprefixcompression.h</innerfile>
+    <innerfile refid="saiqosmap_8h">saiqosmap.h</innerfile>
+    <innerfile refid="saiqueue_8h">saiqueue.h</innerfile>
+    <innerfile refid="sairoute_8h">sairoute.h</innerfile>
+    <innerfile refid="sairouterinterface_8h">sairouterinterface.h</innerfile>
+    <innerfile refid="sairpfgroup_8h">sairpfgroup.h</innerfile>
+    <innerfile refid="saisamplepacket_8h">saisamplepacket.h</innerfile>
+    <innerfile refid="saischeduler_8h">saischeduler.h</innerfile>
+    <innerfile refid="saischedulergroup_8h">saischedulergroup.h</innerfile>
+    <innerfile refid="saisrv6_8h">saisrv6.h</innerfile>
+    <innerfile refid="saistatus_8h">saistatus.h</innerfile>
+    <innerfile refid="saistp_8h">saistp.h</innerfile>
+    <innerfile refid="saiswitch_8h">saiswitch.h</innerfile>
+    <innerfile refid="saisystemport_8h">saisystemport.h</innerfile>
+    <innerfile refid="saitam_8h">saitam.h</innerfile>
+    <innerfile refid="saitunnel_8h">saitunnel.h</innerfile>
+    <innerfile refid="saitwamp_8h">saitwamp.h</innerfile>
+    <innerfile refid="saitypes_8h">saitypes.h</innerfile>
+    <innerfile refid="saiudf_8h">saiudf.h</innerfile>
+    <innerfile refid="saiversion_8h">saiversion.h</innerfile>
+    <innerfile refid="saivirtualrouter_8h">saivirtualrouter.h</innerfile>
+    <innerfile refid="saivlan_8h">saivlan.h</innerfile>
+    <innerfile refid="saiwred_8h">saiwred.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/"/>
+  </compounddef>
+</doxygen>

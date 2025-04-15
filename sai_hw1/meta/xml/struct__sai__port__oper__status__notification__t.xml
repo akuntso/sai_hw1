@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__port__oper__status__notification__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_port_oper_status_notification_t</compoundname>
+    <includes refid="saiport_8h" local="no">saiport.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__port__oper__status__notification__t_1a50250b869337bb086352f49595d87db9" prot="public" static="no" mutable="no">
+        <type>sai_object_id_t</type>
+        <definition>sai_object_id_t _sai_port_oper_status_notification_t::port_id</definition>
+        <argsstring></argsstring>
+        <name>port_id</name>
+        <briefdescription>
+<para>Port id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_PORT, SAI_OBJECT_TYPE_BRIDGE_PORT, SAI_OBJECT_TYPE_LAG </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="139" column="21" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__oper__status__notification__t_1a60245f307d4dd240335a6380a7610c9a" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIPORT_1ga4c74890a2f8afd03a7c117d1fc772f9d" kindref="member">sai_port_oper_status_t</ref></type>
+        <definition>sai_port_oper_status_t _sai_port_oper_status_notification_t::port_state</definition>
+        <argsstring></argsstring>
+        <name>port_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port operational status </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="142" column="28" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__oper__status__notification__t_1a202e1177cf68ca37ee12a91a789cdf1b" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIPORT_1ga524efcd9e5fd08ab9b14ef3a56e005e9" kindref="member">sai_port_error_status_t</ref></type>
+        <definition>sai_port_error_status_t _sai_port_oper_status_notification_t::port_error_status</definition>
+        <argsstring></argsstring>
+        <name>port_error_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Bitmap of various port error or fault status </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="145" column="29" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines the operational status of the port. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saiport.h" line="132" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiport.h" bodystart="133" bodyend="146"/>
+    <listofallmembers>
+      <member refid="struct__sai__port__oper__status__notification__t_1a202e1177cf68ca37ee12a91a789cdf1b" prot="public" virt="non-virtual"><scope>_sai_port_oper_status_notification_t</scope><name>port_error_status</name></member>
+      <member refid="struct__sai__port__oper__status__notification__t_1a50250b869337bb086352f49595d87db9" prot="public" virt="non-virtual"><scope>_sai_port_oper_status_notification_t</scope><name>port_id</name></member>
+      <member refid="struct__sai__port__oper__status__notification__t_1a60245f307d4dd240335a6380a7610c9a" prot="public" virt="non-virtual"><scope>_sai_port_oper_status_notification_t</scope><name>port_state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

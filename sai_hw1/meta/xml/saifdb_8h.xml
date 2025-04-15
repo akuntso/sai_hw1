@@ -1,0 +1,1060 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="saifdb_8h" kind="file" language="C++">
+    <compoundname>saifdb.h</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+    <includedby refid="sai_8h" local="yes">/home/andrii/sai_hw1/SAI/inc/sai.h</includedby>
+    <includedby refid="saiobject_8h" local="no">/home/andrii/sai_hw1/SAI/inc/saiobject.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="5">
+        <label>sys/types.h</label>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saifdb.h</label>
+        <link refid="saifdb_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>saitypes.h</label>
+        <link refid="saitypes_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/andrii/sai_hw1/SAI/inc/sai.h</label>
+        <link refid="sai_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/andrii/sai_hw1/SAI/inc/saiobject.h</label>
+        <link refid="saiobject_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saifdb.h</label>
+        <link refid="saifdb_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</label>
+        <link refid="saiextensions_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct__sai__fdb__entry__t" prot="public">_sai_fdb_entry_t</innerclass>
+    <innerclass refid="struct__sai__fdb__event__notification__data__t" prot="public">_sai_fdb_event_notification_data_t</innerclass>
+    <innerclass refid="struct__sai__fdb__api__t" prot="public">_sai_fdb_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIFDB_1gacdd4898fb2761ce311a2453aec91b623" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_fdb_entry_type_t</name>
+        <enumvalue id="group__SAIFDB_1ggacdd4898fb2761ce311a2453aec91b623a450b37a94af5cd587e6a90d083e27c30" prot="public">
+          <name>SAI_FDB_ENTRY_TYPE_DYNAMIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Dynamic FDB Entry </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIFDB_1ggacdd4898fb2761ce311a2453aec91b623a51f1edceb4000a9980442abf3f91c171" prot="public">
+          <name>SAI_FDB_ENTRY_TYPE_STATIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Static FDB Entry </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>FDB entry type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saifdb.h" line="39" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saifdb.h" bodystart="40" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIFDB_1gade05c575f81b331577f6f4d40ff23232" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_fdb_event_t</name>
+        <enumvalue id="group__SAIFDB_1ggade05c575f81b331577f6f4d40ff23232a480c4d6f02f72533e67b1177e7693951" prot="public">
+          <name>SAI_FDB_EVENT_LEARNED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>New FDB entry learned </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIFDB_1ggade05c575f81b331577f6f4d40ff23232a069bb2601c0700155c0d548dbe93c79d" prot="public">
+          <name>SAI_FDB_EVENT_AGED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FDB entry aged </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIFDB_1ggade05c575f81b331577f6f4d40ff23232a506b7503b7fc0a11f4fdf283ca7e3bfa" prot="public">
+          <name>SAI_FDB_EVENT_MOVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FDB entry move </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIFDB_1ggade05c575f81b331577f6f4d40ff23232af438c79e7d3de598fe92b9cd83492db2" prot="public">
+          <name>SAI_FDB_EVENT_FLUSHED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>FDB entry flushed </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>FDB event type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saifdb.h" line="76" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saifdb.h" bodystart="77" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIFDB_1gaf297f72d5b2b9d94b0d6a0d5584adf4e" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_fdb_entry_attr_t</name>
+        <enumvalue id="group__SAIFDB_1ggaf297f72d5b2b9d94b0d6a0d5584adf4eabd743d3e3608a9d506898960c13c39f2" prot="public">
+          <name>SAI_FDB_ENTRY_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIFDB_1ggaf297f72d5b2b9d94b0d6a0d5584adf4eae1d571edbc5e1f38f9747fda71b81a82" prot="public">
+          <name>SAI_FDB_ENTRY_ATTR_TYPE</name>
+          <initializer>= SAI_FDB_ENTRY_ATTR_START</initializer>
+          <briefdescription>
+<para>FDB entry type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_fdb_entry_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIFDB_1ggaf297f72d5b2b9d94b0d6a0d5584adf4eafd810e312735f27c07d0fb971b3e7237" prot="public">
+          <name>SAI_FDB_ENTRY_ATTR_PACKET_ACTION</name>
+          <briefdescription>
+<para>FDB entry packet action. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_packet_action_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_PACKET_ACTION_FORWARD </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIFDB_1ggaf297f72d5b2b9d94b0d6a0d5584adf4ea73b095017f713eb874e3ec99bcd04bba" prot="public">
+          <name>SAI_FDB_ENTRY_ATTR_USER_TRAP_ID</name>
+          <briefdescription>
+<para>Generate User Defined Trap ID for trap/log actions. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>When it is SAI_NULL_OBJECT_ID, then packet will not be trapped.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_HOSTIF_USER_DEFINED_TRAP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIFDB_1ggaf297f72d5b2b9d94b0d6a0d5584adf4eafda43ee89405e192f9a0c4bc19f6743c" prot="public">
+          <name>SAI_FDB_ENTRY_ATTR_BRIDGE_PORT_ID</name>
+          <briefdescription>
+<para>FDB entry bridge port id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>The port id is only effective when the packet action is one of the following: FORWARD, COPY, LOG, TRANSIT</para>
+<para>When it is SAI_NULL_OBJECT_ID, then packet will be dropped.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_BRIDGE_PORT </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIFDB_1ggaf297f72d5b2b9d94b0d6a0d5584adf4ea74080a89102ff0dcbf2f76b38bfaeffc" prot="public">
+          <name>SAI_FDB_ENTRY_ATTR_META_DATA</name>
+          <briefdescription>
+<para>User based Meta Data. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Value Range <ref refid="group__SAISWITCH_1gga96df0871b3925f973f4a9079ffb3e634a59c3c2e6cd28d2664ed68f299bf82565" kindref="member">SAI_SWITCH_ATTR_FDB_DST_USER_META_DATA_RANGE</ref></para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIFDB_1ggaf297f72d5b2b9d94b0d6a0d5584adf4ea004c5bded10be98b51a3f978fc492752" prot="public">
+          <name>SAI_FDB_ENTRY_ATTR_ENDPOINT_IP</name>
+          <briefdescription>
+<para>Tunnel Endpoint IP. valid for SAI_BRIDGE_PORT_TYPE_TUNNEL. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIFDB_1ggaf297f72d5b2b9d94b0d6a0d5584adf4ea4221e375cef282cfdcec91b69cf249e7" prot="public">
+          <name>SAI_FDB_ENTRY_ATTR_COUNTER_ID</name>
+          <briefdescription>
+<para>Attach a counter. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>When it is empty, then packet hits won&apos;t be counted</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_COUNTER </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIFDB_1ggaf297f72d5b2b9d94b0d6a0d5584adf4eabe5824381c972d6039d497eaef1500a7" prot="public">
+          <name>SAI_FDB_ENTRY_ATTR_ALLOW_MAC_MOVE</name>
+          <briefdescription>
+<para>Specifies whether a MAC move is allowed When MAC_MOVE is explicitly disabled for a static MAC entry via this attribute, the trap introduced in #696 would also not be generated. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_FDB_ENTRY_ATTR_TYPE == SAI_FDB_ENTRY_TYPE_STATIC </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIFDB_1ggaf297f72d5b2b9d94b0d6a0d5584adf4ea7357d0e96351f62b490a48f6610947e6" prot="public">
+          <name>SAI_FDB_ENTRY_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIFDB_1ggaf297f72d5b2b9d94b0d6a0d5584adf4eaeac55099841ddf32db59cd48d534ebe8" prot="public">
+          <name>SAI_FDB_ENTRY_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Start of custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIFDB_1ggaf297f72d5b2b9d94b0d6a0d5584adf4ea456da9a8c1569a76d31c0c310d69b268" prot="public">
+          <name>SAI_FDB_ENTRY_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute Id for FDB entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saifdb.h" line="95" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saifdb.h" bodystart="96" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIFDB_1ga3308895befe9f991ec1dbed9445c7b9c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_fdb_flush_entry_type_t</name>
+        <enumvalue id="group__SAIFDB_1gga3308895befe9f991ec1dbed9445c7b9ca88b81d65bdb56f1bafaaef1df0897d3f" prot="public">
+          <name>SAI_FDB_FLUSH_ENTRY_TYPE_DYNAMIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Flush dynamic FDB entries </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIFDB_1gga3308895befe9f991ec1dbed9445c7b9ca87fe7d7dc82b401644e6a9711980c573" prot="public">
+          <name>SAI_FDB_FLUSH_ENTRY_TYPE_STATIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Flush static FDB entries </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIFDB_1gga3308895befe9f991ec1dbed9445c7b9cac003f674e13527cf7c62e264140c4f7e" prot="public">
+          <name>SAI_FDB_FLUSH_ENTRY_TYPE_ALL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Flush static and dynamic FDB entries </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>FDB Flush entry type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saifdb.h" line="209" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saifdb.h" bodystart="210" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIFDB_1ga8496d67b431969142a58d24a6f566fdf" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_fdb_flush_attr_t</name>
+        <enumvalue id="group__SAIFDB_1gga8496d67b431969142a58d24a6f566fdfab4dd6d92c2462e5cae7695f34686484f" prot="public">
+          <name>SAI_FDB_FLUSH_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIFDB_1gga8496d67b431969142a58d24a6f566fdfad8a859b6ab9689c3b391060912e79815" prot="public">
+          <name>SAI_FDB_FLUSH_ATTR_BRIDGE_PORT_ID</name>
+          <initializer>= SAI_FDB_FLUSH_ATTR_START</initializer>
+          <briefdescription>
+<para>Flush based on bridge port. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_BRIDGE_PORT </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIFDB_1gga8496d67b431969142a58d24a6f566fdfa99dd1133f4570cdab5d699dc50fb3465" prot="public">
+          <name>SAI_FDB_FLUSH_ATTR_BV_ID</name>
+          <briefdescription>
+<para>Flush based on VLAN or Bridge. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_BRIDGE, SAI_OBJECT_TYPE_VLAN </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIFDB_1gga8496d67b431969142a58d24a6f566fdfa055a460d226dfbc98552aad66d98f4a1" prot="public">
+          <name>SAI_FDB_FLUSH_ATTR_ENTRY_TYPE</name>
+          <briefdescription>
+<para>Flush based on entry type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_fdb_flush_entry_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_FDB_FLUSH_ENTRY_TYPE_DYNAMIC </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIFDB_1gga8496d67b431969142a58d24a6f566fdfaa8bcc510b6c18d82a82037cd4d9b0cc9" prot="public">
+          <name>SAI_FDB_FLUSH_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIFDB_1gga8496d67b431969142a58d24a6f566fdfad819fca4bfc6822bac4d988c6bfb3386" prot="public">
+          <name>SAI_FDB_FLUSH_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIFDB_1gga8496d67b431969142a58d24a6f566fdfa8d87b07addd82c5cc7d788a20d3316de" prot="public">
+          <name>SAI_FDB_FLUSH_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute for FDB flush API to specify the type of FDB entries being flushed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For example, if you want to flush all static entries, set <ref refid="group__SAIFDB_1gga8496d67b431969142a58d24a6f566fdfa055a460d226dfbc98552aad66d98f4a1" kindref="member">SAI_FDB_FLUSH_ATTR_ENTRY_TYPE</ref> = <ref refid="group__SAIFDB_1gga3308895befe9f991ec1dbed9445c7b9ca87fe7d7dc82b401644e6a9711980c573" kindref="member">SAI_FDB_FLUSH_ENTRY_TYPE_STATIC</ref>. If you want to flush both static and dynamic entries, then set <ref refid="group__SAIFDB_1gga8496d67b431969142a58d24a6f566fdfa055a460d226dfbc98552aad66d98f4a1" kindref="member">SAI_FDB_FLUSH_ATTR_ENTRY_TYPE</ref> = SAI_FDB_FLUSH_ENTRY_TYPE_ALL. The API uses AND operation when multiple attributes are specified.</para>
+<para>For example:</para>
+<para>1) Flush all dynamic entries in FDB table - Do not specify any attribute 2) Flush dynamic entries by bridge port - Set <ref refid="group__SAIFDB_1gga8496d67b431969142a58d24a6f566fdfad8a859b6ab9689c3b391060912e79815" kindref="member">SAI_FDB_FLUSH_ATTR_BRIDGE_PORT_ID</ref> 3) Flush dynamic entries by VLAN - Set <ref refid="group__SAIFDB_1gga8496d67b431969142a58d24a6f566fdfa99dd1133f4570cdab5d699dc50fb3465" kindref="member">SAI_FDB_FLUSH_ATTR_BV_ID</ref> with object id as vlan object 3) Flush dynamic entries by bridge - Set <ref refid="group__SAIFDB_1gga8496d67b431969142a58d24a6f566fdfa99dd1133f4570cdab5d699dc50fb3465" kindref="member">SAI_FDB_FLUSH_ATTR_BV_ID</ref> with object id as bridge object 4) Flush dynamic entries by bridge port and VLAN - Set <ref refid="group__SAIFDB_1gga8496d67b431969142a58d24a6f566fdfad8a859b6ab9689c3b391060912e79815" kindref="member">SAI_FDB_FLUSH_ATTR_BRIDGE_PORT_ID</ref> and <ref refid="group__SAIFDB_1gga8496d67b431969142a58d24a6f566fdfa99dd1133f4570cdab5d699dc50fb3465" kindref="member">SAI_FDB_FLUSH_ATTR_BV_ID</ref> 5) Flush all static entries by bridge port and VLAN - Set <ref refid="group__SAIFDB_1gga8496d67b431969142a58d24a6f566fdfa055a460d226dfbc98552aad66d98f4a1" kindref="member">SAI_FDB_FLUSH_ATTR_ENTRY_TYPE</ref>, <ref refid="group__SAIFDB_1gga8496d67b431969142a58d24a6f566fdfad8a859b6ab9689c3b391060912e79815" kindref="member">SAI_FDB_FLUSH_ATTR_BRIDGE_PORT_ID</ref>, and <ref refid="group__SAIFDB_1gga8496d67b431969142a58d24a6f566fdfa99dd1133f4570cdab5d699dc50fb3465" kindref="member">SAI_FDB_FLUSH_ATTR_BV_ID</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saifdb.h" line="241" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saifdb.h" bodystart="242" bodyend="290"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIFDB_1ga9c584445a4c94f7df3df394fe2668731" prot="public" static="no">
+        <type>enum <ref refid="group__SAIFDB_1gacdd4898fb2761ce311a2453aec91b623" kindref="member">_sai_fdb_entry_type_t</ref></type>
+        <definition>typedef enum _sai_fdb_entry_type_t sai_fdb_entry_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_fdb_entry_type_t</name>
+        <briefdescription>
+<para>FDB entry type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saifdb.h" line="47" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIFDB_1ga91dcf517f2145e149a0bb47a142b8db7" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__fdb__entry__t" kindref="compound">_sai_fdb_entry_t</ref></type>
+        <definition>typedef struct _sai_fdb_entry_t sai_fdb_entry_t</definition>
+        <argsstring></argsstring>
+        <name>sai_fdb_entry_t</name>
+        <briefdescription>
+<para>FDB entry key. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saifdb.h" line="71" column="17"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIFDB_1ga84b4bd646344f7737354884147cfde56" prot="public" static="no">
+        <type>enum <ref refid="group__SAIFDB_1gade05c575f81b331577f6f4d40ff23232" kindref="member">_sai_fdb_event_t</ref></type>
+        <definition>typedef enum _sai_fdb_event_t sai_fdb_event_t</definition>
+        <argsstring></argsstring>
+        <name>sai_fdb_event_t</name>
+        <briefdescription>
+<para>FDB event type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saifdb.h" line="90" column="17"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIFDB_1ga6644234783ed5d9f0e485b406f6917ae" prot="public" static="no">
+        <type>enum <ref refid="group__SAIFDB_1gaf297f72d5b2b9d94b0d6a0d5584adf4e" kindref="member">_sai_fdb_entry_attr_t</ref></type>
+        <definition>typedef enum _sai_fdb_entry_attr_t sai_fdb_entry_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_fdb_entry_attr_t</name>
+        <briefdescription>
+<para>Attribute Id for FDB entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saifdb.h" line="204" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIFDB_1gaa5692fcc8c99ffafd075d43a1a43518d" prot="public" static="no">
+        <type>enum <ref refid="group__SAIFDB_1ga3308895befe9f991ec1dbed9445c7b9c" kindref="member">_sai_fdb_flush_entry_type_t</ref></type>
+        <definition>typedef enum _sai_fdb_flush_entry_type_t sai_fdb_flush_entry_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_fdb_flush_entry_type_t</name>
+        <briefdescription>
+<para>FDB Flush entry type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saifdb.h" line="220" column="28"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIFDB_1gaf39922b309ac3436794635e735fa5805" prot="public" static="no">
+        <type>enum <ref refid="group__SAIFDB_1ga8496d67b431969142a58d24a6f566fdf" kindref="member">_sai_fdb_flush_attr_t</ref></type>
+        <definition>typedef enum _sai_fdb_flush_attr_t sai_fdb_flush_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_fdb_flush_attr_t</name>
+        <briefdescription>
+<para>Attribute for FDB flush API to specify the type of FDB entries being flushed. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For example, if you want to flush all static entries, set <ref refid="group__SAIFDB_1gga8496d67b431969142a58d24a6f566fdfa055a460d226dfbc98552aad66d98f4a1" kindref="member">SAI_FDB_FLUSH_ATTR_ENTRY_TYPE</ref> = <ref refid="group__SAIFDB_1gga3308895befe9f991ec1dbed9445c7b9ca87fe7d7dc82b401644e6a9711980c573" kindref="member">SAI_FDB_FLUSH_ENTRY_TYPE_STATIC</ref>. If you want to flush both static and dynamic entries, then set <ref refid="group__SAIFDB_1gga8496d67b431969142a58d24a6f566fdfa055a460d226dfbc98552aad66d98f4a1" kindref="member">SAI_FDB_FLUSH_ATTR_ENTRY_TYPE</ref> = SAI_FDB_FLUSH_ENTRY_TYPE_ALL. The API uses AND operation when multiple attributes are specified.</para>
+<para>For example:</para>
+<para>1) Flush all dynamic entries in FDB table - Do not specify any attribute 2) Flush dynamic entries by bridge port - Set <ref refid="group__SAIFDB_1gga8496d67b431969142a58d24a6f566fdfad8a859b6ab9689c3b391060912e79815" kindref="member">SAI_FDB_FLUSH_ATTR_BRIDGE_PORT_ID</ref> 3) Flush dynamic entries by VLAN - Set <ref refid="group__SAIFDB_1gga8496d67b431969142a58d24a6f566fdfa99dd1133f4570cdab5d699dc50fb3465" kindref="member">SAI_FDB_FLUSH_ATTR_BV_ID</ref> with object id as vlan object 3) Flush dynamic entries by bridge - Set <ref refid="group__SAIFDB_1gga8496d67b431969142a58d24a6f566fdfa99dd1133f4570cdab5d699dc50fb3465" kindref="member">SAI_FDB_FLUSH_ATTR_BV_ID</ref> with object id as bridge object 4) Flush dynamic entries by bridge port and VLAN - Set <ref refid="group__SAIFDB_1gga8496d67b431969142a58d24a6f566fdfad8a859b6ab9689c3b391060912e79815" kindref="member">SAI_FDB_FLUSH_ATTR_BRIDGE_PORT_ID</ref> and <ref refid="group__SAIFDB_1gga8496d67b431969142a58d24a6f566fdfa99dd1133f4570cdab5d699dc50fb3465" kindref="member">SAI_FDB_FLUSH_ATTR_BV_ID</ref> 5) Flush all static entries by bridge port and VLAN - Set <ref refid="group__SAIFDB_1gga8496d67b431969142a58d24a6f566fdfa055a460d226dfbc98552aad66d98f4a1" kindref="member">SAI_FDB_FLUSH_ATTR_ENTRY_TYPE</ref>, <ref refid="group__SAIFDB_1gga8496d67b431969142a58d24a6f566fdfad8a859b6ab9689c3b391060912e79815" kindref="member">SAI_FDB_FLUSH_ATTR_BRIDGE_PORT_ID</ref>, and <ref refid="group__SAIFDB_1gga8496d67b431969142a58d24a6f566fdfa99dd1133f4570cdab5d699dc50fb3465" kindref="member">SAI_FDB_FLUSH_ATTR_BV_ID</ref> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saifdb.h" line="290" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIFDB_1ga9fafd9ff6e1295bb80527f68ab25a593" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__fdb__event__notification__data__t" kindref="compound">_sai_fdb_event_notification_data_t</ref></type>
+        <definition>typedef struct _sai_fdb_event_notification_data_t sai_fdb_event_notification_data_t</definition>
+        <argsstring></argsstring>
+        <name>sai_fdb_event_notification_data_t</name>
+        <briefdescription>
+<para>Notification data format received from SAI FDB callback. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>When FDB flush API is called (for example with no parameters) and switch learned a lot of MAC addresses, then calling this API can cause to generate a lot of notifications.</para>
+<para>Vendor can decide whether in that case send notifications 1 by 1 and populating all the data for sai_fdb_event_notification_data_t or to send consolidated event notification which will indicate that FDB flush operation was performed.</para>
+<para>Consolidated flush event will:</para>
+<para>Set data.fdb_entry.mac_address to 00:00:00:00:00:00.</para>
+<para>Set data.fdb_event to SAI_FDB_EVENT_FLUSHED.</para>
+<para>Add SAI_FDB_ENTRY_ATTR_TYPE to data.attr list and value set to SAI_FDB_FLUSH_ATTR_ENTRY_TYPE, if SAI_FDB_FLUSH_ATTR_ENTRY_TYPE was not provided to flush API, then 2 notifications will be sent (or 1 notification with 2 data entries) where data.attr will contain SAI_FDB_ENTRY_ATTR_TYPE set accordingly for specific entry types.</para>
+<para>Set data.fdb_entry.bv_id to SAI_FDB_FLUSH_ATTR_BV_ID value if attribute was provided to flush API.</para>
+<para>Add SAI_FDB_ENTRY_ATTR_BRIDGE_PORT_ID to data.attr list and value set to SAI_FDB_FLUSH_ATTR_BRIDGE_PORT_ID if that attribute was provided to flush API.</para>
+<para>All other attributes in consolidated FDB event notification are irrelevant and should be zero.</para>
+<para><simplesect kind="par"><title>Count:</title><para> @@count           attr[attr_count] </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saifdb.h" line="346" column="35"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIFDB_1gaf47179831c492b63f825f3be251d6ff0" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_fdb_entry_fn) (_In_ const sai_fdb_entry_t *fdb_entry, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ const sai_fdb_entry_t *fdb_entry, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_fdb_entry_fn</name>
+        <briefdescription>
+<para>Create FDB entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fdb_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>FDB entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saifdb.h" line="357" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saifdb.h" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIFDB_1ga955401f2e2ffc6d6ba0943136dd74f95" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_fdb_entry_fn) (_In_ const sai_fdb_entry_t *fdb_entry)</definition>
+        <argsstring>)(_In_ const sai_fdb_entry_t *fdb_entry)</argsstring>
+        <name>sai_remove_fdb_entry_fn</name>
+        <briefdescription>
+<para>Remove FDB entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fdb_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>FDB entry</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saifdb.h" line="369" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saifdb.h" bodystart="369" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIFDB_1ga1a0eef72d436d2b15a1f98e8c2dc245f" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_fdb_entry_attribute_fn) (_In_ const sai_fdb_entry_t *fdb_entry, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ const sai_fdb_entry_t *fdb_entry, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_fdb_entry_attribute_fn</name>
+        <briefdescription>
+<para>Set FDB entry attribute value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fdb_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>FDB entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saifdb.h" line="380" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saifdb.h" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIFDB_1ga92cd93632d840307a9ca483c8001ae37" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_fdb_entry_attribute_fn) (_In_ const sai_fdb_entry_t *fdb_entry, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ const sai_fdb_entry_t *fdb_entry, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_fdb_entry_attribute_fn</name>
+        <briefdescription>
+<para>Get FDB entry attribute value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">fdb_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>FDB entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saifdb.h" line="393" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saifdb.h" bodystart="393" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIFDB_1gae11a660ad91d41aa0867f355deb9d4b6" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_flush_fdb_entries_fn) (_In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_flush_fdb_entries_fn</name>
+        <briefdescription>
+<para>Remove all FDB entries by attribute set in sai_fdb_flush_attr. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saifdb.h" line="407" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saifdb.h" bodystart="407" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIFDB_1gaf2acd2e293c2d9ae6ed98ca649b95c91" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* sai_fdb_event_notification_fn) (_In_ uint32_t count, _In_ const sai_fdb_event_notification_data_t *data)</definition>
+        <argsstring>)(_In_ uint32_t count, _In_ const sai_fdb_event_notification_data_t *data)</argsstring>
+        <name>sai_fdb_event_notification_fn</name>
+        <briefdescription>
+<para>FDB notifications. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Count:</title><para> @@count           data[count]</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of notifications </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to FDB event notification data array </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saifdb.h" line="420" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saifdb.h" bodystart="420" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIFDB_1ga4a60a6a6e2db9eefea68e8f1aae405d0" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_create_fdb_entry_fn) (_In_ uint32_t object_count, _In_ const sai_fdb_entry_t *fdb_entry, _In_ const uint32_t *attr_count, _In_ const sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_fdb_entry_t *fdb_entry, _In_ const uint32_t *attr_count, _In_ const sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_create_fdb_entry_fn</name>
+        <briefdescription>
+<para>Bulk create FDB entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to create </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">fdb_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of object to create </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attr_count. Caller passes the number of attribute for each object to create. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attributes for every object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are created or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to create. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saifdb.h" line="441" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saifdb.h" bodystart="441" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIFDB_1ga052f072f12926d996508f23ecb3b91ca" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_remove_fdb_entry_fn) (_In_ uint32_t object_count, _In_ const sai_fdb_entry_t *fdb_entry, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_fdb_entry_t *fdb_entry, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_remove_fdb_entry_fn</name>
+        <briefdescription>
+<para>Bulk remove FDB entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to remove </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">fdb_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of objects to remove </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are removed or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to remove. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saifdb.h" line="463" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saifdb.h" bodystart="463" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIFDB_1gad37f5f050b61b990364663e94851e7a5" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_set_fdb_entry_attribute_fn) (_In_ uint32_t object_count, _In_ const sai_fdb_entry_t *fdb_entry, _In_ const sai_attribute_t *attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_fdb_entry_t *fdb_entry, _In_ const sai_attribute_t *attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_set_fdb_entry_attribute_fn</name>
+        <briefdescription>
+<para>Bulk set attribute on FDB entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to set attribute </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">fdb_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of objects to set attribute </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attributes to set on objects, one attribute per object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are set or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to set. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saifdb.h" line="484" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saifdb.h" bodystart="484" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIFDB_1ga856c65861ed30b254da8c6048d58eb89" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_get_fdb_entry_attribute_fn) (_In_ uint32_t object_count, _In_ const sai_fdb_entry_t *fdb_entry, _In_ const uint32_t *attr_count, _Inout_ sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_fdb_entry_t *fdb_entry, _In_ const uint32_t *attr_count, _Inout_ sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_get_fdb_entry_attribute_fn</name>
+        <briefdescription>
+<para>Bulk get attribute on FDB entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to get attribute </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">fdb_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of objects to get attribute </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attr_count. Caller passes the number of attribute for each object to get </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attributes to get on objects, one attribute per object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are get or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to get. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saifdb.h" line="508" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saifdb.h" bodystart="508" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIFDB_1ga499680a81f6d80249d3ffe51d4e1d1eb" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__fdb__api__t" kindref="compound">_sai_fdb_api_t</ref></type>
+        <definition>typedef struct _sai_fdb_api_t sai_fdb_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_fdb_api_t</name>
+        <briefdescription>
+<para>FDB method table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saifdb.h" line="531" column="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module defines SAI FDB interface. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2014 Microsoft Open Technologies, Inc.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <ulink url="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</ulink></para>
+<para>THIS CODE IS PROVIDED ON AN <emphasis>AS IS</emphasis> BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</para>
+<para>See the Apache Version 2.0 License for specific language governing permissions and limitations under the License.</para>
+<para>Microsoft would like to thank the following companies for their review and assistance with these files: Intel Corporation, Mellanox Technologies Ltd, Dell Products, L.P., Facebook, Inc., Marvell International Ltd. </para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saifdb.h"/>
+  </compounddef>
+</doxygen>

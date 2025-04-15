@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__port__lane__latch__status__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_port_lane_latch_status_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__port__lane__latch__status__t_1a14db2632f18b71cba59d1e59e875f41a" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _sai_port_lane_latch_status_t::lane</definition>
+        <argsstring></argsstring>
+        <name>lane</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="482" column="14" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="482" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__lane__latch__status__t_1aab966704a9a1cb2d11f3ae4269de675a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__sai__latch__status__t" kindref="compound">sai_latch_status_t</ref></type>
+        <definition>sai_latch_status_t _sai_port_lane_latch_status_t::value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="483" column="24" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="483" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>_sai_port_lane_latch_status_t</label>
+        <link refid="struct__sai__port__lane__latch__status__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>_sai_latch_status_t</label>
+        <link refid="struct__sai__latch__status__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="480" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="481" bodyend="484"/>
+    <listofallmembers>
+      <member refid="struct__sai__port__lane__latch__status__t_1a14db2632f18b71cba59d1e59e875f41a" prot="public" virt="non-virtual"><scope>_sai_port_lane_latch_status_t</scope><name>lane</name></member>
+      <member refid="struct__sai__port__lane__latch__status__t_1aab966704a9a1cb2d11f3ae4269de675a" prot="public" virt="non-virtual"><scope>_sai_port_lane_latch_status_t</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

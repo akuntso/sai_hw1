@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__route__api__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_route_api_t</compoundname>
+    <includes refid="sairoute_8h" local="no">sairoute.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__route__api__t_1aadc8a805ff32aea522bbd58e8efa1d03" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIROUTE_1ga5dba12fb352d5df7a97b355838a64dc3" kindref="member">sai_create_route_entry_fn</ref></type>
+        <definition>sai_create_route_entry_fn _sai_route_api_t::create_route_entry</definition>
+        <argsstring></argsstring>
+        <name>create_route_entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairoute.h" line="335" column="49" bodyfile="/home/andrii/sai_hw1/SAI/inc/sairoute.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__route__api__t_1ad5f7ba7a6507d54bca5455efacc368d0" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIROUTE_1ga480a37fce392b1872da5e09b206ff0c5" kindref="member">sai_remove_route_entry_fn</ref></type>
+        <definition>sai_remove_route_entry_fn _sai_route_api_t::remove_route_entry</definition>
+        <argsstring></argsstring>
+        <name>remove_route_entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairoute.h" line="336" column="49" bodyfile="/home/andrii/sai_hw1/SAI/inc/sairoute.h" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__route__api__t_1a3fb762b37df8d67cd10a218ce83ac8c5" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIROUTE_1ga4998aecda49966187d0badd1a5860793" kindref="member">sai_set_route_entry_attribute_fn</ref></type>
+        <definition>sai_set_route_entry_attribute_fn _sai_route_api_t::set_route_entry_attribute</definition>
+        <argsstring></argsstring>
+        <name>set_route_entry_attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairoute.h" line="337" column="49" bodyfile="/home/andrii/sai_hw1/SAI/inc/sairoute.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__route__api__t_1ab2daad929a388a7ce88e4f488f0106e4" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIROUTE_1gae28e7ad532d020512bdddf73fdb77d55" kindref="member">sai_get_route_entry_attribute_fn</ref></type>
+        <definition>sai_get_route_entry_attribute_fn _sai_route_api_t::get_route_entry_attribute</definition>
+        <argsstring></argsstring>
+        <name>get_route_entry_attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairoute.h" line="338" column="49" bodyfile="/home/andrii/sai_hw1/SAI/inc/sairoute.h" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__route__api__t_1ad73bc17acf3bba6303d2e7aad531be2c" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIROUTE_1ga04f4d858e72c98b102de1f40a1861a37" kindref="member">sai_bulk_create_route_entry_fn</ref></type>
+        <definition>sai_bulk_create_route_entry_fn _sai_route_api_t::create_route_entries</definition>
+        <argsstring></argsstring>
+        <name>create_route_entries</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairoute.h" line="340" column="49" bodyfile="/home/andrii/sai_hw1/SAI/inc/sairoute.h" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__route__api__t_1a6ab20f3de5ccf85359dc296361f8a5e1" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIROUTE_1gaa6b1eac4218c14eec66efa2710e2fba7" kindref="member">sai_bulk_remove_route_entry_fn</ref></type>
+        <definition>sai_bulk_remove_route_entry_fn _sai_route_api_t::remove_route_entries</definition>
+        <argsstring></argsstring>
+        <name>remove_route_entries</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairoute.h" line="341" column="49" bodyfile="/home/andrii/sai_hw1/SAI/inc/sairoute.h" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__route__api__t_1a2f5110be19a467e9e4812019144eeea4" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIROUTE_1gacb11438936d35c5948ffb534c19e5f6f" kindref="member">sai_bulk_set_route_entry_attribute_fn</ref></type>
+        <definition>sai_bulk_set_route_entry_attribute_fn _sai_route_api_t::set_route_entries_attribute</definition>
+        <argsstring></argsstring>
+        <name>set_route_entries_attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairoute.h" line="342" column="49" bodyfile="/home/andrii/sai_hw1/SAI/inc/sairoute.h" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__route__api__t_1a9849767f2ec1c47fd422982a1290a1c4" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIROUTE_1gad70167aad9410f4a6ddf4dfa8963ce9c" kindref="member">sai_bulk_get_route_entry_attribute_fn</ref></type>
+        <definition>sai_bulk_get_route_entry_attribute_fn _sai_route_api_t::get_route_entries_attribute</definition>
+        <argsstring></argsstring>
+        <name>get_route_entries_attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairoute.h" line="343" column="49" bodyfile="/home/andrii/sai_hw1/SAI/inc/sairoute.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Router entry methods table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>_sai_route_api_t</label>
+        <link refid="struct__sai__route__api__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>create_route_entries</edgelabel>
+          <edgelabel>create_route_entry</edgelabel>
+          <edgelabel>get_route_entries_attribute</edgelabel>
+          <edgelabel>get_route_entry_attribute</edgelabel>
+          <edgelabel>remove_route_entries</edgelabel>
+          <edgelabel>remove_route_entry</edgelabel>
+          <edgelabel>set_route_entries_attribute</edgelabel>
+          <edgelabel>set_route_entry_attribute</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>_sai_ip_prefix_t</label>
+        <link refid="struct__sai__ip__prefix__t"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>addr</edgelabel>
+          <edgelabel>mask</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>_sai_route_entry_t</label>
+        <link refid="struct__sai__route__entry__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>destination</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>_sai_ip_addr_t</label>
+        <link refid="union__sai__ip__addr__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/andrii/sai_hw1/SAI/inc/sairoute.h" line="333" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/sairoute.h" bodystart="334" bodyend="345"/>
+    <listofallmembers>
+      <member refid="struct__sai__route__api__t_1ad73bc17acf3bba6303d2e7aad531be2c" prot="public" virt="non-virtual"><scope>_sai_route_api_t</scope><name>create_route_entries</name></member>
+      <member refid="struct__sai__route__api__t_1aadc8a805ff32aea522bbd58e8efa1d03" prot="public" virt="non-virtual"><scope>_sai_route_api_t</scope><name>create_route_entry</name></member>
+      <member refid="struct__sai__route__api__t_1a9849767f2ec1c47fd422982a1290a1c4" prot="public" virt="non-virtual"><scope>_sai_route_api_t</scope><name>get_route_entries_attribute</name></member>
+      <member refid="struct__sai__route__api__t_1ab2daad929a388a7ce88e4f488f0106e4" prot="public" virt="non-virtual"><scope>_sai_route_api_t</scope><name>get_route_entry_attribute</name></member>
+      <member refid="struct__sai__route__api__t_1a6ab20f3de5ccf85359dc296361f8a5e1" prot="public" virt="non-virtual"><scope>_sai_route_api_t</scope><name>remove_route_entries</name></member>
+      <member refid="struct__sai__route__api__t_1ad5f7ba7a6507d54bca5455efacc368d0" prot="public" virt="non-virtual"><scope>_sai_route_api_t</scope><name>remove_route_entry</name></member>
+      <member refid="struct__sai__route__api__t_1a2f5110be19a467e9e4812019144eeea4" prot="public" virt="non-virtual"><scope>_sai_route_api_t</scope><name>set_route_entries_attribute</name></member>
+      <member refid="struct__sai__route__api__t_1a3fb762b37df8d67cd10a218ce83ac8c5" prot="public" virt="non-virtual"><scope>_sai_route_api_t</scope><name>set_route_entry_attribute</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

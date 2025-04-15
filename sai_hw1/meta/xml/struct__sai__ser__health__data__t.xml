@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__ser__health__data__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_ser_health_data_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__ser__health__data__t_1af667057f4e8cc0105fe777a7cb12ffd7" prot="public" static="no" mutable="no">
+        <type>sai_ser_type_t</type>
+        <definition>sai_ser_type_t _sai_ser_health_data_t::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SER type specific fields </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1999" column="20" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1999" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__ser__health__data__t_1a7a9c6203f53d2cee9dced3a084e43892" prot="public" static="no" mutable="no">
+        <type>sai_ser_correction_type_t</type>
+        <definition>sai_ser_correction_type_t _sai_ser_health_data_t::correction_type</definition>
+        <argsstring></argsstring>
+        <name>correction_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>SER correction type specific fields </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="2002" column="31" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="2002" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__ser__health__data__t_1aba896f789eaf8856a5bf861d04aaa15e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _sai_ser_health_data_t::ser_log_type</definition>
+        <argsstring></argsstring>
+        <name>ser_log_type</name>
+        <briefdescription>
+<para>SER correction log info (sai_ser_log_type_t) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For example, if entry info is present and is coming from cache SAI_SER_LOG_TYPE_ENTRY_INFO | SAI_SER_LOG_TYPE_CACHE</para>
+<para><simplesect kind="par"><title>Flags:</title><para> @@flags           sai_ser_log_type_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="2012" column="14" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="2012" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1996" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1997" bodyend="2013"/>
+    <listofallmembers>
+      <member refid="struct__sai__ser__health__data__t_1a7a9c6203f53d2cee9dced3a084e43892" prot="public" virt="non-virtual"><scope>_sai_ser_health_data_t</scope><name>correction_type</name></member>
+      <member refid="struct__sai__ser__health__data__t_1aba896f789eaf8856a5bf861d04aaa15e" prot="public" virt="non-virtual"><scope>_sai_ser_health_data_t</scope><name>ser_log_type</name></member>
+      <member refid="struct__sai__ser__health__data__t_1af667057f4e8cc0105fe777a7cb12ffd7" prot="public" virt="non-virtual"><scope>_sai_ser_health_data_t</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

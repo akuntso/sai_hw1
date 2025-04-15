@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__system__port__config__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_system_port_config_t</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__system__port__config__t_1ade504fc5567192cc626b65d1dd26d503" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _sai_system_port_config_t::port_id</definition>
+        <argsstring></argsstring>
+        <name>port_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>System Port ID </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1368" column="14" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1368" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__system__port__config__t_1a19005c919d93db55e9f13e824153549f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _sai_system_port_config_t::attached_switch_id</definition>
+        <argsstring></argsstring>
+        <name>attached_switch_id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Switch ID of where the system port exists </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1371" column="14" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1371" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__system__port__config__t_1af6ac7a225fb5f84cc20d9bc25faa7031" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _sai_system_port_config_t::attached_core_index</definition>
+        <argsstring></argsstring>
+        <name>attached_core_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Core associated with the system port </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1374" column="14" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__system__port__config__t_1a1bd94e11a7390da5d480d54d14d80011" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _sai_system_port_config_t::attached_core_port_index</definition>
+        <argsstring></argsstring>
+        <name>attached_core_port_index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Port Index within the core associated with the system port </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1377" column="14" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__system__port__config__t_1a91f2eae1fd86548f1f09f2d97f0d0cb7" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _sai_system_port_config_t::speed</definition>
+        <argsstring></argsstring>
+        <name>speed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Speed of the system port </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1380" column="14" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__system__port__config__t_1a455c6dd8e1424332a55cb132a39f5bb9" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _sai_system_port_config_t::num_voq</definition>
+        <argsstring></argsstring>
+        <name>num_voq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of Virtual Output Queues associated with the system port </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1383" column="14" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1383" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>System port configuration attributes. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Speed parameter should be the same value as SAI_PORT_ATTR_SPEED. This is used for VOQ scheduling.</para>
+<para>All elements are mandatory </para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1365" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1366" bodyend="1385"/>
+    <listofallmembers>
+      <member refid="struct__sai__system__port__config__t_1af6ac7a225fb5f84cc20d9bc25faa7031" prot="public" virt="non-virtual"><scope>_sai_system_port_config_t</scope><name>attached_core_index</name></member>
+      <member refid="struct__sai__system__port__config__t_1a1bd94e11a7390da5d480d54d14d80011" prot="public" virt="non-virtual"><scope>_sai_system_port_config_t</scope><name>attached_core_port_index</name></member>
+      <member refid="struct__sai__system__port__config__t_1a19005c919d93db55e9f13e824153549f" prot="public" virt="non-virtual"><scope>_sai_system_port_config_t</scope><name>attached_switch_id</name></member>
+      <member refid="struct__sai__system__port__config__t_1a455c6dd8e1424332a55cb132a39f5bb9" prot="public" virt="non-virtual"><scope>_sai_system_port_config_t</scope><name>num_voq</name></member>
+      <member refid="struct__sai__system__port__config__t_1ade504fc5567192cc626b65d1dd26d503" prot="public" virt="non-virtual"><scope>_sai_system_port_config_t</scope><name>port_id</name></member>
+      <member refid="struct__sai__system__port__config__t_1a91f2eae1fd86548f1f09f2d97f0d0cb7" prot="public" virt="non-virtual"><scope>_sai_system_port_config_t</scope><name>speed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

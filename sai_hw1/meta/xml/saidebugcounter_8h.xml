@@ -1,0 +1,1082 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="saidebugcounter_8h" kind="file" language="C++">
+    <compoundname>saidebugcounter.h</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+    <includedby refid="sai_8h" local="yes">/home/andrii/sai_hw1/SAI/inc/sai.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saidebugcounter.h</label>
+        <link refid="saidebugcounter_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>sys/types.h</label>
+      </node>
+      <node id="2">
+        <label>saitypes.h</label>
+        <link refid="saitypes_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saidebugcounter.h</label>
+        <link refid="saidebugcounter_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/andrii/sai_hw1/SAI/inc/sai.h</label>
+        <link refid="sai_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</label>
+        <link refid="saiextensions_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct__sai__debug__counter__api__t" prot="public">_sai_debug_counter_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIDEBUGCOUNTER_1ga12dd047a22748532683245953da60f59" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_debug_counter_type_t</name>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1gga12dd047a22748532683245953da60f59aab89d177ff684bdabb2b9fa3b5a5ad5c" prot="public">
+          <name>SAI_DEBUG_COUNTER_TYPE_PORT_IN_DROP_REASONS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port in drop reasons. Base object: SAI_OBJECT_TYPE_PORT </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1gga12dd047a22748532683245953da60f59ab0475cc3beccb88142e7386fe4228584" prot="public">
+          <name>SAI_DEBUG_COUNTER_TYPE_PORT_OUT_DROP_REASONS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port out drop reasons. Base object: SAI_OBJECT_TYPE_PORT </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1gga12dd047a22748532683245953da60f59a155316eba2fce4c4aec18b622dfd13e6" prot="public">
+          <name>SAI_DEBUG_COUNTER_TYPE_SWITCH_IN_DROP_REASONS</name>
+          <briefdescription>
+<para>Switch in drop reasons. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Base object: SAI_OBJECT_TYPE_SWITCH. Values for all ports in the switch are summed up by switch counter </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1gga12dd047a22748532683245953da60f59a05bfe1ba21f6029e5a3f38354dc7cdac" prot="public">
+          <name>SAI_DEBUG_COUNTER_TYPE_SWITCH_OUT_DROP_REASONS</name>
+          <briefdescription>
+<para>Switch out drop reasons. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Base object: SAI_OBJECT_TYPE_SWITCH. Values for all ports in the switch are summed up by switch counter </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Debug counter type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidebugcounter.h" line="43" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidebugcounter.h" bodystart="44" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIDEBUGCOUNTER_1gacf249229e35d8c5be3d093af97eda39a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_debug_counter_bind_method_t</name>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggacf249229e35d8c5be3d093af97eda39aad432c8a62289e554f59b33c317896c01" prot="public">
+          <name>SAI_DEBUG_COUNTER_BIND_METHOD_AUTOMATIC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Bind automatically to all instances of base object </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Debug counter bind method. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidebugcounter.h" line="72" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidebugcounter.h" bodystart="73" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIDEBUGCOUNTER_1gaeead349562594f067067f2a38e8157c4" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_in_drop_reason_t</name>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4aa47c50237ab3e80ac67b98b1dcb5cd3e" prot="public">
+          <name>SAI_IN_DROP_REASON_START</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Start of in drop reasons </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4a89d2ca861f0ed1cc076c2f90b20b4355" prot="public">
+          <name>SAI_IN_DROP_REASON_L2_ANY</name>
+          <initializer>= SAI_IN_DROP_REASON_START</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Any L2 pipeline drop </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4adeabe3d1c32c1ddaed2a9c5c3369bbbd" prot="public">
+          <name>SAI_IN_DROP_REASON_SMAC_MULTICAST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Source MAC is multicast </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4ad6ad444b9ebee68c48a2ec17b2b955cf" prot="public">
+          <name>SAI_IN_DROP_REASON_SMAC_EQUALS_DMAC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Source MAC equals destination MAC </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4adafda0796d4f0add939cacc8de055ba4" prot="public">
+          <name>SAI_IN_DROP_REASON_DMAC_RESERVED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Destination MAC is Reserved (Destination MAC=01-80-C2-00-00-0x) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4a28b297f21a09b982d0f95eac9fb95278" prot="public">
+          <name>SAI_IN_DROP_REASON_VLAN_TAG_NOT_ALLOWED</name>
+          <briefdescription>
+<para>VLAN tag not allowed. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Frame tagged when port is dropping tagged, or untagged when dropping untagged </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4ae5651f31501419cddd0d5077cb6de00c" prot="public">
+          <name>SAI_IN_DROP_REASON_INGRESS_VLAN_FILTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ingress VLAN filter </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4a28b8d01b1b0a1b9b83181f51d8ed5318" prot="public">
+          <name>SAI_IN_DROP_REASON_INGRESS_STP_FILTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ingress STP filter </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4a27b9e079f32d740836ff697cbee9b111" prot="public">
+          <name>SAI_IN_DROP_REASON_FDB_UC_DISCARD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unicast FDB table action discard </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4ab6cce12f61e76d9e819f5d7e0528224c" prot="public">
+          <name>SAI_IN_DROP_REASON_FDB_MC_DISCARD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Multicast FDB table empty tx list </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4a11109db5789340c8dff35321844c3af9" prot="public">
+          <name>SAI_IN_DROP_REASON_L2_LOOPBACK_FILTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port L2 loopback filter (packet egressing on the same port+VLAN as ingressing) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4a772b36dedc6f95132753491dab622031" prot="public">
+          <name>SAI_IN_DROP_REASON_EXCEEDS_L2_MTU</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Packet size is larger than the L2 (Port) MTU </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4acaed54a3d3472a5d5b76bc608452c55c" prot="public">
+          <name>SAI_IN_DROP_REASON_L3_ANY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Any L3 pipeline drop </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4a50ddcad525537224559baab9973f12f2" prot="public">
+          <name>SAI_IN_DROP_REASON_EXCEEDS_L3_MTU</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Packet size is larger than the L3 (Router Interface) MTU </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4a477f29e95bf4abd5148705e9be2eb147" prot="public">
+          <name>SAI_IN_DROP_REASON_TTL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>TTL expired </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4a296f28d4cd9557afaf7394088c7ac68b" prot="public">
+          <name>SAI_IN_DROP_REASON_L3_LOOPBACK_FILTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>RIF L3 loopback filter (packet egressing on the same RIF as ingressing) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4a930bd82b3b5fe4a0db96e6c36e1d7a0e" prot="public">
+          <name>SAI_IN_DROP_REASON_NON_ROUTABLE</name>
+          <briefdescription>
+<para>Non routable packet. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>IGMP v1 v2 v3 membership query IGMP v1 membership report IGMP v2 membership report IGMP v2 leave group IGMP v3 membership report </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4a90eea9b935d02c6bcf15306d5ec7457f" prot="public">
+          <name>SAI_IN_DROP_REASON_NO_L3_HEADER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Destination MAC is the router MAC, however packet is not routable (isn&apos;t IP or MPLS) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4a410be20473adb4166213b2e4caf06ebc" prot="public">
+          <name>SAI_IN_DROP_REASON_IP_HEADER_ERROR</name>
+          <briefdescription>
+<para>IP Header error. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Due to header checksum or bad IP version or IPv4 IHL too short </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4ae7113d29724aa6fb5cc271fa6b3001f4" prot="public">
+          <name>SAI_IN_DROP_REASON_UC_DIP_MC_DMAC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unicast destination IP with non unicast (multicast or broadcast) destination MAC </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4ade0abd08bf549f43d91012d1ca77444d" prot="public">
+          <name>SAI_IN_DROP_REASON_DIP_LOOPBACK</name>
+          <briefdescription>
+<para>Destination IP is loopback address. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>for IPv4: Destination IP=127.0.0.0/8 for IPv6: Destination IP=::1/128 OR Destination IP=0:0:0:0:0:ffff:7f00:0/104 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4a8c24e5b280e31897eb225502d4265fb3" prot="public">
+          <name>SAI_IN_DROP_REASON_SIP_LOOPBACK</name>
+          <briefdescription>
+<para>Source IP is loopback address. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>for IPv4: Source IP=127.0.0.0/8 for IPv6: Source IP=::1/128 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4a78d883ed3fa96cee093a364428b93aa8" prot="public">
+          <name>SAI_IN_DROP_REASON_SIP_MC</name>
+          <briefdescription>
+<para>Source IP is multicast address. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>for IPv4: Source IP=224.0.0.0/4 for IPv6: Source IP=FF00::/8 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4ac0fabd021de97914c78b06ee40b003bd" prot="public">
+          <name>SAI_IN_DROP_REASON_SIP_CLASS_E</name>
+          <briefdescription>
+<para>Source IP is in class E. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>IPv4 AND Source IP=240.0.0.0/4 AND Source IP!=255.255.255.255 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4a10d139392bcdc3925d1563796e25c6b8" prot="public">
+          <name>SAI_IN_DROP_REASON_SIP_UNSPECIFIED</name>
+          <briefdescription>
+<para>Source IP unspecified. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>for IPv4: Source IP=0.0.0.0/32 for IPv6: Source IP=::0 </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4a59f921c0b8082618878bb94cbfda5344" prot="public">
+          <name>SAI_IN_DROP_REASON_MC_DMAC_MISMATCH</name>
+          <briefdescription>
+<para>Destination IP is multicast but destination MAC isn&apos;t. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Destination IP is multicast AND for IPv4: Destination MAC!={01-00-5E-0 (25 bits), dip[22:0]} for IPv6: Destination MAC!={33-33, DIP[31:0]} </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4a1ddbdf0391c8606e8a9787c54df013a3" prot="public">
+          <name>SAI_IN_DROP_REASON_SIP_EQUALS_DIP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Source IP equals destination IP </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4a5501b4c32f45664eed9fbd464be0f7c4" prot="public">
+          <name>SAI_IN_DROP_REASON_SIP_BC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>IPv4 source IP is limited broadcast (Source IP=255.255.255.255) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4afde35b78498466663d6cdc01e49c408b" prot="public">
+          <name>SAI_IN_DROP_REASON_DIP_LOCAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>IPv4 destination IP is local network (Destination IP=0.0.0.0/8) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4aa77b57afff0dd0d1dc8062774bc54e3b" prot="public">
+          <name>SAI_IN_DROP_REASON_DIP_LINK_LOCAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>IPv4 unicast destination IP is link local (Destination IP=169.254.0.0/16) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4abf4a0395739a01ff0a99886365fbfe7b" prot="public">
+          <name>SAI_IN_DROP_REASON_SIP_LINK_LOCAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>IPv4 Source IP is link local (Source IP=169.254.0.0/16) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4a7c0a9ed9609bcb55a0b9583df853dfe2" prot="public">
+          <name>SAI_IN_DROP_REASON_IPV6_MC_SCOPE0</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>IPv6 destination in multicast scope 0 reserved (Destination IP=ff:x0:/16) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4abcae01ff0d3d9ee106153cc9c16e8210" prot="public">
+          <name>SAI_IN_DROP_REASON_IPV6_MC_SCOPE1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>IPv6 destination in multicast scope 1 interface-local (Destination IP=ff:x1:/16) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4aa0a4049243adcd8b65356e07d6af838f" prot="public">
+          <name>SAI_IN_DROP_REASON_IRIF_DISABLED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ingress RIF is disabled </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4ab4a4eb4889cbaba205310f6322f25a8f" prot="public">
+          <name>SAI_IN_DROP_REASON_ERIF_DISABLED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Egress RIF is disabled </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4a68e5e0f824c562ab59c912d7ffdeaf53" prot="public">
+          <name>SAI_IN_DROP_REASON_LPM4_MISS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>IPv4 Routing table (LPM) unicast miss </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4a54c8603a7680ab500e299ccbdb996f34" prot="public">
+          <name>SAI_IN_DROP_REASON_LPM6_MISS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>IPv6 Routing table (LPM) unicast miss </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4ab7a2f510a56823f90cfaeaab7e07e9e7" prot="public">
+          <name>SAI_IN_DROP_REASON_BLACKHOLE_ROUTE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Black hole route (discard by route entry) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4ad3bbde7c24e7fe75ebb51eb9e5fa92c3" prot="public">
+          <name>SAI_IN_DROP_REASON_BLACKHOLE_ARP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Black hole ARP/Neighbor (discard by ARP or neighbor entries) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4a3549c066f1352e159ae996498bb982c5" prot="public">
+          <name>SAI_IN_DROP_REASON_UNRESOLVED_NEXT_HOP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Unresolved next hop (missing ARP entry) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4ae0ac8ddf5c29b8229a30d4444410447b" prot="public">
+          <name>SAI_IN_DROP_REASON_L3_EGRESS_LINK_DOWN</name>
+          <briefdescription>
+<para>Packet is destined for neighboring device but neighbor device link is down. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Counted on ingress link </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4a3070cba8e777308bb335fafcc41fc187" prot="public">
+          <name>SAI_IN_DROP_REASON_DECAP_ERROR</name>
+          <briefdescription>
+<para>Packet decapsulation failed. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>e.g.: need to decap too many bytes, remaining packet is too short, UDP port out of defined range </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4af5dbdea16800e62f38d46f60b956135f" prot="public">
+          <name>SAI_IN_DROP_REASON_ACL_ANY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Packet is dropped due to configured ACL rules, all stages/bind points combinations </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4a55021de6803c800e4359d9bf79c70ada" prot="public">
+          <name>SAI_IN_DROP_REASON_ACL_INGRESS_PORT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Packet is dropped due to configured ACL rules, ingress stage, port binding </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4a2d44efaa3b838812a45289ea7166bbbd" prot="public">
+          <name>SAI_IN_DROP_REASON_ACL_INGRESS_LAG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Packet is dropped due to configured ACL rules, ingress stage, LAG binding </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4a9f45f8580784801cb41da97c48da1951" prot="public">
+          <name>SAI_IN_DROP_REASON_ACL_INGRESS_VLAN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Packet is dropped due to configured ACL rules, ingress stage, VLAN binding </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4ab6e0871dfd848c10eabcf134a44ad51e" prot="public">
+          <name>SAI_IN_DROP_REASON_ACL_INGRESS_RIF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Packet is dropped due to configured ACL rules, ingress stage, RIF binding </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4a2c006570042ad35839781be6949925fa" prot="public">
+          <name>SAI_IN_DROP_REASON_ACL_INGRESS_SWITCH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Packet is dropped due to configured ACL rules, ingress stage, switch binding </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4a50a75319a7038a37ccf630a5e1eb75bd" prot="public">
+          <name>SAI_IN_DROP_REASON_ACL_EGRESS_PORT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Packet is dropped due to configured ACL rules, egress stage, port binding </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4ade1967a4c1a982887fab4a34c7598ac8" prot="public">
+          <name>SAI_IN_DROP_REASON_ACL_EGRESS_LAG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Packet is dropped due to configured ACL rules, egress stage, LAG binding </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4a08e13e68dfac0ddc22b48c3421cbc4e4" prot="public">
+          <name>SAI_IN_DROP_REASON_ACL_EGRESS_VLAN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Packet is dropped due to configured ACL rules, egress stage, VLAN binding </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4a530d7254dbcd56d53aae01e9aa4aa010" prot="public">
+          <name>SAI_IN_DROP_REASON_ACL_EGRESS_RIF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Packet is dropped due to configured ACL rules, egress stage, RIF binding </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4a1bcf61c14bbc7516cae2c4dd47f15e76" prot="public">
+          <name>SAI_IN_DROP_REASON_ACL_EGRESS_SWITCH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Packet is dropped due to configured ACL rules, egress stage, switch binding </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4a13a64b4aa7d7fa42b66d461363016e75" prot="public">
+          <name>SAI_IN_DROP_REASON_FDB_AND_BLACKHOLE_DISCARDS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Packet is dropped due to FDB action discards or route discards (black hole route) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4ac21f33f9068641957e2db44c1a741b31" prot="public">
+          <name>SAI_IN_DROP_REASON_MPLS_MISS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>MPLS Routing table lookup miss </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4af98f20cc73134e207d32e8e6d8c27784" prot="public">
+          <name>SAI_IN_DROP_REASON_SRV6_LOCAL_SID_DROP</name>
+          <briefdescription>
+<para>SRV6 local SID drop. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Packet is dropped due to local SID configuration or incorrect value in SRV6 packet header e.g.: Local SID packet action is set to SAI_PACKET_ACTION_DROP Next Header is SRH and Segments Left value is 0 for End, End.X, End.T, End.B* endpoint types Next Header is not SRH while local SID is configured for packet DA Segments Left value is not 0 when received packet is destined to S and S is a local SID of type End.D* </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4aaf223246b7a1bb40d22c6707cfc8c384" prot="public">
+          <name>SAI_IN_DROP_REASON_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of in drop reasons </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4af482e59a32893b22d48e31a6e0823734" prot="public">
+          <name>SAI_IN_DROP_REASON_CUSTOM_RANGE_BASE</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaeead349562594f067067f2a38e8157c4add5686cdbb8eeba6067f242b3aedefe9" prot="public">
+          <name>SAI_IN_DROP_REASON_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute data for in drop reasons. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidebugcounter.h" line="82" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidebugcounter.h" bodystart="83" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIDEBUGCOUNTER_1ga9bf28d66b40b24dbc47677d5f661937a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_out_drop_reason_t</name>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1gga9bf28d66b40b24dbc47677d5f661937aa2a33457dcc8fe9835ca6c3120aab2a11" prot="public">
+          <name>SAI_OUT_DROP_REASON_START</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Start of out drop reasons </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1gga9bf28d66b40b24dbc47677d5f661937aad2e8e1b38a8808b9d9d5dbc089418249" prot="public">
+          <name>SAI_OUT_DROP_REASON_L2_ANY</name>
+          <initializer>= SAI_OUT_DROP_REASON_START</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Any L2 pipeline drop </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1gga9bf28d66b40b24dbc47677d5f661937aa237e8043bc02dc283fc43d0100ecfbf1" prot="public">
+          <name>SAI_OUT_DROP_REASON_EGRESS_VLAN_FILTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Egress VLAN filter </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1gga9bf28d66b40b24dbc47677d5f661937aae66402706e7cc3a0b0acedc61eece6d1" prot="public">
+          <name>SAI_OUT_DROP_REASON_L3_ANY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Any L3 pipeline drop </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1gga9bf28d66b40b24dbc47677d5f661937aa2e5c82c1b8ccb7c77fb42b71af9ef1ec" prot="public">
+          <name>SAI_OUT_DROP_REASON_L3_EGRESS_LINK_DOWN</name>
+          <briefdescription>
+<para>Packet is destined for neighboring device but neighbor device link is down. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Counted on egress link </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1gga9bf28d66b40b24dbc47677d5f661937aa729d72eda0c2fcb21a491676d3896fce" prot="public">
+          <name>SAI_OUT_DROP_REASON_TUNNEL_LOOPBACK_PACKET_DROP</name>
+          <briefdescription>
+<para>Tunnel packets dropped if going back to the incoming tunnel. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1gga9bf28d66b40b24dbc47677d5f661937aa78e1587040f9736502337ee534b05595" prot="public">
+          <name>SAI_OUT_DROP_REASON_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of out drop reasons </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1gga9bf28d66b40b24dbc47677d5f661937aa40416f66f1879b872c9a82aff612368e" prot="public">
+          <name>SAI_OUT_DROP_REASON_CUSTOM_RANGE_BASE</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1gga9bf28d66b40b24dbc47677d5f661937aaf725fe3fa1ae75927996c57892fa1c05" prot="public">
+          <name>SAI_OUT_DROP_REASON_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute data for out drop reasons. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidebugcounter.h" line="339" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidebugcounter.h" bodystart="340" bodyend="380"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIDEBUGCOUNTER_1gaca7678992e1d3f88ef481515be35bab2" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_debug_counter_attr_t</name>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaca7678992e1d3f88ef481515be35bab2aa3dc464f5048ef9918a6f56790f66fd2" prot="public">
+          <name>SAI_DEBUG_COUNTER_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaca7678992e1d3f88ef481515be35bab2a288514fb506dd998cd14f383fff6cfac" prot="public">
+          <name>SAI_DEBUG_COUNTER_ATTR_INDEX</name>
+          <initializer>= SAI_DEBUG_COUNTER_ATTR_START</initializer>
+          <briefdescription>
+<para>Object stat index Index is added to base start. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaca7678992e1d3f88ef481515be35bab2a43ce16f95cac879792a539378c65eecb" prot="public">
+          <name>SAI_DEBUG_COUNTER_ATTR_TYPE</name>
+          <briefdescription>
+<para>Debug counter type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_debug_counter_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>IsResourceType:</title><para> @@isresourcetype  true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaca7678992e1d3f88ef481515be35bab2a42e7fa7b76ba8074fcfee6b32a13b76a" prot="public">
+          <name>SAI_DEBUG_COUNTER_ATTR_BIND_METHOD</name>
+          <briefdescription>
+<para>Bind method to base object. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_debug_counter_bind_method_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_DEBUG_COUNTER_BIND_METHOD_AUTOMATIC </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaca7678992e1d3f88ef481515be35bab2a92d9713711723efade6e9bfa51760456" prot="public">
+          <name>SAI_DEBUG_COUNTER_ATTR_IN_DROP_REASON_LIST</name>
+          <briefdescription>
+<para>List of in drop reasons that will be counted. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_s32_list_t sai_in_drop_reason_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_DEBUG_COUNTER_ATTR_TYPE == SAI_DEBUG_COUNTER_TYPE_PORT_IN_DROP_REASONS or SAI_DEBUG_COUNTER_ATTR_TYPE == SAI_DEBUG_COUNTER_TYPE_SWITCH_IN_DROP_REASONS </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaca7678992e1d3f88ef481515be35bab2a710e9c681a2dcf8c5e1dff5ab982f81e" prot="public">
+          <name>SAI_DEBUG_COUNTER_ATTR_OUT_DROP_REASON_LIST</name>
+          <briefdescription>
+<para>List of out drop reasons that will be counted. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_s32_list_t sai_out_drop_reason_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_DEBUG_COUNTER_ATTR_TYPE == SAI_DEBUG_COUNTER_TYPE_PORT_OUT_DROP_REASONS or SAI_DEBUG_COUNTER_ATTR_TYPE == SAI_DEBUG_COUNTER_TYPE_SWITCH_OUT_DROP_REASONS </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaca7678992e1d3f88ef481515be35bab2a0d17a99f1e3773be917472cbab70d5a3" prot="public">
+          <name>SAI_DEBUG_COUNTER_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaca7678992e1d3f88ef481515be35bab2a3d26b5930e7c4b81a14bc3cc439096c6" prot="public">
+          <name>SAI_DEBUG_COUNTER_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDEBUGCOUNTER_1ggaca7678992e1d3f88ef481515be35bab2a21d23d9d1ac7b2d2b033d2187c9d4c3f" prot="public">
+          <name>SAI_DEBUG_COUNTER_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute Id in sai_set_counter_attribute() and sai_get_counter_attribute() calls. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidebugcounter.h" line="386" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidebugcounter.h" bodystart="387" bodyend="455"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIDEBUGCOUNTER_1ga9d383b3483c207947ad6b46b1939dd8b" prot="public" static="no">
+        <type>enum <ref refid="group__SAIDEBUGCOUNTER_1ga12dd047a22748532683245953da60f59" kindref="member">_sai_debug_counter_type_t</ref></type>
+        <definition>typedef enum _sai_debug_counter_type_t sai_debug_counter_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_debug_counter_type_t</name>
+        <briefdescription>
+<para>Debug counter type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidebugcounter.h" line="67" column="26"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDEBUGCOUNTER_1ga11c431ea1a3ed16f1fc821c3cd4dd783" prot="public" static="no">
+        <type>enum <ref refid="group__SAIDEBUGCOUNTER_1gacf249229e35d8c5be3d093af97eda39a" kindref="member">_sai_debug_counter_bind_method_t</ref></type>
+        <definition>typedef enum _sai_debug_counter_bind_method_t sai_debug_counter_bind_method_t</definition>
+        <argsstring></argsstring>
+        <name>sai_debug_counter_bind_method_t</name>
+        <briefdescription>
+<para>Debug counter bind method. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidebugcounter.h" line="77" column="33"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDEBUGCOUNTER_1ga494a3708d68e1f71473c3fb6096ce5dc" prot="public" static="no">
+        <type>enum <ref refid="group__SAIDEBUGCOUNTER_1gaeead349562594f067067f2a38e8157c4" kindref="member">_sai_in_drop_reason_t</ref></type>
+        <definition>typedef enum _sai_in_drop_reason_t sai_in_drop_reason_t</definition>
+        <argsstring></argsstring>
+        <name>sai_in_drop_reason_t</name>
+        <briefdescription>
+<para>Attribute data for in drop reasons. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidebugcounter.h" line="334" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDEBUGCOUNTER_1gab93eb041175b75a0d7b858f97eac9a50" prot="public" static="no">
+        <type>enum <ref refid="group__SAIDEBUGCOUNTER_1ga9bf28d66b40b24dbc47677d5f661937a" kindref="member">_sai_out_drop_reason_t</ref></type>
+        <definition>typedef enum _sai_out_drop_reason_t sai_out_drop_reason_t</definition>
+        <argsstring></argsstring>
+        <name>sai_out_drop_reason_t</name>
+        <briefdescription>
+<para>Attribute data for out drop reasons. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidebugcounter.h" line="380" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDEBUGCOUNTER_1gac02a5f8841c257ba596ac8d3be542f88" prot="public" static="no">
+        <type>enum <ref refid="group__SAIDEBUGCOUNTER_1gaca7678992e1d3f88ef481515be35bab2" kindref="member">_sai_debug_counter_attr_t</ref></type>
+        <definition>typedef enum _sai_debug_counter_attr_t sai_debug_counter_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_debug_counter_attr_t</name>
+        <briefdescription>
+<para>Attribute Id in sai_set_counter_attribute() and sai_get_counter_attribute() calls. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidebugcounter.h" line="455" column="26"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDEBUGCOUNTER_1gacc2adfa30f63bb7706668c47ad933b97" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_debug_counter_fn) (_Out_ sai_object_id_t *debug_counter_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *debug_counter_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_debug_counter_fn</name>
+        <briefdescription>
+<para>Create debug counter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">debug_counter_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Debug counter id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidebugcounter.h" line="467" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidebugcounter.h" bodystart="467" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDEBUGCOUNTER_1ga55b38dd3e092c0c4d884c932d0545079" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_debug_counter_fn) (_In_ sai_object_id_t debug_counter_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t debug_counter_id)</argsstring>
+        <name>sai_remove_debug_counter_fn</name>
+        <briefdescription>
+<para>Remove debug counter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">debug_counter_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Debug counter id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidebugcounter.h" line="480" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidebugcounter.h" bodystart="480" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDEBUGCOUNTER_1ga88adf549416478dae700129ec60149e0" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_debug_counter_attribute_fn) (_In_ sai_object_id_t debug_counter_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t debug_counter_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_debug_counter_attribute_fn</name>
+        <briefdescription>
+<para>Set debug counter attribute Value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">debug_counter_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Debug counter id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidebugcounter.h" line="491" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidebugcounter.h" bodystart="491" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDEBUGCOUNTER_1ga1fdd9e89a5ae7ab810df8de5a22eae0b" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_debug_counter_attribute_fn) (_In_ sai_object_id_t debug_counter_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t debug_counter_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_debug_counter_attribute_fn</name>
+        <briefdescription>
+<para>Get debug counter attribute Value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">debug_counter_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Debug counter id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidebugcounter.h" line="504" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidebugcounter.h" bodystart="504" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDEBUGCOUNTER_1ga930b24480b60b931e6ca85280bf2fb08" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__debug__counter__api__t" kindref="compound">_sai_debug_counter_api_t</ref></type>
+        <definition>typedef struct _sai_debug_counter_api_t sai_debug_counter_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_debug_counter_api_t</name>
+        <briefdescription>
+<para>Counter methods table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidebugcounter.h" line="519" column="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module defines SAI Debug Counter interface. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2014 Microsoft Open Technologies, Inc.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <ulink url="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</ulink></para>
+<para>THIS CODE IS PROVIDED ON AN <emphasis>AS IS</emphasis> BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</para>
+<para>See the Apache Version 2.0 License for specific language governing permissions and limitations under the License.</para>
+<para>Microsoft would like to thank the following companies for their review and assistance with these files: Intel Corporation, Mellanox Technologies Ltd, Dell Products, L.P., Facebook, Inc., Marvell International Ltd.</para>
+<para><simplesect kind="par"><title>Abstract</title><para></para>
+</simplesect>
+This module defines SAI Debug Counter API. </para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saidebugcounter.h"/>
+  </compounddef>
+</doxygen>

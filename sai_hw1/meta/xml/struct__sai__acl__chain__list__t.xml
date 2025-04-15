@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__acl__chain__list__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_acl_chain_list_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__acl__chain__list__t_1acd19883ea5c56021bc944021e0be347e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _sai_acl_chain_list_t::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of stages in the chain </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="851" column="14" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="851" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__acl__chain__list__t_1a8072d0b7b97e308c23827aff2b3f94d6" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga21cb62ab356aaa23f5fc54683b89a3ea" kindref="member">sai_acl_chain_t</ref> *</type>
+        <definition>sai_acl_chain_t* _sai_acl_chain_list_t::list</definition>
+        <argsstring></argsstring>
+        <name>list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Chain list </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="854" column="21" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="854" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>_sai_acl_chain_t</label>
+        <link refid="struct__sai__acl__chain__t"/>
+      </node>
+      <node id="1">
+        <label>_sai_acl_chain_list_t</label>
+        <link refid="struct__sai__acl__chain__list__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="848" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="849" bodyend="856"/>
+    <listofallmembers>
+      <member refid="struct__sai__acl__chain__list__t_1acd19883ea5c56021bc944021e0be347e" prot="public" virt="non-virtual"><scope>_sai_acl_chain_list_t</scope><name>count</name></member>
+      <member refid="struct__sai__acl__chain__list__t_1a8072d0b7b97e308c23827aff2b3f94d6" prot="public" virt="non-virtual"><scope>_sai_acl_chain_list_t</scope><name>list</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

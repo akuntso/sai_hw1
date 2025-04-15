@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="saiportextensions_8h" kind="file" language="C++">
+    <compoundname>saiportextensions.h</compoundname>
+    <includes refid="saiport_8h" local="no">saiport.h</includes>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+    <includedby refid="saiextensions_8h" local="yes">/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>stdbool.h</label>
+      </node>
+      <node id="4">
+        <label>stdint.h</label>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiportextensions.h</label>
+        <link refid="saiportextensions_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>sys/types.h</label>
+      </node>
+      <node id="2">
+        <label>saiport.h</label>
+        <link refid="saiport_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>saitypes.h</label>
+        <link refid="saitypes_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiportextensions.h</label>
+        <link refid="saiportextensions_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</label>
+        <link refid="saiextensions_8h"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="saiportextensions_8h_1a8e306b3f7cd9813fec3a9f2ff68f9b58" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_port_attr_extensions_t</name>
+        <enumvalue id="saiportextensions_8h_1a8e306b3f7cd9813fec3a9f2ff68f9b58a40c5eb29dea7a8ba8b822712f8d2676e" prot="public">
+          <name>SAI_PORT_ATTR_EXTENSIONS_RANGE_START</name>
+          <initializer>= SAI_PORT_ATTR_EXTENSIONS_RANGE_BASE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saiportextensions_8h_1a8e306b3f7cd9813fec3a9f2ff68f9b58afdda1c806f53e884cca375a325dcae3b" prot="public">
+          <name>SAI_PORT_ATTR_EXTENSIONS_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>SAI port attribute extensions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Flags:</title><para> @@flags           free </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiportextensions.h" line="36" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiportextensions.h" bodystart="37" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="enum" id="saiportextensions_8h_1a0a1a6e8b6a518bd61916ded3cddeac57" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_port_stat_extensions_t</name>
+        <enumvalue id="saiportextensions_8h_1a0a1a6e8b6a518bd61916ded3cddeac57ac1a0efd58fc7b89d8dc7b52350c4b804" prot="public">
+          <name>SAI_PORT_STAT_EXTENSIONS_RANGE_START</name>
+          <initializer>= SAI_PORT_STAT_EXTENSIONS_RANGE_BASE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saiportextensions_8h_1a0a1a6e8b6a518bd61916ded3cddeac57ae256e275e12ccaec036f2e361b75448f" prot="public">
+          <name>SAI_PORT_STAT_LB_FAST_PATH_ICMP_IN_BYTES</name>
+          <initializer>= SAI_PORT_STAT_EXTENSIONS_RANGE_START</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH port LB_FAST_PATH_ICMP_IN_BYTES stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saiportextensions_8h_1a0a1a6e8b6a518bd61916ded3cddeac57af850516c0b87c7fddb7b0333ff9e00cf" prot="public">
+          <name>SAI_PORT_STAT_LB_FAST_PATH_ICMP_IN_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH port LB_FAST_PATH_ICMP_IN_PACKETS stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saiportextensions_8h_1a0a1a6e8b6a518bd61916ded3cddeac57a05dc3b61b0d92b891158231370bb44a3" prot="public">
+          <name>SAI_PORT_STAT_LB_FAST_PATH_ENI_MISS_BYTES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH port LB_FAST_PATH_ENI_MISS_BYTES stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saiportextensions_8h_1a0a1a6e8b6a518bd61916ded3cddeac57aa87ef942d77eead4848e72d5ce424be2" prot="public">
+          <name>SAI_PORT_STAT_LB_FAST_PATH_ENI_MISS_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH port LB_FAST_PATH_ENI_MISS_PACKETS stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saiportextensions_8h_1a0a1a6e8b6a518bd61916ded3cddeac57a69744ff4349f7e399020a69516b88d13" prot="public">
+          <name>SAI_PORT_STAT_VIP_MISS_DROP_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH port VIP_MISS_DROP_PACKETS stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saiportextensions_8h_1a0a1a6e8b6a518bd61916ded3cddeac57a6838bd15a1cce75e76a9c195e8191bf9" prot="public">
+          <name>SAI_PORT_STAT_ENI_MISS_DROP_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH port ENI_MISS_DROP_PACKETS stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saiportextensions_8h_1a0a1a6e8b6a518bd61916ded3cddeac57aa678441b576d71e81d3587d29758ce9a" prot="public">
+          <name>SAI_PORT_STAT_PORT_LB_FAST_PATH_ICMP_IN_BYTES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH port PORT_LB_FAST_PATH_ICMP_IN_BYTES stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saiportextensions_8h_1a0a1a6e8b6a518bd61916ded3cddeac57af9d9e69119381051879fb68a455c6979" prot="public">
+          <name>SAI_PORT_STAT_PORT_LB_FAST_PATH_ICMP_IN_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH port PORT_LB_FAST_PATH_ICMP_IN_PACKETS stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saiportextensions_8h_1a0a1a6e8b6a518bd61916ded3cddeac57a587c0fff9673e22fcf3ac41c91296d82" prot="public">
+          <name>SAI_PORT_STAT_PORT_LB_FAST_PATH_ENI_MISS_DROP_BYTES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH port PORT_LB_FAST_PATH_ENI_MISS_DROP_BYTES stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saiportextensions_8h_1a0a1a6e8b6a518bd61916ded3cddeac57ab36d38659a71d5897c3a37a57a6d3276" prot="public">
+          <name>SAI_PORT_STAT_PORT_LB_FAST_PATH_ENI_MISS_DROP_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH port PORT_LB_FAST_PATH_ENI_MISS_DROP_PACKETS stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saiportextensions_8h_1a0a1a6e8b6a518bd61916ded3cddeac57a6452be1847fad9c9bf9b98f90e780f68" prot="public">
+          <name>SAI_PORT_STAT_EXTENSIONS_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>SAI port stat extensions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Flags:</title><para> @@flags           free </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiportextensions.h" line="51" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiportextensions.h" bodystart="52" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="saiportextensions_8h_1a8a2c24b5c4f80276e824ba78adf4bb20" prot="public" static="no">
+        <type>enum <ref refid="saiportextensions_8h_1a8e306b3f7cd9813fec3a9f2ff68f9b58" kindref="member">_sai_port_attr_extensions_t</ref></type>
+        <definition>typedef enum _sai_port_attr_extensions_t sai_port_attr_extensions_t</definition>
+        <argsstring></argsstring>
+        <name>sai_port_attr_extensions_t</name>
+        <briefdescription>
+<para>SAI port attribute extensions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Flags:</title><para> @@flags           free </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiportextensions.h" line="44" column="28"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saiportextensions_8h_1affe43f2a47f9960581bf00bfd26a8be7" prot="public" static="no">
+        <type>enum <ref refid="saiportextensions_8h_1a0a1a6e8b6a518bd61916ded3cddeac57" kindref="member">_sai_port_stat_extensions_t</ref></type>
+        <definition>typedef enum _sai_port_stat_extensions_t sai_port_stat_extensions_t</definition>
+        <argsstring></argsstring>
+        <name>sai_port_stat_extensions_t</name>
+        <briefdescription>
+<para>SAI port stat extensions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Flags:</title><para> @@flags           free </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiportextensions.h" line="89" column="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module defines port extensions of the Switch Abstraction Interface (SAI) </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2018 Microsoft Open Technologies, Inc.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <ulink url="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</ulink></para>
+<para>THIS CODE IS PROVIDED ON AN <emphasis>AS IS</emphasis> BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</para>
+<para>See the Apache Version 2.0 License for specific language governing permissions and limitations under the License.</para>
+<para>Microsoft would like to thank the following companies for their review and assistance with these files: Intel Corporation, Mellanox Technologies Ltd, Dell Products, L.P., Facebook, Inc., Marvell International Ltd. </para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/experimental/saiportextensions.h"/>
+  </compounddef>
+</doxygen>

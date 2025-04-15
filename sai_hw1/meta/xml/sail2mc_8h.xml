@@ -1,0 +1,388 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="sail2mc_8h" kind="file" language="C++">
+    <compoundname>sail2mc.h</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+    <includedby refid="sai_8h" local="yes">/home/andrii/sai_hw1/SAI/inc/sai.h</includedby>
+    <includedby refid="saiobject_8h" local="no">/home/andrii/sai_hw1/SAI/inc/saiobject.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/sail2mc.h</label>
+        <link refid="sail2mc_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>sys/types.h</label>
+      </node>
+      <node id="2">
+        <label>saitypes.h</label>
+        <link refid="saitypes_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/sail2mc.h</label>
+        <link refid="sail2mc_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/andrii/sai_hw1/SAI/inc/sai.h</label>
+        <link refid="sai_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/andrii/sai_hw1/SAI/inc/saiobject.h</label>
+        <link refid="saiobject_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</label>
+        <link refid="saiextensions_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct__sai__l2mc__entry__t" prot="public">_sai_l2mc_entry_t</innerclass>
+    <innerclass refid="struct__sai__l2mc__api__t" prot="public">_sai_l2mc_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIL2MC_1gab23a293e0f6884dd1f656f39fce17123" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_l2mc_entry_type_t</name>
+        <enumvalue id="group__SAIL2MC_1ggab23a293e0f6884dd1f656f39fce17123a0cced19abb913a7616ffd0199137666e" prot="public">
+          <name>SAI_L2MC_ENTRY_TYPE_SG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>L2MC entry with type (S,G) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIL2MC_1ggab23a293e0f6884dd1f656f39fce17123aff51a16ae20c6e33f08232f03c72a3b2" prot="public">
+          <name>SAI_L2MC_ENTRY_TYPE_XG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>L2MC entry with type (*,G) </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>L2MC entry type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sail2mc.h" line="39" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/sail2mc.h" bodystart="40" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIL2MC_1ga6f37beb6745b9d60c6751b488552b1fe" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_l2mc_entry_attr_t</name>
+        <enumvalue id="group__SAIL2MC_1gga6f37beb6745b9d60c6751b488552b1fea8e23354fdaff6e4fb1b7b7277519ae08" prot="public">
+          <name>SAI_L2MC_ENTRY_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIL2MC_1gga6f37beb6745b9d60c6751b488552b1fea27afbf17dc0778aeb7d325fdf282e0be" prot="public">
+          <name>SAI_L2MC_ENTRY_ATTR_PACKET_ACTION</name>
+          <initializer>= SAI_L2MC_ENTRY_ATTR_START</initializer>
+          <briefdescription>
+<para>L2MC entry type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_packet_action_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIL2MC_1gga6f37beb6745b9d60c6751b488552b1fea61d30cd5c33581558ceb1a94976cdbaa" prot="public">
+          <name>SAI_L2MC_ENTRY_ATTR_OUTPUT_GROUP_ID</name>
+          <briefdescription>
+<para>L2MC entry output group id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>This attribute only takes effect when ATTR_PACKET_ACTION is set to FORWARD. If the group has no member, packets will be discarded.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_L2MC_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_L2MC_ENTRY_ATTR_PACKET_ACTION == SAI_PACKET_ACTION_FORWARD </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIL2MC_1gga6f37beb6745b9d60c6751b488552b1feabd96e8e05d40ab000ea21ed104972d27" prot="public">
+          <name>SAI_L2MC_ENTRY_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIL2MC_1gga6f37beb6745b9d60c6751b488552b1fea529adf84a88d9b261032306902c31e95" prot="public">
+          <name>SAI_L2MC_ENTRY_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIL2MC_1gga6f37beb6745b9d60c6751b488552b1fea4d171200a1879e3b8a1d0bae83c10273" prot="public">
+          <name>SAI_L2MC_ENTRY_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute Id for L2MC entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sail2mc.h" line="81" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/sail2mc.h" bodystart="82" bodyend="122"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIL2MC_1gaa3a0bc9eea2fa66b405bda525a676ebe" prot="public" static="no">
+        <type>enum <ref refid="group__SAIL2MC_1gab23a293e0f6884dd1f656f39fce17123" kindref="member">_sai_l2mc_entry_type_t</ref></type>
+        <definition>typedef enum _sai_l2mc_entry_type_t sai_l2mc_entry_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_l2mc_entry_type_t</name>
+        <briefdescription>
+<para>L2MC entry type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sail2mc.h" line="47" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIL2MC_1ga500e71cff94ee7d98b66061086066128" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__l2mc__entry__t" kindref="compound">_sai_l2mc_entry_t</ref></type>
+        <definition>typedef struct _sai_l2mc_entry_t sai_l2mc_entry_t</definition>
+        <argsstring></argsstring>
+        <name>sai_l2mc_entry_t</name>
+        <briefdescription>
+<para>L2MC entry key. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sail2mc.h" line="76" column="18"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIL2MC_1gabbea934faf0daa3aca0a7b2af2c3c5e9" prot="public" static="no">
+        <type>enum <ref refid="group__SAIL2MC_1ga6f37beb6745b9d60c6751b488552b1fe" kindref="member">_sai_l2mc_entry_attr_t</ref></type>
+        <definition>typedef enum _sai_l2mc_entry_attr_t sai_l2mc_entry_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_l2mc_entry_attr_t</name>
+        <briefdescription>
+<para>Attribute Id for L2MC entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sail2mc.h" line="122" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIL2MC_1ga0b73cbca5f3b0862052af9d44d105ea3" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_l2mc_entry_fn) (_In_ const sai_l2mc_entry_t *l2mc_entry, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ const sai_l2mc_entry_t *l2mc_entry, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_l2mc_entry_fn</name>
+        <briefdescription>
+<para>Create L2MC entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">l2mc_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>L2MC entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sail2mc.h" line="133" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sail2mc.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIL2MC_1gab5821f394140ea5315ebd399da709e89" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_l2mc_entry_fn) (_In_ const sai_l2mc_entry_t *l2mc_entry)</definition>
+        <argsstring>)(_In_ const sai_l2mc_entry_t *l2mc_entry)</argsstring>
+        <name>sai_remove_l2mc_entry_fn</name>
+        <briefdescription>
+<para>Remove L2MC entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">l2mc_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>L2MC entry</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sail2mc.h" line="145" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sail2mc.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIL2MC_1gac4099bca74bf04d99364432a4bd4e2ce" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_l2mc_entry_attribute_fn) (_In_ const sai_l2mc_entry_t *l2mc_entry, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ const sai_l2mc_entry_t *l2mc_entry, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_l2mc_entry_attribute_fn</name>
+        <briefdescription>
+<para>Set L2MC entry attribute value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">l2mc_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>L2MC entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sail2mc.h" line="156" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sail2mc.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIL2MC_1ga2ab5ef74dbb92a747db7ae527aedd002" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_l2mc_entry_attribute_fn) (_In_ const sai_l2mc_entry_t *l2mc_entry, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ const sai_l2mc_entry_t *l2mc_entry, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_l2mc_entry_attribute_fn</name>
+        <briefdescription>
+<para>Get L2MC entry attribute value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">l2mc_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>L2MC entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sail2mc.h" line="169" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sail2mc.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIL2MC_1ga289ab2029298c7819409ec6ab9e91ea2" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__l2mc__api__t" kindref="compound">_sai_l2mc_api_t</ref></type>
+        <definition>typedef struct _sai_l2mc_api_t sai_l2mc_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_l2mc_api_t</name>
+        <briefdescription>
+<para>L2MC method table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sail2mc.h" line="184" column="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module defines SAI L2MC interface. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2014 Microsoft Open Technologies, Inc.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <ulink url="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</ulink></para>
+<para>THIS CODE IS PROVIDED ON AN <emphasis>AS IS</emphasis> BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</para>
+<para>See the Apache Version 2.0 License for specific language governing permissions and limitations under the License.</para>
+<para>Microsoft would like to thank the following companies for their review and assistance with these files: Intel Corporation, Mellanox Technologies Ltd, Dell Products, L.P., Facebook, Inc., Marvell International Ltd. </para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/sail2mc.h"/>
+  </compounddef>
+</doxygen>

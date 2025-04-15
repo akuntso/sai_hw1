@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__bfd__session__state__notification__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_bfd_session_state_notification_t</compoundname>
+    <includes refid="saibfd_8h" local="no">saibfd.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__bfd__session__state__notification__t_1a5b7170a52d89224e896e37913c2ab945" prot="public" static="no" mutable="no">
+        <type>sai_object_id_t</type>
+        <definition>sai_object_id_t _sai_bfd_session_state_notification_t::bfd_session_id</definition>
+        <argsstring></argsstring>
+        <name>bfd_session_id</name>
+        <briefdescription>
+<para>BFD Session id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_BFD_SESSION </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibfd.h" line="127" column="21" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibfd.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__bfd__session__state__notification__t_1a7f93a72ec4302928a305e7148a3b81f3" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIBFD_1ga753791d9cac651dcb5e18abe67d75ac3" kindref="member">sai_bfd_session_state_t</ref></type>
+        <definition>sai_bfd_session_state_t _sai_bfd_session_state_notification_t::session_state</definition>
+        <argsstring></argsstring>
+        <name>session_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>BFD session state </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibfd.h" line="130" column="29" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibfd.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines the operational status of the BFD session. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saibfd.h" line="120" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibfd.h" bodystart="121" bodyend="132"/>
+    <listofallmembers>
+      <member refid="struct__sai__bfd__session__state__notification__t_1a5b7170a52d89224e896e37913c2ab945" prot="public" virt="non-virtual"><scope>_sai_bfd_session_state_notification_t</scope><name>bfd_session_id</name></member>
+      <member refid="struct__sai__bfd__session__state__notification__t_1a7f93a72ec4302928a305e7148a3b81f3" prot="public" virt="non-virtual"><scope>_sai_bfd_session_state_notification_t</scope><name>session_state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

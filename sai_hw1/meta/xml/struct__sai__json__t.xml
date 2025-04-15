@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__json__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_json_t</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__json__t_1a89c0e34bb5edfcc877fe89af5c860f68" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga7c43690e546df2a07f7029736a731d52" kindref="member">sai_s8_list_t</ref></type>
+        <definition>sai_s8_list_t _sai_json_t::json</definition>
+        <argsstring></argsstring>
+        <name>json</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>String in JSON format </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1158" column="19" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1158" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>JSON data type &quot;attributes&quot;: [ { &quot;attribute_name&quot;: { &quot;sai_metadata&quot;: { &quot;sai_attr_value_type&quot;: &quot;&lt;SAI_ATTR_VALUE_TYPE_T&gt;&quot;, &quot;brief&quot;: &quot;Brief Attribute Description&quot;, &quot;sai_attr_flags&quot;: &quot;&lt;SAI_ATTR_FLAGS_T&gt;&quot;, &quot;allowed_object_types&quot;: [ &quot;&lt;LIST OF ALLOWED OBJECT TYPES&gt;&quot; ], &quot;default_value&quot;: &quot;&lt;DEFAULT ATTR VALUE&gt;&quot; }, &quot;value&quot;: </para>
+<para>} } ] attributes - Mandatory top-level key where JSON parsing begins attribute_name - Name of one attribute in the list of attributes sai_attr_value_type - Data type of the attribute brief - Optional description of the field sai_attr_flags - Optional Usage flags for the field allowed_object_types - If data type is OID, then this is the list of object types allowed as data. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>_sai_json_t</label>
+        <link refid="struct__sai__json__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>json</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>_sai_s8_list_t</label>
+        <link refid="struct__sai__s8__list__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1155" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1156" bodyend="1159"/>
+    <listofallmembers>
+      <member refid="struct__sai__json__t_1a89c0e34bb5edfcc877fe89af5c860f68" prot="public" virt="non-virtual"><scope>_sai_json_t</scope><name>json</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

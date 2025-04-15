@@ -1,0 +1,510 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__attr__condition__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_attr_condition_t</compoundname>
+    <includes refid="saimetadatatypes_8h" local="no">saimetadatatypes.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__attr__condition__t_1ada42864da20a53c9954c9b69ed731a9e" prot="public" static="no" mutable="no">
+        <type>sai_attr_id_t</type>
+        <definition>sai_attr_id_t _sai_attr_condition_t::attrid</definition>
+        <argsstring></argsstring>
+        <name>attrid</name>
+        <briefdescription>
+<para>Specifies valid attribute id for this object type. Attribute is for the same object type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="741" column="41" bodyfile="saimetadatatypes.h" bodystart="741" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__condition__t_1a2f58a55608570338ac504206c6e1bf07" prot="public" static="no" mutable="no">
+        <type>const <ref refid="group__SAITYPES_1gab42aceb4b4dd647f478c9e5123a60aec" kindref="member">sai_attribute_value_t</ref></type>
+        <definition>const sai_attribute_value_t _sai_attr_condition_t::condition</definition>
+        <argsstring></argsstring>
+        <name>condition</name>
+        <briefdescription>
+<para>Condition value that attribute will be mandatory then default value must be provided for attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="747" column="41" bodyfile="saimetadatatypes.h" bodystart="747" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__condition__t_1a48c4584c8eed0f72f881f2bc985c16ec" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIMETADATATYPES_1ga3fd4995f7df86534cfda42ca776338fe" kindref="member">sai_condition_operator_t</ref></type>
+        <definition>sai_condition_operator_t _sai_attr_condition_t::op</definition>
+        <argsstring></argsstring>
+        <name>op</name>
+        <briefdescription>
+<para>Condition operator (==,!=,&lt;,&gt;,&lt;=.&gt;=). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="752" column="41" bodyfile="saimetadatatypes.h" bodystart="752" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__attr__condition__t_1ae3a9e943b18a5c0f19bb6d24fc3ec09c" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIMETADATATYPES_1ga6a3a61c74e9ef2a9542e1725b5b340cb" kindref="member">sai_attr_condition_type_t</ref></type>
+        <definition>sai_attr_condition_type_t _sai_attr_condition_t::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+<para>Condition type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If main condition type is MIXED, then condition list is written in RPN (reverse polish notation) syntax notation. If this field is NONE, then this is actual condition, otherwise it can be AND,OR type which is just a operator indication that should be performed. For AND,OR case attrid is equal to SAI_INVALID_ATTRIBUTE_ID. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="763" column="41" bodyfile="saimetadatatypes.h" bodystart="763" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines attribute condition. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="48">
+        <label>_sai_port_snr_values_t</label>
+        <link refid="struct__sai__port__snr__values__t"/>
+      </node>
+      <node id="1">
+        <label>_sai_attr_condition_t</label>
+        <link refid="struct__sai__attr__condition__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>condition</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>_sai_u16_range_list_t</label>
+        <link refid="struct__sai__u16__range__list__t"/>
+        <childnode refid="14" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="32">
+        <label>_sai_system_port_config_list_t</label>
+        <link refid="struct__sai__system__port__config__list__t"/>
+        <childnode refid="33" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="38">
+        <label>_sai_port_frequency_offset_ppm_list_t</label>
+        <link refid="struct__sai__port__frequency__offset__ppm__list__t"/>
+        <childnode refid="39" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>_sai_acl_resource_t</label>
+        <link refid="struct__sai__acl__resource__t"/>
+      </node>
+      <node id="10">
+        <label>_sai_qos_map_list_t</label>
+        <link refid="struct__sai__qos__map__list__t"/>
+        <childnode refid="11" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="36">
+        <label>_sai_fabric_port_reachability_t</label>
+        <link refid="struct__sai__fabric__port__reachability__t"/>
+      </node>
+      <node id="43">
+        <label>_sai_acl_action_data_t</label>
+        <link refid="struct__sai__acl__action__data__t"/>
+        <childnode refid="44" relation="usage">
+          <edgelabel>parameter</edgelabel>
+        </childnode>
+      </node>
+      <node id="33">
+        <label>_sai_system_port_config_t</label>
+        <link refid="struct__sai__system__port__config__t"/>
+      </node>
+      <node id="25">
+        <label>_sai_object_list_t</label>
+        <link refid="struct__sai__object__list__t"/>
+      </node>
+      <node id="11">
+        <label>_sai_qos_map_t</label>
+        <link refid="struct__sai__qos__map__t"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>key</edgelabel>
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="12">
+        <label>_sai_qos_map_params_t</label>
+        <link refid="struct__sai__qos__map__params__t"/>
+      </node>
+      <node id="50">
+        <label>_sai_s16_list_t</label>
+        <link refid="struct__sai__s16__list__t"/>
+      </node>
+      <node id="23">
+        <label>_sai_acl_field_data_t</label>
+        <link refid="struct__sai__acl__field__data__t"/>
+        <childnode refid="24" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>mask</edgelabel>
+        </childnode>
+      </node>
+      <node id="52">
+        <label>_sai_port_eye_values_list_t</label>
+        <link refid="struct__sai__port__eye__values__list__t"/>
+        <childnode refid="53" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>_sai_tlv_t</label>
+        <link refid="struct__sai__tlv__t"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>entry</edgelabel>
+        </childnode>
+      </node>
+      <node id="17">
+        <label>_sai_port_lane_latch_status_list_t</label>
+        <link refid="struct__sai__port__lane__latch__status__list__t"/>
+        <childnode refid="18" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>_sai_tlv_list_t</label>
+        <link refid="struct__sai__tlv__list__t"/>
+        <childnode refid="5" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="37">
+        <label>_sai_u32_range_t</label>
+        <link refid="struct__sai__u32__range__t"/>
+      </node>
+      <node id="3">
+        <label>_sai_port_err_status_list_t</label>
+        <link refid="struct__sai__port__err__status__list__t"/>
+      </node>
+      <node id="15">
+        <label>_sai_json_t</label>
+        <link refid="struct__sai__json__t"/>
+        <childnode refid="16" relation="usage">
+          <edgelabel>json</edgelabel>
+        </childnode>
+      </node>
+      <node id="34">
+        <label>_sai_segment_list_t</label>
+        <link refid="struct__sai__segment__list__t"/>
+      </node>
+      <node id="16">
+        <label>_sai_s8_list_t</label>
+        <link refid="struct__sai__s8__list__t"/>
+      </node>
+      <node id="2">
+        <label>_sai_attribute_value_t</label>
+        <link refid="union__sai__attribute__value__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>porterror</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>tlvlist</edgelabel>
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>aclresource</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>qosmap</edgelabel>
+        </childnode>
+        <childnode refid="13" relation="usage">
+          <edgelabel>u16rangelist</edgelabel>
+        </childnode>
+        <childnode refid="15" relation="usage">
+          <edgelabel>json</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>portlanelatchstatuslist</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>ipaddrlist</edgelabel>
+        </childnode>
+        <childnode refid="23" relation="usage">
+          <edgelabel>aclfield</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>u16list</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>ipprefix</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>aclchainlist</edgelabel>
+        </childnode>
+        <childnode refid="32" relation="usage">
+          <edgelabel>sysportconfiglist</edgelabel>
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>segmentlist</edgelabel>
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>portpowerconsumption</edgelabel>
+        </childnode>
+        <childnode refid="19" relation="usage">
+          <edgelabel>latchstatus</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>reachability</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>sysportconfig</edgelabel>
+        </childnode>
+        <childnode refid="37" relation="usage">
+          <edgelabel>u32range</edgelabel>
+        </childnode>
+        <childnode refid="38" relation="usage">
+          <edgelabel>portfrequencyoffsetppmlist</edgelabel>
+        </childnode>
+        <childnode refid="40" relation="usage">
+          <edgelabel>s32list</edgelabel>
+        </childnode>
+        <childnode refid="41" relation="usage">
+          <edgelabel>ipprefixlist</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>aclmask</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>objlist</edgelabel>
+        </childnode>
+        <childnode refid="42" relation="usage">
+          <edgelabel>timespec</edgelabel>
+        </childnode>
+        <childnode refid="43" relation="usage">
+          <edgelabel>aclaction</edgelabel>
+        </childnode>
+        <childnode refid="45" relation="usage">
+          <edgelabel>vlanlist</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>ipaddr</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>u8list</edgelabel>
+        </childnode>
+        <childnode refid="46" relation="usage">
+          <edgelabel>rx_state</edgelabel>
+        </childnode>
+        <childnode refid="47" relation="usage">
+          <edgelabel>portsnrlist</edgelabel>
+        </childnode>
+        <childnode refid="49" relation="usage">
+          <edgelabel>u32list</edgelabel>
+        </childnode>
+        <childnode refid="50" relation="usage">
+          <edgelabel>s16list</edgelabel>
+        </childnode>
+        <childnode refid="51" relation="usage">
+          <edgelabel>aclcapability</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>s8list</edgelabel>
+        </childnode>
+        <childnode refid="52" relation="usage">
+          <edgelabel>porteyevalues</edgelabel>
+        </childnode>
+        <childnode refid="54" relation="usage">
+          <edgelabel>maplist</edgelabel>
+        </childnode>
+        <childnode refid="56" relation="usage">
+          <edgelabel>s32range</edgelabel>
+        </childnode>
+      </node>
+      <node id="47">
+        <label>_sai_port_snr_list_t</label>
+        <link refid="struct__sai__port__snr__list__t"/>
+        <childnode refid="48" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>_sai_acl_field_data_data_t</label>
+        <link refid="union__sai__acl__field__data__data__t"/>
+        <childnode refid="25" relation="usage">
+          <edgelabel>objlist</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>u8list</edgelabel>
+        </childnode>
+      </node>
+      <node id="31">
+        <label>_sai_acl_chain_t</label>
+        <link refid="struct__sai__acl__chain__t"/>
+      </node>
+      <node id="29">
+        <label>_sai_ip_prefix_t</label>
+        <link refid="struct__sai__ip__prefix__t"/>
+        <childnode refid="22" relation="usage">
+          <edgelabel>addr</edgelabel>
+          <edgelabel>mask</edgelabel>
+        </childnode>
+      </node>
+      <node id="49">
+        <label>_sai_u32_list_t</label>
+        <link refid="struct__sai__u32__list__t"/>
+      </node>
+      <node id="14">
+        <label>_sai_u16_range_t</label>
+        <link refid="struct__sai__u16__range__t"/>
+      </node>
+      <node id="45">
+        <label>_sai_vlan_list_t</label>
+        <link refid="struct__sai__vlan__list__t"/>
+      </node>
+      <node id="18">
+        <label>_sai_port_lane_latch_status_t</label>
+        <link refid="struct__sai__port__lane__latch__status__t"/>
+        <childnode refid="19" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="35">
+        <label>_sai_poe_port_power_consumption_t</label>
+        <link refid="struct__sai__poe__port__power__consumption__t"/>
+      </node>
+      <node id="6">
+        <label>_sai_tlv_entry_t</label>
+        <link refid="union__sai__tlv__entry__t"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>hmac</edgelabel>
+        </childnode>
+      </node>
+      <node id="30">
+        <label>_sai_acl_chain_list_t</label>
+        <link refid="struct__sai__acl__chain__list__t"/>
+        <childnode refid="31" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="54">
+        <label>_sai_map_list_t</label>
+        <link refid="struct__sai__map__list__t"/>
+        <childnode refid="55" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="56">
+        <label>_sai_s32_range_t</label>
+        <link refid="struct__sai__s32__range__t"/>
+      </node>
+      <node id="7">
+        <label>_sai_hmac_t</label>
+        <link refid="struct__sai__hmac__t"/>
+      </node>
+      <node id="27">
+        <label>_sai_acl_field_data_mask_t</label>
+        <link refid="union__sai__acl__field__data__mask__t"/>
+        <childnode refid="26" relation="usage">
+          <edgelabel>u8list</edgelabel>
+        </childnode>
+      </node>
+      <node id="42">
+        <label>_sai_timespec_t</label>
+        <link refid="struct__sai__timespec__t"/>
+      </node>
+      <node id="55">
+        <label>_sai_map_t</label>
+        <link refid="struct__sai__map__t"/>
+      </node>
+      <node id="53">
+        <label>_sai_port_lane_eye_values_t</label>
+        <link refid="struct__sai__port__lane__eye__values__t"/>
+      </node>
+      <node id="19">
+        <label>_sai_latch_status_t</label>
+        <link refid="struct__sai__latch__status__t"/>
+      </node>
+      <node id="8">
+        <label>_sai_acl_resource_list_t</label>
+        <link refid="struct__sai__acl__resource__list__t"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>_sai_ip_address_t</label>
+        <link refid="struct__sai__ip__address__t"/>
+        <childnode refid="22" relation="usage">
+          <edgelabel>addr</edgelabel>
+        </childnode>
+      </node>
+      <node id="41">
+        <label>_sai_ip_prefix_list_t</label>
+        <link refid="struct__sai__ip__prefix__list__t"/>
+        <childnode refid="29" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="40">
+        <label>_sai_s32_list_t</label>
+        <link refid="struct__sai__s32__list__t"/>
+      </node>
+      <node id="20">
+        <label>_sai_ip_address_list_t</label>
+        <link refid="struct__sai__ip__address__list__t"/>
+        <childnode refid="21" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="22">
+        <label>_sai_ip_addr_t</label>
+        <link refid="union__sai__ip__addr__t"/>
+      </node>
+      <node id="26">
+        <label>_sai_u8_list_t</label>
+        <link refid="struct__sai__u8__list__t"/>
+      </node>
+      <node id="28">
+        <label>_sai_u16_list_t</label>
+        <link refid="struct__sai__u16__list__t"/>
+      </node>
+      <node id="44">
+        <label>_sai_acl_action_parameter_t</label>
+        <link refid="union__sai__acl__action__parameter__t"/>
+        <childnode refid="25" relation="usage">
+          <edgelabel>objlist</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>ipaddr</edgelabel>
+        </childnode>
+      </node>
+      <node id="39">
+        <label>_sai_port_frequency_offset_ppm_values_t</label>
+        <link refid="struct__sai__port__frequency__offset__ppm__values__t"/>
+      </node>
+      <node id="51">
+        <label>_sai_acl_capability_t</label>
+        <link refid="struct__sai__acl__capability__t"/>
+        <childnode refid="40" relation="usage">
+          <edgelabel>action_list</edgelabel>
+        </childnode>
+      </node>
+      <node id="46">
+        <label>_sai_prbs_rx_state_t</label>
+        <link refid="struct__sai__prbs__rx__state__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="saimetadatatypes.h" line="735" column="1" bodyfile="saimetadatatypes.h" bodystart="736" bodyend="765"/>
+    <listofallmembers>
+      <member refid="struct__sai__attr__condition__t_1ada42864da20a53c9954c9b69ed731a9e" prot="public" virt="non-virtual"><scope>_sai_attr_condition_t</scope><name>attrid</name></member>
+      <member refid="struct__sai__attr__condition__t_1a2f58a55608570338ac504206c6e1bf07" prot="public" virt="non-virtual"><scope>_sai_attr_condition_t</scope><name>condition</name></member>
+      <member refid="struct__sai__attr__condition__t_1a48c4584c8eed0f72f881f2bc985c16ec" prot="public" virt="non-virtual"><scope>_sai_attr_condition_t</scope><name>op</name></member>
+      <member refid="struct__sai__attr__condition__t_1ae3a9e943b18a5c0f19bb6d24fc3ec09c" prot="public" virt="non-virtual"><scope>_sai_attr_condition_t</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

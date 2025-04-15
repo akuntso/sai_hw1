@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__port__eye__values__list__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_port_eye_values_list_t</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__port__eye__values__list__t_1a62b84878c217da1d78b1596acbe6953b" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _sai_port_eye_values_list_t::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1192" column="14" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__eye__values__list__t_1add95b129da1992e3fbc7ad57a503ccc0" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1gaf811d269ea31aedbee74ea04644f5fc7" kindref="member">sai_port_lane_eye_values_t</ref> *</type>
+        <definition>sai_port_lane_eye_values_t* _sai_port_eye_values_list_t::list</definition>
+        <argsstring></argsstring>
+        <name>list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1193" column="32" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1193" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines a port&apos;s lanes eye values list. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>In get_port_attribute function call, the count member defines the number of objects which will be returned to the caller in the list member. The caller must allocate the buffer for the list member and set the count member to the size of the allocated objects in the list member.</para>
+<para>If the size is large enough to accommodate the list of objects, the callee must fill the list member and set the count member to the actual number of objects filled. If the size is not large enough, the callee must set the count member to the actual number of objects filled in the list member and return <ref refid="group__SAISTATUS_1ga7255b9d60f461644acd8459627a43288" kindref="member">SAI_STATUS_BUFFER_OVERFLOW</ref>. Once the caller gets such a return code, it may use the returned count member to re-allocate the list and retry. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>_sai_port_eye_values_list_t</label>
+        <link refid="struct__sai__port__eye__values__list__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>_sai_port_lane_eye_values_t</label>
+        <link refid="struct__sai__port__lane__eye__values__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1190" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1191" bodyend="1194"/>
+    <listofallmembers>
+      <member refid="struct__sai__port__eye__values__list__t_1a62b84878c217da1d78b1596acbe6953b" prot="public" virt="non-virtual"><scope>_sai_port_eye_values_list_t</scope><name>count</name></member>
+      <member refid="struct__sai__port__eye__values__list__t_1add95b129da1992e3fbc7ad57a503ccc0" prot="public" virt="non-virtual"><scope>_sai_port_eye_values_list_t</scope><name>list</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

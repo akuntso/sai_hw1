@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__port__frequency__offset__ppm__values__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_port_frequency_offset_ppm_values_t</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__port__frequency__offset__ppm__values__t_1a6d215547cd4d65729c4fc4557475cc5e" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _sai_port_frequency_offset_ppm_values_t::lane</definition>
+        <argsstring></argsstring>
+        <name>lane</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1201" column="14" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__frequency__offset__ppm__values__t_1ab7abab7bccbbf859e8b6465327ad3ab8" prot="public" static="no" mutable="no">
+        <type>sai_int16_t</type>
+        <definition>sai_int16_t _sai_port_frequency_offset_ppm_values_t::ppm</definition>
+        <argsstring></argsstring>
+        <name>ppm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1202" column="17" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1202" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines a lane with its frequency offset ppm. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1199" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1200" bodyend="1203"/>
+    <listofallmembers>
+      <member refid="struct__sai__port__frequency__offset__ppm__values__t_1a6d215547cd4d65729c4fc4557475cc5e" prot="public" virt="non-virtual"><scope>_sai_port_frequency_offset_ppm_values_t</scope><name>lane</name></member>
+      <member refid="struct__sai__port__frequency__offset__ppm__values__t_1ab7abab7bccbbf859e8b6465327ad3ab8" prot="public" virt="non-virtual"><scope>_sai_port_frequency_offset_ppm_values_t</scope><name>ppm</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

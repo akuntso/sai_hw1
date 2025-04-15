@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__stat__capability__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_stat_capability_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__stat__capability__t_1a0ff8d8c0c08f45624e18e0aab5c37fcb" prot="public" static="no" mutable="no">
+        <type>sai_stat_id_t</type>
+        <definition>sai_stat_id_t _sai_stat_capability_t::stat_enum</definition>
+        <argsstring></argsstring>
+        <name>stat_enum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Stat enum value </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1817" column="19" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1817" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__stat__capability__t_1ada7651260906f10c84055f1550bd5a66" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _sai_stat_capability_t::stat_modes</definition>
+        <argsstring></argsstring>
+        <name>stat_modes</name>
+        <briefdescription>
+<para>Bit mask of supported statistics modes (sai_stats_mode_t) </para>
+        </briefdescription>
+        <detaileddescription>
+<para>For example, if read and read_and_clear are supported, value is SAI_STATS_MODE_READ | SAI_STATS_MODE_READ_AND_CLEAR</para>
+<para><simplesect kind="par"><title>Flags:</title><para> @@flags           sai_stats_mode_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1827" column="14" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1827" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1814" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1815" bodyend="1829"/>
+    <listofallmembers>
+      <member refid="struct__sai__stat__capability__t_1a0ff8d8c0c08f45624e18e0aab5c37fcb" prot="public" virt="non-virtual"><scope>_sai_stat_capability_t</scope><name>stat_enum</name></member>
+      <member refid="struct__sai__stat__capability__t_1ada7651260906f10c84055f1550bd5a66" prot="public" virt="non-virtual"><scope>_sai_stat_capability_t</scope><name>stat_modes</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

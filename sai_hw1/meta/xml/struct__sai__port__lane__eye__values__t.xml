@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__port__lane__eye__values__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_port_lane_eye_values_t</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__port__lane__eye__values__t_1a45f85baa8c42f994e3bf39f71f2884bd" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _sai_port_lane_eye_values_t::lane</definition>
+        <argsstring></argsstring>
+        <name>lane</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1167" column="14" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__lane__eye__values__t_1a95c500301c02ec5f5277bd1b2a054700" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t _sai_port_lane_eye_values_t::left</definition>
+        <argsstring></argsstring>
+        <name>left</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1168" column="13" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__lane__eye__values__t_1ab2a3f74fc55d217948635531b0ebe682" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t _sai_port_lane_eye_values_t::right</definition>
+        <argsstring></argsstring>
+        <name>right</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1169" column="13" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__lane__eye__values__t_1a7abc2c600433accd40aff69cc3bad9ac" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t _sai_port_lane_eye_values_t::up</definition>
+        <argsstring></argsstring>
+        <name>up</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1170" column="13" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__lane__eye__values__t_1aa38a08da5a649826ee3d954e67e6ebf5" prot="public" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t _sai_port_lane_eye_values_t::down</definition>
+        <argsstring></argsstring>
+        <name>down</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1171" column="13" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1171" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines a lane with its eye values with the up and down values being in mV and left and right being in mUI. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1165" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1166" bodyend="1172"/>
+    <listofallmembers>
+      <member refid="struct__sai__port__lane__eye__values__t_1aa38a08da5a649826ee3d954e67e6ebf5" prot="public" virt="non-virtual"><scope>_sai_port_lane_eye_values_t</scope><name>down</name></member>
+      <member refid="struct__sai__port__lane__eye__values__t_1a45f85baa8c42f994e3bf39f71f2884bd" prot="public" virt="non-virtual"><scope>_sai_port_lane_eye_values_t</scope><name>lane</name></member>
+      <member refid="struct__sai__port__lane__eye__values__t_1a95c500301c02ec5f5277bd1b2a054700" prot="public" virt="non-virtual"><scope>_sai_port_lane_eye_values_t</scope><name>left</name></member>
+      <member refid="struct__sai__port__lane__eye__values__t_1ab2a3f74fc55d217948635531b0ebe682" prot="public" virt="non-virtual"><scope>_sai_port_lane_eye_values_t</scope><name>right</name></member>
+      <member refid="struct__sai__port__lane__eye__values__t_1a7abc2c600433accd40aff69cc3bad9ac" prot="public" virt="non-virtual"><scope>_sai_port_lane_eye_values_t</scope><name>up</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

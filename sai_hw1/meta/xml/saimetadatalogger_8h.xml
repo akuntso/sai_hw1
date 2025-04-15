@@ -1,0 +1,243 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="saimetadatalogger_8h" kind="file" language="C++">
+    <compoundname>saimetadatalogger.h</compoundname>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__SAIMETADATALOGGER_1gaf3bc595f81ce05d447a257c954a9bda0" prot="public" static="no">
+        <name>SAI_META_LOG</name>
+        <param><defname>loglevel</defname></param>
+        <param><defname>format</defname></param>
+        <param><defname>...</defname></param>
+        <initializer>    if (loglevel &gt;= <ref refid="group__SAIMETADATALOGGER_1ga4be62560bd9cc056ff81146c2cbbbc5c" kindref="member">sai_metadata_log_level</ref>)                                                     \
+{                                                                                               \
+    if (<ref refid="group__SAIMETADATALOGGER_1ga29c3188e453e38d28e0b9d9ee5f8f96d" kindref="member">sai_metadata_log</ref> == NULL) /* or syslog? */                                              \
+        fprintf(stderr, &quot;%s:%d %s: &quot; format &quot;\n&quot;, __FILE__, __LINE__, __func__, ##__VA_ARGS__); \
+    else                                                                                        \
+        <ref refid="group__SAIMETADATALOGGER_1ga29c3188e453e38d28e0b9d9ee5f8f96d" kindref="member">sai_metadata_log</ref>(loglevel, __FILE__, __LINE__, __func__, format, ##__VA_ARGS__);        \
+}</initializer>
+        <briefdescription>
+<para>Helper log macro definition. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If logger function is NULL, stderr is used to print messages. Also, fprintf function will validate parameters at compilation time. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatalogger.h" line="77" column="9" bodyfile="saimetadatalogger.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SAIMETADATALOGGER_1ga74be3a301e9ff863bea920c5bf4e3112" prot="public" static="no">
+        <name>SAI_META_LOG_ENTER</name>
+        <param></param>
+        <initializer><ref refid="group__SAIMETADATALOGGER_1gaf3bc595f81ce05d447a257c954a9bda0" kindref="member">SAI_META_LOG</ref>(<ref refid="group__SAI_1ggaf5ca43f9200c4860697a607d5d3e74daa96f4bdd4c1b97e289d1e0519eba8ac48" kindref="member">SAI_LOG_LEVEL_DEBUG</ref>,    &quot;:&gt; enter&quot;);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatalogger.h" line="90" column="9" bodyfile="saimetadatalogger.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SAIMETADATALOGGER_1ga03cadb6967bc27942a75882ad564d619" prot="public" static="no">
+        <name>SAI_META_LOG_DEBUG</name>
+        <param><defname>format</defname></param>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="group__SAIMETADATALOGGER_1gaf3bc595f81ce05d447a257c954a9bda0" kindref="member">SAI_META_LOG</ref>(<ref refid="group__SAI_1ggaf5ca43f9200c4860697a607d5d3e74daa96f4bdd4c1b97e289d1e0519eba8ac48" kindref="member">SAI_LOG_LEVEL_DEBUG</ref>,    &quot;:- &quot; format, ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatalogger.h" line="91" column="9" bodyfile="saimetadatalogger.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SAIMETADATALOGGER_1ga4b45464839a006db5a92e5ecfcb06e2d" prot="public" static="no">
+        <name>SAI_META_LOG_INFO</name>
+        <param><defname>format</defname></param>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="group__SAIMETADATALOGGER_1gaf3bc595f81ce05d447a257c954a9bda0" kindref="member">SAI_META_LOG</ref>(<ref refid="group__SAI_1ggaf5ca43f9200c4860697a607d5d3e74daa09383a7572ed0cca638d3bd3a3ad2d28" kindref="member">SAI_LOG_LEVEL_INFO</ref>,     &quot;:- &quot; format, ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatalogger.h" line="92" column="9" bodyfile="saimetadatalogger.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SAIMETADATALOGGER_1ga4a6869765251e8156f25cfc9b7e911c5" prot="public" static="no">
+        <name>SAI_META_LOG_NOTICE</name>
+        <param><defname>format</defname></param>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="group__SAIMETADATALOGGER_1gaf3bc595f81ce05d447a257c954a9bda0" kindref="member">SAI_META_LOG</ref>(<ref refid="group__SAI_1ggaf5ca43f9200c4860697a607d5d3e74daaf01fc9bad99c3c3136390de52fd22f0c" kindref="member">SAI_LOG_LEVEL_NOTICE</ref>,   &quot;:- &quot; format, ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatalogger.h" line="93" column="9" bodyfile="saimetadatalogger.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SAIMETADATALOGGER_1ga5728f49d1ba30ba8c99d6a1d1990ecd4" prot="public" static="no">
+        <name>SAI_META_LOG_WARN</name>
+        <param><defname>format</defname></param>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="group__SAIMETADATALOGGER_1gaf3bc595f81ce05d447a257c954a9bda0" kindref="member">SAI_META_LOG</ref>(<ref refid="group__SAI_1ggaf5ca43f9200c4860697a607d5d3e74daa20f5d3bfbf640a4fa0209855d94bb7e1" kindref="member">SAI_LOG_LEVEL_WARN</ref>,     &quot;:- &quot; format, ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatalogger.h" line="94" column="9" bodyfile="saimetadatalogger.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SAIMETADATALOGGER_1ga8a9ccf07a49a813f30021f6104c1f0f5" prot="public" static="no">
+        <name>SAI_META_LOG_ERROR</name>
+        <param><defname>format</defname></param>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="group__SAIMETADATALOGGER_1gaf3bc595f81ce05d447a257c954a9bda0" kindref="member">SAI_META_LOG</ref>(<ref refid="group__SAI_1ggaf5ca43f9200c4860697a607d5d3e74daa54316f7c8f0562797d4dfb27ff34299f" kindref="member">SAI_LOG_LEVEL_ERROR</ref>,    &quot;:- &quot; format, ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatalogger.h" line="95" column="9" bodyfile="saimetadatalogger.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SAIMETADATALOGGER_1gafb5f3391e6a4ebb0eac15d56ac4c8228" prot="public" static="no">
+        <name>SAI_META_LOG_CRITICAL</name>
+        <param><defname>format</defname></param>
+        <param><defname>...</defname></param>
+        <initializer><ref refid="group__SAIMETADATALOGGER_1gaf3bc595f81ce05d447a257c954a9bda0" kindref="member">SAI_META_LOG</ref>(<ref refid="group__SAI_1ggaf5ca43f9200c4860697a607d5d3e74daa74f9d3f9817070db5e7c0ab0ceecc4dd" kindref="member">SAI_LOG_LEVEL_CRITICAL</ref>, &quot;:- &quot; format, ##__VA_ARGS__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatalogger.h" line="96" column="9" bodyfile="saimetadatalogger.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__SAIMETADATALOGGER_1gacd81b24b2cc572bebef0edbaffea513d" prot="public" static="no">
+        <name>SAI_META_LOG_EXIT</name>
+        <param></param>
+        <initializer><ref refid="group__SAIMETADATALOGGER_1gaf3bc595f81ce05d447a257c954a9bda0" kindref="member">SAI_META_LOG</ref>(<ref refid="group__SAI_1ggaf5ca43f9200c4860697a607d5d3e74daa96f4bdd4c1b97e289d1e0519eba8ac48" kindref="member">SAI_LOG_LEVEL_DEBUG</ref>,    &quot;:&lt; exit&quot;);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatalogger.h" line="97" column="9" bodyfile="saimetadatalogger.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIMETADATALOGGER_1ga3c841dc2e07b5fc6f2fedccd4696ec29" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* sai_metadata_log_fn) (_In_ sai_log_level_t log_level, _In_ const char *file, _In_ int line, _In_ const char *function, _In_ const char *format, _In_ ...)</definition>
+        <argsstring>)(_In_ sai_log_level_t log_level, _In_ const char *file, _In_ int line, _In_ const char *function, _In_ const char *format, _In_ ...)</argsstring>
+        <name>sai_metadata_log_fn</name>
+        <briefdescription>
+<para>Log level function definition. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>User can specify his own function that will be called when message log level will be greater or equal to <ref refid="group__SAIMETADATALOGGER_1ga4be62560bd9cc056ff81146c2cbbbc5c" kindref="member">sai_metadata_log_level</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">log_level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Log level </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Source file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Line number in file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">function</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Function name </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Format of logging </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">...</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Variable parameters </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatalogger.h" line="47" column="9" bodyfile="saimetadatalogger.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group__SAIMETADATALOGGER_1ga29c3188e453e38d28e0b9d9ee5f8f96d" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIMETADATALOGGER_1ga3c841dc2e07b5fc6f2fedccd4696ec29" kindref="member">sai_metadata_log_fn</ref></type>
+        <definition>volatile sai_metadata_log_fn sai_metadata_log</definition>
+        <argsstring></argsstring>
+        <name>sai_metadata_log</name>
+        <briefdescription>
+<para>User specified log function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>TODO: add a set function to update this? </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatalogger.h" line="60" column="37" declfile="saimetadatalogger.h" declline="60" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="variable" id="group__SAIMETADATALOGGER_1ga4be62560bd9cc056ff81146c2cbbbc5c" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAI_1ga489b013d7ee80b1549a9ba24952c8dc8" kindref="member">sai_log_level_t</ref></type>
+        <definition>volatile sai_log_level_t sai_metadata_log_level</definition>
+        <argsstring></argsstring>
+        <name>sai_metadata_log_level</name>
+        <briefdescription>
+<para>Log level for SAI metadata macros. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Log level can be changed by user at any time.</para>
+<para>TODO: add a set function to update this? </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatalogger.h" line="69" column="33" declfile="saimetadatalogger.h" declline="69" declcolumn="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module defines SAI Metadata Logger. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2014 Microsoft Open Technologies, Inc.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <ulink url="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</ulink></para>
+<para>THIS CODE IS PROVIDED ON AN <emphasis>AS IS</emphasis> BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</para>
+<para>See the Apache Version 2.0 License for specific language governing permissions and limitations under the License.</para>
+<para>Microsoft would like to thank the following companies for their review and assistance with these files: Intel Corporation, Mellanox Technologies Ltd, Dell Products, L.P., Facebook, Inc., Marvell International Ltd. </para>
+    </detaileddescription>
+    <location file="saimetadatalogger.h"/>
+  </compounddef>
+</doxygen>

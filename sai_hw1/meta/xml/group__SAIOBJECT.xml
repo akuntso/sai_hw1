@@ -1,0 +1,900 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group__SAIOBJECT" kind="group">
+    <compoundname>SAIOBJECT</compoundname>
+    <title>SAI - Object API definitions.</title>
+    <innerclass refid="union__sai__object__key__entry__t" prot="public">_sai_object_key_entry_t</innerclass>
+    <innerclass refid="struct__sai__object__key__t" prot="public">_sai_object_key_t</innerclass>
+    <innerclass refid="struct__sai__attr__capability__t" prot="public">_sai_attr_capability_t</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIOBJECT_1gac37a4371220fc21a476971eac1ca41ad" prot="public" static="no">
+        <type>union <ref refid="union__sai__object__key__entry__t" kindref="compound">_sai_object_key_entry_t</ref></type>
+        <definition>typedef union _sai_object_key_entry_t sai_object_key_entry_t</definition>
+        <argsstring></argsstring>
+        <name>sai_object_key_entry_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Extra paramater:</title><para> @@extraparam      sai_object_type_t object_type </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiobject.h" line="134" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIOBJECT_1ga7bd6c86c7f5ed7fa4a1c9e1d09766318" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__object__key__t" kindref="compound">_sai_object_key_t</ref></type>
+        <definition>typedef struct _sai_object_key_t sai_object_key_t</definition>
+        <argsstring></argsstring>
+        <name>sai_object_key_t</name>
+        <briefdescription>
+<para>Structure for bulk retrieval of object ids, attribute and values for each object-type. Key will be used in case of object-types not having object-ids. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Extra paramater:</title><para> @@extraparam      sai_object_type_t object_type </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiobject.h" line="148" column="18"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIOBJECT_1ga8ca56e0ca8bd01b6ee22cc9410bd54db" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__attr__capability__t" kindref="compound">_sai_attr_capability_t</ref></type>
+        <definition>typedef struct _sai_attr_capability_t sai_attr_capability_t</definition>
+        <argsstring></argsstring>
+        <name>sai_attr_capability_t</name>
+        <briefdescription>
+<para>Structure for attribute capabilities per operation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiobject.h" line="170" column="23"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__SAIOBJECT_1ga1271ce5f2e7593b7bd0b472deb7191c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sai_status_t</type>
+        <definition>sai_status_t sai_get_maximum_attribute_count</definition>
+        <argsstring>(_In_ sai_object_id_t switch_id, _In_ sai_object_type_t object_type, _Out_ uint32_t *count)</argsstring>
+        <name>sai_get_maximum_attribute_count</name>
+        <param>
+          <type>_In_ sai_object_id_t</type>
+          <declname>switch_id</declname>
+        </param>
+        <param>
+          <type>_In_ <ref refid="group__SAITYPES_1ga1ca8e8725c9b140661ffae60b880fe95" kindref="member">sai_object_type_t</ref></type>
+          <declname>object_type</declname>
+        </param>
+        <param>
+          <type>_Out_ uint32_t *</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Get maximum number of attributes for an object type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SAI Switch object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">object_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SAI object type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum number of attribute for an object type</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiobject.h" line="181" column="14" declfile="/home/andrii/sai_hw1/SAI/inc/saiobject.h" declline="181" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAIOBJECT_1ga4a962e9c79a5ad838b4f53617e159b42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sai_status_t</type>
+        <definition>sai_status_t sai_get_object_count</definition>
+        <argsstring>(_In_ sai_object_id_t switch_id, _In_ sai_object_type_t object_type, _Out_ uint32_t *count)</argsstring>
+        <name>sai_get_object_count</name>
+        <param>
+          <type>_In_ sai_object_id_t</type>
+          <declname>switch_id</declname>
+        </param>
+        <param>
+          <type>_In_ <ref refid="group__SAITYPES_1ga1ca8e8725c9b140661ffae60b880fe95" kindref="member">sai_object_type_t</ref></type>
+          <declname>object_type</declname>
+        </param>
+        <param>
+          <type>_Out_ uint32_t *</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Get the number of objects present in SAI. Deprecated for backward compatibility. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SAI Switch object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">object_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SAI object type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects in SAI</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiobject.h" line="195" column="14" declfile="/home/andrii/sai_hw1/SAI/inc/saiobject.h" declline="195" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAIOBJECT_1ga14f31310bbe1d669ce62add3301e2f5d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sai_status_t</type>
+        <definition>sai_status_t sai_get_object_key</definition>
+        <argsstring>(_In_ sai_object_id_t switch_id, _In_ sai_object_type_t object_type, _Inout_ uint32_t *object_count, _Inout_ sai_object_key_t *object_list)</argsstring>
+        <name>sai_get_object_key</name>
+        <param>
+          <type>_In_ sai_object_id_t</type>
+          <declname>switch_id</declname>
+        </param>
+        <param>
+          <type>_In_ <ref refid="group__SAITYPES_1ga1ca8e8725c9b140661ffae60b880fe95" kindref="member">sai_object_type_t</ref></type>
+          <declname>object_type</declname>
+        </param>
+        <param>
+          <type>_Inout_ uint32_t *</type>
+          <declname>object_count</declname>
+        </param>
+        <param>
+          <type>_Inout_ <ref refid="group__SAIOBJECT_1ga7bd6c86c7f5ed7fa4a1c9e1d09766318" kindref="member">sai_object_key_t</ref> *</type>
+          <declname>object_list</declname>
+        </param>
+        <briefdescription>
+<para>Get the number of and list of object keys present in SAI if enough large list provided, otherwise get the number of object keys only. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SAI Switch object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">object_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SAI object type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects in SAI </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">object_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of SAI objects or keys</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, <ref refid="group__SAISTATUS_1ga7255b9d60f461644acd8459627a43288" kindref="member">SAI_STATUS_BUFFER_OVERFLOW</ref> if list size insufficient, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiobject.h" line="211" column="14" declfile="/home/andrii/sai_hw1/SAI/inc/saiobject.h" declline="211" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAIOBJECT_1gaf9ab366ded5212ddc136dfc3157a835c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sai_status_t</type>
+        <definition>sai_status_t sai_bulk_get_attribute</definition>
+        <argsstring>(_In_ sai_object_id_t switch_id, _In_ sai_object_type_t object_type, _In_ uint32_t object_count, _In_ const sai_object_key_t *object_key, _Inout_ uint32_t *attr_count, _Inout_ sai_attribute_t **attr_list, _Inout_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_get_attribute</name>
+        <param>
+          <type>_In_ sai_object_id_t</type>
+          <declname>switch_id</declname>
+        </param>
+        <param>
+          <type>_In_ <ref refid="group__SAITYPES_1ga1ca8e8725c9b140661ffae60b880fe95" kindref="member">sai_object_type_t</ref></type>
+          <declname>object_type</declname>
+        </param>
+        <param>
+          <type>_In_ uint32_t</type>
+          <declname>object_count</declname>
+        </param>
+        <param>
+          <type>_In_ const <ref refid="group__SAIOBJECT_1ga7bd6c86c7f5ed7fa4a1c9e1d09766318" kindref="member">sai_object_key_t</ref> *</type>
+          <declname>object_key</declname>
+        </param>
+        <param>
+          <type>_Inout_ uint32_t *</type>
+          <declname>attr_count</declname>
+        </param>
+        <param>
+          <type>_Inout_ <ref refid="group__SAITYPES_1gaa03b4ea06d1e99354b7b1f0bb4e5cd6c" kindref="member">sai_attribute_t</ref> **</type>
+          <declname>attr_list</declname>
+        </param>
+        <param>
+          <type>_Inout_ sai_status_t *</type>
+          <declname>object_statuses</declname>
+        </param>
+        <briefdescription>
+<para>Get the bulk list of valid attributes for a given list of object keys. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Only valid attributes for an object are returned.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SAI Switch object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">object_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SAI object type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">object_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of object keys </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attr_count. Caller passes the number of attribute allocated in. Callee returns with the actual number of attributes filled in. If the count is less than needed, callee fills with the needed count and do not fill the attributes. Callee also set the corresponding status to <ref refid="group__SAISTATUS_1ga7255b9d60f461644acd8459627a43288" kindref="member">SAI_STATUS_BUFFER_OVERFLOW</ref>.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attributes for every object. Caller is responsible for allocating and freeing buffer for the attributes. For list based attribute, e.g., s32list, objlist, callee should assume the caller has not allocated the memory for the list and should only to fill the count but not list. Then, caller can use corresponding get_attribute to get the list.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Status for each object. If the object does not exist, callee sets the corresponding status to <ref refid="group__SAISTATUS_1ga4b5dfbb3ed15b2693ed14ce56be9e9bc" kindref="member">SAI_STATUS_INVALID_OBJECT_ID</ref>. If the allocated attribute count is not large enough, set the status to <ref refid="group__SAISTATUS_1ga7255b9d60f461644acd8459627a43288" kindref="member">SAI_STATUS_BUFFER_OVERFLOW</ref>.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiobject.h" line="248" column="14" declfile="/home/andrii/sai_hw1/SAI/inc/saiobject.h" declline="248" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAIOBJECT_1ga7b71c13e609d03ffb8c52bdbef0a4b9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sai_status_t</type>
+        <definition>sai_status_t sai_query_attribute_capability</definition>
+        <argsstring>(_In_ sai_object_id_t switch_id, _In_ sai_object_type_t object_type, _In_ sai_attr_id_t attr_id, _Out_ sai_attr_capability_t *attr_capability)</argsstring>
+        <name>sai_query_attribute_capability</name>
+        <param>
+          <type>_In_ sai_object_id_t</type>
+          <declname>switch_id</declname>
+        </param>
+        <param>
+          <type>_In_ <ref refid="group__SAITYPES_1ga1ca8e8725c9b140661ffae60b880fe95" kindref="member">sai_object_type_t</ref></type>
+          <declname>object_type</declname>
+        </param>
+        <param>
+          <type>_In_ sai_attr_id_t</type>
+          <declname>attr_id</declname>
+        </param>
+        <param>
+          <type>_Out_ <ref refid="group__SAIOBJECT_1ga8ca56e0ca8bd01b6ee22cc9410bd54db" kindref="member">sai_attr_capability_t</ref> *</type>
+          <declname>attr_capability</declname>
+        </param>
+        <briefdescription>
+<para>Query attribute capability. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SAI Switch object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">object_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SAI object type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SAI attribute ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">attr_capability</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Capability per operation</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiobject.h" line="267" column="14" declfile="/home/andrii/sai_hw1/SAI/inc/saiobject.h" declline="267" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAIOBJECT_1gacb019c19d51c6bcec4022af1e7b1d797" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sai_status_t</type>
+        <definition>sai_status_t sai_query_attribute_enum_values_capability</definition>
+        <argsstring>(_In_ sai_object_id_t switch_id, _In_ sai_object_type_t object_type, _In_ sai_attr_id_t attr_id, _Inout_ sai_s32_list_t *enum_values_capability)</argsstring>
+        <name>sai_query_attribute_enum_values_capability</name>
+        <param>
+          <type>_In_ sai_object_id_t</type>
+          <declname>switch_id</declname>
+        </param>
+        <param>
+          <type>_In_ <ref refid="group__SAITYPES_1ga1ca8e8725c9b140661ffae60b880fe95" kindref="member">sai_object_type_t</ref></type>
+          <declname>object_type</declname>
+        </param>
+        <param>
+          <type>_In_ sai_attr_id_t</type>
+          <declname>attr_id</declname>
+        </param>
+        <param>
+          <type>_Inout_ <ref refid="struct__sai__s32__list__t" kindref="compound">sai_s32_list_t</ref> *</type>
+          <declname>enum_values_capability</declname>
+        </param>
+        <briefdescription>
+<para>Query an enum attribute (enum or enum list) list of implemented enum values. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SAI Switch object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">object_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SAI object type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SAI attribute ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">enum_values_capability</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of implemented enum values</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, <ref refid="group__SAISTATUS_1ga7255b9d60f461644acd8459627a43288" kindref="member">SAI_STATUS_BUFFER_OVERFLOW</ref> if list size insufficient, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiobject.h" line="283" column="14" declfile="/home/andrii/sai_hw1/SAI/inc/saiobject.h" declline="283" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAIOBJECT_1ga42f59bbc731e81f15940b2d6391b0b4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sai_status_t</type>
+        <definition>sai_status_t sai_query_stats_capability</definition>
+        <argsstring>(_In_ sai_object_id_t switch_id, _In_ sai_object_type_t object_type, _Inout_ sai_stat_capability_list_t *stats_capability)</argsstring>
+        <name>sai_query_stats_capability</name>
+        <param>
+          <type>_In_ sai_object_id_t</type>
+          <declname>switch_id</declname>
+        </param>
+        <param>
+          <type>_In_ <ref refid="group__SAITYPES_1ga1ca8e8725c9b140661ffae60b880fe95" kindref="member">sai_object_type_t</ref></type>
+          <declname>object_type</declname>
+        </param>
+        <param>
+          <type>_Inout_ <ref refid="struct__sai__stat__capability__list__t" kindref="compound">sai_stat_capability_list_t</ref> *</type>
+          <declname>stats_capability</declname>
+        </param>
+        <briefdescription>
+<para>Query statistics capability for statistics bound at object level. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SAI Switch object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">object_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SAI object type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">stats_capability</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of implemented enum values, and the statistics modes (bit mask) supported per value</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, <ref refid="group__SAISTATUS_1ga7255b9d60f461644acd8459627a43288" kindref="member">SAI_STATUS_BUFFER_OVERFLOW</ref> if lists size insufficient, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiobject.h" line="298" column="14" declfile="/home/andrii/sai_hw1/SAI/inc/saiobject.h" declline="298" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAIOBJECT_1gadab1418363a8a77b3594015054c610a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sai_status_t</type>
+        <definition>sai_status_t sai_query_stats_st_capability</definition>
+        <argsstring>(_In_ sai_object_id_t switch_id, _In_ sai_object_type_t object_type, _Inout_ sai_stat_st_capability_list_t *stats_capability)</argsstring>
+        <name>sai_query_stats_st_capability</name>
+        <param>
+          <type>_In_ sai_object_id_t</type>
+          <declname>switch_id</declname>
+        </param>
+        <param>
+          <type>_In_ <ref refid="group__SAITYPES_1ga1ca8e8725c9b140661ffae60b880fe95" kindref="member">sai_object_type_t</ref></type>
+          <declname>object_type</declname>
+        </param>
+        <param>
+          <type>_Inout_ <ref refid="struct__sai__stat__st__capability__list__t" kindref="compound">sai_stat_st_capability_list_t</ref> *</type>
+          <declname>stats_capability</declname>
+        </param>
+        <briefdescription>
+<para>Query statistics capability for statistics bound at object level under the stream telemetry mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SAI Switch object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">object_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SAI object type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">stats_capability</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of implemented enum values, the statistics modes (bit mask) supported and minimal polling interval per value</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, <ref refid="group__SAISTATUS_1ga7255b9d60f461644acd8459627a43288" kindref="member">SAI_STATUS_BUFFER_OVERFLOW</ref> if lists size insufficient, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiobject.h" line="312" column="14" declfile="/home/andrii/sai_hw1/SAI/inc/saiobject.h" declline="312" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAIOBJECT_1gae33aac67f917ebfea3cded3d95f41223" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sai_status_t</type>
+        <definition>sai_status_t sai_bulk_object_get_stats</definition>
+        <argsstring>(_In_ sai_object_id_t switch_id, _In_ sai_object_type_t object_type, _In_ uint32_t object_count, _In_ const sai_object_key_t *object_key, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Inout_ sai_status_t *object_statuses, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_bulk_object_get_stats</name>
+        <param>
+          <type>_In_ sai_object_id_t</type>
+          <declname>switch_id</declname>
+        </param>
+        <param>
+          <type>_In_ <ref refid="group__SAITYPES_1ga1ca8e8725c9b140661ffae60b880fe95" kindref="member">sai_object_type_t</ref></type>
+          <declname>object_type</declname>
+        </param>
+        <param>
+          <type>_In_ uint32_t</type>
+          <declname>object_count</declname>
+        </param>
+        <param>
+          <type>_In_ const <ref refid="group__SAIOBJECT_1ga7bd6c86c7f5ed7fa4a1c9e1d09766318" kindref="member">sai_object_key_t</ref> *</type>
+          <declname>object_key</declname>
+        </param>
+        <param>
+          <type>_In_ uint32_t</type>
+          <declname>number_of_counters</declname>
+        </param>
+        <param>
+          <type>_In_ const sai_stat_id_t *</type>
+          <declname>counter_ids</declname>
+        </param>
+        <param>
+          <type>_In_ <ref refid="group__SAITYPES_1ga014bb209265764e9561d87972a503209" kindref="member">sai_stats_mode_t</ref></type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>_Inout_ sai_status_t *</type>
+          <declname>object_statuses</declname>
+        </param>
+        <param>
+          <type>_Out_ uint64_t *</type>
+          <declname>counters</declname>
+        </param>
+        <briefdescription>
+<para>Bulk objects get statistics. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SAI Switch object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">object_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to get the stats </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">object_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of object keys </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Statistics mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of status for each object. Length of the array should be object_count. Should be looked only if API return is not SAI_STATUS_SUCCESS. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values. Length of counters array should be object_count*number_of_counters. Counter value of I object and J counter_id = counter[I*number_of_counters + J]</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiobject.h" line="334" column="14" declfile="/home/andrii/sai_hw1/SAI/inc/saiobject.h" declline="334" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAIOBJECT_1ga8269b254207169630a6efa1c981bfb67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sai_status_t</type>
+        <definition>sai_status_t sai_bulk_object_clear_stats</definition>
+        <argsstring>(_In_ sai_object_id_t switch_id, _In_ sai_object_type_t object_type, _In_ uint32_t object_count, _In_ const sai_object_key_t *object_key, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Inout_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_object_clear_stats</name>
+        <param>
+          <type>_In_ sai_object_id_t</type>
+          <declname>switch_id</declname>
+        </param>
+        <param>
+          <type>_In_ <ref refid="group__SAITYPES_1ga1ca8e8725c9b140661ffae60b880fe95" kindref="member">sai_object_type_t</ref></type>
+          <declname>object_type</declname>
+        </param>
+        <param>
+          <type>_In_ uint32_t</type>
+          <declname>object_count</declname>
+        </param>
+        <param>
+          <type>_In_ const <ref refid="group__SAIOBJECT_1ga7bd6c86c7f5ed7fa4a1c9e1d09766318" kindref="member">sai_object_key_t</ref> *</type>
+          <declname>object_key</declname>
+        </param>
+        <param>
+          <type>_In_ uint32_t</type>
+          <declname>number_of_counters</declname>
+        </param>
+        <param>
+          <type>_In_ const sai_stat_id_t *</type>
+          <declname>counter_ids</declname>
+        </param>
+        <param>
+          <type>_In_ <ref refid="group__SAITYPES_1ga014bb209265764e9561d87972a503209" kindref="member">sai_stats_mode_t</ref></type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>_Inout_ sai_status_t *</type>
+          <declname>object_statuses</declname>
+        </param>
+        <briefdescription>
+<para>Bulk objects clear statistics. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SAI Switch object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">object_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to get the stats </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">object_key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of object keys </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Statistics mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of status for each object. Length of the array should be object_count. Should be looked only if API return is not SAI_STATUS_SUCCESS.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiobject.h" line="359" column="14" declfile="/home/andrii/sai_hw1/SAI/inc/saiobject.h" declline="359" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAIOBJECT_1gaff2f10b0818929ac066d342473082da1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sai_status_t</type>
+        <definition>sai_status_t sai_query_object_stage</definition>
+        <argsstring>(_In_ sai_object_id_t switch_id, _In_ sai_object_type_t object_type, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list, _Out_ sai_object_stage_t *stage)</argsstring>
+        <name>sai_query_object_stage</name>
+        <param>
+          <type>_In_ sai_object_id_t</type>
+          <declname>switch_id</declname>
+        </param>
+        <param>
+          <type>_In_ <ref refid="group__SAITYPES_1ga1ca8e8725c9b140661ffae60b880fe95" kindref="member">sai_object_type_t</ref></type>
+          <declname>object_type</declname>
+        </param>
+        <param>
+          <type>_In_ uint32_t</type>
+          <declname>attr_count</declname>
+        </param>
+        <param>
+          <type>_In_ const <ref refid="group__SAITYPES_1gaa03b4ea06d1e99354b7b1f0bb4e5cd6c" kindref="member">sai_attribute_t</ref> *</type>
+          <declname>attr_list</declname>
+        </param>
+        <param>
+          <type>_Out_ sai_object_stage_t *</type>
+          <declname>stage</declname>
+        </param>
+        <briefdescription>
+<para>Query the HW stage of an attribute for the specified object type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SAI Switch object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">object_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SAI object type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Count of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">stage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>HW stage of the attributes. Length of the array should be attr_count. Caller must allocate the buffer.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiobject.h" line="380" column="14" declfile="/home/andrii/sai_hw1/SAI/inc/saiobject.h" declline="380" declcolumn="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

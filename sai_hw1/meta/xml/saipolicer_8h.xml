@@ -1,0 +1,960 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="saipolicer_8h" kind="file" language="C++">
+    <compoundname>saipolicer.h</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+    <includedby refid="sai_8h" local="yes">/home/andrii/sai_hw1/SAI/inc/sai.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saipolicer.h</label>
+        <link refid="saipolicer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="5">
+        <label>sys/types.h</label>
+      </node>
+      <node id="2">
+        <label>saitypes.h</label>
+        <link refid="saitypes_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saipolicer.h</label>
+        <link refid="saipolicer_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/andrii/sai_hw1/SAI/inc/sai.h</label>
+        <link refid="sai_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</label>
+        <link refid="saiextensions_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct__sai__policer__api__t" prot="public">_sai_policer_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIPOLICER_1ga5895f63f56d831e0d330a22836b30078" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_meter_type_t</name>
+        <enumvalue id="group__SAIPOLICER_1gga5895f63f56d831e0d330a22836b30078abbf5a1187b09b153e7177fcba57deba0" prot="public">
+          <name>SAI_METER_TYPE_PACKETS</name>
+          <initializer>= 0x00000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Metering is done based on packets </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPOLICER_1gga5895f63f56d831e0d330a22836b30078a8e357a04c2d4bab3d88d7b5e903b8105" prot="public">
+          <name>SAI_METER_TYPE_BYTES</name>
+          <initializer>= 0x00000001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Metering is done based on bytes </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPOLICER_1gga5895f63f56d831e0d330a22836b30078a472430bd178d6e714a2fb46b1cd1e271" prot="public">
+          <name>SAI_METER_TYPE_CUSTOM_RANGE_BASE</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum defining types of meters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipolicer.h" line="39" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saipolicer.h" bodystart="40" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIPOLICER_1ga6a9ec1ae150200720ea825a8745ae54b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_policer_mode_t</name>
+        <enumvalue id="group__SAIPOLICER_1gga6a9ec1ae150200720ea825a8745ae54baad689248febc8cedb841619e880ba8d5" prot="public">
+          <name>SAI_POLICER_MODE_SR_TCM</name>
+          <initializer>= 0x00000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>RFC 2697, Single Rate Three color marker, CIR, CBS and PBS, G, Y and R </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPOLICER_1gga6a9ec1ae150200720ea825a8745ae54baebf41c0cd33ae534abd279fe046cadd7" prot="public">
+          <name>SAI_POLICER_MODE_TR_TCM</name>
+          <initializer>= 0x00000001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>RFC 2698, Two Rate Three color marker, CIR, CBS, PIR and PBS, G, Y and R </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPOLICER_1gga6a9ec1ae150200720ea825a8745ae54bacfb358b99c05e4891f825001c27f3fab" prot="public">
+          <name>SAI_POLICER_MODE_STORM_CONTROL</name>
+          <initializer>= 0x00000002</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Storm control mode. Single Rate Two color CIR, CBS, G and R </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPOLICER_1gga6a9ec1ae150200720ea825a8745ae54ba83d97a7a65bcc3f01cbdb08adbb5b91b" prot="public">
+          <name>SAI_POLICER_MODE_CUSTOM_RANGE_BASE</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum defining mode of the policer object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipolicer.h" line="55" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saipolicer.h" bodystart="56" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIPOLICER_1ga0c3f52fc5517aa97d57883d6459fc45f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_policer_color_source_t</name>
+        <enumvalue id="group__SAIPOLICER_1gga0c3f52fc5517aa97d57883d6459fc45fac8e2d0df57d6a97b0276d86e91388611" prot="public">
+          <name>SAI_POLICER_COLOR_SOURCE_BLIND</name>
+          <initializer>= 0x00000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Previous coloring schemes are ignored </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPOLICER_1gga0c3f52fc5517aa97d57883d6459fc45fa3d30e9d046461bd40c2c4f26f2d78df4" prot="public">
+          <name>SAI_POLICER_COLOR_SOURCE_AWARE</name>
+          <initializer>= 0x00000001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Previous coloring schemes are used </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPOLICER_1gga0c3f52fc5517aa97d57883d6459fc45faa52a7c6fc4304e0b0968318bea54df08" prot="public">
+          <name>SAI_POLICER_COLOR_SOURCE_CUSTOM_RANGE_BASE</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum defining Policer color source. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipolicer.h" line="74" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saipolicer.h" bodystart="75" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIPOLICER_1gace54a7afc052f9d8d6043900fc085916" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_policer_attr_t</name>
+        <enumvalue id="group__SAIPOLICER_1ggace54a7afc052f9d8d6043900fc085916a3019392569d1631de161fda466398064" prot="public">
+          <name>SAI_POLICER_ATTR_START</name>
+          <initializer>= 0x00000000</initializer>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPOLICER_1ggace54a7afc052f9d8d6043900fc085916affb2aeec86a42f76299406b7d9334340" prot="public">
+          <name>SAI_POLICER_ATTR_METER_TYPE</name>
+          <initializer>= SAI_POLICER_ATTR_START</initializer>
+          <briefdescription>
+<para>Policer Meter Type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_meter_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPOLICER_1ggace54a7afc052f9d8d6043900fc085916a25d0173c909f1835c53ed9c38bc75fc8" prot="public">
+          <name>SAI_POLICER_ATTR_MODE</name>
+          <initializer>= 0x00000001</initializer>
+          <briefdescription>
+<para>Policer mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_policer_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPOLICER_1ggace54a7afc052f9d8d6043900fc085916a51e8e5acc8d29d867c027575a31114ec" prot="public">
+          <name>SAI_POLICER_ATTR_COLOR_SOURCE</name>
+          <initializer>= 0x00000002</initializer>
+          <briefdescription>
+<para>Policer Color Source. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_policer_color_source_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_POLICER_COLOR_SOURCE_AWARE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPOLICER_1ggace54a7afc052f9d8d6043900fc085916a568cef6b8d164667909fa50436184710" prot="public">
+          <name>SAI_POLICER_ATTR_CBS</name>
+          <initializer>= 0x00000003</initializer>
+          <briefdescription>
+<para>Committed burst size bytes/packets based on <ref refid="group__SAIPOLICER_1ggace54a7afc052f9d8d6043900fc085916affb2aeec86a42f76299406b7d9334340" kindref="member">SAI_POLICER_ATTR_METER_TYPE</ref>. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPOLICER_1ggace54a7afc052f9d8d6043900fc085916ab1373468ffde1b17b60f73a99b3fa8aa" prot="public">
+          <name>SAI_POLICER_ATTR_CIR</name>
+          <initializer>= 0x00000004</initializer>
+          <briefdescription>
+<para>Committed information rate BPS/PPS based on <ref refid="group__SAIPOLICER_1ggace54a7afc052f9d8d6043900fc085916affb2aeec86a42f76299406b7d9334340" kindref="member">SAI_POLICER_ATTR_METER_TYPE</ref>. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPOLICER_1ggace54a7afc052f9d8d6043900fc085916a965c21f8698e71e3c633a8653f8923f3" prot="public">
+          <name>SAI_POLICER_ATTR_PBS</name>
+          <initializer>= 0x00000005</initializer>
+          <briefdescription>
+<para>Peak burst size bytes/packets based on <ref refid="group__SAIPOLICER_1ggace54a7afc052f9d8d6043900fc085916affb2aeec86a42f76299406b7d9334340" kindref="member">SAI_POLICER_ATTR_METER_TYPE</ref>. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPOLICER_1ggace54a7afc052f9d8d6043900fc085916a5a407fb9e301a94c9067e86f0bda2d99" prot="public">
+          <name>SAI_POLICER_ATTR_PIR</name>
+          <initializer>= 0x00000006</initializer>
+          <briefdescription>
+<para>Peak information rate BPS/PPS based on <ref refid="group__SAIPOLICER_1ggace54a7afc052f9d8d6043900fc085916affb2aeec86a42f76299406b7d9334340" kindref="member">SAI_POLICER_ATTR_METER_TYPE</ref>. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_POLICER_ATTR_MODE == SAI_POLICER_MODE_TR_TCM </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPOLICER_1ggace54a7afc052f9d8d6043900fc085916a6d8a24ff5844438af88e709b5e24edec" prot="public">
+          <name>SAI_POLICER_ATTR_GREEN_PACKET_ACTION</name>
+          <initializer>= 0x00000007</initializer>
+          <briefdescription>
+<para>Action to take for Green color packets. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_packet_action_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_PACKET_ACTION_FORWARD </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPOLICER_1ggace54a7afc052f9d8d6043900fc085916acebb6a340de8b80d68599cb0aa23202a" prot="public">
+          <name>SAI_POLICER_ATTR_YELLOW_PACKET_ACTION</name>
+          <initializer>= 0x00000008</initializer>
+          <briefdescription>
+<para>Action to take for Yellow color packets. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_packet_action_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_PACKET_ACTION_FORWARD </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPOLICER_1ggace54a7afc052f9d8d6043900fc085916a1ca4cdb73bb4813e406b4db892e996fe" prot="public">
+          <name>SAI_POLICER_ATTR_RED_PACKET_ACTION</name>
+          <initializer>= 0x00000009</initializer>
+          <briefdescription>
+<para>Action to take for RED color packets. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>For storm control action should be used as red packet action.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_packet_action_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_PACKET_ACTION_FORWARD </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPOLICER_1ggace54a7afc052f9d8d6043900fc085916a513bfd69d02d4ef1b0a274bbb101cef3" prot="public">
+          <name>SAI_POLICER_ATTR_ENABLE_COUNTER_PACKET_ACTION_LIST</name>
+          <initializer>= 0x0000000a</initializer>
+          <briefdescription>
+<para>Enable/disable counter. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Default disabled. Modify list needs full new set.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_s32_list_t sai_packet_action_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPOLICER_1ggace54a7afc052f9d8d6043900fc085916a45aa48d750eb1fc123e2103fd2e602bb" prot="public">
+          <name>SAI_POLICER_ATTR_OBJECT_STAGE</name>
+          <initializer>= 0x0000000b</initializer>
+          <briefdescription>
+<para>Policer pool stage. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_stage_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_OBJECT_STAGE_BOTH </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPOLICER_1ggace54a7afc052f9d8d6043900fc085916ab57e6ddcfa258e16acee0a4c2827fc08" prot="public">
+          <name>SAI_POLICER_ATTR_STATS_COUNT_MODE</name>
+          <briefdescription>
+<para>Set policer statistics counting mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_stats_count_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_STATS_COUNT_MODE_PACKET_AND_BYTE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPOLICER_1ggace54a7afc052f9d8d6043900fc085916a70b9aef1281235e34cc97d89684d6e14" prot="public">
+          <name>SAI_POLICER_ATTR_SELECTIVE_COUNTER_LIST</name>
+          <briefdescription>
+<para>Attach counter object list. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Counter object should be of type Selective. Fill (<ref refid="group__SAICOUNTER_1ggac5e99b5b04f2a0f0665babc2a60c9641a2835fed0aa18e2fb59824c903bd712ea" kindref="member">SAI_COUNTER_ATTR_TYPE</ref> with <ref refid="group__SAICOUNTER_1gga4e3da19e4589261e88197d6576020cf1aa4b87a1c99256ee3601553c9455cb92c" kindref="member">SAI_COUNTER_TYPE_SELECTIVE</ref>).</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_COUNTER </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPOLICER_1ggace54a7afc052f9d8d6043900fc085916af0ffc8a51b2f5546c9bf79ad2c2206f0" prot="public">
+          <name>SAI_POLICER_ATTR_LABEL</name>
+          <briefdescription>
+<para>Label attribute used to uniquely identify identical policers. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            char </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         &quot;&quot; </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPOLICER_1ggace54a7afc052f9d8d6043900fc085916a74b76b06008557d1a02b0f59ad48bb76" prot="public">
+          <name>SAI_POLICER_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPOLICER_1ggace54a7afc052f9d8d6043900fc085916a9c5482730db483ac36cf1f2889dfdcba" prot="public">
+          <name>SAI_POLICER_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPOLICER_1ggace54a7afc052f9d8d6043900fc085916a96d0156dc27915b9da2679f11a5c4c35" prot="public">
+          <name>SAI_POLICER_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum defining Policer Attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipolicer.h" line="90" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saipolicer.h" bodystart="91" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIPOLICER_1ga85097c29fecf4c85302c2da1a18cd8ac" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_policer_stat_t</name>
+        <enumvalue id="group__SAIPOLICER_1gga85097c29fecf4c85302c2da1a18cd8acabaea89010bd142a9e96b0ff50460f609" prot="public">
+          <name>SAI_POLICER_STAT_PACKETS</name>
+          <initializer>= 0x00000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set packet count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPOLICER_1gga85097c29fecf4c85302c2da1a18cd8acad9afc447d14fe8198cd289922416dc4a" prot="public">
+          <name>SAI_POLICER_STAT_ATTR_BYTES</name>
+          <initializer>= 0x00000001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set byte count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPOLICER_1gga85097c29fecf4c85302c2da1a18cd8aca4bb31c778335b8b11612b2dfb13aead3" prot="public">
+          <name>SAI_POLICER_STAT_GREEN_PACKETS</name>
+          <initializer>= 0x00000002</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set green packet count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPOLICER_1gga85097c29fecf4c85302c2da1a18cd8acabc6ba36e5a424d46a8228eb64a2a0d46" prot="public">
+          <name>SAI_POLICER_STAT_GREEN_BYTES</name>
+          <initializer>= 0x00000003</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set green byte count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPOLICER_1gga85097c29fecf4c85302c2da1a18cd8aca41a8f11949f48156c6ded2c8532ed51e" prot="public">
+          <name>SAI_POLICER_STAT_YELLOW_PACKETS</name>
+          <initializer>= 0x00000004</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set yellow packet count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPOLICER_1gga85097c29fecf4c85302c2da1a18cd8aca424a300ef0ac2b6d537a7570a98d1901" prot="public">
+          <name>SAI_POLICER_STAT_YELLOW_BYTES</name>
+          <initializer>= 0x00000005</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set yellow byte count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPOLICER_1gga85097c29fecf4c85302c2da1a18cd8aca845f1d737ab93eb3add28b2ce30071e1" prot="public">
+          <name>SAI_POLICER_STAT_RED_PACKETS</name>
+          <initializer>= 0x00000006</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set red packet count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPOLICER_1gga85097c29fecf4c85302c2da1a18cd8acae2e2cef4c09e1ee9ff09600672ed07c6" prot="public">
+          <name>SAI_POLICER_STAT_RED_BYTES</name>
+          <initializer>= 0x00000007</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set red byte count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIPOLICER_1gga85097c29fecf4c85302c2da1a18cd8aca02d1cd84d383d97d1c172b8b3442e610" prot="public">
+          <name>SAI_POLICER_STAT_CUSTOM_RANGE_BASE</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum defining policer statistics. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipolicer.h" line="259" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saipolicer.h" bodystart="260" bodyend="288"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIPOLICER_1gabd11adeadc01db9baefc29cf0a76eb48" prot="public" static="no">
+        <type>enum <ref refid="group__SAIPOLICER_1ga5895f63f56d831e0d330a22836b30078" kindref="member">_sai_meter_type_t</ref></type>
+        <definition>typedef enum _sai_meter_type_t sai_meter_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_meter_type_t</name>
+        <briefdescription>
+<para>Enum defining types of meters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipolicer.h" line="50" column="18"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIPOLICER_1gabe12375d01f9cfc74eda4959d7db858c" prot="public" static="no">
+        <type>enum <ref refid="group__SAIPOLICER_1ga6a9ec1ae150200720ea825a8745ae54b" kindref="member">_sai_policer_mode_t</ref></type>
+        <definition>typedef enum _sai_policer_mode_t sai_policer_mode_t</definition>
+        <argsstring></argsstring>
+        <name>sai_policer_mode_t</name>
+        <briefdescription>
+<para>Enum defining mode of the policer object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipolicer.h" line="69" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIPOLICER_1gae6ab328b43101b562c7777b3f23b3d91" prot="public" static="no">
+        <type>enum <ref refid="group__SAIPOLICER_1ga0c3f52fc5517aa97d57883d6459fc45f" kindref="member">_sai_policer_color_source_t</ref></type>
+        <definition>typedef enum _sai_policer_color_source_t sai_policer_color_source_t</definition>
+        <argsstring></argsstring>
+        <name>sai_policer_color_source_t</name>
+        <briefdescription>
+<para>Enum defining Policer color source. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipolicer.h" line="85" column="28"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIPOLICER_1gab816dead180899e50ee6a2dd7c6980bb" prot="public" static="no">
+        <type>enum <ref refid="group__SAIPOLICER_1gace54a7afc052f9d8d6043900fc085916" kindref="member">_sai_policer_attr_t</ref></type>
+        <definition>typedef enum _sai_policer_attr_t sai_policer_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_policer_attr_t</name>
+        <briefdescription>
+<para>Enum defining Policer Attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipolicer.h" line="254" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIPOLICER_1ga206456c7faf18471bac66b0d5481980d" prot="public" static="no">
+        <type>enum <ref refid="group__SAIPOLICER_1ga85097c29fecf4c85302c2da1a18cd8ac" kindref="member">_sai_policer_stat_t</ref></type>
+        <definition>typedef enum _sai_policer_stat_t sai_policer_stat_t</definition>
+        <argsstring></argsstring>
+        <name>sai_policer_stat_t</name>
+        <briefdescription>
+<para>Enum defining policer statistics. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipolicer.h" line="288" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIPOLICER_1ga6d599a995e071fac0f054b4e2d83ed8a" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_policer_fn) (_Out_ sai_object_id_t *policer_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *policer_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_policer_fn</name>
+        <briefdescription>
+<para>Create Policer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">policer_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The policer id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipolicer.h" line="300" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saipolicer.h" bodystart="300" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIPOLICER_1gad2f0eb383c5c773afe0a4442ce41b36b" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_policer_fn) (_In_ sai_object_id_t policer_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t policer_id)</argsstring>
+        <name>sai_remove_policer_fn</name>
+        <briefdescription>
+<para>Delete policer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policer_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Policer id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipolicer.h" line="313" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saipolicer.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIPOLICER_1ga635310e1df8911107d95853b456fccf7" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_policer_attribute_fn) (_In_ sai_object_id_t policer_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t policer_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_policer_attribute_fn</name>
+        <briefdescription>
+<para>Set Policer attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policer_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Policer id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipolicer.h" line="324" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saipolicer.h" bodystart="324" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIPOLICER_1ga40080a1f5ca4efa657adea733a8933a1" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_policer_attribute_fn) (_In_ sai_object_id_t policer_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t policer_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_policer_attribute_fn</name>
+        <briefdescription>
+<para>Get Policer attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policer_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Policer id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipolicer.h" line="337" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saipolicer.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIPOLICER_1ga6e3862bd6bcc57bf54a290f2dc977d55" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_policer_stats_fn) (_In_ sai_object_id_t policer_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t policer_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_policer_stats_fn</name>
+        <briefdescription>
+<para>Get Policer Statistics. Deprecated for backward compatibility. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policer_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Policer id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipolicer.h" line="352" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saipolicer.h" bodystart="352" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIPOLICER_1gaaf9b7b8d31bd3a481d5d61a8d2a486da" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_policer_stats_ext_fn) (_In_ sai_object_id_t policer_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t policer_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_policer_stats_ext_fn</name>
+        <briefdescription>
+<para>Get Policer Statistics extended. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policer_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Policer id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Statistics mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipolicer.h" line="369" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saipolicer.h" bodystart="369" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIPOLICER_1gaf8aafcba52a6cc4c6b11feeb7c36dfa0" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_clear_policer_stats_fn) (_In_ sai_object_id_t policer_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</definition>
+        <argsstring>)(_In_ sai_object_id_t policer_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</argsstring>
+        <name>sai_clear_policer_stats_fn</name>
+        <briefdescription>
+<para>Clear Policer statistics counters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">policer_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Policer id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipolicer.h" line="385" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saipolicer.h" bodystart="385" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIPOLICER_1ga4eb9701e8040bbdca233bb14e92e5591" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__policer__api__t" kindref="compound">_sai_policer_api_t</ref></type>
+        <definition>typedef struct _sai_policer_api_t sai_policer_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_policer_api_t</name>
+        <briefdescription>
+<para>Policer methods table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipolicer.h" line="403" column="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module defines SAI QOS Policer interface. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2014 Microsoft Open Technologies, Inc.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <ulink url="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</ulink></para>
+<para>THIS CODE IS PROVIDED ON AN <emphasis>AS IS</emphasis> BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</para>
+<para>See the Apache Version 2.0 License for specific language governing permissions and limitations under the License.</para>
+<para>Microsoft would like to thank the following companies for their review and assistance with these files: Intel Corporation, Mellanox Technologies Ltd, Dell Products, L.P., Facebook, Inc., Marvell International Ltd. </para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saipolicer.h"/>
+  </compounddef>
+</doxygen>

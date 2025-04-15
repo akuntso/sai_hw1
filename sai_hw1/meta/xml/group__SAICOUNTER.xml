@@ -1,0 +1,580 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group__SAICOUNTER" kind="group">
+    <compoundname>SAICOUNTER</compoundname>
+    <title>SAI - Counter specific API definitions</title>
+    <innerclass refid="struct__sai__counter__api__t" prot="public">_sai_counter_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAICOUNTER_1ga4e3da19e4589261e88197d6576020cf1" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_counter_type_t</name>
+        <enumvalue id="group__SAICOUNTER_1gga4e3da19e4589261e88197d6576020cf1aa5aabd8384f4abaea74ded8e7f240ec7" prot="public">
+          <name>SAI_COUNTER_TYPE_REGULAR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Regular </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAICOUNTER_1gga4e3da19e4589261e88197d6576020cf1aa4b87a1c99256ee3601553c9455cb92c" prot="public">
+          <name>SAI_COUNTER_TYPE_SELECTIVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Selective Counter </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Counter type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saicounter.h" line="43" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saicounter.h" bodystart="44" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAICOUNTER_1gac5e99b5b04f2a0f0665babc2a60c9641" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_counter_attr_t</name>
+        <enumvalue id="group__SAICOUNTER_1ggac5e99b5b04f2a0f0665babc2a60c9641a7d33f3c74fd217c1c270242b6a82e629" prot="public">
+          <name>SAI_COUNTER_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAICOUNTER_1ggac5e99b5b04f2a0f0665babc2a60c9641a2835fed0aa18e2fb59824c903bd712ea" prot="public">
+          <name>SAI_COUNTER_ATTR_TYPE</name>
+          <initializer>= SAI_COUNTER_ATTR_START</initializer>
+          <briefdescription>
+<para>Counter. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_counter_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_COUNTER_TYPE_REGULAR </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAICOUNTER_1ggac5e99b5b04f2a0f0665babc2a60c9641a328b079d466b67e2611e770f7946fe96" prot="public">
+          <name>SAI_COUNTER_ATTR_LABEL</name>
+          <briefdescription>
+<para>Label attribute used to unique identify counter. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            char </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         &quot;&quot; </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAICOUNTER_1ggac5e99b5b04f2a0f0665babc2a60c9641a369660b51ff09638b8580cd6b2b1d692" prot="public">
+          <name>SAI_COUNTER_ATTR_ENABLE_PACKET_COUNT</name>
+          <briefdescription>
+<para>Enable/disable packet count. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAICOUNTER_1ggac5e99b5b04f2a0f0665babc2a60c9641af0141de1d1128f615d4ca22cd1dd533f" prot="public">
+          <name>SAI_COUNTER_ATTR_ENABLE_BYTE_COUNT</name>
+          <briefdescription>
+<para>Enable/disable byte count. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAICOUNTER_1ggac5e99b5b04f2a0f0665babc2a60c9641a32922d3531758bd8e27f0477a3010520" prot="public">
+          <name>SAI_COUNTER_ATTR_OBJECT_TYPE</name>
+          <briefdescription>
+<para>Object Type of the stat-id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_COUNTER_ATTR_TYPE == SAI_COUNTER_TYPE_SELECTIVE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAICOUNTER_1ggac5e99b5b04f2a0f0665babc2a60c9641aa01a69276d7bffe612c66d6354cacba7" prot="public">
+          <name>SAI_COUNTER_ATTR_STAT_ID_LIST</name>
+          <briefdescription>
+<para>Stat id list. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>List of statistics enum mapped to this counter</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_s32_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_COUNTER_ATTR_TYPE == SAI_COUNTER_TYPE_SELECTIVE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAICOUNTER_1ggac5e99b5b04f2a0f0665babc2a60c9641acda9a11f7185f048c45a7fc9cc71d01d" prot="public">
+          <name>SAI_COUNTER_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAICOUNTER_1ggac5e99b5b04f2a0f0665babc2a60c9641ab9fbc92e5a9babf56dd5bcd999acbec4" prot="public">
+          <name>SAI_COUNTER_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAICOUNTER_1ggac5e99b5b04f2a0f0665babc2a60c9641abebca8d37a2d692073a42fbabcca8b05" prot="public">
+          <name>SAI_COUNTER_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute Id in sai_set_counter_attribute() and sai_get_counter_attribute() calls. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saicounter.h" line="57" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saicounter.h" bodystart="58" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAICOUNTER_1ga814aab29212f1cafd5d57a0496bcf35f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_counter_stat_t</name>
+        <enumvalue id="group__SAICOUNTER_1gga814aab29212f1cafd5d57a0496bcf35facf49b1e023eca8ff13f1548014b966be" prot="public">
+          <name>SAI_COUNTER_STAT_PACKETS</name>
+          <initializer>= 0x00000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set hit packets count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAICOUNTER_1gga814aab29212f1cafd5d57a0496bcf35fa2563c68f61ceec726067866173af415c" prot="public">
+          <name>SAI_COUNTER_STAT_BYTES</name>
+          <initializer>= 0x00000001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Get/set hit bytes count [uint64_t] </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAICOUNTER_1gga814aab29212f1cafd5d57a0496bcf35fa36ad4efc2ac5843eff10e04f2836c48b" prot="public">
+          <name>SAI_COUNTER_STAT_CUSTOM_RANGE_BASE</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum defining statistics for Counter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saicounter.h" line="191" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saicounter.h" bodystart="192" bodyend="202"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAICOUNTER_1ga0f958b39b1238b352baac4892e20d4b9" prot="public" static="no">
+        <type>enum <ref refid="group__SAICOUNTER_1ga4e3da19e4589261e88197d6576020cf1" kindref="member">_sai_counter_type_t</ref></type>
+        <definition>typedef enum _sai_counter_type_t sai_counter_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_counter_type_t</name>
+        <briefdescription>
+<para>Counter type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saicounter.h" line="51" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAICOUNTER_1ga38d80e4069364cb75c33bcb8ccfe27a6" prot="public" static="no">
+        <type>enum <ref refid="group__SAICOUNTER_1gac5e99b5b04f2a0f0665babc2a60c9641" kindref="member">_sai_counter_attr_t</ref></type>
+        <definition>typedef enum _sai_counter_attr_t sai_counter_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_counter_attr_t</name>
+        <briefdescription>
+<para>Attribute Id in sai_set_counter_attribute() and sai_get_counter_attribute() calls. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saicounter.h" line="134" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAICOUNTER_1ga0721458715bb4fff216303ff90c769ce" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_counter_fn) (_Out_ sai_object_id_t *counter_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *counter_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_counter_fn</name>
+        <briefdescription>
+<para>Create counter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">counter_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Counter id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saicounter.h" line="146" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saicounter.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAICOUNTER_1ga7739268aa14bac93ae8eddc1c2160b68" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_counter_fn) (_In_ sai_object_id_t counter_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t counter_id)</argsstring>
+        <name>sai_remove_counter_fn</name>
+        <briefdescription>
+<para>Remove counter. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Counter id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saicounter.h" line="159" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saicounter.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAICOUNTER_1gacca6211933d5dca43ef6a5b6fda6d701" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_counter_attribute_fn) (_In_ sai_object_id_t counter_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t counter_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_counter_attribute_fn</name>
+        <briefdescription>
+<para>Set counter attribute Value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Counter id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saicounter.h" line="170" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saicounter.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAICOUNTER_1ga547b935eb0821a5bcbc3bf09a76273e1" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_counter_attribute_fn) (_In_ sai_object_id_t counter_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t counter_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_counter_attribute_fn</name>
+        <briefdescription>
+<para>Get counter attribute Value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Counter id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saicounter.h" line="183" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saicounter.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAICOUNTER_1gae35a6f090c51e89f854148fee4016983" prot="public" static="no">
+        <type>enum <ref refid="group__SAICOUNTER_1ga814aab29212f1cafd5d57a0496bcf35f" kindref="member">_sai_counter_stat_t</ref></type>
+        <definition>typedef enum _sai_counter_stat_t sai_counter_stat_t</definition>
+        <argsstring></argsstring>
+        <name>sai_counter_stat_t</name>
+        <briefdescription>
+<para>Enum defining statistics for Counter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saicounter.h" line="202" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAICOUNTER_1ga17533b6797b34f1de4664e93c4ba8491" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_counter_stats_fn) (_In_ sai_object_id_t counter_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t counter_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_counter_stats_fn</name>
+        <briefdescription>
+<para>Get counter statistics counters. Deprecated for backward compatibility. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Counter id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saicounter.h" line="214" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saicounter.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAICOUNTER_1gacfffb35c6977bf7f86e9f75dfd9ec505" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_counter_stats_ext_fn) (_In_ sai_object_id_t counter_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t counter_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_counter_stats_ext_fn</name>
+        <briefdescription>
+<para>Get counter statistics counters extended. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Counter id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Statistics mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saicounter.h" line="231" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saicounter.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAICOUNTER_1ga5f3f28c0ff246c37341f77d404cf291d" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_clear_counter_stats_fn) (_In_ sai_object_id_t counter_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</definition>
+        <argsstring>)(_In_ sai_object_id_t counter_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</argsstring>
+        <name>sai_clear_counter_stats_fn</name>
+        <briefdescription>
+<para>Clear counter statistics counters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Counter id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saicounter.h" line="247" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saicounter.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAICOUNTER_1ga52bfa6d5f794384392c2f58c4485c805" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__counter__api__t" kindref="compound">_sai_counter_api_t</ref></type>
+        <definition>typedef struct _sai_counter_api_t sai_counter_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_counter_api_t</name>
+        <briefdescription>
+<para>Counter methods table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saicounter.h" line="265" column="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

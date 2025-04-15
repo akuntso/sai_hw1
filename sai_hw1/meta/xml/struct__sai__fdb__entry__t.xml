@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__fdb__entry__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_fdb_entry_t</compoundname>
+    <includes refid="saifdb_8h" local="no">saifdb.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__fdb__entry__t_1ab09103ea7b1eedf3f07e15f846498282" prot="public" static="no" mutable="no">
+        <type>sai_object_id_t</type>
+        <definition>sai_object_id_t _sai_fdb_entry_t::switch_id</definition>
+        <argsstring></argsstring>
+        <name>switch_id</name>
+        <briefdescription>
+<para>Switch ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_SWITCH </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saifdb.h" line="59" column="21" bodyfile="/home/andrii/sai_hw1/SAI/inc/saifdb.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__fdb__entry__t_1a5df81e5af8438f157d9e21c764ea3886" prot="public" static="no" mutable="no">
+        <type>sai_mac_t</type>
+        <definition>sai_mac_t _sai_fdb_entry_t::mac_address</definition>
+        <argsstring></argsstring>
+        <name>mac_address</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MAC address </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saifdb.h" line="62" column="15" bodyfile="/home/andrii/sai_hw1/SAI/inc/saifdb.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__fdb__entry__t_1a2ae99c45385354ac3c6703457e7b88a6" prot="public" static="no" mutable="no">
+        <type>sai_object_id_t</type>
+        <definition>sai_object_id_t _sai_fdb_entry_t::bv_id</definition>
+        <argsstring></argsstring>
+        <name>bv_id</name>
+        <briefdescription>
+<para>Bridge ID. for .1D and Vlan ID for .1Q. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_BRIDGE, SAI_OBJECT_TYPE_VLAN </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saifdb.h" line="69" column="21" bodyfile="/home/andrii/sai_hw1/SAI/inc/saifdb.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>FDB entry key. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saifdb.h" line="52" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saifdb.h" bodystart="53" bodyend="71"/>
+    <listofallmembers>
+      <member refid="struct__sai__fdb__entry__t_1a2ae99c45385354ac3c6703457e7b88a6" prot="public" virt="non-virtual"><scope>_sai_fdb_entry_t</scope><name>bv_id</name></member>
+      <member refid="struct__sai__fdb__entry__t_1a5df81e5af8438f157d9e21c764ea3886" prot="public" virt="non-virtual"><scope>_sai_fdb_entry_t</scope><name>mac_address</name></member>
+      <member refid="struct__sai__fdb__entry__t_1ab09103ea7b1eedf3f07e15f846498282" prot="public" virt="non-virtual"><scope>_sai_fdb_entry_t</scope><name>switch_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

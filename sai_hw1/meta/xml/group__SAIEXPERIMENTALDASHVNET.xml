@@ -1,0 +1,256 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group__SAIEXPERIMENTALDASHVNET" kind="group">
+    <compoundname>SAIEXPERIMENTALDASHVNET</compoundname>
+    <title>SAI - Experimental: DASH VNET specific API definitions</title>
+    <innerclass refid="struct__sai__dash__vnet__api__t" prot="public">_sai_dash_vnet_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASHVNET_1gaf29ce2f628d00ab9324badf1b5b41bca" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_vnet_attr_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASHVNET_1ggaf29ce2f628d00ab9324badf1b5b41bcaac66d5c34754afbfc864dec1c746f43f5" prot="public">
+          <name>SAI_VNET_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHVNET_1ggaf29ce2f628d00ab9324badf1b5b41bcaa71a729ddc04753614a1b841b2ce3e398" prot="public">
+          <name>SAI_VNET_ATTR_VNI</name>
+          <initializer>= SAI_VNET_ATTR_START</initializer>
+          <briefdescription>
+<para>Action parameter VNI. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHVNET_1ggaf29ce2f628d00ab9324badf1b5b41bcaaf5a328eb3d9528a310461bc2fd2e2506" prot="public">
+          <name>SAI_VNET_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHVNET_1ggaf29ce2f628d00ab9324badf1b5b41bcaa5bc6da9720f284e5b2238034914cfbaf" prot="public">
+          <name>SAI_VNET_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHVNET_1ggaf29ce2f628d00ab9324badf1b5b41bcaaa06ee80cccd321a57f6133e05aaa0219" prot="public">
+          <name>SAI_VNET_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute ID for VNET. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvnet.h" line="41" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvnet.h" bodystart="42" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHVNET_1gab6c0112fd12fd079e800ff0d22b5ec15" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASHVNET_1gaf29ce2f628d00ab9324badf1b5b41bca" kindref="member">_sai_vnet_attr_t</ref></type>
+        <definition>typedef enum _sai_vnet_attr_t sai_vnet_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_vnet_attr_t</name>
+        <briefdescription>
+<para>Attribute ID for VNET. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvnet.h" line="68" column="17"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHVNET_1ga2837ebf2a3295072e5d28a2bb60f47d7" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_vnet_fn) (_Out_ sai_object_id_t *vnet_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *vnet_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_vnet_fn</name>
+        <briefdescription>
+<para>Create VNET. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">vnet_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvnet.h" line="80" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvnet.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHVNET_1gabcbf9fb0197f1721811ac6fc4ca6583b" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_vnet_fn) (_In_ sai_object_id_t vnet_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t vnet_id)</argsstring>
+        <name>sai_remove_vnet_fn</name>
+        <briefdescription>
+<para>Remove VNET. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vnet_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvnet.h" line="93" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvnet.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHVNET_1gae5d3201204da2796073efe121c670ac9" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_vnet_attribute_fn) (_In_ sai_object_id_t vnet_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t vnet_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_vnet_attribute_fn</name>
+        <briefdescription>
+<para>Set attribute for VNET. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vnet_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvnet.h" line="104" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvnet.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHVNET_1gadd9baf648cfa07d76a55b4c37ffb1338" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_vnet_attribute_fn) (_In_ sai_object_id_t vnet_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t vnet_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_vnet_attribute_fn</name>
+        <briefdescription>
+<para>Get attribute for VNET. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">vnet_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvnet.h" line="117" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvnet.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHVNET_1gaa6037dcdc83cfba6248a9de533c17b4c" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__dash__vnet__api__t" kindref="compound">_sai_dash_vnet_api_t</ref></type>
+        <definition>typedef struct _sai_dash_vnet_api_t sai_dash_vnet_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dash_vnet_api_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashvnet.h" line="131" column="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

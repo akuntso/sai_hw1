@@ -1,0 +1,994 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group__SAI" kind="group">
+    <compoundname>SAI</compoundname>
+    <title>SAI - Entry point specific API definitions.</title>
+    <innerclass refid="struct__sai__service__method__table__t" prot="public">_sai_service_method_table_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAI_1gafb2c3d5e468e44eae725c6d3ef0244f7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_api_t</name>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7aae67ba0ce51f646c942e6145f7e5af7f" prot="public">
+          <name>SAI_API_UNSPECIFIED</name>
+          <initializer>=  0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>unspecified API </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a56522ea0f5de3ad4523b45a2bfd988fc" prot="public">
+          <name>SAI_API_SWITCH</name>
+          <initializer>=  1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_switch_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a3633a97e552635394f3607acae136a4b" prot="public">
+          <name>SAI_API_PORT</name>
+          <initializer>=  2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_port_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7aae2515604833e8687ceeed5fff8dc273" prot="public">
+          <name>SAI_API_FDB</name>
+          <initializer>=  3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_fdb_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a76bcf862ad36f3fc136998babf00e8df" prot="public">
+          <name>SAI_API_VLAN</name>
+          <initializer>=  4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_vlan_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7ae724c422c1c5ebab46e58c8255b4efbb" prot="public">
+          <name>SAI_API_VIRTUAL_ROUTER</name>
+          <initializer>=  5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_virtual_router_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7ab250fe2250c19d6af19b697c5dba4705" prot="public">
+          <name>SAI_API_ROUTE</name>
+          <initializer>=  6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_route_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a57916133de55258b5bb97de9370e5128" prot="public">
+          <name>SAI_API_NEXT_HOP</name>
+          <initializer>=  7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_next_hop_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a33d26799083a3f184e5c2727865ebcda" prot="public">
+          <name>SAI_API_NEXT_HOP_GROUP</name>
+          <initializer>=  8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_next_hop_group_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a86a6c8c551857cf3dd311e084487536a" prot="public">
+          <name>SAI_API_ROUTER_INTERFACE</name>
+          <initializer>=  9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_router_interface_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a333d1f95a3a03ea8203b26f9184d160e" prot="public">
+          <name>SAI_API_NEIGHBOR</name>
+          <initializer>= 10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_neighbor_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a2fd9ec0225ba617db6d2e8739c0affae" prot="public">
+          <name>SAI_API_ACL</name>
+          <initializer>= 11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_acl_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a9a6e8d07499ae6f88eb3f9a71b41741a" prot="public">
+          <name>SAI_API_HOSTIF</name>
+          <initializer>= 12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_hostif_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a612102e0044d25b2545a91247fb5e900" prot="public">
+          <name>SAI_API_MIRROR</name>
+          <initializer>= 13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_mirror_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a01517dc920e4f5b3cc6759ad4a93c4c5" prot="public">
+          <name>SAI_API_SAMPLEPACKET</name>
+          <initializer>= 14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_samplepacket_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7ae76c025db40d7b33368592771bbd1c3e" prot="public">
+          <name>SAI_API_STP</name>
+          <initializer>= 15</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_stp_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a76d4fec86124c5607beb047f59cebffb" prot="public">
+          <name>SAI_API_LAG</name>
+          <initializer>= 16</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_lag_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a6cea8b6e73e082ddeab326127ea6e768" prot="public">
+          <name>SAI_API_POLICER</name>
+          <initializer>= 17</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_policer_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7ac9d54b2d3e7910427758118cec046cd4" prot="public">
+          <name>SAI_API_WRED</name>
+          <initializer>= 18</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_wred_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a597c48f4b35099bd293f235c5d9f9e31" prot="public">
+          <name>SAI_API_QOS_MAP</name>
+          <initializer>= 19</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_qos_map_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a0144c7ea5e196388b194e2295fe342cf" prot="public">
+          <name>SAI_API_QUEUE</name>
+          <initializer>= 20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_queue_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a32be509db2f577f757f3ef47a0f7c25b" prot="public">
+          <name>SAI_API_SCHEDULER</name>
+          <initializer>= 21</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_scheduler_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a15ade3611196a644e7ac54dfccfca3bc" prot="public">
+          <name>SAI_API_SCHEDULER_GROUP</name>
+          <initializer>= 22</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_scheduler_group_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a5257abcea0b210ed312f5a85a30fa820" prot="public">
+          <name>SAI_API_BUFFER</name>
+          <initializer>= 23</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_buffer_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7af43c99002368a85db0bb6921e404894c" prot="public">
+          <name>SAI_API_HASH</name>
+          <initializer>= 24</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_hash_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7aabc2b1c07720df12ab50549a80c524fe" prot="public">
+          <name>SAI_API_UDF</name>
+          <initializer>= 25</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_udf_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a15a65a967a965eac2addc4791654a7ce" prot="public">
+          <name>SAI_API_TUNNEL</name>
+          <initializer>= 26</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_tunnel_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a5cca18b3fd853053a4a9d6bf914f3d4a" prot="public">
+          <name>SAI_API_L2MC</name>
+          <initializer>= 27</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_l2mc_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a315f247e8eedb87493f9ec9600dc4e63" prot="public">
+          <name>SAI_API_IPMC</name>
+          <initializer>= 28</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_ipmc_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7acf91018b0fe97c710d960116c489d63e" prot="public">
+          <name>SAI_API_RPF_GROUP</name>
+          <initializer>= 29</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_rpf_group_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a0ff22b217aacef221c445d5390b3d59f" prot="public">
+          <name>SAI_API_L2MC_GROUP</name>
+          <initializer>= 30</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_l2mc_group_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7ad67e31a262bb7493acbe55e56da63959" prot="public">
+          <name>SAI_API_IPMC_GROUP</name>
+          <initializer>= 31</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_ipmc_group_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a171cb10dd020f28251f1f61d00bf9f0c" prot="public">
+          <name>SAI_API_MCAST_FDB</name>
+          <initializer>= 32</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_mcast_fdb_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a404cdf60def96bad7e36953a9c2e90bc" prot="public">
+          <name>SAI_API_BRIDGE</name>
+          <initializer>= 33</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_bridge_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a8389f581d6d0fb5e296642c8920c1de0" prot="public">
+          <name>SAI_API_TAM</name>
+          <initializer>= 34</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_tam_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7afa70ce02f376ef0b7ffb85d3624cf4ea" prot="public">
+          <name>SAI_API_SRV6</name>
+          <initializer>= 35</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_srv6_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a3df02cad4e3f60e043bef71458f20c7b" prot="public">
+          <name>SAI_API_MPLS</name>
+          <initializer>= 36</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_mpls_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a60c25401ae0ff95b44b12447148db5b1" prot="public">
+          <name>SAI_API_DTEL</name>
+          <initializer>= 37</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_dtel_api_t (experimental) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7aa0b2a33a9d87d35703f3f820a2577d2e" prot="public">
+          <name>SAI_API_BFD</name>
+          <initializer>= 38</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_bfd_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a2f8da0dcd075e7e4169a28112720b60b" prot="public">
+          <name>SAI_API_ISOLATION_GROUP</name>
+          <initializer>= 39</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_isolation_group_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a69a0c86805e09d9a75793720fa863044" prot="public">
+          <name>SAI_API_NAT</name>
+          <initializer>= 40</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_nat_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a48a372da26089b330c29ffd634e9f92c" prot="public">
+          <name>SAI_API_COUNTER</name>
+          <initializer>= 41</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_counter_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a60635e1a06f6ead2c7e2233eb5f3db75" prot="public">
+          <name>SAI_API_DEBUG_COUNTER</name>
+          <initializer>= 42</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_debug_counter_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7af384672ab19934358cc9eaeafe93e868" prot="public">
+          <name>SAI_API_MACSEC</name>
+          <initializer>= 43</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_macsec_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a0f91760fdad550d075fd60f1571a9387" prot="public">
+          <name>SAI_API_SYSTEM_PORT</name>
+          <initializer>= 44</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_system_port_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7acb3eb75bc627cea3710859c99bea3a6d" prot="public">
+          <name>SAI_API_MY_MAC</name>
+          <initializer>= 45</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_my_mac_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a0a95d640adf91d48b6a65a874637ed90" prot="public">
+          <name>SAI_API_IPSEC</name>
+          <initializer>= 46</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_ipsec_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a0ad5629919d404a97bdf207176947433" prot="public">
+          <name>SAI_API_GENERIC_PROGRAMMABLE</name>
+          <initializer>= 47</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_generic_programmable_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a04bc571c168f42d0b97586826c15c68f" prot="public">
+          <name>SAI_API_ARS</name>
+          <initializer>= 48</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_ars_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7ae9ab59be20fbab549e355e4cc6d84f72" prot="public">
+          <name>SAI_API_ARS_PROFILE</name>
+          <initializer>= 49</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_ars_api_profile_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a03900381fec920b2a520d1d1e40a2ca1" prot="public">
+          <name>SAI_API_TWAMP</name>
+          <initializer>= 50</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_twamp_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7aed870306294de1b7c114c44966a329b5" prot="public">
+          <name>SAI_API_POE</name>
+          <initializer>= 51</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_poe_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a883f612c4193f80bb222ce8fc2afa372" prot="public">
+          <name>SAI_API_ICMP_ECHO</name>
+          <initializer>= 52</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_icmp_echo_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7af18010d40b203469bc8a505b4224f8dd" prot="public">
+          <name>SAI_API_PREFIX_COMPRESSION</name>
+          <initializer>= 53</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>sai_prefix_compression_api_t </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a70151489ef19487798e6f09c24ba1d24" prot="public">
+          <name>SAI_API_MAX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>total number of APIs </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7a38496366f5ff5143e2fae260f778ab34" prot="public">
+          <name>SAI_API_CUSTOM_RANGE_BASE</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+<para>Custom range base. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggafb2c3d5e468e44eae725c6d3ef0244f7ac42a03f8be6bde799cdecf46bcdaf0a3" prot="public">
+          <name>SAI_API_EXTENSIONS_RANGE_BASE</name>
+          <initializer>= 0x20000000</initializer>
+          <briefdescription>
+<para>Extensions range base. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Defined API sets have assigned IDs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If specific API method table changes in any way (method signature, number of methods), a new ID needs to be created (e.g. VLAN2) and old API still may need to be supported for compatibility with older adapter hosts. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sai.h" line="98" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/sai.h" bodystart="99" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAI_1gaf5ca43f9200c4860697a607d5d3e74da" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_log_level_t</name>
+        <enumvalue id="group__SAI_1ggaf5ca43f9200c4860697a607d5d3e74daa96f4bdd4c1b97e289d1e0519eba8ac48" prot="public">
+          <name>SAI_LOG_LEVEL_DEBUG</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Log Level Debug </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggaf5ca43f9200c4860697a607d5d3e74daa09383a7572ed0cca638d3bd3a3ad2d28" prot="public">
+          <name>SAI_LOG_LEVEL_INFO</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Log Level Info </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggaf5ca43f9200c4860697a607d5d3e74daaf01fc9bad99c3c3136390de52fd22f0c" prot="public">
+          <name>SAI_LOG_LEVEL_NOTICE</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Log Level Notice </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggaf5ca43f9200c4860697a607d5d3e74daa20f5d3bfbf640a4fa0209855d94bb7e1" prot="public">
+          <name>SAI_LOG_LEVEL_WARN</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Log level Warning </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggaf5ca43f9200c4860697a607d5d3e74daa54316f7c8f0562797d4dfb27ff34299f" prot="public">
+          <name>SAI_LOG_LEVEL_ERROR</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Log Level Error </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAI_1ggaf5ca43f9200c4860697a607d5d3e74daa74f9d3f9817070db5e7c0ab0ceecc4dd" prot="public">
+          <name>SAI_LOG_LEVEL_CRITICAL</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Log Level Critical </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Defines log level. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sai.h" line="170" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/sai.h" bodystart="171" bodyend="190"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAI_1ga0dc8f753975dce01d3d62704195ab71b" prot="public" static="no">
+        <type>enum <ref refid="group__SAI_1gafb2c3d5e468e44eae725c6d3ef0244f7" kindref="member">_sai_api_t</ref></type>
+        <definition>typedef enum _sai_api_t sai_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_api_t</name>
+        <briefdescription>
+<para>Defined API sets have assigned IDs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If specific API method table changes in any way (method signature, number of methods), a new ID needs to be created (e.g. VLAN2) and old API still may need to be supported for compatibility with older adapter hosts. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sai.h" line="165" column="11"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAI_1ga489b013d7ee80b1549a9ba24952c8dc8" prot="public" static="no">
+        <type>enum <ref refid="group__SAI_1gaf5ca43f9200c4860697a607d5d3e74da" kindref="member">_sai_log_level_t</ref></type>
+        <definition>typedef enum _sai_log_level_t sai_log_level_t</definition>
+        <argsstring></argsstring>
+        <name>sai_log_level_t</name>
+        <briefdescription>
+<para>Defines log level. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sai.h" line="190" column="17"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAI_1gab61f9e70ff82bf9957e75491148034b2" prot="public" static="no">
+        <type>const char *(*</type>
+        <definition>typedef const char*(* sai_profile_get_value_fn) (_In_ sai_switch_profile_id_t profile_id, _In_ const char *variable)</definition>
+        <argsstring>)(_In_ sai_switch_profile_id_t profile_id, _In_ const char *variable)</argsstring>
+        <name>sai_profile_get_value_fn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sai.h" line="192" column="15" bodyfile="/home/andrii/sai_hw1/SAI/inc/sai.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAI_1ga61a2a25a1ca2e4318afa1cdedb5393f2" prot="public" static="no">
+        <type>int(*</type>
+        <definition>typedef int(* sai_profile_get_next_value_fn) (_In_ sai_switch_profile_id_t profile_id, _Out_ const char **variable, _Out_ const char **value)</definition>
+        <argsstring>)(_In_ sai_switch_profile_id_t profile_id, _Out_ const char **variable, _Out_ const char **value)</argsstring>
+        <name>sai_profile_get_next_value_fn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sai.h" line="196" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sai.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAI_1ga58bf5f92697a0bcc776596b2df27cb6e" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__service__method__table__t" kindref="compound">_sai_service_method_table_t</ref></type>
+        <definition>typedef struct _sai_service_method_table_t sai_service_method_table_t</definition>
+        <argsstring></argsstring>
+        <name>sai_service_method_table_t</name>
+        <briefdescription>
+<para>Method table that contains function pointers for services exposed by adapter host for adapter. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sai.h" line="220" column="28"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__SAI_1ga65dca4f68bafaa9416ede8846ea5b48d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sai_status_t</type>
+        <definition>sai_status_t sai_api_initialize</definition>
+        <argsstring>(_In_ uint64_t flags, _In_ const sai_service_method_table_t *services)</argsstring>
+        <name>sai_api_initialize</name>
+        <param>
+          <type>_In_ uint64_t</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>_In_ const <ref refid="group__SAI_1ga58bf5f92697a0bcc776596b2df27cb6e" kindref="member">sai_service_method_table_t</ref> *</type>
+          <declname>services</declname>
+        </param>
+        <briefdescription>
+<para>Adapter module initialization call. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is NOT for SDK initialization.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Reserved for future use, must be zero </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">services</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Methods table with services provided by adapter host</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sai.h" line="232" column="14" declfile="/home/andrii/sai_hw1/SAI/inc/sai.h" declline="232" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sai_status_t</type>
+        <definition>sai_status_t sai_api_query</definition>
+        <argsstring>(_In_ sai_api_t api, _Out_ void **api_method_table)</argsstring>
+        <name>sai_api_query</name>
+        <param>
+          <type>_In_ <ref refid="group__SAI_1ga0dc8f753975dce01d3d62704195ab71b" kindref="member">sai_api_t</ref></type>
+          <declname>api</declname>
+        </param>
+        <param>
+          <type>_Out_ void **</type>
+          <declname>api_method_table</declname>
+        </param>
+        <briefdescription>
+<para>Retrieve a pointer to the C-style method table for desired SAI functionality as specified by the given sai_api_id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">api</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SAI API ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">api_method_table</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Caller allocated method table. The table must remain valid until the <ref refid="group__SAI_1gaa02853139202cfab6a80d5268a83972e" kindref="member">sai_api_uninitialize()</ref> is called.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sai.h" line="246" column="14" declfile="/home/andrii/sai_hw1/SAI/inc/sai.h" declline="246" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAI_1gaa02853139202cfab6a80d5268a83972e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sai_status_t</type>
+        <definition>sai_status_t sai_api_uninitialize</definition>
+        <argsstring>(void)</argsstring>
+        <name>sai_api_uninitialize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Uninitialize adapter module. SAI functionalities, retrieved via <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> cannot be used after this call. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sai.h" line="256" column="14" declfile="/home/andrii/sai_hw1/SAI/inc/sai.h" declline="256" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAI_1ga46d640866005e345fe11089417e95e94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sai_status_t</type>
+        <definition>sai_status_t sai_log_set</definition>
+        <argsstring>(_In_ sai_api_t api, _In_ sai_log_level_t log_level)</argsstring>
+        <name>sai_log_set</name>
+        <param>
+          <type>_In_ <ref refid="group__SAI_1ga0dc8f753975dce01d3d62704195ab71b" kindref="member">sai_api_t</ref></type>
+          <declname>api</declname>
+        </param>
+        <param>
+          <type>_In_ <ref refid="group__SAI_1ga489b013d7ee80b1549a9ba24952c8dc8" kindref="member">sai_log_level_t</ref></type>
+          <declname>log_level</declname>
+        </param>
+        <briefdescription>
+<para>Set log level for SAI API module. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default log level is <ref refid="group__SAI_1ggaf5ca43f9200c4860697a607d5d3e74daa20f5d3bfbf640a4fa0209855d94bb7e1" kindref="member">SAI_LOG_LEVEL_WARN</ref>.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">api</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SAI API ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">log_level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Log level</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sai.h" line="268" column="14" declfile="/home/andrii/sai_hw1/SAI/inc/sai.h" declline="268" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAI_1ga928171f1320c4f2c4360b58a4b82bc4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="group__SAITYPES_1ga1ca8e8725c9b140661ffae60b880fe95" kindref="member">sai_object_type_t</ref></type>
+        <definition>sai_object_type_t sai_object_type_query</definition>
+        <argsstring>(_In_ sai_object_id_t object_id)</argsstring>
+        <name>sai_object_type_query</name>
+        <param>
+          <type>_In_ sai_object_id_t</type>
+          <declname>object_id</declname>
+        </param>
+        <briefdescription>
+<para>Query SAI object type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAITYPES_1gga4450320ede120f84efcd17a09c58e29fa9927bcfefba0a9880de9a54c5b4e0b3a" kindref="member">SAI_OBJECT_TYPE_NULL</ref> when sai_object_id is not valid. Otherwise, return a valid SAI object type SAI_OBJECT_TYPE_XXX. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sai.h" line="280" column="19" declfile="/home/andrii/sai_hw1/SAI/inc/sai.h" declline="280" declcolumn="19"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAI_1gabefa0d124940bc1b7563e00c8dae4794" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sai_object_id_t</type>
+        <definition>sai_object_id_t sai_switch_id_query</definition>
+        <argsstring>(_In_ sai_object_id_t object_id)</argsstring>
+        <name>sai_switch_id_query</name>
+        <param>
+          <type>_In_ sai_object_id_t</type>
+          <declname>object_id</declname>
+        </param>
+        <briefdescription>
+<para>Query SAI switch id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Object id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAITYPES_1ga05f6bb4ef9f7ddf0ceb2056dc6ac8c6c" kindref="member">SAI_NULL_OBJECT_ID</ref> when sai_object_id is not valid. Otherwise, return a valid SAI_OBJECT_TYPE_SWITCH object on which provided object id belongs. If valid switch id object is provided as input parameter it should return itself. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sai.h" line="293" column="17" declfile="/home/andrii/sai_hw1/SAI/inc/sai.h" declline="293" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAI_1gab3925c83694f6852bc7162331407c711" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sai_status_t</type>
+        <definition>sai_status_t sai_dbg_generate_dump</definition>
+        <argsstring>(_In_ const char *dump_file_name)</argsstring>
+        <name>sai_dbg_generate_dump</name>
+        <param>
+          <type>_In_ const char *</type>
+          <declname>dump_file_name</declname>
+        </param>
+        <briefdescription>
+<para>Generate dump file. The dump file may include SAI state information and vendor SDK information. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dump_file_name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Full path for dump file</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sai.h" line="303" column="14" declfile="/home/andrii/sai_hw1/SAI/inc/sai.h" declline="303" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="group__SAI_1gae3a513fda3d862c129d1c59243ef11ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>sai_status_t</type>
+        <definition>sai_status_t sai_object_type_get_availability</definition>
+        <argsstring>(_In_ sai_object_id_t switch_id, _In_ sai_object_type_t object_type, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list, _Out_ uint64_t *count)</argsstring>
+        <name>sai_object_type_get_availability</name>
+        <param>
+          <type>_In_ sai_object_id_t</type>
+          <declname>switch_id</declname>
+        </param>
+        <param>
+          <type>_In_ <ref refid="group__SAITYPES_1ga1ca8e8725c9b140661ffae60b880fe95" kindref="member">sai_object_type_t</ref></type>
+          <declname>object_type</declname>
+        </param>
+        <param>
+          <type>_In_ uint32_t</type>
+          <declname>attr_count</declname>
+        </param>
+        <param>
+          <type>_In_ const <ref refid="group__SAITYPES_1gaa03b4ea06d1e99354b7b1f0bb4e5cd6c" kindref="member">sai_attribute_t</ref> *</type>
+          <declname>attr_list</declname>
+        </param>
+        <param>
+          <type>_Out_ uint64_t *</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Get SAI object type resource availability. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SAI Switch object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">object_type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SAI object type </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attributes that to distinguish resource </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Available objects left</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1ga449879835cef659119c0b3147d205752" kindref="member">SAI_STATUS_NOT_SUPPORTED</ref> if the given object type does not support resource accounting. Otherwise, return <ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref>. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sai.h" line="318" column="14" declfile="/home/andrii/sai_hw1/SAI/inc/sai.h" declline="318" declcolumn="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__service__method__table__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_service_method_table_t</compoundname>
+    <includes refid="sai_8h" local="no">sai.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__service__method__table__t_1ad3af9384e8a5291dedae978064e8d24f" prot="public" static="no" mutable="no">
+        <type>sai_profile_get_value_fn</type>
+        <definition>sai_profile_get_value_fn _sai_service_method_table_t::profile_get_value</definition>
+        <argsstring></argsstring>
+        <name>profile_get_value</name>
+        <briefdescription>
+<para>Get variable value given its name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sai.h" line="210" column="37" bodyfile="/home/andrii/sai_hw1/SAI/inc/sai.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__service__method__table__t_1aaac436a7453412904fd21bfae1d60f85" prot="public" static="no" mutable="no">
+        <type>sai_profile_get_next_value_fn</type>
+        <definition>sai_profile_get_next_value_fn _sai_service_method_table_t::profile_get_next_value</definition>
+        <argsstring></argsstring>
+        <name>profile_get_next_value</name>
+        <briefdescription>
+<para>Enumerate all the K/V pairs in a profile. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Pointer to NULL passed as variable restarts enumeration. Function returns 0 if next value exists, -1 at the end of the list. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sai.h" line="218" column="37" bodyfile="/home/andrii/sai_hw1/SAI/inc/sai.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Method table that contains function pointers for services exposed by adapter host for adapter. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/sai.h" line="205" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/sai.h" bodystart="206" bodyend="220"/>
+    <listofallmembers>
+      <member refid="struct__sai__service__method__table__t_1aaac436a7453412904fd21bfae1d60f85" prot="public" virt="non-virtual"><scope>_sai_service_method_table_t</scope><name>profile_get_next_value</name></member>
+      <member refid="struct__sai__service__method__table__t_1ad3af9384e8a5291dedae978064e8d24f" prot="public" virt="non-virtual"><scope>_sai_service_method_table_t</scope><name>profile_get_value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

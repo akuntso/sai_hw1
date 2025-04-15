@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__icmp__echo__session__state__notification__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_icmp_echo_session_state_notification_t</compoundname>
+    <includes refid="saiicmpecho_8h" local="no">saiicmpecho.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__icmp__echo__session__state__notification__t_1a0f0d54b8dd666589696078421f705d76" prot="public" static="no" mutable="no">
+        <type>sai_object_id_t</type>
+        <definition>sai_object_id_t _sai_icmp_echo_session_state_notification_t::icmp_echo_session_id</definition>
+        <argsstring></argsstring>
+        <name>icmp_echo_session_id</name>
+        <briefdescription>
+<para>ICMP_ECHO Session id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_ICMP_ECHO_SESSION </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h" line="59" column="21" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__icmp__echo__session__state__notification__t_1a208e34277e316d98e7a87b3fee5d929b" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIICMPECHO_1ga7e72333d2d880cf3c255d1e0283b9ddb" kindref="member">sai_icmp_echo_session_state_t</ref></type>
+        <definition>sai_icmp_echo_session_state_t _sai_icmp_echo_session_state_notification_t::session_state</definition>
+        <argsstring></argsstring>
+        <name>session_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>ICMP_ECHO session state </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h" line="62" column="35" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines the operational status of the ICMP_ECHO session. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h" line="52" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h" bodystart="53" bodyend="64"/>
+    <listofallmembers>
+      <member refid="struct__sai__icmp__echo__session__state__notification__t_1a0f0d54b8dd666589696078421f705d76" prot="public" virt="non-virtual"><scope>_sai_icmp_echo_session_state_notification_t</scope><name>icmp_echo_session_id</name></member>
+      <member refid="struct__sai__icmp__echo__session__state__notification__t_1a208e34277e316d98e7a87b3fee5d929b" prot="public" virt="non-virtual"><scope>_sai_icmp_echo_session_state_notification_t</scope><name>session_state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

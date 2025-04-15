@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__qos__map__params__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_qos_map_params_t</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__qos__map__params__t_1a2373ca23be83934aed62f6e345e75f29" prot="public" static="no" mutable="no">
+        <type>sai_cos_t</type>
+        <definition>sai_cos_t _sai_qos_map_params_t::tc</definition>
+        <argsstring></argsstring>
+        <name>tc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Traffic class </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="733" column="15" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="733" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__qos__map__params__t_1a9edadf78d08dbd8a3ddad1f97c16895a" prot="public" static="no" mutable="no">
+        <type>sai_uint8_t</type>
+        <definition>sai_uint8_t _sai_qos_map_params_t::dscp</definition>
+        <argsstring></argsstring>
+        <name>dscp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>DSCP value </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="736" column="17" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="736" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__qos__map__params__t_1a611a138ae455d7ed7706ffa58c8df431" prot="public" static="no" mutable="no">
+        <type>sai_uint8_t</type>
+        <definition>sai_uint8_t _sai_qos_map_params_t::dot1p</definition>
+        <argsstring></argsstring>
+        <name>dot1p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Dot1p value </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="739" column="17" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="739" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__qos__map__params__t_1ae3b5da474693668aa53b84780a00dfd6" prot="public" static="no" mutable="no">
+        <type>sai_uint8_t</type>
+        <definition>sai_uint8_t _sai_qos_map_params_t::prio</definition>
+        <argsstring></argsstring>
+        <name>prio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>PFC priority value </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="742" column="17" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="742" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__qos__map__params__t_1a0f74bf2528a4d9f84f90665bab800c9e" prot="public" static="no" mutable="no">
+        <type>sai_uint8_t</type>
+        <definition>sai_uint8_t _sai_qos_map_params_t::pg</definition>
+        <argsstring></argsstring>
+        <name>pg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Priority group value </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="745" column="17" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="745" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__qos__map__params__t_1ad034121b89fcb84cd4cd437bddb1151a" prot="public" static="no" mutable="no">
+        <type>sai_queue_index_t</type>
+        <definition>sai_queue_index_t _sai_qos_map_params_t::queue_index</definition>
+        <argsstring></argsstring>
+        <name>queue_index</name>
+        <briefdescription>
+<para>Egress port queue OID is not known at the time of map creation. Using queue index for maps. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="751" column="23" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="751" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__qos__map__params__t_1a131d1f77d892923d44a66bcddddac166" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga9148fe45196c83d67d148219bddd03cb" kindref="member">sai_packet_color_t</ref></type>
+        <definition>sai_packet_color_t _sai_qos_map_params_t::color</definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Color of the packet </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="754" column="24" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="754" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__qos__map__params__t_1a0b611b2046d5c851ee90db750f7d8aee" prot="public" static="no" mutable="no">
+        <type>sai_uint8_t</type>
+        <definition>sai_uint8_t _sai_qos_map_params_t::mpls_exp</definition>
+        <argsstring></argsstring>
+        <name>mpls_exp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>MPLS exp value </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="757" column="17" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="757" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__qos__map__params__t_1aa54c570dc3128bf586f01c15a5f74e6d" prot="public" static="no" mutable="no">
+        <type>sai_uint8_t</type>
+        <definition>sai_uint8_t _sai_qos_map_params_t::fc</definition>
+        <argsstring></argsstring>
+        <name>fc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Forwarding class </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="760" column="17" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="760" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines QOS map types. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="par"><title>Examples:</title><para></para>
+</simplesect>
+dot1p/DSCP/MPLS_EXP --&gt; TC dot1p/DSCP/MPLS_EXP --&gt; Color dot1p/DSCP/MPLS_EXP --&gt; TC + Color DSCP/MPLS_EXP --&gt; FC TC --&gt; dot1p/DSCP/MPLS_EXP. TC + color --&gt; dot1p/DSCP/MPLS_EXP. TC --&gt; Egress Queue. </para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="730" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="731" bodyend="762"/>
+    <listofallmembers>
+      <member refid="struct__sai__qos__map__params__t_1a131d1f77d892923d44a66bcddddac166" prot="public" virt="non-virtual"><scope>_sai_qos_map_params_t</scope><name>color</name></member>
+      <member refid="struct__sai__qos__map__params__t_1a611a138ae455d7ed7706ffa58c8df431" prot="public" virt="non-virtual"><scope>_sai_qos_map_params_t</scope><name>dot1p</name></member>
+      <member refid="struct__sai__qos__map__params__t_1a9edadf78d08dbd8a3ddad1f97c16895a" prot="public" virt="non-virtual"><scope>_sai_qos_map_params_t</scope><name>dscp</name></member>
+      <member refid="struct__sai__qos__map__params__t_1aa54c570dc3128bf586f01c15a5f74e6d" prot="public" virt="non-virtual"><scope>_sai_qos_map_params_t</scope><name>fc</name></member>
+      <member refid="struct__sai__qos__map__params__t_1a0b611b2046d5c851ee90db750f7d8aee" prot="public" virt="non-virtual"><scope>_sai_qos_map_params_t</scope><name>mpls_exp</name></member>
+      <member refid="struct__sai__qos__map__params__t_1a0f74bf2528a4d9f84f90665bab800c9e" prot="public" virt="non-virtual"><scope>_sai_qos_map_params_t</scope><name>pg</name></member>
+      <member refid="struct__sai__qos__map__params__t_1ae3b5da474693668aa53b84780a00dfd6" prot="public" virt="non-virtual"><scope>_sai_qos_map_params_t</scope><name>prio</name></member>
+      <member refid="struct__sai__qos__map__params__t_1ad034121b89fcb84cd4cd437bddb1151a" prot="public" virt="non-virtual"><scope>_sai_qos_map_params_t</scope><name>queue_index</name></member>
+      <member refid="struct__sai__qos__map__params__t_1a2373ca23be83934aed62f6e345e75f29" prot="public" virt="non-virtual"><scope>_sai_qos_map_params_t</scope><name>tc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

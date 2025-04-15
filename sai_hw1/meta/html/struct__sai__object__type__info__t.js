@@ -1,0 +1,26 @@
+var struct__sai__object__type__info__t =
+[
+    [ "attridend", "struct__sai__object__type__info__t.html#a00721b2c9d145594e382e5681725c7b7", null ],
+    [ "attridstart", "struct__sai__object__type__info__t.html#a9a5c44446b55175b6689ab880661a715", null ],
+    [ "attrmetadata", "struct__sai__object__type__info__t.html#a06dfb65fa4701a8c52bcd4c6796137b3", null ],
+    [ "attrmetadatalength", "struct__sai__object__type__info__t.html#a6b5c253f4f4bde9e0328b81a65d8e9ec", null ],
+    [ "clearstats", "struct__sai__object__type__info__t.html#ae2df7bc846a032cb3587b14bb9c7ded6", null ],
+    [ "create", "struct__sai__object__type__info__t.html#a4b191533ea7ea45e9cc83f7b6d471c83", null ],
+    [ "enummetadata", "struct__sai__object__type__info__t.html#a71079fd05edb162ff1782bd4fe678b5e", null ],
+    [ "get", "struct__sai__object__type__info__t.html#a94633122c03585237274e4748e23c19a", null ],
+    [ "getstats", "struct__sai__object__type__info__t.html#ae4ddacf8ce095c315007a378e8051e98", null ],
+    [ "getstatsext", "struct__sai__object__type__info__t.html#a3f8c1e8fbd0be00884cae23ed0294a66", null ],
+    [ "iscustom", "struct__sai__object__type__info__t.html#a96189720ece674fec6cc74595c96490b", null ],
+    [ "isexperimental", "struct__sai__object__type__info__t.html#aa9792d4415ec90b6be7e91df73419e63", null ],
+    [ "isnonobjectid", "struct__sai__object__type__info__t.html#a0bcd5476d95edd20d9e51896f9c7d69c", null ],
+    [ "isobjectid", "struct__sai__object__type__info__t.html#aa7608a1c83f3b6ac81658d50b1303811", null ],
+    [ "objecttype", "struct__sai__object__type__info__t.html#ab145318cd469c18f90dd42db42bef104", null ],
+    [ "objecttypename", "struct__sai__object__type__info__t.html#a04fe4ece267e5d04ec21d5d194409cb8", null ],
+    [ "remove", "struct__sai__object__type__info__t.html#a838011c974cdc1d2f6ed6fb01f296a28", null ],
+    [ "revgraphmembers", "struct__sai__object__type__info__t.html#a4e229fc8266505a81b5a9cb9ed38d895", null ],
+    [ "revgraphmemberscount", "struct__sai__object__type__info__t.html#a2a8e0d91ab927fd18c96ddae27fc2a83", null ],
+    [ "set", "struct__sai__object__type__info__t.html#a5132addda7a1e6a2da8cde097587c0af", null ],
+    [ "statenum", "struct__sai__object__type__info__t.html#ac105d7d6846d5a500a13a3c002602925", null ],
+    [ "structmembers", "struct__sai__object__type__info__t.html#a3d2df9aeed03ac8515e75004195fe8cf", null ],
+    [ "structmemberscount", "struct__sai__object__type__info__t.html#a7f1cf36e94b89f857c613ffee74ca3d7", null ]
+];

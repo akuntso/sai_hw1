@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__u8__list__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_u8_list_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__u8__list__t_1a05fcadaf616b68c7d36b4fc92170b64d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _sai_u8_list_t::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="318" column="14" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="318" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__u8__list__t_1a45d2c10e2f500928f37b8b87e45229ea" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* _sai_u8_list_t::list</definition>
+        <argsstring></argsstring>
+        <name>list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="319" column="13" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="319" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="316" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="317" bodyend="320"/>
+    <listofallmembers>
+      <member refid="struct__sai__u8__list__t_1a05fcadaf616b68c7d36b4fc92170b64d" prot="public" virt="non-virtual"><scope>_sai_u8_list_t</scope><name>count</name></member>
+      <member refid="struct__sai__u8__list__t_1a45d2c10e2f500928f37b8b87e45229ea" prot="public" virt="non-virtual"><scope>_sai_u8_list_t</scope><name>list</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

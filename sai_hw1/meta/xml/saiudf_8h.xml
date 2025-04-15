@@ -1,0 +1,1050 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="saiudf_8h" kind="file" language="C++">
+    <compoundname>saiudf.h</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+    <includedby refid="sai_8h" local="yes">/home/andrii/sai_hw1/SAI/inc/sai.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="5">
+        <label>sys/types.h</label>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saiudf.h</label>
+        <link refid="saiudf_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>saitypes.h</label>
+        <link refid="saitypes_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/andrii/sai_hw1/SAI/inc/sai.h</label>
+        <link refid="sai_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saiudf.h</label>
+        <link refid="saiudf_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</label>
+        <link refid="saiextensions_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct__sai__udf__api__t" prot="public">_sai_udf_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIUDF_1ga155d73d44d256d3c4a95ff36e1c8e026" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_udf_base_t</name>
+        <enumvalue id="group__SAIUDF_1gga155d73d44d256d3c4a95ff36e1c8e026ae4e15b7f0a081b63ca763b6e022db484" prot="public">
+          <name>SAI_UDF_BASE_L2</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>UDF offset base from the start of L2 header </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIUDF_1gga155d73d44d256d3c4a95ff36e1c8e026abfb39bc0efa11bad9ec64567518740e2" prot="public">
+          <name>SAI_UDF_BASE_L3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>UDF offset base from the start of L3 header </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIUDF_1gga155d73d44d256d3c4a95ff36e1c8e026a335c42b612f33d0cd21cfe5c8c34a86f" prot="public">
+          <name>SAI_UDF_BASE_L4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>UDF offset base from the start of L4 header </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>UDF base enum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiudf.h" line="39" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiudf.h" bodystart="40" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIUDF_1gaf3e2eab146e97c14c8af92c0b3a1f340" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_udf_attr_t</name>
+        <enumvalue id="group__SAIUDF_1ggaf3e2eab146e97c14c8af92c0b3a1f340a32412cc0a21b9292add4334d87b0d132" prot="public">
+          <name>SAI_UDF_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIUDF_1ggaf3e2eab146e97c14c8af92c0b3a1f340af59bbfcbd4a66a47eb21cf07c37c7b43" prot="public">
+          <name>SAI_UDF_ATTR_MATCH_ID</name>
+          <initializer>= SAI_UDF_ATTR_START</initializer>
+          <briefdescription>
+<para>UDF match ID. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_UDF_MATCH </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIUDF_1ggaf3e2eab146e97c14c8af92c0b3a1f340a5314d738deeb4f83e38ed645756e4a4b" prot="public">
+          <name>SAI_UDF_ATTR_GROUP_ID</name>
+          <briefdescription>
+<para>UDF group id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_UDF_GROUP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIUDF_1ggaf3e2eab146e97c14c8af92c0b3a1f340ab341da29479997acceb102f1749d054c" prot="public">
+          <name>SAI_UDF_ATTR_BASE</name>
+          <briefdescription>
+<para>UDF base. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_udf_base_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_UDF_BASE_L2 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIUDF_1ggaf3e2eab146e97c14c8af92c0b3a1f340a0cd4632f3639ec3a782f819e6649b165" prot="public">
+          <name>SAI_UDF_ATTR_OFFSET</name>
+          <briefdescription>
+<para>UDF byte offset. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIUDF_1ggaf3e2eab146e97c14c8af92c0b3a1f340a400d22f216dd77464b04801616042a7d" prot="public">
+          <name>SAI_UDF_ATTR_HASH_MASK</name>
+          <briefdescription>
+<para>UDF Mask. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Default to 2 bytes, value 0xFF, 0xFF</para>
+<para>The count in the list must be equal to the UDF byte length. The mask only applies to extracted UDF when it is used for hash, it does not apply to the extracted UDF when it is used for ACL.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_u8_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         const </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIUDF_1ggaf3e2eab146e97c14c8af92c0b3a1f340ad7c511cf8bc19bf87aec865726c33f89" prot="public">
+          <name>SAI_UDF_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIUDF_1ggaf3e2eab146e97c14c8af92c0b3a1f340a79e3444193fea2ec2f3a20fd78ef22d0" prot="public">
+          <name>SAI_UDF_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIUDF_1ggaf3e2eab146e97c14c8af92c0b3a1f340a6b00810c5e69f6da794fa578543b1914" prot="public">
+          <name>SAI_UDF_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute id for UDF. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiudf.h" line="55" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiudf.h" bodystart="56" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIUDF_1ga78e81c0451f0e47c785e2f4e4b8d4226" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_udf_match_attr_t</name>
+        <enumvalue id="group__SAIUDF_1gga78e81c0451f0e47c785e2f4e4b8d4226a2f6e856342f4b198f0d71f062b6c73e4" prot="public">
+          <name>SAI_UDF_MATCH_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIUDF_1gga78e81c0451f0e47c785e2f4e4b8d4226a6c0d7c3e8c4abad00f4d0dd65987365d" prot="public">
+          <name>SAI_UDF_MATCH_ATTR_L2_TYPE</name>
+          <initializer>= SAI_UDF_MATCH_ATTR_START</initializer>
+          <briefdescription>
+<para>UDF L2 match rule. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Default to None</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_acl_field_data_t sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          false </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIUDF_1gga78e81c0451f0e47c785e2f4e4b8d4226a3f7aad5b9dbaf84d8ee67d29c1e4d9f5" prot="public">
+          <name>SAI_UDF_MATCH_ATTR_L3_TYPE</name>
+          <briefdescription>
+<para>UDF L3 match rule. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Default to None</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_acl_field_data_t sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIUDF_1gga78e81c0451f0e47c785e2f4e4b8d4226a1199d7b666a0cb7d8973825d04562821" prot="public">
+          <name>SAI_UDF_MATCH_ATTR_GRE_TYPE</name>
+          <briefdescription>
+<para>UDF GRE match rule. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Default to None</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_acl_field_data_t sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          false </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIUDF_1gga78e81c0451f0e47c785e2f4e4b8d4226ac1d3a12f4acf3b762ddb36ff84de3df7" prot="public">
+          <name>SAI_UDF_MATCH_ATTR_PRIORITY</name>
+          <briefdescription>
+<para>UDF match priority. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIUDF_1gga78e81c0451f0e47c785e2f4e4b8d4226aa869b678055e86e1c2898d0f22c3d350" prot="public">
+          <name>SAI_UDF_MATCH_ATTR_L4_DST_PORT_TYPE</name>
+          <briefdescription>
+<para>UDF L4 Dst port rule. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Default to None</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_acl_field_data_t sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          false </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIUDF_1gga78e81c0451f0e47c785e2f4e4b8d4226a7f6fcf82b607887df255b68eb7cfb55c" prot="public">
+          <name>SAI_UDF_MATCH_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIUDF_1gga78e81c0451f0e47c785e2f4e4b8d4226af0124b5c16fecdf02b54262c4ae1502d" prot="public">
+          <name>SAI_UDF_MATCH_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIUDF_1gga78e81c0451f0e47c785e2f4e4b8d4226a8e12dc5e8237d33e1fb34a966feee882" prot="public">
+          <name>SAI_UDF_MATCH_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute id for UDF match. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiudf.h" line="129" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiudf.h" bodystart="130" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIUDF_1gab8c0d6a1c2237d12492ab7770a777e2a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_udf_group_type_t</name>
+        <enumvalue id="group__SAIUDF_1ggab8c0d6a1c2237d12492ab7770a777e2aa2ce001755c5d3e92cda173eb5a6a7e72" prot="public">
+          <name>SAI_UDF_GROUP_TYPE_START</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Start of group type </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIUDF_1ggab8c0d6a1c2237d12492ab7770a777e2aa07cd3e166d99a5be5f254c7e30c7e7d7" prot="public">
+          <name>SAI_UDF_GROUP_TYPE_GENERIC</name>
+          <initializer>= SAI_UDF_GROUP_TYPE_START</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Generic UDF group </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIUDF_1ggab8c0d6a1c2237d12492ab7770a777e2aa9380270f1518cc0ca54b8d47c513a071" prot="public">
+          <name>SAI_UDF_GROUP_TYPE_HASH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>UDF group for hash </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIUDF_1ggab8c0d6a1c2237d12492ab7770a777e2aa26c2de85f945fcd61a8ac5e7b2382263" prot="public">
+          <name>SAI_UDF_GROUP_TYPE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of group type </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>UDF group type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiudf.h" line="208" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiudf.h" bodystart="209" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIUDF_1ga36a0e72a1cb059bdc407096aac81c900" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_udf_group_attr_t</name>
+        <enumvalue id="group__SAIUDF_1gga36a0e72a1cb059bdc407096aac81c900a343e7550cb120afb5dfdf85bc47663d3" prot="public">
+          <name>SAI_UDF_GROUP_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIUDF_1gga36a0e72a1cb059bdc407096aac81c900a92456ddc6a00e94bc5105a290b489deb" prot="public">
+          <name>SAI_UDF_GROUP_ATTR_UDF_LIST</name>
+          <initializer>= SAI_UDF_GROUP_ATTR_START</initializer>
+          <briefdescription>
+<para>UDF list. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_UDF </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIUDF_1gga36a0e72a1cb059bdc407096aac81c900a2700609bb411c5a6da09eec2c8c16897" prot="public">
+          <name>SAI_UDF_GROUP_ATTR_TYPE</name>
+          <briefdescription>
+<para>UDF group type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_udf_group_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_UDF_GROUP_TYPE_GENERIC </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIUDF_1gga36a0e72a1cb059bdc407096aac81c900a53e8f5e2f2bf080fa76e948865bd853d" prot="public">
+          <name>SAI_UDF_GROUP_ATTR_LENGTH</name>
+          <briefdescription>
+<para>UDF byte length. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIUDF_1gga36a0e72a1cb059bdc407096aac81c900a43093734e3da770e141630c79b81a1e1" prot="public">
+          <name>SAI_UDF_GROUP_ATTR_LABEL</name>
+          <briefdescription>
+<para>Label attribute used to uniquely identify UDF group. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            char </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         &quot;&quot; </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIUDF_1gga36a0e72a1cb059bdc407096aac81c900a447bdb3230d126b9ed334934dccf0bca" prot="public">
+          <name>SAI_UDF_GROUP_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIUDF_1gga36a0e72a1cb059bdc407096aac81c900a18126e67d1a72c764ecb7a908a889808" prot="public">
+          <name>SAI_UDF_GROUP_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIUDF_1gga36a0e72a1cb059bdc407096aac81c900a0dfd773df3ec81e9016b4f58d358dfc0" prot="public">
+          <name>SAI_UDF_GROUP_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute id for UDF group. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiudf.h" line="227" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiudf.h" bodystart="228" bodyend="281"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIUDF_1ga3de476cba51630b70c7b558d760822ac" prot="public" static="no">
+        <type>enum <ref refid="group__SAIUDF_1ga155d73d44d256d3c4a95ff36e1c8e026" kindref="member">_sai_udf_base_t</ref></type>
+        <definition>typedef enum _sai_udf_base_t sai_udf_base_t</definition>
+        <argsstring></argsstring>
+        <name>sai_udf_base_t</name>
+        <briefdescription>
+<para>UDF base enum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiudf.h" line="50" column="16"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIUDF_1gadae1496db270a980ccbc38759cd171fe" prot="public" static="no">
+        <type>enum <ref refid="group__SAIUDF_1gaf3e2eab146e97c14c8af92c0b3a1f340" kindref="member">_sai_udf_attr_t</ref></type>
+        <definition>typedef enum _sai_udf_attr_t sai_udf_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_udf_attr_t</name>
+        <briefdescription>
+<para>Attribute id for UDF. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiudf.h" line="124" column="16"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIUDF_1gaf5e7c8184871d594767ab0db77fa8ce6" prot="public" static="no">
+        <type>enum <ref refid="group__SAIUDF_1ga78e81c0451f0e47c785e2f4e4b8d4226" kindref="member">_sai_udf_match_attr_t</ref></type>
+        <definition>typedef enum _sai_udf_match_attr_t sai_udf_match_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_udf_match_attr_t</name>
+        <briefdescription>
+<para>Attribute id for UDF match. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiudf.h" line="203" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIUDF_1ga81a953c6c6d13881919adf690d217e42" prot="public" static="no">
+        <type>enum <ref refid="group__SAIUDF_1gab8c0d6a1c2237d12492ab7770a777e2a" kindref="member">_sai_udf_group_type_t</ref></type>
+        <definition>typedef enum _sai_udf_group_type_t sai_udf_group_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_udf_group_type_t</name>
+        <briefdescription>
+<para>UDF group type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiudf.h" line="222" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIUDF_1ga0b3efd0cf5a54775268721882b252a11" prot="public" static="no">
+        <type>enum <ref refid="group__SAIUDF_1ga36a0e72a1cb059bdc407096aac81c900" kindref="member">_sai_udf_group_attr_t</ref></type>
+        <definition>typedef enum _sai_udf_group_attr_t sai_udf_group_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_udf_group_attr_t</name>
+        <briefdescription>
+<para>Attribute id for UDF group. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiudf.h" line="281" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIUDF_1gad8ec31f23255e4212eb56dc918e86289" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_udf_fn) (_Out_ sai_object_id_t *udf_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *udf_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_udf_fn</name>
+        <briefdescription>
+<para>Create UDF. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">udf_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UDF id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiudf.h" line="293" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiudf.h" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIUDF_1gac4681ea0cf78a59f30f46efe6f086f07" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_udf_fn) (_In_ sai_object_id_t udf_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t udf_id)</argsstring>
+        <name>sai_remove_udf_fn</name>
+        <briefdescription>
+<para>Remove UDF. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">udf_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UDF id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiudf.h" line="306" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiudf.h" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIUDF_1ga0ee35983bd670f465521a87d0b4eb1b9" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_udf_attribute_fn) (_In_ sai_object_id_t udf_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t udf_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_udf_attribute_fn</name>
+        <briefdescription>
+<para>Set UDF attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">udf_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UDF id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiudf.h" line="317" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiudf.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIUDF_1ga7c161a4453b519179a2da5c90772669b" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_udf_attribute_fn) (_In_ sai_object_id_t udf_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t udf_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_udf_attribute_fn</name>
+        <briefdescription>
+<para>Get UDF attribute value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">udf_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UDF id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiudf.h" line="330" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiudf.h" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIUDF_1gaa9864eeaded4ff8b80cf040b35b8143c" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_udf_match_fn) (_Out_ sai_object_id_t *udf_match_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *udf_match_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_udf_match_fn</name>
+        <briefdescription>
+<para>Create UDF match. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">udf_match_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UDF match id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiudf.h" line="345" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiudf.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIUDF_1ga9c30145aad41b16f94fb58214112ca08" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_udf_match_fn) (_In_ sai_object_id_t udf_match_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t udf_match_id)</argsstring>
+        <name>sai_remove_udf_match_fn</name>
+        <briefdescription>
+<para>Remove UDF match. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">udf_match_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UDF match id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiudf.h" line="358" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiudf.h" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIUDF_1ga4ca3493ad2debc6a281896d1ed89e0cc" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_udf_match_attribute_fn) (_In_ sai_object_id_t udf_match_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t udf_match_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_udf_match_attribute_fn</name>
+        <briefdescription>
+<para>Set UDF match attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">udf_match_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UDF match id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiudf.h" line="369" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiudf.h" bodystart="369" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIUDF_1ga04d63f8b34e3717919fefba6a3f069dd" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_udf_match_attribute_fn) (_In_ sai_object_id_t udf_match_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t udf_match_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_udf_match_attribute_fn</name>
+        <briefdescription>
+<para>Get UDF match attribute value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">udf_match_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UDF match id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiudf.h" line="382" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiudf.h" bodystart="382" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIUDF_1ga3cc1f94a6dc866381fac7c79101fe57d" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_udf_group_fn) (_Out_ sai_object_id_t *udf_group_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *udf_group_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_udf_group_fn</name>
+        <briefdescription>
+<para>Create UDF group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">udf_group_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UDF group id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiudf.h" line="397" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiudf.h" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIUDF_1ga5fe00b240ef1334ac637be7c3097b423" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_udf_group_fn) (_In_ sai_object_id_t udf_group_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t udf_group_id)</argsstring>
+        <name>sai_remove_udf_group_fn</name>
+        <briefdescription>
+<para>Remove UDF group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">udf_group_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UDF group id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiudf.h" line="410" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiudf.h" bodystart="410" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIUDF_1ga34e708e68a0d439297777447a4e3ac8a" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_udf_group_attribute_fn) (_In_ sai_object_id_t udf_group_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t udf_group_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_udf_group_attribute_fn</name>
+        <briefdescription>
+<para>Set UDF group attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">udf_group_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UDF group id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiudf.h" line="421" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiudf.h" bodystart="421" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIUDF_1ga2c93099a1a3a6283cce46ce59b6a2176" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_udf_group_attribute_fn) (_In_ sai_object_id_t udf_group_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t udf_group_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_udf_group_attribute_fn</name>
+        <briefdescription>
+<para>Get UDF group attribute value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">udf_group_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>UDF group id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiudf.h" line="434" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiudf.h" bodystart="434" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIUDF_1ga717f1fa623632a592c03711f6ac883c9" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__udf__api__t" kindref="compound">_sai_udf_api_t</ref></type>
+        <definition>typedef struct _sai_udf_api_t sai_udf_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_udf_api_t</name>
+        <briefdescription>
+<para>UDF methods, retrieved via <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiudf.h" line="457" column="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module defines SAI UDF (User Defined Field) interface. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2014 Microsoft Open Technologies, Inc.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <ulink url="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</ulink></para>
+<para>THIS CODE IS PROVIDED ON AN <emphasis>AS IS</emphasis> BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</para>
+<para>See the Apache Version 2.0 License for specific language governing permissions and limitations under the License.</para>
+<para>Microsoft would like to thank the following companies for their review and assistance with these files: Intel Corporation, Mellanox Technologies Ltd, Dell Products, L.P., Facebook, Inc., Marvell International Ltd. </para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saiudf.h"/>
+  </compounddef>
+</doxygen>

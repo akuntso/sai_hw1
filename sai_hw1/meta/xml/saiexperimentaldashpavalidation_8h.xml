@@ -1,0 +1,498 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="saiexperimentaldashpavalidation_8h" kind="file" language="C++">
+    <compoundname>saiexperimentaldashpavalidation.h</compoundname>
+    <includes refid="saitypesextensions_8h" local="no">saitypesextensions.h</includes>
+    <includedby refid="saiobject_8h" local="no">/home/andrii/sai_hw1/SAI/inc/saiobject.h</includedby>
+    <includedby refid="saiextensions_8h" local="yes">/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>stdbool.h</label>
+      </node>
+      <node id="4">
+        <label>stdint.h</label>
+      </node>
+      <node id="6">
+        <label>sys/types.h</label>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashpavalidation.h</label>
+        <link refid="saiexperimentaldashpavalidation_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>saitypesextensions.h</label>
+        <link refid="saitypesextensions_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>saitypes.h</label>
+        <link refid="saitypes_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>/home/andrii/sai_hw1/SAI/inc/sai.h</label>
+        <link refid="sai_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/andrii/sai_hw1/SAI/inc/saiobject.h</label>
+        <link refid="saiobject_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashpavalidation.h</label>
+        <link refid="saiexperimentaldashpavalidation_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</label>
+        <link refid="saiextensions_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct__sai__pa__validation__entry__t" prot="public">_sai_pa_validation_entry_t</innerclass>
+    <innerclass refid="struct__sai__dash__pa__validation__api__t" prot="public">_sai_dash_pa_validation_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASHPAVALIDATION_1ga245d12fb60f1593321b46b497063b674" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_pa_validation_entry_action_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASHPAVALIDATION_1gga245d12fb60f1593321b46b497063b674a83f7f2067480d69df572ed90a62c877f" prot="public">
+          <name>SAI_PA_VALIDATION_ENTRY_ACTION_PERMIT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute data for <ref refid="group__SAIEXPERIMENTALDASHPAVALIDATION_1ggae4c300b66f4f67505abf6f5c05a3e94aa7e64c2e02c84ace03570a1190c72d733" kindref="member">SAI_PA_VALIDATION_ENTRY_ATTR_ACTION</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashpavalidation.h" line="41" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashpavalidation.h" bodystart="42" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASHPAVALIDATION_1gae4c300b66f4f67505abf6f5c05a3e94a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_pa_validation_entry_attr_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASHPAVALIDATION_1ggae4c300b66f4f67505abf6f5c05a3e94aa1e8269dc57875911ab5266eb685fd189" prot="public">
+          <name>SAI_PA_VALIDATION_ENTRY_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHPAVALIDATION_1ggae4c300b66f4f67505abf6f5c05a3e94aa7e64c2e02c84ace03570a1190c72d733" prot="public">
+          <name>SAI_PA_VALIDATION_ENTRY_ATTR_ACTION</name>
+          <initializer>= SAI_PA_VALIDATION_ENTRY_ATTR_START</initializer>
+          <briefdescription>
+<para>Action. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_pa_validation_entry_action_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_PA_VALIDATION_ENTRY_ACTION_PERMIT </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHPAVALIDATION_1ggae4c300b66f4f67505abf6f5c05a3e94aa8d4f46d7fa24f30ee176125f237a19ee" prot="public">
+          <name>SAI_PA_VALIDATION_ENTRY_ATTR_IP_ADDR_FAMILY</name>
+          <briefdescription>
+<para>IP address family for resource accounting. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_addr_family_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>IsResourceType:</title><para> @@isresourcetype  true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHPAVALIDATION_1ggae4c300b66f4f67505abf6f5c05a3e94aa3388e7200c4d7de3d84fb480c375cf41" prot="public">
+          <name>SAI_PA_VALIDATION_ENTRY_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHPAVALIDATION_1ggae4c300b66f4f67505abf6f5c05a3e94aa2268be72b2fc423786ae84ebecece432" prot="public">
+          <name>SAI_PA_VALIDATION_ENTRY_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHPAVALIDATION_1ggae4c300b66f4f67505abf6f5c05a3e94aae3e68c82a83ce3e50659f7747d4e7140" prot="public">
+          <name>SAI_PA_VALIDATION_ENTRY_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute ID for PA validation entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashpavalidation.h" line="76" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashpavalidation.h" bodystart="77" bodyend="112"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHPAVALIDATION_1ga410e8c6145a6f7ae4704072d5b27a4f7" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASHPAVALIDATION_1ga245d12fb60f1593321b46b497063b674" kindref="member">_sai_pa_validation_entry_action_t</ref></type>
+        <definition>typedef enum _sai_pa_validation_entry_action_t sai_pa_validation_entry_action_t</definition>
+        <argsstring></argsstring>
+        <name>sai_pa_validation_entry_action_t</name>
+        <briefdescription>
+<para>Attribute data for <ref refid="group__SAIEXPERIMENTALDASHPAVALIDATION_1ggae4c300b66f4f67505abf6f5c05a3e94aa7e64c2e02c84ace03570a1190c72d733" kindref="member">SAI_PA_VALIDATION_ENTRY_ATTR_ACTION</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashpavalidation.h" line="45" column="34"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHPAVALIDATION_1ga5abcf7f878bf449b40150932bddd74a5" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__pa__validation__entry__t" kindref="compound">_sai_pa_validation_entry_t</ref></type>
+        <definition>typedef struct _sai_pa_validation_entry_t sai_pa_validation_entry_t</definition>
+        <argsstring></argsstring>
+        <name>sai_pa_validation_entry_t</name>
+        <briefdescription>
+<para>Entry for pa_validation_entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashpavalidation.h" line="71" column="27"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHPAVALIDATION_1ga7723df8ca06f9835ce8e6b01e8bab196" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASHPAVALIDATION_1gae4c300b66f4f67505abf6f5c05a3e94a" kindref="member">_sai_pa_validation_entry_attr_t</ref></type>
+        <definition>typedef enum _sai_pa_validation_entry_attr_t sai_pa_validation_entry_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_pa_validation_entry_attr_t</name>
+        <briefdescription>
+<para>Attribute ID for PA validation entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashpavalidation.h" line="112" column="32"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHPAVALIDATION_1ga9b16da17e48e605c49d7f343fe0ec7ea" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_pa_validation_entry_fn) (_In_ const sai_pa_validation_entry_t *pa_validation_entry, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ const sai_pa_validation_entry_t *pa_validation_entry, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_pa_validation_entry_fn</name>
+        <briefdescription>
+<para>Create PA validation entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pa_validation_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashpavalidation.h" line="123" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashpavalidation.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHPAVALIDATION_1ga989e5420ae173ea8cbe4c08f9a121157" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_pa_validation_entry_fn) (_In_ const sai_pa_validation_entry_t *pa_validation_entry)</definition>
+        <argsstring>)(_In_ const sai_pa_validation_entry_t *pa_validation_entry)</argsstring>
+        <name>sai_remove_pa_validation_entry_fn</name>
+        <briefdescription>
+<para>Remove PA validation entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pa_validation_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashpavalidation.h" line="135" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashpavalidation.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHPAVALIDATION_1ga8c080d41d90581965931ac51d209e625" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_pa_validation_entry_attribute_fn) (_In_ const sai_pa_validation_entry_t *pa_validation_entry, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ const sai_pa_validation_entry_t *pa_validation_entry, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_pa_validation_entry_attribute_fn</name>
+        <briefdescription>
+<para>Set attribute for PA validation entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pa_validation_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashpavalidation.h" line="146" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashpavalidation.h" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHPAVALIDATION_1gaedb365e52ab5d4edd9752ea13817fb5d" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_pa_validation_entry_attribute_fn) (_In_ const sai_pa_validation_entry_t *pa_validation_entry, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ const sai_pa_validation_entry_t *pa_validation_entry, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_pa_validation_entry_attribute_fn</name>
+        <briefdescription>
+<para>Get attribute for PA validation entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">pa_validation_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashpavalidation.h" line="159" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashpavalidation.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHPAVALIDATION_1gab1bc424d926b6498c07cd1aa443f7574" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_create_pa_validation_entry_fn) (_In_ uint32_t object_count, _In_ const sai_pa_validation_entry_t *pa_validation_entry, _In_ const uint32_t *attr_count, _In_ const sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_pa_validation_entry_t *pa_validation_entry, _In_ const uint32_t *attr_count, _In_ const sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_create_pa_validation_entry_fn</name>
+        <briefdescription>
+<para>Bulk create PA validation entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to create </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pa_validation_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of object to create </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attr_count. Caller passes the number of attribute for each object to create. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attributes for every object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are created or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to create. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashpavalidation.h" line="181" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashpavalidation.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHPAVALIDATION_1gafe77b676b6678e0799fa1c6e58e4434e" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_remove_pa_validation_entry_fn) (_In_ uint32_t object_count, _In_ const sai_pa_validation_entry_t *pa_validation_entry, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_pa_validation_entry_t *pa_validation_entry, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_remove_pa_validation_entry_fn</name>
+        <briefdescription>
+<para>Bulk remove PA validation entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to remove </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">pa_validation_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of objects to remove </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are removed or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to remove. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashpavalidation.h" line="203" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashpavalidation.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHPAVALIDATION_1ga7c23f983f261e89576c01aadcac0f34b" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__dash__pa__validation__api__t" kindref="compound">_sai_dash_pa_validation_api_t</ref></type>
+        <definition>typedef struct _sai_dash_pa_validation_api_t sai_dash_pa_validation_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dash_pa_validation_api_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashpavalidation.h" line="218" column="30"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module defines SAI extensions for DASH PA validation. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2014 Microsoft Open Technologies, Inc.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <ulink url="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</ulink></para>
+<para>THIS CODE IS PROVIDED ON AN <emphasis>AS IS</emphasis> BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</para>
+<para>See the Apache Version 2.0 License for specific language governing permissions and limitations under the License.</para>
+<para>Microsoft would like to thank the following companies for their review and assistance with these files: Intel Corporation, Mellanox Technologies Ltd, Dell Products, L.P., Facebook, Inc., Marvell International Ltd.</para>
+<para><simplesect kind="warning"><para>This module is a SAI experimental module </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashpavalidation.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__mcast__fdb__api__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_mcast_fdb_api_t</compoundname>
+    <includes refid="saimcastfdb_8h" local="no">saimcastfdb.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__mcast__fdb__api__t_1ab15756e84fda1687105da61bdd20b48e" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIMCFDB_1ga4462f3d2a67f5793e58257ddd2b56c8a" kindref="member">sai_create_mcast_fdb_entry_fn</ref></type>
+        <definition>sai_create_mcast_fdb_entry_fn _sai_mcast_fdb_api_t::create_mcast_fdb_entry</definition>
+        <argsstring></argsstring>
+        <name>create_mcast_fdb_entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimcastfdb.h" line="169" column="55" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimcastfdb.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__mcast__fdb__api__t_1a8e259eecdadd9a9ab26cd3bafbaef95a" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIMCFDB_1gab29591a52ae460585b315310cac2b449" kindref="member">sai_remove_mcast_fdb_entry_fn</ref></type>
+        <definition>sai_remove_mcast_fdb_entry_fn _sai_mcast_fdb_api_t::remove_mcast_fdb_entry</definition>
+        <argsstring></argsstring>
+        <name>remove_mcast_fdb_entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimcastfdb.h" line="170" column="55" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimcastfdb.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__mcast__fdb__api__t_1af909f9ce8d3b5677cc4aac81819bbe30" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIMCFDB_1gac0d49fc00511da823c58eb601be37407" kindref="member">sai_set_mcast_fdb_entry_attribute_fn</ref></type>
+        <definition>sai_set_mcast_fdb_entry_attribute_fn _sai_mcast_fdb_api_t::set_mcast_fdb_entry_attribute</definition>
+        <argsstring></argsstring>
+        <name>set_mcast_fdb_entry_attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimcastfdb.h" line="171" column="55" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimcastfdb.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__mcast__fdb__api__t_1acacf42124854a71a0f637239b6abf283" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIMCFDB_1gac8ba102575002167619d7e2d48296cdf" kindref="member">sai_get_mcast_fdb_entry_attribute_fn</ref></type>
+        <definition>sai_get_mcast_fdb_entry_attribute_fn _sai_mcast_fdb_api_t::get_mcast_fdb_entry_attribute</definition>
+        <argsstring></argsstring>
+        <name>get_mcast_fdb_entry_attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimcastfdb.h" line="172" column="55" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimcastfdb.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Multicast FDB method table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>_sai_mcast_fdb_entry_t</label>
+        <link refid="struct__sai__mcast__fdb__entry__t"/>
+      </node>
+      <node id="1">
+        <label>_sai_mcast_fdb_api_t</label>
+        <link refid="struct__sai__mcast__fdb__api__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>create_mcast_fdb_entry</edgelabel>
+          <edgelabel>get_mcast_fdb_entry_attribute</edgelabel>
+          <edgelabel>remove_mcast_fdb_entry</edgelabel>
+          <edgelabel>set_mcast_fdb_entry_attribute</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saimcastfdb.h" line="167" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimcastfdb.h" bodystart="168" bodyend="174"/>
+    <listofallmembers>
+      <member refid="struct__sai__mcast__fdb__api__t_1ab15756e84fda1687105da61bdd20b48e" prot="public" virt="non-virtual"><scope>_sai_mcast_fdb_api_t</scope><name>create_mcast_fdb_entry</name></member>
+      <member refid="struct__sai__mcast__fdb__api__t_1acacf42124854a71a0f637239b6abf283" prot="public" virt="non-virtual"><scope>_sai_mcast_fdb_api_t</scope><name>get_mcast_fdb_entry_attribute</name></member>
+      <member refid="struct__sai__mcast__fdb__api__t_1a8e259eecdadd9a9ab26cd3bafbaef95a" prot="public" virt="non-virtual"><scope>_sai_mcast_fdb_api_t</scope><name>remove_mcast_fdb_entry</name></member>
+      <member refid="struct__sai__mcast__fdb__api__t_1af909f9ce8d3b5677cc4aac81819bbe30" prot="public" virt="non-virtual"><scope>_sai_mcast_fdb_api_t</scope><name>set_mcast_fdb_entry_attribute</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

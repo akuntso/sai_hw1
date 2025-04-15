@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__port__snr__list__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_port_snr_list_t</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__port__snr__list__t_1aa727660b519aae09cd6a04afe410572d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t _sai_port_snr_list_t::count</definition>
+        <argsstring></argsstring>
+        <name>count</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1231" column="14" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__port__snr__list__t_1a7e4dbaded11713afdc410d2ae34be37c" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga77706b0bbd60e4f1f1358cb1dff5b944" kindref="member">sai_port_snr_values_t</ref> *</type>
+        <definition>sai_port_snr_values_t* _sai_port_snr_list_t::list</definition>
+        <argsstring></argsstring>
+        <name>list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1232" column="27" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1232" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines a port&apos;s lanes SNR list. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>_sai_port_snr_values_t</label>
+        <link refid="struct__sai__port__snr__values__t"/>
+      </node>
+      <node id="1">
+        <label>_sai_port_snr_list_t</label>
+        <link refid="struct__sai__port__snr__list__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1229" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1230" bodyend="1233"/>
+    <listofallmembers>
+      <member refid="struct__sai__port__snr__list__t_1aa727660b519aae09cd6a04afe410572d" prot="public" virt="non-virtual"><scope>_sai_port_snr_list_t</scope><name>count</name></member>
+      <member refid="struct__sai__port__snr__list__t_1a7e4dbaded11713afdc410d2ae34be37c" prot="public" virt="non-virtual"><scope>_sai_port_snr_list_t</scope><name>list</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

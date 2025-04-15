@@ -1,0 +1,1131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group__SAIEXPERIMENTALDASHMETER" kind="group">
+    <compoundname>SAIEXPERIMENTALDASHMETER</compoundname>
+    <title>SAI - Experimental: DASH meter specific API definitions</title>
+    <innerclass refid="struct__sai__meter__bucket__entry__t" prot="public">_sai_meter_bucket_entry_t</innerclass>
+    <innerclass refid="struct__sai__dash__meter__api__t" prot="public">_sai_dash_meter_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASHMETER_1gabf3fbe0f33f212c8370f3217db554326" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_meter_bucket_entry_action_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASHMETER_1ggabf3fbe0f33f212c8370f3217db554326a39ed2d2676f2b1c1a4390f1cd1505432" prot="public">
+          <name>SAI_METER_BUCKET_ENTRY_ACTION_UPDATE_METER_BUCKET</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute data for <ref refid="group__SAIEXPERIMENTALDASHMETER_1gga8366357acae09ffe4f0c802dc9fb19e7a9e68809f392ba3095b5035b4caabc651" kindref="member">SAI_METER_BUCKET_ENTRY_ATTR_ACTION</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="41" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="42" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASHMETER_1ga8366357acae09ffe4f0c802dc9fb19e7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_meter_bucket_entry_attr_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASHMETER_1gga8366357acae09ffe4f0c802dc9fb19e7a05f939cd544375b156307f1f214d7494" prot="public">
+          <name>SAI_METER_BUCKET_ENTRY_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHMETER_1gga8366357acae09ffe4f0c802dc9fb19e7a9e68809f392ba3095b5035b4caabc651" prot="public">
+          <name>SAI_METER_BUCKET_ENTRY_ATTR_ACTION</name>
+          <initializer>= SAI_METER_BUCKET_ENTRY_ATTR_START</initializer>
+          <briefdescription>
+<para>Action. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_meter_bucket_entry_action_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_METER_BUCKET_ENTRY_ACTION_UPDATE_METER_BUCKET </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHMETER_1gga8366357acae09ffe4f0c802dc9fb19e7a29fc43cde1c7d5e33d0951fb3d28bff5" prot="public">
+          <name>SAI_METER_BUCKET_ENTRY_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHMETER_1gga8366357acae09ffe4f0c802dc9fb19e7a62446ef22cfbe7ba635ac152a4349357" prot="public">
+          <name>SAI_METER_BUCKET_ENTRY_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHMETER_1gga8366357acae09ffe4f0c802dc9fb19e7ad959d31d085f95bf83b6752d2588e6e6" prot="public">
+          <name>SAI_METER_BUCKET_ENTRY_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute ID for meter bucket entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="76" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="77" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASHMETER_1ga053fcbd9be360c2cb3c1cd876a69e3ca" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_meter_bucket_entry_stat_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASHMETER_1gga053fcbd9be360c2cb3c1cd876a69e3caa690c202016eadbe9063804812456be92" prot="public">
+          <name>SAI_METER_BUCKET_ENTRY_STAT_OUTBOUND_BYTES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH METER_BUCKET_ENTRY OUTBOUND_BYTES stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHMETER_1gga053fcbd9be360c2cb3c1cd876a69e3caa263af652a482f260d88d214dbb1c6b9d" prot="public">
+          <name>SAI_METER_BUCKET_ENTRY_STAT_INBOUND_BYTES</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>DASH METER_BUCKET_ENTRY INBOUND_BYTES stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Counter IDs for meter bucket entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="108" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="109" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASHMETER_1gafe68c7fca7a6b05ef3e2127404df0c56" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_meter_policy_attr_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASHMETER_1ggafe68c7fca7a6b05ef3e2127404df0c56af69a230fa4a9b36ae607830390cb4d92" prot="public">
+          <name>SAI_METER_POLICY_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHMETER_1ggafe68c7fca7a6b05ef3e2127404df0c56afa6c039fff6eaeea44837d20e4a754fc" prot="public">
+          <name>SAI_METER_POLICY_ATTR_IP_ADDR_FAMILY</name>
+          <initializer>= SAI_METER_POLICY_ATTR_START</initializer>
+          <briefdescription>
+<para>Action parameter IP address family. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_addr_family_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_IP_ADDR_FAMILY_IPV4 </para>
+</simplesect>
+<simplesect kind="par"><title>IsResourceType:</title><para> @@isresourcetype  true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHMETER_1ggafe68c7fca7a6b05ef3e2127404df0c56acbd2a05ed94b4f80526bb28c6bf2d819" prot="public">
+          <name>SAI_METER_POLICY_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHMETER_1ggafe68c7fca7a6b05ef3e2127404df0c56a7759d7ee207315fb25f236ee30aa2ac3" prot="public">
+          <name>SAI_METER_POLICY_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHMETER_1ggafe68c7fca7a6b05ef3e2127404df0c56a7cc7bb87341bf0e8063c96d1cbd4254e" prot="public">
+          <name>SAI_METER_POLICY_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute ID for meter policy. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="121" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="122" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASHMETER_1gaa2952ae08959da4095727897d8f98281" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_meter_rule_attr_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASHMETER_1ggaa2952ae08959da4095727897d8f98281aee6f9af89d5fe82623df36cb31272598" prot="public">
+          <name>SAI_METER_RULE_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHMETER_1ggaa2952ae08959da4095727897d8f98281a8757fa495a875b565545f45c5aaaff26" prot="public">
+          <name>SAI_METER_RULE_ATTR_METER_POLICY_ID</name>
+          <initializer>= SAI_METER_RULE_ATTR_START</initializer>
+          <briefdescription>
+<para>Exact matched key meter_policy_id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_METER_POLICY </para>
+</simplesect>
+<simplesect kind="par"><title>IsResourceType:</title><para> @@isresourcetype  true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHMETER_1ggaa2952ae08959da4095727897d8f98281a48201cbb9d6b7067ccd5f0f5b5f6314e" prot="public">
+          <name>SAI_METER_RULE_ATTR_DIP</name>
+          <briefdescription>
+<para>Ternary matched key dip. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHMETER_1ggaa2952ae08959da4095727897d8f98281a026374f8ba7c37377fe823cf2a465fd9" prot="public">
+          <name>SAI_METER_RULE_ATTR_DIP_MASK</name>
+          <briefdescription>
+<para>Ternary matched key dip mask. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHMETER_1ggaa2952ae08959da4095727897d8f98281a0ad0e91581b735b9fac1184dbf06472a" prot="public">
+          <name>SAI_METER_RULE_ATTR_METER_CLASS</name>
+          <briefdescription>
+<para>Action parameter meter class. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHMETER_1ggaa2952ae08959da4095727897d8f98281a26befcc50cf35e0aec461e6691e893d7" prot="public">
+          <name>SAI_METER_RULE_ATTR_PRIORITY</name>
+          <briefdescription>
+<para>Rule priority in table. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHMETER_1ggaa2952ae08959da4095727897d8f98281aac92ba6c8e4dce0cdd548fd740c3c6b1" prot="public">
+          <name>SAI_METER_RULE_ATTR_IP_ADDR_FAMILY</name>
+          <briefdescription>
+<para>IP address family for resource accounting. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_addr_family_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>IsResourceType:</title><para> @@isresourcetype  true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHMETER_1ggaa2952ae08959da4095727897d8f98281a28aa1718fb91ed650b4079b6ea8af432" prot="public">
+          <name>SAI_METER_RULE_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHMETER_1ggaa2952ae08959da4095727897d8f98281ae40065b013c93a52d78a93e0712c7e2f" prot="public">
+          <name>SAI_METER_RULE_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHMETER_1ggaa2952ae08959da4095727897d8f98281ada57f26c7b2c14c3c9d7f9f049d83119" prot="public">
+          <name>SAI_METER_RULE_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute ID for meter rule. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="154" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="155" bodyend="224"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHMETER_1ga0b2fb7deacb58e9fd5410e8e6ef43cb5" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASHMETER_1gabf3fbe0f33f212c8370f3217db554326" kindref="member">_sai_meter_bucket_entry_action_t</ref></type>
+        <definition>typedef enum _sai_meter_bucket_entry_action_t sai_meter_bucket_entry_action_t</definition>
+        <argsstring></argsstring>
+        <name>sai_meter_bucket_entry_action_t</name>
+        <briefdescription>
+<para>Attribute data for <ref refid="group__SAIEXPERIMENTALDASHMETER_1gga8366357acae09ffe4f0c802dc9fb19e7a9e68809f392ba3095b5035b4caabc651" kindref="member">SAI_METER_BUCKET_ENTRY_ATTR_ACTION</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="45" column="33"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHMETER_1ga33c194eecaa870465afdc96e381861d6" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__meter__bucket__entry__t" kindref="compound">_sai_meter_bucket_entry_t</ref></type>
+        <definition>typedef struct _sai_meter_bucket_entry_t sai_meter_bucket_entry_t</definition>
+        <argsstring></argsstring>
+        <name>sai_meter_bucket_entry_t</name>
+        <briefdescription>
+<para>Entry for meter_bucket_entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="71" column="26"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHMETER_1ga79b5cb18a0ad0e65059054c0a47ffc56" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASHMETER_1ga8366357acae09ffe4f0c802dc9fb19e7" kindref="member">_sai_meter_bucket_entry_attr_t</ref></type>
+        <definition>typedef enum _sai_meter_bucket_entry_attr_t sai_meter_bucket_entry_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_meter_bucket_entry_attr_t</name>
+        <briefdescription>
+<para>Attribute ID for meter bucket entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="103" column="31"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHMETER_1ga91bd0e3f531fa10d08291512a196473e" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASHMETER_1ga053fcbd9be360c2cb3c1cd876a69e3ca" kindref="member">_sai_meter_bucket_entry_stat_t</ref></type>
+        <definition>typedef enum _sai_meter_bucket_entry_stat_t sai_meter_bucket_entry_stat_t</definition>
+        <argsstring></argsstring>
+        <name>sai_meter_bucket_entry_stat_t</name>
+        <briefdescription>
+<para>Counter IDs for meter bucket entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="116" column="31"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHMETER_1ga8c697f4360ee9d48d21d6afe9e20ef23" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASHMETER_1gafe68c7fca7a6b05ef3e2127404df0c56" kindref="member">_sai_meter_policy_attr_t</ref></type>
+        <definition>typedef enum _sai_meter_policy_attr_t sai_meter_policy_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_meter_policy_attr_t</name>
+        <briefdescription>
+<para>Attribute ID for meter policy. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="149" column="25"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHMETER_1gae168cc7711eaed5fa96e6fcbce175cdb" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASHMETER_1gaa2952ae08959da4095727897d8f98281" kindref="member">_sai_meter_rule_attr_t</ref></type>
+        <definition>typedef enum _sai_meter_rule_attr_t sai_meter_rule_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_meter_rule_attr_t</name>
+        <briefdescription>
+<para>Attribute ID for meter rule. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="224" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHMETER_1gab4107eefc8224c32aaa901f3a0d49073" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_meter_bucket_entry_fn) (_In_ const sai_meter_bucket_entry_t *meter_bucket_entry, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ const sai_meter_bucket_entry_t *meter_bucket_entry, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_meter_bucket_entry_fn</name>
+        <briefdescription>
+<para>Create meter bucket entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">meter_bucket_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="235" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHMETER_1ga2a7b4516e78e41c7dd99f864811617db" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_meter_bucket_entry_fn) (_In_ const sai_meter_bucket_entry_t *meter_bucket_entry)</definition>
+        <argsstring>)(_In_ const sai_meter_bucket_entry_t *meter_bucket_entry)</argsstring>
+        <name>sai_remove_meter_bucket_entry_fn</name>
+        <briefdescription>
+<para>Remove meter bucket entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">meter_bucket_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="247" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHMETER_1ga128c40f93219121cb460cb9e586dd6b1" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_meter_bucket_entry_attribute_fn) (_In_ const sai_meter_bucket_entry_t *meter_bucket_entry, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ const sai_meter_bucket_entry_t *meter_bucket_entry, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_meter_bucket_entry_attribute_fn</name>
+        <briefdescription>
+<para>Set attribute for meter bucket entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">meter_bucket_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="258" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHMETER_1ga07621d6d1bd2996c5451f7667e3dd4b4" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_meter_bucket_entry_attribute_fn) (_In_ const sai_meter_bucket_entry_t *meter_bucket_entry, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ const sai_meter_bucket_entry_t *meter_bucket_entry, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_meter_bucket_entry_attribute_fn</name>
+        <briefdescription>
+<para>Get attribute for meter bucket entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">meter_bucket_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="271" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHMETER_1gae606b348064d6297afb7edf43c77d2e4" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_meter_bucket_entry_stats_fn) (_In_ const sai_meter_bucket_entry_t *meter_bucket_entry, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ const sai_meter_bucket_entry_t *meter_bucket_entry, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_meter_bucket_entry_stats_fn</name>
+        <briefdescription>
+<para>Get METER_BUCKET_ENTRY statistics counters. Deprecated for backward compatibility. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">meter_bucket_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="286" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHMETER_1ga7b37712cdc436d0845b5dbe44d6f32b3" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_meter_bucket_entry_stats_ext_fn) (_In_ const sai_meter_bucket_entry_t *meter_bucket_entry, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ const sai_meter_bucket_entry_t *meter_bucket_entry, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_meter_bucket_entry_stats_ext_fn</name>
+        <briefdescription>
+<para>Get METER_BUCKET_ENTRY statistics counters extended. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">meter_bucket_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Statistics mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="303" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHMETER_1gaf301baba2a56536c9d1d06d180d4ff3c" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_clear_meter_bucket_entry_stats_fn) (_In_ const sai_meter_bucket_entry_t *meter_bucket_entry, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</definition>
+        <argsstring>)(_In_ const sai_meter_bucket_entry_t *meter_bucket_entry, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</argsstring>
+        <name>sai_clear_meter_bucket_entry_stats_fn</name>
+        <briefdescription>
+<para>Clear METER_BUCKET_ENTRY statistics counters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">meter_bucket_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="319" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="319" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHMETER_1ga2adb0521149a02ec72a544a55a5af344" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_create_meter_bucket_entry_fn) (_In_ uint32_t object_count, _In_ const sai_meter_bucket_entry_t *meter_bucket_entry, _In_ const uint32_t *attr_count, _In_ const sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_meter_bucket_entry_t *meter_bucket_entry, _In_ const uint32_t *attr_count, _In_ const sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_create_meter_bucket_entry_fn</name>
+        <briefdescription>
+<para>Bulk create meter bucket entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to create </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">meter_bucket_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of object to create </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attr_count. Caller passes the number of attribute for each object to create. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attributes for every object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are created or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to create. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="341" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHMETER_1ga712d3811269cb1570550154e6828d8a1" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_remove_meter_bucket_entry_fn) (_In_ uint32_t object_count, _In_ const sai_meter_bucket_entry_t *meter_bucket_entry, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_meter_bucket_entry_t *meter_bucket_entry, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_remove_meter_bucket_entry_fn</name>
+        <briefdescription>
+<para>Bulk remove meter bucket entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to remove </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">meter_bucket_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of objects to remove </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are removed or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to remove. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="363" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHMETER_1ga7de9618adb88ab7c45633ad9db94d3e4" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_meter_policy_fn) (_Out_ sai_object_id_t *meter_policy_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *meter_policy_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_meter_policy_fn</name>
+        <briefdescription>
+<para>Create meter policy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">meter_policy_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="379" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHMETER_1ga9b8e10d835e28006ab6ef766c5ccf5b4" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_meter_policy_fn) (_In_ sai_object_id_t meter_policy_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t meter_policy_id)</argsstring>
+        <name>sai_remove_meter_policy_fn</name>
+        <briefdescription>
+<para>Remove meter policy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">meter_policy_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="392" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="392" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHMETER_1ga6883ab829d4a9e48cb13d5f07bf2c465" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_meter_policy_attribute_fn) (_In_ sai_object_id_t meter_policy_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t meter_policy_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_meter_policy_attribute_fn</name>
+        <briefdescription>
+<para>Set attribute for meter policy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">meter_policy_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="403" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="403" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHMETER_1ga20b556820c89ab1c6655fd550e74f77b" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_meter_policy_attribute_fn) (_In_ sai_object_id_t meter_policy_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t meter_policy_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_meter_policy_attribute_fn</name>
+        <briefdescription>
+<para>Get attribute for meter policy. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">meter_policy_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="416" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="416" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHMETER_1gab0b927b12d7d0ccd09e047734f134cdf" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_meter_rule_fn) (_Out_ sai_object_id_t *meter_rule_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *meter_rule_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_meter_rule_fn</name>
+        <briefdescription>
+<para>Create meter rule. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">meter_rule_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="431" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="431" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHMETER_1gaa6c895faac9937e42dab3984213d96a9" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_meter_rule_fn) (_In_ sai_object_id_t meter_rule_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t meter_rule_id)</argsstring>
+        <name>sai_remove_meter_rule_fn</name>
+        <briefdescription>
+<para>Remove meter rule. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">meter_rule_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="444" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="444" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHMETER_1ga7ef5db39d4306a6ccd52d4c5068dea51" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_meter_rule_attribute_fn) (_In_ sai_object_id_t meter_rule_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t meter_rule_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_meter_rule_attribute_fn</name>
+        <briefdescription>
+<para>Set attribute for meter rule. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">meter_rule_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="455" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="455" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHMETER_1ga82da3a9a872383e60ce238b23cb88bdb" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_meter_rule_attribute_fn) (_In_ sai_object_id_t meter_rule_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t meter_rule_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_meter_rule_attribute_fn</name>
+        <briefdescription>
+<para>Get attribute for meter rule. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">meter_rule_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="468" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="468" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHMETER_1ga9a6c463ac1c525c8e0d8d44e445a069d" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__dash__meter__api__t" kindref="compound">_sai_dash_meter_api_t</ref></type>
+        <definition>typedef struct _sai_dash_meter_api_t sai_dash_meter_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dash_meter_api_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="499" column="22"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

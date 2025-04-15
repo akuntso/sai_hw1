@@ -1,0 +1,362 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group__SAIIPMC" kind="group">
+    <compoundname>SAIIPMC</compoundname>
+    <title>SAI - IPMC specific API definitions</title>
+    <innerclass refid="struct__sai__ipmc__entry__t" prot="public">_sai_ipmc_entry_t</innerclass>
+    <innerclass refid="struct__sai__ipmc__api__t" prot="public">_sai_ipmc_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIIPMC_1ga8c5b277b9958a1bf9165acd0dfc33361" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_ipmc_entry_type_t</name>
+        <enumvalue id="group__SAIIPMC_1gga8c5b277b9958a1bf9165acd0dfc33361a802737552dfd2eba20a87609045a13dc" prot="public">
+          <name>SAI_IPMC_ENTRY_TYPE_SG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>IPMC entry with type (S,G) </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPMC_1gga8c5b277b9958a1bf9165acd0dfc33361abbc73547fd0fc89849f688455dc035d9" prot="public">
+          <name>SAI_IPMC_ENTRY_TYPE_XG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>IPMC entry with type (*,G) </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>IPMC entry type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipmc.h" line="39" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipmc.h" bodystart="40" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIIPMC_1ga7767295a03d045ab81cf590e0b52375c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_ipmc_entry_attr_t</name>
+        <enumvalue id="group__SAIIPMC_1gga7767295a03d045ab81cf590e0b52375ca7bd39e070103080653b27589b2b7c777" prot="public">
+          <name>SAI_IPMC_ENTRY_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPMC_1gga7767295a03d045ab81cf590e0b52375ca490e3ba4b8dad1360cb554c90b77a0d7" prot="public">
+          <name>SAI_IPMC_ENTRY_ATTR_PACKET_ACTION</name>
+          <initializer>= SAI_IPMC_ENTRY_ATTR_START</initializer>
+          <briefdescription>
+<para>IPMC entry type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_packet_action_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPMC_1gga7767295a03d045ab81cf590e0b52375caaf21740322c47b82281df3c7d7f921fb" prot="public">
+          <name>SAI_IPMC_ENTRY_ATTR_OUTPUT_GROUP_ID</name>
+          <briefdescription>
+<para>IPMC entry output group id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>This attribute only takes effect when ATTR_PACKET_ACTION is set to FORWARD If the group has no member, packets will be discarded.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_IPMC_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_IPMC_ENTRY_ATTR_PACKET_ACTION == SAI_PACKET_ACTION_FORWARD </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPMC_1gga7767295a03d045ab81cf590e0b52375ca222dfb54e734c522fde3ade25d092309" prot="public">
+          <name>SAI_IPMC_ENTRY_ATTR_RPF_GROUP_ID</name>
+          <briefdescription>
+<para>IPMC entry RPF interface group id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>If not set or the group has no member, RPF checking will be disabled.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_RPF_GROUP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPMC_1gga7767295a03d045ab81cf590e0b52375ca5a23af6ac760e8bfd96b1ce1cccf6fdb" prot="public">
+          <name>SAI_IPMC_ENTRY_ATTR_COUNTER_ID</name>
+          <briefdescription>
+<para>Attach a counter. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>When it is empty, then packet hits won&apos;t be counted</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_COUNTER </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPMC_1gga7767295a03d045ab81cf590e0b52375cabd7f31758fad41a591ff7ada6117ba9b" prot="public">
+          <name>SAI_IPMC_ENTRY_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPMC_1gga7767295a03d045ab81cf590e0b52375ca901afdf02eb7fb9aea80d46f122d81c8" prot="public">
+          <name>SAI_IPMC_ENTRY_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIIPMC_1gga7767295a03d045ab81cf590e0b52375ca6c3f347706ed741a16be1fb20fa2aea2" prot="public">
+          <name>SAI_IPMC_ENTRY_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base end value </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute Id for IPMC entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipmc.h" line="81" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipmc.h" bodystart="82" bodyend="146"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIIPMC_1ga9756ab4e9868b3421eef6ac8cbc75f57" prot="public" static="no">
+        <type>enum <ref refid="group__SAIIPMC_1ga8c5b277b9958a1bf9165acd0dfc33361" kindref="member">_sai_ipmc_entry_type_t</ref></type>
+        <definition>typedef enum _sai_ipmc_entry_type_t sai_ipmc_entry_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_ipmc_entry_type_t</name>
+        <briefdescription>
+<para>IPMC entry type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipmc.h" line="47" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPMC_1ga5f79e0ea4c72b615ffc7174dd3dae9ce" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__ipmc__entry__t" kindref="compound">_sai_ipmc_entry_t</ref></type>
+        <definition>typedef struct _sai_ipmc_entry_t sai_ipmc_entry_t</definition>
+        <argsstring></argsstring>
+        <name>sai_ipmc_entry_t</name>
+        <briefdescription>
+<para>IPMC entry key. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipmc.h" line="76" column="18"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPMC_1gae9deeeda9e007120c425f9c020ff611e" prot="public" static="no">
+        <type>enum <ref refid="group__SAIIPMC_1ga7767295a03d045ab81cf590e0b52375c" kindref="member">_sai_ipmc_entry_attr_t</ref></type>
+        <definition>typedef enum _sai_ipmc_entry_attr_t sai_ipmc_entry_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_ipmc_entry_attr_t</name>
+        <briefdescription>
+<para>Attribute Id for IPMC entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipmc.h" line="146" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPMC_1ga01cf4460f2e09ed4b5af753494f60aad" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_ipmc_entry_fn) (_In_ const sai_ipmc_entry_t *ipmc_entry, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ const sai_ipmc_entry_t *ipmc_entry, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_ipmc_entry_fn</name>
+        <briefdescription>
+<para>Create IPMC entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ipmc_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IPMC entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipmc.h" line="157" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipmc.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPMC_1ga90d33bce1f9c51341f4c622fa231af43" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_ipmc_entry_fn) (_In_ const sai_ipmc_entry_t *ipmc_entry)</definition>
+        <argsstring>)(_In_ const sai_ipmc_entry_t *ipmc_entry)</argsstring>
+        <name>sai_remove_ipmc_entry_fn</name>
+        <briefdescription>
+<para>Remove IPMC entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ipmc_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IPMC entry</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipmc.h" line="169" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipmc.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPMC_1ga09902eee0efafb1102787b4991c970cc" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_ipmc_entry_attribute_fn) (_In_ const sai_ipmc_entry_t *ipmc_entry, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ const sai_ipmc_entry_t *ipmc_entry, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_ipmc_entry_attribute_fn</name>
+        <briefdescription>
+<para>Set IPMC entry attribute value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ipmc_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IPMC entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipmc.h" line="180" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipmc.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPMC_1gad834940833ba07bcad2ef1e4d81818fc" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_ipmc_entry_attribute_fn) (_In_ const sai_ipmc_entry_t *ipmc_entry, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ const sai_ipmc_entry_t *ipmc_entry, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_ipmc_entry_attribute_fn</name>
+        <briefdescription>
+<para>Get IPMC entry attribute value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">ipmc_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IPMC entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipmc.h" line="193" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiipmc.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIIPMC_1ga326b07404eb2ad57b88e0f52f377644d" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__ipmc__api__t" kindref="compound">_sai_ipmc_api_t</ref></type>
+        <definition>typedef struct _sai_ipmc_api_t sai_ipmc_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_ipmc_api_t</name>
+        <briefdescription>
+<para>IPMC method table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiipmc.h" line="208" column="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

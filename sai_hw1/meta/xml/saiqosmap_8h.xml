@@ -1,0 +1,498 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="saiqosmap_8h" kind="file" language="C++">
+    <compoundname>saiqosmap.h</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+    <includedby refid="sai_8h" local="yes">/home/andrii/sai_hw1/SAI/inc/sai.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saiqosmap.h</label>
+        <link refid="saiqosmap_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>sys/types.h</label>
+      </node>
+      <node id="2">
+        <label>saitypes.h</label>
+        <link refid="saitypes_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saiqosmap.h</label>
+        <link refid="saiqosmap_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/andrii/sai_hw1/SAI/inc/sai.h</label>
+        <link refid="sai_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</label>
+        <link refid="saiextensions_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct__sai__qos__map__api__t" prot="public">_sai_qos_map_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIQOSMAPS_1ga9173af471a3cd4e9005383b5c7f1c385" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_qos_map_type_t</name>
+        <enumvalue id="group__SAIQOSMAPS_1gga9173af471a3cd4e9005383b5c7f1c385a67266cced8db19091f28d98d0bb2a95b" prot="public">
+          <name>SAI_QOS_MAP_TYPE_DOT1P_TO_TC</name>
+          <initializer>= 0x00000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>QOS Map to set DOT1P to Traffic class </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQOSMAPS_1gga9173af471a3cd4e9005383b5c7f1c385a5105172eef5cd8edea62117735c9fef4" prot="public">
+          <name>SAI_QOS_MAP_TYPE_DOT1P_TO_COLOR</name>
+          <initializer>= 0x00000001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>QOS Map to set DOT1P to color </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQOSMAPS_1gga9173af471a3cd4e9005383b5c7f1c385a5abbcc0b57ea3881cd59cf2e40d8c505" prot="public">
+          <name>SAI_QOS_MAP_TYPE_DSCP_TO_TC</name>
+          <initializer>= 0x00000002</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>QOS Map to set DSCP to Traffic class </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQOSMAPS_1gga9173af471a3cd4e9005383b5c7f1c385af1fc3511675c54e260d4ed31b0a692e8" prot="public">
+          <name>SAI_QOS_MAP_TYPE_DSCP_TO_COLOR</name>
+          <initializer>= 0x00000003</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>QOS Map to set DSCP to color </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQOSMAPS_1gga9173af471a3cd4e9005383b5c7f1c385a287744035c2f87446516d1da9e6d2d16" prot="public">
+          <name>SAI_QOS_MAP_TYPE_TC_TO_QUEUE</name>
+          <initializer>= 0x00000004</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>QOS Map to set traffic class to queue </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQOSMAPS_1gga9173af471a3cd4e9005383b5c7f1c385a69b417dfee447f933e525f4822d91335" prot="public">
+          <name>SAI_QOS_MAP_TYPE_TC_AND_COLOR_TO_DSCP</name>
+          <initializer>= 0x00000005</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>QOS Map to set traffic class and color to DSCP </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQOSMAPS_1gga9173af471a3cd4e9005383b5c7f1c385a451d4dc7a0abe5e7208ec4b2117346a9" prot="public">
+          <name>SAI_QOS_MAP_TYPE_TC_AND_COLOR_TO_DOT1P</name>
+          <initializer>= 0x00000006</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>QOS Map to set traffic class and color to DSCP </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQOSMAPS_1gga9173af471a3cd4e9005383b5c7f1c385a77478eb28c4fc160acaf403f434b704c" prot="public">
+          <name>SAI_QOS_MAP_TYPE_TC_TO_PRIORITY_GROUP</name>
+          <initializer>= 0x00000007</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>QOS Map to set traffic class to priority group </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQOSMAPS_1gga9173af471a3cd4e9005383b5c7f1c385a0a2714cc7e3dd8de4177b12566aeefdc" prot="public">
+          <name>SAI_QOS_MAP_TYPE_PFC_PRIORITY_TO_PRIORITY_GROUP</name>
+          <initializer>= 0x00000008</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>QOS Map to set PFC priority to priority group </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQOSMAPS_1gga9173af471a3cd4e9005383b5c7f1c385ad4427bc6bb6d4e8b30fea4ace15c1241" prot="public">
+          <name>SAI_QOS_MAP_TYPE_PFC_PRIORITY_TO_QUEUE</name>
+          <initializer>= 0x00000009</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>QOS Map to set PFC priority to queue </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQOSMAPS_1gga9173af471a3cd4e9005383b5c7f1c385a78566a1b0c70852b364e36d881aae6f5" prot="public">
+          <name>SAI_QOS_MAP_TYPE_MPLS_EXP_TO_TC</name>
+          <initializer>= 0x0000000a</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>QOS Map to set EXP to Traffic class </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQOSMAPS_1gga9173af471a3cd4e9005383b5c7f1c385a7720e31b7a425e8a1897181188602a31" prot="public">
+          <name>SAI_QOS_MAP_TYPE_MPLS_EXP_TO_COLOR</name>
+          <initializer>= 0x0000000b</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>QOS Map to set EXP to color </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQOSMAPS_1gga9173af471a3cd4e9005383b5c7f1c385af846b21ac042b300f29efccd6adbdf27" prot="public">
+          <name>SAI_QOS_MAP_TYPE_TC_AND_COLOR_TO_MPLS_EXP</name>
+          <initializer>= 0x0000000c</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>QOS Map to set traffic class and color to EXP </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQOSMAPS_1gga9173af471a3cd4e9005383b5c7f1c385a8dc53f0296b828a70fa822065346a163" prot="public">
+          <name>SAI_QOS_MAP_TYPE_DSCP_TO_FORWARDING_CLASS</name>
+          <initializer>= 0x0000000d</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>QOS Map to set DSCP to Forwarding class </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQOSMAPS_1gga9173af471a3cd4e9005383b5c7f1c385ae35812561144679933f945d7fb7fa5ca" prot="public">
+          <name>SAI_QOS_MAP_TYPE_MPLS_EXP_TO_FORWARDING_CLASS</name>
+          <initializer>= 0x0000000e</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>QOS Map to set EXP to Forwarding class </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQOSMAPS_1gga9173af471a3cd4e9005383b5c7f1c385aeda54db185a9e888113dad9c9c521f1d" prot="public">
+          <name>SAI_QOS_MAP_TYPE_CUSTOM_RANGE_BASE</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum defining QOS map types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiqosmap.h" line="39" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiqosmap.h" bodystart="40" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIQOSMAPS_1ga93c7bac808f516a1b6554050d0443bdf" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_qos_map_attr_t</name>
+        <enumvalue id="group__SAIQOSMAPS_1gga93c7bac808f516a1b6554050d0443bdfa27774108e41bb9823f10b5db312b2b86" prot="public">
+          <name>SAI_QOS_MAP_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQOSMAPS_1gga93c7bac808f516a1b6554050d0443bdfa9443c10c441c4cca14eb31d2dc079833" prot="public">
+          <name>SAI_QOS_MAP_ATTR_TYPE</name>
+          <initializer>= SAI_QOS_MAP_ATTR_START</initializer>
+          <briefdescription>
+<para>QOS Map type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_qos_map_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQOSMAPS_1gga93c7bac808f516a1b6554050d0443bdfab9b243595c16742d92ededa4fb8b1290" prot="public">
+          <name>SAI_QOS_MAP_ATTR_MAP_TO_VALUE_LIST</name>
+          <initializer>= 0x00000001</initializer>
+          <briefdescription>
+<para>Dot1p to TC Mapping. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Defaults:<itemizedlist>
+<listitem><para>All Dot1p/DSCP maps to traffic class 0</para>
+</listitem><listitem><para>All Dot1p/DSCP maps to color <ref refid="group__SAITYPES_1ggaf12aeae877b4c8dfbcd487a2d0a7f392ae2b7d7e629d4583f78747d2be843bc8b" kindref="member">SAI_PACKET_COLOR_GREEN</ref></para>
+</listitem><listitem><para>All traffic class maps to queue 0</para>
+</listitem></itemizedlist>
+</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_qos_map_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQOSMAPS_1gga93c7bac808f516a1b6554050d0443bdfa9f17a7bc20e9d67aff278640ed950074" prot="public">
+          <name>SAI_QOS_MAP_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQOSMAPS_1gga93c7bac808f516a1b6554050d0443bdfa3548c61ef4f0a3b0d85be666ccf2e4b5" prot="public">
+          <name>SAI_QOS_MAP_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIQOSMAPS_1gga93c7bac808f516a1b6554050d0443bdfad61286cce8b3fa7495130a59e41b50fb" prot="public">
+          <name>SAI_QOS_MAP_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum defining attributes for QOS Maps. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiqosmap.h" line="94" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiqosmap.h" bodystart="95" bodyend="133"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIQOSMAPS_1gacf6361fdce434a793eaf596e9acf3458" prot="public" static="no">
+        <type>enum <ref refid="group__SAIQOSMAPS_1ga9173af471a3cd4e9005383b5c7f1c385" kindref="member">_sai_qos_map_type_t</ref></type>
+        <definition>typedef enum _sai_qos_map_type_t sai_qos_map_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_qos_map_type_t</name>
+        <briefdescription>
+<para>Enum defining QOS map types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiqosmap.h" line="89" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIQOSMAPS_1gac01a57c03e21debc4cdc2bb4b91b808e" prot="public" static="no">
+        <type>enum <ref refid="group__SAIQOSMAPS_1ga93c7bac808f516a1b6554050d0443bdf" kindref="member">_sai_qos_map_attr_t</ref></type>
+        <definition>typedef enum _sai_qos_map_attr_t sai_qos_map_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_qos_map_attr_t</name>
+        <briefdescription>
+<para>Enum defining attributes for QOS Maps. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiqosmap.h" line="133" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIQOSMAPS_1ga1b3654b4d05d4e716a3cb43f8415a819" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_qos_map_fn) (_Out_ sai_object_id_t *qos_map_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *qos_map_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_qos_map_fn</name>
+        <briefdescription>
+<para>Create QOS Map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">qos_map_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>QOS Map Id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiqosmap.h" line="145" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiqosmap.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIQOSMAPS_1ga7d80932373c1deab1a8a439b9730960c" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_qos_map_fn) (_In_ sai_object_id_t qos_map_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t qos_map_id)</argsstring>
+        <name>sai_remove_qos_map_fn</name>
+        <briefdescription>
+<para>Remove QOS Map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">qos_map_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>QOS Map id to be removed.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiqosmap.h" line="158" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiqosmap.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIQOSMAPS_1gabb4bd44ae90d383aaf5de41417dd4281" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_qos_map_attribute_fn) (_In_ sai_object_id_t qos_map_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t qos_map_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_qos_map_attribute_fn</name>
+        <briefdescription>
+<para>Set attributes for QOS map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">qos_map_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>QOS Map Id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute to set</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiqosmap.h" line="169" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiqosmap.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIQOSMAPS_1gae9ef43d537a2cb5752ffd8b99f18dbef" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_qos_map_attribute_fn) (_In_ sai_object_id_t qos_map_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t qos_map_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_qos_map_attribute_fn</name>
+        <briefdescription>
+<para>Get attributes of QOS map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">qos_map_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Map id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiqosmap.h" line="182" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiqosmap.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIQOSMAPS_1gaf5f181172c6bb8bd9df0070f351a33c4" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__qos__map__api__t" kindref="compound">_sai_qos_map_api_t</ref></type>
+        <definition>typedef struct _sai_qos_map_api_t sai_qos_map_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_qos_map_api_t</name>
+        <briefdescription>
+<para>QOS Map methods table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiqosmap.h" line="197" column="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module defines SAI QOS Maps interface. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2014 Microsoft Open Technologies, Inc.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <ulink url="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</ulink></para>
+<para>THIS CODE IS PROVIDED ON AN <emphasis>AS IS</emphasis> BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</para>
+<para>See the Apache Version 2.0 License for specific language governing permissions and limitations under the License.</para>
+<para>Microsoft would like to thank the following companies for their review and assistance with these files: Intel Corporation, Mellanox Technologies Ltd, Dell Products, L.P., Facebook, Inc., Marvell International Ltd. </para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saiqosmap.h"/>
+  </compounddef>
+</doxygen>

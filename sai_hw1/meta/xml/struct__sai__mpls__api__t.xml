@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__mpls__api__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_mpls_api_t</compoundname>
+    <includes refid="saimpls_8h" local="no">saimpls.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__mpls__api__t_1a3ad29c8609bef80fcb2030289996cb48" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIMPLS_1ga55332db5eeaab7d247ddb49902c5950f" kindref="member">sai_create_inseg_entry_fn</ref></type>
+        <definition>sai_create_inseg_entry_fn _sai_mpls_api_t::create_inseg_entry</definition>
+        <argsstring></argsstring>
+        <name>create_inseg_entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimpls.h" line="394" column="52" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimpls.h" bodystart="394" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__mpls__api__t_1ac956dc37ba42d2dcb3ed8ac47e8abc8b" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIMPLS_1ga8b7a2ebe4adc6b0b571fa9d5a455f891" kindref="member">sai_remove_inseg_entry_fn</ref></type>
+        <definition>sai_remove_inseg_entry_fn _sai_mpls_api_t::remove_inseg_entry</definition>
+        <argsstring></argsstring>
+        <name>remove_inseg_entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimpls.h" line="395" column="52" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimpls.h" bodystart="395" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__mpls__api__t_1a45f83e742cc7fbf815fe6db7636971c6" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIMPLS_1ga3a67e1195b01233e074cd26298dafe8c" kindref="member">sai_set_inseg_entry_attribute_fn</ref></type>
+        <definition>sai_set_inseg_entry_attribute_fn _sai_mpls_api_t::set_inseg_entry_attribute</definition>
+        <argsstring></argsstring>
+        <name>set_inseg_entry_attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimpls.h" line="396" column="52" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimpls.h" bodystart="396" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__mpls__api__t_1a316a1e9bd99592c561d9def09672819e" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIMPLS_1ga4e2aeb2e139b959d054d5efd254497f6" kindref="member">sai_get_inseg_entry_attribute_fn</ref></type>
+        <definition>sai_get_inseg_entry_attribute_fn _sai_mpls_api_t::get_inseg_entry_attribute</definition>
+        <argsstring></argsstring>
+        <name>get_inseg_entry_attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimpls.h" line="397" column="52" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimpls.h" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__mpls__api__t_1ae438e162d135ebe67b69787534fc58bf" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIMPLS_1gad7aa3364315baa4d3b2c8e201b57c4a3" kindref="member">sai_bulk_create_inseg_entry_fn</ref></type>
+        <definition>sai_bulk_create_inseg_entry_fn _sai_mpls_api_t::create_inseg_entries</definition>
+        <argsstring></argsstring>
+        <name>create_inseg_entries</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimpls.h" line="399" column="52" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimpls.h" bodystart="399" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__mpls__api__t_1ac70b56d457286061f459408a62e787dd" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIMPLS_1ga3e519b2f4656df2089a05b45fc94c366" kindref="member">sai_bulk_remove_inseg_entry_fn</ref></type>
+        <definition>sai_bulk_remove_inseg_entry_fn _sai_mpls_api_t::remove_inseg_entries</definition>
+        <argsstring></argsstring>
+        <name>remove_inseg_entries</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimpls.h" line="400" column="52" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimpls.h" bodystart="400" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__mpls__api__t_1a9294fb15f1b878ff408a82030348a5d8" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIMPLS_1gaa1b8f22b85409aec2416782a2286c50c" kindref="member">sai_bulk_set_inseg_entry_attribute_fn</ref></type>
+        <definition>sai_bulk_set_inseg_entry_attribute_fn _sai_mpls_api_t::set_inseg_entries_attribute</definition>
+        <argsstring></argsstring>
+        <name>set_inseg_entries_attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimpls.h" line="401" column="52" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimpls.h" bodystart="401" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__mpls__api__t_1a114c1055b5f09813062244d653082fc8" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIMPLS_1ga20ca3d950b6ac98cf26febec07a4ba34" kindref="member">sai_bulk_get_inseg_entry_attribute_fn</ref></type>
+        <definition>sai_bulk_get_inseg_entry_attribute_fn _sai_mpls_api_t::get_inseg_entries_attribute</definition>
+        <argsstring></argsstring>
+        <name>get_inseg_entries_attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saimpls.h" line="402" column="52" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimpls.h" bodystart="402" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>MPLS methods table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>_sai_mpls_api_t</label>
+        <link refid="struct__sai__mpls__api__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>create_inseg_entries</edgelabel>
+          <edgelabel>create_inseg_entry</edgelabel>
+          <edgelabel>get_inseg_entries_attribute</edgelabel>
+          <edgelabel>get_inseg_entry_attribute</edgelabel>
+          <edgelabel>remove_inseg_entries</edgelabel>
+          <edgelabel>remove_inseg_entry</edgelabel>
+          <edgelabel>set_inseg_entries_attribute</edgelabel>
+          <edgelabel>set_inseg_entry_attribute</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>_sai_inseg_entry_t</label>
+        <link refid="struct__sai__inseg__entry__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saimpls.h" line="392" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saimpls.h" bodystart="393" bodyend="404"/>
+    <listofallmembers>
+      <member refid="struct__sai__mpls__api__t_1ae438e162d135ebe67b69787534fc58bf" prot="public" virt="non-virtual"><scope>_sai_mpls_api_t</scope><name>create_inseg_entries</name></member>
+      <member refid="struct__sai__mpls__api__t_1a3ad29c8609bef80fcb2030289996cb48" prot="public" virt="non-virtual"><scope>_sai_mpls_api_t</scope><name>create_inseg_entry</name></member>
+      <member refid="struct__sai__mpls__api__t_1a114c1055b5f09813062244d653082fc8" prot="public" virt="non-virtual"><scope>_sai_mpls_api_t</scope><name>get_inseg_entries_attribute</name></member>
+      <member refid="struct__sai__mpls__api__t_1a316a1e9bd99592c561d9def09672819e" prot="public" virt="non-virtual"><scope>_sai_mpls_api_t</scope><name>get_inseg_entry_attribute</name></member>
+      <member refid="struct__sai__mpls__api__t_1ac70b56d457286061f459408a62e787dd" prot="public" virt="non-virtual"><scope>_sai_mpls_api_t</scope><name>remove_inseg_entries</name></member>
+      <member refid="struct__sai__mpls__api__t_1ac956dc37ba42d2dcb3ed8ac47e8abc8b" prot="public" virt="non-virtual"><scope>_sai_mpls_api_t</scope><name>remove_inseg_entry</name></member>
+      <member refid="struct__sai__mpls__api__t_1a9294fb15f1b878ff408a82030348a5d8" prot="public" virt="non-virtual"><scope>_sai_mpls_api_t</scope><name>set_inseg_entries_attribute</name></member>
+      <member refid="struct__sai__mpls__api__t_1a45f83e742cc7fbf815fe6db7636971c6" prot="public" virt="non-virtual"><scope>_sai_mpls_api_t</scope><name>set_inseg_entry_attribute</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

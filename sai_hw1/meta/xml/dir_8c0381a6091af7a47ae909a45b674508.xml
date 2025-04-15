@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_8c0381a6091af7a47ae909a45b674508" kind="dir">
+    <compoundname>/home/andrii/sai_hw1/SAI/experimental</compoundname>
+    <innerfile refid="saiexperimentalbmtor_8h">saiexperimentalbmtor.h</innerfile>
+    <innerfile refid="saiexperimentaldashacl_8h">saiexperimentaldashacl.h</innerfile>
+    <innerfile refid="saiexperimentaldashappliance_8h">saiexperimentaldashappliance.h</innerfile>
+    <innerfile refid="saiexperimentaldashdirectionlookup_8h">saiexperimentaldashdirectionlookup.h</innerfile>
+    <innerfile refid="saiexperimentaldasheni_8h">saiexperimentaldasheni.h</innerfile>
+    <innerfile refid="saiexperimentaldashflow_8h">saiexperimentaldashflow.h</innerfile>
+    <innerfile refid="saiexperimentaldashha_8h">saiexperimentaldashha.h</innerfile>
+    <innerfile refid="saiexperimentaldashinboundrouting_8h">saiexperimentaldashinboundrouting.h</innerfile>
+    <innerfile refid="saiexperimentaldashmeter_8h">saiexperimentaldashmeter.h</innerfile>
+    <innerfile refid="saiexperimentaldashoutboundcatopa_8h">saiexperimentaldashoutboundcatopa.h</innerfile>
+    <innerfile refid="saiexperimentaldashoutboundrouting_8h">saiexperimentaldashoutboundrouting.h</innerfile>
+    <innerfile refid="saiexperimentaldashpavalidation_8h">saiexperimentaldashpavalidation.h</innerfile>
+    <innerfile refid="saiexperimentaldashtunnel_8h">saiexperimentaldashtunnel.h</innerfile>
+    <innerfile refid="saiexperimentaldashvip_8h">saiexperimentaldashvip.h</innerfile>
+    <innerfile refid="saiexperimentaldashvnet_8h">saiexperimentaldashvnet.h</innerfile>
+    <innerfile refid="saiextensions_8h">saiextensions.h</innerfile>
+    <innerfile refid="saiportextensions_8h">saiportextensions.h</innerfile>
+    <innerfile refid="saiswitchextensions_8h">saiswitchextensions.h</innerfile>
+    <innerfile refid="saitypesextensions_8h">saitypesextensions.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/experimental/"/>
+  </compounddef>
+</doxygen>

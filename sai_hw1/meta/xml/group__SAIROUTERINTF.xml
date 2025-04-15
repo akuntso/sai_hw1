@@ -1,0 +1,947 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group__SAIROUTERINTF" kind="group">
+    <compoundname>SAIROUTERINTF</compoundname>
+    <title>SAI - Router interface specific API definitions</title>
+    <innerclass refid="struct__sai__router__interface__api__t" prot="public">_sai_router_interface_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIROUTERINTF_1ga5f55c484dbed79b4056861cc6b57197a" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_router_interface_type_t</name>
+        <enumvalue id="group__SAIROUTERINTF_1gga5f55c484dbed79b4056861cc6b57197aa42598ec453fba334980598d665fa1d62" prot="public">
+          <name>SAI_ROUTER_INTERFACE_TYPE_PORT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port or LAG or System Port Router Interface Type </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1gga5f55c484dbed79b4056861cc6b57197aadb43f38cd830deb85b860e83f20dadc7" prot="public">
+          <name>SAI_ROUTER_INTERFACE_TYPE_VLAN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>VLAN Router Interface Type </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1gga5f55c484dbed79b4056861cc6b57197aabbfa6a0dbef465cdc8827304524f7e6d" prot="public">
+          <name>SAI_ROUTER_INTERFACE_TYPE_LOOPBACK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Loopback Router Interface Type </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1gga5f55c484dbed79b4056861cc6b57197aafefe0d81108c1b1fe9f17f631be7078b" prot="public">
+          <name>SAI_ROUTER_INTERFACE_TYPE_MPLS_ROUTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>MPLS Router Interface Type </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1gga5f55c484dbed79b4056861cc6b57197aa583cda875d5211bf373babeecc9fc3c6" prot="public">
+          <name>SAI_ROUTER_INTERFACE_TYPE_SUB_PORT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Sub port Router Interface Type </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1gga5f55c484dbed79b4056861cc6b57197aaf346749f37c95997319016778b81833b" prot="public">
+          <name>SAI_ROUTER_INTERFACE_TYPE_BRIDGE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>.1D Bridge Router Interface Type </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1gga5f55c484dbed79b4056861cc6b57197aa4a72f85b33644f923ad2f2721f861398" prot="public">
+          <name>SAI_ROUTER_INTERFACE_TYPE_QINQ_PORT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Q-in-Q Router Interface Type </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute data for <ref refid="group__SAIROUTERINTF_1gga1c7bae40a5f33e9c4b495919c56ae523ade07947c27ad76a6f1ef3954a14b9d1d" kindref="member">SAI_ROUTER_INTERFACE_ATTR_TYPE</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairouterinterface.h" line="39" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/sairouterinterface.h" bodystart="40" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIROUTERINTF_1ga1c7bae40a5f33e9c4b495919c56ae523" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_router_interface_attr_t</name>
+        <enumvalue id="group__SAIROUTERINTF_1gga1c7bae40a5f33e9c4b495919c56ae523a8c792424525755fce3d35aac540ff40a" prot="public">
+          <name>SAI_ROUTER_INTERFACE_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1gga1c7bae40a5f33e9c4b495919c56ae523a85e705184a3238a34b9a4592256d1eb0" prot="public">
+          <name>SAI_ROUTER_INTERFACE_ATTR_VIRTUAL_ROUTER_ID</name>
+          <initializer>= SAI_ROUTER_INTERFACE_ATTR_START</initializer>
+          <briefdescription>
+<para>Virtual router id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_VIRTUAL_ROUTER </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1gga1c7bae40a5f33e9c4b495919c56ae523ade07947c27ad76a6f1ef3954a14b9d1d" prot="public">
+          <name>SAI_ROUTER_INTERFACE_ATTR_TYPE</name>
+          <briefdescription>
+<para>Router interface type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_router_interface_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1gga1c7bae40a5f33e9c4b495919c56ae523a42ea677ad88d211afd162cf231e6baf0" prot="public">
+          <name>SAI_ROUTER_INTERFACE_ATTR_PORT_ID</name>
+          <briefdescription>
+<para>Associated Port, System Port or LAG object id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_PORT, SAI_OBJECT_TYPE_LAG, SAI_OBJECT_TYPE_SYSTEM_PORT </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_ROUTER_INTERFACE_ATTR_TYPE == SAI_ROUTER_INTERFACE_TYPE_PORT or SAI_ROUTER_INTERFACE_ATTR_TYPE == SAI_ROUTER_INTERFACE_TYPE_SUB_PORT </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1gga1c7bae40a5f33e9c4b495919c56ae523a3f96211c576542a38084738fc297d80e" prot="public">
+          <name>SAI_ROUTER_INTERFACE_ATTR_VLAN_ID</name>
+          <briefdescription>
+<para>Associated Vlan. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_VLAN </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_ROUTER_INTERFACE_ATTR_TYPE == SAI_ROUTER_INTERFACE_TYPE_VLAN </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1gga1c7bae40a5f33e9c4b495919c56ae523a0f75ba8568517e6dfde40c4da076a5a2" prot="public">
+          <name>SAI_ROUTER_INTERFACE_ATTR_OUTER_VLAN_ID</name>
+          <briefdescription>
+<para>Outer Vlan. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          true </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_ROUTER_INTERFACE_ATTR_TYPE == SAI_ROUTER_INTERFACE_TYPE_QINQ_PORT or SAI_ROUTER_INTERFACE_ATTR_TYPE == SAI_ROUTER_INTERFACE_TYPE_SUB_PORT </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1gga1c7bae40a5f33e9c4b495919c56ae523abd336f135aad95c4ea9c869d2fe19cff" prot="public">
+          <name>SAI_ROUTER_INTERFACE_ATTR_INNER_VLAN_ID</name>
+          <briefdescription>
+<para>Inner Vlan. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          true </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_ROUTER_INTERFACE_ATTR_TYPE == SAI_ROUTER_INTERFACE_TYPE_QINQ_PORT </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1gga1c7bae40a5f33e9c4b495919c56ae523aef64a260bc2dc79b36c9dc0d6d9774ae" prot="public">
+          <name>SAI_ROUTER_INTERFACE_ATTR_BRIDGE_ID</name>
+          <briefdescription>
+<para>Associated 1D Bridge. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_BRIDGE </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_ROUTER_INTERFACE_ATTR_TYPE == SAI_ROUTER_INTERFACE_TYPE_BRIDGE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1gga1c7bae40a5f33e9c4b495919c56ae523a1083b780ad222777469eeed01a522705" prot="public">
+          <name>SAI_ROUTER_INTERFACE_ATTR_SRC_MAC_ADDRESS</name>
+          <briefdescription>
+<para>MAC Address. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Not valid when SAI_ROUTER_INTERFACE_ATTR_TYPE == SAI_ROUTER_INTERFACE_TYPE_LOOPBACK</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_mac_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         attrvalue SAI_VIRTUAL_ROUTER_ATTR_SRC_MAC_ADDRESS </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1gga1c7bae40a5f33e9c4b495919c56ae523a7124d6d97837985c61245dc8bed4dc0b" prot="public">
+          <name>SAI_ROUTER_INTERFACE_ATTR_ADMIN_V4_STATE</name>
+          <briefdescription>
+<para>Admin V4 state. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1gga1c7bae40a5f33e9c4b495919c56ae523a54449f86fdfba8a9d99ead39a143564c" prot="public">
+          <name>SAI_ROUTER_INTERFACE_ATTR_ADMIN_V6_STATE</name>
+          <briefdescription>
+<para>Admin V6 state. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1gga1c7bae40a5f33e9c4b495919c56ae523a4b5aed2b54b5fed9945f6b949941f44b" prot="public">
+          <name>SAI_ROUTER_INTERFACE_ATTR_MTU</name>
+          <briefdescription>
+<para>MTU. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         1514 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1gga1c7bae40a5f33e9c4b495919c56ae523a88e135f126efd7e180c22b9a486901d7" prot="public">
+          <name>SAI_ROUTER_INTERFACE_ATTR_INGRESS_ACL</name>
+          <briefdescription>
+<para>RIF bind point for ingress ACL object. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Bind (or unbind) an ingress ACL table or ACL group on a RIF. Enable/Update ingress ACL table or ACL group filtering by assigning a valid object id. Disable ingress filtering by assigning SAI_NULL_OBJECT_ID in the attribute value.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_ACL_TABLE, SAI_OBJECT_TYPE_ACL_TABLE_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1gga1c7bae40a5f33e9c4b495919c56ae523a8e0d57b9a20006382503caf3e40054ef" prot="public">
+          <name>SAI_ROUTER_INTERFACE_ATTR_EGRESS_ACL</name>
+          <briefdescription>
+<para>RIF bind point for egress ACL object. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Bind (or unbind) an egress ACL table or ACL group on a RIF. Enable/Update egress ACL table or ACL group filtering by assigning a valid object id. Disable egress filtering by assigning SAI_NULL_OBJECT_ID in the attribute value.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_ACL_TABLE, SAI_OBJECT_TYPE_ACL_TABLE_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1gga1c7bae40a5f33e9c4b495919c56ae523ad619560a0fff7e0af2a052dc039d70b5" prot="public">
+          <name>SAI_ROUTER_INTERFACE_ATTR_NEIGHBOR_MISS_PACKET_ACTION</name>
+          <briefdescription>
+<para>Packet action when neighbor table lookup miss for this router interface. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_packet_action_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_PACKET_ACTION_TRAP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1gga1c7bae40a5f33e9c4b495919c56ae523aad0e0b63f0178be984d48da35cbcf12b" prot="public">
+          <name>SAI_ROUTER_INTERFACE_ATTR_V4_MCAST_ENABLE</name>
+          <briefdescription>
+<para>V4 mcast enable. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1gga1c7bae40a5f33e9c4b495919c56ae523af07d7d22da5803fcdc33f020a7f620fc" prot="public">
+          <name>SAI_ROUTER_INTERFACE_ATTR_V6_MCAST_ENABLE</name>
+          <briefdescription>
+<para>V6 mcast enable. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1gga1c7bae40a5f33e9c4b495919c56ae523a8278ed635c0c43162f83601144413cb6" prot="public">
+          <name>SAI_ROUTER_INTERFACE_ATTR_LOOPBACK_PACKET_ACTION</name>
+          <briefdescription>
+<para>Packet action when a packet ingress and gets routed on the same RIF. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_packet_action_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_PACKET_ACTION_FORWARD </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1gga1c7bae40a5f33e9c4b495919c56ae523af5f3c2885a77643c1dc256901d0a84b9" prot="public">
+          <name>SAI_ROUTER_INTERFACE_ATTR_IS_VIRTUAL</name>
+          <briefdescription>
+<para>RIF creation is a virtual RIF. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Create a Virtual RIF object, which only programs the ingress router MAC. This simplifies the management of VRRP master router&apos;s configuration in SAI adapter, as defined by RFC 5798 (or similar proprietary protocols). Using a Virtual RIF allows SAI to optimize resources, so neighbor entries cannot be learned on a Virtual RIF. On a virtual RIF following attributes are invalid: ADMIN state, MTU size, packet action and multicast enable. Alternatively VRRP can also be configured using native RIF objects without using VIRTUAL attribute, with the expectation that SAI adapter will consume resources that will not be used.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1gga1c7bae40a5f33e9c4b495919c56ae523a706a78e58d39c1dc9c9609ebecf6700e" prot="public">
+          <name>SAI_ROUTER_INTERFACE_ATTR_NAT_ZONE_ID</name>
+          <briefdescription>
+<para>NAT Zone ID. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1gga1c7bae40a5f33e9c4b495919c56ae523af8e9ed8635b612faa0dc60a442aa86fb" prot="public">
+          <name>SAI_ROUTER_INTERFACE_ATTR_DISABLE_DECREMENT_TTL</name>
+          <briefdescription>
+<para>To enable/disable Decrement TTL. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1gga1c7bae40a5f33e9c4b495919c56ae523ad6392251ed66cfd8859f580adc80e9bd" prot="public">
+          <name>SAI_ROUTER_INTERFACE_ATTR_ADMIN_MPLS_STATE</name>
+          <briefdescription>
+<para>Admin MPLS state. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1gga1c7bae40a5f33e9c4b495919c56ae523a776493a788217324851a6808f118553f" prot="public">
+          <name>SAI_ROUTER_INTERFACE_ATTR_STATS_COUNT_MODE</name>
+          <briefdescription>
+<para>Set router interface statistics counting mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_stats_count_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_STATS_COUNT_MODE_PACKET_AND_BYTE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1gga1c7bae40a5f33e9c4b495919c56ae523a64cc78d3596b094a794f5b0d74fd2402" prot="public">
+          <name>SAI_ROUTER_INTERFACE_ATTR_SELECTIVE_COUNTER_LIST</name>
+          <briefdescription>
+<para>Attach counter object list. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Counter object should be of type Selective. Fill (<ref refid="group__SAICOUNTER_1ggac5e99b5b04f2a0f0665babc2a60c9641a2835fed0aa18e2fb59824c903bd712ea" kindref="member">SAI_COUNTER_ATTR_TYPE</ref> with <ref refid="group__SAICOUNTER_1gga4e3da19e4589261e88197d6576020cf1aa4b87a1c99256ee3601553c9455cb92c" kindref="member">SAI_COUNTER_TYPE_SELECTIVE</ref>).</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_COUNTER </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1gga1c7bae40a5f33e9c4b495919c56ae523a1377a8ff6b88935b6360542981ac4b05" prot="public">
+          <name>SAI_ROUTER_INTERFACE_ATTR_LABEL</name>
+          <briefdescription>
+<para>Label attribute used to uniquely identify router interface. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            char </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         &quot;&quot; </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1gga1c7bae40a5f33e9c4b495919c56ae523a53eca838e481d328f142d5e3778feeef" prot="public">
+          <name>SAI_ROUTER_INTERFACE_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1gga1c7bae40a5f33e9c4b495919c56ae523a4fa4e6d82ce958720391f6085454dc03" prot="public">
+          <name>SAI_ROUTER_INTERFACE_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1gga1c7bae40a5f33e9c4b495919c56ae523a843f167025ca7b6b7e1daff9cf289b50" prot="public">
+          <name>SAI_ROUTER_INTERFACE_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Routing interface attribute IDs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairouterinterface.h" line="67" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/sairouterinterface.h" bodystart="68" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIROUTERINTF_1gaa91fa008c445ea3fbaedf4bbaf22aea0" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_router_interface_stat_t</name>
+        <enumvalue id="group__SAIROUTERINTF_1ggaa91fa008c445ea3fbaedf4bbaf22aea0aaa550337e22822c2e91f95591bc74cf0" prot="public">
+          <name>SAI_ROUTER_INTERFACE_STAT_IN_OCTETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ingress byte stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1ggaa91fa008c445ea3fbaedf4bbaf22aea0a7dca260ce78a7bdf34f5989a3b5d9bc1" prot="public">
+          <name>SAI_ROUTER_INTERFACE_STAT_IN_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ingress packet stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1ggaa91fa008c445ea3fbaedf4bbaf22aea0a37c4077b22279a0962eccef9d07bc06d" prot="public">
+          <name>SAI_ROUTER_INTERFACE_STAT_OUT_OCTETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Egress byte stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1ggaa91fa008c445ea3fbaedf4bbaf22aea0a4caaee8df696aa97ec06b5d0eb796be0" prot="public">
+          <name>SAI_ROUTER_INTERFACE_STAT_OUT_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Egress packet stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1ggaa91fa008c445ea3fbaedf4bbaf22aea0afee2eb0cd7d12f524c96ce54dfef19b0" prot="public">
+          <name>SAI_ROUTER_INTERFACE_STAT_IN_ERROR_OCTETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Byte stat count for packets having errors on router ingress </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1ggaa91fa008c445ea3fbaedf4bbaf22aea0ac02c413c3b02c3fcacbe4d022005de80" prot="public">
+          <name>SAI_ROUTER_INTERFACE_STAT_IN_ERROR_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Packet stat count for packets having errors on router ingress </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1ggaa91fa008c445ea3fbaedf4bbaf22aea0aed4521462b46d8dca326040179997b3c" prot="public">
+          <name>SAI_ROUTER_INTERFACE_STAT_OUT_ERROR_OCTETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Byte stat count for packets having errors on router egress </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIROUTERINTF_1ggaa91fa008c445ea3fbaedf4bbaf22aea0a4f85d53b2f5789874d7fa458dcf585fb" prot="public">
+          <name>SAI_ROUTER_INTERFACE_STAT_OUT_ERROR_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Packet stat count for packets having errors on router egress </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Router interface counter IDs in sai_get_router_interface_stats() call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairouterinterface.h" line="344" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/sairouterinterface.h" bodystart="345" bodyend="370"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIROUTERINTF_1ga5a9e5beee052607bb1505feea195aacf" prot="public" static="no">
+        <type>enum <ref refid="group__SAIROUTERINTF_1ga5f55c484dbed79b4056861cc6b57197a" kindref="member">_sai_router_interface_type_t</ref></type>
+        <definition>typedef enum _sai_router_interface_type_t sai_router_interface_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_router_interface_type_t</name>
+        <briefdescription>
+<para>Attribute data for <ref refid="group__SAIROUTERINTF_1gga1c7bae40a5f33e9c4b495919c56ae523ade07947c27ad76a6f1ef3954a14b9d1d" kindref="member">SAI_ROUTER_INTERFACE_ATTR_TYPE</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairouterinterface.h" line="62" column="29"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIROUTERINTF_1gaef01c1a8a70613e8a255292c99b568dd" prot="public" static="no">
+        <type>enum <ref refid="group__SAIROUTERINTF_1ga1c7bae40a5f33e9c4b495919c56ae523" kindref="member">_sai_router_interface_attr_t</ref></type>
+        <definition>typedef enum _sai_router_interface_attr_t sai_router_interface_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_router_interface_attr_t</name>
+        <briefdescription>
+<para>Routing interface attribute IDs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairouterinterface.h" line="339" column="29"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIROUTERINTF_1gaa5efe389eb068b8098ef34736b7e2011" prot="public" static="no">
+        <type>enum <ref refid="group__SAIROUTERINTF_1gaa91fa008c445ea3fbaedf4bbaf22aea0" kindref="member">_sai_router_interface_stat_t</ref></type>
+        <definition>typedef enum _sai_router_interface_stat_t sai_router_interface_stat_t</definition>
+        <argsstring></argsstring>
+        <name>sai_router_interface_stat_t</name>
+        <briefdescription>
+<para>Router interface counter IDs in sai_get_router_interface_stats() call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairouterinterface.h" line="370" column="29"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIROUTERINTF_1gab4f0dce2c64d37e8b3ef522a8cb431d2" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_router_interface_fn) (_Out_ sai_object_id_t *router_interface_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *router_interface_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_router_interface_fn</name>
+        <briefdescription>
+<para>Create router interface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">router_interface_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Router interface id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairouterinterface.h" line="382" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sairouterinterface.h" bodystart="382" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIROUTERINTF_1gafc68ff524128637deef0a5d0e24f732b" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_router_interface_fn) (_In_ sai_object_id_t router_interface_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t router_interface_id)</argsstring>
+        <name>sai_remove_router_interface_fn</name>
+        <briefdescription>
+<para>Remove router interface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">router_interface_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Router interface id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairouterinterface.h" line="395" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sairouterinterface.h" bodystart="395" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIROUTERINTF_1ga6d91abbb10639a25746de38a119c8516" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_router_interface_attribute_fn) (_In_ sai_object_id_t router_interface_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t router_interface_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_router_interface_attribute_fn</name>
+        <briefdescription>
+<para>Set router interface attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">router_interface_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Router interface id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairouterinterface.h" line="406" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sairouterinterface.h" bodystart="406" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIROUTERINTF_1gacb9b0a66dcc85b35de75551227a84fd8" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_router_interface_attribute_fn) (_In_ sai_object_id_t router_interface_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t router_interface_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_router_interface_attribute_fn</name>
+        <briefdescription>
+<para>Get router interface attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">router_interface_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Router interface id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairouterinterface.h" line="419" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sairouterinterface.h" bodystart="419" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIROUTERINTF_1gaeb3345395fb8aec892d23b9e3d0b8347" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_router_interface_stats_fn) (_In_ sai_object_id_t router_interface_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t router_interface_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_router_interface_stats_fn</name>
+        <briefdescription>
+<para>Get router interface statistics counters. Deprecated for backward compatibility. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">router_interface_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Router interface id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairouterinterface.h" line="434" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sairouterinterface.h" bodystart="434" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIROUTERINTF_1ga06fc530893a3552b3b98fdc9c9456b17" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_router_interface_stats_ext_fn) (_In_ sai_object_id_t router_interface_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t router_interface_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_router_interface_stats_ext_fn</name>
+        <briefdescription>
+<para>Get router interface statistics counters extended. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">router_interface_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Router interface id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Statistics mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairouterinterface.h" line="451" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sairouterinterface.h" bodystart="451" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIROUTERINTF_1ga914dc6bac58eab7b5c7a9237dc18f2cc" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_clear_router_interface_stats_fn) (_In_ sai_object_id_t router_interface_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</definition>
+        <argsstring>)(_In_ sai_object_id_t router_interface_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</argsstring>
+        <name>sai_clear_router_interface_stats_fn</name>
+        <briefdescription>
+<para>Clear router interface statistics counters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">router_interface_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Router interface id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairouterinterface.h" line="467" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/sairouterinterface.h" bodystart="467" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIROUTERINTF_1ga0111b0e514e5200839067d232e404004" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__router__interface__api__t" kindref="compound">_sai_router_interface_api_t</ref></type>
+        <definition>typedef struct _sai_router_interface_api_t sai_router_interface_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_router_interface_api_t</name>
+        <briefdescription>
+<para>Routing interface methods table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sairouterinterface.h" line="490" column="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

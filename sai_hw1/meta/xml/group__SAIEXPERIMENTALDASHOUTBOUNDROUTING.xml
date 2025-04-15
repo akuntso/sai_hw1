@@ -1,0 +1,947 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING" kind="group">
+    <compoundname>SAIEXPERIMENTALDASHOUTBOUNDROUTING</compoundname>
+    <title>SAI - Experimental: DASH outbound routing specific API definitions</title>
+    <innerclass refid="struct__sai__outbound__routing__entry__t" prot="public">_sai_outbound_routing_entry_t</innerclass>
+    <innerclass refid="struct__sai__dash__outbound__routing__api__t" prot="public">_sai_dash_outbound_routing_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gaad5c487b4605b6f8cd22713000c73069" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_outbound_routing_entry_action_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1ggaad5c487b4605b6f8cd22713000c73069a130116ffe361f2fd3d4094518d1fcefd" prot="public">
+          <name>SAI_OUTBOUND_ROUTING_ENTRY_ACTION_ROUTE_VNET</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1ggaad5c487b4605b6f8cd22713000c73069ad7636fc07f06879f73151e166a8f55e1" prot="public">
+          <name>SAI_OUTBOUND_ROUTING_ENTRY_ACTION_ROUTE_VNET_DIRECT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1ggaad5c487b4605b6f8cd22713000c73069a72be140454e356e50bb96d2b1b12ae9f" prot="public">
+          <name>SAI_OUTBOUND_ROUTING_ENTRY_ACTION_ROUTE_DIRECT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1ggaad5c487b4605b6f8cd22713000c73069a196bd75a1880d9b73fd523be3aba77ae" prot="public">
+          <name>SAI_OUTBOUND_ROUTING_ENTRY_ACTION_ROUTE_SERVICE_TUNNEL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1ggaad5c487b4605b6f8cd22713000c73069aa33e33bf895f739334fbccd24963e439" prot="public">
+          <name>SAI_OUTBOUND_ROUTING_ENTRY_ACTION_DROP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute data for <ref refid="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gga390c88f3351d35c748d40bf9aa89c460ac858becd0252544cc732f0543057628f" kindref="member">SAI_OUTBOUND_ROUTING_ENTRY_ATTR_ACTION</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundrouting.h" line="41" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundrouting.h" bodystart="42" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1ga390c88f3351d35c748d40bf9aa89c460" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_outbound_routing_entry_attr_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gga390c88f3351d35c748d40bf9aa89c460a0e780f7d166033e00928381eeff08862" prot="public">
+          <name>SAI_OUTBOUND_ROUTING_ENTRY_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gga390c88f3351d35c748d40bf9aa89c460ac858becd0252544cc732f0543057628f" prot="public">
+          <name>SAI_OUTBOUND_ROUTING_ENTRY_ATTR_ACTION</name>
+          <initializer>= SAI_OUTBOUND_ROUTING_ENTRY_ATTR_START</initializer>
+          <briefdescription>
+<para>Action. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_outbound_routing_entry_action_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_OUTBOUND_ROUTING_ENTRY_ACTION_ROUTE_VNET </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gga390c88f3351d35c748d40bf9aa89c460ab2eadd25f576d1666085397f60eb9804" prot="public">
+          <name>SAI_OUTBOUND_ROUTING_ENTRY_ATTR_DST_VNET_ID</name>
+          <briefdescription>
+<para>Action parameter dst VNET id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_VNET </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_OUTBOUND_ROUTING_ENTRY_ATTR_ACTION == SAI_OUTBOUND_ROUTING_ENTRY_ACTION_ROUTE_VNET or SAI_OUTBOUND_ROUTING_ENTRY_ATTR_ACTION == SAI_OUTBOUND_ROUTING_ENTRY_ACTION_ROUTE_VNET_DIRECT </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gga390c88f3351d35c748d40bf9aa89c460a609490cab319e5be778ba2841f118e1f" prot="public">
+          <name>SAI_OUTBOUND_ROUTING_ENTRY_ATTR_DASH_TUNNEL_ID</name>
+          <briefdescription>
+<para>Action parameter DASH tunnel id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_DASH_TUNNEL </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_OUTBOUND_ROUTING_ENTRY_ATTR_ACTION == SAI_OUTBOUND_ROUTING_ENTRY_ACTION_ROUTE_VNET or SAI_OUTBOUND_ROUTING_ENTRY_ATTR_ACTION == SAI_OUTBOUND_ROUTING_ENTRY_ACTION_ROUTE_VNET_DIRECT or SAI_OUTBOUND_ROUTING_ENTRY_ATTR_ACTION == SAI_OUTBOUND_ROUTING_ENTRY_ACTION_ROUTE_DIRECT or SAI_OUTBOUND_ROUTING_ENTRY_ATTR_ACTION == SAI_OUTBOUND_ROUTING_ENTRY_ACTION_ROUTE_SERVICE_TUNNEL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gga390c88f3351d35c748d40bf9aa89c460a697081bef7ca761b52f29ec26e0faccd" prot="public">
+          <name>SAI_OUTBOUND_ROUTING_ENTRY_ATTR_METER_CLASS_OR</name>
+          <briefdescription>
+<para>Action parameter meter class or. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_OUTBOUND_ROUTING_ENTRY_ATTR_ACTION == SAI_OUTBOUND_ROUTING_ENTRY_ACTION_ROUTE_VNET or SAI_OUTBOUND_ROUTING_ENTRY_ATTR_ACTION == SAI_OUTBOUND_ROUTING_ENTRY_ACTION_ROUTE_VNET_DIRECT or SAI_OUTBOUND_ROUTING_ENTRY_ATTR_ACTION == SAI_OUTBOUND_ROUTING_ENTRY_ACTION_ROUTE_DIRECT or SAI_OUTBOUND_ROUTING_ENTRY_ATTR_ACTION == SAI_OUTBOUND_ROUTING_ENTRY_ACTION_ROUTE_SERVICE_TUNNEL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gga390c88f3351d35c748d40bf9aa89c460add8e2343820d01a0dee4388aa96beab3" prot="public">
+          <name>SAI_OUTBOUND_ROUTING_ENTRY_ATTR_METER_CLASS_AND</name>
+          <briefdescription>
+<para>Action parameter meter class and. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         4294967295 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_OUTBOUND_ROUTING_ENTRY_ATTR_ACTION == SAI_OUTBOUND_ROUTING_ENTRY_ACTION_ROUTE_VNET or SAI_OUTBOUND_ROUTING_ENTRY_ATTR_ACTION == SAI_OUTBOUND_ROUTING_ENTRY_ACTION_ROUTE_VNET_DIRECT or SAI_OUTBOUND_ROUTING_ENTRY_ATTR_ACTION == SAI_OUTBOUND_ROUTING_ENTRY_ACTION_ROUTE_DIRECT or SAI_OUTBOUND_ROUTING_ENTRY_ATTR_ACTION == SAI_OUTBOUND_ROUTING_ENTRY_ACTION_ROUTE_SERVICE_TUNNEL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gga390c88f3351d35c748d40bf9aa89c460a2911920e7b4945c990bd8944c977607c" prot="public">
+          <name>SAI_OUTBOUND_ROUTING_ENTRY_ATTR_ROUTING_ACTIONS_DISABLED_IN_FLOW_RESIMULATION</name>
+          <briefdescription>
+<para>Action parameter routing actions disabled in flow re-simulation. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_OUTBOUND_ROUTING_ENTRY_ATTR_ACTION == SAI_OUTBOUND_ROUTING_ENTRY_ACTION_ROUTE_VNET or SAI_OUTBOUND_ROUTING_ENTRY_ATTR_ACTION == SAI_OUTBOUND_ROUTING_ENTRY_ACTION_ROUTE_VNET_DIRECT or SAI_OUTBOUND_ROUTING_ENTRY_ATTR_ACTION == SAI_OUTBOUND_ROUTING_ENTRY_ACTION_ROUTE_DIRECT or SAI_OUTBOUND_ROUTING_ENTRY_ATTR_ACTION == SAI_OUTBOUND_ROUTING_ENTRY_ACTION_ROUTE_SERVICE_TUNNEL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gga390c88f3351d35c748d40bf9aa89c460a748cbf5d630fa9948c6dcda482e23e38" prot="public">
+          <name>SAI_OUTBOUND_ROUTING_ENTRY_ATTR_OVERLAY_IP</name>
+          <briefdescription>
+<para>Action parameter overlay IP. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_OUTBOUND_ROUTING_ENTRY_ATTR_ACTION == SAI_OUTBOUND_ROUTING_ENTRY_ACTION_ROUTE_VNET_DIRECT </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gga390c88f3351d35c748d40bf9aa89c460ae8c81cb21d94b7af3b63cb32eae3e10e" prot="public">
+          <name>SAI_OUTBOUND_ROUTING_ENTRY_ATTR_OVERLAY_DIP</name>
+          <briefdescription>
+<para>Action parameter overlay dip. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_OUTBOUND_ROUTING_ENTRY_ATTR_ACTION == SAI_OUTBOUND_ROUTING_ENTRY_ACTION_ROUTE_SERVICE_TUNNEL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gga390c88f3351d35c748d40bf9aa89c460a16a887cd1b4ec0083c1ad1e0e5bd2d4b" prot="public">
+          <name>SAI_OUTBOUND_ROUTING_ENTRY_ATTR_OVERLAY_DIP_MASK</name>
+          <briefdescription>
+<para>Action parameter overlay dip mask. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_OUTBOUND_ROUTING_ENTRY_ATTR_ACTION == SAI_OUTBOUND_ROUTING_ENTRY_ACTION_ROUTE_SERVICE_TUNNEL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gga390c88f3351d35c748d40bf9aa89c460a10a1c9a343fc0465373434bc28d05341" prot="public">
+          <name>SAI_OUTBOUND_ROUTING_ENTRY_ATTR_OVERLAY_SIP</name>
+          <briefdescription>
+<para>Action parameter overlay sip. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_OUTBOUND_ROUTING_ENTRY_ATTR_ACTION == SAI_OUTBOUND_ROUTING_ENTRY_ACTION_ROUTE_SERVICE_TUNNEL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gga390c88f3351d35c748d40bf9aa89c460a039c46e5873192fdfdf9bb1edbad5fd4" prot="public">
+          <name>SAI_OUTBOUND_ROUTING_ENTRY_ATTR_OVERLAY_SIP_MASK</name>
+          <briefdescription>
+<para>Action parameter overlay sip mask. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_OUTBOUND_ROUTING_ENTRY_ATTR_ACTION == SAI_OUTBOUND_ROUTING_ENTRY_ACTION_ROUTE_SERVICE_TUNNEL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gga390c88f3351d35c748d40bf9aa89c460a70e6b3b01b106775894a208d11a8b55c" prot="public">
+          <name>SAI_OUTBOUND_ROUTING_ENTRY_ATTR_UNDERLAY_DIP</name>
+          <briefdescription>
+<para>Action parameter underlay dip. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_OUTBOUND_ROUTING_ENTRY_ATTR_ACTION == SAI_OUTBOUND_ROUTING_ENTRY_ACTION_ROUTE_SERVICE_TUNNEL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gga390c88f3351d35c748d40bf9aa89c460ac2f4a19dc98acfe2e0deec4a4a0a44ac" prot="public">
+          <name>SAI_OUTBOUND_ROUTING_ENTRY_ATTR_UNDERLAY_SIP</name>
+          <briefdescription>
+<para>Action parameter underlay sip. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_OUTBOUND_ROUTING_ENTRY_ATTR_ACTION == SAI_OUTBOUND_ROUTING_ENTRY_ACTION_ROUTE_SERVICE_TUNNEL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gga390c88f3351d35c748d40bf9aa89c460a6c785233fcd82f956f5c9e838e69a525" prot="public">
+          <name>SAI_OUTBOUND_ROUTING_ENTRY_ATTR_DASH_ENCAPSULATION</name>
+          <briefdescription>
+<para>Action parameter DASH encapsulation. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_dash_encapsulation_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_DASH_ENCAPSULATION_VXLAN </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_OUTBOUND_ROUTING_ENTRY_ATTR_ACTION == SAI_OUTBOUND_ROUTING_ENTRY_ACTION_ROUTE_SERVICE_TUNNEL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gga390c88f3351d35c748d40bf9aa89c460abeab880960cd91050567eae8a332e1ae" prot="public">
+          <name>SAI_OUTBOUND_ROUTING_ENTRY_ATTR_TUNNEL_KEY</name>
+          <briefdescription>
+<para>Action parameter tunnel key. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_OUTBOUND_ROUTING_ENTRY_ATTR_ACTION == SAI_OUTBOUND_ROUTING_ENTRY_ACTION_ROUTE_SERVICE_TUNNEL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gga390c88f3351d35c748d40bf9aa89c460af202ffdfda2bf303799ad558de028ba9" prot="public">
+          <name>SAI_OUTBOUND_ROUTING_ENTRY_ATTR_COUNTER_ID</name>
+          <briefdescription>
+<para>Attach a counter. When it is empty, then packet hits won&apos;t be counted. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_COUNTER </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gga390c88f3351d35c748d40bf9aa89c460a7b9f326f214defa9b3e6ba511671d9ad" prot="public">
+          <name>SAI_OUTBOUND_ROUTING_ENTRY_ATTR_IP_ADDR_FAMILY</name>
+          <briefdescription>
+<para>IP address family for resource accounting. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_addr_family_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>IsResourceType:</title><para> @@isresourcetype  true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gga390c88f3351d35c748d40bf9aa89c460af1d08a39550edcf97ef54450a3c6a20f" prot="public">
+          <name>SAI_OUTBOUND_ROUTING_ENTRY_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gga390c88f3351d35c748d40bf9aa89c460a0640ed57737df64585f47d164f5a9e11" prot="public">
+          <name>SAI_OUTBOUND_ROUTING_ENTRY_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gga390c88f3351d35c748d40bf9aa89c460a6f35b6b5c9a418cc41e9bf806bc96918" prot="public">
+          <name>SAI_OUTBOUND_ROUTING_ENTRY_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute ID for outbound routing entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundrouting.h" line="84" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundrouting.h" bodystart="85" bodyend="275"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gaa1f2d4b26e93ee65bfb4d1c81f94dda7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_outbound_routing_group_attr_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1ggaa1f2d4b26e93ee65bfb4d1c81f94dda7afea5886a4c870c2607028e0f1252e50d" prot="public">
+          <name>SAI_OUTBOUND_ROUTING_GROUP_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1ggaa1f2d4b26e93ee65bfb4d1c81f94dda7a8d73204bfb5b660aa5cb6f077e9a6b1e" prot="public">
+          <name>SAI_OUTBOUND_ROUTING_GROUP_ATTR_DISABLED</name>
+          <initializer>= SAI_OUTBOUND_ROUTING_GROUP_ATTR_START</initializer>
+          <briefdescription>
+<para>Action parameter disabled. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1ggaa1f2d4b26e93ee65bfb4d1c81f94dda7a1112ebb60444e7802b2d7a8a2ced1709" prot="public">
+          <name>SAI_OUTBOUND_ROUTING_GROUP_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1ggaa1f2d4b26e93ee65bfb4d1c81f94dda7a96be647a45a72310615959c14bd1dc78" prot="public">
+          <name>SAI_OUTBOUND_ROUTING_GROUP_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1ggaa1f2d4b26e93ee65bfb4d1c81f94dda7a2f08a9ac8bfe096a463c4943158fb9e0" prot="public">
+          <name>SAI_OUTBOUND_ROUTING_GROUP_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute ID for outbound routing group. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundrouting.h" line="280" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundrouting.h" bodystart="281" bodyend="307"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gabd955520ab8d5e199d5e6b68a4d61096" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gaad5c487b4605b6f8cd22713000c73069" kindref="member">_sai_outbound_routing_entry_action_t</ref></type>
+        <definition>typedef enum _sai_outbound_routing_entry_action_t sai_outbound_routing_entry_action_t</definition>
+        <argsstring></argsstring>
+        <name>sai_outbound_routing_entry_action_t</name>
+        <briefdescription>
+<para>Attribute data for <ref refid="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gga390c88f3351d35c748d40bf9aa89c460ac858becd0252544cc732f0543057628f" kindref="member">SAI_OUTBOUND_ROUTING_ENTRY_ATTR_ACTION</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundrouting.h" line="53" column="37"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1ga24537a4acf61992a8b9aef32379669b8" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__outbound__routing__entry__t" kindref="compound">_sai_outbound_routing_entry_t</ref></type>
+        <definition>typedef struct _sai_outbound_routing_entry_t sai_outbound_routing_entry_t</definition>
+        <argsstring></argsstring>
+        <name>sai_outbound_routing_entry_t</name>
+        <briefdescription>
+<para>Entry for outbound_routing_entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundrouting.h" line="79" column="30"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gad25c2dfa6ef3277ab07fa4e8515138bf" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1ga390c88f3351d35c748d40bf9aa89c460" kindref="member">_sai_outbound_routing_entry_attr_t</ref></type>
+        <definition>typedef enum _sai_outbound_routing_entry_attr_t sai_outbound_routing_entry_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_outbound_routing_entry_attr_t</name>
+        <briefdescription>
+<para>Attribute ID for outbound routing entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundrouting.h" line="275" column="35"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gaf5efd6100a077dc26507470623765cd1" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gaa1f2d4b26e93ee65bfb4d1c81f94dda7" kindref="member">_sai_outbound_routing_group_attr_t</ref></type>
+        <definition>typedef enum _sai_outbound_routing_group_attr_t sai_outbound_routing_group_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_outbound_routing_group_attr_t</name>
+        <briefdescription>
+<para>Attribute ID for outbound routing group. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundrouting.h" line="307" column="35"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1ga200a106e42ce329ac86fb05cdd25e7b1" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_outbound_routing_entry_fn) (_In_ const sai_outbound_routing_entry_t *outbound_routing_entry, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ const sai_outbound_routing_entry_t *outbound_routing_entry, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_outbound_routing_entry_fn</name>
+        <briefdescription>
+<para>Create outbound routing entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">outbound_routing_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundrouting.h" line="318" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundrouting.h" bodystart="318" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1ga865e8249926f340c0ebeb798d24cb5da" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_outbound_routing_entry_fn) (_In_ const sai_outbound_routing_entry_t *outbound_routing_entry)</definition>
+        <argsstring>)(_In_ const sai_outbound_routing_entry_t *outbound_routing_entry)</argsstring>
+        <name>sai_remove_outbound_routing_entry_fn</name>
+        <briefdescription>
+<para>Remove outbound routing entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">outbound_routing_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundrouting.h" line="330" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundrouting.h" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gaa3318ec4d06d4f791fd9e9f2eec45cfb" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_outbound_routing_entry_attribute_fn) (_In_ const sai_outbound_routing_entry_t *outbound_routing_entry, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ const sai_outbound_routing_entry_t *outbound_routing_entry, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_outbound_routing_entry_attribute_fn</name>
+        <briefdescription>
+<para>Set attribute for outbound routing entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">outbound_routing_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundrouting.h" line="341" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundrouting.h" bodystart="341" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gadae6899f18f2959f85d50182a01af798" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_outbound_routing_entry_attribute_fn) (_In_ const sai_outbound_routing_entry_t *outbound_routing_entry, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ const sai_outbound_routing_entry_t *outbound_routing_entry, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_outbound_routing_entry_attribute_fn</name>
+        <briefdescription>
+<para>Get attribute for outbound routing entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">outbound_routing_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundrouting.h" line="354" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundrouting.h" bodystart="354" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gaa2d3ecca62339fe3722ea2a88df99df3" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_create_outbound_routing_entry_fn) (_In_ uint32_t object_count, _In_ const sai_outbound_routing_entry_t *outbound_routing_entry, _In_ const uint32_t *attr_count, _In_ const sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_outbound_routing_entry_t *outbound_routing_entry, _In_ const uint32_t *attr_count, _In_ const sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_create_outbound_routing_entry_fn</name>
+        <briefdescription>
+<para>Bulk create outbound routing entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to create </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">outbound_routing_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of object to create </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attr_count. Caller passes the number of attribute for each object to create. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attributes for every object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are created or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to create. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundrouting.h" line="376" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundrouting.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1ga03777a08efc9c5b82be38ab572589294" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_remove_outbound_routing_entry_fn) (_In_ uint32_t object_count, _In_ const sai_outbound_routing_entry_t *outbound_routing_entry, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_outbound_routing_entry_t *outbound_routing_entry, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_remove_outbound_routing_entry_fn</name>
+        <briefdescription>
+<para>Bulk remove outbound routing entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to remove </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">outbound_routing_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of objects to remove </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are removed or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to remove. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundrouting.h" line="398" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundrouting.h" bodystart="398" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gabaf7c7b4da1229989ebd3b565968ae46" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_outbound_routing_group_fn) (_Out_ sai_object_id_t *outbound_routing_group_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *outbound_routing_group_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_outbound_routing_group_fn</name>
+        <briefdescription>
+<para>Create outbound routing group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">outbound_routing_group_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundrouting.h" line="414" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundrouting.h" bodystart="414" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1ga3e05663d1fe64049dd3cee11839008d1" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_outbound_routing_group_fn) (_In_ sai_object_id_t outbound_routing_group_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t outbound_routing_group_id)</argsstring>
+        <name>sai_remove_outbound_routing_group_fn</name>
+        <briefdescription>
+<para>Remove outbound routing group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">outbound_routing_group_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundrouting.h" line="427" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundrouting.h" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1ga5ac2ebd5e32e24ab0146b8153deeec2a" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_outbound_routing_group_attribute_fn) (_In_ sai_object_id_t outbound_routing_group_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t outbound_routing_group_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_outbound_routing_group_attribute_fn</name>
+        <briefdescription>
+<para>Set attribute for outbound routing group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">outbound_routing_group_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundrouting.h" line="438" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundrouting.h" bodystart="438" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gaf917abbfe1221d203781e0b85babb7d7" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_outbound_routing_group_attribute_fn) (_In_ sai_object_id_t outbound_routing_group_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t outbound_routing_group_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_outbound_routing_group_attribute_fn</name>
+        <briefdescription>
+<para>Get attribute for outbound routing group. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">outbound_routing_group_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundrouting.h" line="451" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundrouting.h" bodystart="451" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHOUTBOUNDROUTING_1gaae092b54ba9ef8a020d30048936c602e" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__dash__outbound__routing__api__t" kindref="compound">_sai_dash_outbound_routing_api_t</ref></type>
+        <definition>typedef struct _sai_dash_outbound_routing_api_t sai_dash_outbound_routing_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dash_outbound_routing_api_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundrouting.h" line="472" column="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

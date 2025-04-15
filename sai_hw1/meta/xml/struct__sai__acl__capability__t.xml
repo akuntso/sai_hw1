@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__acl__capability__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_acl_capability_t</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__acl__capability__t_1a4f338ab4e6938610dacb323819204c5c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_acl_capability_t::is_action_list_mandatory</definition>
+        <argsstring></argsstring>
+        <name>is_action_list_mandatory</name>
+        <briefdescription>
+<para>Output from get function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Flag indicating whether action list is mandatory for table creation. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="870" column="10" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="870" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__acl__capability__t_1afe57960b23ccb567a160512ba53f4f3c" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__sai__s32__list__t" kindref="compound">sai_s32_list_t</ref></type>
+        <definition>sai_s32_list_t _sai_acl_capability_t::action_list</definition>
+        <argsstring></argsstring>
+        <name>action_list</name>
+        <briefdescription>
+<para>Output from get function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>List of actions supported per stage from the sai_acl_table_action_list_t. Max action list can be obtained using the <ref refid="group__SAISWITCH_1gga96df0871b3925f973f4a9079ffb3e634ace09f38e8a3e86e85298fc18dc361388" kindref="member">SAI_SWITCH_ATTR_MAX_ACL_ACTION_COUNT</ref>.</para>
+<para><simplesect kind="par"><title>Serialize suffix:</title><para> @@suffix          enum_list </para>
+</simplesect>
+<simplesect kind="par"><title>Pass paramater:</title><para> @@passparam       &amp;sai_metadata_enum_sai_acl_action_type_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="881" column="20" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="881" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__acl__capability__t_1a793b80b26cb34ecc6a61e1b8e7f1c82f" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1gada671d2f02c33f619c57b718e91a48c8" kindref="member">sai_acl_table_supported_match_type_t</ref></type>
+        <definition>sai_acl_table_supported_match_type_t _sai_acl_capability_t::supported_match_type</definition>
+        <argsstring></argsstring>
+        <name>supported_match_type</name>
+        <briefdescription>
+<para>Supported match type. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicates the match type supported by ACL stage </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="888" column="42" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="888" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__acl__capability__t_1a430edeb358adb88db0c84cf12039ae99" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_acl_capability_t::is_non_contiguous_bits_exact_match_supported</definition>
+        <argsstring></argsstring>
+        <name>is_non_contiguous_bits_exact_match_supported</name>
+        <briefdescription>
+<para>Non contiguous bit match supported. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Indicates whether EM can support non contiguous bits matching </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="895" column="10" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="895" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Structure for ACL attributes supported at each stage. action_list alone is added now. Qualifier list can also be added when needed. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>_sai_s32_list_t</label>
+        <link refid="struct__sai__s32__list__t"/>
+      </node>
+      <node id="1">
+        <label>_sai_acl_capability_t</label>
+        <link refid="struct__sai__acl__capability__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>action_list</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="863" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="864" bodyend="897"/>
+    <listofallmembers>
+      <member refid="struct__sai__acl__capability__t_1afe57960b23ccb567a160512ba53f4f3c" prot="public" virt="non-virtual"><scope>_sai_acl_capability_t</scope><name>action_list</name></member>
+      <member refid="struct__sai__acl__capability__t_1a4f338ab4e6938610dacb323819204c5c" prot="public" virt="non-virtual"><scope>_sai_acl_capability_t</scope><name>is_action_list_mandatory</name></member>
+      <member refid="struct__sai__acl__capability__t_1a430edeb358adb88db0c84cf12039ae99" prot="public" virt="non-virtual"><scope>_sai_acl_capability_t</scope><name>is_non_contiguous_bits_exact_match_supported</name></member>
+      <member refid="struct__sai__acl__capability__t_1a793b80b26cb34ecc6a61e1b8e7f1c82f" prot="public" virt="non-virtual"><scope>_sai_acl_capability_t</scope><name>supported_match_type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__pa__validation__entry__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_pa_validation_entry_t</compoundname>
+    <includes refid="saiexperimentaldashpavalidation_8h" local="no">saiexperimentaldashpavalidation.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__pa__validation__entry__t_1ab26fc31793dcaad8e4b5b5b810b2bc9e" prot="public" static="no" mutable="no">
+        <type>sai_object_id_t</type>
+        <definition>sai_object_id_t _sai_pa_validation_entry_t::switch_id</definition>
+        <argsstring></argsstring>
+        <name>switch_id</name>
+        <briefdescription>
+<para>Switch ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_SWITCH </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashpavalidation.h" line="57" column="21" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashpavalidation.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__pa__validation__entry__t_1a76f107ffce1c07a42ebf46c137d615f0" prot="public" static="no" mutable="no">
+        <type>sai_object_id_t</type>
+        <definition>sai_object_id_t _sai_pa_validation_entry_t::vnet_id</definition>
+        <argsstring></argsstring>
+        <name>vnet_id</name>
+        <briefdescription>
+<para>Exact matched key vnet_id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_VNET </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashpavalidation.h" line="64" column="21" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashpavalidation.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__pa__validation__entry__t_1adfe81f7c277c4f742701f66efc362081" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__sai__ip__address__t" kindref="compound">sai_ip_address_t</ref></type>
+        <definition>sai_ip_address_t _sai_pa_validation_entry_t::sip</definition>
+        <argsstring></argsstring>
+        <name>sip</name>
+        <briefdescription>
+<para>Exact matched key sip. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashpavalidation.h" line="69" column="22" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashpavalidation.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Entry for pa_validation_entry. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>_sai_pa_validation_entry_t</label>
+        <link refid="struct__sai__pa__validation__entry__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>sip</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>_sai_ip_address_t</label>
+        <link refid="struct__sai__ip__address__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>addr</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>_sai_ip_addr_t</label>
+        <link refid="union__sai__ip__addr__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashpavalidation.h" line="50" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashpavalidation.h" bodystart="51" bodyend="71"/>
+    <listofallmembers>
+      <member refid="struct__sai__pa__validation__entry__t_1adfe81f7c277c4f742701f66efc362081" prot="public" virt="non-virtual"><scope>_sai_pa_validation_entry_t</scope><name>sip</name></member>
+      <member refid="struct__sai__pa__validation__entry__t_1ab26fc31793dcaad8e4b5b5b810b2bc9e" prot="public" virt="non-virtual"><scope>_sai_pa_validation_entry_t</scope><name>switch_id</name></member>
+      <member refid="struct__sai__pa__validation__entry__t_1a76f107ffce1c07a42ebf46c137d615f0" prot="public" virt="non-virtual"><scope>_sai_pa_validation_entry_t</scope><name>vnet_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

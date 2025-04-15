@@ -1,0 +1,201 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__struct__member__info__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_struct_member_info_t</compoundname>
+    <includes refid="saimetadatatypes_8h" local="no">saimetadatatypes.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__struct__member__info__t_1a27d6901d1d8718798fc9d5302b5f547f" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIMETADATATYPES_1gab83b6ea7e43cbb4cddb2371f228ed785" kindref="member">sai_attr_value_type_t</ref></type>
+        <definition>sai_attr_value_type_t _sai_struct_member_info_t::membervaluetype</definition>
+        <argsstring></argsstring>
+        <name>membervaluetype</name>
+        <briefdescription>
+<para>Member value type. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1360" column="57" bodyfile="saimetadatatypes.h" bodystart="1360" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__struct__member__info__t_1a77504ba9f14b3a08baf4b363dad77423" prot="public" static="no" mutable="no">
+        <type>const char *const</type>
+        <definition>const char* const _sai_struct_member_info_t::membername</definition>
+        <argsstring></argsstring>
+        <name>membername</name>
+        <briefdescription>
+<para>Member name. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1365" column="56" bodyfile="saimetadatatypes.h" bodystart="1365" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__struct__member__info__t_1ad39dcfa88f69c9be163c9525985587f0" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_struct_member_info_t::isvlan</definition>
+        <argsstring></argsstring>
+        <name>isvlan</name>
+        <briefdescription>
+<para>Indicates whether field is vlan. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1370" column="57" bodyfile="saimetadatatypes.h" bodystart="1370" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__struct__member__info__t_1aa656e18c6e837d0ef4d2f26d4b10485d" prot="public" static="no" mutable="no">
+        <type>const <ref refid="group__SAITYPES_1ga1ca8e8725c9b140661ffae60b880fe95" kindref="member">sai_object_type_t</ref> *const</type>
+        <definition>const sai_object_type_t* const _sai_struct_member_info_t::allowedobjecttypes</definition>
+        <argsstring></argsstring>
+        <name>allowedobjecttypes</name>
+        <briefdescription>
+<para>Specified allowed object types. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If object attr value type is OBJECT_ID this list specifies what object type can be used. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1378" column="56" bodyfile="saimetadatatypes.h" bodystart="1378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__struct__member__info__t_1a3539087dd6b4d44c772960ef34564dba" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t _sai_struct_member_info_t::allowedobjecttypeslength</definition>
+        <argsstring></argsstring>
+        <name>allowedobjecttypeslength</name>
+        <briefdescription>
+<para>Length of allowed object types. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1383" column="57" bodyfile="saimetadatatypes.h" bodystart="1383" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__struct__member__info__t_1aaf7f5aea09fda9a5741dc74427eded9c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_struct_member_info_t::isenum</definition>
+        <argsstring></argsstring>
+        <name>isenum</name>
+        <briefdescription>
+<para>Indicates whether member is enum value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Type must be set as INT32.</para>
+<para><simplesect kind="note"><para>Could be deduced from enum type string or enum vector values and attr value type. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1393" column="57" bodyfile="saimetadatatypes.h" bodystart="1393" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__struct__member__info__t_1a6db74df5ef9a387af83dcc364d96790d" prot="public" static="no" mutable="no">
+        <type>const <ref refid="group__SAIMETADATATYPES_1ga3958ad8fbdf3830857358199fe733509" kindref="member">sai_enum_metadata_t</ref> *const</type>
+        <definition>const sai_enum_metadata_t* const _sai_struct_member_info_t::enummetadata</definition>
+        <argsstring></argsstring>
+        <name>enummetadata</name>
+        <briefdescription>
+<para>Provides enum metadata if member is enum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1398" column="56" bodyfile="saimetadatatypes.h" bodystart="1398" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__struct__member__info__t_1a682698c67e9260c849126682c5fec7dd" prot="public" static="no" mutable="no">
+        <type>const <ref refid="group__SAIMETADATATYPES_1gac12cfe132c9747441590b99e15da1e95" kindref="member">sai_meta_get_struct_member_oid_fn</ref></type>
+        <definition>const sai_meta_get_struct_member_oid_fn _sai_struct_member_info_t::getoid</definition>
+        <argsstring></argsstring>
+        <name>getoid</name>
+        <briefdescription>
+<para>If struct member is OID this function will get its value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1404" column="57" bodyfile="saimetadatatypes.h" bodystart="1404" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__struct__member__info__t_1a92fc858d397a3241bc88247a0c16dac9" prot="public" static="no" mutable="no">
+        <type>const <ref refid="group__SAIMETADATATYPES_1ga1c456135ac4f9bb9b658b2120bab9ff6" kindref="member">sai_meta_set_struct_member_oid_fn</ref></type>
+        <definition>const sai_meta_set_struct_member_oid_fn _sai_struct_member_info_t::setoid</definition>
+        <argsstring></argsstring>
+        <name>setoid</name>
+        <briefdescription>
+<para>If struct member is OID this function will set its value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1410" column="57" bodyfile="saimetadatatypes.h" bodystart="1410" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__struct__member__info__t_1af736b5666455b7d0457df551e122d08e" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t _sai_struct_member_info_t::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <briefdescription>
+<para>Member offset from the struct beginning in bytes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Macro offsetof is used to calculate this field, and it value can be different depending on compiler setting for struct packing. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1418" column="57" bodyfile="saimetadatatypes.h" bodystart="1418" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__struct__member__info__t_1a5e541138c166a09ed14035ca5b2b2f39" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t _sai_struct_member_info_t::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <briefdescription>
+<para>Member size using sizeof operator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="1423" column="57" bodyfile="saimetadatatypes.h" bodystart="1423" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines struct member info for non object id object type. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>_sai_enum_metadata_t</label>
+        <link refid="struct__sai__enum__metadata__t"/>
+      </node>
+      <node id="1">
+        <label>_sai_struct_member_info_t</label>
+        <link refid="struct__sai__struct__member__info__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>enummetadata</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="saimetadatatypes.h" line="1355" column="1" bodyfile="saimetadatatypes.h" bodystart="1356" bodyend="1425"/>
+    <listofallmembers>
+      <member refid="struct__sai__struct__member__info__t_1aa656e18c6e837d0ef4d2f26d4b10485d" prot="public" virt="non-virtual"><scope>_sai_struct_member_info_t</scope><name>allowedobjecttypes</name></member>
+      <member refid="struct__sai__struct__member__info__t_1a3539087dd6b4d44c772960ef34564dba" prot="public" virt="non-virtual"><scope>_sai_struct_member_info_t</scope><name>allowedobjecttypeslength</name></member>
+      <member refid="struct__sai__struct__member__info__t_1a6db74df5ef9a387af83dcc364d96790d" prot="public" virt="non-virtual"><scope>_sai_struct_member_info_t</scope><name>enummetadata</name></member>
+      <member refid="struct__sai__struct__member__info__t_1a682698c67e9260c849126682c5fec7dd" prot="public" virt="non-virtual"><scope>_sai_struct_member_info_t</scope><name>getoid</name></member>
+      <member refid="struct__sai__struct__member__info__t_1aaf7f5aea09fda9a5741dc74427eded9c" prot="public" virt="non-virtual"><scope>_sai_struct_member_info_t</scope><name>isenum</name></member>
+      <member refid="struct__sai__struct__member__info__t_1ad39dcfa88f69c9be163c9525985587f0" prot="public" virt="non-virtual"><scope>_sai_struct_member_info_t</scope><name>isvlan</name></member>
+      <member refid="struct__sai__struct__member__info__t_1a77504ba9f14b3a08baf4b363dad77423" prot="public" virt="non-virtual"><scope>_sai_struct_member_info_t</scope><name>membername</name></member>
+      <member refid="struct__sai__struct__member__info__t_1a27d6901d1d8718798fc9d5302b5f547f" prot="public" virt="non-virtual"><scope>_sai_struct_member_info_t</scope><name>membervaluetype</name></member>
+      <member refid="struct__sai__struct__member__info__t_1af736b5666455b7d0457df551e122d08e" prot="public" virt="non-virtual"><scope>_sai_struct_member_info_t</scope><name>offset</name></member>
+      <member refid="struct__sai__struct__member__info__t_1a92fc858d397a3241bc88247a0c16dac9" prot="public" virt="non-virtual"><scope>_sai_struct_member_info_t</scope><name>setoid</name></member>
+      <member refid="struct__sai__struct__member__info__t_1a5e541138c166a09ed14035ca5b2b2f39" prot="public" virt="non-virtual"><scope>_sai_struct_member_info_t</scope><name>size</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

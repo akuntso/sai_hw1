@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__stat__st__capability__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_stat_st_capability_t</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__stat__st__capability__t_1a7c599825014a135347b7cd1e50ae8fe2" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__sai__stat__capability__t" kindref="compound">sai_stat_capability_t</ref></type>
+        <definition>sai_stat_capability_t _sai_stat_st_capability_t::capability</definition>
+        <argsstring></argsstring>
+        <name>capability</name>
+        <briefdescription>
+<para>Typical stat capability. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1846" column="27" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1846" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__stat__st__capability__t_1a43aa0570c2501fcad3699fb629441d10" prot="public" static="no" mutable="no">
+        <type>uint64_t</type>
+        <definition>uint64_t _sai_stat_st_capability_t::minimal_polling_interval</definition>
+        <argsstring></argsstring>
+        <name>minimal_polling_interval</name>
+        <briefdescription>
+<para>Minimal polling interval in nanoseconds. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If polling interval is less than this value, it will be unacceptable. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1853" column="14" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1853" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Stat capability under the stream telemetry mode. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>_sai_stat_capability_t</label>
+        <link refid="struct__sai__stat__capability__t"/>
+      </node>
+      <node id="1">
+        <label>_sai_stat_st_capability_t</label>
+        <link refid="struct__sai__stat__st__capability__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>capability</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saitypes.h" line="1841" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saitypes.h" bodystart="1842" bodyend="1855"/>
+    <listofallmembers>
+      <member refid="struct__sai__stat__st__capability__t_1a7c599825014a135347b7cd1e50ae8fe2" prot="public" virt="non-virtual"><scope>_sai_stat_st_capability_t</scope><name>capability</name></member>
+      <member refid="struct__sai__stat__st__capability__t_1a43aa0570c2501fcad3699fb629441d10" prot="public" virt="non-virtual"><scope>_sai_stat_st_capability_t</scope><name>minimal_polling_interval</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

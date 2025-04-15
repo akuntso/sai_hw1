@@ -1,0 +1,1738 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group__SAIBRIDGE" kind="group">
+    <compoundname>SAIBRIDGE</compoundname>
+    <title>SAI - Bridge specific API definitions</title>
+    <innerclass refid="struct__sai__bridge__api__t" prot="public">_sai_bridge_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIBRIDGE_1ga88da9e0b11dbc28efa86a105e667e51c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_bridge_port_fdb_learning_mode_t</name>
+        <enumvalue id="group__SAIBRIDGE_1gga88da9e0b11dbc28efa86a105e667e51ca0d4e2a5cdfe6a21c4c2d53c328f14305" prot="public">
+          <name>SAI_BRIDGE_PORT_FDB_LEARNING_MODE_DROP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Drop packets with unknown source MAC. Do not learn. Do not forward </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga88da9e0b11dbc28efa86a105e667e51ca5843c9e9b4d9994cf1eea5c2d84bf2d6" prot="public">
+          <name>SAI_BRIDGE_PORT_FDB_LEARNING_MODE_DISABLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Do not learn unknown source MAC. Forward based on destination MAC </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga88da9e0b11dbc28efa86a105e667e51ca6e38004a35c25044b348443f60c665d3" prot="public">
+          <name>SAI_BRIDGE_PORT_FDB_LEARNING_MODE_HW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Hardware learning. Learn source MAC. Forward based on destination MAC </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga88da9e0b11dbc28efa86a105e667e51caf53ba2009c55805e840e2d60170ad5ff" prot="public">
+          <name>SAI_BRIDGE_PORT_FDB_LEARNING_MODE_CPU_TRAP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Trap packets with unknown source MAC to CPU. Do not learn. Do not forward </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga88da9e0b11dbc28efa86a105e667e51ca8755d594351ed7d6cfffb99f7c756edc" prot="public">
+          <name>SAI_BRIDGE_PORT_FDB_LEARNING_MODE_CPU_LOG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Trap packets with unknown source MAC to CPU. Do not learn. Forward based on destination MAC </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga88da9e0b11dbc28efa86a105e667e51ca8b3977a2997cbabf95d2163252bc024c" prot="public">
+          <name>SAI_BRIDGE_PORT_FDB_LEARNING_MODE_FDB_NOTIFICATION</name>
+          <briefdescription>
+<para>Notify unknown source MAC using FDB callback. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Do not learn in hardware. Do not forward. When a packet from unknown source MAC comes this mode will trigger a new learn notification via FDB callback for the MAC address. This mode will generate only one notification per unknown source MAC to FDB callback. </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute data for <ref refid="group__SAIBRIDGE_1gga0492c21572a089ddedbb1e69882f6ddfa6de78efb471da129abf991a3e9abc7ef" kindref="member">SAI_BRIDGE_PORT_ATTR_FDB_LEARNING_MODE</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibridge.h" line="39" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibridge.h" bodystart="40" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIBRIDGE_1ga26bef926f65ebfe0e8386139659915e9" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_bridge_port_type_t</name>
+        <enumvalue id="group__SAIBRIDGE_1gga26bef926f65ebfe0e8386139659915e9a4860153cd2a8515fb2885b1741261ed2" prot="public">
+          <name>SAI_BRIDGE_PORT_TYPE_PORT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port or LAG or System Port </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga26bef926f65ebfe0e8386139659915e9af21ef7accb23c5042355dbc00a1fedf9" prot="public">
+          <name>SAI_BRIDGE_PORT_TYPE_SUB_PORT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port or LAG.vlan </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga26bef926f65ebfe0e8386139659915e9a25da52f349257f4f1cd497afbf247be7" prot="public">
+          <name>SAI_BRIDGE_PORT_TYPE_1Q_ROUTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Bridge router port </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga26bef926f65ebfe0e8386139659915e9a8c5e71e8acae400ead9268c3127a4fc1" prot="public">
+          <name>SAI_BRIDGE_PORT_TYPE_1D_ROUTER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Bridge router port </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga26bef926f65ebfe0e8386139659915e9ae9c0863f3beb737a29bfbe03ca6247a6" prot="public">
+          <name>SAI_BRIDGE_PORT_TYPE_TUNNEL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Bridge tunnel port </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga26bef926f65ebfe0e8386139659915e9af8deef08e43553a56bd40d5e84c40733" prot="public">
+          <name>SAI_BRIDGE_PORT_TYPE_BRIDGE_PORT_NEXT_HOP_GROUP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Bridge nexthop group port Nexthop group should be of type bridge port </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute data for <ref refid="group__SAIBRIDGE_1gga0492c21572a089ddedbb1e69882f6ddfad986a0612ff686bc864f304f29c93e44" kindref="member">SAI_BRIDGE_PORT_ATTR_TYPE</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibridge.h" line="71" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibridge.h" bodystart="72" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIBRIDGE_1ga990667daaf160faed1ac24691a7a7984" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_bridge_port_tagging_mode_t</name>
+        <enumvalue id="group__SAIBRIDGE_1gga990667daaf160faed1ac24691a7a7984a7302ac1f4ea80f189c66eb132986f0b3" prot="public">
+          <name>SAI_BRIDGE_PORT_TAGGING_MODE_UNTAGGED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Untagged mode </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga990667daaf160faed1ac24691a7a7984a29f34c1d29a0596bcba4c430ed559d5e" prot="public">
+          <name>SAI_BRIDGE_PORT_TAGGING_MODE_TAGGED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Tagged mode </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute data for <ref refid="group__SAIBRIDGE_1gga0492c21572a089ddedbb1e69882f6ddfa28923a850e92850683ee7c3dd8f7dd08" kindref="member">SAI_BRIDGE_PORT_ATTR_TAGGING_MODE</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibridge.h" line="97" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibridge.h" bodystart="98" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIBRIDGE_1ga0492c21572a089ddedbb1e69882f6ddf" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_bridge_port_attr_t</name>
+        <enumvalue id="group__SAIBRIDGE_1gga0492c21572a089ddedbb1e69882f6ddfa1b0cfe6a5b5f248a4d77df4f3c9fa3d6" prot="public">
+          <name>SAI_BRIDGE_PORT_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga0492c21572a089ddedbb1e69882f6ddfad986a0612ff686bc864f304f29c93e44" prot="public">
+          <name>SAI_BRIDGE_PORT_ATTR_TYPE</name>
+          <initializer>= SAI_BRIDGE_PORT_ATTR_START</initializer>
+          <briefdescription>
+<para>Bridge port type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_bridge_port_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga0492c21572a089ddedbb1e69882f6ddfae6aaf48183bc7c9a07d69934c6c420d3" prot="public">
+          <name>SAI_BRIDGE_PORT_ATTR_PORT_ID</name>
+          <briefdescription>
+<para>Associated Port or LAG object id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>The CPU port is not a member of any bridge.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_PORT, SAI_OBJECT_TYPE_LAG, SAI_OBJECT_TYPE_SYSTEM_PORT </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_BRIDGE_PORT_ATTR_TYPE == SAI_BRIDGE_PORT_TYPE_PORT or SAI_BRIDGE_PORT_ATTR_TYPE == SAI_BRIDGE_PORT_TYPE_SUB_PORT </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga0492c21572a089ddedbb1e69882f6ddfa28923a850e92850683ee7c3dd8f7dd08" prot="public">
+          <name>SAI_BRIDGE_PORT_ATTR_TAGGING_MODE</name>
+          <briefdescription>
+<para>Tagging mode of the bridge port. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Specifies the tagging mode to be used during egress.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_bridge_port_tagging_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_BRIDGE_PORT_TAGGING_MODE_TAGGED </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_BRIDGE_PORT_ATTR_TYPE == SAI_BRIDGE_PORT_TYPE_SUB_PORT </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga0492c21572a089ddedbb1e69882f6ddfab3e2334a4ea03886f13700bc955a4658" prot="public">
+          <name>SAI_BRIDGE_PORT_ATTR_VLAN_ID</name>
+          <briefdescription>
+<para>Associated Vlan. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          true </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_BRIDGE_PORT_ATTR_TYPE == SAI_BRIDGE_PORT_TYPE_SUB_PORT </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga0492c21572a089ddedbb1e69882f6ddfa62a7afb9a49dd6050285b014ee1e9019" prot="public">
+          <name>SAI_BRIDGE_PORT_ATTR_RIF_ID</name>
+          <briefdescription>
+<para>Associated router interface object id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Please note that for SAI_BRIDGE_PORT_TYPE_1Q_ROUTER, all vlan interfaces are auto bounded for the bridge port.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_ROUTER_INTERFACE </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_BRIDGE_PORT_ATTR_TYPE == SAI_BRIDGE_PORT_TYPE_1D_ROUTER </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga0492c21572a089ddedbb1e69882f6ddfaf1e5b6fbb9f6fb8ddc7a6841c3b93a2c" prot="public">
+          <name>SAI_BRIDGE_PORT_ATTR_TUNNEL_ID</name>
+          <briefdescription>
+<para>Associated tunnel id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_TUNNEL </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_BRIDGE_PORT_ATTR_TYPE == SAI_BRIDGE_PORT_TYPE_TUNNEL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga0492c21572a089ddedbb1e69882f6ddfaa1b3502b4614a35fab7f72e6aa5f5493" prot="public">
+          <name>SAI_BRIDGE_PORT_ATTR_BRIDGE_ID</name>
+          <briefdescription>
+<para>Associated bridge id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_BRIDGE </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_BRIDGE_PORT_ATTR_TYPE == SAI_BRIDGE_PORT_TYPE_SUB_PORT or SAI_BRIDGE_PORT_ATTR_TYPE == SAI_BRIDGE_PORT_TYPE_1D_ROUTER or SAI_BRIDGE_PORT_ATTR_TYPE == SAI_BRIDGE_PORT_TYPE_TUNNEL or SAI_BRIDGE_PORT_ATTR_TYPE == SAI_BRIDGE_PORT_TYPE_BRIDGE_PORT_NEXT_HOP_GROUP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga0492c21572a089ddedbb1e69882f6ddfa6de78efb471da129abf991a3e9abc7ef" prot="public">
+          <name>SAI_BRIDGE_PORT_ATTR_FDB_LEARNING_MODE</name>
+          <briefdescription>
+<para>FDB Learning mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_bridge_port_fdb_learning_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_BRIDGE_PORT_FDB_LEARNING_MODE_HW </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga0492c21572a089ddedbb1e69882f6ddfa0ab6ce116f8bead5e2c2a0dde5d92d0b" prot="public">
+          <name>SAI_BRIDGE_PORT_ATTR_MAX_LEARNED_ADDRESSES</name>
+          <briefdescription>
+<para>Maximum number of learned MAC addresses. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga0492c21572a089ddedbb1e69882f6ddfac2ef3228a54a6f0c367b712238d8afbd" prot="public">
+          <name>SAI_BRIDGE_PORT_ATTR_FDB_LEARNING_LIMIT_VIOLATION_PACKET_ACTION</name>
+          <briefdescription>
+<para>Action for packets with unknown source MAC address when FDB learning limit is reached. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_packet_action_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_PACKET_ACTION_DROP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga0492c21572a089ddedbb1e69882f6ddfa05180ac1555e29fe7b0f96a9d98ecb70" prot="public">
+          <name>SAI_BRIDGE_PORT_ATTR_ADMIN_STATE</name>
+          <briefdescription>
+<para>Admin Mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Before removing a bridge port, need to disable it by setting admin mode to false, then flush the FDB entries, and then remove it.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga0492c21572a089ddedbb1e69882f6ddfa9b8a4b51dc0fc82ccf5a7eedaef643f4" prot="public">
+          <name>SAI_BRIDGE_PORT_ATTR_INGRESS_FILTERING</name>
+          <briefdescription>
+<para>Ingress filtering (drop frames with unknown VLANs) </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga0492c21572a089ddedbb1e69882f6ddfaacd2d2900752ce64af63575159ee7ca4" prot="public">
+          <name>SAI_BRIDGE_PORT_ATTR_EGRESS_FILTERING</name>
+          <briefdescription>
+<para>Egress filtering (drop frames with unknown VLANs at egress) </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_BRIDGE_PORT_ATTR_TYPE == SAI_BRIDGE_PORT_TYPE_PORT </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga0492c21572a089ddedbb1e69882f6ddfacf7e716dd6fa0e98bf867eaaddb6f4ca" prot="public">
+          <name>SAI_BRIDGE_PORT_ATTR_ISOLATION_GROUP</name>
+          <briefdescription>
+<para>Isolation group id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Packets ingressing on the bridge port should not be forwarded to the members present in the isolation group.The isolation group type should SAI_ISOLATION_GROUP_TYPE_BRIDGE_PORT.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_ISOLATION_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga0492c21572a089ddedbb1e69882f6ddfa80c2ceb058a2916e8851219c56497164" prot="public">
+          <name>SAI_BRIDGE_PORT_ATTR_STATS_COUNT_MODE</name>
+          <briefdescription>
+<para>Set bridge port statistics counting mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_stats_count_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_STATS_COUNT_MODE_PACKET_AND_BYTE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga0492c21572a089ddedbb1e69882f6ddface5f5eed3488c5821e6242d7e099543c" prot="public">
+          <name>SAI_BRIDGE_PORT_ATTR_SELECTIVE_COUNTER_LIST</name>
+          <briefdescription>
+<para>Attach counter object list. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Counter object should be of type Selective. Fill (<ref refid="group__SAICOUNTER_1ggac5e99b5b04f2a0f0665babc2a60c9641a2835fed0aa18e2fb59824c903bd712ea" kindref="member">SAI_COUNTER_ATTR_TYPE</ref> with <ref refid="group__SAICOUNTER_1gga4e3da19e4589261e88197d6576020cf1aa4b87a1c99256ee3601553c9455cb92c" kindref="member">SAI_COUNTER_TYPE_SELECTIVE</ref>).</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_COUNTER </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga0492c21572a089ddedbb1e69882f6ddfae54deca9a09adfc7b43bf91d7422ebe1" prot="public">
+          <name>SAI_BRIDGE_PORT_ATTR_BRIDGE_PORT_NEXT_HOP_GROUP_ID</name>
+          <briefdescription>
+<para>Associated nexthop group id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_NEXT_HOP_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_BRIDGE_PORT_ATTR_TYPE == SAI_BRIDGE_PORT_TYPE_BRIDGE_PORT_NEXT_HOP_GROUP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga0492c21572a089ddedbb1e69882f6ddfa4991478aaded76ef642d52b1dd57d9f5" prot="public">
+          <name>SAI_BRIDGE_PORT_ATTR_TUNNEL_TERM_BUM_TX_DROP</name>
+          <briefdescription>
+<para>Indicates if the bridge port is set to drop the broadcast, unknown unicast and multicast traffic. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>When set to true, egress BUM traffic will be dropped</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_BRIDGE_PORT_ATTR_TYPE == SAI_BRIDGE_PORT_TYPE_PORT or SAI_BRIDGE_PORT_ATTR_TYPE == SAI_BRIDGE_PORT_TYPE_SUB_PORT or SAI_BRIDGE_PORT_ATTR_TYPE == SAI_BRIDGE_PORT_TYPE_TUNNEL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga0492c21572a089ddedbb1e69882f6ddfae472071dd2d06ee00b6b1438d591e412" prot="public">
+          <name>SAI_BRIDGE_PORT_ATTR_RX_DROP</name>
+          <briefdescription>
+<para>Indicates if the bridge port is set to drop the ingress traffic. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>When set to true, all ingress traffic will be dropped</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_BRIDGE_PORT_ATTR_TYPE == SAI_BRIDGE_PORT_TYPE_PORT or SAI_BRIDGE_PORT_ATTR_TYPE == SAI_BRIDGE_PORT_TYPE_SUB_PORT or SAI_BRIDGE_PORT_ATTR_TYPE == SAI_BRIDGE_PORT_TYPE_TUNNEL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga0492c21572a089ddedbb1e69882f6ddfa1f25c478292ecaa4e20c3a34f9c0b327" prot="public">
+          <name>SAI_BRIDGE_PORT_ATTR_TX_DROP</name>
+          <briefdescription>
+<para>Indicates if the bridge port is set to drop the egress traffic. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>When set to true, all egress traffic will be dropped</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_BRIDGE_PORT_ATTR_TYPE == SAI_BRIDGE_PORT_TYPE_PORT or SAI_BRIDGE_PORT_ATTR_TYPE == SAI_BRIDGE_PORT_TYPE_SUB_PORT or SAI_BRIDGE_PORT_ATTR_TYPE == SAI_BRIDGE_PORT_TYPE_TUNNEL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga0492c21572a089ddedbb1e69882f6ddfa05d8101c86ba7da5baa762cc85008904" prot="public">
+          <name>SAI_BRIDGE_PORT_ATTR_BRIDGE_PORT_PROTECTION_NEXT_HOP_GROUP_ID</name>
+          <briefdescription>
+<para>Associated protection bridge port nexthop group id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>The Protection nexthop group type should be SAI_NEXT_HOP_GROUP_TYPE_BRIDGE_PORT</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_NEXT_HOP_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga0492c21572a089ddedbb1e69882f6ddfadd24e091bbd7a54180929eef3da1c460" prot="public">
+          <name>SAI_BRIDGE_PORT_ATTR_BRIDGE_PORT_SET_SWITCHOVER</name>
+          <briefdescription>
+<para>Trigger a switch-over to backup next hop group. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_BRIDGE_PORT_ATTR_TYPE == SAI_BRIDGE_PORT_TYPE_PORT </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga0492c21572a089ddedbb1e69882f6ddfa75c92e3f2bbe931b8e81efd7d6910dc7" prot="public">
+          <name>SAI_BRIDGE_PORT_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga0492c21572a089ddedbb1e69882f6ddfab1351f677f1ab2ee3773f05c59ddf67b" prot="public">
+          <name>SAI_BRIDGE_PORT_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga0492c21572a089ddedbb1e69882f6ddfa19225519acb35d72744973fe69e4fa72" prot="public">
+          <name>SAI_BRIDGE_PORT_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>SAI attributes for Bridge Port. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibridge.h" line="110" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibridge.h" bodystart="111" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIBRIDGE_1ga6b8677a710215d5b48c1bb270942e110" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_bridge_port_stat_t</name>
+        <enumvalue id="group__SAIBRIDGE_1gga6b8677a710215d5b48c1bb270942e110acfc7937efac641a8a40acf70d9607458" prot="public">
+          <name>SAI_BRIDGE_PORT_STAT_IN_OCTETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ingress byte stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga6b8677a710215d5b48c1bb270942e110a78767c77d5122e363946675dcfa9922a" prot="public">
+          <name>SAI_BRIDGE_PORT_STAT_IN_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ingress packet stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga6b8677a710215d5b48c1bb270942e110af01058d543286e2204a6860b4133b9e3" prot="public">
+          <name>SAI_BRIDGE_PORT_STAT_OUT_OCTETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Egress byte stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga6b8677a710215d5b48c1bb270942e110abc283090adac140c84fafc0ecaf7402d" prot="public">
+          <name>SAI_BRIDGE_PORT_STAT_OUT_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Egress packet stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Bridge port counter IDs in sai_get_bridge_port_stats() call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibridge.h" line="373" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibridge.h" bodystart="374" bodyend="387"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIBRIDGE_1ga592803a71de3540e438dd4ce1abd7842" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_bridge_type_t</name>
+        <enumvalue id="group__SAIBRIDGE_1gga592803a71de3540e438dd4ce1abd7842afd5d7139ac01993a36e089233ab326f9" prot="public">
+          <name>SAI_BRIDGE_TYPE_1Q</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Vlan aware bridge </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga592803a71de3540e438dd4ce1abd7842a4a6bce1ed0152ef2ca232012a636148b" prot="public">
+          <name>SAI_BRIDGE_TYPE_1D</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Non vlan aware bridge </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute data for <ref refid="group__SAIBRIDGE_1ggac09d1069f8f58256a27acc3f393e6e29a1af1681c4e2120beff07b8d432a4e3f1" kindref="member">SAI_BRIDGE_ATTR_TYPE</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibridge.h" line="492" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibridge.h" bodystart="493" bodyend="500"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIBRIDGE_1gadfab294f0cb10158b8bd8abae73f7fa8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_bridge_flood_control_type_t</name>
+        <enumvalue id="group__SAIBRIDGE_1ggadfab294f0cb10158b8bd8abae73f7fa8ae5877ba4054f64bd50d79328e8612cfd" prot="public">
+          <name>SAI_BRIDGE_FLOOD_CONTROL_TYPE_SUB_PORTS</name>
+          <briefdescription>
+<para>Flood on all sub-ports. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>When setting sub-ports to broadcast or unknown multicast flood, it also includes flooding to the router. When setting sub-ports to unknown unicast flood, it does not include flooding to the router </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1ggadfab294f0cb10158b8bd8abae73f7fa8acccb4faac08651ceb5d1d3edfc7b380f" prot="public">
+          <name>SAI_BRIDGE_FLOOD_CONTROL_TYPE_NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Disable flooding </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1ggadfab294f0cb10158b8bd8abae73f7fa8af76320e2a0b8bfb0e803d96858171cef" prot="public">
+          <name>SAI_BRIDGE_FLOOD_CONTROL_TYPE_L2MC_GROUP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Flood on the L2MC group </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1ggadfab294f0cb10158b8bd8abae73f7fa8a01ea5af5db2f5e156b9647d6904adb62" prot="public">
+          <name>SAI_BRIDGE_FLOOD_CONTROL_TYPE_COMBINED</name>
+          <briefdescription>
+<para>Flood on all sub-ports and L2MC group. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Flood on all sub-ports, without the router In addition, flood on the supplied L2MC group </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute data for unknown unicast, unknown multicast and broadcast flood controls. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibridge.h" line="506" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibridge.h" bodystart="507" bodyend="531"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIBRIDGE_1gac09d1069f8f58256a27acc3f393e6e29" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_bridge_attr_t</name>
+        <enumvalue id="group__SAIBRIDGE_1ggac09d1069f8f58256a27acc3f393e6e29a3d7245272299427bf104968e80cec1da" prot="public">
+          <name>SAI_BRIDGE_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1ggac09d1069f8f58256a27acc3f393e6e29a1af1681c4e2120beff07b8d432a4e3f1" prot="public">
+          <name>SAI_BRIDGE_ATTR_TYPE</name>
+          <initializer>= SAI_BRIDGE_ATTR_START</initializer>
+          <briefdescription>
+<para>Bridge type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_bridge_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1ggac09d1069f8f58256a27acc3f393e6e29aa4b19018b3d18eeed6c11e1864ff790e" prot="public">
+          <name>SAI_BRIDGE_ATTR_PORT_LIST</name>
+          <briefdescription>
+<para>List of bridge ports associated to this bridge. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_BRIDGE_PORT </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1ggac09d1069f8f58256a27acc3f393e6e29ade99d110f00b7f7909c4f8cc13f3cc96" prot="public">
+          <name>SAI_BRIDGE_ATTR_MAX_LEARNED_ADDRESSES</name>
+          <briefdescription>
+<para>Maximum number of learned MAC addresses. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Zero means learning limit is disabled.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1ggac09d1069f8f58256a27acc3f393e6e29ab90bdde4245d1d3b3c40e3d3b3ab2944" prot="public">
+          <name>SAI_BRIDGE_ATTR_LEARN_DISABLE</name>
+          <briefdescription>
+<para>To disable learning on a bridge. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1ggac09d1069f8f58256a27acc3f393e6e29a3b407486ef5a75680e998ce3c267a0d3" prot="public">
+          <name>SAI_BRIDGE_ATTR_UNKNOWN_UNICAST_FLOOD_CONTROL_TYPE</name>
+          <briefdescription>
+<para>Unknown unicast flood control type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_bridge_flood_control_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_BRIDGE_FLOOD_CONTROL_TYPE_SUB_PORTS </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1ggac09d1069f8f58256a27acc3f393e6e29a23a7bc7b32655a45b064e74321686128" prot="public">
+          <name>SAI_BRIDGE_ATTR_UNKNOWN_UNICAST_FLOOD_GROUP</name>
+          <briefdescription>
+<para>Unknown unicast flood group. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Provides control on the set of bridge ports on which unknown unicast packets need to be flooded. This attribute would be used only when the SAI_BRIDGE_ATTR_UNKNOWN_UNICAST_FLOOD_CONTROL_TYPE is set as SAI_BRIDGE_FLOOD_CONTROL_TYPE_L2MC_GROUP. When this attribute&apos;s value is SAI_NULL_OBJECT_ID, then flooding would be disabled.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_L2MC_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_BRIDGE_ATTR_TYPE == SAI_BRIDGE_TYPE_1D and (SAI_BRIDGE_ATTR_UNKNOWN_UNICAST_FLOOD_CONTROL_TYPE == SAI_BRIDGE_FLOOD_CONTROL_TYPE_L2MC_GROUP or SAI_BRIDGE_ATTR_UNKNOWN_UNICAST_FLOOD_CONTROL_TYPE == SAI_BRIDGE_FLOOD_CONTROL_TYPE_COMBINED) </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1ggac09d1069f8f58256a27acc3f393e6e29a77b10f1fb572825900c6ec9fd8033d2b" prot="public">
+          <name>SAI_BRIDGE_ATTR_UNKNOWN_MULTICAST_FLOOD_CONTROL_TYPE</name>
+          <briefdescription>
+<para>Unknown unicast flood control type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_bridge_flood_control_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_BRIDGE_FLOOD_CONTROL_TYPE_SUB_PORTS </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1ggac09d1069f8f58256a27acc3f393e6e29ae1197f40259fcbc104347d656faeef00" prot="public">
+          <name>SAI_BRIDGE_ATTR_UNKNOWN_MULTICAST_FLOOD_GROUP</name>
+          <briefdescription>
+<para>Unknown multicast flood group. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Provides control on the set of bridge ports on which unknown multicast packets need to be flooded. This attribute would be used only when the SAI_BRIDGE_ATTR_UNKNOWN_MULTICAST_FLOOD_CONTROL_TYPE is set as SAI_BRIDGE_FLOOD_CONTROL_TYPE_L2MC_GROUP.When this attribute&apos;s value is SAI_NULL_OBJECT_ID, then flooding would be disabled.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_L2MC_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_BRIDGE_ATTR_TYPE == SAI_BRIDGE_TYPE_1D and (SAI_BRIDGE_ATTR_UNKNOWN_MULTICAST_FLOOD_CONTROL_TYPE == SAI_BRIDGE_FLOOD_CONTROL_TYPE_L2MC_GROUP or SAI_BRIDGE_ATTR_UNKNOWN_MULTICAST_FLOOD_CONTROL_TYPE == SAI_BRIDGE_FLOOD_CONTROL_TYPE_COMBINED) </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1ggac09d1069f8f58256a27acc3f393e6e29a424b4f8d39d0ecf2bf25581e7d8206d0" prot="public">
+          <name>SAI_BRIDGE_ATTR_BROADCAST_FLOOD_CONTROL_TYPE</name>
+          <briefdescription>
+<para>Broadcast flood control type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_bridge_flood_control_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_BRIDGE_FLOOD_CONTROL_TYPE_SUB_PORTS </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1ggac09d1069f8f58256a27acc3f393e6e29adc0d58677e3e41c75235aafddb534991" prot="public">
+          <name>SAI_BRIDGE_ATTR_BROADCAST_FLOOD_GROUP</name>
+          <briefdescription>
+<para>Broadcast flood group. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Provides control on the set of bridge ports on which broadcast packets need to be flooded. This attribute would be used only when the SAI_BRIDGE_ATTR_BROADCAST_FLOOD_CONTROL_TYPE is set as SAI_BRIDGE_FLOOD_CONTROL_TYPE_L2MC_GROUP.When this attribute&apos;s value is SAI_NULL_OBJECT_ID, then flooding would be disabled.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_L2MC_GROUP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_BRIDGE_ATTR_TYPE == SAI_BRIDGE_TYPE_1D and (SAI_BRIDGE_ATTR_BROADCAST_FLOOD_CONTROL_TYPE == SAI_BRIDGE_FLOOD_CONTROL_TYPE_L2MC_GROUP or SAI_BRIDGE_ATTR_BROADCAST_FLOOD_CONTROL_TYPE == SAI_BRIDGE_FLOOD_CONTROL_TYPE_COMBINED) </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1ggac09d1069f8f58256a27acc3f393e6e29abf7d5fc8ce52e50fc06599e8486fa94a" prot="public">
+          <name>SAI_BRIDGE_ATTR_STATS_COUNT_MODE</name>
+          <briefdescription>
+<para>Set bridge statistics counting mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_stats_count_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_STATS_COUNT_MODE_PACKET_AND_BYTE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1ggac09d1069f8f58256a27acc3f393e6e29ab8d63abc49f8158e9dbb2b35bda2a454" prot="public">
+          <name>SAI_BRIDGE_ATTR_SELECTIVE_COUNTER_LIST</name>
+          <briefdescription>
+<para>Attach counter object list. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Counter object should be of type Selective. Fill (<ref refid="group__SAICOUNTER_1ggac5e99b5b04f2a0f0665babc2a60c9641a2835fed0aa18e2fb59824c903bd712ea" kindref="member">SAI_COUNTER_ATTR_TYPE</ref> with <ref refid="group__SAICOUNTER_1gga4e3da19e4589261e88197d6576020cf1aa4b87a1c99256ee3601553c9455cb92c" kindref="member">SAI_COUNTER_TYPE_SELECTIVE</ref>).</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_COUNTER </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1ggac09d1069f8f58256a27acc3f393e6e29a5cff46d249fd6c4a607602ca9523e93e" prot="public">
+          <name>SAI_BRIDGE_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1ggac09d1069f8f58256a27acc3f393e6e29a55b7d26bf3e384236d2fa0bda2cfdc90" prot="public">
+          <name>SAI_BRIDGE_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1ggac09d1069f8f58256a27acc3f393e6e29a9d8a53859922d9383ee0ab1f95136b22" prot="public">
+          <name>SAI_BRIDGE_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>SAI attributes for Bridge. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibridge.h" line="536" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibridge.h" bodystart="537" bodyend="694"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIBRIDGE_1ga9d672c261551e5d7a56a3fcb0d6c3ffe" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_bridge_stat_t</name>
+        <enumvalue id="group__SAIBRIDGE_1gga9d672c261551e5d7a56a3fcb0d6c3ffeacf20dd641b560a7efb3d58529656c592" prot="public">
+          <name>SAI_BRIDGE_STAT_IN_OCTETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ingress byte stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga9d672c261551e5d7a56a3fcb0d6c3ffeab8c2d35a2fbfbbc299dc5370554028a9" prot="public">
+          <name>SAI_BRIDGE_STAT_IN_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ingress packet stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga9d672c261551e5d7a56a3fcb0d6c3ffeae6b12b03c7b3efd247f025add54c9584" prot="public">
+          <name>SAI_BRIDGE_STAT_OUT_OCTETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Egress byte stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIBRIDGE_1gga9d672c261551e5d7a56a3fcb0d6c3ffea425ed85e7f954e5ddb9297597008c9d0" prot="public">
+          <name>SAI_BRIDGE_STAT_OUT_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Egress packet stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Bridge counter IDs in sai_get_bridge_stats() call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibridge.h" line="699" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibridge.h" bodystart="700" bodyend="713"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIBRIDGE_1ga5e8a1d1dc3e65f57c1800f192fea1980" prot="public" static="no">
+        <type>enum <ref refid="group__SAIBRIDGE_1ga88da9e0b11dbc28efa86a105e667e51c" kindref="member">_sai_bridge_port_fdb_learning_mode_t</ref></type>
+        <definition>typedef enum _sai_bridge_port_fdb_learning_mode_t sai_bridge_port_fdb_learning_mode_t</definition>
+        <argsstring></argsstring>
+        <name>sai_bridge_port_fdb_learning_mode_t</name>
+        <briefdescription>
+<para>Attribute data for <ref refid="group__SAIBRIDGE_1gga0492c21572a089ddedbb1e69882f6ddfa6de78efb471da129abf991a3e9abc7ef" kindref="member">SAI_BRIDGE_PORT_ATTR_FDB_LEARNING_MODE</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibridge.h" line="66" column="37"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBRIDGE_1ga88cd85016beabbb5336f06b28b184c77" prot="public" static="no">
+        <type>enum <ref refid="group__SAIBRIDGE_1ga26bef926f65ebfe0e8386139659915e9" kindref="member">_sai_bridge_port_type_t</ref></type>
+        <definition>typedef enum _sai_bridge_port_type_t sai_bridge_port_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_bridge_port_type_t</name>
+        <briefdescription>
+<para>Attribute data for <ref refid="group__SAIBRIDGE_1gga0492c21572a089ddedbb1e69882f6ddfad986a0612ff686bc864f304f29c93e44" kindref="member">SAI_BRIDGE_PORT_ATTR_TYPE</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibridge.h" line="92" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBRIDGE_1gabad1e56632930078dbaff1bdfb77b78d" prot="public" static="no">
+        <type>enum <ref refid="group__SAIBRIDGE_1ga990667daaf160faed1ac24691a7a7984" kindref="member">_sai_bridge_port_tagging_mode_t</ref></type>
+        <definition>typedef enum _sai_bridge_port_tagging_mode_t sai_bridge_port_tagging_mode_t</definition>
+        <argsstring></argsstring>
+        <name>sai_bridge_port_tagging_mode_t</name>
+        <briefdescription>
+<para>Attribute data for <ref refid="group__SAIBRIDGE_1gga0492c21572a089ddedbb1e69882f6ddfa28923a850e92850683ee7c3dd8f7dd08" kindref="member">SAI_BRIDGE_PORT_ATTR_TAGGING_MODE</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibridge.h" line="105" column="32"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBRIDGE_1gab8c853a8d3ed6d6de48f5718844aa7cd" prot="public" static="no">
+        <type>enum <ref refid="group__SAIBRIDGE_1ga0492c21572a089ddedbb1e69882f6ddf" kindref="member">_sai_bridge_port_attr_t</ref></type>
+        <definition>typedef enum _sai_bridge_port_attr_t sai_bridge_port_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_bridge_port_attr_t</name>
+        <briefdescription>
+<para>SAI attributes for Bridge Port. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibridge.h" line="368" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBRIDGE_1ga6a6e93b49133729b6aa7df0387a9add8" prot="public" static="no">
+        <type>enum <ref refid="group__SAIBRIDGE_1ga6b8677a710215d5b48c1bb270942e110" kindref="member">_sai_bridge_port_stat_t</ref></type>
+        <definition>typedef enum _sai_bridge_port_stat_t sai_bridge_port_stat_t</definition>
+        <argsstring></argsstring>
+        <name>sai_bridge_port_stat_t</name>
+        <briefdescription>
+<para>Bridge port counter IDs in sai_get_bridge_port_stats() call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibridge.h" line="387" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBRIDGE_1gaa7d6cbe7e50a683009aa3b377d86f479" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_bridge_port_fn) (_Out_ sai_object_id_t *bridge_port_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *bridge_port_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_bridge_port_fn</name>
+        <briefdescription>
+<para>Create bridge port. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">bridge_port_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bridge port ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibridge.h" line="399" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibridge.h" bodystart="399" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBRIDGE_1ga2eec05a802f3d3bc1e3142c3512a56fc" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_bridge_port_fn) (_In_ sai_object_id_t bridge_port_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t bridge_port_id)</argsstring>
+        <name>sai_remove_bridge_port_fn</name>
+        <briefdescription>
+<para>Remove bridge port. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">bridge_port_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bridge port ID</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibridge.h" line="412" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibridge.h" bodystart="412" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBRIDGE_1ga7bfa72a5ca7f5efd4026d07f53a54ed3" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_bridge_port_attribute_fn) (_In_ sai_object_id_t bridge_port_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t bridge_port_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_bridge_port_attribute_fn</name>
+        <briefdescription>
+<para>Set attribute for bridge port. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">bridge_port_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bridge port ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute to set</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibridge.h" line="423" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibridge.h" bodystart="423" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBRIDGE_1ga55f3ff381be601880693fde2fade6146" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_bridge_port_attribute_fn) (_In_ sai_object_id_t bridge_port_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t bridge_port_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_bridge_port_attribute_fn</name>
+        <briefdescription>
+<para>Get attributes of bridge port. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">bridge_port_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bridge port ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibridge.h" line="436" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibridge.h" bodystart="436" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBRIDGE_1ga861b5289606a0bf374dbe2069771c6d8" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_bridge_port_stats_fn) (_In_ sai_object_id_t bridge_port_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t bridge_port_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_bridge_port_stats_fn</name>
+        <briefdescription>
+<para>Get bridge port statistics counters. Deprecated for backward compatibility. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">bridge_port_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bridge port id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibridge.h" line="451" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibridge.h" bodystart="451" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBRIDGE_1ga9b252428d4427c1e8b3f262f9fe48716" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_bridge_port_stats_ext_fn) (_In_ sai_object_id_t bridge_port_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t bridge_port_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_bridge_port_stats_ext_fn</name>
+        <briefdescription>
+<para>Get bridge port statistics counters extended. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">bridge_port_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bridge port id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Statistics mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibridge.h" line="468" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibridge.h" bodystart="468" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBRIDGE_1gad7f739e17cbe9d3b6a50b055ab19125a" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_clear_bridge_port_stats_fn) (_In_ sai_object_id_t bridge_port_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</definition>
+        <argsstring>)(_In_ sai_object_id_t bridge_port_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</argsstring>
+        <name>sai_clear_bridge_port_stats_fn</name>
+        <briefdescription>
+<para>Clear bridge port statistics counters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">bridge_port_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bridge port id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibridge.h" line="484" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibridge.h" bodystart="484" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBRIDGE_1gae0a165749abfd624ea5f5c597f2f9aa4" prot="public" static="no">
+        <type>enum <ref refid="group__SAIBRIDGE_1ga592803a71de3540e438dd4ce1abd7842" kindref="member">_sai_bridge_type_t</ref></type>
+        <definition>typedef enum _sai_bridge_type_t sai_bridge_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_bridge_type_t</name>
+        <briefdescription>
+<para>Attribute data for <ref refid="group__SAIBRIDGE_1ggac09d1069f8f58256a27acc3f393e6e29a1af1681c4e2120beff07b8d432a4e3f1" kindref="member">SAI_BRIDGE_ATTR_TYPE</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibridge.h" line="500" column="19"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBRIDGE_1gaa3f64e9d5af89539fbd40cef2aee4ac9" prot="public" static="no">
+        <type>enum <ref refid="group__SAIBRIDGE_1gadfab294f0cb10158b8bd8abae73f7fa8" kindref="member">_sai_bridge_flood_control_type_t</ref></type>
+        <definition>typedef enum _sai_bridge_flood_control_type_t sai_bridge_flood_control_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_bridge_flood_control_type_t</name>
+        <briefdescription>
+<para>Attribute data for unknown unicast, unknown multicast and broadcast flood controls. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibridge.h" line="531" column="33"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBRIDGE_1ga09e2403ef4f7de2d1140a276f5249988" prot="public" static="no">
+        <type>enum <ref refid="group__SAIBRIDGE_1gac09d1069f8f58256a27acc3f393e6e29" kindref="member">_sai_bridge_attr_t</ref></type>
+        <definition>typedef enum _sai_bridge_attr_t sai_bridge_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_bridge_attr_t</name>
+        <briefdescription>
+<para>SAI attributes for Bridge. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibridge.h" line="694" column="19"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBRIDGE_1ga836b8549589fdf395af83c7bf87f1a21" prot="public" static="no">
+        <type>enum <ref refid="group__SAIBRIDGE_1ga9d672c261551e5d7a56a3fcb0d6c3ffe" kindref="member">_sai_bridge_stat_t</ref></type>
+        <definition>typedef enum _sai_bridge_stat_t sai_bridge_stat_t</definition>
+        <argsstring></argsstring>
+        <name>sai_bridge_stat_t</name>
+        <briefdescription>
+<para>Bridge counter IDs in sai_get_bridge_stats() call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibridge.h" line="713" column="19"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBRIDGE_1ga7352b95c2a560154ea7f1790e9890d30" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_bridge_fn) (_Out_ sai_object_id_t *bridge_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *bridge_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_bridge_fn</name>
+        <briefdescription>
+<para>Create bridge. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">bridge_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bridge ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibridge.h" line="725" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibridge.h" bodystart="725" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBRIDGE_1ga372759225d83b06475b76d5f36821e23" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_bridge_fn) (_In_ sai_object_id_t bridge_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t bridge_id)</argsstring>
+        <name>sai_remove_bridge_fn</name>
+        <briefdescription>
+<para>Remove bridge. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">bridge_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bridge ID</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibridge.h" line="738" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibridge.h" bodystart="738" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBRIDGE_1ga7c24552517b0d372119485b76774a035" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_bridge_attribute_fn) (_In_ sai_object_id_t bridge_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t bridge_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_bridge_attribute_fn</name>
+        <briefdescription>
+<para>Set attribute for bridge. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">bridge_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bridge ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute to set</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibridge.h" line="749" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibridge.h" bodystart="749" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBRIDGE_1gaf4618439e9a53af0ea863465d8130097" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_bridge_attribute_fn) (_In_ sai_object_id_t bridge_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t bridge_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_bridge_attribute_fn</name>
+        <briefdescription>
+<para>Get attributes of bridge. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">bridge_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bridge ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibridge.h" line="762" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibridge.h" bodystart="762" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBRIDGE_1ga47ba68b651668d06926bf7b050cc8dd3" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_bridge_stats_fn) (_In_ sai_object_id_t bridge_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t bridge_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_bridge_stats_fn</name>
+        <briefdescription>
+<para>Get bridge statistics counters. Deprecated for backward compatibility. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">bridge_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bridge id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibridge.h" line="777" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibridge.h" bodystart="777" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBRIDGE_1ga88d1c936dee8cd2b8b98bff66d3a15ba" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_bridge_stats_ext_fn) (_In_ sai_object_id_t bridge_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t bridge_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_bridge_stats_ext_fn</name>
+        <briefdescription>
+<para>Get bridge statistics counters extended. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">bridge_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bridge id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Statistics mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibridge.h" line="794" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibridge.h" bodystart="794" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBRIDGE_1ga8939c47661eee6c068c36353a6af66bf" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_clear_bridge_stats_fn) (_In_ sai_object_id_t bridge_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</definition>
+        <argsstring>)(_In_ sai_object_id_t bridge_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</argsstring>
+        <name>sai_clear_bridge_stats_fn</name>
+        <briefdescription>
+<para>Clear bridge statistics counters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">bridge_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bridge id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibridge.h" line="810" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saibridge.h" bodystart="810" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIBRIDGE_1ga231d95d68cc89a8e5f2c6d00b9546e28" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__bridge__api__t" kindref="compound">_sai_bridge_api_t</ref></type>
+        <definition>typedef struct _sai_bridge_api_t sai_bridge_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_bridge_api_t</name>
+        <briefdescription>
+<para>Bridge methods table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saibridge.h" line="834" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

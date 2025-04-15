@@ -1,0 +1,770 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__dash__meter__api__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_dash_meter_api_t</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__dash__meter__api__t_1a815aada4d40f85326abcb15afba47975" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIEXPERIMENTALDASHMETER_1gab4107eefc8224c32aaa901f3a0d49073" kindref="member">sai_create_meter_bucket_entry_fn</ref></type>
+        <definition>sai_create_meter_bucket_entry_fn _sai_dash_meter_api_t::create_meter_bucket_entry</definition>
+        <argsstring></argsstring>
+        <name>create_meter_bucket_entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="475" column="48" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="475" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__dash__meter__api__t_1a8f947c5335ee5ace06ae8441a4ce387a" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIEXPERIMENTALDASHMETER_1ga2a7b4516e78e41c7dd99f864811617db" kindref="member">sai_remove_meter_bucket_entry_fn</ref></type>
+        <definition>sai_remove_meter_bucket_entry_fn _sai_dash_meter_api_t::remove_meter_bucket_entry</definition>
+        <argsstring></argsstring>
+        <name>remove_meter_bucket_entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="476" column="48" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="476" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__dash__meter__api__t_1a830bc2d99f34c49c18840e86b1f4e587" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIEXPERIMENTALDASHMETER_1ga128c40f93219121cb460cb9e586dd6b1" kindref="member">sai_set_meter_bucket_entry_attribute_fn</ref></type>
+        <definition>sai_set_meter_bucket_entry_attribute_fn _sai_dash_meter_api_t::set_meter_bucket_entry_attribute</definition>
+        <argsstring></argsstring>
+        <name>set_meter_bucket_entry_attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="477" column="48" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="477" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__dash__meter__api__t_1a3b2c578c85da973cfe85ad03ec791a54" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIEXPERIMENTALDASHMETER_1ga07621d6d1bd2996c5451f7667e3dd4b4" kindref="member">sai_get_meter_bucket_entry_attribute_fn</ref></type>
+        <definition>sai_get_meter_bucket_entry_attribute_fn _sai_dash_meter_api_t::get_meter_bucket_entry_attribute</definition>
+        <argsstring></argsstring>
+        <name>get_meter_bucket_entry_attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="478" column="48" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="478" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__dash__meter__api__t_1a9c949df239d9f5febc1e56b8e0bc4243" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIEXPERIMENTALDASHMETER_1gae606b348064d6297afb7edf43c77d2e4" kindref="member">sai_get_meter_bucket_entry_stats_fn</ref></type>
+        <definition>sai_get_meter_bucket_entry_stats_fn _sai_dash_meter_api_t::get_meter_bucket_entry_stats</definition>
+        <argsstring></argsstring>
+        <name>get_meter_bucket_entry_stats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="479" column="48" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="479" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__dash__meter__api__t_1aa7860ed5bd15281f15b05a43845f8cb6" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIEXPERIMENTALDASHMETER_1ga7b37712cdc436d0845b5dbe44d6f32b3" kindref="member">sai_get_meter_bucket_entry_stats_ext_fn</ref></type>
+        <definition>sai_get_meter_bucket_entry_stats_ext_fn _sai_dash_meter_api_t::get_meter_bucket_entry_stats_ext</definition>
+        <argsstring></argsstring>
+        <name>get_meter_bucket_entry_stats_ext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="480" column="48" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="480" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__dash__meter__api__t_1af49a2939e357d0fa0b48be61c26aca85" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIEXPERIMENTALDASHMETER_1gaf301baba2a56536c9d1d06d180d4ff3c" kindref="member">sai_clear_meter_bucket_entry_stats_fn</ref></type>
+        <definition>sai_clear_meter_bucket_entry_stats_fn _sai_dash_meter_api_t::clear_meter_bucket_entry_stats</definition>
+        <argsstring></argsstring>
+        <name>clear_meter_bucket_entry_stats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="481" column="48" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="481" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__dash__meter__api__t_1af51930645c08a6c25b6455877cc1351a" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIEXPERIMENTALDASHMETER_1ga2adb0521149a02ec72a544a55a5af344" kindref="member">sai_bulk_create_meter_bucket_entry_fn</ref></type>
+        <definition>sai_bulk_create_meter_bucket_entry_fn _sai_dash_meter_api_t::create_meter_bucket_entries</definition>
+        <argsstring></argsstring>
+        <name>create_meter_bucket_entries</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="482" column="48" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="482" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__dash__meter__api__t_1a67decaa06792cb91b8f4a7e3fca7ca92" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIEXPERIMENTALDASHMETER_1ga712d3811269cb1570550154e6828d8a1" kindref="member">sai_bulk_remove_meter_bucket_entry_fn</ref></type>
+        <definition>sai_bulk_remove_meter_bucket_entry_fn _sai_dash_meter_api_t::remove_meter_bucket_entries</definition>
+        <argsstring></argsstring>
+        <name>remove_meter_bucket_entries</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="483" column="48" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="483" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__dash__meter__api__t_1aa1fa33a8da5a5bab1e4e1bc82f76765d" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIEXPERIMENTALDASHMETER_1ga7de9618adb88ab7c45633ad9db94d3e4" kindref="member">sai_create_meter_policy_fn</ref></type>
+        <definition>sai_create_meter_policy_fn _sai_dash_meter_api_t::create_meter_policy</definition>
+        <argsstring></argsstring>
+        <name>create_meter_policy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="485" column="48" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="485" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__dash__meter__api__t_1accc9ad992fc9f3f7eb905082b0b6426c" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIEXPERIMENTALDASHMETER_1ga9b8e10d835e28006ab6ef766c5ccf5b4" kindref="member">sai_remove_meter_policy_fn</ref></type>
+        <definition>sai_remove_meter_policy_fn _sai_dash_meter_api_t::remove_meter_policy</definition>
+        <argsstring></argsstring>
+        <name>remove_meter_policy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="486" column="48" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="486" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__dash__meter__api__t_1a4ecd6c910c4622affa8d0791d32049f2" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIEXPERIMENTALDASHMETER_1ga6883ab829d4a9e48cb13d5f07bf2c465" kindref="member">sai_set_meter_policy_attribute_fn</ref></type>
+        <definition>sai_set_meter_policy_attribute_fn _sai_dash_meter_api_t::set_meter_policy_attribute</definition>
+        <argsstring></argsstring>
+        <name>set_meter_policy_attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="487" column="48" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="487" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__dash__meter__api__t_1a7a04515dde37f1506d08cc864e1ce97c" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIEXPERIMENTALDASHMETER_1ga20b556820c89ab1c6655fd550e74f77b" kindref="member">sai_get_meter_policy_attribute_fn</ref></type>
+        <definition>sai_get_meter_policy_attribute_fn _sai_dash_meter_api_t::get_meter_policy_attribute</definition>
+        <argsstring></argsstring>
+        <name>get_meter_policy_attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="488" column="48" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="488" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__dash__meter__api__t_1a7ab07c86832bbbcdfb397a8a0bf2da0a" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga4610f346b1ad7a6272ba9d9bf933da94" kindref="member">sai_bulk_object_create_fn</ref></type>
+        <definition>sai_bulk_object_create_fn _sai_dash_meter_api_t::create_meter_policys</definition>
+        <argsstring></argsstring>
+        <name>create_meter_policys</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="489" column="48" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="489" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__dash__meter__api__t_1a1fca22b11afe45fdf1f0b256e604e048" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga4bbefb281d59e3e5c25ad8b9868d35c7" kindref="member">sai_bulk_object_remove_fn</ref></type>
+        <definition>sai_bulk_object_remove_fn _sai_dash_meter_api_t::remove_meter_policys</definition>
+        <argsstring></argsstring>
+        <name>remove_meter_policys</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="490" column="48" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="490" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__dash__meter__api__t_1a318194eca0c9f09f44bb6a01bd843666" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIEXPERIMENTALDASHMETER_1gab0b927b12d7d0ccd09e047734f134cdf" kindref="member">sai_create_meter_rule_fn</ref></type>
+        <definition>sai_create_meter_rule_fn _sai_dash_meter_api_t::create_meter_rule</definition>
+        <argsstring></argsstring>
+        <name>create_meter_rule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="492" column="48" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="492" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__dash__meter__api__t_1a02ddf649d8d10a247d282498a7951ff4" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIEXPERIMENTALDASHMETER_1gaa6c895faac9937e42dab3984213d96a9" kindref="member">sai_remove_meter_rule_fn</ref></type>
+        <definition>sai_remove_meter_rule_fn _sai_dash_meter_api_t::remove_meter_rule</definition>
+        <argsstring></argsstring>
+        <name>remove_meter_rule</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="493" column="48" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="493" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__dash__meter__api__t_1af4693f8d0915307fba11f5af0ede59ea" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIEXPERIMENTALDASHMETER_1ga7ef5db39d4306a6ccd52d4c5068dea51" kindref="member">sai_set_meter_rule_attribute_fn</ref></type>
+        <definition>sai_set_meter_rule_attribute_fn _sai_dash_meter_api_t::set_meter_rule_attribute</definition>
+        <argsstring></argsstring>
+        <name>set_meter_rule_attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="494" column="48" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="494" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__dash__meter__api__t_1ad936c4d7d2f07d2c7ba4415958d0f3b8" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIEXPERIMENTALDASHMETER_1ga82da3a9a872383e60ce238b23cb88bdb" kindref="member">sai_get_meter_rule_attribute_fn</ref></type>
+        <definition>sai_get_meter_rule_attribute_fn _sai_dash_meter_api_t::get_meter_rule_attribute</definition>
+        <argsstring></argsstring>
+        <name>get_meter_rule_attribute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="495" column="48" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="495" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__dash__meter__api__t_1a1681f164ab65e21f019557d5adebd6be" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga4610f346b1ad7a6272ba9d9bf933da94" kindref="member">sai_bulk_object_create_fn</ref></type>
+        <definition>sai_bulk_object_create_fn _sai_dash_meter_api_t::create_meter_rules</definition>
+        <argsstring></argsstring>
+        <name>create_meter_rules</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="496" column="48" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="496" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__dash__meter__api__t_1a3bf0bc2b3ff1cb4d529c341bc2b10520" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga4bbefb281d59e3e5c25ad8b9868d35c7" kindref="member">sai_bulk_object_remove_fn</ref></type>
+        <definition>sai_bulk_object_remove_fn _sai_dash_meter_api_t::remove_meter_rules</definition>
+        <argsstring></argsstring>
+        <name>remove_meter_rules</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="497" column="48" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="497" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="49">
+        <label>_sai_port_snr_values_t</label>
+        <link refid="struct__sai__port__snr__values__t"/>
+      </node>
+      <node id="14">
+        <label>_sai_u16_range_list_t</label>
+        <link refid="struct__sai__u16__range__list__t"/>
+        <childnode refid="15" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="33">
+        <label>_sai_system_port_config_list_t</label>
+        <link refid="struct__sai__system__port__config__list__t"/>
+        <childnode refid="34" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="39">
+        <label>_sai_port_frequency_offset_ppm_list_t</label>
+        <link refid="struct__sai__port__frequency__offset__ppm__list__t"/>
+        <childnode refid="40" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>_sai_acl_resource_t</label>
+        <link refid="struct__sai__acl__resource__t"/>
+      </node>
+      <node id="11">
+        <label>_sai_qos_map_list_t</label>
+        <link refid="struct__sai__qos__map__list__t"/>
+        <childnode refid="12" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="37">
+        <label>_sai_fabric_port_reachability_t</label>
+        <link refid="struct__sai__fabric__port__reachability__t"/>
+      </node>
+      <node id="1">
+        <label>_sai_dash_meter_api_t</label>
+        <link refid="struct__sai__dash__meter__api__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>create_meter_policy</edgelabel>
+          <edgelabel>create_meter_policys</edgelabel>
+          <edgelabel>create_meter_rule</edgelabel>
+          <edgelabel>create_meter_rules</edgelabel>
+          <edgelabel>get_meter_policy_attribute</edgelabel>
+          <edgelabel>get_meter_rule_attribute</edgelabel>
+          <edgelabel>set_meter_policy_attribute</edgelabel>
+          <edgelabel>set_meter_rule_attribute</edgelabel>
+        </childnode>
+        <childnode refid="58" relation="usage">
+          <edgelabel>clear_meter_bucket_entry_stats</edgelabel>
+          <edgelabel>create_meter_bucket_entries</edgelabel>
+          <edgelabel>create_meter_bucket_entry</edgelabel>
+          <edgelabel>get_meter_bucket_entry_attribute</edgelabel>
+          <edgelabel>get_meter_bucket_entry_stats</edgelabel>
+          <edgelabel>get_meter_bucket_entry_stats_ext</edgelabel>
+          <edgelabel>remove_meter_bucket_entries</edgelabel>
+          <edgelabel>remove_meter_bucket_entry</edgelabel>
+          <edgelabel>set_meter_bucket_entry_attribute</edgelabel>
+        </childnode>
+      </node>
+      <node id="44">
+        <label>_sai_acl_action_data_t</label>
+        <link refid="struct__sai__acl__action__data__t"/>
+        <childnode refid="45" relation="usage">
+          <edgelabel>parameter</edgelabel>
+        </childnode>
+      </node>
+      <node id="34">
+        <label>_sai_system_port_config_t</label>
+        <link refid="struct__sai__system__port__config__t"/>
+      </node>
+      <node id="26">
+        <label>_sai_object_list_t</label>
+        <link refid="struct__sai__object__list__t"/>
+      </node>
+      <node id="12">
+        <label>_sai_qos_map_t</label>
+        <link refid="struct__sai__qos__map__t"/>
+        <childnode refid="13" relation="usage">
+          <edgelabel>key</edgelabel>
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="13">
+        <label>_sai_qos_map_params_t</label>
+        <link refid="struct__sai__qos__map__params__t"/>
+      </node>
+      <node id="51">
+        <label>_sai_s16_list_t</label>
+        <link refid="struct__sai__s16__list__t"/>
+      </node>
+      <node id="24">
+        <label>_sai_acl_field_data_t</label>
+        <link refid="struct__sai__acl__field__data__t"/>
+        <childnode refid="25" relation="usage">
+          <edgelabel>data</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>mask</edgelabel>
+        </childnode>
+      </node>
+      <node id="53">
+        <label>_sai_port_eye_values_list_t</label>
+        <link refid="struct__sai__port__eye__values__list__t"/>
+        <childnode refid="54" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="6">
+        <label>_sai_tlv_t</label>
+        <link refid="struct__sai__tlv__t"/>
+        <childnode refid="7" relation="usage">
+          <edgelabel>entry</edgelabel>
+        </childnode>
+      </node>
+      <node id="18">
+        <label>_sai_port_lane_latch_status_list_t</label>
+        <link refid="struct__sai__port__lane__latch__status__list__t"/>
+        <childnode refid="19" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="5">
+        <label>_sai_tlv_list_t</label>
+        <link refid="struct__sai__tlv__list__t"/>
+        <childnode refid="6" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="38">
+        <label>_sai_u32_range_t</label>
+        <link refid="struct__sai__u32__range__t"/>
+      </node>
+      <node id="4">
+        <label>_sai_port_err_status_list_t</label>
+        <link refid="struct__sai__port__err__status__list__t"/>
+      </node>
+      <node id="16">
+        <label>_sai_json_t</label>
+        <link refid="struct__sai__json__t"/>
+        <childnode refid="17" relation="usage">
+          <edgelabel>json</edgelabel>
+        </childnode>
+      </node>
+      <node id="35">
+        <label>_sai_segment_list_t</label>
+        <link refid="struct__sai__segment__list__t"/>
+      </node>
+      <node id="17">
+        <label>_sai_s8_list_t</label>
+        <link refid="struct__sai__s8__list__t"/>
+      </node>
+      <node id="3">
+        <label>_sai_attribute_value_t</label>
+        <link refid="union__sai__attribute__value__t"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>porterror</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>tlvlist</edgelabel>
+        </childnode>
+        <childnode refid="9" relation="usage">
+          <edgelabel>aclresource</edgelabel>
+        </childnode>
+        <childnode refid="11" relation="usage">
+          <edgelabel>qosmap</edgelabel>
+        </childnode>
+        <childnode refid="14" relation="usage">
+          <edgelabel>u16rangelist</edgelabel>
+        </childnode>
+        <childnode refid="16" relation="usage">
+          <edgelabel>json</edgelabel>
+        </childnode>
+        <childnode refid="18" relation="usage">
+          <edgelabel>portlanelatchstatuslist</edgelabel>
+        </childnode>
+        <childnode refid="21" relation="usage">
+          <edgelabel>ipaddrlist</edgelabel>
+        </childnode>
+        <childnode refid="24" relation="usage">
+          <edgelabel>aclfield</edgelabel>
+        </childnode>
+        <childnode refid="29" relation="usage">
+          <edgelabel>u16list</edgelabel>
+        </childnode>
+        <childnode refid="30" relation="usage">
+          <edgelabel>ipprefix</edgelabel>
+        </childnode>
+        <childnode refid="31" relation="usage">
+          <edgelabel>aclchainlist</edgelabel>
+        </childnode>
+        <childnode refid="33" relation="usage">
+          <edgelabel>sysportconfiglist</edgelabel>
+        </childnode>
+        <childnode refid="35" relation="usage">
+          <edgelabel>segmentlist</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>portpowerconsumption</edgelabel>
+        </childnode>
+        <childnode refid="20" relation="usage">
+          <edgelabel>latchstatus</edgelabel>
+        </childnode>
+        <childnode refid="37" relation="usage">
+          <edgelabel>reachability</edgelabel>
+        </childnode>
+        <childnode refid="34" relation="usage">
+          <edgelabel>sysportconfig</edgelabel>
+        </childnode>
+        <childnode refid="38" relation="usage">
+          <edgelabel>u32range</edgelabel>
+        </childnode>
+        <childnode refid="39" relation="usage">
+          <edgelabel>portfrequencyoffsetppmlist</edgelabel>
+        </childnode>
+        <childnode refid="41" relation="usage">
+          <edgelabel>s32list</edgelabel>
+        </childnode>
+        <childnode refid="42" relation="usage">
+          <edgelabel>ipprefixlist</edgelabel>
+        </childnode>
+        <childnode refid="28" relation="usage">
+          <edgelabel>aclmask</edgelabel>
+        </childnode>
+        <childnode refid="26" relation="usage">
+          <edgelabel>objlist</edgelabel>
+        </childnode>
+        <childnode refid="43" relation="usage">
+          <edgelabel>timespec</edgelabel>
+        </childnode>
+        <childnode refid="44" relation="usage">
+          <edgelabel>aclaction</edgelabel>
+        </childnode>
+        <childnode refid="46" relation="usage">
+          <edgelabel>vlanlist</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>ipaddr</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>u8list</edgelabel>
+        </childnode>
+        <childnode refid="47" relation="usage">
+          <edgelabel>rx_state</edgelabel>
+        </childnode>
+        <childnode refid="48" relation="usage">
+          <edgelabel>portsnrlist</edgelabel>
+        </childnode>
+        <childnode refid="50" relation="usage">
+          <edgelabel>u32list</edgelabel>
+        </childnode>
+        <childnode refid="51" relation="usage">
+          <edgelabel>s16list</edgelabel>
+        </childnode>
+        <childnode refid="52" relation="usage">
+          <edgelabel>aclcapability</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>s8list</edgelabel>
+        </childnode>
+        <childnode refid="53" relation="usage">
+          <edgelabel>porteyevalues</edgelabel>
+        </childnode>
+        <childnode refid="55" relation="usage">
+          <edgelabel>maplist</edgelabel>
+        </childnode>
+        <childnode refid="57" relation="usage">
+          <edgelabel>s32range</edgelabel>
+        </childnode>
+      </node>
+      <node id="48">
+        <label>_sai_port_snr_list_t</label>
+        <link refid="struct__sai__port__snr__list__t"/>
+        <childnode refid="49" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="25">
+        <label>_sai_acl_field_data_data_t</label>
+        <link refid="union__sai__acl__field__data__data__t"/>
+        <childnode refid="26" relation="usage">
+          <edgelabel>objlist</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>u8list</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>_sai_attribute_t</label>
+        <link refid="struct__sai__attribute__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="32">
+        <label>_sai_acl_chain_t</label>
+        <link refid="struct__sai__acl__chain__t"/>
+      </node>
+      <node id="30">
+        <label>_sai_ip_prefix_t</label>
+        <link refid="struct__sai__ip__prefix__t"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>addr</edgelabel>
+          <edgelabel>mask</edgelabel>
+        </childnode>
+      </node>
+      <node id="50">
+        <label>_sai_u32_list_t</label>
+        <link refid="struct__sai__u32__list__t"/>
+      </node>
+      <node id="15">
+        <label>_sai_u16_range_t</label>
+        <link refid="struct__sai__u16__range__t"/>
+      </node>
+      <node id="46">
+        <label>_sai_vlan_list_t</label>
+        <link refid="struct__sai__vlan__list__t"/>
+      </node>
+      <node id="19">
+        <label>_sai_port_lane_latch_status_t</label>
+        <link refid="struct__sai__port__lane__latch__status__t"/>
+        <childnode refid="20" relation="usage">
+          <edgelabel>value</edgelabel>
+        </childnode>
+      </node>
+      <node id="36">
+        <label>_sai_poe_port_power_consumption_t</label>
+        <link refid="struct__sai__poe__port__power__consumption__t"/>
+      </node>
+      <node id="7">
+        <label>_sai_tlv_entry_t</label>
+        <link refid="union__sai__tlv__entry__t"/>
+        <childnode refid="8" relation="usage">
+          <edgelabel>hmac</edgelabel>
+        </childnode>
+      </node>
+      <node id="31">
+        <label>_sai_acl_chain_list_t</label>
+        <link refid="struct__sai__acl__chain__list__t"/>
+        <childnode refid="32" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="55">
+        <label>_sai_map_list_t</label>
+        <link refid="struct__sai__map__list__t"/>
+        <childnode refid="56" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="57">
+        <label>_sai_s32_range_t</label>
+        <link refid="struct__sai__s32__range__t"/>
+      </node>
+      <node id="8">
+        <label>_sai_hmac_t</label>
+        <link refid="struct__sai__hmac__t"/>
+      </node>
+      <node id="28">
+        <label>_sai_acl_field_data_mask_t</label>
+        <link refid="union__sai__acl__field__data__mask__t"/>
+        <childnode refid="27" relation="usage">
+          <edgelabel>u8list</edgelabel>
+        </childnode>
+      </node>
+      <node id="43">
+        <label>_sai_timespec_t</label>
+        <link refid="struct__sai__timespec__t"/>
+      </node>
+      <node id="56">
+        <label>_sai_map_t</label>
+        <link refid="struct__sai__map__t"/>
+      </node>
+      <node id="54">
+        <label>_sai_port_lane_eye_values_t</label>
+        <link refid="struct__sai__port__lane__eye__values__t"/>
+      </node>
+      <node id="20">
+        <label>_sai_latch_status_t</label>
+        <link refid="struct__sai__latch__status__t"/>
+      </node>
+      <node id="9">
+        <label>_sai_acl_resource_list_t</label>
+        <link refid="struct__sai__acl__resource__list__t"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="58">
+        <label>_sai_meter_bucket_entry_t</label>
+        <link refid="struct__sai__meter__bucket__entry__t"/>
+      </node>
+      <node id="22">
+        <label>_sai_ip_address_t</label>
+        <link refid="struct__sai__ip__address__t"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>addr</edgelabel>
+        </childnode>
+      </node>
+      <node id="42">
+        <label>_sai_ip_prefix_list_t</label>
+        <link refid="struct__sai__ip__prefix__list__t"/>
+        <childnode refid="30" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="41">
+        <label>_sai_s32_list_t</label>
+        <link refid="struct__sai__s32__list__t"/>
+      </node>
+      <node id="21">
+        <label>_sai_ip_address_list_t</label>
+        <link refid="struct__sai__ip__address__list__t"/>
+        <childnode refid="22" relation="usage">
+          <edgelabel>list</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>_sai_ip_addr_t</label>
+        <link refid="union__sai__ip__addr__t"/>
+      </node>
+      <node id="27">
+        <label>_sai_u8_list_t</label>
+        <link refid="struct__sai__u8__list__t"/>
+      </node>
+      <node id="29">
+        <label>_sai_u16_list_t</label>
+        <link refid="struct__sai__u16__list__t"/>
+      </node>
+      <node id="45">
+        <label>_sai_acl_action_parameter_t</label>
+        <link refid="union__sai__acl__action__parameter__t"/>
+        <childnode refid="26" relation="usage">
+          <edgelabel>objlist</edgelabel>
+        </childnode>
+        <childnode refid="22" relation="usage">
+          <edgelabel>ipaddr</edgelabel>
+        </childnode>
+      </node>
+      <node id="40">
+        <label>_sai_port_frequency_offset_ppm_values_t</label>
+        <link refid="struct__sai__port__frequency__offset__ppm__values__t"/>
+      </node>
+      <node id="52">
+        <label>_sai_acl_capability_t</label>
+        <link refid="struct__sai__acl__capability__t"/>
+        <childnode refid="41" relation="usage">
+          <edgelabel>action_list</edgelabel>
+        </childnode>
+      </node>
+      <node id="47">
+        <label>_sai_prbs_rx_state_t</label>
+        <link refid="struct__sai__prbs__rx__state__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" line="473" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashmeter.h" bodystart="474" bodyend="499"/>
+    <listofallmembers>
+      <member refid="struct__sai__dash__meter__api__t_1af49a2939e357d0fa0b48be61c26aca85" prot="public" virt="non-virtual"><scope>_sai_dash_meter_api_t</scope><name>clear_meter_bucket_entry_stats</name></member>
+      <member refid="struct__sai__dash__meter__api__t_1af51930645c08a6c25b6455877cc1351a" prot="public" virt="non-virtual"><scope>_sai_dash_meter_api_t</scope><name>create_meter_bucket_entries</name></member>
+      <member refid="struct__sai__dash__meter__api__t_1a815aada4d40f85326abcb15afba47975" prot="public" virt="non-virtual"><scope>_sai_dash_meter_api_t</scope><name>create_meter_bucket_entry</name></member>
+      <member refid="struct__sai__dash__meter__api__t_1aa1fa33a8da5a5bab1e4e1bc82f76765d" prot="public" virt="non-virtual"><scope>_sai_dash_meter_api_t</scope><name>create_meter_policy</name></member>
+      <member refid="struct__sai__dash__meter__api__t_1a7ab07c86832bbbcdfb397a8a0bf2da0a" prot="public" virt="non-virtual"><scope>_sai_dash_meter_api_t</scope><name>create_meter_policys</name></member>
+      <member refid="struct__sai__dash__meter__api__t_1a318194eca0c9f09f44bb6a01bd843666" prot="public" virt="non-virtual"><scope>_sai_dash_meter_api_t</scope><name>create_meter_rule</name></member>
+      <member refid="struct__sai__dash__meter__api__t_1a1681f164ab65e21f019557d5adebd6be" prot="public" virt="non-virtual"><scope>_sai_dash_meter_api_t</scope><name>create_meter_rules</name></member>
+      <member refid="struct__sai__dash__meter__api__t_1a3b2c578c85da973cfe85ad03ec791a54" prot="public" virt="non-virtual"><scope>_sai_dash_meter_api_t</scope><name>get_meter_bucket_entry_attribute</name></member>
+      <member refid="struct__sai__dash__meter__api__t_1a9c949df239d9f5febc1e56b8e0bc4243" prot="public" virt="non-virtual"><scope>_sai_dash_meter_api_t</scope><name>get_meter_bucket_entry_stats</name></member>
+      <member refid="struct__sai__dash__meter__api__t_1aa7860ed5bd15281f15b05a43845f8cb6" prot="public" virt="non-virtual"><scope>_sai_dash_meter_api_t</scope><name>get_meter_bucket_entry_stats_ext</name></member>
+      <member refid="struct__sai__dash__meter__api__t_1a7a04515dde37f1506d08cc864e1ce97c" prot="public" virt="non-virtual"><scope>_sai_dash_meter_api_t</scope><name>get_meter_policy_attribute</name></member>
+      <member refid="struct__sai__dash__meter__api__t_1ad936c4d7d2f07d2c7ba4415958d0f3b8" prot="public" virt="non-virtual"><scope>_sai_dash_meter_api_t</scope><name>get_meter_rule_attribute</name></member>
+      <member refid="struct__sai__dash__meter__api__t_1a67decaa06792cb91b8f4a7e3fca7ca92" prot="public" virt="non-virtual"><scope>_sai_dash_meter_api_t</scope><name>remove_meter_bucket_entries</name></member>
+      <member refid="struct__sai__dash__meter__api__t_1a8f947c5335ee5ace06ae8441a4ce387a" prot="public" virt="non-virtual"><scope>_sai_dash_meter_api_t</scope><name>remove_meter_bucket_entry</name></member>
+      <member refid="struct__sai__dash__meter__api__t_1accc9ad992fc9f3f7eb905082b0b6426c" prot="public" virt="non-virtual"><scope>_sai_dash_meter_api_t</scope><name>remove_meter_policy</name></member>
+      <member refid="struct__sai__dash__meter__api__t_1a1fca22b11afe45fdf1f0b256e604e048" prot="public" virt="non-virtual"><scope>_sai_dash_meter_api_t</scope><name>remove_meter_policys</name></member>
+      <member refid="struct__sai__dash__meter__api__t_1a02ddf649d8d10a247d282498a7951ff4" prot="public" virt="non-virtual"><scope>_sai_dash_meter_api_t</scope><name>remove_meter_rule</name></member>
+      <member refid="struct__sai__dash__meter__api__t_1a3bf0bc2b3ff1cb4d529c341bc2b10520" prot="public" virt="non-virtual"><scope>_sai_dash_meter_api_t</scope><name>remove_meter_rules</name></member>
+      <member refid="struct__sai__dash__meter__api__t_1a830bc2d99f34c49c18840e86b1f4e587" prot="public" virt="non-virtual"><scope>_sai_dash_meter_api_t</scope><name>set_meter_bucket_entry_attribute</name></member>
+      <member refid="struct__sai__dash__meter__api__t_1a4ecd6c910c4622affa8d0791d32049f2" prot="public" virt="non-virtual"><scope>_sai_dash_meter_api_t</scope><name>set_meter_policy_attribute</name></member>
+      <member refid="struct__sai__dash__meter__api__t_1af4693f8d0915307fba11f5af0ede59ea" prot="public" virt="non-virtual"><scope>_sai_dash_meter_api_t</scope><name>set_meter_rule_attribute</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

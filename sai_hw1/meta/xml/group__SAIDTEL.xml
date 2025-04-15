@@ -1,0 +1,1758 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group__SAIDTEL" kind="group">
+    <compoundname>SAIDTEL</compoundname>
+    <title>SAI - DTEL specific API definitions</title>
+    <innerclass refid="struct__sai__dtel__api__t" prot="public">_sai_dtel_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIDTEL_1ga4671f4e49001568353b72c0e4e080083" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_dtel_attr_t</name>
+        <enumvalue id="group__SAIDTEL_1gga4671f4e49001568353b72c0e4e080083aa065bb2969de92c1970b86db82ce11e5" prot="public">
+          <name>SAI_DTEL_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga4671f4e49001568353b72c0e4e080083a11cbc082e5b15f00af0ff1bf31e4e68d" prot="public">
+          <name>SAI_DTEL_ATTR_INT_ENDPOINT_ENABLE</name>
+          <initializer>= SAI_DTEL_ATTR_START</initializer>
+          <briefdescription>
+<para>Enable DTEL INT endpoint. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga4671f4e49001568353b72c0e4e080083a9cd8793f83cd35e8468328c497813839" prot="public">
+          <name>SAI_DTEL_ATTR_INT_TRANSIT_ENABLE</name>
+          <briefdescription>
+<para>Enable DTEL INT transit. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga4671f4e49001568353b72c0e4e080083a0f35d3582e86f472c18062673ff06635" prot="public">
+          <name>SAI_DTEL_ATTR_POSTCARD_ENABLE</name>
+          <briefdescription>
+<para>Enable Packet postcard. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga4671f4e49001568353b72c0e4e080083a6e9fee1d9dd16679ecdb132a7c9eb83e" prot="public">
+          <name>SAI_DTEL_ATTR_DROP_REPORT_ENABLE</name>
+          <briefdescription>
+<para>Enable Drop Report. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga4671f4e49001568353b72c0e4e080083a825101ba4f9dd182d4d32d0dc23e6a93" prot="public">
+          <name>SAI_DTEL_ATTR_QUEUE_REPORT_ENABLE</name>
+          <briefdescription>
+<para>Enable Queue Report. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga4671f4e49001568353b72c0e4e080083a46867fefded15a97cd8b8533d8515b87" prot="public">
+          <name>SAI_DTEL_ATTR_SWITCH_ID</name>
+          <briefdescription>
+<para>Globally unique switch ID. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga4671f4e49001568353b72c0e4e080083a7f05cfa03244c211537df3755b68fce3" prot="public">
+          <name>SAI_DTEL_ATTR_FLOW_STATE_CLEAR_CYCLE</name>
+          <briefdescription>
+<para>DTEL flow state clear cycle. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          false </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga4671f4e49001568353b72c0e4e080083aa0bd57822f02325faa6370b60fc52dcd" prot="public">
+          <name>SAI_DTEL_ATTR_LATENCY_SENSITIVITY</name>
+          <briefdescription>
+<para>Latency sensitivity for flow state change detection. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga4671f4e49001568353b72c0e4e080083abdcbb7818fca29f0dbd96f3839e4d661" prot="public">
+          <name>SAI_DTEL_ATTR_SINK_PORT_LIST</name>
+          <briefdescription>
+<para>DTEL sink ports. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_PORT </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga4671f4e49001568353b72c0e4e080083a9ac44537422fcbbcf6d819651a552173" prot="public">
+          <name>SAI_DTEL_ATTR_INT_L4_DSCP</name>
+          <briefdescription>
+<para>Reserved DSCP value for INT over L4. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<simplesect kind="par"><title>Value Type:</title><para> @@type            sai_acl_field_data_t sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         disabled </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga4671f4e49001568353b72c0e4e080083a3744fe61c3aae9946b4952a38f1272e8" prot="public">
+          <name>SAI_DTEL_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga4671f4e49001568353b72c0e4e080083aca6f554ae4d51a3f59a91f27c5009945" prot="public">
+          <name>SAI_DTEL_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+<para>Custom range base value start. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga4671f4e49001568353b72c0e4e080083a1060d73bc70fc44f675a1f91e0f0df78" prot="public">
+          <name>SAI_DTEL_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+<para>End of Custom range base. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>DTEL attributes for the switch. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<simplesect kind="note"><para>Only one DTEL object per switch is allowed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidtel.h" line="45" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidtel.h" bodystart="46" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIDTEL_1ga66b72870af834da3552015edfd0b7e12" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_dtel_queue_report_attr_t</name>
+        <enumvalue id="group__SAIDTEL_1gga66b72870af834da3552015edfd0b7e12a088f284b19d306a3c65d40ef6f2e60b8" prot="public">
+          <name>SAI_DTEL_QUEUE_REPORT_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga66b72870af834da3552015edfd0b7e12a941eda0022eb080829b97423c6ddc359" prot="public">
+          <name>SAI_DTEL_QUEUE_REPORT_ATTR_QUEUE_ID</name>
+          <initializer>= SAI_DTEL_QUEUE_REPORT_ATTR_START</initializer>
+          <briefdescription>
+<para>Queue object ID. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_QUEUE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga66b72870af834da3552015edfd0b7e12ae624db3dbc219579a5f842ed885ba381" prot="public">
+          <name>SAI_DTEL_QUEUE_REPORT_ATTR_DEPTH_THRESHOLD</name>
+          <briefdescription>
+<para>Queue depth threshold in byte. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga66b72870af834da3552015edfd0b7e12a925e0dfc9e2b26725ff1667857683674" prot="public">
+          <name>SAI_DTEL_QUEUE_REPORT_ATTR_LATENCY_THRESHOLD</name>
+          <briefdescription>
+<para>Queue latency threshold in nanosecond. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga66b72870af834da3552015edfd0b7e12a08138fcd6bbef2ef6905f69c2123aeb5" prot="public">
+          <name>SAI_DTEL_QUEUE_REPORT_ATTR_BREACH_QUOTA</name>
+          <briefdescription>
+<para>Maximum number of continuous reports after threshold breach. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga66b72870af834da3552015edfd0b7e12a259d6b9e8b2be82a2749cee89463f773" prot="public">
+          <name>SAI_DTEL_QUEUE_REPORT_ATTR_TAIL_DROP</name>
+          <briefdescription>
+<para>Send report for packets dropped by the queue. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga66b72870af834da3552015edfd0b7e12ae97dfe17fd3ad4b43bcebb30bc896fea" prot="public">
+          <name>SAI_DTEL_QUEUE_REPORT_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga66b72870af834da3552015edfd0b7e12abdea4958b291e8c6dcd9d26cd985f9f3" prot="public">
+          <name>SAI_DTEL_QUEUE_REPORT_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+<para>Custom range base value start. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga66b72870af834da3552015edfd0b7e12a0b429a8b268d72f5a7f392ea6aac4d26" prot="public">
+          <name>SAI_DTEL_QUEUE_REPORT_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+<para>End of Custom range base. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Queue report trigger attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>experimental </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidtel.h" line="186" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidtel.h" bodystart="187" bodyend="263"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIDTEL_1ga86a279445835375bb60ac75b2b4cfcc8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_dtel_int_session_attr_t</name>
+        <enumvalue id="group__SAIDTEL_1gga86a279445835375bb60ac75b2b4cfcc8ab0f2c08feca9cf5e319cabf04a4f8e9a" prot="public">
+          <name>SAI_DTEL_INT_SESSION_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga86a279445835375bb60ac75b2b4cfcc8a6c6325cd4a211826b8cd63f10dcb7131" prot="public">
+          <name>SAI_DTEL_INT_SESSION_ATTR_MAX_HOP_COUNT</name>
+          <initializer>= SAI_DTEL_INT_SESSION_ATTR_START</initializer>
+          <briefdescription>
+<para>INT max hop count. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+The maximum number of hops that are allowed to add their metadata to the packet</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         8 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga86a279445835375bb60ac75b2b4cfcc8a451c3857e553820ddf791836d5c6319d" prot="public">
+          <name>SAI_DTEL_INT_SESSION_ATTR_COLLECT_SWITCH_ID</name>
+          <briefdescription>
+<para>Collect switch ID. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga86a279445835375bb60ac75b2b4cfcc8a81a815f1c8cfbf206fedb774153b0192" prot="public">
+          <name>SAI_DTEL_INT_SESSION_ATTR_COLLECT_SWITCH_PORTS</name>
+          <briefdescription>
+<para>Collect ingress and egress ports. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga86a279445835375bb60ac75b2b4cfcc8a72ec34857089a60c6e2e204b3e53c849" prot="public">
+          <name>SAI_DTEL_INT_SESSION_ATTR_COLLECT_INGRESS_TIMESTAMP</name>
+          <briefdescription>
+<para>Collect ingress timestamp. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga86a279445835375bb60ac75b2b4cfcc8a95f7bd6ab487a892d7e4d98626065646" prot="public">
+          <name>SAI_DTEL_INT_SESSION_ATTR_COLLECT_EGRESS_TIMESTAMP</name>
+          <briefdescription>
+<para>Collect egress timestamp. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga86a279445835375bb60ac75b2b4cfcc8a5d90cbdce7d20dcc45cc713c983f1ad8" prot="public">
+          <name>SAI_DTEL_INT_SESSION_ATTR_COLLECT_QUEUE_INFO</name>
+          <briefdescription>
+<para>Collect queue information. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga86a279445835375bb60ac75b2b4cfcc8ab2923de2eb347564cf7739e38d1ff731" prot="public">
+          <name>SAI_DTEL_INT_SESSION_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga86a279445835375bb60ac75b2b4cfcc8a1d55009e76a1e0df2d33dd7b1f4828db" prot="public">
+          <name>SAI_DTEL_INT_SESSION_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+<para>Custom range base value start. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga86a279445835375bb60ac75b2b4cfcc8aca917c15c21c94ed0dd02001539a64fb" prot="public">
+          <name>SAI_DTEL_INT_SESSION_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+<para>End of Custom range base. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>INT session attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>experimental </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidtel.h" line="270" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidtel.h" bodystart="271" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIDTEL_1gaf034cd591c2c046bab01ac637721c0ce" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_dtel_report_session_attr_t</name>
+        <enumvalue id="group__SAIDTEL_1ggaf034cd591c2c046bab01ac637721c0ceaac1750302f5a7c565cab7319d39cd5bc" prot="public">
+          <name>SAI_DTEL_REPORT_SESSION_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1ggaf034cd591c2c046bab01ac637721c0cea1c4de16954768606c9224cf88428dcab" prot="public">
+          <name>SAI_DTEL_REPORT_SESSION_ATTR_SRC_IP</name>
+          <initializer>= SAI_DTEL_REPORT_SESSION_ATTR_START</initializer>
+          <briefdescription>
+<para>DTEL report source IP address. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1ggaf034cd591c2c046bab01ac637721c0ceabaf9e3f3ce8cf0fb749702cc6d3ff3d3" prot="public">
+          <name>SAI_DTEL_REPORT_SESSION_ATTR_DST_IP_LIST</name>
+          <briefdescription>
+<para>DTEL report destination IP addresses. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1ggaf034cd591c2c046bab01ac637721c0ceab30eb390d3085c5d258d77ff1bf730cf" prot="public">
+          <name>SAI_DTEL_REPORT_SESSION_ATTR_VIRTUAL_ROUTER_ID</name>
+          <briefdescription>
+<para>DTEL report virtual router ID. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_VIRTUAL_ROUTER </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1ggaf034cd591c2c046bab01ac637721c0cea065a4949e7cca687749202f4929f9cbd" prot="public">
+          <name>SAI_DTEL_REPORT_SESSION_ATTR_TRUNCATE_SIZE</name>
+          <briefdescription>
+<para>DTEL report truncate size. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          false </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1ggaf034cd591c2c046bab01ac637721c0cea177b7a26eb26c0d8e3eac4c291e2750e" prot="public">
+          <name>SAI_DTEL_REPORT_SESSION_ATTR_UDP_DST_PORT</name>
+          <briefdescription>
+<para>DTEL report UDP destination port. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>IsVlan:</title><para> @@isvlan          false </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1ggaf034cd591c2c046bab01ac637721c0ceadbad940df1654175c8d99ad852d3409d" prot="public">
+          <name>SAI_DTEL_REPORT_SESSION_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1ggaf034cd591c2c046bab01ac637721c0cea4f22f62747b4f81cb0b31a88c879116a" prot="public">
+          <name>SAI_DTEL_REPORT_SESSION_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+<para>Custom range base value start. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1ggaf034cd591c2c046bab01ac637721c0cea3b7b1b930275ef8390e0d49eb12d52db" prot="public">
+          <name>SAI_DTEL_REPORT_SESSION_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+<para>End of Custom range base. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>DTEL report session attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>experimental </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidtel.h" line="368" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidtel.h" bodystart="369" bodyend="449"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIDTEL_1ga35ae472d10f5076afda1fd9f7fe80498" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_dtel_event_type_t</name>
+        <enumvalue id="group__SAIDTEL_1gga35ae472d10f5076afda1fd9f7fe80498aa7144eb4d8b51b1b47ce19b7fbea768e" prot="public">
+          <name>SAI_DTEL_EVENT_TYPE_FLOW_STATE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Report triggered by new flow or flow state (e.g., path, latency) change </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga35ae472d10f5076afda1fd9f7fe80498a1a7390aea0d82428b3fda8917bafa736" prot="public">
+          <name>SAI_DTEL_EVENT_TYPE_FLOW_REPORT_ALL_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Report triggered by REPORT_ALL_PACKETS in watchlist entry action </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga35ae472d10f5076afda1fd9f7fe80498a63d35373afc27802d91f05ea3ee77a99" prot="public">
+          <name>SAI_DTEL_EVENT_TYPE_FLOW_TCPFLAG</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Report triggered by TCP FLAGS </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga35ae472d10f5076afda1fd9f7fe80498a1aaeb26a93beeca13e214c8bb8f2c7a1" prot="public">
+          <name>SAI_DTEL_EVENT_TYPE_QUEUE_REPORT_THRESHOLD_BREACH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Report triggered by queue depth or latency threshold breach </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga35ae472d10f5076afda1fd9f7fe80498a388baaa319b2fe36408cc7150313de99" prot="public">
+          <name>SAI_DTEL_EVENT_TYPE_QUEUE_REPORT_TAIL_DROP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Report triggered by queue tail drop </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga35ae472d10f5076afda1fd9f7fe80498a1623f96e74cbc6f1c16ec9412cb2c949" prot="public">
+          <name>SAI_DTEL_EVENT_TYPE_DROP_REPORT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Report triggered by packet drop </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga35ae472d10f5076afda1fd9f7fe80498aed7530e9089b9272e33b8644096a2f9b" prot="public">
+          <name>SAI_DTEL_EVENT_TYPE_MAX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum defining DTEL event types. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>experimental </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidtel.h" line="456" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidtel.h" bodystart="457" bodyend="478"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIDTEL_1ga9e0c2860f0584ad47fd78e7cb0c36019" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_dtel_event_attr_t</name>
+        <enumvalue id="group__SAIDTEL_1gga9e0c2860f0584ad47fd78e7cb0c36019a545fe70c410a8a437dc87bdb736c65d5" prot="public">
+          <name>SAI_DTEL_EVENT_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga9e0c2860f0584ad47fd78e7cb0c36019ac4ae8113fcfb0cf4190d43ac4a6248a9" prot="public">
+          <name>SAI_DTEL_EVENT_ATTR_TYPE</name>
+          <initializer>= SAI_DTEL_EVENT_ATTR_START</initializer>
+          <briefdescription>
+<para>DTEL event type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<simplesect kind="par"><title>Value Type:</title><para> @@type            sai_dtel_event_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga9e0c2860f0584ad47fd78e7cb0c36019a5d51630563a9d68f6c2da433ff3f63c9" prot="public">
+          <name>SAI_DTEL_EVENT_ATTR_REPORT_SESSION</name>
+          <briefdescription>
+<para>DTEL report session. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_DTEL_REPORT_SESSION </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga9e0c2860f0584ad47fd78e7cb0c36019a2ed8ed49def8026ff22ce453ad630108" prot="public">
+          <name>SAI_DTEL_EVENT_ATTR_DSCP_VALUE</name>
+          <briefdescription>
+<para>DTEL report DSCP value. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga9e0c2860f0584ad47fd78e7cb0c36019a2814c2be7cb3b0aa5ba4db8412781fc0" prot="public">
+          <name>SAI_DTEL_EVENT_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga9e0c2860f0584ad47fd78e7cb0c36019ae3958f12ba427d807d6fc070496bb6bb" prot="public">
+          <name>SAI_DTEL_EVENT_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+<para>Custom range base value start. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIDTEL_1gga9e0c2860f0584ad47fd78e7cb0c36019a24bd252ad4ff445d9446b75859369c9d" prot="public">
+          <name>SAI_DTEL_EVENT_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+<para>End of Custom range base. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>DTEL events attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>experimental </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidtel.h" line="485" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidtel.h" bodystart="486" bodyend="541"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIDTEL_1ga6617ed14760f568e8594483d1c14cdf8" prot="public" static="no">
+        <type>enum <ref refid="group__SAIDTEL_1ga4671f4e49001568353b72c0e4e080083" kindref="member">_sai_dtel_attr_t</ref></type>
+        <definition>typedef enum _sai_dtel_attr_t sai_dtel_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dtel_attr_t</name>
+        <briefdescription>
+<para>DTEL attributes for the switch. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<simplesect kind="note"><para>Only one DTEL object per switch is allowed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidtel.h" line="179" column="17"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDTEL_1ga3ce5d08a5050adb3d53a017aef627fa2" prot="public" static="no">
+        <type>enum <ref refid="group__SAIDTEL_1ga66b72870af834da3552015edfd0b7e12" kindref="member">_sai_dtel_queue_report_attr_t</ref></type>
+        <definition>typedef enum _sai_dtel_queue_report_attr_t sai_dtel_queue_report_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dtel_queue_report_attr_t</name>
+        <briefdescription>
+<para>Queue report trigger attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>experimental </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidtel.h" line="263" column="30"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDTEL_1ga9d83dee83b994047cf7541dc7e50c201" prot="public" static="no">
+        <type>enum <ref refid="group__SAIDTEL_1ga86a279445835375bb60ac75b2b4cfcc8" kindref="member">_sai_dtel_int_session_attr_t</ref></type>
+        <definition>typedef enum _sai_dtel_int_session_attr_t sai_dtel_int_session_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dtel_int_session_attr_t</name>
+        <briefdescription>
+<para>INT session attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>experimental </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidtel.h" line="361" column="29"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDTEL_1ga06692d1808f66ca329593052a296a7d6" prot="public" static="no">
+        <type>enum <ref refid="group__SAIDTEL_1gaf034cd591c2c046bab01ac637721c0ce" kindref="member">_sai_dtel_report_session_attr_t</ref></type>
+        <definition>typedef enum _sai_dtel_report_session_attr_t sai_dtel_report_session_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dtel_report_session_attr_t</name>
+        <briefdescription>
+<para>DTEL report session attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>experimental </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidtel.h" line="449" column="32"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDTEL_1gaf441024d51bc175f05bf1947812b52de" prot="public" static="no">
+        <type>enum <ref refid="group__SAIDTEL_1ga35ae472d10f5076afda1fd9f7fe80498" kindref="member">_sai_dtel_event_type_t</ref></type>
+        <definition>typedef enum _sai_dtel_event_type_t sai_dtel_event_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dtel_event_type_t</name>
+        <briefdescription>
+<para>Enum defining DTEL event types. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>experimental </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidtel.h" line="478" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDTEL_1gac1257cf03573a9af60b83498f8f349a3" prot="public" static="no">
+        <type>enum <ref refid="group__SAIDTEL_1ga9e0c2860f0584ad47fd78e7cb0c36019" kindref="member">_sai_dtel_event_attr_t</ref></type>
+        <definition>typedef enum _sai_dtel_event_attr_t sai_dtel_event_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dtel_event_attr_t</name>
+        <briefdescription>
+<para>DTEL events attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>experimental </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidtel.h" line="541" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDTEL_1ga759c00aa5292a9caa86195fa18c849cd" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_dtel_fn) (_Out_ sai_object_id_t *dtel_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *dtel_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_dtel_fn</name>
+        <briefdescription>
+<para>Create and return a DTEL object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">dtel_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DTEL object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidtel.h" line="555" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidtel.h" bodystart="555" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDTEL_1ga341587dcf154201bf86bb0ff8f164e1e" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_dtel_fn) (_In_ sai_object_id_t dtel_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t dtel_id)</argsstring>
+        <name>sai_remove_dtel_fn</name>
+        <briefdescription>
+<para>Delete a DTEL object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dtel_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DTEL object id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidtel.h" line="570" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidtel.h" bodystart="570" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDTEL_1ga90d53e80d65ecaa300fca939331bd606" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_dtel_attribute_fn) (_In_ sai_object_id_t dtel_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t dtel_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_dtel_attribute_fn</name>
+        <briefdescription>
+<para>Set DTEL attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dtel_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DTEL object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidtel.h" line="583" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidtel.h" bodystart="583" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDTEL_1ga5251ecfc9040eb90bb7746eec682c4c4" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_dtel_attribute_fn) (_In_ sai_object_id_t dtel_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t dtel_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_dtel_attribute_fn</name>
+        <briefdescription>
+<para>Get DTEL attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dtel_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DTEL object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidtel.h" line="598" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidtel.h" bodystart="598" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDTEL_1ga06f9fa31c641bd82a52bcd821af97fbd" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_dtel_queue_report_fn) (_Out_ sai_object_id_t *dtel_queue_report_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *dtel_queue_report_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_dtel_queue_report_fn</name>
+        <briefdescription>
+<para>Create and return a DTEL queue report object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">dtel_queue_report_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DTEL queue report object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidtel.h" line="615" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidtel.h" bodystart="615" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDTEL_1gac3d231cdfd022130e10b8c7ac99d89b4" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_dtel_queue_report_fn) (_In_ sai_object_id_t dtel_queue_report_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t dtel_queue_report_id)</argsstring>
+        <name>sai_remove_dtel_queue_report_fn</name>
+        <briefdescription>
+<para>Delete a DTEL queue report. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dtel_queue_report_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DTEL queue report id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidtel.h" line="630" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidtel.h" bodystart="630" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDTEL_1ga408c355ddf64de668f1f825e6480932a" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_dtel_queue_report_attribute_fn) (_In_ sai_object_id_t dtel_queue_report_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t dtel_queue_report_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_dtel_queue_report_attribute_fn</name>
+        <briefdescription>
+<para>Set DTEL queue report attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dtel_queue_report_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DTEL queue report id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidtel.h" line="643" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidtel.h" bodystart="643" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDTEL_1ga668dc6202e1672624c8aee12e2e352b8" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_dtel_queue_report_attribute_fn) (_In_ sai_object_id_t dtel_queue_report_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t dtel_queue_report_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_dtel_queue_report_attribute_fn</name>
+        <briefdescription>
+<para>Get DTEL queue report attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dtel_queue_report_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DTEL queue report id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidtel.h" line="658" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidtel.h" bodystart="658" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDTEL_1ga77337bc010813b0becae2f122edc2b7c" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_dtel_int_session_fn) (_Out_ sai_object_id_t *dtel_int_session_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *dtel_int_session_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_dtel_int_session_fn</name>
+        <briefdescription>
+<para>Create and return a DTEL INT session object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">dtel_int_session_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DTEL INT session object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidtel.h" line="675" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidtel.h" bodystart="675" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDTEL_1ga7b83a37851f59ae5f0c5a102ae28141e" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_dtel_int_session_fn) (_In_ sai_object_id_t dtel_int_session_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t dtel_int_session_id)</argsstring>
+        <name>sai_remove_dtel_int_session_fn</name>
+        <briefdescription>
+<para>Delete a DTEL INT session. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dtel_int_session_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DTEL INT session id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidtel.h" line="690" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidtel.h" bodystart="690" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDTEL_1ga19c7defddde13475d630b2c7e740592e" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_dtel_int_session_attribute_fn) (_In_ sai_object_id_t dtel_int_session_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t dtel_int_session_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_dtel_int_session_attribute_fn</name>
+        <briefdescription>
+<para>Set DTEL INT session attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dtel_int_session_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DTEL INT session id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidtel.h" line="703" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidtel.h" bodystart="703" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDTEL_1gaa23436870b43de96622ba59dd03638d4" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_dtel_int_session_attribute_fn) (_In_ sai_object_id_t dtel_int_session_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t dtel_int_session_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_dtel_int_session_attribute_fn</name>
+        <briefdescription>
+<para>Get DTEL INT session attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dtel_int_session_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DTEL INT session id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidtel.h" line="718" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidtel.h" bodystart="718" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDTEL_1ga682213be7e680579e3fab0e0bedef46f" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_dtel_report_session_fn) (_Out_ sai_object_id_t *dtel_report_session_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *dtel_report_session_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_dtel_report_session_fn</name>
+        <briefdescription>
+<para>Create and return a DTEL report session object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">dtel_report_session_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DTEL report session object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidtel.h" line="735" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidtel.h" bodystart="735" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDTEL_1gac3af1f2e7fd4b631f961b902b1c80ade" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_dtel_report_session_fn) (_In_ sai_object_id_t dtel_report_session_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t dtel_report_session_id)</argsstring>
+        <name>sai_remove_dtel_report_session_fn</name>
+        <briefdescription>
+<para>Delete a DTEL report session. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dtel_report_session_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DTEL report session id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidtel.h" line="750" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidtel.h" bodystart="750" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDTEL_1gadaa55d26ac22a32d15553bbf0cc0fed6" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_dtel_report_session_attribute_fn) (_In_ sai_object_id_t dtel_report_session_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t dtel_report_session_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_dtel_report_session_attribute_fn</name>
+        <briefdescription>
+<para>Set DTEL report session attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dtel_report_session_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DTEL report session id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidtel.h" line="763" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidtel.h" bodystart="763" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDTEL_1ga2452e646b05c6363846a85dc1e1c77b6" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_dtel_report_session_attribute_fn) (_In_ sai_object_id_t dtel_report_session_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t dtel_report_session_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_dtel_report_session_attribute_fn</name>
+        <briefdescription>
+<para>Get DTEL report session attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dtel_report_session_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DTEL report session id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidtel.h" line="778" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidtel.h" bodystart="778" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDTEL_1gab5a30cff56275f6cf7f23f62d1e5fa84" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_dtel_event_fn) (_Out_ sai_object_id_t *dtel_event_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *dtel_event_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_dtel_event_fn</name>
+        <briefdescription>
+<para>Create and return a DTEL event object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">dtel_event_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DTEL event object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch object id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidtel.h" line="795" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidtel.h" bodystart="795" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDTEL_1ga19a80ab756bc8354dbed3c0f55e43905" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_dtel_event_fn) (_In_ sai_object_id_t dtel_event_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t dtel_event_id)</argsstring>
+        <name>sai_remove_dtel_event_fn</name>
+        <briefdescription>
+<para>Delete a DTEL event. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dtel_event_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DTEL event id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidtel.h" line="810" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidtel.h" bodystart="810" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDTEL_1ga523cb43650ba41accce150ac5ba45945" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_dtel_event_attribute_fn) (_In_ sai_object_id_t dtel_event_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t dtel_event_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_dtel_event_attribute_fn</name>
+        <briefdescription>
+<para>Set DTEL event attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dtel_event_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DTEL event id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidtel.h" line="823" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidtel.h" bodystart="823" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDTEL_1ga697a04bbf08f3a1731dbd8d33abb4ee8" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_dtel_event_attribute_fn) (_In_ sai_object_id_t dtel_event_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t dtel_event_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_dtel_event_attribute_fn</name>
+        <briefdescription>
+<para>Get DTEL event attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="warning"><para>experimental</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dtel_event_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>DTEL event id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidtel.h" line="838" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saidtel.h" bodystart="838" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIDTEL_1gaf8e9e8f1d73f63311bfba6762005996f" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__dtel__api__t" kindref="compound">_sai_dtel_api_t</ref></type>
+        <definition>typedef struct _sai_dtel_api_t sai_dtel_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dtel_api_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saidtel.h" line="870" column="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

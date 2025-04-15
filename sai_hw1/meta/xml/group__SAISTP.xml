@@ -1,0 +1,591 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group__SAISTP" kind="group">
+    <compoundname>SAISTP</compoundname>
+    <title>SAI - STP specific public APIs and data structures</title>
+    <innerclass refid="struct__sai__stp__api__t" prot="public">_sai_stp_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAISTP_1ga26e988f37890670a3f30f6d0f6b57914" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_stp_port_state_t</name>
+        <enumvalue id="group__SAISTP_1gga26e988f37890670a3f30f6d0f6b57914a9179d18631d04be6f0b2166f907b4e5f" prot="public">
+          <name>SAI_STP_PORT_STATE_LEARNING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port is in Learning mode </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISTP_1gga26e988f37890670a3f30f6d0f6b57914a8f6119fd2d2baca5f960d111cbe1b487" prot="public">
+          <name>SAI_STP_PORT_STATE_FORWARDING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port is in Forwarding mode </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISTP_1gga26e988f37890670a3f30f6d0f6b57914a732408d238c77bbd225dd47445ab2360" prot="public">
+          <name>SAI_STP_PORT_STATE_BLOCKING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Port is in Blocking mode </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Data structure for STP port state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saistp.h" line="39" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saistp.h" bodystart="40" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAISTP_1gaa806c0766e18099197c6404ee08d38af" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_stp_attr_t</name>
+        <enumvalue id="group__SAISTP_1ggaa806c0766e18099197c6404ee08d38afa3487e94d2dca8ace1e907387c69dd7ea" prot="public">
+          <name>SAI_STP_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISTP_1ggaa806c0766e18099197c6404ee08d38afaa49e2e4ebf7317cad8439fd6cd8afde5" prot="public">
+          <name>SAI_STP_ATTR_VLAN_LIST</name>
+          <initializer>= SAI_STP_ATTR_START</initializer>
+          <briefdescription>
+<para>VLANs attached to STP instance. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_vlan_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISTP_1ggaa806c0766e18099197c6404ee08d38afa718fefa6fb8c0b0e64a28deea43aedc0" prot="public">
+          <name>SAI_STP_ATTR_BRIDGE_ID</name>
+          <briefdescription>
+<para>Bridge attached to STP instance. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_BRIDGE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISTP_1ggaa806c0766e18099197c6404ee08d38afa614b69d47d66154af72235feaf159083" prot="public">
+          <name>SAI_STP_ATTR_PORT_LIST</name>
+          <briefdescription>
+<para>Port member list. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>When a STP is created, this list is empty, all ports state as blocking.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_STP_PORT </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISTP_1ggaa806c0766e18099197c6404ee08d38afa9880221e44ec850e56a3116b5d1e51a1" prot="public">
+          <name>SAI_STP_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISTP_1ggaa806c0766e18099197c6404ee08d38afa683b9e34636dedb0ccbfa81279432b96" prot="public">
+          <name>SAI_STP_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISTP_1ggaa806c0766e18099197c6404ee08d38afa1ae4ef358a0ae2800c5f575cbe7b70fe" prot="public">
+          <name>SAI_STP_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>SAI attributes for STP. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saistp.h" line="55" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saistp.h" bodystart="56" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAISTP_1gadb5fa0a11a6337ecf8648eb73c325efa" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_stp_port_attr_t</name>
+        <enumvalue id="group__SAISTP_1ggadb5fa0a11a6337ecf8648eb73c325efaa3de90e277121d699bcf3a71b11693c15" prot="public">
+          <name>SAI_STP_PORT_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISTP_1ggadb5fa0a11a6337ecf8648eb73c325efaa881991ffbd6fb0f0e856023e409694b6" prot="public">
+          <name>SAI_STP_PORT_ATTR_STP</name>
+          <initializer>= SAI_STP_PORT_ATTR_START</initializer>
+          <briefdescription>
+<para>STP id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_STP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISTP_1ggadb5fa0a11a6337ecf8648eb73c325efaa58ec86f1ca3338778749b4072707a17d" prot="public">
+          <name>SAI_STP_PORT_ATTR_BRIDGE_PORT</name>
+          <briefdescription>
+<para>Bridge Port id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_BRIDGE_PORT </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISTP_1ggadb5fa0a11a6337ecf8648eb73c325efaa253b166a10223b7ede636688210599aa" prot="public">
+          <name>SAI_STP_PORT_ATTR_STATE</name>
+          <briefdescription>
+<para>STP port state. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_stp_port_state_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISTP_1ggadb5fa0a11a6337ecf8648eb73c325efaad248429362b7253d1357257232e304a7" prot="public">
+          <name>SAI_STP_PORT_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISTP_1ggadb5fa0a11a6337ecf8648eb73c325efaaec5a1eed0e9a7b9cdeb5cdbf695848d7" prot="public">
+          <name>SAI_STP_PORT_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISTP_1ggadb5fa0a11a6337ecf8648eb73c325efaa86f3d59a333d0aa50828bdf66fab39c4" prot="public">
+          <name>SAI_STP_PORT_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>SAI attributes for STP. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saistp.h" line="106" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saistp.h" bodystart="107" bodyend="150"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAISTP_1ga9454567cceb017e7df17dbe850d326d4" prot="public" static="no">
+        <type>enum <ref refid="group__SAISTP_1ga26e988f37890670a3f30f6d0f6b57914" kindref="member">_sai_stp_port_state_t</ref></type>
+        <definition>typedef enum _sai_stp_port_state_t sai_stp_port_state_t</definition>
+        <argsstring></argsstring>
+        <name>sai_stp_port_state_t</name>
+        <briefdescription>
+<para>Data structure for STP port state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saistp.h" line="50" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAISTP_1ga5ae26aba87e6746f836116a00457aece" prot="public" static="no">
+        <type>enum <ref refid="group__SAISTP_1gaa806c0766e18099197c6404ee08d38af" kindref="member">_sai_stp_attr_t</ref></type>
+        <definition>typedef enum _sai_stp_attr_t sai_stp_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_stp_attr_t</name>
+        <briefdescription>
+<para>SAI attributes for STP. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saistp.h" line="101" column="16"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAISTP_1ga0c8507ac4e344f538e0891f6f5e98b7b" prot="public" static="no">
+        <type>enum <ref refid="group__SAISTP_1gadb5fa0a11a6337ecf8648eb73c325efa" kindref="member">_sai_stp_port_attr_t</ref></type>
+        <definition>typedef enum _sai_stp_port_attr_t sai_stp_port_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_stp_port_attr_t</name>
+        <briefdescription>
+<para>SAI attributes for STP. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saistp.h" line="150" column="21"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAISTP_1ga393423be5264d2b6e7e0d55b8683498d" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_stp_fn) (_Out_ sai_object_id_t *stp_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *stp_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_stp_fn</name>
+        <briefdescription>
+<para>Create STP instance with default port state as blocking. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">stp_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>STP instance id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> if operation is successful otherwise a different error code is returned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saistp.h" line="163" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saistp.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAISTP_1gaee549aceea7b1808706990e5787565dc" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_stp_fn) (_In_ sai_object_id_t stp_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t stp_id)</argsstring>
+        <name>sai_remove_stp_fn</name>
+        <briefdescription>
+<para>Remove STP instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">stp_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>STP instance id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> if operation is successful otherwise a different error code is returned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saistp.h" line="177" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saistp.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAISTP_1ga7362140de70a28985fd87e6b1bf5f623" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_stp_attribute_fn) (_In_ sai_object_id_t stp_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t stp_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_stp_attribute_fn</name>
+        <briefdescription>
+<para>Set the attribute of STP instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">stp_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>STP instance id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute value</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> if operation is successful otherwise a different error code is returned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saistp.h" line="189" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saistp.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAISTP_1gaf41427c0877281b63c80361b0fc21b78" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_stp_attribute_fn) (_In_ sai_object_id_t stp_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t stp_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_stp_attribute_fn</name>
+        <briefdescription>
+<para>Get the attribute of STP instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">stp_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>STP instance id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of the attribute </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute value</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> if operation is successful otherwise a different error code is returned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saistp.h" line="203" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saistp.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAISTP_1gabc9ee09e8a9cfbf22aea215638c57736" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_stp_port_fn) (_Out_ sai_object_id_t *stp_port_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *stp_port_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_stp_port_fn</name>
+        <briefdescription>
+<para>Create STP port object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">stp_port_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>STP port id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> if operation is successful otherwise a different error code is returned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saistp.h" line="219" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saistp.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAISTP_1gab545a8e7f9a0c3536cb9f9d2043a5adb" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_stp_port_fn) (_In_ sai_object_id_t stp_port_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t stp_port_id)</argsstring>
+        <name>sai_remove_stp_port_fn</name>
+        <briefdescription>
+<para>Remove STP port object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">stp_port_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>STP object id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> if operation is successful otherwise a different error code is returned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saistp.h" line="233" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saistp.h" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAISTP_1gaba55485842a22e42afbc54a4e9a08f75" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_stp_port_attribute_fn) (_In_ sai_object_id_t stp_port_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t stp_port_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_stp_port_attribute_fn</name>
+        <briefdescription>
+<para>Set the attribute of STP port. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">stp_port_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>STP port id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute value</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> if operation is successful otherwise a different error code is returned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saistp.h" line="245" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saistp.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAISTP_1ga4694d923ad1ae78d03ab9ad79d481d67" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_stp_port_attribute_fn) (_In_ sai_object_id_t stp_port_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t stp_port_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_stp_port_attribute_fn</name>
+        <briefdescription>
+<para>Get the attribute of STP port. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">stp_port_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>STP port id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of the attribute </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute value</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> if operation is successful otherwise a different error code is returned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saistp.h" line="259" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saistp.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAISTP_1gacd2c7fe4a449e4041053eb4e7fc661a8" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__stp__api__t" kindref="compound">_sai_stp_api_t</ref></type>
+        <definition>typedef struct _sai_stp_api_t sai_stp_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_stp_api_t</name>
+        <briefdescription>
+<para>STP method table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saistp.h" line="279" column="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

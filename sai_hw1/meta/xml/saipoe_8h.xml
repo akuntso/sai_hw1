@@ -1,0 +1,1264 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="saipoe_8h" kind="file" language="C++">
+    <compoundname>saipoe.h</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+    <includedby refid="sai_8h" local="yes">/home/andrii/sai_hw1/SAI/inc/sai.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saipoe.h</label>
+        <link refid="saipoe_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>sys/types.h</label>
+      </node>
+      <node id="2">
+        <label>saitypes.h</label>
+        <link refid="saitypes_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saipoe.h</label>
+        <link refid="saipoe_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/andrii/sai_hw1/SAI/inc/sai.h</label>
+        <link refid="sai_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</label>
+        <link refid="saiextensions_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct__sai__poe__api__t" prot="public">_sai_poe_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="saipoe_8h_1a76718fb260abaa14c115b4ea5d5b92f4" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_poe_device_limit_mode_t</name>
+        <enumvalue id="saipoe_8h_1a76718fb260abaa14c115b4ea5d5b92f4af9762aee316c0d8701eac902a5dd5240" prot="public">
+          <name>SAI_POE_DEVICE_LIMIT_MODE_PORT</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1a76718fb260abaa14c115b4ea5d5b92f4a39c3935f42b6b219f923fcf8c3cbc154" prot="public">
+          <name>SAI_POE_DEVICE_LIMIT_MODE_CLASS</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>POE device power limit mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>port limit - max power limit per port is configured by the user class limit - max power is set automatically according the class of the connected device </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipoe.h" line="36" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saipoe.h" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="enum" id="saipoe_8h_1a500f04cdc8276ea2ba1004986933244b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_poe_pse_status_t</name>
+        <enumvalue id="saipoe_8h_1a500f04cdc8276ea2ba1004986933244ba57ef28c0079ce0506c0e5e42353b2b08" prot="public">
+          <name>SAI_POE_PSE_STATUS_TYPE_ACTIVE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1a500f04cdc8276ea2ba1004986933244baed5d309b458f22e3b9c64919b9cbede7" prot="public">
+          <name>SAI_POE_PSE_STATUS_TYPE_FAIL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1a500f04cdc8276ea2ba1004986933244ba72dd38b691284b0ef00df77c5b444343" prot="public">
+          <name>SAI_POE_PSE_STATUS_TYPE_NOT_PRESENT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>POE device PSE (power sourcing equipment) status. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipoe.h" line="45" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saipoe.h" bodystart="46" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="enum" id="saipoe_8h_1a94040957dfee2a248bfd0c5e24e66837" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_poe_port_standard_t</name>
+        <enumvalue id="saipoe_8h_1a94040957dfee2a248bfd0c5e24e66837afe654f7db558e0e8ff4fe7b57fbda500" prot="public">
+          <name>SAI_POE_PORT_STANDARD_TYPE_AF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1a94040957dfee2a248bfd0c5e24e66837a4ea2a1905eea21a2e9b0fca8dac805c2" prot="public">
+          <name>SAI_POE_PORT_STANDARD_TYPE_AT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1a94040957dfee2a248bfd0c5e24e66837a61bccea7a5ebd098b0efa352de711ffd" prot="public">
+          <name>SAI_POE_PORT_STANDARD_TYPE_60W</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1a94040957dfee2a248bfd0c5e24e66837af7e9a917c57768eefe41a78fc3c48963" prot="public">
+          <name>SAI_POE_PORT_STANDARD_TYPE_BT_TYPE3</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1a94040957dfee2a248bfd0c5e24e66837acdb71a61e1ebc852b249ff2336992fc0" prot="public">
+          <name>SAI_POE_PORT_STANDARD_TYPE_BT_TYPE4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>POE port (IEEE) standard. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipoe.h" line="55" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saipoe.h" bodystart="56" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="enum" id="saipoe_8h_1a82fb0d92673ce7f519c4ea360cdd8c0c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_poe_port_power_priority_t</name>
+        <enumvalue id="saipoe_8h_1a82fb0d92673ce7f519c4ea360cdd8c0ca43b20fc2922c00a5d62aa36880633eba" prot="public">
+          <name>SAI_POE_PORT_POWER_PRIORITY_TYPE_LOW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1a82fb0d92673ce7f519c4ea360cdd8c0ca36a4c186be20bc39f9941d02aad12424" prot="public">
+          <name>SAI_POE_PORT_POWER_PRIORITY_TYPE_HIGH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1a82fb0d92673ce7f519c4ea360cdd8c0ca08b9c114965e8b39073c8bba816c8fea" prot="public">
+          <name>SAI_POE_PORT_POWER_PRIORITY_TYPE_CRITICAL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>POE port power priority. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipoe.h" line="67" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saipoe.h" bodystart="68" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="enum" id="saipoe_8h_1ad9d239c56dfe4daac97413aafae1a201" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_poe_port_status_t</name>
+        <enumvalue id="saipoe_8h_1ad9d239c56dfe4daac97413aafae1a201aa01a853432352869047b150e22af8dff" prot="public">
+          <name>SAI_POE_PORT_STATUS_TYPE_OFF</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1ad9d239c56dfe4daac97413aafae1a201aa375cf189d3702f401c9d7c44d336025" prot="public">
+          <name>SAI_POE_PORT_STATUS_TYPE_SEARCHING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1ad9d239c56dfe4daac97413aafae1a201a9bc1d26e818c370350a314c2d7218ada" prot="public">
+          <name>SAI_POE_PORT_STATUS_TYPE_DELIVERING_POWER</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1ad9d239c56dfe4daac97413aafae1a201a75d84829d689fe1510880071fdd2b4a3" prot="public">
+          <name>SAI_POE_PORT_STATUS_TYPE_FAULT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>POE port status. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipoe.h" line="77" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saipoe.h" bodystart="78" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="enum" id="saipoe_8h_1aff857b429791af30c4da3e9a6da14b4c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_poe_device_attr_t</name>
+        <enumvalue id="saipoe_8h_1aff857b429791af30c4da3e9a6da14b4ca3aa9dc4fa75140f02a48a9f56dbb4bb5" prot="public">
+          <name>SAI_POE_DEVICE_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1aff857b429791af30c4da3e9a6da14b4ca9d7e6691715c07c2c1d3a85e6c0b4542" prot="public">
+          <name>SAI_POE_DEVICE_ATTR_HARDWARE_INFO</name>
+          <initializer>= SAI_POE_DEVICE_ATTR_START</initializer>
+          <briefdescription>
+<para>Device Information for POE initialization. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Hardware information format is based on POE SAI implementations by vendors. Format is vendor specific. Example: Like PCI location, I2C address, UART etc.</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            char </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         &quot;&quot; </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1aff857b429791af30c4da3e9a6da14b4ca0654042ddd34a1ac1261283295d046eb" prot="public">
+          <name>SAI_POE_DEVICE_ATTR_POE_PSE_LIST</name>
+          <briefdescription>
+<para>A list of all the PSE devices. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_POE_PSE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1aff857b429791af30c4da3e9a6da14b4cae133d2c4a3a1cc130372db6e1ec2da39" prot="public">
+          <name>SAI_POE_DEVICE_ATTR_POE_PORT_LIST</name>
+          <briefdescription>
+<para>A list of all the POE ports. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_POE_PORT </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1aff857b429791af30c4da3e9a6da14b4ca2d46e9a04f8a0fba9848eb3bda24949e" prot="public">
+          <name>SAI_POE_DEVICE_ATTR_TOTAL_POWER</name>
+          <briefdescription>
+<para>The total power in the device, in watts. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1aff857b429791af30c4da3e9a6da14b4ca0b53e0da698e13ad8cb33058a020286c" prot="public">
+          <name>SAI_POE_DEVICE_ATTR_POWER_CONSUMPTION</name>
+          <briefdescription>
+<para>Total power consumption, in MILLI watts. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1aff857b429791af30c4da3e9a6da14b4ca7e937b50d8b4ed6699fee5096df1e64a" prot="public">
+          <name>SAI_POE_DEVICE_ATTR_VERSION</name>
+          <briefdescription>
+<para>POE device version and information (POE firmware version) </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            char </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1aff857b429791af30c4da3e9a6da14b4ca83decbfa123268a09aa0a214a1a8ff6f" prot="public">
+          <name>SAI_POE_DEVICE_ATTR_POWER_LIMIT_MODE</name>
+          <briefdescription>
+<para>Power limit mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_poe_device_limit_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_POE_DEVICE_LIMIT_MODE_CLASS </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1aff857b429791af30c4da3e9a6da14b4cad59209c5571a34ad7908d61515c0ad7e" prot="public">
+          <name>SAI_POE_DEVICE_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1aff857b429791af30c4da3e9a6da14b4ca346a0ff9ab10b39493d0259b993880e0" prot="public">
+          <name>SAI_POE_DEVICE_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1aff857b429791af30c4da3e9a6da14b4cac660671e23dddb8068199b147c6b3fe5" prot="public">
+          <name>SAI_POE_DEVICE_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>POE device attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipoe.h" line="88" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saipoe.h" bodystart="89" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="enum" id="saipoe_8h_1a5b1711dccc971248c4da5ec13d52480b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_poe_pse_attr_t</name>
+        <enumvalue id="saipoe_8h_1a5b1711dccc971248c4da5ec13d52480ba923e5d04d21ae89ce8fae961ddd29d34" prot="public">
+          <name>SAI_POE_PSE_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1a5b1711dccc971248c4da5ec13d52480ba3a912e0e45f0cfe17592e619857e1485" prot="public">
+          <name>SAI_POE_PSE_ATTR_ID</name>
+          <initializer>= SAI_POE_PSE_ATTR_START</initializer>
+          <briefdescription>
+<para>POE PSE ID (index) </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1a5b1711dccc971248c4da5ec13d52480ba3999c0fc6be1dcc6e174cf2ef8c08c56" prot="public">
+          <name>SAI_POE_PSE_ATTR_DEVICE_ID</name>
+          <briefdescription>
+<para>POE device ID. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_POE_DEVICE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1a5b1711dccc971248c4da5ec13d52480baa309712d3c01f2bb295ad326923694ff" prot="public">
+          <name>SAI_POE_PSE_ATTR_SOFTWARE_VERSION</name>
+          <briefdescription>
+<para>POE PSE software version. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            char </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1a5b1711dccc971248c4da5ec13d52480ba7af0334ee7550e10a87aaffb40ef8536" prot="public">
+          <name>SAI_POE_PSE_ATTR_HARDWARE_VERSION</name>
+          <briefdescription>
+<para>POE PSE hardware version. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            char </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1a5b1711dccc971248c4da5ec13d52480ba6ba6b8c6100171c7cbdaacd8ebf0d64d" prot="public">
+          <name>SAI_POE_PSE_ATTR_TEMPERATURE</name>
+          <briefdescription>
+<para>Temperature (in Celsius) of the PSE. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_int16_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1a5b1711dccc971248c4da5ec13d52480baeff1b9be36102d4db1069a5e4a118a10" prot="public">
+          <name>SAI_POE_PSE_ATTR_STATUS</name>
+          <briefdescription>
+<para>Status of the PSE. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_poe_pse_status_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1a5b1711dccc971248c4da5ec13d52480ba5691da60a887987c6e6d8a74d60e9499" prot="public">
+          <name>SAI_POE_PSE_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1a5b1711dccc971248c4da5ec13d52480ba915407cc9ca9e73c0ba45f0f3bb113b2" prot="public">
+          <name>SAI_POE_PSE_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1a5b1711dccc971248c4da5ec13d52480ba24012993079a0d5ee3cfe9e248cd98b7" prot="public">
+          <name>SAI_POE_PSE_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>POE PSE attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipoe.h" line="175" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saipoe.h" bodystart="176" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="enum" id="saipoe_8h_1acd12e5acdd688fda6c27e347c1f691c2" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_poe_port_attr_t</name>
+        <enumvalue id="saipoe_8h_1acd12e5acdd688fda6c27e347c1f691c2a1e34ce2ff60b1743574780a5f7afdd9a" prot="public">
+          <name>SAI_POE_PORT_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1acd12e5acdd688fda6c27e347c1f691c2aa886e3be864c55bc97c15fcc1bcf75c4" prot="public">
+          <name>SAI_POE_PORT_ATTR_FRONT_PANEL_ID</name>
+          <initializer>= SAI_POE_PORT_ATTR_START</initializer>
+          <briefdescription>
+<para>POE port front panel ID. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1acd12e5acdd688fda6c27e347c1f691c2ae2459899f7993f431c6d33911ca5839f" prot="public">
+          <name>SAI_POE_PORT_ATTR_DEVICE_ID</name>
+          <briefdescription>
+<para>POE device ID. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_POE_DEVICE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1acd12e5acdd688fda6c27e347c1f691c2a77b6a6f56357e4951f762f9393b5e53c" prot="public">
+          <name>SAI_POE_PORT_ATTR_STANDARD</name>
+          <briefdescription>
+<para>POE port standard. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_poe_port_standard_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1acd12e5acdd688fda6c27e347c1f691c2ab6dab5b1fbe92e0ca126ad2e26909270" prot="public">
+          <name>SAI_POE_PORT_ATTR_ADMIN_ENABLED_STATE</name>
+          <briefdescription>
+<para>POE port enabled/disabled state, as set by the user. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1acd12e5acdd688fda6c27e347c1f691c2a3723e35e68c2e2cb74d6fb015eb1abd4" prot="public">
+          <name>SAI_POE_PORT_ATTR_POWER_LIMIT</name>
+          <briefdescription>
+<para>POE port power limit mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1acd12e5acdd688fda6c27e347c1f691c2aec255e898fa1264f859dda2514ae8d75" prot="public">
+          <name>SAI_POE_PORT_ATTR_POWER_PRIORITY</name>
+          <briefdescription>
+<para>POE port priority. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_poe_port_power_priority_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_POE_PORT_POWER_PRIORITY_TYPE_HIGH </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1acd12e5acdd688fda6c27e347c1f691c2a5a6288fd62c371132780fb360913d277" prot="public">
+          <name>SAI_POE_PORT_ATTR_CONSUMPTION</name>
+          <briefdescription>
+<para>POE port consumption information. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_poe_port_power_consumption_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1acd12e5acdd688fda6c27e347c1f691c2a2ebe4b09f70a70a847911ee9550e8d31" prot="public">
+          <name>SAI_POE_PORT_ATTR_STATUS</name>
+          <briefdescription>
+<para>POE port status. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_poe_port_status_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1acd12e5acdd688fda6c27e347c1f691c2aaf26c2be9a0790f6a70a15074ace3f22" prot="public">
+          <name>SAI_POE_PORT_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1acd12e5acdd688fda6c27e347c1f691c2adaf4886b27a515259185e147939a9d85" prot="public">
+          <name>SAI_POE_PORT_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="saipoe_8h_1acd12e5acdd688fda6c27e347c1f691c2a4c6d9a07669cf5d9bcf57434d1db796c" prot="public">
+          <name>SAI_POE_PORT_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>POE port attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipoe.h" line="247" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saipoe.h" bodystart="248" bodyend="333"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="saipoe_8h_1a2cc559cac0f2a9b04e12e09d5732973a" prot="public" static="no">
+        <type>enum <ref refid="saipoe_8h_1a76718fb260abaa14c115b4ea5d5b92f4" kindref="member">_sai_poe_device_limit_mode_t</ref></type>
+        <definition>typedef enum _sai_poe_device_limit_mode_t sai_poe_device_limit_mode_t</definition>
+        <argsstring></argsstring>
+        <name>sai_poe_device_limit_mode_t</name>
+        <briefdescription>
+<para>POE device power limit mode. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>port limit - max power limit per port is configured by the user class limit - max power is set automatically according the class of the connected device </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipoe.h" line="40" column="29"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saipoe_8h_1a1b9fd3505b779e70c3156d233a143944" prot="public" static="no">
+        <type>enum <ref refid="saipoe_8h_1a500f04cdc8276ea2ba1004986933244b" kindref="member">_sai_poe_pse_status_t</ref></type>
+        <definition>typedef enum _sai_poe_pse_status_t sai_poe_pse_status_t</definition>
+        <argsstring></argsstring>
+        <name>sai_poe_pse_status_t</name>
+        <briefdescription>
+<para>POE device PSE (power sourcing equipment) status. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipoe.h" line="50" column="22"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saipoe_8h_1aaaa0ebdc763d587aa7c90652b982744f" prot="public" static="no">
+        <type>enum <ref refid="saipoe_8h_1a94040957dfee2a248bfd0c5e24e66837" kindref="member">_sai_poe_port_standard_t</ref></type>
+        <definition>typedef enum _sai_poe_port_standard_t sai_poe_port_standard_t</definition>
+        <argsstring></argsstring>
+        <name>sai_poe_port_standard_t</name>
+        <briefdescription>
+<para>POE port (IEEE) standard. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipoe.h" line="62" column="25"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saipoe_8h_1a48d16f2ade84ac24db4cc624333d7fda" prot="public" static="no">
+        <type>enum <ref refid="saipoe_8h_1a82fb0d92673ce7f519c4ea360cdd8c0c" kindref="member">_sai_poe_port_power_priority_t</ref></type>
+        <definition>typedef enum _sai_poe_port_power_priority_t sai_poe_port_power_priority_t</definition>
+        <argsstring></argsstring>
+        <name>sai_poe_port_power_priority_t</name>
+        <briefdescription>
+<para>POE port power priority. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipoe.h" line="72" column="31"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saipoe_8h_1af61b2dbdc6c498fd1ba01c1f7c8f0c1d" prot="public" static="no">
+        <type>enum <ref refid="saipoe_8h_1ad9d239c56dfe4daac97413aafae1a201" kindref="member">_sai_poe_port_status_t</ref></type>
+        <definition>typedef enum _sai_poe_port_status_t sai_poe_port_status_t</definition>
+        <argsstring></argsstring>
+        <name>sai_poe_port_status_t</name>
+        <briefdescription>
+<para>POE port status. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipoe.h" line="83" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saipoe_8h_1a2eeb54c4d358572688e66d03707b8313" prot="public" static="no">
+        <type>enum <ref refid="saipoe_8h_1aff857b429791af30c4da3e9a6da14b4c" kindref="member">_sai_poe_device_attr_t</ref></type>
+        <definition>typedef enum _sai_poe_device_attr_t sai_poe_device_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_poe_device_attr_t</name>
+        <briefdescription>
+<para>POE device attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipoe.h" line="170" column="23"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saipoe_8h_1a11973c8cf48c991a8aa35df6bc06b2e1" prot="public" static="no">
+        <type>enum <ref refid="saipoe_8h_1a5b1711dccc971248c4da5ec13d52480b" kindref="member">_sai_poe_pse_attr_t</ref></type>
+        <definition>typedef enum _sai_poe_pse_attr_t sai_poe_pse_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_poe_pse_attr_t</name>
+        <briefdescription>
+<para>POE PSE attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipoe.h" line="242" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saipoe_8h_1a4f0406fab24de19e25f2f4a4c0fef0d2" prot="public" static="no">
+        <type>enum <ref refid="saipoe_8h_1acd12e5acdd688fda6c27e347c1f691c2" kindref="member">_sai_poe_port_attr_t</ref></type>
+        <definition>typedef enum _sai_poe_port_attr_t sai_poe_port_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_poe_port_attr_t</name>
+        <briefdescription>
+<para>POE port attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipoe.h" line="333" column="21"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saipoe_8h_1ace1060acef9a13d267e5c9d16f2e021b" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_poe_device_fn) (_Out_ sai_object_id_t *poe_device_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *poe_device_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_poe_device_fn</name>
+        <briefdescription>
+<para>Create a POE device instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">poe_device_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>POE device ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Count </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute list values</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> if operation is successful otherwise a different error code is returned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipoe.h" line="346" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saipoe.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saipoe_8h_1a7a045ebf67118ae77416ab6e1217aa61" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_poe_device_fn) (_In_ sai_object_id_t poe_device_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t poe_device_id)</argsstring>
+        <name>sai_remove_poe_device_fn</name>
+        <briefdescription>
+<para>Remove POE device instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">poe_device_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>POE device ID</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> if operation is successful otherwise a different error code is returned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipoe.h" line="360" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saipoe.h" bodystart="360" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saipoe_8h_1a46ffda829a7d1025fa442334c11b6503" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_poe_device_attribute_fn) (_In_ sai_object_id_t poe_device_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t poe_device_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_poe_device_attribute_fn</name>
+        <briefdescription>
+<para>Set the attribute of POE instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">poe_device_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>POE device ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute value</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> if operation is successful otherwise a different error code is returned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipoe.h" line="372" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saipoe.h" bodystart="372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saipoe_8h_1abe0c2117da237594094e714377e7b02e" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_poe_device_attribute_fn) (_In_ sai_object_id_t poe_device_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t poe_device_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_poe_device_attribute_fn</name>
+        <briefdescription>
+<para>Get the attribute of POE instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">poe_device_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>POE device ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of the attribute </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute value</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> if operation is successful otherwise a different error code is returned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipoe.h" line="386" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saipoe.h" bodystart="386" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saipoe_8h_1a0faf2e236374f00bd6af8da6282e9b79" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_poe_pse_fn) (_Out_ sai_object_id_t *poe_pse_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *poe_pse_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_poe_pse_fn</name>
+        <briefdescription>
+<para>Create a POE PSE instance. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">poe_pse_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>POE PSE ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Count </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute list values</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> if operation is successful otherwise a different error code is returned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipoe.h" line="402" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saipoe.h" bodystart="402" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saipoe_8h_1a7903bdc49b3f13fd940c9af4be0607ba" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_poe_pse_fn) (_In_ sai_object_id_t poe_pse_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t poe_pse_id)</argsstring>
+        <name>sai_remove_poe_pse_fn</name>
+        <briefdescription>
+<para>Remove POE device PSE. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">poe_pse_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>POE PSE ID</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> if operation is successful otherwise a different error code is returned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipoe.h" line="416" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saipoe.h" bodystart="416" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saipoe_8h_1ae665a7abe6a4105647ab768d85463886" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_poe_pse_attribute_fn) (_In_ sai_object_id_t poe_pse_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t poe_pse_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_poe_pse_attribute_fn</name>
+        <briefdescription>
+<para>Set the attribute of POE PSE. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">poe_pse_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>POE PSE ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute value</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> if operation is successful otherwise a different error code is returned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipoe.h" line="428" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saipoe.h" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saipoe_8h_1a44d8f44f05a61a93acc4a619883e9fa8" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_poe_pse_attribute_fn) (_In_ sai_object_id_t poe_pse_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t poe_pse_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_poe_pse_attribute_fn</name>
+        <briefdescription>
+<para>Get the attribute of POE PSE. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">poe_pse_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>POE PSE ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of the attribute </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute value</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> if operation is successful otherwise a different error code is returned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipoe.h" line="442" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saipoe.h" bodystart="442" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saipoe_8h_1a5a303b5f7e039b0c6eb43c402773aa4d" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_poe_port_fn) (_Out_ sai_object_id_t *poe_port_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *poe_port_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_poe_port_fn</name>
+        <briefdescription>
+<para>Create POE port object. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">poe_port_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>POE port id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of the attribute </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> if operation is successful otherwise a different error code is returned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipoe.h" line="458" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saipoe.h" bodystart="458" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saipoe_8h_1ab232bd6b8e264ad0e938d9777079b47c" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_poe_port_fn) (_In_ sai_object_id_t poe_port_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t poe_port_id)</argsstring>
+        <name>sai_remove_poe_port_fn</name>
+        <briefdescription>
+<para>Remove POE port. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">poe_port_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>POE port id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipoe.h" line="471" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saipoe.h" bodystart="471" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saipoe_8h_1add343f32f2e6121de7553b10539dacec" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_poe_port_attribute_fn) (_In_ sai_object_id_t poe_port_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t poe_port_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_poe_port_attribute_fn</name>
+        <briefdescription>
+<para>Set the attribute of POE port. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">poe_port_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>POE port id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute value</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> if operation is successful otherwise a different error code is returned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipoe.h" line="483" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saipoe.h" bodystart="483" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saipoe_8h_1ac08db8df7800e4edbb45a5b82fb2e957" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_poe_port_attribute_fn) (_In_ sai_object_id_t poe_port_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t poe_port_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_poe_port_attribute_fn</name>
+        <briefdescription>
+<para>Get the attribute of POE port. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">poe_port_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>POE port id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute count </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute value</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> if operation is successful otherwise a different error code is returned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipoe.h" line="497" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saipoe.h" bodystart="497" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="saipoe_8h_1accdef2d97bdc46ed0128928de58d680b" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__poe__api__t" kindref="compound">_sai_poe_api_t</ref></type>
+        <definition>typedef struct _sai_poe_api_t sai_poe_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_poe_api_t</name>
+        <briefdescription>
+<para>POE device method table retrieved with poe_api_query() </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saipoe.h" line="519" column="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module defines SAI POE interface. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2024 Microsoft Open Technologies, Inc.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <ulink url="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</ulink></para>
+<para>THIS CODE IS PROVIDED ON AN <emphasis>AS IS</emphasis> BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</para>
+<para>See the Apache Version 2.0 License for specific language governing permissions and limitations under the License.</para>
+<para>Microsoft would like to thank the following companies for their review and assistance with these files: Intel Corporation, Mellanox Technologies Ltd, Dell Products, L.P., Facebook, Inc., Marvell International Ltd. </para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saipoe.h"/>
+  </compounddef>
+</doxygen>

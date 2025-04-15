@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__enum__metadata__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_enum_metadata_t</compoundname>
+    <includes refid="saimetadatatypes_8h" local="no">saimetadatatypes.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__enum__metadata__t_1a1cea288c3ba6d7925806bd8da59ea87e" prot="public" static="no" mutable="no">
+        <type>const char *const</type>
+        <definition>const char* const _sai_enum_metadata_t::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+<para>String representation of enum type definition. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="824" column="36" bodyfile="saimetadatatypes.h" bodystart="824" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__enum__metadata__t_1a9836b53be7c83227882e59a52c9e75d9" prot="public" static="no" mutable="no">
+        <type>const size_t</type>
+        <definition>const size_t _sai_enum_metadata_t::valuescount</definition>
+        <argsstring></argsstring>
+        <name>valuescount</name>
+        <briefdescription>
+<para>Values count in enum. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="829" column="37" bodyfile="saimetadatatypes.h" bodystart="829" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__enum__metadata__t_1aceaa240f7c85c22cc8e81b052b97487d" prot="public" static="no" mutable="no">
+        <type>const int *const</type>
+        <definition>const int* const _sai_enum_metadata_t::values</definition>
+        <argsstring></argsstring>
+        <name>values</name>
+        <briefdescription>
+<para>Array of enum values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="834" column="36" bodyfile="saimetadatatypes.h" bodystart="834" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__enum__metadata__t_1ae15681a5b3e5adc92b9e70fcd75ef123" prot="public" static="no" mutable="no">
+        <type>const char *const  *const</type>
+        <definition>const char* const* const _sai_enum_metadata_t::valuesnames</definition>
+        <argsstring></argsstring>
+        <name>valuesnames</name>
+        <briefdescription>
+<para>Array of enum values string names. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="839" column="35" bodyfile="saimetadatatypes.h" bodystart="839" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__enum__metadata__t_1a524c972605413b55340386a1b68aa743" prot="public" static="no" mutable="no">
+        <type>const char *const  *const</type>
+        <definition>const char* const* const _sai_enum_metadata_t::valuesshortnames</definition>
+        <argsstring></argsstring>
+        <name>valuesshortnames</name>
+        <briefdescription>
+<para>Array of enum values string short names. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="844" column="35" bodyfile="saimetadatatypes.h" bodystart="844" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__enum__metadata__t_1acab67c3543b25bc14e043a09ae27dfb1" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool _sai_enum_metadata_t::containsflags</definition>
+        <argsstring></argsstring>
+        <name>containsflags</name>
+        <briefdescription>
+<para>Indicates whether enumeration contains flags. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>When set to true numbers of enumeration are not sequential. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="851" column="37" bodyfile="saimetadatatypes.h" bodystart="851" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__enum__metadata__t_1a9e81b594d59a734dd76f058e1c91db44" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIMETADATATYPES_1gadaba75b90da2722e28e29890b7e6ac2e" kindref="member">sai_enum_flags_type_t</ref></type>
+        <definition>sai_enum_flags_type_t _sai_enum_metadata_t::flagstype</definition>
+        <argsstring></argsstring>
+        <name>flagstype</name>
+        <briefdescription>
+<para>Defines enum flags type, if enum contains flags. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If contains flags is false, then flag type must be SAI_ENUM_FLAGS_TYPE_NONE. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="859" column="37" bodyfile="saimetadatatypes.h" bodystart="859" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__enum__metadata__t_1abdd6774d889f41079f019ed1806e35f6" prot="public" static="no" mutable="no">
+        <type>const int *const</type>
+        <definition>const int* const _sai_enum_metadata_t::ignorevalues</definition>
+        <argsstring></argsstring>
+        <name>ignorevalues</name>
+        <briefdescription>
+<para>Array of enum ignored values. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="864" column="36" bodyfile="saimetadatatypes.h" bodystart="864" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__enum__metadata__t_1ab486df8ff0c34868dc73d8dcb5554175" prot="public" static="no" mutable="no">
+        <type>const char *const  *const</type>
+        <definition>const char* const* const _sai_enum_metadata_t::ignorevaluesnames</definition>
+        <argsstring></argsstring>
+        <name>ignorevaluesnames</name>
+        <briefdescription>
+<para>Array of enum ignored values string names. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="869" column="35" bodyfile="saimetadatatypes.h" bodystart="869" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__enum__metadata__t_1ae218e68fa65e3b05bc6f39c2ab5a5356" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAITYPES_1ga1ca8e8725c9b140661ffae60b880fe95" kindref="member">sai_object_type_t</ref></type>
+        <definition>sai_object_type_t _sai_enum_metadata_t::objecttype</definition>
+        <argsstring></argsstring>
+        <name>objecttype</name>
+        <briefdescription>
+<para>Object type to which this enum belongs. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>If enum don&apos;t belong to any object type then this field will be equal to SAI_OBJECT_TYPE_NULL. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="saimetadatatypes.h" line="877" column="37" bodyfile="saimetadatatypes.h" bodystart="877" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Defines enum metadata information. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="saimetadatatypes.h" line="819" column="1" bodyfile="saimetadatatypes.h" bodystart="820" bodyend="879"/>
+    <listofallmembers>
+      <member refid="struct__sai__enum__metadata__t_1acab67c3543b25bc14e043a09ae27dfb1" prot="public" virt="non-virtual"><scope>_sai_enum_metadata_t</scope><name>containsflags</name></member>
+      <member refid="struct__sai__enum__metadata__t_1a9e81b594d59a734dd76f058e1c91db44" prot="public" virt="non-virtual"><scope>_sai_enum_metadata_t</scope><name>flagstype</name></member>
+      <member refid="struct__sai__enum__metadata__t_1abdd6774d889f41079f019ed1806e35f6" prot="public" virt="non-virtual"><scope>_sai_enum_metadata_t</scope><name>ignorevalues</name></member>
+      <member refid="struct__sai__enum__metadata__t_1ab486df8ff0c34868dc73d8dcb5554175" prot="public" virt="non-virtual"><scope>_sai_enum_metadata_t</scope><name>ignorevaluesnames</name></member>
+      <member refid="struct__sai__enum__metadata__t_1a1cea288c3ba6d7925806bd8da59ea87e" prot="public" virt="non-virtual"><scope>_sai_enum_metadata_t</scope><name>name</name></member>
+      <member refid="struct__sai__enum__metadata__t_1ae218e68fa65e3b05bc6f39c2ab5a5356" prot="public" virt="non-virtual"><scope>_sai_enum_metadata_t</scope><name>objecttype</name></member>
+      <member refid="struct__sai__enum__metadata__t_1aceaa240f7c85c22cc8e81b052b97487d" prot="public" virt="non-virtual"><scope>_sai_enum_metadata_t</scope><name>values</name></member>
+      <member refid="struct__sai__enum__metadata__t_1a9836b53be7c83227882e59a52c9e75d9" prot="public" virt="non-virtual"><scope>_sai_enum_metadata_t</scope><name>valuescount</name></member>
+      <member refid="struct__sai__enum__metadata__t_1ae15681a5b3e5adc92b9e70fcd75ef123" prot="public" virt="non-virtual"><scope>_sai_enum_metadata_t</scope><name>valuesnames</name></member>
+      <member refid="struct__sai__enum__metadata__t_1a524c972605413b55340386a1b68aa743" prot="public" virt="non-virtual"><scope>_sai_enum_metadata_t</scope><name>valuesshortnames</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

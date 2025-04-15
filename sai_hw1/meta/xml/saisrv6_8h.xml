@@ -1,0 +1,1546 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="saisrv6_8h" kind="file" language="C++">
+    <compoundname>saisrv6.h</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+    <includedby refid="sai_8h" local="yes">/home/andrii/sai_hw1/SAI/inc/sai.h</includedby>
+    <includedby refid="saiobject_8h" local="no">/home/andrii/sai_hw1/SAI/inc/saiobject.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="5">
+        <label>sys/types.h</label>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saisrv6.h</label>
+        <link refid="saisrv6_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>saitypes.h</label>
+        <link refid="saitypes_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>/home/andrii/sai_hw1/SAI/inc/sai.h</label>
+        <link refid="sai_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/home/andrii/sai_hw1/SAI/inc/saiobject.h</label>
+        <link refid="saiobject_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saisrv6.h</label>
+        <link refid="saisrv6_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</label>
+        <link refid="saiextensions_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct__sai__my__sid__entry__t" prot="public">_sai_my_sid_entry_t</innerclass>
+    <innerclass refid="struct__sai__srv6__api__t" prot="public">_sai_srv6_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAISRV6_1gadd7bc05c09ac47f3eaf339d65b2d543b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_srv6_sidlist_type_t</name>
+        <enumvalue id="group__SAISRV6_1ggadd7bc05c09ac47f3eaf339d65b2d543baf7963cfc468e0ab749efa37ab5931fcb" prot="public">
+          <name>SAI_SRV6_SIDLIST_TYPE_INSERT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Insertion of SRV6 Policy </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1ggadd7bc05c09ac47f3eaf339d65b2d543baef6b57b7393244839508944e14f42c94" prot="public">
+          <name>SAI_SRV6_SIDLIST_TYPE_INSERT_RED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Insertion of SRV6 Policy with Reduced SRH </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1ggadd7bc05c09ac47f3eaf339d65b2d543ba5b71e229cdb86afe0fdebfd1248299f6" prot="public">
+          <name>SAI_SRV6_SIDLIST_TYPE_ENCAPS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Encapsulation in a SRV6 Policy </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1ggadd7bc05c09ac47f3eaf339d65b2d543badc5c14ec797f5116ab48a49485caae70" prot="public">
+          <name>SAI_SRV6_SIDLIST_TYPE_ENCAPS_RED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Encapsulation in a SRV6 Policy with Reduced SRH </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1ggadd7bc05c09ac47f3eaf339d65b2d543bade72a99c8df5e15e8add7912851e132b" prot="public">
+          <name>SAI_SRV6_SIDLIST_TYPE_CUSTOM_RANGE_BASE</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum defining Head-end Behavior. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" line="39" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" bodystart="40" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAISRV6_1ga1d1ba85acac9ff04bcdae39fef7764e5" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_my_sid_entry_endpoint_behavior_t</name>
+        <enumvalue id="group__SAISRV6_1gga1d1ba85acac9ff04bcdae39fef7764e5a5229566197a087c36bcb2d0f3dfdbe90" prot="public">
+          <name>SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_E</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Basic Endpoint </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga1d1ba85acac9ff04bcdae39fef7764e5a9ad9a09380cc0ca0af0aa5451478f671" prot="public">
+          <name>SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_X</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End.X Endpoint with Layer-3 Cross-connect </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga1d1ba85acac9ff04bcdae39fef7764e5a034c4e565ec200422497d134b5655ff0" prot="public">
+          <name>SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_T</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End.T Endpoint with specific IPv6 Table </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga1d1ba85acac9ff04bcdae39fef7764e5ac0e5af85ff6adeeb7171c9a0ebc16d2b" prot="public">
+          <name>SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_DX6</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Endpoint with decapsulation and IPv6 Cross-connect </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga1d1ba85acac9ff04bcdae39fef7764e5adc2c46703262ca4806cc18a582e419b1" prot="public">
+          <name>SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_DX4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Endpoint with decapsulation and IPv4 Cross-connect </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga1d1ba85acac9ff04bcdae39fef7764e5abd1dc5c71825882998a205a6df8c959b" prot="public">
+          <name>SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_DT6</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Endpoint with decapsulation and specific IPv6 table lookup </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga1d1ba85acac9ff04bcdae39fef7764e5a9ebd6bee568d67921489bc745a7f1383" prot="public">
+          <name>SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_DT4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Endpoint with decapsulation and specific IPv4 table lookup </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga1d1ba85acac9ff04bcdae39fef7764e5a578f1aea6d566c166c94f3e75c5cee63" prot="public">
+          <name>SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_DT46</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Endpoint with decapsulation and specific IP table lookup </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga1d1ba85acac9ff04bcdae39fef7764e5a1dddb1db977f413447aab059924fe32b" prot="public">
+          <name>SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_B6_ENCAPS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Endpoint Bound to a policy with Encapsulation </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga1d1ba85acac9ff04bcdae39fef7764e5a34fe5bce5580329e89b7752e9926aa2f" prot="public">
+          <name>SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_B6_ENCAPS_RED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End.B6.Encaps function with a reduced SRH </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga1d1ba85acac9ff04bcdae39fef7764e5a420f68f7b59fd1ca30736a689ba27fb8" prot="public">
+          <name>SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_B6_INSERT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Endpoint Bound to a policy with Insertion </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga1d1ba85acac9ff04bcdae39fef7764e5a1c0bc1f4354d7b54b45e79ffed3bc4d8" prot="public">
+          <name>SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_B6_INSERT_RED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End.B6.Insert function with a reduced SRH </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga1d1ba85acac9ff04bcdae39fef7764e5a1fcad23f448feaa483b04fb74e463076" prot="public">
+          <name>SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_UN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End.uN function for shift-and-lookup behavior </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga1d1ba85acac9ff04bcdae39fef7764e5a3f2dd1fc4a7c04b4172d2f1eaef60b1b" prot="public">
+          <name>SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_UA</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End.uA function for shift-and-xconnect behavior </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga1d1ba85acac9ff04bcdae39fef7764e5a6cb881afc6a525e3675080361e80dbab" prot="public">
+          <name>SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_UDX4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Endpoint with decapsulation and IPv4 Cross-connect for uSID </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga1d1ba85acac9ff04bcdae39fef7764e5a8fb28b52e1abaf3d67e5579c581b64e6" prot="public">
+          <name>SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_UDX6</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Endpoint with decapsulation and IPv6 Cross-connect for uSID </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga1d1ba85acac9ff04bcdae39fef7764e5abbb219d4f21e18e5a9a6aa4fb3b66ded" prot="public">
+          <name>SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_UDT4</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Endpoint with decapsulation and specific IPv4 Table lookup for uSID </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga1d1ba85acac9ff04bcdae39fef7764e5af9314c4a03787b4f683e6c418ee789ff" prot="public">
+          <name>SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_UDT6</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Endpoint with decapsulation and specific IPv6 Table lookup for uSID </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga1d1ba85acac9ff04bcdae39fef7764e5ac670b253557cf5f11c234ed760fce6e2" prot="public">
+          <name>SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_UDT46</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Endpoint with decapsulation and specific IP Table lookup for uSID </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga1d1ba85acac9ff04bcdae39fef7764e5adff3e52cee69c8b748b9b0b3407410b8" prot="public">
+          <name>SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga1d1ba85acac9ff04bcdae39fef7764e5a06983b1551e0965b7442c60dc4bead95" prot="public">
+          <name>SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of Custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum defining Endpoint Behavior. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" line="61" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" bodystart="62" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAISRV6_1ga3a1af4ce43318e4e9588c6fb37739c88" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_my_sid_entry_endpoint_behavior_flavor_t</name>
+        <enumvalue id="group__SAISRV6_1gga3a1af4ce43318e4e9588c6fb37739c88acca077bb85478e7a6322124b3bfc247b" prot="public">
+          <name>SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_FLAVOR_NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>None </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga3a1af4ce43318e4e9588c6fb37739c88a4595d18af17de507a7f368830941c971" prot="public">
+          <name>SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_FLAVOR_PSP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Penultimate segment pop </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga3a1af4ce43318e4e9588c6fb37739c88a4027d8ee0972dba228faa1eff19e6f95" prot="public">
+          <name>SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_FLAVOR_USP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ultimate Segment pop </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga3a1af4ce43318e4e9588c6fb37739c88a7f757648ec2604dc598ebc0aec31f041" prot="public">
+          <name>SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_FLAVOR_USD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ultimate Segment decapsulation </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga3a1af4ce43318e4e9588c6fb37739c88a660626444ab6719a28304ff76f69f88a" prot="public">
+          <name>SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_FLAVOR_PSP_AND_USP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PSP and USP </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga3a1af4ce43318e4e9588c6fb37739c88aa858e50904b7a46fefe7843d989721af" prot="public">
+          <name>SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_FLAVOR_USD_AND_USP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>USD and USP </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga3a1af4ce43318e4e9588c6fb37739c88a3aadf5bf6a9b6d08141b53be3b9004fb" prot="public">
+          <name>SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_FLAVOR_PSP_AND_USD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PSP and USD </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga3a1af4ce43318e4e9588c6fb37739c88a60fc4a5def95f7b21fd843cc1bb335c9" prot="public">
+          <name>SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_FLAVOR_PSP_AND_USP_AND_USD</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>PSP, USP and USD </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum defining Endpoint Behavior flavors for End, End.X and End.T functions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" line="131" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" bodystart="132" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAISRV6_1ga918fa9158accbf8a7e5c864ed1cbe28f" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_srv6_sidlist_attr_t</name>
+        <enumvalue id="group__SAISRV6_1gga918fa9158accbf8a7e5c864ed1cbe28fa9b1dcba7e5e741f984206f23d3bdc5b6" prot="public">
+          <name>SAI_SRV6_SIDLIST_ATTR_START</name>
+          <initializer>= 0x00000000</initializer>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga918fa9158accbf8a7e5c864ed1cbe28fa7ece17fbec801769da79fd77db3e015f" prot="public">
+          <name>SAI_SRV6_SIDLIST_ATTR_TYPE</name>
+          <initializer>= SAI_SRV6_SIDLIST_ATTR_START</initializer>
+          <briefdescription>
+<para>Transit or Source Type. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_srv6_sidlist_type_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga918fa9158accbf8a7e5c864ed1cbe28fa86f6b92417b3cfd02da698ccbf3d869d" prot="public">
+          <name>SAI_SRV6_SIDLIST_ATTR_TLV_LIST</name>
+          <briefdescription>
+<para>List of Type Length Values for Source. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_tlv_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga918fa9158accbf8a7e5c864ed1cbe28fa0976781d37e308213309374c152498e5" prot="public">
+          <name>SAI_SRV6_SIDLIST_ATTR_SEGMENT_LIST</name>
+          <briefdescription>
+<para>List of Segments for Source / Transit. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_segment_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga918fa9158accbf8a7e5c864ed1cbe28fa8fb0db58c599b0c0f3df9d25d4e9472b" prot="public">
+          <name>SAI_SRV6_SIDLIST_ATTR_NEXT_HOP_ID</name>
+          <briefdescription>
+<para>Underlay Next hop to use. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_NEXT_HOP </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga918fa9158accbf8a7e5c864ed1cbe28fa2435d5df1fa5349b36c3f7e3c9e35609" prot="public">
+          <name>SAI_SRV6_SIDLIST_ATTR_STATS_COUNT_MODE</name>
+          <briefdescription>
+<para>Set SRV6 SID List statistics counting mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_stats_count_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_STATS_COUNT_MODE_PACKET_AND_BYTE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga918fa9158accbf8a7e5c864ed1cbe28fab903050265913b3a271830a40f2a0bb3" prot="public">
+          <name>SAI_SRV6_SIDLIST_ATTR_SELECTIVE_COUNTER_LIST</name>
+          <briefdescription>
+<para>Attach counter object list. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Counter object should be of type Selective. Fill (<ref refid="group__SAICOUNTER_1ggac5e99b5b04f2a0f0665babc2a60c9641a2835fed0aa18e2fb59824c903bd712ea" kindref="member">SAI_COUNTER_ATTR_TYPE</ref> with <ref refid="group__SAICOUNTER_1gga4e3da19e4589261e88197d6576020cf1aa4b87a1c99256ee3601553c9455cb92c" kindref="member">SAI_COUNTER_TYPE_SELECTIVE</ref>).</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_COUNTER </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga918fa9158accbf8a7e5c864ed1cbe28fa59cef573eb31afbfee433146346b465b" prot="public">
+          <name>SAI_SRV6_SIDLIST_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga918fa9158accbf8a7e5c864ed1cbe28fa66f63e756d073a8bd5ff0f8f265e1c1a" prot="public">
+          <name>SAI_SRV6_SIDLIST_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga918fa9158accbf8a7e5c864ed1cbe28fa5a67fd78c8ddb07ec4596562e6748f49" prot="public">
+          <name>SAI_SRV6_SIDLIST_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute data for SRV6 SID List Entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" line="162" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" bodystart="163" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAISRV6_1ga3e4cf408477ee55340846b8c2a540067" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_srv6_sidlist_stat_t</name>
+        <enumvalue id="group__SAISRV6_1gga3e4cf408477ee55340846b8c2a540067afd3222d869ac5489f3c92d2f34d2a5e1" prot="public">
+          <name>SAI_SRV6_SIDLIST_STAT_OUT_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Egress packet stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1gga3e4cf408477ee55340846b8c2a540067a8b4a1e979d61716494e7ab00aed7f311" prot="public">
+          <name>SAI_SRV6_SIDLIST_STAT_OUT_OCTETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Egress byte stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>SRV6 SID List counter IDs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" line="243" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" bodystart="244" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAISRV6_1gacb23319263664eaebc22eade0fc9d464" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_my_sid_entry_attr_t</name>
+        <enumvalue id="group__SAISRV6_1ggacb23319263664eaebc22eade0fc9d464ac971049f7bce2fd2cc7c4445c6729666" prot="public">
+          <name>SAI_MY_SID_ENTRY_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1ggacb23319263664eaebc22eade0fc9d464a61c17cb06cde92f3eaffc689ea0e3ba3" prot="public">
+          <name>SAI_MY_SID_ENTRY_ATTR_ENDPOINT_BEHAVIOR</name>
+          <initializer>= SAI_MY_SID_ENTRY_ATTR_START</initializer>
+          <briefdescription>
+<para>Endpoint Function. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_my_sid_entry_endpoint_behavior_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1ggacb23319263664eaebc22eade0fc9d464a0dd17da10599dd6a228ea595de7dc88e" prot="public">
+          <name>SAI_MY_SID_ENTRY_ATTR_ENDPOINT_BEHAVIOR_FLAVOR</name>
+          <briefdescription>
+<para>Flavor for End, End.X and End.T functions. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_my_sid_entry_endpoint_behavior_flavor_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_FLAVOR_NONE </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_MY_SID_ENTRY_ATTR_ENDPOINT_BEHAVIOR == SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_E or SAI_MY_SID_ENTRY_ATTR_ENDPOINT_BEHAVIOR == SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_X or SAI_MY_SID_ENTRY_ATTR_ENDPOINT_BEHAVIOR == SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_T or SAI_MY_SID_ENTRY_ATTR_ENDPOINT_BEHAVIOR == SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_UN or SAI_MY_SID_ENTRY_ATTR_ENDPOINT_BEHAVIOR == SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_UA </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1ggacb23319263664eaebc22eade0fc9d464a26087af84fbcdfa08d6cd01097a2e452" prot="public">
+          <name>SAI_MY_SID_ENTRY_ATTR_PACKET_ACTION</name>
+          <briefdescription>
+<para>Packet action. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_packet_action_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_PACKET_ACTION_FORWARD </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1ggacb23319263664eaebc22eade0fc9d464a9268073cf279e9dbc5c2ef7f280eebe1" prot="public">
+          <name>SAI_MY_SID_ENTRY_ATTR_TRAP_PRIORITY</name>
+          <briefdescription>
+<para>Packet priority for trap/log actions. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1ggacb23319263664eaebc22eade0fc9d464a9aec86e482037ad59f5212884a079403" prot="public">
+          <name>SAI_MY_SID_ENTRY_ATTR_NEXT_HOP_ID</name>
+          <briefdescription>
+<para>Next hop for cross-connect functions. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_NEXT_HOP, SAI_OBJECT_TYPE_NEXT_HOP_GROUP, SAI_OBJECT_TYPE_ROUTER_INTERFACE </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_MY_SID_ENTRY_ATTR_ENDPOINT_BEHAVIOR == SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_X or SAI_MY_SID_ENTRY_ATTR_ENDPOINT_BEHAVIOR == SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_DX4 or SAI_MY_SID_ENTRY_ATTR_ENDPOINT_BEHAVIOR == SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_DX6 or SAI_MY_SID_ENTRY_ATTR_ENDPOINT_BEHAVIOR == SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_B6_ENCAPS or SAI_MY_SID_ENTRY_ATTR_ENDPOINT_BEHAVIOR == SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_B6_ENCAPS_RED or SAI_MY_SID_ENTRY_ATTR_ENDPOINT_BEHAVIOR == SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_B6_INSERT or SAI_MY_SID_ENTRY_ATTR_ENDPOINT_BEHAVIOR == SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_B6_INSERT_RED or SAI_MY_SID_ENTRY_ATTR_ENDPOINT_BEHAVIOR == SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_UA </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1ggacb23319263664eaebc22eade0fc9d464ac59a6ebe7dcb20ffc5fca171b9d44caf" prot="public">
+          <name>SAI_MY_SID_ENTRY_ATTR_TUNNEL_ID</name>
+          <briefdescription>
+<para>Tunnel id for decapsulation. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_TUNNEL </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_MY_SID_ENTRY_ATTR_ENDPOINT_BEHAVIOR_FLAVOR == SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_FLAVOR_USD or SAI_MY_SID_ENTRY_ATTR_ENDPOINT_BEHAVIOR_FLAVOR == SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_FLAVOR_USD_AND_USP or SAI_MY_SID_ENTRY_ATTR_ENDPOINT_BEHAVIOR_FLAVOR == SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_FLAVOR_PSP_AND_USD or SAI_MY_SID_ENTRY_ATTR_ENDPOINT_BEHAVIOR_FLAVOR == SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_FLAVOR_PSP_AND_USP_AND_USD or SAI_MY_SID_ENTRY_ATTR_ENDPOINT_BEHAVIOR == SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_DT4 or SAI_MY_SID_ENTRY_ATTR_ENDPOINT_BEHAVIOR == SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_DT6 or SAI_MY_SID_ENTRY_ATTR_ENDPOINT_BEHAVIOR == SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_DT46 or SAI_MY_SID_ENTRY_ATTR_ENDPOINT_BEHAVIOR == SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_UDT4 or SAI_MY_SID_ENTRY_ATTR_ENDPOINT_BEHAVIOR == SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_UDT6 or SAI_MY_SID_ENTRY_ATTR_ENDPOINT_BEHAVIOR == SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_UDT46 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1ggacb23319263664eaebc22eade0fc9d464ac81cc430b41581b240c717d29b395ebc" prot="public">
+          <name>SAI_MY_SID_ENTRY_ATTR_VRF</name>
+          <briefdescription>
+<para>VRF for decapsulation and specific table lookup functions. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_VIRTUAL_ROUTER </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+<simplesect kind="par"><title>Valid only when:</title><para> @@validonly       SAI_MY_SID_ENTRY_ATTR_ENDPOINT_BEHAVIOR == SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_T or SAI_MY_SID_ENTRY_ATTR_ENDPOINT_BEHAVIOR == SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_DT4 or SAI_MY_SID_ENTRY_ATTR_ENDPOINT_BEHAVIOR == SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_DT6 or SAI_MY_SID_ENTRY_ATTR_ENDPOINT_BEHAVIOR == SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_DT46 or SAI_MY_SID_ENTRY_ATTR_ENDPOINT_BEHAVIOR == SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_UDT4 or SAI_MY_SID_ENTRY_ATTR_ENDPOINT_BEHAVIOR == SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_UDT6 or SAI_MY_SID_ENTRY_ATTR_ENDPOINT_BEHAVIOR == SAI_MY_SID_ENTRY_ENDPOINT_BEHAVIOR_UDT46 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1ggacb23319263664eaebc22eade0fc9d464a0d8ceecf12030c2983cd541b8845e277" prot="public">
+          <name>SAI_MY_SID_ENTRY_ATTR_COUNTER_ID</name>
+          <briefdescription>
+<para>Attach a counter. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>When it is empty, then packet hits won&apos;t be counted</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_COUNTER </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1ggacb23319263664eaebc22eade0fc9d464a0017d0004dd72931f959355475d5b7d3" prot="public">
+          <name>SAI_MY_SID_ENTRY_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1ggacb23319263664eaebc22eade0fc9d464a7adc47b2bd6d34b4381b33a3b5c130a4" prot="public">
+          <name>SAI_MY_SID_ENTRY_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAISRV6_1ggacb23319263664eaebc22eade0fc9d464a4041702fa150a4e0ccc88fcbf1e2ff00" prot="public">
+          <name>SAI_MY_SID_ENTRY_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute list for My SID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" line="355" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" bodystart="356" bodyend="458"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAISRV6_1ga7be5e09d39bbe3645050217758d30efc" prot="public" static="no">
+        <type>enum <ref refid="group__SAISRV6_1gadd7bc05c09ac47f3eaf339d65b2d543b" kindref="member">_sai_srv6_sidlist_type_t</ref></type>
+        <definition>typedef enum _sai_srv6_sidlist_type_t sai_srv6_sidlist_type_t</definition>
+        <argsstring></argsstring>
+        <name>sai_srv6_sidlist_type_t</name>
+        <briefdescription>
+<para>Enum defining Head-end Behavior. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" line="56" column="25"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAISRV6_1ga1092a30aea1022e7fb56a072f1a49220" prot="public" static="no">
+        <type>enum <ref refid="group__SAISRV6_1ga1d1ba85acac9ff04bcdae39fef7764e5" kindref="member">_sai_my_sid_entry_endpoint_behavior_t</ref></type>
+        <definition>typedef enum _sai_my_sid_entry_endpoint_behavior_t sai_my_sid_entry_endpoint_behavior_t</definition>
+        <argsstring></argsstring>
+        <name>sai_my_sid_entry_endpoint_behavior_t</name>
+        <briefdescription>
+<para>Enum defining Endpoint Behavior. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" line="126" column="38"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAISRV6_1ga3b60e56d5e5748627ebc1c31534cc27b" prot="public" static="no">
+        <type>enum <ref refid="group__SAISRV6_1ga3a1af4ce43318e4e9588c6fb37739c88" kindref="member">_sai_my_sid_entry_endpoint_behavior_flavor_t</ref></type>
+        <definition>typedef enum _sai_my_sid_entry_endpoint_behavior_flavor_t sai_my_sid_entry_endpoint_behavior_flavor_t</definition>
+        <argsstring></argsstring>
+        <name>sai_my_sid_entry_endpoint_behavior_flavor_t</name>
+        <briefdescription>
+<para>Enum defining Endpoint Behavior flavors for End, End.X and End.T functions. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" line="157" column="45"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAISRV6_1ga7934a77248d8d935fdb0c5e587859857" prot="public" static="no">
+        <type>enum <ref refid="group__SAISRV6_1ga918fa9158accbf8a7e5c864ed1cbe28f" kindref="member">_sai_srv6_sidlist_attr_t</ref></type>
+        <definition>typedef enum _sai_srv6_sidlist_attr_t sai_srv6_sidlist_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_srv6_sidlist_attr_t</name>
+        <briefdescription>
+<para>Attribute data for SRV6 SID List Entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" line="238" column="25"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAISRV6_1ga112cc45618fad96162e5bc3b931caf07" prot="public" static="no">
+        <type>enum <ref refid="group__SAISRV6_1ga3e4cf408477ee55340846b8c2a540067" kindref="member">_sai_srv6_sidlist_stat_t</ref></type>
+        <definition>typedef enum _sai_srv6_sidlist_stat_t sai_srv6_sidlist_stat_t</definition>
+        <argsstring></argsstring>
+        <name>sai_srv6_sidlist_stat_t</name>
+        <briefdescription>
+<para>SRV6 SID List counter IDs. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" line="250" column="25"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAISRV6_1gab816829b2b0c1c71b3f848f7b9c7fd3a" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_srv6_sidlist_fn) (_Out_ sai_object_id_t *srv6_sidlist_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *srv6_sidlist_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_srv6_sidlist_fn</name>
+        <briefdescription>
+<para>Create Segment ID List. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">srv6_sidlist_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Segment ID List ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" line="262" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAISRV6_1ga14ff9484ce4fbd1b40bfb9f6a60d7b7b" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_srv6_sidlist_fn) (_In_ sai_object_id_t srv6_sidlist_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t srv6_sidlist_id)</argsstring>
+        <name>sai_remove_srv6_sidlist_fn</name>
+        <briefdescription>
+<para>Remove Segment ID List. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">srv6_sidlist_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Segment ID List ID</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" line="275" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAISRV6_1gaf679222a196c710cd8bef4d440fe93f6" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_srv6_sidlist_attribute_fn) (_In_ sai_object_id_t srv6_sidlist_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t srv6_sidlist_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_srv6_sidlist_attribute_fn</name>
+        <briefdescription>
+<para>Set Segment ID List attribute value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">srv6_sidlist_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Segment ID List ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" line="286" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" bodystart="286" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAISRV6_1ga95edb12243ea48a44ede7367db998d43" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_srv6_sidlist_attribute_fn) (_In_ sai_object_id_t srv6_sidlist_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t srv6_sidlist_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_srv6_sidlist_attribute_fn</name>
+        <briefdescription>
+<para>Get Segment ID List attribute value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">srv6_sidlist_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Segment ID List ID </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" line="299" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAISRV6_1ga24f40b90be2f5854ca9b3a2323e96a4a" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_srv6_sidlist_stats_fn) (_In_ sai_object_id_t srv6_sidlist_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t srv6_sidlist_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_srv6_sidlist_stats_fn</name>
+        <briefdescription>
+<para>Get SRV6 SID List statistics counters. Deprecated for backward compatibility. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">srv6_sidlist_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SRV6 SID List id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" line="314" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAISRV6_1ga639252e39d94ccb8f3dd5ac95e91a608" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_srv6_sidlist_stats_ext_fn) (_In_ sai_object_id_t srv6_sidlist_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t srv6_sidlist_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_srv6_sidlist_stats_ext_fn</name>
+        <briefdescription>
+<para>Get SRV6 SID List statistics counters extended. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">srv6_sidlist_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SRV6 SID List id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Statistics mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" line="331" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" bodystart="331" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAISRV6_1ga88d17727e4853ae713037efa15f2cc1b" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_clear_srv6_sidlist_stats_fn) (_In_ sai_object_id_t srv6_sidlist_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</definition>
+        <argsstring>)(_In_ sai_object_id_t srv6_sidlist_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</argsstring>
+        <name>sai_clear_srv6_sidlist_stats_fn</name>
+        <briefdescription>
+<para>Clear SRV6 SID List statistics counters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">srv6_sidlist_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SRV6 SID List id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" line="347" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAISRV6_1ga6c35ebe1c009e5428d86784cbcb0e153" prot="public" static="no">
+        <type>enum <ref refid="group__SAISRV6_1gacb23319263664eaebc22eade0fc9d464" kindref="member">_sai_my_sid_entry_attr_t</ref></type>
+        <definition>typedef enum _sai_my_sid_entry_attr_t sai_my_sid_entry_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_my_sid_entry_attr_t</name>
+        <briefdescription>
+<para>Attribute list for My SID. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" line="458" column="25"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAISRV6_1gab59769a36777606d2b4b677811836658" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__my__sid__entry__t" kindref="compound">_sai_my_sid_entry_t</ref></type>
+        <definition>typedef struct _sai_my_sid_entry_t sai_my_sid_entry_t</definition>
+        <argsstring></argsstring>
+        <name>sai_my_sid_entry_t</name>
+        <briefdescription>
+<para>My SID Entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" line="504" column="20"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAISRV6_1gac50b06be6b5d3ba14be302bfbd45e896" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_my_sid_entry_fn) (_In_ const sai_my_sid_entry_t *my_sid_entry, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ const sai_my_sid_entry_t *my_sid_entry, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_my_sid_entry_fn</name>
+        <briefdescription>
+<para>Create My SID entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">my_sid_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>My SID entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" line="515" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" bodystart="515" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAISRV6_1ga7c278006ea5b0f4f6e287302a1caef65" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_my_sid_entry_fn) (_In_ const sai_my_sid_entry_t *my_sid_entry)</definition>
+        <argsstring>)(_In_ const sai_my_sid_entry_t *my_sid_entry)</argsstring>
+        <name>sai_remove_my_sid_entry_fn</name>
+        <briefdescription>
+<para>Remove My SID entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">my_sid_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>My SID entry</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" line="527" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" bodystart="527" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAISRV6_1gae81d2ed58f69a01ce099b84e49e96507" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_my_sid_entry_attribute_fn) (_In_ const sai_my_sid_entry_t *my_sid_entry, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ const sai_my_sid_entry_t *my_sid_entry, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_my_sid_entry_attribute_fn</name>
+        <briefdescription>
+<para>Set My SID attribute value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">my_sid_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>My SID entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" line="538" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" bodystart="538" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAISRV6_1ga660608b5392b42fff3d76853c2c58ae2" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_my_sid_entry_attribute_fn) (_In_ const sai_my_sid_entry_t *my_sid_entry, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ const sai_my_sid_entry_t *my_sid_entry, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_my_sid_entry_attribute_fn</name>
+        <briefdescription>
+<para>My SID attribute value. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">my_sid_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>My SID entry </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" line="551" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" bodystart="551" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAISRV6_1gac5912629500020869a8aeb1d28a11642" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_create_my_sid_entry_fn) (_In_ uint32_t object_count, _In_ const sai_my_sid_entry_t *my_sid_entry, _In_ const uint32_t *attr_count, _In_ const sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_my_sid_entry_t *my_sid_entry, _In_ const uint32_t *attr_count, _In_ const sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_create_my_sid_entry_fn</name>
+        <briefdescription>
+<para>Bulk create My SID entries. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to create </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">my_sid_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of object to create </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attr_count. Caller passes the number of attribute for each object to create. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attributes for every object. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are created or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to create. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" line="573" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" bodystart="573" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAISRV6_1ga6403f39e284b564215fccf230ad697b9" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_remove_my_sid_entry_fn) (_In_ uint32_t object_count, _In_ const sai_my_sid_entry_t *my_sid_entry, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_my_sid_entry_t *my_sid_entry, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_remove_my_sid_entry_fn</name>
+        <briefdescription>
+<para>Bulk remove My SID entries. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to remove </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">my_sid_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of objects to remove </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are removed or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to remove. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" line="595" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" bodystart="595" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAISRV6_1ga43b9504f1e09dc98a877dc39f459608a" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_set_my_sid_entry_attribute_fn) (_In_ uint32_t object_count, _In_ const sai_my_sid_entry_t *my_sid_entry, _In_ const sai_attribute_t *attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_my_sid_entry_t *my_sid_entry, _In_ const sai_attribute_t *attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_set_my_sid_entry_attribute_fn</name>
+        <briefdescription>
+<para>Bulk set attribute on My SID entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to set attribute </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">my_sid_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of objects to set attribute </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attributes to set on objects, one attribute per object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are removed or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to remove. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" line="616" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" bodystart="616" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAISRV6_1ga1233c9321f34b034dc470e24fb186759" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_bulk_get_my_sid_entry_attribute_fn) (_In_ uint32_t object_count, _In_ const sai_my_sid_entry_t *my_sid_entry, _In_ const uint32_t *attr_count, _Inout_ sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</definition>
+        <argsstring>)(_In_ uint32_t object_count, _In_ const sai_my_sid_entry_t *my_sid_entry, _In_ const uint32_t *attr_count, _Inout_ sai_attribute_t **attr_list, _In_ sai_bulk_op_error_mode_t mode, _Out_ sai_status_t *object_statuses)</argsstring>
+        <name>sai_bulk_get_my_sid_entry_attribute_fn</name>
+        <briefdescription>
+<para>Bulk get attribute on My SID entry. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">object_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of objects to set attribute </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">my_sid_entry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of objects to set attribute </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attr_count. Caller passes the number of attribute for each object to get </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of attributes to set on objects, one attribute per object </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bulk operation error handling mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">object_statuses</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>List of status for every object. Caller needs to allocate the buffer</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success when all objects are removed or <ref refid="group__SAISTATUS_1ga033ca99724e17bca3e17f86df3f80490" kindref="member">SAI_STATUS_FAILURE</ref> when any of the objects fails to remove. When there is failure, Caller is expected to go through the list of returned statuses to find out which fails and which succeeds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" line="640" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" bodystart="640" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAISRV6_1ga0e21c1a3cb21e25870974fb2a022fa55" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__srv6__api__t" kindref="compound">_sai_srv6_api_t</ref></type>
+        <definition>typedef struct _sai_srv6_api_t sai_srv6_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_srv6_api_t</name>
+        <briefdescription>
+<para>SRV6 methods table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saisrv6.h" line="674" column="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module defines SAI SRV6 Entry interface. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2017 Microsoft Open Technologies, Inc.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <ulink url="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</ulink></para>
+<para>THIS CODE IS PROVIDED ON AN <emphasis>AS IS</emphasis> BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</para>
+<para>See the Apache Version 2.0 License for specific language governing permissions and limitations under the License.</para>
+<para>Microsoft would like to thank the following companies for their review and assistance with these files: Intel Corporation, Mellanox Technologies Ltd, Dell Products, L.P., Facebook, Inc., Marvell International Ltd. </para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saisrv6.h"/>
+  </compounddef>
+</doxygen>

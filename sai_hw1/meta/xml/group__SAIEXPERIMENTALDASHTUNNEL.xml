@@ -1,0 +1,785 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group__SAIEXPERIMENTALDASHTUNNEL" kind="group">
+    <compoundname>SAIEXPERIMENTALDASHTUNNEL</compoundname>
+    <title>SAI - Experimental: DASH tunnel specific API definitions</title>
+    <innerclass refid="struct__sai__dash__tunnel__api__t" prot="public">_sai_dash_tunnel_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASHTUNNEL_1ga6702b41015623393bab38b36b98f6103" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_dash_tunnel_attr_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASHTUNNEL_1gga6702b41015623393bab38b36b98f6103a3c193914de50a3dbd544fd09ad29c824" prot="public">
+          <name>SAI_DASH_TUNNEL_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHTUNNEL_1gga6702b41015623393bab38b36b98f6103a8308bdba4f60e46792aee6f1c73b8422" prot="public">
+          <name>SAI_DASH_TUNNEL_ATTR_DIP</name>
+          <initializer>= SAI_DASH_TUNNEL_ATTR_START</initializer>
+          <briefdescription>
+<para>Action parameter dip. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHTUNNEL_1gga6702b41015623393bab38b36b98f6103aa7422dc12069a882bc16b03cc78e93c5" prot="public">
+          <name>SAI_DASH_TUNNEL_ATTR_DASH_ENCAPSULATION</name>
+          <briefdescription>
+<para>Action parameter DASH encapsulation. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_dash_encapsulation_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_DASH_ENCAPSULATION_VXLAN </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHTUNNEL_1gga6702b41015623393bab38b36b98f6103a05ac73d5e80d2581ae57649c9ba5fc76" prot="public">
+          <name>SAI_DASH_TUNNEL_ATTR_TUNNEL_KEY</name>
+          <briefdescription>
+<para>Action parameter tunnel key. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHTUNNEL_1gga6702b41015623393bab38b36b98f6103ad1b6c023368a0a6f89c76404236f7e53" prot="public">
+          <name>SAI_DASH_TUNNEL_ATTR_MAX_MEMBER_SIZE</name>
+          <briefdescription>
+<para>Action parameter max member size. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         1 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHTUNNEL_1gga6702b41015623393bab38b36b98f6103a39254362e77bbafea7bc4a0f6b216903" prot="public">
+          <name>SAI_DASH_TUNNEL_ATTR_SIP</name>
+          <briefdescription>
+<para>Action parameter sip. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHTUNNEL_1gga6702b41015623393bab38b36b98f6103abe8528dd2473410a527ec2e901b751dc" prot="public">
+          <name>SAI_DASH_TUNNEL_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHTUNNEL_1gga6702b41015623393bab38b36b98f6103a50e4d7808b9a8cfdfc9f3a76103c2306" prot="public">
+          <name>SAI_DASH_TUNNEL_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHTUNNEL_1gga6702b41015623393bab38b36b98f6103a2ddc569d219c74fbe0e4dc5ba169f3b3" prot="public">
+          <name>SAI_DASH_TUNNEL_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute ID for DASH tunnel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h" line="41" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h" bodystart="42" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASHTUNNEL_1ga7e2a489a15a720043fa14e721df3b602" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_dash_tunnel_member_attr_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASHTUNNEL_1gga7e2a489a15a720043fa14e721df3b602aa733a0488e01ed217648690b89c448bd" prot="public">
+          <name>SAI_DASH_TUNNEL_MEMBER_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHTUNNEL_1gga7e2a489a15a720043fa14e721df3b602ad84ab46eb5ac2700dbe612befaa70248" prot="public">
+          <name>SAI_DASH_TUNNEL_MEMBER_ATTR_DASH_TUNNEL_ID</name>
+          <initializer>= SAI_DASH_TUNNEL_MEMBER_ATTR_START</initializer>
+          <briefdescription>
+<para>Action parameter DASH tunnel id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_DASH_TUNNEL </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHTUNNEL_1gga7e2a489a15a720043fa14e721df3b602a27fe5dbaabab18d0e8aacb082f7a0f4a" prot="public">
+          <name>SAI_DASH_TUNNEL_MEMBER_ATTR_DASH_TUNNEL_NEXT_HOP_ID</name>
+          <briefdescription>
+<para>Action parameter DASH tunnel next hop id. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_DASH_TUNNEL_NEXT_HOP </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHTUNNEL_1gga7e2a489a15a720043fa14e721df3b602a23544a9f802c3d4bd74806459d36cff5" prot="public">
+          <name>SAI_DASH_TUNNEL_MEMBER_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHTUNNEL_1gga7e2a489a15a720043fa14e721df3b602a563f861713efaa08b2e2d42fbc4513ec" prot="public">
+          <name>SAI_DASH_TUNNEL_MEMBER_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHTUNNEL_1gga7e2a489a15a720043fa14e721df3b602a5209bf4c6f81f379daff7d84ec61efe6" prot="public">
+          <name>SAI_DASH_TUNNEL_MEMBER_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute ID for DASH tunnel member. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h" line="109" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h" bodystart="110" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIEXPERIMENTALDASHTUNNEL_1gad9adee26b491224a96b4dcc2f23f4979" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_dash_tunnel_next_hop_attr_t</name>
+        <enumvalue id="group__SAIEXPERIMENTALDASHTUNNEL_1ggad9adee26b491224a96b4dcc2f23f4979a77ff85386f206c630c36ed156b45d192" prot="public">
+          <name>SAI_DASH_TUNNEL_NEXT_HOP_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHTUNNEL_1ggad9adee26b491224a96b4dcc2f23f4979ab3be811b01a358002650ea0e70932c28" prot="public">
+          <name>SAI_DASH_TUNNEL_NEXT_HOP_ATTR_DIP</name>
+          <initializer>= SAI_DASH_TUNNEL_NEXT_HOP_ATTR_START</initializer>
+          <briefdescription>
+<para>Action parameter dip. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0.0.0.0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHTUNNEL_1ggad9adee26b491224a96b4dcc2f23f4979a22d7a8f7105fd9e37ed83ada342415ee" prot="public">
+          <name>SAI_DASH_TUNNEL_NEXT_HOP_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHTUNNEL_1ggad9adee26b491224a96b4dcc2f23f4979afb385dd84ccf1e66656d590cc8810775" prot="public">
+          <name>SAI_DASH_TUNNEL_NEXT_HOP_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIEXPERIMENTALDASHTUNNEL_1ggad9adee26b491224a96b4dcc2f23f4979aff6772ec4ea6cde2b50b67381ed58a8b" prot="public">
+          <name>SAI_DASH_TUNNEL_NEXT_HOP_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Attribute ID for DASH tunnel next hop. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h" line="150" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h" bodystart="151" bodyend="177"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHTUNNEL_1gaf2812ebda908687ed79ea70ac3643bd2" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASHTUNNEL_1ga6702b41015623393bab38b36b98f6103" kindref="member">_sai_dash_tunnel_attr_t</ref></type>
+        <definition>typedef enum _sai_dash_tunnel_attr_t sai_dash_tunnel_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dash_tunnel_attr_t</name>
+        <briefdescription>
+<para>Attribute ID for DASH tunnel. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h" line="104" column="24"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHTUNNEL_1gaa165abce8481aa69c4ebc2e6398b7606" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASHTUNNEL_1ga7e2a489a15a720043fa14e721df3b602" kindref="member">_sai_dash_tunnel_member_attr_t</ref></type>
+        <definition>typedef enum _sai_dash_tunnel_member_attr_t sai_dash_tunnel_member_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dash_tunnel_member_attr_t</name>
+        <briefdescription>
+<para>Attribute ID for DASH tunnel member. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h" line="145" column="31"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHTUNNEL_1gab8874b667f960b5e45985022f00748ab" prot="public" static="no">
+        <type>enum <ref refid="group__SAIEXPERIMENTALDASHTUNNEL_1gad9adee26b491224a96b4dcc2f23f4979" kindref="member">_sai_dash_tunnel_next_hop_attr_t</ref></type>
+        <definition>typedef enum _sai_dash_tunnel_next_hop_attr_t sai_dash_tunnel_next_hop_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dash_tunnel_next_hop_attr_t</name>
+        <briefdescription>
+<para>Attribute ID for DASH tunnel next hop. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h" line="177" column="33"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHTUNNEL_1gac079d33cb3117134d898f47183819d91" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_dash_tunnel_fn) (_Out_ sai_object_id_t *dash_tunnel_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *dash_tunnel_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_dash_tunnel_fn</name>
+        <briefdescription>
+<para>Create DASH tunnel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">dash_tunnel_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h" line="189" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHTUNNEL_1ga64f3ae824cf028950851a7b0bccbe892" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_dash_tunnel_fn) (_In_ sai_object_id_t dash_tunnel_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t dash_tunnel_id)</argsstring>
+        <name>sai_remove_dash_tunnel_fn</name>
+        <briefdescription>
+<para>Remove DASH tunnel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dash_tunnel_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h" line="202" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHTUNNEL_1gac8ee9eb2b23fe38b7be3937fc524521f" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_dash_tunnel_attribute_fn) (_In_ sai_object_id_t dash_tunnel_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t dash_tunnel_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_dash_tunnel_attribute_fn</name>
+        <briefdescription>
+<para>Set attribute for DASH tunnel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dash_tunnel_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h" line="213" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHTUNNEL_1ga6f347e56a6b18fec82a45b5ee63128c0" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_dash_tunnel_attribute_fn) (_In_ sai_object_id_t dash_tunnel_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t dash_tunnel_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_dash_tunnel_attribute_fn</name>
+        <briefdescription>
+<para>Get attribute for DASH tunnel. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dash_tunnel_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h" line="226" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHTUNNEL_1ga9eeef205ac57ea77e8f0da81c96783be" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_dash_tunnel_member_fn) (_Out_ sai_object_id_t *dash_tunnel_member_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *dash_tunnel_member_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_dash_tunnel_member_fn</name>
+        <briefdescription>
+<para>Create DASH tunnel member. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">dash_tunnel_member_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h" line="241" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHTUNNEL_1ga7053ffb479dfb25a9557413116814653" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_dash_tunnel_member_fn) (_In_ sai_object_id_t dash_tunnel_member_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t dash_tunnel_member_id)</argsstring>
+        <name>sai_remove_dash_tunnel_member_fn</name>
+        <briefdescription>
+<para>Remove DASH tunnel member. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dash_tunnel_member_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h" line="254" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHTUNNEL_1ga69e9f961848342a7e2a12748634f2aae" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_dash_tunnel_member_attribute_fn) (_In_ sai_object_id_t dash_tunnel_member_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t dash_tunnel_member_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_dash_tunnel_member_attribute_fn</name>
+        <briefdescription>
+<para>Set attribute for DASH tunnel member. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dash_tunnel_member_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h" line="265" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHTUNNEL_1ga1f936be2f1cdf3937b847e2346ffc6bf" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_dash_tunnel_member_attribute_fn) (_In_ sai_object_id_t dash_tunnel_member_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t dash_tunnel_member_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_dash_tunnel_member_attribute_fn</name>
+        <briefdescription>
+<para>Get attribute for DASH tunnel member. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dash_tunnel_member_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h" line="278" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h" bodystart="278" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHTUNNEL_1gab3f7f4be2a3b01192ce4a1f8b90e9673" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_dash_tunnel_next_hop_fn) (_Out_ sai_object_id_t *dash_tunnel_next_hop_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *dash_tunnel_next_hop_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_dash_tunnel_next_hop_fn</name>
+        <briefdescription>
+<para>Create DASH tunnel next hop. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">dash_tunnel_next_hop_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h" line="293" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h" bodystart="293" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHTUNNEL_1ga8c3dd8396a50d8d52e1e4c53e6bbbdd8" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_dash_tunnel_next_hop_fn) (_In_ sai_object_id_t dash_tunnel_next_hop_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t dash_tunnel_next_hop_id)</argsstring>
+        <name>sai_remove_dash_tunnel_next_hop_fn</name>
+        <briefdescription>
+<para>Remove DASH tunnel next hop. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dash_tunnel_next_hop_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h" line="306" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHTUNNEL_1gae89102b06b12831643f1b0dcc1c9023d" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_dash_tunnel_next_hop_attribute_fn) (_In_ sai_object_id_t dash_tunnel_next_hop_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t dash_tunnel_next_hop_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_dash_tunnel_next_hop_attribute_fn</name>
+        <briefdescription>
+<para>Set attribute for DASH tunnel next hop. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dash_tunnel_next_hop_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h" line="317" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHTUNNEL_1ga994c89a0d3e63d6c721d4de9b5a3193c" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_dash_tunnel_next_hop_attribute_fn) (_In_ sai_object_id_t dash_tunnel_next_hop_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t dash_tunnel_next_hop_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_dash_tunnel_next_hop_attribute_fn</name>
+        <briefdescription>
+<para>Get attribute for DASH tunnel next hop. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">dash_tunnel_next_hop_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Entry id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success Failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h" line="330" column="9" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIEXPERIMENTALDASHTUNNEL_1gac6580ee90c85a11616979ef2b47c4612" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__dash__tunnel__api__t" kindref="compound">_sai_dash_tunnel_api_t</ref></type>
+        <definition>typedef struct _sai_dash_tunnel_api_t sai_dash_tunnel_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_dash_tunnel_api_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashtunnel.h" line="358" column="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

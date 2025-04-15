@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__outbound__ca__to__pa__entry__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_outbound_ca_to_pa_entry_t</compoundname>
+    <includes refid="saiexperimentaldashoutboundcatopa_8h" local="no">saiexperimentaldashoutboundcatopa.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__outbound__ca__to__pa__entry__t_1a3381543e6ed009866ff7cb99688b8104" prot="public" static="no" mutable="no">
+        <type>sai_object_id_t</type>
+        <definition>sai_object_id_t _sai_outbound_ca_to_pa_entry_t::switch_id</definition>
+        <argsstring></argsstring>
+        <name>switch_id</name>
+        <briefdescription>
+<para>Switch ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_SWITCH </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundcatopa.h" line="59" column="21" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundcatopa.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__outbound__ca__to__pa__entry__t_1a2c48058a432065dedd775af7c4f05906" prot="public" static="no" mutable="no">
+        <type>sai_object_id_t</type>
+        <definition>sai_object_id_t _sai_outbound_ca_to_pa_entry_t::dst_vnet_id</definition>
+        <argsstring></argsstring>
+        <name>dst_vnet_id</name>
+        <briefdescription>
+<para>Exact matched key dst_vnet_id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_VNET </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundcatopa.h" line="66" column="21" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundcatopa.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__outbound__ca__to__pa__entry__t_1ac4f057bc0059558f47978706a46d58dc" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__sai__ip__address__t" kindref="compound">sai_ip_address_t</ref></type>
+        <definition>sai_ip_address_t _sai_outbound_ca_to_pa_entry_t::dip</definition>
+        <argsstring></argsstring>
+        <name>dip</name>
+        <briefdescription>
+<para>Exact matched key dip. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundcatopa.h" line="71" column="22" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundcatopa.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Entry for outbound_ca_to_pa_entry. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>_sai_outbound_ca_to_pa_entry_t</label>
+        <link refid="struct__sai__outbound__ca__to__pa__entry__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>dip</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>_sai_ip_address_t</label>
+        <link refid="struct__sai__ip__address__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>addr</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>_sai_ip_addr_t</label>
+        <link refid="union__sai__ip__addr__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundcatopa.h" line="52" column="1" bodyfile="/home/andrii/sai_hw1/SAI/experimental/saiexperimentaldashoutboundcatopa.h" bodystart="53" bodyend="73"/>
+    <listofallmembers>
+      <member refid="struct__sai__outbound__ca__to__pa__entry__t_1ac4f057bc0059558f47978706a46d58dc" prot="public" virt="non-virtual"><scope>_sai_outbound_ca_to_pa_entry_t</scope><name>dip</name></member>
+      <member refid="struct__sai__outbound__ca__to__pa__entry__t_1a2c48058a432065dedd775af7c4f05906" prot="public" virt="non-virtual"><scope>_sai_outbound_ca_to_pa_entry_t</scope><name>dst_vnet_id</name></member>
+      <member refid="struct__sai__outbound__ca__to__pa__entry__t_1a3381543e6ed009866ff7cb99688b8104" prot="public" virt="non-virtual"><scope>_sai_outbound_ca_to_pa_entry_t</scope><name>switch_id</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

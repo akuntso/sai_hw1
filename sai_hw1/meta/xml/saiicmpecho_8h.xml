@@ -1,0 +1,860 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="saiicmpecho_8h" kind="file" language="C++">
+    <compoundname>saiicmpecho.h</compoundname>
+    <includes refid="saitypes_8h" local="no">saitypes.h</includes>
+    <includedby refid="sai_8h" local="yes">/home/andrii/sai_hw1/SAI/inc/sai.h</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h</label>
+        <link refid="saiicmpecho_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>sys/types.h</label>
+      </node>
+      <node id="2">
+        <label>saitypes.h</label>
+        <link refid="saitypes_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h</label>
+        <link refid="saiicmpecho_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>/home/andrii/sai_hw1/SAI/inc/sai.h</label>
+        <link refid="sai_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>/home/andrii/sai_hw1/SAI/experimental/saiextensions.h</label>
+        <link refid="saiextensions_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct__sai__icmp__echo__session__state__notification__t" prot="public">_sai_icmp_echo_session_state_notification_t</innerclass>
+    <innerclass refid="struct__sai__icmp__echo__api__t" prot="public">_sai_icmp_echo_api_t</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="group__SAIICMPECHO_1ga171fb9d331ce842320152715f685a6cf" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_icmp_echo_session_state_t</name>
+        <enumvalue id="group__SAIICMPECHO_1gga171fb9d331ce842320152715f685a6cfa7ff33891849d61bde3954b7b4412777d" prot="public">
+          <name>SAI_ICMP_ECHO_SESSION_STATE_DOWN</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>ICMP_ECHO Session is in Down </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIICMPECHO_1gga171fb9d331ce842320152715f685a6cfaf613a0b6be4674d672f968d695b8dc86" prot="public">
+          <name>SAI_ICMP_ECHO_SESSION_STATE_UP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>ICMP_ECHO Session is Up </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>SAI ICMP_ECHO session state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h" line="39" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h" bodystart="40" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIICMPECHO_1gae6ddabb7d7de6422d5f2002f93817bb8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_icmp_echo_session_attr_t</name>
+        <enumvalue id="group__SAIICMPECHO_1ggae6ddabb7d7de6422d5f2002f93817bb8a894c9ad2d80271eee2d517c67d065164" prot="public">
+          <name>SAI_ICMP_ECHO_SESSION_ATTR_START</name>
+          <briefdescription>
+<para>Start of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIICMPECHO_1ggae6ddabb7d7de6422d5f2002f93817bb8a484b6def3101614decc7f5d44db04809" prot="public">
+          <name>SAI_ICMP_ECHO_SESSION_ATTR_HW_LOOKUP_VALID</name>
+          <initializer>= SAI_ICMP_ECHO_SESSION_ATTR_START</initializer>
+          <briefdescription>
+<para>Hardware lookup valid. TRUE routes packets via L3 forward lookup; FALSE injects packets directly to specified port. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_ONLY </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIICMPECHO_1ggae6ddabb7d7de6422d5f2002f93817bb8ab81c945ff6585459a17840b55d75df8d" prot="public">
+          <name>SAI_ICMP_ECHO_SESSION_ATTR_VIRTUAL_ROUTER</name>
+          <briefdescription>
+<para>Virtual Router. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_VIRTUAL_ROUTER </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_ICMP_ECHO_SESSION_ATTR_HW_LOOKUP_VALID == true </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIICMPECHO_1ggae6ddabb7d7de6422d5f2002f93817bb8aa1315383197ab6b5f2a987f4e02dedf7" prot="public">
+          <name>SAI_ICMP_ECHO_SESSION_ATTR_PORT</name>
+          <briefdescription>
+<para>Destination Port. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_PORT </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_ICMP_ECHO_SESSION_ATTR_HW_LOOKUP_VALID == false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIICMPECHO_1ggae6ddabb7d7de6422d5f2002f93817bb8aa269a87daa1699f45f60e1e454fae1d6" prot="public">
+          <name>SAI_ICMP_ECHO_SESSION_ATTR_RX_PORT</name>
+          <briefdescription>
+<para>Source Port. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_id_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_PORT </para>
+</simplesect>
+<simplesect kind="par"><title>Allows NULL object ID</title><para> @@allownull       true </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_NULL_OBJECT_ID </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIICMPECHO_1ggae6ddabb7d7de6422d5f2002f93817bb8ae4fdef0f6409fa1a47717743a54e415f" prot="public">
+          <name>SAI_ICMP_ECHO_SESSION_ATTR_GUID</name>
+          <briefdescription>
+<para>Session Global Unique Identifier. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint64_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIICMPECHO_1ggae6ddabb7d7de6422d5f2002f93817bb8a6c569d0851029f74f7f9f2704557d161" prot="public">
+          <name>SAI_ICMP_ECHO_SESSION_ATTR_COOKIE</name>
+          <briefdescription>
+<para>Session Cookie. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIICMPECHO_1ggae6ddabb7d7de6422d5f2002f93817bb8ab68852d7e89ba9dd31fe519b40a42d3a" prot="public">
+          <name>SAI_ICMP_ECHO_SESSION_ATTR_IPHDR_VERSION</name>
+          <briefdescription>
+<para>IP header version. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIICMPECHO_1ggae6ddabb7d7de6422d5f2002f93817bb8a7677c37dc0714a3bf41c6d4ffe128aaf" prot="public">
+          <name>SAI_ICMP_ECHO_SESSION_ATTR_TOS</name>
+          <briefdescription>
+<para>IP header TOS. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         0 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIICMPECHO_1ggae6ddabb7d7de6422d5f2002f93817bb8acaffec2e601348e109d26318dd06cebc" prot="public">
+          <name>SAI_ICMP_ECHO_SESSION_ATTR_TTL</name>
+          <briefdescription>
+<para>IP header TTL. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint8_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         255 </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIICMPECHO_1ggae6ddabb7d7de6422d5f2002f93817bb8a928f6d16f7d555216eb764252e0d61ad" prot="public">
+          <name>SAI_ICMP_ECHO_SESSION_ATTR_SRC_IP_ADDRESS</name>
+          <briefdescription>
+<para>Source IP. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIICMPECHO_1ggae6ddabb7d7de6422d5f2002f93817bb8a2bd1ca2369fea4989eb7f759345abfc3" prot="public">
+          <name>SAI_ICMP_ECHO_SESSION_ATTR_DST_IP_ADDRESS</name>
+          <briefdescription>
+<para>Destination IP. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_ip_address_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIICMPECHO_1ggae6ddabb7d7de6422d5f2002f93817bb8a8f35df53c2f43a892fa3cc2b0f4abffc" prot="public">
+          <name>SAI_ICMP_ECHO_SESSION_ATTR_SRC_MAC_ADDRESS</name>
+          <briefdescription>
+<para>L2 source MAC address. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_mac_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_ICMP_ECHO_SESSION_ATTR_HW_LOOKUP_VALID == false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIICMPECHO_1ggae6ddabb7d7de6422d5f2002f93817bb8a05423a7b0ce3fa46b722ae16672af4a3" prot="public">
+          <name>SAI_ICMP_ECHO_SESSION_ATTR_DST_MAC_ADDRESS</name>
+          <briefdescription>
+<para>L2 destination MAC address. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_mac_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Condition:</title><para> @@condition       SAI_ICMP_ECHO_SESSION_ATTR_HW_LOOKUP_VALID == false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIICMPECHO_1ggae6ddabb7d7de6422d5f2002f93817bb8a096bb8811b241a2e7237d07239b4b942" prot="public">
+          <name>SAI_ICMP_ECHO_SESSION_ATTR_TX_INTERVAL</name>
+          <briefdescription>
+<para>Transmit interval in microseconds. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIICMPECHO_1ggae6ddabb7d7de6422d5f2002f93817bb8a64c4c35b5437f663b03ed8640c99bc3a" prot="public">
+          <name>SAI_ICMP_ECHO_SESSION_ATTR_RX_INTERVAL</name>
+          <briefdescription>
+<para>Receive interval in microseconds. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_uint32_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           MANDATORY_ON_CREATE | CREATE_AND_SET </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIICMPECHO_1ggae6ddabb7d7de6422d5f2002f93817bb8a3b87deebe35a9a9e092e13a059290d1d" prot="public">
+          <name>SAI_ICMP_ECHO_SESSION_ATTR_SET_NEXT_HOP_GROUP_SWITCHOVER</name>
+          <briefdescription>
+<para>To enable protection group switch over on session state change. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            bool </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         false </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIICMPECHO_1ggae6ddabb7d7de6422d5f2002f93817bb8a90822d5a2df1c7456b007ffbc883301c" prot="public">
+          <name>SAI_ICMP_ECHO_SESSION_ATTR_STATE</name>
+          <briefdescription>
+<para>ICMP_ECHO Session state. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_icmp_echo_session_state_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           READ_ONLY </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIICMPECHO_1ggae6ddabb7d7de6422d5f2002f93817bb8afe65df519df65672750a25fab936998c" prot="public">
+          <name>SAI_ICMP_ECHO_SESSION_ATTR_STATS_COUNT_MODE</name>
+          <briefdescription>
+<para>Set ICMP echo session statistics counting mode. </para>
+          </briefdescription>
+          <detaileddescription>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_stats_count_mode_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         SAI_STATS_COUNT_MODE_PACKET_AND_BYTE </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIICMPECHO_1ggae6ddabb7d7de6422d5f2002f93817bb8abb6f52d287a5418a61fe5e1685554420" prot="public">
+          <name>SAI_ICMP_ECHO_SESSION_ATTR_SELECTIVE_COUNTER_LIST</name>
+          <briefdescription>
+<para>Attach counter object list. </para>
+          </briefdescription>
+          <detaileddescription>
+<para>Counter object should be of type Selective. Fill (<ref refid="group__SAICOUNTER_1ggac5e99b5b04f2a0f0665babc2a60c9641a2835fed0aa18e2fb59824c903bd712ea" kindref="member">SAI_COUNTER_ATTR_TYPE</ref> with <ref refid="group__SAICOUNTER_1gga4e3da19e4589261e88197d6576020cf1aa4b87a1c99256ee3601553c9455cb92c" kindref="member">SAI_COUNTER_TYPE_SELECTIVE</ref>).</para>
+<para><simplesect kind="par"><title>Value Type:</title><para> @@type            sai_object_list_t </para>
+</simplesect>
+<simplesect kind="par"><title>Flags:</title><para> @@flags           CREATE_AND_SET </para>
+</simplesect>
+<simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_COUNTER </para>
+</simplesect>
+<simplesect kind="par"><title>Default value:</title><para> @@default         empty </para>
+</simplesect>
+</para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIICMPECHO_1ggae6ddabb7d7de6422d5f2002f93817bb8a757da9e5d38e382b4c0c5bee147d2999" prot="public">
+          <name>SAI_ICMP_ECHO_SESSION_ATTR_END</name>
+          <briefdescription>
+<para>End of attributes. </para>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIICMPECHO_1ggae6ddabb7d7de6422d5f2002f93817bb8a1db960c7eed130b22f16c8f5052ce6e4" prot="public">
+          <name>SAI_ICMP_ECHO_SESSION_ATTR_CUSTOM_RANGE_START</name>
+          <initializer>= 0x10000000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Custom range base value </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIICMPECHO_1ggae6ddabb7d7de6422d5f2002f93817bb8aa2ea18c2b026e2a669cb382653f435a9" prot="public">
+          <name>SAI_ICMP_ECHO_SESSION_ATTR_CUSTOM_RANGE_END</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>End of custom range base </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>SAI attributes for ICMP_ECHO session. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h" line="69" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h" bodystart="70" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="enum" id="group__SAIICMPECHO_1gafd67eb8d49e0c31ad00a571b3d6472fe" prot="public" static="no" strong="no">
+        <type></type>
+        <name>_sai_icmp_echo_session_stat_t</name>
+        <enumvalue id="group__SAIICMPECHO_1ggafd67eb8d49e0c31ad00a571b3d6472fea7a25ec4b5b621eb1b155b811c471d87d" prot="public">
+          <name>SAI_ICMP_ECHO_SESSION_STAT_IN_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Ingress packet stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="group__SAIICMPECHO_1ggafd67eb8d49e0c31ad00a571b3d6472feaff40ce4e68649f1437bcf7ad553138f7" prot="public">
+          <name>SAI_ICMP_ECHO_SESSION_STAT_OUT_PACKETS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>Egress packet stat count </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>ICMP_ECHO Session counter IDs in sai_get_icmp_echo_session_stats() call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h" line="264" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h" bodystart="265" bodyend="272"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="group__SAIICMPECHO_1ga7e72333d2d880cf3c255d1e0283b9ddb" prot="public" static="no">
+        <type>enum <ref refid="group__SAIICMPECHO_1ga171fb9d331ce842320152715f685a6cf" kindref="member">_sai_icmp_echo_session_state_t</ref></type>
+        <definition>typedef enum _sai_icmp_echo_session_state_t sai_icmp_echo_session_state_t</definition>
+        <argsstring></argsstring>
+        <name>sai_icmp_echo_session_state_t</name>
+        <briefdescription>
+<para>SAI ICMP_ECHO session state. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h" line="47" column="31"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIICMPECHO_1ga2bdd6e2c8de2660efe2c391c17966351" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__icmp__echo__session__state__notification__t" kindref="compound">_sai_icmp_echo_session_state_notification_t</ref></type>
+        <definition>typedef struct _sai_icmp_echo_session_state_notification_t sai_icmp_echo_session_state_notification_t</definition>
+        <argsstring></argsstring>
+        <name>sai_icmp_echo_session_state_notification_t</name>
+        <briefdescription>
+<para>Defines the operational status of the ICMP_ECHO session. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h" line="64" column="44"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIICMPECHO_1gadc535fd51aa6063e0939b054b1d5cff0" prot="public" static="no">
+        <type>enum <ref refid="group__SAIICMPECHO_1gae6ddabb7d7de6422d5f2002f93817bb8" kindref="member">_sai_icmp_echo_session_attr_t</ref></type>
+        <definition>typedef enum _sai_icmp_echo_session_attr_t sai_icmp_echo_session_attr_t</definition>
+        <argsstring></argsstring>
+        <name>sai_icmp_echo_session_attr_t</name>
+        <briefdescription>
+<para>SAI attributes for ICMP_ECHO session. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h" line="259" column="30"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIICMPECHO_1gac7e93ba9d851c571ae96e2968715e967" prot="public" static="no">
+        <type>enum <ref refid="group__SAIICMPECHO_1gafd67eb8d49e0c31ad00a571b3d6472fe" kindref="member">_sai_icmp_echo_session_stat_t</ref></type>
+        <definition>typedef enum _sai_icmp_echo_session_stat_t sai_icmp_echo_session_stat_t</definition>
+        <argsstring></argsstring>
+        <name>sai_icmp_echo_session_stat_t</name>
+        <briefdescription>
+<para>ICMP_ECHO Session counter IDs in sai_get_icmp_echo_session_stats() call. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h" line="272" column="30"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIICMPECHO_1ga79ef0ecaca2fed65e1aded2850e3d9d1" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_create_icmp_echo_session_fn) (_Out_ sai_object_id_t *icmp_echo_session_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_Out_ sai_object_id_t *icmp_echo_session_id, _In_ sai_object_id_t switch_id, _In_ uint32_t attr_count, _In_ const sai_attribute_t *attr_list)</argsstring>
+        <name>sai_create_icmp_echo_session_fn</name>
+        <briefdescription>
+<para>Create ICMP_ECHO session. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="out">icmp_echo_session_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ICMP_ECHO session id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">switch_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Switch id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of attributes</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> if operation is successful otherwise a different error code is returned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h" line="285" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h" bodystart="285" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIICMPECHO_1ga7d158b90661a4e22dd3f55303e49bd8b" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_remove_icmp_echo_session_fn) (_In_ sai_object_id_t icmp_echo_session_id)</definition>
+        <argsstring>)(_In_ sai_object_id_t icmp_echo_session_id)</argsstring>
+        <name>sai_remove_icmp_echo_session_fn</name>
+        <briefdescription>
+<para>Remove ICMP_ECHO session. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">icmp_echo_session_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ICMP_ECHO session id</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> if operation is successful otherwise a different error code is returned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h" line="299" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h" bodystart="299" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIICMPECHO_1gacc29a0306271cbd68b73812f43438628" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_set_icmp_echo_session_attribute_fn) (_In_ sai_object_id_t icmp_echo_session_id, _In_ const sai_attribute_t *attr)</definition>
+        <argsstring>)(_In_ sai_object_id_t icmp_echo_session_id, _In_ const sai_attribute_t *attr)</argsstring>
+        <name>sai_set_icmp_echo_session_attribute_fn</name>
+        <briefdescription>
+<para>Set ICMP_ECHO session attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">icmp_echo_session_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ICMP_ECHO session id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> if operation is successful otherwise a different error code is returned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h" line="311" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIICMPECHO_1ga47197403f6a8f267d41c441a22466211" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_icmp_echo_session_attribute_fn) (_In_ sai_object_id_t icmp_echo_session_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</definition>
+        <argsstring>)(_In_ sai_object_id_t icmp_echo_session_id, _In_ uint32_t attr_count, _Inout_ sai_attribute_t *attr_list)</argsstring>
+        <name>sai_get_icmp_echo_session_attribute_fn</name>
+        <briefdescription>
+<para>Get ICMP_ECHO session attributes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">icmp_echo_session_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ICMP_ECHO session id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">attr_count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of attributes </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="inout">attr_list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of attribute</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> if operation is successful otherwise a different error code is returned. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h" line="325" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h" bodystart="325" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIICMPECHO_1gafef76da9dac876b026c95ddf8b7bf833" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_icmp_echo_session_stats_fn) (_In_ sai_object_id_t icmp_echo_session_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t icmp_echo_session_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_icmp_echo_session_stats_fn</name>
+        <briefdescription>
+<para>Get ICMP_ECHO session statistics counters. Deprecated for backward compatibility. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">icmp_echo_session_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ICMP_ECHO session id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h" line="340" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIICMPECHO_1ga0cc4cbd1e4cfa9a17df827d98910b3bd" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_get_icmp_echo_session_stats_ext_fn) (_In_ sai_object_id_t icmp_echo_session_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</definition>
+        <argsstring>)(_In_ sai_object_id_t icmp_echo_session_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids, _In_ sai_stats_mode_t mode, _Out_ uint64_t *counters)</argsstring>
+        <name>sai_get_icmp_echo_session_stats_ext_fn</name>
+        <briefdescription>
+<para>Get ICMP_ECHO session statistics counters extended. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">icmp_echo_session_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ICMP_ECHO session id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Statistics mode </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of resulting counter values.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h" line="357" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIICMPECHO_1gab8973c9225c0985e2e942e6d56b0113c" prot="public" static="no">
+        <type>sai_status_t(*</type>
+        <definition>typedef sai_status_t(* sai_clear_icmp_echo_session_stats_fn) (_In_ sai_object_id_t icmp_echo_session_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</definition>
+        <argsstring>)(_In_ sai_object_id_t icmp_echo_session_id, _In_ uint32_t number_of_counters, _In_ const sai_stat_id_t *counter_ids)</argsstring>
+        <name>sai_clear_icmp_echo_session_stats_fn</name>
+        <briefdescription>
+<para>Clear ICMP_ECHO session statistics counters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">icmp_echo_session_id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ICMP_ECHO session id </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number_of_counters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of counters in the array </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">counter_ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Specifies the array of counter ids</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="group__SAISTATUS_1gaccbc66056ee29d7f1dc8defdc314cc55" kindref="member">SAI_STATUS_SUCCESS</ref> on success, failure status code on error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h" line="373" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h" bodystart="373" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIICMPECHO_1gae41af1d44950808351681e83678ce018" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* sai_icmp_echo_session_state_change_notification_fn) (_In_ uint32_t count, _In_ const sai_icmp_echo_session_state_notification_t *data)</definition>
+        <argsstring>)(_In_ uint32_t count, _In_ const sai_icmp_echo_session_state_notification_t *data)</argsstring>
+        <name>sai_icmp_echo_session_state_change_notification_fn</name>
+        <briefdescription>
+<para>ICMP_ECHO session state change notification. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Passed as a parameter into sai_initialize_switch()</para>
+<para><simplesect kind="par"><title>Count:</title><para> @@count           data[count]</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of notifications </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of ICMP_ECHO session state </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h" line="388" column="9" bodyfile="/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h" bodystart="388" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="group__SAIICMPECHO_1gab829963ef88d905ac30bb7a42d5eef78" prot="public" static="no">
+        <type>struct <ref refid="struct__sai__icmp__echo__api__t" kindref="compound">_sai_icmp_echo_api_t</ref></type>
+        <definition>typedef struct _sai_icmp_echo_api_t sai_icmp_echo_api_t</definition>
+        <argsstring></argsstring>
+        <name>sai_icmp_echo_api_t</name>
+        <briefdescription>
+<para>ICMP_ECHO method table retrieved with <ref refid="group__SAI_1ga3d199f627b8265366b8481e1c662aaed" kindref="member">sai_api_query()</ref> </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h" line="405" column="21"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>This module defines SAI interface. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Copyright (c) 2014 Microsoft Open Technologies, Inc.</para>
+<para>Licensed under the Apache License, Version 2.0 (the &quot;License&quot;); you may not use this file except in compliance with the License. You may obtain a copy of the License at <ulink url="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</ulink></para>
+<para>THIS CODE IS PROVIDED ON AN <emphasis>AS IS</emphasis> BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY OR NON-INFRINGEMENT.</para>
+<para>See the Apache Version 2.0 License for specific language governing permissions and limitations under the License.</para>
+<para>Microsoft would like to thank the following companies for their review and assistance with these files: Intel Corporation, Mellanox Technologies Ltd, Dell Products, L.P., Facebook, Inc., Marvell International Ltd. </para>
+    </detaileddescription>
+    <location file="/home/andrii/sai_hw1/SAI/inc/saiicmpecho.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="struct__sai__l2mc__entry__t" kind="struct" language="C++" prot="public">
+    <compoundname>_sai_l2mc_entry_t</compoundname>
+    <includes refid="sail2mc_8h" local="no">sail2mc.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__sai__l2mc__entry__t_1ae50318bb083421488325cc27b6a4062b" prot="public" static="no" mutable="no">
+        <type>sai_object_id_t</type>
+        <definition>sai_object_id_t _sai_l2mc_entry_t::switch_id</definition>
+        <argsstring></argsstring>
+        <name>switch_id</name>
+        <briefdescription>
+<para>Switch ID. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_SWITCH </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sail2mc.h" line="59" column="21" bodyfile="/home/andrii/sai_hw1/SAI/inc/sail2mc.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__l2mc__entry__t_1ae26d078c4bfe9f90e17c40b4549e578b" prot="public" static="no" mutable="no">
+        <type>sai_object_id_t</type>
+        <definition>sai_object_id_t _sai_l2mc_entry_t::bv_id</definition>
+        <argsstring></argsstring>
+        <name>bv_id</name>
+        <briefdescription>
+<para>Bridge ID. for .1D and Vlan ID for .1Q. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="par"><title>Allowed object types</title><para> @@objects         SAI_OBJECT_TYPE_BRIDGE, SAI_OBJECT_TYPE_VLAN </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sail2mc.h" line="66" column="21" bodyfile="/home/andrii/sai_hw1/SAI/inc/sail2mc.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__l2mc__entry__t_1a34915219fb7e0fa794f90a4943c41562" prot="public" static="no" mutable="no">
+        <type><ref refid="group__SAIL2MC_1gaa3a0bc9eea2fa66b405bda525a676ebe" kindref="member">sai_l2mc_entry_type_t</ref></type>
+        <definition>sai_l2mc_entry_type_t _sai_l2mc_entry_t::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>L2MC entry type </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sail2mc.h" line="69" column="27" bodyfile="/home/andrii/sai_hw1/SAI/inc/sail2mc.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__l2mc__entry__t_1a39560aa7634da8ba6a5bba1a8fe527fb" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__sai__ip__address__t" kindref="compound">sai_ip_address_t</ref></type>
+        <definition>sai_ip_address_t _sai_l2mc_entry_t::destination</definition>
+        <argsstring></argsstring>
+        <name>destination</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>IP destination address </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sail2mc.h" line="72" column="22" bodyfile="/home/andrii/sai_hw1/SAI/inc/sail2mc.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__sai__l2mc__entry__t_1a68db25c15d66fa4b0bb0dcfb29e7293d" prot="public" static="no" mutable="no">
+        <type><ref refid="struct__sai__ip__address__t" kindref="compound">sai_ip_address_t</ref></type>
+        <definition>sai_ip_address_t _sai_l2mc_entry_t::source</definition>
+        <argsstring></argsstring>
+        <name>source</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>IP source address </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/andrii/sai_hw1/SAI/inc/sail2mc.h" line="75" column="22" bodyfile="/home/andrii/sai_hw1/SAI/inc/sail2mc.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>L2MC entry key. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>_sai_l2mc_entry_t</label>
+        <link refid="struct__sai__l2mc__entry__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>destination</edgelabel>
+          <edgelabel>source</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>_sai_ip_address_t</label>
+        <link refid="struct__sai__ip__address__t"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>addr</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>_sai_ip_addr_t</label>
+        <link refid="union__sai__ip__addr__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/andrii/sai_hw1/SAI/inc/sail2mc.h" line="52" column="1" bodyfile="/home/andrii/sai_hw1/SAI/inc/sail2mc.h" bodystart="53" bodyend="76"/>
+    <listofallmembers>
+      <member refid="struct__sai__l2mc__entry__t_1ae26d078c4bfe9f90e17c40b4549e578b" prot="public" virt="non-virtual"><scope>_sai_l2mc_entry_t</scope><name>bv_id</name></member>
+      <member refid="struct__sai__l2mc__entry__t_1a39560aa7634da8ba6a5bba1a8fe527fb" prot="public" virt="non-virtual"><scope>_sai_l2mc_entry_t</scope><name>destination</name></member>
+      <member refid="struct__sai__l2mc__entry__t_1a68db25c15d66fa4b0bb0dcfb29e7293d" prot="public" virt="non-virtual"><scope>_sai_l2mc_entry_t</scope><name>source</name></member>
+      <member refid="struct__sai__l2mc__entry__t_1ae50318bb083421488325cc27b6a4062b" prot="public" virt="non-virtual"><scope>_sai_l2mc_entry_t</scope><name>switch_id</name></member>
+      <member refid="struct__sai__l2mc__entry__t_1a34915219fb7e0fa794f90a4943c41562" prot="public" virt="non-virtual"><scope>_sai_l2mc_entry_t</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
