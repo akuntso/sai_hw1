@@ -34,7 +34,8 @@ int main()
     sai_attribute_t           attrs[2];
     sai_attribute_t           lag_member_attr[2];
     sai_object_id_t           port_list[32];
-    
+    sai_object_id_t           lag1_ports[16];
+    sai_object_id_t           lag2_ports[16];
 
     status = sai_api_initialize(0, &test_services);
     if (status != SAI_STATUS_SUCCESS) {
@@ -47,7 +48,7 @@ int main()
     attrs[0].id = SAI_SWITCH_ATTR_PORT_LIST;
     attrs[0].value.objlist.list = port_list;
     attrs[0].value.objlist.count = 64;
-    
+
     status = switch_api->get_switch_attribute(1, attrs);
 
     status = sai_api_query(SAI_API_LAG, (void**)&lag_api);
@@ -109,6 +110,8 @@ int main()
     }
 
     lag_attr.id = SAI_LAG_ATTR_PORT_LIST;
+    lag_attr.value.objlist.count = 16;
+    lag_attr.value.objlist.list = lag1_ports;
     status = lag_api->get_lag_attribute(lag_oid1, 1, &lag_attr);
     if (status != SAI_STATUS_SUCCESS) {
         printf("Failed to get LAG #1 attributes, status=%d\n", status);
@@ -116,6 +119,8 @@ int main()
     }
 
     lag_attr.id = SAI_LAG_ATTR_PORT_LIST;
+    lag_attr.value.objlist.count = 16;
+    lag_attr.value.objlist.list = lag2_ports;
     status = lag_api->get_lag_attribute(lag_oid2, 1, &lag_attr);
     if (status != SAI_STATUS_SUCCESS) {
         printf("Failed to get LAG #2 attributes, status=%d\n", status);
@@ -144,6 +149,8 @@ int main()
     }
 
     lag_attr.id = SAI_LAG_ATTR_PORT_LIST;
+    lag_attr.value.objlist.count = 16;
+    lag_attr.value.objlist.list = lag1_ports;
     status = lag_api->get_lag_attribute(lag_oid1, 1, &lag_attr);
     if (status != SAI_STATUS_SUCCESS) {
         printf("Failed to get LAG #1 attributes after removing member, status=%d\n", status);
@@ -158,6 +165,8 @@ int main()
     }
 
     lag_attr.id = SAI_LAG_ATTR_PORT_LIST;
+    lag_attr.value.objlist.count = 16;
+    lag_attr.value.objlist.list = lag2_ports;
     status = lag_api->get_lag_attribute(lag_oid2, 1, &lag_attr);
     if (status != SAI_STATUS_SUCCESS) {
         printf("Failed to get LAG #2 attributes after removing member, status=%d\n", status);
